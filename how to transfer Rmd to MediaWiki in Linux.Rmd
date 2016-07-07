@@ -1,3 +1,4 @@
+Be sure to install pandoc advanced (see my previous note).
 ```{r}
 library("knitr")
 library("rmarkdown")
