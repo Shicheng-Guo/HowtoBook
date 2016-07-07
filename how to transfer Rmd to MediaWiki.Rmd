@@ -1,4 +1,6 @@
+```{r}
 library("knitr")
 library("rmarkdown")
 rmarkdown::render('DeconvolutionMixture.Rmd')
 pandoc("DeconvolutionMixture.md",format="MediaWiki")
+```
