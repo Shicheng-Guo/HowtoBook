@@ -6,7 +6,7 @@ library("rmarkdown")
 rmarkdown::render('DeconvolutionMixture.Rmd')
 pandoc("DeconvolutionMixture.md",format="MediaWiki")
 ```
-
+When you change md to MediaWiki, there will be a fold named figure and the png files will be include in this fold.
 
 Be sure to install pandoc advanced (see my previous note).(https://github.com/Shicheng-Guo/HowtoBook/blob/master/Pandoc.install.Rmd)
 
