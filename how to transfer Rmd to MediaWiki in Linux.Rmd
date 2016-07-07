@@ -10,4 +10,4 @@ pandoc("DeconvolutionMixture.md",format="MediaWiki")
 
 Be sure to install pandoc advanced (see my previous note).(https://github.com/Shicheng-Guo/HowtoBook/blob/master/Pandoc.install.Rmd)
 
-if you want to know how to do it in windows, please ask Yihui
+If you want to know how to do it in windows, please ask Yihui
