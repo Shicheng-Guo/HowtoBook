@@ -7,8 +7,8 @@ Here is the steps.
 
 Install 1)ghc-8.0.1  2)cabal  3) pandoc
 
-### https://www.haskell.org/ghc/download_ghc_8_0_1
-### https://www.haskell.org/ghc/download_ghc_8_0_1#linux_x86_64
+##### https://www.haskell.org/ghc/download_ghc_8_0_1
+##### https://www.haskell.org/ghc/download_ghc_8_0_1#linux_x86_64
 TSCC is Centos 6.7
 wget http://downloads.haskell.org/~ghc/8.0.1/ghc-8.0.1-x86_64-centos67-linux.tar.xz
 tar xzvf ghc-8.0.1-x86_64-centos67-linux.tar.xz
@@ -17,7 +17,7 @@ cd ghc-8.0.1
 make install
 export PATH=/home/shg047/software/ghc-8.0.1/bin:$PATH
 
-### in order to install Pan, you need download and install stack. and if you want to install stack, you need install GHC.
+##### in order to install Pan, you need download and install stack. and if you want to install stack, you need install GHC.
 wget http://hackage.haskell.org/package/cabal-install-1.24.0.0/cabal-install-1.24.0.0.tar.gz
 tar xzvf cabal-install-1.24.0.0.tar.gz
 cd cabal-install-1.24.0.0
@@ -26,7 +26,7 @@ cabal update
 exprot PATH=$HOME/.cabal/bin:$PATH
 source ~/.bashrc
 
-*# install Pandoc 1.17
+##### install Pandoc 1.17
 cd /home/shg047/software/pandoc-1.17.1
 cabal install pandoc
 
