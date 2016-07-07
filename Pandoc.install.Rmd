@@ -5,7 +5,7 @@ Therefore, I need to install them (indenpendency one by one)
 
 Here is the steps.
 
-Install 1)ghc-8.0.1  2)cabal  3) pandoc
+Install 1) ghc-8.0.1  2) cabal  3) pandoc
 
 ##### https://www.haskell.org/ghc/download_ghc_8_0_1
 ##### https://www.haskell.org/ghc/download_ghc_8_0_1#linux_x86_64
