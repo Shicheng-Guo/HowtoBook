@@ -1,6 +1,8 @@
 ## How to install Pandoc in Linux Server
 
-if you want to use RMD in Rstudio, you need latest pandoc. and install Pandoc is really hard jobs in TSCC server. these packages are too old in TSCC server. 
+You don't need administrator root to insall Pandoc. 
+
+If you want to use RMD in Rstudio, you need latest pandoc. and install Pandoc is really hard jobs in TSCC server. these packages are too old in TSCC server. 
 Therefore, I need to install them (indenpendency one by one)
 
 Here is the steps.
