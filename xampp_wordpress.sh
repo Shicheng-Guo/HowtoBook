@@ -12,5 +12,4 @@ sudo /opt/lampp/lampp stop
 sudo /opt/lampp/lampp start
 
 # ifconfig to find IP
-http://132.239.189.199
-
+http://132.239.189.199/wordpress/
