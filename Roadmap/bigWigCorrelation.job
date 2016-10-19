@@ -1,0 +1,12 @@
+#!/bin/csh
+#PBS -q hotel
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=168:00:00
+#PBS -o GSM1010980_UCSD.Ovary.Bisulfite-Seq.STL002.wig.gz.log
+#PBS -e GSM1010980_UCSD.Ovary.Bisulfite-Seq.STL002.wig.gz.err
+#PBS -V
+#PBS -M shicheng.guo@gmail.com
+#PBS -m abe
+#PBS -A k4zhang-group
+cd /oasis/tscc/scratch/shg047/Roadmap/wig
+bigWigCorrelate bwList.txt > bwListCorrelationResult.txt
