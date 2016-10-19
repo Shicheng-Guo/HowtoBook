@@ -1,10 +1,14 @@
 
 
-../R-3.3.0/configure --prefix=/home/shg047/software/R-3.3.0 '--with-cairo' \
+./configure --prefix=$HOME/software/R-3.3.0 '--with-cairo' \
  '--with-jpeglib' '--with-readline' '--with-tcltk' \
  '--with-blas' '--with-lapack' '--enable-R-profiling' \
  '--enable-R-shlib' \
- '--enable-memory-profiling'
+ '--enable-memory-profiling' '--enable-R-static-lib'
+ make clean 
+ make
+ 
+ 
  
   cd ~/software
   wget http://www.bzip.org/1.0.6/bzip2-1.0.6.tar.gz
@@ -21,7 +25,8 @@
  '--with-jpeglib' '--with-readline' '--with-tcltk' \
  '--with-blas' '--with-lapack' '--enable-R-profiling' \
  '--enable-R-shlib' \
- '--enable-memory-profiling'
+ '--enable-memory-profiling' \  '--enable-R-static-lib'
+ 
  
  cd ~/software
  wget http://tukaani.org/xz/xz-5.2.2.tar.gz
