@@ -13,3 +13,7 @@ awk '{if ($7>5) print $1,$2,$3}' OFS="\t" promter.txt > promter.bed
 sort -k1,1 -k2,2n promter.bed > promterSort.bed
 bedtools merge -i promterSort.bed > Human-hg19-$i-PMID24119843.bed
 done
+rm promter.txt
+rm promter.bed
+rm promterSort.bed
+
