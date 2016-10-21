@@ -19,7 +19,7 @@ rm GSE56712_RAW.tar
 rm *bam
 rm *bigWig
 gunzip *.gz
-for i in H3k27ac H3k27me3 H3k79me2 H3k9me3 H3k4me2
+for i in H3k27ac H3k27me3 H3k79me2 H3k9me3 H3k4me2 H3k4me3
 do
 cat *$i*broadPeak > promter.txt
 awk '{if ($7>5) print $1,$2,$3}' OFS="\t" promter.txt > promter.bed
@@ -29,5 +29,7 @@ done
 rm promter.txt
 rm promter.bed
 rm promterSort.bed
+
+cp *PMID* ~/NAS3/db/hg19
 scp shg047@genome-miner.ucsd.edu:/media/Home_Raid1/shg047/NAS3/Roadmap/Histone/*SEA* .
 
