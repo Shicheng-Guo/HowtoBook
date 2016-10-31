@@ -31,7 +31,7 @@ fetchChromSizes mm9 > mm9.chrom.sizes
 fetchChromSizes mm10 > mm10.chrom.sizes
 
 # bedGraph to bigwig
-for i in `ls*bedGraph`
+for i in `ls *bedGraph`
 do
 sort -k1,1 -k2,2n $i > $i.sort.bedGraph
 bedGraphToBigWig $i.sort.bedGraph hg19.chrom.sizes $i.bw
