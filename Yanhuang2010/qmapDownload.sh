@@ -18,7 +18,8 @@ wget https://raw.githubusercontent.com/Shicheng-Guo/Gscutility/801acad12ff839ffe
 # transfer qmap to bedgraph
 for i in `ls GSE17972_HUMtg5lib.qmap*.txt`
 do
-perl qmap2bedgraph.pl $i > $i.bedGraph &
+perl qmap2bedgraph.pl $i > $i.bedGraph   # don't put all file. system will be crashed
+echo $i
 done
 
 # Download bigwig related softwares
