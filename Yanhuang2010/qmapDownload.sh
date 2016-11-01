@@ -35,7 +35,6 @@ for i in `ls *bedGraph`
 do
 sort -k1,1 -k2,2n $i > $i.sort.bedGraph
 bedGraphToBigWig $i.sort.bedGraph hg19.chrom.sizes $i.bw
-rm 
 done
 
 
