@@ -7,7 +7,7 @@ my $file=shift @ARGV;
 open F,$file;
 while(<F>){
 chomp;
-my($chr,$pos,$pos2,$mf)=split /\t/;
+my($chr,$pos,$pos2,$mf)=split /\s+/;
 my $start=$pos-1;
 my $end=$pos;
 my $ratio=$mf;
