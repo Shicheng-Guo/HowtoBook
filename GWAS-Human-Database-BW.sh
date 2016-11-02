@@ -18,6 +18,5 @@ sudo scp shg047@genome-miner.ucsd.edu:/media/Home_Raid1/shg047/NAS3/Esteller2012
 # copy bw to 132.239.189.199 (meangenemachine)
 cd /home/ucsd002/wig/wgbs
 sudo scp shg047@genome-miner.ucsd.edu:/media/Home_Raid1/shg047/NAS3/Roadmap/wig/*bw ./
-sudo scp shg047@genome-miner.ucsd.edu:/home/shg047/oasis/Holger2016/bw/*bw ./
-sudo scp shg047@genome-miner.ucsd.edu:/home/shg047/oasis/Xliu2014/bw/*bw ./
+sudo scp shg047@genome-miner.ucsd.edu:/media/Home_Raid1/shg047/NAS3/Holger2016/bw/*bw ./
 sudo scp shg047@genome-miner.ucsd.edu:/media/Home_Raid1/shg047/NAS3/Esteller2012PNAS/bw/*bw ./
