@@ -1,4 +1,4 @@
-
+#/usr/bin/sh
 bedtools getfasta -fi ~/oasis/db/hg19_lambda.fa -bed venn.bed -fo esca.fa.bsp.fa
 perl -p -i -e 's/CG/X/ig' esca.fa.bsp.fa
 perl -p -i -e 's/C/T/ig' esca.fa.bsp.fa
