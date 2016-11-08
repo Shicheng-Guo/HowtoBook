@@ -9,7 +9,14 @@ make install
 export CPATH=/media/Home_Raid1/shg047/software/gsl-2.2.1/include
 export LIBRARY_PATH=/media/Home_Raid1/shg047/software/gsl-2.2.1/lib
 
-Step2： install methpipe
+Step2： install pysam and methpipe 
+# download the lastest pysam (older version will report error)
+# Go to: https://pypi.python.org/pypi/pysam
+tar xzvf pysam-0.9.1.4.tar.gz
+cd pysam-0.9.1.4
+python setup.py build
+python setup.py install --user
+
 wget http://smithlabresearch.org/downloads/methpipe-3.4.2.tar.bz2
 tar xjvf methpipe-3.4.2.tar.bz2
 make
