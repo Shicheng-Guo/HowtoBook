@@ -1,0 +1,14 @@
+Note: setting of bismark alignment in PBS system (DNA methylation, BS-seq, RRBS) in TSCC, UCSD, hotel or condo
+
+multicore=1, ppn=8, memory=3.2G*6
+multicore=2, ppn=16, memory=3.2G*12
+
+note: '-p 1' will already use 
+* 4 threads/cores for Bowtie2 (3.2G/per) plus 1 additional core for Bismark itself
+* 2 threads/cores for Perl (3.2G/per)
+* 2 threads/cores for SAMTOOLS
+
+note: '-p 2' will already use 
+* 8 threads/cores for Bowtie2 (3.2G/per) plus 1 additional core for Bismark itself
+* 4 threads/cores for Perl (3.2G/per)
+* 4 threads/cores for SAMTOOLS
