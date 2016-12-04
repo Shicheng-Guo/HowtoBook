@@ -36,10 +36,10 @@ while(<F>){
     my $job_file_name = $sample . ".job";
     my $curr_dir = $dir;
     
-    my $ppn=8;
-    my $multicore=2;
-    my $walltime="167:00:00";
-    my $queue="hotel"; # hotel,pdafm,condo
+    my $ppn=1;
+    my $multicore=1;
+    my $walltime="8:00:00";
+    my $queue="condo"; # hotel,pdafm,condo
     # chomp(my $phredcheck=`perl /home/shg047/bin/checkphred.pl $read[0]`);
     # my ($phred)=split /\s+/,$phredcheck;
     
@@ -52,7 +52,7 @@ while(<F>){
     print OUT "#PBS -o $sample.log\n";
     print OUT "#PBS -e $sample.err\n";
     print OUT "#PBS -V\n";
-    print OUT "#PBS -M shihcheng.guo\@gmail.com \n";
+    print OUT "#PBS -M shicheng.guo\@gmail.com \n";
     print OUT "#PBS -m abe\n";
     print OUT "#PBS -A k4zhang-group\n";
     print OUT "cd $curr_dir\n";
@@ -62,8 +62,8 @@ while(<F>){
     my($sample1,undef)=split /.fastq.gz/,$read[0];
     my($sample2,undef)=split /.fastq.gz/,$read[1];
 	#print OUT "fastq-dump --split-files --gzip $SRR\n";
-	print OUT "trim_galore --paired --phred$phred --fastqc --illumina $sample1\_R1.fastq.gz $sample2\_R2.fastq.gz --output_dir ../fastq_trim\n";
-	print OUT "bismark --bowtie2 --phred$phred-quals --fastq -L 25 -N 1 /home/shg047/db/hg19/bismark/ -1 ../fastq_trim/$sample1\_val_1.fq.gz -2 ../fastq_trim/$sample2\_val_2.fq.gz -o ../bam\n";
+	print OUT "trim_galore --paired --phred$phred --fastqc --illumina $sample1.fastq.gz $sample2.fastq.gz --output_dir ../fastq_trim\n";
+	print OUT "bismark --bowtie2 --non_directional --phred$phred-quals --fastq -L 21 -N 1 /home/shg047/db/hg19/bismark/ -1 ../fastq_trim/$sample1\_val_1.fq.gz -2 ../fastq_trim/$sample2\_val_2.fq.gz -o ../bam\n";
 	print OUT "filter_non_conversion --paired ../bam/$sample1\_val_1_bismark_bt2_pe.bam\n";
 	print OUT "samtools sort ../bam/$sample1\_val_1_bismark_bt2_pe.nonCG_filtered.bam -o ../sortbam/$sample\_bismark_bt2_pe.sort.bam\n";
 	print OUT "samtools index ../sortbam/$sample\_bismark_bt2_pe.sort.bam\n";
