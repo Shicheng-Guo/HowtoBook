@@ -1,9 +1,10 @@
-How to run GREAT in the batch mode to 100-1000 bed files at the same time.
-Our genome-miner server: http://132.239.25.238/shg047/
-bed files: /opt/lampp/htdocs/shg047/NAS3/Alice/WGBS/permutation/
-check the apache status,if it is okay: http://132.239.25.238/hello.pl
-Then run the following code in genome-miner:
-cd /opt/lampp/htdocs/shg047/NAS3/Alice/WGBS/permutation/hg19
+#How to run GREAT in the batch mode to 100-1000 bed files at the same time.
+#Our genome-miner server: http://132.239.25.238/shg047/
+#bed files: /opt/lampp/htdocs/shg047/NAS3/Alice/WGBS/permutation/
+#check the apache status,if it is okay: http://132.239.25.238/hello.pl
+#Then run the following code in genome-miner:
+#cd /opt/lampp/htdocs/shg047/NAS3/Alice/WGBS/permutation/hg19
+
 for i in `ls *bed`
 do
 genome="hg19"
