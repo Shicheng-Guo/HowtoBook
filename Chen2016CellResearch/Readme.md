@@ -5,7 +5,7 @@ wget ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE63nnn/GSE63183/suppl/GSE63183_RAW.
 
 
 
-`for i in `ls *5mC-P*`
+`for i in \`ls *5mC-P*\`
 do
 sort -k1,1n -k2,2 $i >$i.sort
 perl tobedgraph.pl $i.sort 
