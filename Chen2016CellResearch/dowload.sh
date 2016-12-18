@@ -9,3 +9,4 @@ bedGraphToBigWig $i.sort.bedgraph ~/db/hg19/hg19.chrom.sizes $i.bw &
 done
 
 
+
