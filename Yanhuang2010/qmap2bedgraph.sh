@@ -1,4 +1,4 @@
-#!/usr/bin/R
+#!/usr/bin/sh
 # qmap to bedgraph and then to bigwig. Yanhuang methylome is based on hg18, then transfer to hg19 and hg38
 # Contact: Shicheng Guo
 # Version 1.3
