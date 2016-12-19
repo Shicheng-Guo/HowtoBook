@@ -6,7 +6,7 @@
 
 use strict;
 my $f=shift @ARGV;
-my $pos;
+my $pos=0;
 my $chr;
 open F,$f;
 if($f=~/(chr\w+)/){
@@ -14,14 +14,18 @@ $chr=$1;
 }
 while(<F>){
 chomp;
+next if /^\s+$/;
 my @line=split/\t/;
 my $M=$line[1];
 my $UM=$line[2];
-if(($M+$UM)>=5){
-my $mf=sprintf("%.3f",$M/($M+$UM));
+$M=0 if !defined $M;
+$UM=0 if !defined $UM;
+if(($M+$UM)>=0){
+my $mf=sprintf("%.3f",$M/($M+$UM+0.1));
 my $start=$pos;
 my $end=$pos+1;
-print "$chr\t$start\t$end\t$mf\n";
+print "$chr\t$start\t$end\t$M\t$UM\t$mf\n";
 }
 $pos++;
 }
+
