@@ -7,6 +7,7 @@
 
  for i in `ls *.txt`
  do
+ echo $i
  perl qmap2bedgraph.pl $i > $i.bedgraph
  liftOver $i /media/Home_Raid1/shg047/work/db/hg18/hg18ToHg19.over.chain $i.bedgraph.hg19 tmp
  liftOver $i /media/Home_Raid1/shg047/work/db/hg18/hg18ToHg19.over.chain $i.bedgraph.hg38 tmp
