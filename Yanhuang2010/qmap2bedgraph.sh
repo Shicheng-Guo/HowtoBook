@@ -14,7 +14,17 @@
  mv $i.bedgraph $i.bedgraph.hg18.sort
  sort -k1,1 -k2,2n $i.bedgraph.hg19 > $i.bedgraph.hg19.sort
  sort -k1,1 -k2,2n $i.bedgraph.hg38 > $i.bedgraph.hg38.sort
- bedGraphToBigWig $i.bedgraph.hg18.sort ~/work/db/hg18/hg18.chrom.sizes $i.hg18.bw
- bedGraphToBigWig $i.bedgraph.hg19.sort ~/work/db/hg19/hg19.chrom.sizes $i.hg19.bw
- bedGraphToBigWig $i.bedgraph.hg38.sort ~/work/db/hg38/hg38.chrom.sizes $i.hg38.bw
  done
+
+ cat *hg18.sort > GSE17972.YanHuang.hg18.bedgraph 
+ cat *hg19.sort > GSE17972.YanHuang.hg19.bedgraph 
+ cat *hg38.sort > GSE17972.YanHuang.hg38.bedgraph 
+ 
+ for i in `ls *.bedgraph`
+ do
+ echo $i
+ bedGraphToBigWig $i ~/work/db/hg18/hg18.chrom.sizes $i.bw
+ bedGraphToBigWig $i ~/work/db/hg19/hg19.chrom.sizes $i.bw
+ bedGraphToBigWig $i ~/work/db/hg38/hg38.chrom.sizes $i.bw
+ done
+
