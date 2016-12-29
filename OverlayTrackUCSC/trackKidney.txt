@@ -1,6 +1,5 @@
 track KidneyMethylome
 container multiWig
-browser position chr1:58206329-58226061
 browser hide all
 alwaysZero on
 shortLabel KidneyMethylome
