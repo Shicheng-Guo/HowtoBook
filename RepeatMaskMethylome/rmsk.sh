@@ -11,7 +11,7 @@ do
 bigWigAverageOverBed $i /media/Home_Raid1/shg047/work/db/hg19/rmsk.hg19.bed $i.tab
 done
 
-Repeat.txt
+perl ~/bin/bigWigAverageOverBed2Matrix.pl > Repeat.txt
 
 data<-read.table("Repeat.txt")
 info<-read.table("/media/Home_Raid1/shg047/work/db/hg19/rmsk.hg19.bed")
