@@ -1,0 +1,53 @@
+track KidneyMethylome
+container multiWig
+browser hide all
+alwaysZero on
+shortLabel KidneyMethylome
+longLabel KidneyMethylome
+smoothingWindow 16
+windowingFunction mean
+maxHeightPixels 100:50:30
+type bigWig
+viewLimits 0:160
+visibility full
+aggregate transparentOverlay
+showSubtrackColorOnUi on
+windowingFunction mean
+priority 1.2
+configurable on
+autoScale on
+dragAndDrop subtracks
+
+track GSM1546663_5mC-P1-T
+bigDataUrl http://132.239.25.238/shg047/NAS3/shg047/Chen2016CellResearch/GSE63183/bw/hg19/GSM1546663_5mC-P1-T-corrected.txt.bw
+shortLabel GSM1546663_5mC-P1-T
+longLabel GSM1546663_5mC-P1-T
+parent KidneyMethylome
+type bigWig
+color 255,0,0
+
+track GSM1546664_5mC-P1-N
+bigDataUrl http://132.239.25.238/shg047/NAS3/shg047/Chen2016CellResearch/GSE63183/bw/hg19/GSM1546664_5mC-P1-N-corrected.txt.bw
+shortLabel GSM1546664_5mC-P1-N
+longLabel GSM1546664_5mC-P1-N
+parent KidneyMethylome
+type bigWig
+color 0,0,255
+
+track GSM1546665_5mC-P2-T
+bigDataUrl http://132.239.25.238/shg047/NAS3/shg047/Chen2016CellResearch/GSE63183/bw/hg19/GSM1546665_5mC-P2-T-corrected.txt.bw
+shortLabel GSM1546665_5mC-P2-T
+longLabel GSM1546665_5mC-P2-T
+parent KidneyMethylome
+type bigWig
+color 255,0,0
+
+track GSM1546665_5mC-P2-N
+bigDataUrl http://132.239.25.238/shg047/NAS3/shg047/Chen2016CellResearch/GSE63183/bw/hg19/GSM1546666_5mC-P2-N-corrected.txt.bw
+shortLabel GSM1546665_5mC-P2-N
+longLabel GSM1546665_5mC-P2-N
+parent KidneyMethylome
+type bigWig
+color 255,0,0
+
+

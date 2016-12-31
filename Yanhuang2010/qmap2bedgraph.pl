@@ -1,27 +1,27 @@
 #!/usr/bin/perl
-# USAGE: perl qmap2bedgraph.pl GSE17972_HUMtg5lib.qmap.chrY.txt.gz > GSE17972_HUMtg5lib.qmap.chrY.bedgraph
-# Tool: transfer qmap bis-seq format To bigwig/bedgraph/wig
+# USAGE: perl qmap2bedgraph.pl GSE17972_HUMtg5lib.qmap.chr21.txt > GSE17972_HUMtg5lib.qmap.chr21.txt.bedgraph
+# Tool: transfer qmap bis-seq format To bedgraph
 # Shicheng Guo
-# Oct/31/2016
+# 12/19/2016
 
 use strict;
-my $f=shift @ARGV;
-my $pos;
+
+my $file=shift @ARGV;
 my $chr;
-open F,$f;
-if($f=~/(chr\w+)/){
-$chr=$1;
+if($file=~/(chr\w+)/){
+        $chr=$1;
 }
-while(<F>){
-chomp;
-my @line=split/\t/;
-my $M=$line[1];
-my $UM=$line[2];
-if(($M+$UM)>=5){
-my $mf=sprintf("%.3f",$M/($M+$UM));
-my $start=$pos;
-my $end=$pos+1;
-print "$chr\t$start\t$end\t$mf\n";
-}
-$pos++;
+
+open F,$file || die "cannot open $file\n";
+my @data=<F>;
+foreach my $i(0..$#data){
+        my ($read1,$M1,$UM1)=split/\s+/,$data[$i];
+        my ($read2,$M2,$UM2)=split/\s+/,$data[$i+1];
+        if($read1 eq "C" && $read2 eq "G" ){
+                next if (($M1+$M2+$UM1+$UM2)<5);
+                my $mf=sprintf("%.3f",($M1+$M2)/($M1+$M2+$UM1+$UM2));
+                my $start=$i-1;
+                my $end=$start+1;
+                print "$chr\t$start\t$end\t$mf\n";
+        }
 }
