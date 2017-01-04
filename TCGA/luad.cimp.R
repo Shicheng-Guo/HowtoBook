@@ -1,11 +1,26 @@
 #!/usr/bin/R
-# identify lung CIMP (paired cancer and normal) and validate it in LUAD (all the cancer sample)
+# TCGA Methylation Pan-cancer Analysis
 # Contact: Shicheng Guo
 # Version 1.3
 # Update: 1/4/2017
+# Input: the ts-MHL counts for each samples in each reference given specific MHL positive threshold (>0.13)
 
 
 # Download all the HM450K file and save them in the working directory
+file=list.files(pattern="jhu-usc.edu_*")
+idv<-unique(as.array(str_extract(file,"TCGA-[0-9|a-z|A-Z]*-[0-9|a-z|A-Z]*")))
+pairidv<-c()
+for (i in 1:length(idv)){
+  t1<-paste(idv[i],"-01",sep="") 
+  t2<-paste(idv[i],"-11",sep="")
+  if(all(any(grepl(t1,file)),any(grepl(t2,file)))){
+    pairidv<-c(pairidv,t1,t2)
+  }
+}
+pairfile<-file[sapply(pairidv,function(x){x<-grep(x,file);x[length(x)]})]
+samplesize(pairfile)
+
+# build cancer CIMP
 file=list.files(pattern="jhu-usc.edu_LUAD")
 idv<-unique(as.array(str_extract(file,"TCGA-[0-9|a-z|A-Z]*-[0-9|a-z|A-Z]*")))
 idv1<-as.array(str_extract(file,"TCGA-[0-9|a-z|A-Z]*-[0-9|a-z|A-Z]*-[0-9]*"))
@@ -41,9 +56,27 @@ for(i in 1:length(allfile)){
   print(c(i,allfile[i]))
 }
 
+
 # CIMP: Q0>0.3 and Q50>0.6
 cimp.luad<-CIMP(data1)
-positive.ratio<-lappy(data2[match(names(cimp.luad),rownames(data2)),],2,function(x) sum(x>0.3)/length(x))
+positive.ratio<-apply(data2[match(names(cimp.luad),rownames(data2)),],2,function(x) sum(x>0.3,na.rm=T)/length(na.omit(x)))
+
+ratio<-c()
+for(i in names(samplesize(pairfile))){
+  data3<-c()
+  file=pairfile[grep(i, pairfile)]
+  for(j in file){
+  tmp<-read.table(j,head=T,sep="\t",as.is=F,skip=1)  # tmp<-read.table(file[i],head=T,sep="\t",as.is=F)
+  data3<-cbind(data3,tmp[,2])
+  rownames(data3)<-tmp[,1]
+  print(paste(i,j))
+  }
+  positive.ratio<-apply(data3[match(names(cimp.luad),rownames(data3)),],2,function(x) sum(x>0.3,na.rm=T)/length(na.omit(x)))
+  ratio<-c(ratio,positive.ratio)
+  print(paste(i,positive.ratio))
+}
+  names(ratio)<-names(samplesize(pairfile))
+
 
 ## Functions related to CIMP
 CIMP<-function(dataframe){
