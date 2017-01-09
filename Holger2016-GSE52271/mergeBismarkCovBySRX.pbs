@@ -1,0 +1,11 @@
+ #!/bin/csh
+ #PBS -N bam2MHB
+ #PBS -q pdafm
+ #PBS -l nodes=1:ppn=1
+ #PBS -l walltime=72:00:00
+ #PBS -V
+ #PBS -M shihcheng.guo@gmail.com
+ #PBS -m abe
+ #PBS -A k4zhang-group
+ cd /home/shg047/oasis/Estellar2016/methyfreq
+ perl ~/bin/mergeBismarkCovbySRX.pl /home/shg047/oasis/Estellar2016/fastq/SRA112056.txt
