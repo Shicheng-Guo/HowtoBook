@@ -1,4 +1,7 @@
 # Allele based analysis
+# Allele frequencies of the CTG repeat in controls and schizophrenic patients, including subtypes, course specifiers and positive family history, and results of Fisher's exact test and Monte Carlo method
+
+
 calcOddsRatio <- function(mymatrix,alpha=0.05,referencerow=3){
   rlt<-list()
   numrow <- nrow(mymatrix)
