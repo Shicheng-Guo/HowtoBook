@@ -8,6 +8,8 @@ Dr. Jenkinson published [Potential energy landscapes identify the information-th
 ## Data
 Download samplesheet(SRR and SRX) from [ebi](http://www.ebi.ac.uk/ena/data/view/SRP072078&display=html)
 
+
+## Supplementary
 ```
 #Another method is download with wget
 wget -r ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP072/SRP072078
