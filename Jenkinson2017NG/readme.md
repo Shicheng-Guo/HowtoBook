@@ -27,3 +27,9 @@ wget -r ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/S
 
 ## Necessary Tools
 [Cutadapt](https://github.com/marcelm/cutadapt)
+```bash
+# Install Trim Galore!
+curl -fsSL https://github.com/FelixKrueger/TrimGalore/archive/0.4.3.tar.gz -o trim_galore.tar.gz
+tar xvzf trim_galore.tar.gz
+mv TrimGalore-0.4.3/trim_galore /usr/bin
+```
