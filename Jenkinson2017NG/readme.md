@@ -25,3 +25,5 @@ wget -r ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/S
 wget -r ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP/SRP072/SRP072141
 ```
 
+## Necessary Tools
+[Cutadapt](https://github.com/marcelm/cutadapt)
