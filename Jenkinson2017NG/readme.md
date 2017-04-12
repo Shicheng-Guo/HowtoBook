@@ -16,6 +16,13 @@ Stem cell (1)                               : SRP072141.txt
 * In this world. Only Andrew P Feinberg have money to build WGBS like this way: each sample have biological/technical replicate. 
 ```
 
+```bash
+perl ~/bin/smartMethSRR.pl SRP072071.txt 33 submit
+perl ~/bin/smartMethSRR.pl SRP072071.txt 33 submit
+perl ~/bin/smartMethSRR.pl SRP072071.txt 33 submit
+perl ~/bin/smartMethSRR.pl SRP072071.txt 33 submit
+```
+
 ## Supplementary
 ```
 #Another method is download with wget
