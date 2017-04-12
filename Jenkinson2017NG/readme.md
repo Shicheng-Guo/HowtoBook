@@ -18,10 +18,10 @@ Stem cell (1)                               : SRP072141.txt
 
 ```bash
 # Smartpipe from fastq-dump to haplotype analysis
+perl ~/bin/smartMethSRR.pl SRP072078.txt 33 submit
 perl ~/bin/smartMethSRR.pl SRP072071.txt 33 submit
-perl ~/bin/smartMethSRR.pl SRP072071.txt 33 submit
-perl ~/bin/smartMethSRR.pl SRP072071.txt 33 submit
-perl ~/bin/smartMethSRR.pl SRP072071.txt 33 submit
+perl ~/bin/smartMethSRR.pl SRP072075.txt 33 submit
+perl ~/bin/smartMethSRR.pl SRP072141.txt 33 submit
 ```
 
 ## Supplementary
