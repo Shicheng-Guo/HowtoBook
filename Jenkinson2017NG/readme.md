@@ -41,3 +41,6 @@ curl -fsSL https://github.com/FelixKrueger/TrimGalore/archive/0.4.3.tar.gz -o tr
 tar xvzf trim_galore.tar.gz
 mv TrimGalore-0.4.3/trim_galore /usr/bin
 ```
+```
+awk -F_ '{print "fastq-dump",$1}' xx | sort -u
+```
