@@ -15,6 +15,7 @@ lymphocytes (6*2 CD4) and fibroblasts (5*1) : SRP072075.txt
 Stem cell (1)                               : SRP072141.txt
 * In this world. Only Andrew P Feinberg have money to build WGBS like this way: each sample have biological/technical replicate. 
 ```
+
 Smartpipe from fastq-dump to haplotype analysis
 ```bash
 perl ~/bin/smartMethSRR.pl SRP072071.txt 33 submit
