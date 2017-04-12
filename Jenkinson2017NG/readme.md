@@ -16,8 +16,8 @@ Stem cell (1)                               : SRP072141.txt
 * In this world. Only Andrew P Feinberg have money to build WGBS like this way: each sample have biological/technical replicate. 
 ```
 
-Smartpipe from fastq-dump to haplotype analysis
 ```bash
+# Smartpipe from fastq-dump to haplotype analysis
 perl ~/bin/smartMethSRR.pl SRP072071.txt 33 submit
 perl ~/bin/smartMethSRR.pl SRP072071.txt 33 submit
 perl ~/bin/smartMethSRR.pl SRP072071.txt 33 submit
