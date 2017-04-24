@@ -18,7 +18,7 @@ Stem cell (1)                               : SRP072141.txt
 
 ```bash
 # smartbismark pipeline from fastq-dump to haplotype analysis
-for i in `ls *txt`; 
+for i in `ls SRP*txt`; 
 do
 perl ~/bin/smartbismark.pl --input $i --genome hg19 --server TSCC --queue hotel --submit submit
 done
