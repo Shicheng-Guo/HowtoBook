@@ -1,2 +1,2 @@
-## SeqCap Project##
+## SeqCap Project
 
