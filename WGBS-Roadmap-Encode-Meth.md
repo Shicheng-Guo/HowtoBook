@@ -5,3 +5,9 @@ Download WGBS dataset: [42 WGBS dataset](https://www.encodeproject.org/search/?t
 ```bash 
 xargs -n 1 curl -O -L < files.txt
 ```
+
+```bash
+wget -r ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/roadmapepigenomics/by_experiment/Bisulfite-Seq
+awk '{print $1,$2,$3,$1":"$2"-"$3}' OFS="\t" wgEncodeRegTfbsClusteredV3.bed > wgEncodeRegTfbsClustered.bed
+cd /home/shg047/oasis/Roadmap/wig
+```
