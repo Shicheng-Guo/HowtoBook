@@ -1,0 +1,21 @@
+#!/bin/csh
+#PBS -N SRR1654396
+#PBS -q hotel
+#PBS -l nodes=1:ppn=16
+#PBS -l walltime=168:00:00
+#PBS -o SRR1654396.log
+#PBS -e SRR1654396.err
+#PBS -V
+#PBS -M shihcheng.guo@gmail.com 
+#PBS -m abe
+#PBS -A k4zhang-group
+cd /oasis/tscc/scratch/shg047/Chen2016CellResearch/fastq
+fastq-dump --skip-technical --split-files --gzip SRR1654396
+trim_galore --paired --phred33 --clip_R1 9 --clip_R2 6 --fastqc --illumina SRR1654396_1.fastq.gz SRR1654396_2.fastq.gz --output_dir ../fastq_trim
+bismark --bowtie2 --non_directional --multicore 6 --phred33-quals --fastq -N 1 /home/shg047/db/hg19/bismark/ -1 ../fastq_trim/SRR1654396_1_val_1.fq.gz -2 ../fastq_trim/SRR1654396_2_val_2.fq.gz -o ../bam
+filter_non_conversion --paired ../bam/SRR1654396_1_val_1_bismark_bt2_pe.bam
+deduplicate_bismark --bam ../bam/SRR1654396_1_val_1_bismark_bt2.nonCG_removed_seqs.bam
+bismark_methylation_extractor --no_overlap --merge_non_CpG --cutoff 5 --multicore 8 --paired-end --bedGraph --ignore 1 --buffer_size 4G --comprehensive --output ../methyfreq  ../bam/SRR1654396_1_val_1_bismark_bt2.nonCG_filtered.deduplicated.bam
+coverage2cytosine --merge_CpG --gzip --genome_folder /home/shg047/db/hg19/bismark/ -o SRR3263674.mergeCpG.bed SRR1654396_1_val_1_bismark_bt2_pe.nonCG_filtered.bismark.cov.gz
+samtools sort -@ 8 ../bam/SRR1654396_1_val_1_bismark_bt2.nonCG_filtered.deduplicated.bam -o ../sortbam/SRR1654396_bismark_bt2_pe.sort.bam
+samtools index ../sortbam/SRR1654396_bismark_bt2_pe.sort.bam
