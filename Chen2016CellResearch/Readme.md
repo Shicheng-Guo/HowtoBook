@@ -37,6 +37,8 @@ SRS745677	SRX761074	SRR1654404	Bisulfite-Seq	23721824	GSM1546666: BS-seq-P2-N
 SRS745677	SRX761074	SRR1654405	Bisulfite-Seq	204995075	GSM1546666: BS-seq-P2-N
 SRS745677	SRX761074	SRR1827571	Bisulfite-Seq	139304240	GSM1546666: BS-seq-P2-N
 ```
-
-
+```
+/home/shg047/oasis/Chen2016CellResearch/fastq
+perl ~/bin/smartbismark.pl --input saminfo.txt --genome hg19 --server TSCC --submit --queue hotel
+```
 
