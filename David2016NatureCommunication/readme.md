@@ -4,5 +4,5 @@
 ```
 Pubmed:http://www.ncbi.nlm.nih.gov/pubmed/?term=27898055
 8 BS-seq Dataset: BLUEPRINT DNA methylation profiles of T cells in type 1 diabetes-discordant monozygotic twins
-Data Access: EGAD00001002682
+Data Access(Not available, need application): EGAD00001002682
 ```
