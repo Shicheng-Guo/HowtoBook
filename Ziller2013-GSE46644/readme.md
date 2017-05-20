@@ -13,7 +13,7 @@ done
 
 ### Description
 
-Paired tumor and normal colon whole-genome bisulfite sequencing (WGBS) data. More information about this data is available on GEO (GSE46644). 
+Paired tumor and normal colon whole-genome bisulfite sequencing (WGBS) data. More information about this data is available on GEO ([GSE46644](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE46644)). 
 
 ### Citation
 
