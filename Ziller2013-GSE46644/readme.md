@@ -2,7 +2,7 @@
 
 ### Data Collection and Analysis
 
-PRJNA201480 ebi table: [Download](http://www.ebi.ac.uk/ena/data/view/PRJNA201480)
+PRJNA201480 ebi table download table: [click here](http://www.ebi.ac.uk/ena/data/view/PRJNA201480)
 ```bash
 cd /oasis/tscc/scratch/shg047/Ziller2013/fastq
 perl ~/bin/smartbismark.pl --input saminfo.txt --genome hg19 --server TSCC --submit no --queue hotel
