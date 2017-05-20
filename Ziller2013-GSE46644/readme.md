@@ -17,6 +17,31 @@ qsub $i.pbs
 done
 ```
 
+### 
+```{bash}
+cd /home/shg047/oasis/Ziller2013/bw
+wget ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE46nnn/GSE46644/suppl/GSE46644_bedFiles_set1.tar.gz  
+wget ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE46nnn/GSE46644/suppl/GSE46644_bedFiles_set2.tar.gz
+wget ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE46nnn/GSE46644/suppl/GSE46644_bedFiles_set3.tar.gz
+tar xzvf GSE46644_bedFiles_set1.tar.gz  
+tar xzvf GSE46644_bedFiles_set2.tar.gz  
+tar xzvf GSE46644_bedFiles_set3.tar.gz  
+
+# not same as GSM files, therefore download GSM again
+wget ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM1204nnn/GSM1204465/suppl/GSM1204465_BiSeq_cpgMethylation_BioSam_1120_Colon_Primary_Tumor.BiSeq.bed.gz
+wget ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM1204nnn/GSM1204466/suppl/GSM1204466_BiSeq_cpgMethylation_BioSam_1121_Colon_Adjacent_Normal.BiSeq.bed.gz
+
+# change Ziller's bed file to bedgraph and bigwig
+for i in `ls *bed`
+do
+awk -F"\t|\'|\/" '{print $1,$2,$3,$5/$6,$5,$6}' OFS="\t" $i > $i.bedgraph
+bedGraphToBigWig $i.bedgraph ../../db/hg19/hg19.chrom.sizes $i.bw
+done
+
+
+
+```
+
 ### Description
 
 Paired tumor and normal colon whole-genome bisulfite sequencing (WGBS) data. More information about this data is available on GEO ([GSE46644](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE46644)). 
