@@ -22,6 +22,10 @@ for i in `ls SRP*txt`;
 do
 perl ~/bin/smartbismark.pl --input $i --genome hg19 --server TSCC --queue hotel --submit submit
 done
+# bam2hapinfo
+perl ~/bin/samInfoPrep4Bam2Hapinfo.pl ~/oasis/db/hg19/hg19.cut10k.bed > saminfo.txt
+perl ~/bin/bam2hapInfo2PBS.pl saminfo.txt submit bismark /home/shg047/oasis/db/hg19/hg19.chrom.sizes /home/shg047/oasis/db/hg19/HsGenome19.CpG.positions.txt
+
 ```
 
 ## Supplementary
