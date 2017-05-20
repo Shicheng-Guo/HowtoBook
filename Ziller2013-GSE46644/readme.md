@@ -13,7 +13,7 @@ done
 
 ### Description
 
-Paired tumor and normal colon whole-genome bisulfite sequencing (WGBS) data. More information about this data is available on GEO (GSE46644). Only chromosome 22.
+Paired tumor and normal colon whole-genome bisulfite sequencing (WGBS) data. More information about this data is available on GEO (GSE46644). 
 
 ### Citation
 
