@@ -1,5 +1,6 @@
-## Ziller MJ, Gu H, Müller F, Donaghey J et al. Charting a dynamic DNA methylation landscape of the human genome. Nature 2013 Aug 22;500(7463):477-81. PMID: 23925113
+## Charting a dynamic DNA methylation landscape of the human genome
 
+Ziller MJ, Gu H, Müller F, Donaghey J et al. Charting a dynamic DNA methylation landscape of the human genome. Nature 2013 Aug 22;500(7463):477-81. PMID: 23925113
 
 ```bash
 cd /oasis/tscc/scratch/shg047/Ziller2013/fastq
