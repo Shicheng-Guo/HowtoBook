@@ -1,0 +1,118 @@
+Background
+
+Charting a dynamic DNA methylation landscape of the human genome[1]
+WGBS by 99 bp pair-end sequencing, Illumina HiSeq 2000
+Phred Score: 33
+11 primary tumor tissue, 2 metastasis tissue and 9 normal tissues
+library= non-directional or directional ？
+[edit]Method and Procedure
+
+[edit]Sample
+assemble sample config file
+table: http://www.ebi.ac.uk/ena/data/view/SRP028600
+sra: http://www.ncbi.nlm.nih.gov/sra/?term=SRP028600
+https://trace.ddbj.nig.ac.jp/DRASearch/study?acc=SRP028600
+paired-end DNA sequencing (two reads of 100 bp each) using the Illumina HiSeq 2000
+SRR949196_1_val_1.fq.gz : Failed: GSM1204460: Frontal_cortex_normal_2: read length not equal to quality length
+SRR949197_1_val_1.fq.gz : Failed: GSM1204460: Frontal_cortex_normal_2: read length not equal to quality length
+SRR949198_1_val_1.fq.gz : Failed: GSM1204460: Frontal_cortex_normal_2: read length not equal to quality length
+SRR949193	SRP028600	SRX332730	SRS468167
+SRR949194	SRP028600	SRX332730	SRS468167
+SRR949195	SRP028600	SRX332730	SRS468167
+SRR949196	SRP028600	SRX332731	SRS468168
+SRR949197	SRP028600	SRX332731	SRS468168
+SRR949198	SRP028600	SRX332731	SRS468168
+SRR949199	SRP028600	SRX332732	SRS468170
+SRR949200	SRP028600	SRX332732	SRS468170
+SRR949201	SRP028600	SRX332732	SRS468170
+SRR949202	SRP028600	SRX332733	SRS468169
+SRR949203	SRP028600	SRX332733	SRS468169
+SRR949204	SRP028600	SRX332733	SRS468169
+SRR949205	SRP028600	SRX332733	SRS468169
+SRR949206	SRP028600	SRX332734	SRS468172
+SRR949207	SRP028600	SRX332734	SRS468172
+SRR949208	SRP028600	SRX332735	SRS468171
+SRR949209	SRP028600	SRX332735	SRS468171
+SRR949210	SRP028600	SRX332736	SRS468173
+SRR949211	SRP028600	SRX332736	SRS468173
+SRR949212	SRP028600	SRX332736	SRS468173
+SRR949213	SRP028600	SRX332737	SRS468174
+SRR949214	SRP028600	SRX332737	SRS468174
+SRR949215	SRP028600	SRX332737	SRS468174
+
+GSM1204459	Frontal_cortex_normal_1
+GSM1204460	Frontal_cortex_normal_2
+GSM1204461	Frontal_cortex_AD_1
+GSM1204462	Frontal_cortex_AD_2
+GSM1204463	HepG2
+GSM1204464	IMR90
+GSM1204465	Colon_Tumor_Primary
+GSM1204466	Colon_Primary_Normal
+[edit] Automatic Pipeline
+perl ~/bin/pairAutoBismark.pl ../PRJNA201480.txt 33 non
+[edit]Fastq Download
+data-set website informaiton
+download config from http://www.ebi.ac.uk/ena/data/view/SRP028600
+cd /home/shg047/oasis/Ziller2013/fastq
+perl ~/bin/fastqDownload.pl SRP028600.txt 6 submit
+Several download failing, send email to sra databse and re-submit again.
+for i in `seq 194 202`
+do 
+qsub SRR949$i\fastq.download.job
+done
+[edit] Phred Score Checking
+cd /home/shg047/oasis/Ziller2013/fastq
+perl ~/bin/checkphred.pl *gz # all the sample are phred=33
+[edit]trim_glore
+for i in `seq 203 215`
+do 
+qsub SRR949$i\fastq.download.job
+done
+[edit] Fastq to Bam
+cd /home/shg047/oasis/Ziller2013/fastq_trim
+perl ~/bin/bismark2bamPBS.pl ../Saminfo.bismark.txt submit
+qsub SRR949206_1_val_1.fq.gz.job
+[edit] Bam to mergedBam
+cd /home/shg047/oasis/Ziller2013/Sam
+perl ../SRR2SRS.pl SRA.txt _1_val_1_bismark_bt2_pe.bam
+[edit] Bam to Hapinfo
+Bam File Directory
+TSCC-1: /home/ddiep/dinh_working/Bellvitge_BRI_WGBS/methylfiles/BAMfiles
+TSCC-2: /oasis/tscc/scratch/ddiep/BAMfiles
+Genome-miner:  /media/LTS_60T/Dinh/WGBS_LTS33/Hg19/Estellar_Bellvitge/BAMfiles
+Bam to hapinfo
+cd /oasis/tscc/scratch/ddiep/BAMfiles
+perl ~/bin/SaminfoPre4hapinfo.pl > ~/oasis/Estellar2016/SaminfoPre4hapinfo.txt
+cd /home/shg047/oasis/Estellar2016/hapinfo
+perl ~/bin/bam2hapInfo2PBS.pl ../SaminfoPre4hapinfo.txt
+qsub SRX381621_tumor_breast.chr20.job
+Merge hapinfo in different chrosome to one file by sample ID
+cd /home/shg047/oasis/Estellar2016/hapinfo
+perl ~/bin/hapinfoMergeByChrosome.pl
+cd /home/shg047/oasis/Estellar2016/mergeHapinfo
+[edit] Haploinfo to Methylation Haplotype Block (MHB)
+cd /home/shg047/oasis/Estellar2016/mergeHapinfo
+cat *.hapInfo.txt >> HapinfoMerge.txt
+perl ~/bin/hapinfo2mhb.pl HapinfoMerge.txt 0.4 > Heyn2016.R0.4.methyblock.bed
+perl ~/bin/hapinfo2mhb.pl HapinfoMerge.txt 0.5 > Heyn2016.R0.5.methyblock.bed
+perl ~/bin/hapinfo2mhb.pl HapinfoMerge.txt 0.6 > Heyn2016.R0.6.methyblock.bed
+perl ~/bin/hapinfo2mhb.pl HapinfoMerge.txt 0.7 > Heyn2016.R0.7.methyblock.bed
+qsub hapinfo2mhb.job
+bedtools intersect -wa -u -a ../../monod/mhb/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.bed -b Heyn2016.R0.5.methyblock.bed | wc -l 
+bedtools intersect -wa -u -a Heyn2016.R0.5.methyblock.bed -b ../../monod/mhb/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.bed | wc -l 
+wc -l ../../monod/mhb/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.bed
+73976 Heyn2016.R0.5.methyblock.bed:File:Heyn2016.R0.5.methyblock.bed.txt
+71697 of 147888 within Heyn2016.R0.5.methyblock.bed
+73976 of Heyn2016.R0.5.methyblock.bed within 147888
+MHB identified by Heyn2016 dataset 100% located within our previous defined MHBs
+[edit] Hapinfo to Methylation Haplotype Load
+cd /home/shg047/oasis/Estellar2016/mergeHapinfo
+perl ~/bin/hapinfo2mhl.pl ./ >  Estellar2016.MHL.txt
+qsub hapinfo2mhlPBS.job
+* Estellar2016.MHL.txt
+* 22 samples
+* 147314 MHB
+* missing ratio: 19.01826%
+[edit]MHL
+Distribution of MHL in All the samples.
+723.tm.png
