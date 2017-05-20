@@ -4,7 +4,7 @@ Charting a dynamic DNA methylation landscape of the human genome[1]
 WGBS by 99 bp pair-end sequencing, Illumina HiSeq 2000
 Phred Score: 33
 11 primary tumor tissue, 2 metastasis tissue and 9 normal tissues
-library= non-directional or directional ？
+library= directional BS-seq library
 [edit]Method and Procedure
 
 [edit]Sample
