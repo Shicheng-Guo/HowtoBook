@@ -12,3 +12,9 @@ grep SRX381716 PRJNA229055.txt | awk '{print $5".job"}' | xargs -I {} qsub {}
 grep SRX381719 PRJNA229055.txt | awk '{print $5".job"}' | xargs -I {} qsub {}
 grep SRX381722 PRJNA229055.txt | awk '{print $5".job"}' | xargs -I {} qsub {}
 ```
+
+```
+SRR1035882: Normal Lung
+SRR1035883: Normal Lung
+SRR1035884: Normal Lung
+```
