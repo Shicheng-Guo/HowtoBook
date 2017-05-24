@@ -4,8 +4,15 @@
 
 #### Breast
 
-#### Pancreats
+#### Pancreas
 
 #### Lung
 
 #### Liver
+
+#### Stomach
+
+#### Colon
+
+
+
