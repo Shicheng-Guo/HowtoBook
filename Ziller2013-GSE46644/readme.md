@@ -16,7 +16,7 @@ do
 qsub $i.pbs
 done
 ```
-
+Recover bigwig files from Supplementary bedgraph from GEO database
 ### 
 ```{bash}
 cd /home/shg047/oasis/Ziller2013/bw
