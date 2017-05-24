@@ -8,6 +8,8 @@ Dr. Jenkinson published [Potential energy landscapes identify the information-th
 ## Data
 Download samplesheet(SRR and SRX) from [ebi](http://www.ebi.ac.uk/ena/data/view/SRP072078&display=html)
 
+Each SRX samples only have one SRR files, therefore, hapinfomergebysrx.pl is not nessessary. 
+
 ```
 Liver(3) and Lung(3)                        : SRP072078.txt
 Brain (2)                                   : SRP072071.txt
