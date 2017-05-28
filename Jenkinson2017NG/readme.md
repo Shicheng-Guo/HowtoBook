@@ -27,6 +27,15 @@ done
 # bam2hapinfo
 perl ~/bin/samInfoPrep4Bam2Hapinfo.pl ~/oasis/db/hg19/hg19.cut10k.bed > saminfo.txt
 perl ~/bin/bam2hapInfo2PBS.pl saminfo.txt submit bismark /home/shg047/oasis/db/hg19/hg19.chrom.sizes /home/shg047/oasis/db/hg19/HsGenome19.CpG.positions.txt
+```
+
+```bash
+# after the hapinfo file build, transfer to genome-niner since the memory is limited in tscc
+mkdir /media/Home_Raid1/shg047/NAS1/Jenkinson2017NG/hapinfo
+mkdir /media/Home_Raid1/shg047/NAS1/Jenkinson2017NG/samplesheet
+scp *hapInfo.txt shg047@genome-miner.ucsd.edu:/media/Home_Raid1/shg047/NAS1/Jenkinson2017NG/hapinfo
+scp ~/bin/
+scp ~
 
 ```
 
