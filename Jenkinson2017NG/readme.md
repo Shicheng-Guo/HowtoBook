@@ -34,8 +34,8 @@ perl ~/bin/bam2hapInfo2PBS.pl saminfo.txt submit bismark /home/shg047/oasis/db/h
 mkdir /media/Home_Raid1/shg047/NAS1/Jenkinson2017NG/hapinfo
 mkdir /media/Home_Raid1/shg047/NAS1/Jenkinson2017NG/samplesheet
 scp *hapInfo.txt shg047@genome-miner.ucsd.edu:/media/Home_Raid1/shg047/NAS1/Jenkinson2017NG/hapinfo
+scp SRP* shg047@genome-miner.ucsd.edu:/media/Home_Raid1/shg047/NAS1/Jenkinson2017NG/samplesheet/
 scp ~/bin/
-scp ~
 
 ```
 
