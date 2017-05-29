@@ -33,6 +33,7 @@ perl ~/bin/bam2hapInfo2PBS.pl saminfo.txt submit bismark /home/shg047/oasis/db/h
 # after the hapinfo file build, transfer to genome-niner since the memory is limited in tscc
 mkdir /media/Home_Raid1/shg047/NAS1/Jenkinson2017NG/hapinfo
 mkdir /media/Home_Raid1/shg047/NAS1/Jenkinson2017NG/samplesheet
+cd /media/Home_Raid1/shg047/NAS1/Jenkinson2017NG/hapinfo
 scp *hapInfo.txt shg047@genome-miner.ucsd.edu:/media/Home_Raid1/shg047/NAS1/Jenkinson2017NG/hapinfo
 scp SRP* shg047@genome-miner.ucsd.edu:/media/Home_Raid1/shg047/NAS1/Jenkinson2017NG/samplesheet/
 # merge SRR files into SRX file according to SRP file download from EBI (30 min => each file)
@@ -40,6 +41,14 @@ perl ~/bin/hapinfomergebysrx.pl ../samplesheet/SRP072071.txt
 perl ~/bin/hapinfomergebysrx.pl ../samplesheet/SRP072075.txt
 perl ~/bin/hapinfomergebysrx.pl ../samplesheet/SRP072078.txt
 perl ~/bin/hapinfomergebysrx.pl ../samplesheet/SRP072141.txt
+# generate hap files and then build MHL matrix with haptools 
+cd /media/Home_Raid1/shg047/NAS1/Jenkinson2017NG/hapinfo
+for i in `ls SRX*hapInfo.txt`
+do
+perl ~/bin/haptools.pl --input $i --bed ~/NAS1/monod/mhb/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.sort.bed --output $i.hap
+done
+perl ~/bin/hap2mhl.pl
+
 ```
 
 ## Supplementary
