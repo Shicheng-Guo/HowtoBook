@@ -9,7 +9,7 @@ perl ~/bin/samInfoPrep4Bam2Hapinfo.pl ../mhb/WGBS_pooled_mappable_bins.all_autos
 perl ~/bin/bam2hapInfo2PBS.pl saminfo.txt submit bismark /home/shg047/oasis/db/hg19/hg19.chrom.sizes /home/shg047/oasis/db/hg19/HsGenome19.CpG.positions.txt
 # Genome-wide regions
 touch *bai       # change time stamp to avoid that bai is older than bam files(tscc dependent)
-perl ~/bin/samInfoPrep4Bam2Hapinfo.pl ../../db/hg19/hg19 > saminfo.txt
+perl ~/bin/samInfoPrep4Bam2Hapinfo.pl ../../db/hg19/hg19.cut10k.bed > saminfo.txt
 perl ~/bin/bam2hapInfo2PBS.pl saminfo.txt submit bismark /home/shg047/oasis/db/hg19/hg19.chrom.sizes /home/shg047/oasis/db/hg19/HsGenome19.CpG.positions.txt
 # bam2hapinfo to colon and lung cancer samples
 cd /home/shg047/oasis/Estellar2016/hapinfo
