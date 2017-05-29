@@ -35,8 +35,11 @@ mkdir /media/Home_Raid1/shg047/NAS1/Jenkinson2017NG/hapinfo
 mkdir /media/Home_Raid1/shg047/NAS1/Jenkinson2017NG/samplesheet
 scp *hapInfo.txt shg047@genome-miner.ucsd.edu:/media/Home_Raid1/shg047/NAS1/Jenkinson2017NG/hapinfo
 scp SRP* shg047@genome-miner.ucsd.edu:/media/Home_Raid1/shg047/NAS1/Jenkinson2017NG/samplesheet/
-scp ~/bin/
-
+# merge SRR files into SRX file according to SRP file download from EBI (30 min => each file)
+perl ~/bin/hapinfomergebysrx.pl ../samplesheet/SRP072071.txt
+perl ~/bin/hapinfomergebysrx.pl ../samplesheet/SRP072075.txt
+perl ~/bin/hapinfomergebysrx.pl ../samplesheet/SRP072078.txt
+perl ~/bin/hapinfomergebysrx.pl ../samplesheet/SRP072141.txt
 ```
 
 ## Supplementary
