@@ -19,7 +19,7 @@ grep SRX381719 PRJNA229055.txt | awk '{print $5".job"}' | xargs -I {} qsub {}
 grep SRX381722 PRJNA229055.txt | awk '{print $5".job"}' | xargs -I {} qsub {}
 # bam2hapinfo to colon and lung normal samples
 # SRX381713_normal_lung	: SRR1035882, SRR1035883, SRR1035884
-# SRX381553_normal_colon: 
+# SRX381553_normal_colon: SRR1035722,SRR1035723
 grep SRX381553 PRJNA229055.txt | awk '{print $5".job"}' | xargs -I {} qsub {}
 grep SRX381713 PRJNA229055.txt | awk '{print $5".job"}' | xargs -I {} qsub {}
 ```
