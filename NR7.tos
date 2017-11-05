@@ -1,0 +1,9 @@
+# Narrow Range 7 for Thinkorswim platform
+def range = high – low;
+def na=double.nan;
+def plotPoint=high+range*1;
+def nr7Flag = (range <= range[1] and range <= range[2] and range <=range[3] and range <= range[4] and range <= range[5] and range <= range[6]);
+plot nr7 = if nr7Flag then plotPoint else na;
+nr7.setlineWeight(5);
+nr7.SetDefaultColor(Color.MAGENTA);
+nr7.setstyle(curve.points);
