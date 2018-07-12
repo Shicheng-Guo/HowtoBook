@@ -35,3 +35,18 @@ pdf("LD-matrix-cut4-CHINA.pdf")
 levelplot(input, main="LD between HLA-B and MICA in CHINA", xlab="", ylab="", col.regions=pal(10), cuts=4, at=seq(0,1,0.25))
 dev.off()
 
+
+awk '$7=="JPT"' integrated_call_samples_v2.20130502.ALL.ped > JPT.txt
+plink --bfile chr6 --make-bed --keep JPT.txt --maf 0.05 --snps-only --chr 6 --from-bp 31232075 --to-bp 31391038 
+awk '{print $2}' plink.bim > mysnps.txt
+plink --bfile plink --list-all --show-tags mysnps.txt
+plink --bfile plink --extract plink.tags --make-bed --recode --tab --out HLAB-MICA.input
+plink --bfile HLAB-MICA.input --r2 --matrix
+
+data<-read.table("plink.ld")
+library(lattice)
+pal <- colorRampPalette(c("red", "yellow"), space = "rgb")
+input=data.matrix(data)
+pdf("LD-matrix-cut4-JPT.pdf")
+levelplot(input, main="LD between HLA-B and MICA in CHINA", xlab="", ylab="", col.regions=pal(10), cuts=4, at=seq(0,1,0.25))
+dev.off()
