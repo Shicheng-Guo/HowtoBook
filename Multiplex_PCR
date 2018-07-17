@@ -1,0 +1,15 @@
+Multiplex PCR primer 
+
+BatchPrimer3	http://batchprimer3.bioinformatics.ucdavis.edu/cgi-bin/batchprimer3/batchprimer3.cgi
+	
+1, http://www.premierbiosoft.com/primerplex/index.html
+2, https://omictools.com/msre-htprimer-tool
+3, https://omictools.com/multiplex-primer-design-tool
+4,https://omictools.com/autodimer-tool
+5, https://omictools.com/multiplx-2-tool
+1.	UCSD. Prof. Zhang's ppD: http://genome-tech.ucsd.edu/public/Gen2_BSPP/ppDesigner/ppDesigner.php
+2.	PUMCH, Prof. Li's methprimer: http://www.urogene.org/methprimer2/tester-invitation.html
+3.	PCRTiler v1.42 : http://pcrtiler.alaingervais.org/PCRTiler/
+4.	JCVI Primer Designer: https://sourceforge.net/projects/primerdesigner/
+5.	PrimerSuite: http://www.primer-dimer.com/help/
+
