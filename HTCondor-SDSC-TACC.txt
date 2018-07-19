@@ -1,0 +1,3 @@
+1. HTCondor-SDSC-TACC
+2. AWS
+3. AZURE
