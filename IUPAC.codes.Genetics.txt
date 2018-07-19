@@ -1,0 +1,19 @@
+IUPAC codes
+The International Union of Pure and Applied Chemistry (IUPAC) has defined a standard representation of DNA bases by single characters that specify either a single base (e.g. G for guanine, A for adenine) or a set of bases (e.g. R for either G or A). UCSC uses these single character codes to represent multiple observed alleles of single-base polymorphisms.
+
+Symbol	Bases	Origin of designation
+G	G	Guanine
+A	A	Adenine
+T	T	Thymine
+C	C	Cytosine
+R	G or A	puRine
+Y	T or C	pYrimidine
+M	A or C	aMino
+K	G or T	Keto
+S	G or C	Strong interaction (3 H bonds)
+W	A or T	Weak interaction (2 H bonds)
+H	A or C or T	not-G, H follows G in the alphabet
+B	G or T or C	not-A, B follows A
+V	G or C or A	not-T (not-U), V follows U
+D	G or A or T	not-C, D follows C
+N	G or A or T or C	aNy
