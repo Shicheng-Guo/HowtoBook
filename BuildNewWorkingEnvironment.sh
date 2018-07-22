@@ -1,17 +1,10 @@
 # install perl 
 
-
-
 # install R
-
-
-
 
 # install Python
 
 1. miniconda3
-2. 
-
 
 # build C tools
 
