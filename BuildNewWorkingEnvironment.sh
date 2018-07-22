@@ -5,6 +5,10 @@
 # install Python
 
 1. miniconda3
+conda install numpy
+conda install pip
+conda install -c bioconda cutadapt
+
 
 # build C tools
 
