@@ -1,0 +1,7 @@
+1. BS-Seq dataset: Human Epigenome Atlas
+http://www.genboree.org/epigenomeatlas/multiGridViewerPublic.rhtml
+
+2. 
+
+3. BS-Seq dataset: UCSC track
+
