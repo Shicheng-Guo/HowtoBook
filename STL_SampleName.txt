@@ -1,0 +1,66 @@
+Sample	Method	Source	Tissue of origin prediction training	Tissue type	Tissue
+N37-Cerebellum (CRBL)	WGBS	This study (UCSD_ZhangLab)	Yes	normal tissue	Cerebellum
+N37-Colon	WGBS	This study (UCSD_ZhangLab)	Yes	normal tissue	Colon
+N37-Frontal lobe(FL)	WGBS	This study (UCSD_ZhangLab)	Yes	normal tissue	Frontal lobe
+N37-Heart	WGBS	This study (UCSD_ZhangLab)	No	normal tissue	Heart
+N37-Small intestine(SI)	WGBS	This study (UCSD_ZhangLab)	Yes	normal tissue	Small intestine
+N37-Liver	WGBS	This study (UCSD_ZhangLab)	Yes	normal tissue	Liver
+N37-Lung	WGBS	This study (UCSD_ZhangLab)	Yes	normal tissue	Lung
+N37-Skeletal muscle(SM)	WGBS	This study (UCSD_ZhangLab)	No	normal tissue	Skeletal muscle
+N37-Pancreas	WGBS	This study (UCSD_ZhangLab)	Yes	normal tissue	Pancreas
+N37-Stomach	WGBS	This study (UCSD_ZhangLab)	Yes	normal tissue	Stomach
+methylC-seq_h1+bmp4_r1	WGBS	PMCID:PMC3786220	No	stem cells and progenitors	embryonic stem cells derived
+methylC-seq_h1+bmp4_r2	WGBS	PMCID:PMC3786220	No	stem cells and progenitors	embryonic stem cells derived
+methylC-seq_h1-msc_r1	WGBS	PMCID:PMC3786220	No	stem cells and progenitors	embryonic stem cells derived
+methylC-seq_h1-msc_r2	WGBS	PMCID:PMC3786220	No	stem cells and progenitors	embryonic stem cells derived
+methylC-seq_h1-npc_r1	WGBS	PMCID:PMC3786220	No	stem cells and progenitors	embryonic stem cells derived
+methylC-seq_h1-npc_r2	WGBS	PMCID:PMC3786220	No	stem cells and progenitors	embryonic stem cells derived
+methylC-seq_h1_mesendoderm_r1	WGBS	PMCID:PMC3786220	No	stem cells and progenitors	embryonic stem cells derived
+methylC-seq_h1_mesendoderm_r2	WGBS	PMCID:PMC3786220	No	stem cells and progenitors	embryonic stem cells derived
+methylC-seq_h1_r1	WGBS	PMCID:PMC3786220	No	stem cells and progenitors	embryonic stem cells derived
+methylC-seq_h1_r2	WGBS	PMCID:PMC3786220	No	stem cells and progenitors	embryonic stem cells derived
+Centenarian	WGBS	PMID:22689993	Yes	normal tissue	white blood cells
+Middle-age	WGBS	PMID:22689993	Yes	normal tissue	white blood cells
+New-born	WGBS	PMID:22689993	Yes	normal tissue	white blood cells
+Colon_primary_tumor	WGBS	PMID:23925113	No	primary tumor tissue	primary colon tumor
+HCT116	WGBS	PMID:25239471	No	cell line	colon cancer cell line
+STL001BL-01	WGBS	Roadmap Epigenetics Project	No	normal tissue	Bladder
+STL001FT-01	WGBS	Roadmap Epigenetics Project	No	normal tissue	Fat
+STL001GA-01	WGBS	Roadmap Epigenetics Project	Yes	normal tissue	Gastric
+STL001LG-01	WGBS	Roadmap Epigenetics Project	Yes	normal tissue	Lung
+STL001LV-01	WGBS	Roadmap Epigenetics Project	No	normal tissue	Heart
+STL001PO-01	WGBS	Roadmap Epigenetics Project	No	normal tissue	Muscle
+STL001RV-01	WGBS	Roadmap Epigenetics Project	No	normal tissue	Heart
+STL001SB-01	WGBS	Roadmap Epigenetics Project	Yes	normal tissue	Intestine
+STL001SG-01	WGBS	Roadmap Epigenetics Project	Yes	normal tissue	Colon
+STL001SX-01	WGBS	Roadmap Epigenetics Project	Yes	normal tissue	Spleen
+STL001TH-01	WGBS	Roadmap Epigenetics Project	No	normal tissue	Thymus
+STL002AD-01	WGBS	Roadmap Epigenetics Project	Yes	normal tissue	Kidney
+STL002AO-01	WGBS	Roadmap Epigenetics Project	No	normal tissue	Vessel
+STL002EG-01	WGBS	Roadmap Epigenetics Project	No	normal tissue	Esophagus
+STL002FT-01	WGBS	Roadmap Epigenetics Project	No	normal tissue	Fat
+STL002GA-01	WGBS	Roadmap Epigenetics Project	Yes	normal tissue	Gastric
+STL002LG-01	WGBS	Roadmap Epigenetics Project	Yes	normal tissue	Lung
+STL002OV-01	WGBS	Roadmap Epigenetics Project	No	normal tissue	Ovary
+STL002PA-01	WGBS	Roadmap Epigenetics Project	Yes	normal tissue	Pancreas
+STL002PO-01	WGBS	Roadmap Epigenetics Project	No	normal tissue	Muscle
+STL002SB-01	WGBS	Roadmap Epigenetics Project	Yes	normal tissue	Intestine
+STL002SX-01	WGBS	Roadmap Epigenetics Project	Yes	normal tissue	Spleen
+STL003AD-01	WGBS	Roadmap Epigenetics Project	Yes	normal tissue	Kidney
+STL003AO-01	WGBS	Roadmap Epigenetics Project	No	normal tissue	Vessel
+STL003EG-01	WGBS	Roadmap Epigenetics Project	No	normal tissue	Esophagus
+STL003FT-01	WGBS	Roadmap Epigenetics Project	No	normal tissue	Fat
+STL003GA-01	WGBS	Roadmap Epigenetics Project	Yes	normal tissue	Gastric
+STL003LV-01	WGBS	Roadmap Epigenetics Project	No	normal tissue	Heart
+STL003PA-01	WGBS	Roadmap Epigenetics Project	Yes	normal tissue	Pancreas
+STL003PO-01	WGBS	Roadmap Epigenetics Project	No	normal tissue	Muscle
+STL003RA-01	WGBS	Roadmap Epigenetics Project	No	normal tissue	Heart
+STL003RV-01	WGBS	Roadmap Epigenetics Project	No	normal tissue	Heart
+STL003SB-01	WGBS	Roadmap Epigenetics Project	Yes	normal tissue	Intestine
+STL003SG-01	WGBS	Roadmap Epigenetics Project	Yes	normal tissue	Colon
+STL003SX-01	WGBS	Roadmap Epigenetics Project	Yes	normal tissue	Spleen
+STL011LI-01	WGBS	Roadmap Epigenetics Project	Yes	normal tissue	Liver
+SRX381569_tumor_colon	WGBS	PMID:26813288	No	primary tumor tissue	CRC tumor
+SRX381716_adenocarcinoma_lung	WGBS	PMID:26813288	No	cancer cell line	H1437
+SRX381719_squamous_cell_tumor_lung	WGBS	PMID:26813288	No	cancer cell line	H157
+SRX381722_small_cell_tumor_lung	WGBS	PMID:26813288	No	cancer cell line	H1672
