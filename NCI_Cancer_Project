@@ -1,0 +1,24 @@
+NCI Cancer Programs
+
+1. TCGA Overview
+
+I have been used TCGA data for quite a while since they have Methylation data.  
+
+2. TARGET Overview
+
+Don't have Methylation data, but including miRNA-seq and RNA-seq
+
+3. CCLE Overview
+
+this dataset is not bad, but only focus on cell line. they have methylation dataset.
+
+
+4. CGCI Overview
+Don't have methylation data, but have:
+
+Whole Genome Sequencing
+Whole Exome Sequencing (2nd generation)
+Transcriptome Sequencing (2nd generation)
+Targeted Gene sequencing (Sanger)
+Gene Expression Profiling
+Copy Number Analysis (SNP arrays)
