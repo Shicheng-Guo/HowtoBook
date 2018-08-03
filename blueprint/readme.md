@@ -9,7 +9,9 @@ wget -i url.txt
 
 In the blueprint public dataset, they have 3 endothelial cell of umbilical veins samples as the following. they can be removed before the further analysis.
 
-`83 24893.Blueprint.ERS433785.WGB-Seq.signal.bigWig`
-`85 24895.Blueprint.ERS433789.WGB-Seq.signal.bigWig`
-`93 24903.Blueprint.ERS433793.WGB-Seq.signal.bigWig`
+`24893.Blueprint.ERS433785.WGB-Seq.signal.bigWig`
+
+`24895.Blueprint.ERS433789.WGB-Seq.signal.bigWig`
+
+`24903.Blueprint.ERS433793.WGB-Seq.signal.bigWig`
 
