@@ -1,0 +1,12 @@
+#  BCMsample25783_coverage.wig.gz - Read coverage of CpG in BCM sperm sample #1 in whole-genome bisulfite-sequencing
+#  BCMsample25783_methylation.wig.gz - CpG methylation level in BCM sperm sample #1 determined by whole-genome bisulfite-sequencing
+#  BCMsample25784_coverage.wig.gz- Read coverage of CpG in BCM sperm sample #2 in whole-genome bisulfite-sequencing
+#  BCMsample25784_methylation.wig.gz - CpG methylation level in BCM sperm sample #2 determined by whole-genome bisulfite-sequencing
+#  Molaro_coverage.wig.gz - Read coverage of CpG in the pooled sperm sample from the Molaro paper
+#  Molaro_methylation.wig.gz - CpG methylation level in the pooled sperm sample from the Molaro paper
+  
+wget http://www.genboree.org/EdaccData/Genomic_Human_Germline_Hypomethylation/Sperm_Bisulfite-Seq_Data/BCMsample25783_methylation.wig.gz
+wget http://www.genboree.org/EdaccData/Genomic_Human_Germline_Hypomethylation/Sperm_Bisulfite-Seq_Data/BCMsample25784_methylation.wig.gz
+wget http://www.genboree.org/EdaccData/Genomic_Human_Germline_Hypomethylation/Sperm_Bisulfite-Seq_Data/Molaro_methylation.wig.gz   
+
+
