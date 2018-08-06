@@ -12,7 +12,8 @@ Wget:
 wget ftp://ftp.ncbi.nlm.nih.gov/geo/series/GSE29nnn/GSE29611/suppl/GSE29611_RAW.tar
 ```
 
-```md5sum
+md5sum, GRCH37
+```
 93ac8b8a17e1d561fdee5978a32b6dbe  BI.Adult_Liver.Bisulfite-Seq.3.hg19.bw
 409d68942751b4bfe423910bd10bf09e  BI.Brain_Hippocampus_Middle.Bisulfite-Seq.149.hg19.bw
 909f06da6978faa4c7f659e39542c250  BI.Brain_Hippocampus_Middle.Bisulfite-Seq.150.hg19.bw
