@@ -15,3 +15,6 @@ In the blueprint public dataset, they have 3 endothelial cell of umbilical veins
 
 `24903.Blueprint.ERS433793.WGB-Seq.signal.bigWig`
 
+
+wget -e robots=off -nH -r -nd --reject="index.html*" -l 6 -A "*CPG_methylation_calls.bs_call.GRCh38.20160531.bw" --no-parent http://ftp.ebi.ac.uk/pub/databases/blueprint/data/homo_sapiens/GRCh38/
+
