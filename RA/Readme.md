@@ -20,11 +20,20 @@ totally GEO dataset which can be combined together:
 mRNA-array:
 1. GSE36700
 2. GSE83147
-
+3. GSE55457
+4. GSE55584
+5. GSE55235	
+6. GSE7669
+7. GSE1919
+8. GSE2053
 
 methylation array:
 1. GSE46650
 2. GPL13534
+
+Rheumatoid arthritic synovium response to methotrexate
+Rheumatoid arthritic synovium response to tocilizumab
+Rheumatoid arthritic synovium response to rituximab
 
 RNA-seq dataset:
 
