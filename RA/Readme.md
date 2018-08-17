@@ -32,7 +32,9 @@ methylation array:
 2. GPL13534
 
 Rheumatoid arthritic synovium response to methotrexate
+
 Rheumatoid arthritic synovium response to tocilizumab
+
 Rheumatoid arthritic synovium response to rituximab
 
 RNA-seq dataset:
