@@ -37,7 +37,7 @@ Rheumatoid arthritic synovium response to tocilizumab
 
 Rheumatoid arthritic synovium response to rituximab
 
-RNA-seq dataset:
+RNA-seq dataset: GSE29127
 
 
 
