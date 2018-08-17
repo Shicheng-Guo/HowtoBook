@@ -37,8 +37,42 @@ Rheumatoid arthritic synovium response to rituximab
 
 RNA-seq dataset:
 
-1. 
-2. 
+
+
+All:
+FULLNAME	DATASET
+Rheumatoid Arthritis	GSE12051
+Rheumatoid Arthritis	GSE1919
+Rheumatoid Arthritis	GSE1402
+Rheumatoid Arthritis	GSE48006
+Rheumatoid Arthritis	GSE55468
+Rheumatoid Arthritis	GSE48780
+Rheumatoid Arthritis	GSE55457
+Rheumatoid Arthritis	GSE55584
+Rheumatoid Arthritis	GSE55235
+Rheumatoid Arthritis	GSE50646
+Rheumatoid Arthritis	GSE49604
+Rheumatoid Arthritis	GSE42296
+Rheumatoid Arthritis	GSE45536
+Rheumatoid Arthritis	GSE39340
+Rheumatoid Arthritis	GSE39428
+Rheumatoid Arthritis	GSE36700
+Rheumatoid Arthritis	GSE29746
+Rheumatoid Arthritis	GSE27390
+Rheumatoid Arthritis	GSE22956
+Rheumatoid Arthritis	GSE17755
+Rheumatoid Arthritis	GSE22108
+Rheumatoid Arthritis	GSE15258
+Rheumatoid Arthritis	GSE12653
+Rheumatoid Arthritis	GSE15573
+Rheumatoid Arthritis	GSE13026
+Rheumatoid Arthritis	GSE12021
+Rheumatoid Arthritis	GSE9027
+Rheumatoid Arthritis	GSE3698
+Rheumatoid Arthritis	GSE3824
+Rheumatoid Arthritis	GSE1919
+Rheumatoid Arthritis	GSE1402
+
 
 
 
