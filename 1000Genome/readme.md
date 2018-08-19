@@ -36,7 +36,7 @@ do
 echo \#PBS -N chr$i  > chr$i.job
 echo cd $(pwd) >>chr$i.job
 echo vcftools --gzvcf chr$i.vcf.gz --recode --recode-INFO-all --snps dmer.snp.list --out chr$i.dmer >> chr$i.job
-#qsub chr$i.job
+qsub chr$i.job
 done
 ```
 5. calcluate LD between dmer snp and gwas proxy snp
@@ -52,7 +52,7 @@ dmer_snp_db=~/hpc/rheumatology/RA/NatureCommunication/snp150/SNP.uni.db
 ceu=~/hpc/db/hg19/1000Genome/CEU.txt
 vcf=~/hpc/db/hg19/1000Genome/chr$j.uni.vcf
 echo plink --vcf $vcf --keep $ceu --r2 --ld-snp-list $i.pairSNP --out ./CEU/$i.chr$j.ld >> $i.$j.job
-#qsub $i.$j.job
+qsub $i.$j.job
 done
 done
 ```
