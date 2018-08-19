@@ -3,29 +3,15 @@
 1. Go to GEO
 ```
  # https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE17972
+ mkdir GSE17972
+ cd GSE17972
  wget -e robots=off -nH -nd  -r -nd https://ftp.ncbi.nlm.nih.gov/geo/series/GSE17nnn/GSE17972/suppl/
-
 ```
-
 2
 ```
 
 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
