@@ -3,9 +3,9 @@
 1. Go to GEO
 ```
  # https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE17972
- mkdir /mnt/gluster/nu_guos/GSE17972
- cd /mnt/gluster/nu_guos/GSE17972
- wget -e robots=off -nH -nd  -r -nd https://ftp.ncbi.nlm.nih.gov/geo/series/GSE17nnn/GSE17972/suppl/
+ mkdir /gpfs/home/guosa/hpc/wgbs/GSE17972
+ cd  /gpfs/home/guosa/hpc/wgbs/GSE17972
+ wget -e robots=off -nH -nd  -r --reject="index.html*" -nd https://ftp.ncbi.nlm.nih.gov/geo/series/GSE17nnn/GSE17972/suppl/
  rm *index*
  gunzip *.gz
 ```
