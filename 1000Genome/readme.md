@@ -22,7 +22,7 @@ for i in {1..22} X Y
 do
 echo \#PBS -N chr$i  > chr$i.job
 echo cd $(pwd) >>chr$i.job
-echo ./vcf2dedup ALL.chr$i.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf.gz \> chr$i.uni.vcf >> chr$i.job
+echo vcf2dedup ALL.chr$i.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf \> chr$i.uni.vcf >> chr$i.job
 qsub chr$i.job
 done
 ```
