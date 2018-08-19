@@ -1,12 +1,16 @@
 #### YanHuang Methylome Project
 
+1. Go to GEO
+```
+ https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE17972
+ 
+```
+
+2
+```
 
 
-
-
-
-
-
+```
 
 
 
