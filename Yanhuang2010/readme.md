@@ -9,12 +9,21 @@
  rm *index*
  gunzip *.gz
 ```
-2
+2 uncompress and then transfer to bigwig
+```
+cd /gpfs/home/guosa/hpc/wgbs
+for i in {1..22} X Y
+do
+echo \#PBS -N chr$i  > chr$i.job
+echo cd $(pwd) >>chr$i.job
+echo gunzip GSE17972_HUMtg5lib.qmap.chr$i.txt.gz >> chr$i.job
+qsub chr$i.job
+done
+```
+3. transfer to bigwig
 ```
 
-
 ```
-
 
 
 
