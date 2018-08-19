@@ -39,7 +39,11 @@ echo vcftools --gzvcf chr$i.vcf.gz --recode --recode-INFO-all --snps dmer.snp.li
 qsub chr$i.job
 done
 ```
-5. calcluate LD between dmer snp and gwas proxy snp
+5. split the sample by the popultion
+```
+awk '{print $1,$2 > ""$3".txt"}' 1000GenomeSampleInfo.txt
+```
+6. calcluate LD between dmer snp and gwas proxy snp
 ```
 cd /gpfs/home/guosa/hpc/rheumatology/RA/NatureCommunication
 for i in H3K27AC H3K27me3 H3K36me3 H3K4me1 H3K4me3 H3K9me3 OpenChrom WGBS
@@ -55,8 +59,4 @@ echo plink --vcf $vcf --keep $ceu --r2 --ld-snp-list $i.pairSNP --out ./CEU/$i.c
 qsub $i.$j.job
 done
 done
-```
-6. split the sample by the popultion
-```
-awk '{print $1,$2 > ""$3".txt"}' 1000GenomeSampleInfo.txt
 ```
