@@ -1,4 +1,4 @@
 ## Data Download
 
-```./sh download.sh```
+1. ```./sh download.sh```
 
