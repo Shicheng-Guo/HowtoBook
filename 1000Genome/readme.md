@@ -56,3 +56,7 @@ qsub $i.$j.job
 done
 done
 ```
+6. split the sample by the popultion
+```
+awk '{print $1,$2 > ""$3".txt"}' 1000GenomeSampleInfo.txt
+```
