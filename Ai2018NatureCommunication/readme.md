@@ -70,7 +70,11 @@ qsub chr$i.job
 done
 ```
 
-8. calcluate LD between dmer snp and gwas proxy snp
+
+
+
+######Supplementary Figure and Method
+unknown. calcluate LD between dmer snp and gwas proxy snp
 ```
 cd /gpfs/home/guosa/hpc/rheumatology/RA/NatureCommunication
 for k in CEU CHB CHS ACB ASW BEB CDX CLM ESN FIN GBR GIH GWD IBS ITU JPT KHV LWK MSL MXL PEL PJL PUR STU TSI YRI 
