@@ -1,0 +1,5 @@
+data<-read.table("saturation.txt",head=T,sep="\t")
+data<-subset(data,Distance<200000)
+pdf("Figure.1B.sauration.pdf")
+plot(data[,2]~data[,1],col="blue",type="o",pch=21,lwd=3,cex=2,xlab="distance",ylab="percentage of total GWAS-SNP")
+dev.off()
