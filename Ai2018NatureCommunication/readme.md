@@ -69,8 +69,21 @@ echo tabix -p vcf chr$i.uni.vcf.gz >> chr$i.job
 qsub chr$i.job
 done
 ```
-
-
+8.  perl script to calculate LD d' pair-by-pair
+```
+perl ldcal.pbs.pl
+```
+9. summary all the LD d' and assign it to bed files
+```
+cd /gpfs/home/guosa/nc/
+for i in H3K27AC H3K27me3 H3K36me3 H3K4me1 H3K4me3 H3K9me3 OpenChrom WGBS
+do 
+for j in CEU CHB YRI 
+do
+perl ldsum.pl $i $j
+done
+done
+```
 
 
 ######Supplementary Figure and Method
