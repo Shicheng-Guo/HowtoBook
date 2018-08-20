@@ -1,6 +1,6 @@
 
 
-1. 1000 Genome phase 3 Data Download (2535 samples, 99 CEU+103CHB+108CHSls ) 
+1. 1000 Genome phase 3 Data Download (2535 samples, 99 CEU+103CHB+YRI ) 
 ```
 ./sh download.sh
 ```
