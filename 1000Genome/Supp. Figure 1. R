@@ -1,0 +1,29 @@
+
+file=list.files(pattern="*Cloest")
+pdf("Supplementary Figure 1A")
+par(mfrow=c(2,4))
+for(i in 1:length(file)){
+marker<-unlist(strsplit(file[i],"[.]"))[1]
+data<-read.table(file[i])
+dis<-data$V8-(data$V2+data$V3)/2
+dis<-dis[abs(dis)]
+hist(dis,main=marker,breaks=20,cex.axis=0.4,col="blue")
+p<-shapiro.test(sample(dis,1000,replace=T))
+pvalue<-p$p.value
+print(c(marker,pvalue))
+}
+dev.off()
+pdf("Supplementary Figure 1B")
+par(mfrow=c(2,4))
+for(i in 1:length(file)){
+  marker<-unlist(strsplit(file[i],"[.]"))[1]
+  data<-read.table(file[i])
+  dis<-data$V8-(data$V2+data$V3)/2
+  dis<-dis[abs(dis)]
+  qqnorm(dis,cex=0.45,main=marker,pch=16,cex.axis=0.85,col="red")
+  qqline(dis)
+  p<-shapiro.test(sample(dis,1000,replace=T))
+  pvalue<-p$p.value
+  print(c(marker,pvalue))
+}
+dev.off()
