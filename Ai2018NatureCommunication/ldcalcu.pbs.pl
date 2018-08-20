@@ -24,5 +24,3 @@ foreach my $pop(@pop){
         close F;
 }
 }
-
-
