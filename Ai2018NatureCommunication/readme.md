@@ -93,6 +93,24 @@ done
 done
 ```
 
+10. genomic shuffling and do the statistic
+```
+for j in {1..1000}
+do
+for i in `ls *bed.sort.bed `
+do
+echo \#PBS -N $i.$j  > $i.$j.job
+echo cd $(pwd) >> $i.$j.job
+echo \#PBS -o ./temp/ >>$i.$j.job
+echo \#PBS -e ./temp/>> $i.$j.job
+echo bedtools shuffle -i $i -excl wgEncodeDukeMapabilityRegionsExcludable.bed -g ~/hpc/db/hg19/hg19.chrom.sizes \> ./Shuffle/$i.$j.shuffle >> $i.$j.job
+echo bedtools sort -i ./Shuffle/$i.$j.shuffle  \> ./Shuffle/$i.$j.shuffle.sort  >> $i.$j.job 
+echo bedtools closest -a ./Shuffle/$i.$j.shuffle.sort -b RA_GWAS_475_Catalog_GRCH37.bed \> ./Shuffle/$i.$j.GWAS.Cloest >> $i.$j.job
+qsub $i.$j.job
+done
+done
+```
+
 
 ######Supplementary Figure and Method
 unknown. calcluate LD between dmer snp and gwas proxy snp
