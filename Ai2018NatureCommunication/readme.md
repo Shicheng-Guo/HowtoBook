@@ -43,7 +43,34 @@ done
 ```
 awk '{print $1,$2 > ""$3".txt"}' 1000GenomeSampleInfo.txt
 ```
-6. calcluate LD between dmer snp and gwas proxy snp
+6. extract the sub-SNPs to decrease the analysis time.
+```
+cd /gpfs/home/guosa/hpc/db/hg19/1000Genome
+awk '{print $4}' /gpfs/home/guosa/hpc/db/hg19/commonsnp150.hg19.bed > commonsnp150.rs.list.tmp
+sort -u   commonsnp150.rs.list.tmp >  commonsnp150.rs.list
+for i in {1..22} X Y
+do
+echo \#PBS -N chr$i  > chr$i.job
+echo cd $(pwd) >>chr$i.job
+echo vcftools --gzvcf chr$i.vcf.gz --recode --recode-INFO-all --snps dmer.snp.list --out chr$i.dmer >> chr$i.job
+qsub chr$i.job
+done
+
+```
+7. vcf to vcf.gz and tabix index for vcf.gz files
+```
+cd /gpfs/home/guosa/nc
+for i in {1..22} X Y
+do
+echo \#PBS -N chr$i  > chr$i.job
+echo cd $(pwd) >>chr$i.job
+echo bgzip -c chr$i.uni.vcf \> chr$i.uni.vcf.gz >> chr$i.job
+echo tabix -p vcf chr$i.uni.vcf.gz >> chr$i.job
+qsub chr$i.job
+done
+```
+
+8. calcluate LD between dmer snp and gwas proxy snp
 ```
 cd /gpfs/home/guosa/hpc/rheumatology/RA/NatureCommunication
 for k in CEU CHB CHS ACB ASW BEB CDX CLM ESN FIN GBR GIH GWD IBS ITU JPT KHV LWK MSL MXL PEL PJL PUR STU TSI YRI 
