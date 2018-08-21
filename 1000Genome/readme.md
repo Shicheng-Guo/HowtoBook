@@ -1,5 +1,8 @@
 
-
+0. url for 1000 genome
+```
+ftp://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/
+```
 1. 1000 Genome phase 3 Data Download (2535 samples, 99 CEU+103CHB+108CHSls ) 
 ```
 ./sh download.sh
