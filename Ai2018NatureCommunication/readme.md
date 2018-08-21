@@ -114,6 +114,7 @@ done
 11. 
 ```
 bedtools closest -a GWAS-RA-378.GRCH37.bed -b ~/hpc/db/hg19/RA-OA.DMER.GRCH37.bed > RA-OA.DMER.RA-GWAS.distance.bed
+bedtools intersect -wao -a ~/hpc/db/hg19/RA-OA.DMER.GRCH37.bed -b ~/hpc/db/hg19/commonsnp150.hg19.bed | awk '{print $1"\t"$2"\t"$3"\t"$9}' > RA-OA.DMER.GRCH37.SNP150.bed
 ```
 
 ######Supplementary Figure and Method
