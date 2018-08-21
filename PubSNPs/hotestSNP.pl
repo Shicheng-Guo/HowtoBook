@@ -1,3 +1,4 @@
+#/home/guosa/hpc/Genotype/SNP.count.txt
 use strict;
 use Cwd;
 chdir getcwd;
