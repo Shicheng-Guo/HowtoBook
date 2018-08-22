@@ -117,6 +117,13 @@ bedtools closest -a GWAS-RA-378.GRCH37.bed -b ~/hpc/db/hg19/RA-OA.DMER.GRCH37.be
 bedtools intersect -wao -a ~/hpc/db/hg19/RA-OA.DMER.GRCH37.bed -b ~/hpc/db/hg19/commonsnp150.hg19.bed | awk '{print $1"\t"$2"\t"$3"\t"$9}' > RA-OA.DMER.GRCH37.SNP150.bed
 ```
 
+
+
+######Result
+1. 5 GWAS-SNP didn't recorded in 10000 Genome dataset. 
+2. 
+
+
 ######Supplementary Figure and Method
 unknown. calcluate LD between dmer snp and gwas proxy snp
 ```
