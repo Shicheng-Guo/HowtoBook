@@ -120,7 +120,7 @@ bedtools intersect -wao -a ~/hpc/db/hg19/RA-OA.DMER.GRCH37.bed -b ~/hpc/db/hg19/
 
 
 ######Result
-1. 5 GWAS-SNP didn't recorded in 10000 Genome dataset. 
+1. 5 GWAS-SNP didn't recorded in 10000 Genome dataset (rs1020388   rs9373594   rs144444502 rs12873872  rs77331626)
 2. 
 
 
