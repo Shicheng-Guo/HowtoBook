@@ -15,6 +15,19 @@ Dataset: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83147
 wget -e robots=off -nH -r -nd https://ftp.ncbi.nlm.nih.gov/geo/series/GSE83nnn/GSE83147/suppl/
 
 
+```
+system("wget https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/RA/GWAS-reported-gene.txt")
+system("wget https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/RA/RA_FLS_DEG_11vs11_Nature_Commnication.txt")
+data1<-read.table("GWAS-reported-gene.txt",head=T,sep="\t")
+data2<-read.table("RA_FLS_DEG_11vs11_Nature_Commnication.txt",head=T,sep="\t")
+GwasGene<-unlist(strsplit(as.character(data1[,2]),"[,| ]"))
+DMERGene<-as.character(data2[,1])
+unique(GwasGene[which(GwasGene %in% DMERGene)])
+```
+combine GWAS-SNP-Gene and DEG in NC, we found 4 genes are overlapped: "CDH6"  "CFTR"  "ADCY8" "ACOXL"
+
+
+
 totally GEO dataset which can be combined together:
 
 mRNA-array:
