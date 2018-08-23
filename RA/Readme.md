@@ -28,6 +28,46 @@ combine GWAS-SNP-Gene and DEG in NC, we found 4 genes are overlapped: "CDH6"  "C
 
 
 
+take 1M as the extension distance, we can find 35 overlap genes between GWAS-SNP and DEGs. This LINC00565 is quite interesting, it is significantly over-expressed in RA FLS and is a significant lincRNA identified by GWAS study.  We can check whether It can be downregulated by LLDT-8 and then we can report this story. 
+
+ABCA8
+ACOXL
+ACYP1
+AKR1C3
+ARHGEF3-AS1
+BCL2L11
+BIRC3
+CDH6
+CFTR
+CREB5
+DSCR8
+ESM1
+FAM216B
+FRAS1
+GALNT15
+GCSAM
+GPR157
+GRTP1-AS1
+IL12A
+IL12A-AS1
+KCNJ15
+LIMK2
+LINC00565
+LPIN2
+MCF2L
+MINK1
+NUDT6
+PGR
+RTTN
+SH2D5
+SLC2A5
+SLC9C1
+SMOC2
+TYR
+VIT
+
+
+
 totally GEO dataset which can be combined together:
 
 mRNA-array:
