@@ -27,7 +27,14 @@ unique(GwasGene[which(GwasGene %in% DMERGene)])
 combine GWAS-SNP-Gene and DEG in NC, we found 4 genes are overlapped: "CDH6"  "CFTR"  "ADCY8" "ACOXL"
 
 
-
+```
+a=/gpfs/home/guosa/hpc/db/hg19/refGene.hg19.bed
+b=/gpfs/home/guosa/nc/GWAS-RA-378.GRCH37.bed
+bedtools window -a $b -b $a -w 500000 | awk '{print $9}' | sort -u  >  GWAS-378SNP-50K-Gene.txt
+wget https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/RA/RA_FLS_DEG_11vs11_Nature_Commnication.txt
+awk '{print $1}' RA_FLS_DEG_11vs11_Nature_Commnication.txt | sort -u > DMER.GENE.List.txt
+comm GWAS-378SNP-50K-Gene.txt  DMER.GENE.List.txt -1 -2
+```
 take 1M as the extension distance, we can find 35 overlap genes between GWAS-SNP and DEGs. This LINC00565 is quite interesting, it is significantly over-expressed in RA FLS and is a significant lincRNA identified by GWAS study.  We can check whether It can be downregulated by LLDT-8 and then we can report this story. 
 
 ABCA8
