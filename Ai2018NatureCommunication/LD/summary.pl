@@ -1,7 +1,9 @@
-
 use strict;
 use Cwd;
+use List::Util;
+
 my $dir=getcwd;
+
 chdir $dir;
 my (%rsq,%dp);
 my @file=glob("*.log");
@@ -10,9 +12,8 @@ foreach my $file(@file){
         open F,$file;
         while(<F>){
                 if(/R-sq\s+=\s+(\d+\.\d+)\s+D'\s+=\s+(\d+\.\d+)/){
-                $rsq{$rs1}{$id}=$1;
-                $dp{$rs1}{$id}=$2;
-#                print "$rs1\t$id\t$1\t$2\n";
+                push @{$rsq{$rs1}{$id}}=$1;
+                push @{$dp{$rs1}{$id}}=$2;
                 }
         }
 }
@@ -20,8 +21,12 @@ foreach my $file(@file){
 open OUT1,">DMER.twoside.R2.txt";
 open OUT2,">DMER.twoside.dp.txt";
 foreach my $rs(sort keys %rsq){
-print OUT1 "$rs\t$rsq{$rs}{'r1'}\t$rsq{$rs}{'r2'}\n";
-print OUT2 "$rs\t$dp{$rs}{'r1'}\t$dp{$rs}{'r2'}\n";
+        print OUT1 "$rs\tmax(@{$rsq{$rs}{"r1"}})\tmax(@{$rsq{$rs}{"r2"}}}\n";
+        print OUT2 "$rs\tmax(@{dp{$rs}{"r1"}})\tmax(@{dp{$rs}{"r2"}}}\n";
 }
 close OUT1;
 close OUT2;
+
+
+
+
