@@ -29,7 +29,7 @@ input<-na.omit(input)
 input$CHR=unlist(lapply(strsplit(as.character(input$CHR),split="chr"),function(x) unlist(x)[2]))
 ManhattanPlot(input)
 
-pdf("FGF6.pdf")
+pdf("FGF6-qqplot.pdf")
 pQQ(na.omit(pvalue), nlabs =200, conf = 0.95, mark = F) 
 dev.off()
 
