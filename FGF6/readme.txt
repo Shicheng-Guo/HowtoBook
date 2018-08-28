@@ -12,6 +12,9 @@
 3, HEPH evolution
 
 
+FGF6 network:
+
+https://string-db.org/cgi/network.pl?taskId=2ew1lphAvw3P
 
 
 4, FGF6 gene expression regulation in muscle skeleton. TEAD4 is muscle specific transcription factors. 
