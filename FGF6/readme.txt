@@ -1,11 +1,16 @@
+1. iron overload definition:
 
+PheTyp7_Iron_C1: 18
+PheTyp7_Iron_C2: 250
 
+2.
 
 1, FGF6 evolution
 
 
 
 2, TFRC evolution
+
 
 
 
