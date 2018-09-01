@@ -22,8 +22,6 @@ done
 ```
 3. transfer to bigwig
 ```
-
-```
 for i in `ls *txt`
 do
 echo \#PBS -N $i  > $i.job
