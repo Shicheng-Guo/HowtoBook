@@ -32,6 +32,14 @@ echo $i.job
 qsub $i.job
 done
 ```
+4. txt to bedgraph was suspended since the memory is not big enough, each chrosome requir 30G. I re-do it in CHG1 one by one
+```
+for i in `ls *txt`
+do
+perl qmap2bedgraph $i > $i.bedgraph
+done
+
+```
 
 
 
