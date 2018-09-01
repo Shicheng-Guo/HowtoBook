@@ -19,7 +19,6 @@ for i in `ls *bam`
 do
 echo \#PBS -N $i  > $i.job
 echo \#PBS -l nodes=1:ppn=16 >> $i.job
-echo \#PBS -M Guo.shicheng\@marshfieldresearch.org >> $i.job
 echo \#PBS -m abe  >> $i.job
 echo \#PBS -q longq  >> $i.job
 echo cd /gpfs/home/guosa/hpc/nash/bam/ >> ${i}.job
@@ -42,7 +41,6 @@ for i in `ls Pool_*bam`
 do
 echo \#PBS -N $i  > $i.job
 echo \#PBS -l nodes=1:ppn=16 >> $i.job
-echo \#PBS -M Guo.shicheng\@marshfieldresearch.org >> $i.job
 echo \#PBS -m abe  >> $i.job
 echo \#PBS -q longq  >> $i.job
 echo cd /gpfs/home/guosa/hpc/nash/bam/pool/bam >> ${i}.job
