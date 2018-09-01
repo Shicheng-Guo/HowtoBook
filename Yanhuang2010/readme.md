@@ -24,7 +24,16 @@ done
 ```
 
 ```
-
+for i in `ls *txt`
+do
+echo \#PBS -N $i  > $i.job
+echo \#PBS -l nodes=1:ppn=1 >> $i.job
+echo cd /gpfs/home/guosa/hpc/wgbs/GSE17972 >> $i.job
+echo ./qmap2bedgraph $i \>$i.bedgraph >> $i.job
+echo $i.job
+qsub $i.job
+done
+```
 
 
 
