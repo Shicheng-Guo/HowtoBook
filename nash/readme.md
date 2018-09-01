@@ -27,3 +27,9 @@ echo bismark_methylation_extractor ${option1} ${option2} --output ../methyfreq  
 echo ${i}.job
 done
 ```
+```
+qsub U16_S30_L001_R1_001_00_bismark_bt2_pe.bam.job
+qsub V03_S14_L001_R1_001_00_bismark_bt2_pe.bam.job
+qsub W01_S43_L001_R1_001_00_bismark_bt2_pe.bam.job
+qsub W06_S24_L001_R1_001_00_bismark_bt2_pe.bam.job
+```
