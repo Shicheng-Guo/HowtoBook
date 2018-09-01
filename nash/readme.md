@@ -34,10 +34,10 @@ qsub W01_S43_L001_R1_001_00_bismark_bt2_pe.bam.job
 qsub W06_S24_L001_R1_001_00_bismark_bt2_pe.bam.job
 ```
 
+```
 mkdir ../methyfreq
 option1=$(echo --no_overlap --merge_non_CpG --cutoff 1 --multicore 5 --paired-end)
 option2=$(echo --bedGraph --ignore 1 --buffer_size 4G --gzip --comprehensive)
-```
 for i in `ls Pool_*bam`
 do
 echo \#PBS -N $i  > $i.job
