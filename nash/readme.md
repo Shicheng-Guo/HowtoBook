@@ -48,3 +48,9 @@ echo bismark_methylation_extractor ${option1} ${option2} --output ../methyfreq  
 echo ${i}.job
 done
 ```
+```
+cp U16_S30*.cov.gz ../methcov/
+cp V03_S14*.cov.gz ../methcov/
+cp W01_S43*.cov.gz ../methcov/
+cp W06_S24*.cov.gz ../methcov/
+```
