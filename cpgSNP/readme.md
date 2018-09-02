@@ -22,6 +22,10 @@ write.table(table(data),file="AHRR.dip.txt",sep="\t",quote=F,row.names=T,col.nam
 ```
 
 ```
+setwd("/home/guosa/hpc/methylation/methtype")
+data<-read.table("AHRR.hap.txt",row.names=1)
+write.table(table(data),file="AHRR.dip.txt",sep="\t",quote=F,row.names=T,col.names=NA)
+
 rw=unlist(lapply(strsplit(rownames(table(data)),split=""),function(x) sum(x %in% "C")))
 cw=unlist(lapply(strsplit(colnames(table(data)),split=""),function(x) sum(x %in% "C")))
 rrw=tapply(rowSums(table(data)),rw,sum)
