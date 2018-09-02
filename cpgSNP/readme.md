@@ -13,4 +13,10 @@ do
 plink --bfile /home/guosa/hpc/db/hg19/1000Genome/chr$i --extract /home/guosa/hpc/db/hg19/plan2/commonCpGSNP/cpgSNP.hg19.list.txt --make-bed --out chr$i.cpgSNP
 done
 ```
-3. 
+```
+perl swith2csv.pl fastphase_hapguess_switch.out > AHRR.diplo.txt
+```
+```
+data<-read.table("AHRR.hap.txt",row.names=1)
+write.table(table(data),file="AHRR.dip.txt",sep="\t",quote=F,row.names=T,col.names=NA)
+```
