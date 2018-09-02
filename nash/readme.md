@@ -57,7 +57,18 @@ cp W06_S24*.cov.gz ../methcov/
 cov2bedgraph
 ```
 cd /gpfs/home/guosa/hpc/nash/methcov
+for i in `ls *.cov`
+do
+echo \#PBS -N $i  > $i.job
+echo \#PBS -l nodes=1:ppn=1 >> $i.job
+echo cd /gpfs/home/guosa/hpc/nash/methcov >> $i.job
+echo awk \'{print \$1,\$2-1,\$3,\$4}\' $i OFS=\"\\t\" \>$i.bedgraph >>$i.job
+echo wigToBigWig $i.bedgraph ~/hpc/db/hg19/hg19.chrom.sizes $i.bedgraph.bw >> $i.job
+echo $i.job
+done
+```
 
-
+tab2matrix
+```
 ```
 
