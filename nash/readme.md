@@ -54,3 +54,10 @@ cp V03_S14*.cov.gz ../methcov/
 cp W01_S43*.cov.gz ../methcov/
 cp W06_S24*.cov.gz ../methcov/
 ```
+cov2bedgraph
+```
+cd /gpfs/home/guosa/hpc/nash/methcov
+
+
+```
+
