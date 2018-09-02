@@ -65,6 +65,7 @@ echo cd /gpfs/home/guosa/hpc/nash/methcov >> $i.job
 echo awk \'{print \$1,\$2-1,\$3,\$4}\' $i OFS=\"\\t\" \>$i.bedgraph >>$i.job
 echo wigToBigWig $i.bedgraph ~/hpc/db/hg19/hg19.chrom.sizes $i.bedgraph.bw >> $i.job
 echo $i.job
+qsub $i.job
 done
 ```
 
