@@ -1,5 +1,16 @@
-
 ```
+cd /gpfs/home/guosa/run/bedmethyl
+
+for i in `ls *.bed`
+do
+echo \#PBS -N $i  > $i.job
+echo \#PBS -l nodes=1:ppn=1 >> $i.job
+echo cd /gpfs/home/guosa/run/bedmethyl >> $i.job
+echo perl bedMethyl2bedgraph.pl $i >> $i.job
+echo wigToBigWig $i.bedgraph ~/hpc/db/hg38/hg38.chrom.sizes $i.bedgraph.bw >> $i.job
+qsub $i.job
+done
+
 cd /gpfs/home/guosa/run/bedmethyl
 for i in chr{7..22} chrX chrY chr6 chr5 chr4 chr3 chr2 chr1 
 do
