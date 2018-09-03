@@ -24,3 +24,17 @@ qsub $j.$i.job
 done
 done
 ```
+
+```
+for i in chr{1..22} chrX chrY chrM
+do
+echo \#PBS -N $i  > $i.job
+echo \#PBS -l nodes=1:ppn=4 >> $i.job
+echo \#PBS -M Guo.shicheng\@marshfieldresearch.org
+echo \#PBS -m abe  > $i.job
+echo cd /gpfs/home/guosa/run/bedmethyl >> $i.job
+echo perl ~/hpc/bin/tab2matrix.pl $i \> $i.tab.matrix.rlt >> $i.job
+echo Rscript --vanilla dmr.R $i.tab.matrix.rlt >> $i.job
+qsub $i.job
+done
+```
