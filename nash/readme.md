@@ -74,13 +74,13 @@ tab2matrix
 ```
 
 ```
-
+cd /gpfs/home/guosa/hpc/nash/methcov
 for i in `ls *bw`
 do
 echo \#PBS -N $i  > $i.job
 echo \#PBS -l nodes=1:ppn=1 >> $i.job
-echo cd /gpfs/home/guosa/hpc/nash/methcov/LINE-1 >> $i.job
-echo bigWigAverageOverBed $i ~/hpc/db/hg19/LINE-1.hg19.bed ./LINE-1/$i.tab >> $i.job
+echo cd /gpfs/home/guosa/hpc/nash/methcov >> $i.job
+echo bigWigAverageOverBed $i ~/hpc/db/hg19/LINE1.hg19.bed ./LINE-1/$i.tab >> $i.job
 echo $i.job
 qsub $i.job
 done
