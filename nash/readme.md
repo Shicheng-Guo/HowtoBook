@@ -1,4 +1,15 @@
 
+
+```
+cd /home/guosa/hpc/db/hg19
+mkdir window2000/
+for i in {1..22} X Y M
+do
+perl ~/hpc/bin/cutchrosome.pl chr$i 500 >  ./window2000/hg19.chr$i.win2K.bed
+done
+
+```
+
 ```
 cp /gpfs/home/guosa/hpc/nash/bam/pool/methyfreq/*bismark.cov.gz /gpfs/home/guosa/hpc/nash/methcov
 cp /gpfs/home/guosa/hpc/nash/methyfreq/*bismark.cov.gz  /gpfs/home/guosa/hpc/nash/methcov
