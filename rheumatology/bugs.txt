@@ -7,6 +7,7 @@ grep rs3745199 ~/hpc/db/hg19/1000Genome/chr19.bim
 grep rs2233152 ~/hpc/db/hg19/1000Genome/chr19.bim
 
 Redo-vcf-to-plink
+
 ```
 cd ~/hpc/db/hg19/1000Genome
 for i in {1..22} X Y
