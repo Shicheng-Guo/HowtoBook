@@ -6,4 +6,16 @@ grep rs2233152 ALL.chr19.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotyp
 grep rs3745199 ~/hpc/db/hg19/1000Genome/chr19.bim
 grep rs2233152 ~/hpc/db/hg19/1000Genome/chr19.bim
 
+Redo-vcf-to-plink
+```
+cd ~/hpc/db/hg19/1000Genome
+for i in {1..22} X Y
+do
+echo \#PBS -N chr$i  > chr$i.job
+echo cd $(pwd) >> chr$i.job
+echo plink --vcf ALL.chr$i.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf --make-bed --out ./plink/chr$i >> chr$i.job
+qsub chr$i.job
+done
+```
+
 Attention 2. 
