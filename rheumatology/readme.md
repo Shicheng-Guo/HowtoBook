@@ -18,11 +18,11 @@ bedtools window -w 500000 -a miRNA.seed.commonSNP150.hg38.bed -b RA.GWAS.SNP.hg3
 bedtools window -w 500000 -a miRNA.seed.commonSNP150.hg38.bed -b RA.GWAS.SNP.hg38.commonSNP.uni.sort.bed | awk '{print $13}' | sort -u | wc -l
 ```
 
-82 miRNA, 93 miRNA-SNPs and 100 immune-disease-GWAS-SNP were collected in the study.
+56 miRNA, 64 miRNA-SNPs and 195 immune-disease-GWAS-SNP were collected in the study.
 ```
 bedtools window -w 500000 -a miRNA.seed.commonSNP150.hg38.bed -b AutoImmue.GWAS.SNP.hg38.commonSNP.bed | awk '{print $4}' | sort -u | wc -l
 bedtools window -w 500000 -a miRNA.seed.commonSNP150.hg38.bed -b AutoImmue.GWAS.SNP.hg38.commonSNP.bed | awk '{print $8}' | sort -u | wc -l
-bedtools window -w 500000 -a miRNA.seed.commonSNP150.hg38.bed -b AutoImmue.GWAS.SNP.hg38.commonSNP.bed | awk '{print $13}' | sort -u | wc -l
+bedtools window -w 500000 -a miRNA.seed.commonSNP150.hg38.bed -b AutoImmue.GWAS.SNP.hg38.commonSNP.bed | awk '{print $16}' | sort -u | wc -l
 ```
 CHB and CHS performance for these 93 SNPs
 ```
