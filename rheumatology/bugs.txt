@@ -1,0 +1,9 @@
+
+Attention 1. rs3745199 were removed from plink files
+
+grep rs3745199 ALL.chr19.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf
+grep rs2233152 ALL.chr19.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf
+grep rs3745199 ~/hpc/db/hg19/1000Genome/chr19.bim
+grep rs2233152 ~/hpc/db/hg19/1000Genome/chr19.bim
+
+Attention 2. 
