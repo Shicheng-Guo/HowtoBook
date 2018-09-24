@@ -46,7 +46,7 @@ sub match_all_positions {
     return @ret
 }
 
-open F1,"$chr.fa";
+open F1,"$chr.fa"|| die "cannot open $chr.fa!\n";
 my $genome;
 while(<F1>){
     chomp;
@@ -57,7 +57,7 @@ while(<F1>){
 my @seq=split //,$genome;
 close F1;
 
-open F2,"$chr.vcf.bed" || die "cannot open test.txt";
+open F2,"$chr.vcf.bed" || die "cannot open $chr.vcf.bed! (commonSNP or allSNP)\n";
 open OUT,">$chr.mask.fa";
 my %database;
 while(<F2>){
@@ -80,7 +80,7 @@ foreach my $seq(@seq){
 close OUT;
 
 my $maskgenome=join "",@seq;
-open OUT2,">$chr.hg19_cpgsnp.bed";
+open OUT2,">$chr.CpGSnp.bed" || die "cannot open $chr.CpGSnp.bed!\n";
 my @pos=&match_all_positions($maskgenome);
 foreach my $pos(@pos){
 	my $start= $$pos[2] eq "C"? $$pos[0]:($$pos[0]+1);
