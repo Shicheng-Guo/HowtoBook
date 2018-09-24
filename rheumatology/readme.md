@@ -1,5 +1,17 @@
 Readme:
 
+1000 genome dataset re-trim (from vcf to plink without any filtering)
+```
+cd ~/hpc/db/hg19/1000Genome
+for i in {1..22} X Y
+do
+echo \#PBS -N chr$i  > chr$i.job
+echo cd $(pwd) >> chr$i.job
+echo plink --vcf ALL.chr$i.phase3_shapeit2_mvncall_integrated_v5a.20130502.genotypes.vcf --make-bed --out ./plink/chr$i >> chr$i.job
+qsub chr$i.job
+done
+```
+
 1982 auto-immnue GWAS-SNP and 2016 immune-disease GWAS records(hg38 bed)
 ```
 bedtools intersect -wo -a AutoImmue.GWAS.SNP.hg38.bed -b ~/hpc/db/hg38/commonSNP150.hg38.bed > AutoImmue.GWAS.SNP.hg38.commonSNP.bed
