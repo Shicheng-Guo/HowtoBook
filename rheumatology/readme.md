@@ -1,7 +1,11 @@
 Readme:
 
+1982 auto-immnue GWAS-SNP and 2016 immune-disease GWAS records(hg38 bed)
+```
+bedtools intersect -wo -a AutoImmue.GWAS.SNP.hg38.bed -b ~/hpc/db/hg38/commonSNP150.hg38.bed > AutoImmue.GWAS.SNP.hg38.commonSNP.bed
+awk '{print $7}' AutoImmue.GWAS.SNP.hg38.commonSNP.bed | sort -u | wc -l 
+```
 miRNA (hg38) mature region (seed) download from ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
-
 241 miRNA-SNP (commonSNP150) were identified in the seed region of 2883 miRNA records.
 ```
 cd ~/hpc/rheumatology/RA/miRNASNP
