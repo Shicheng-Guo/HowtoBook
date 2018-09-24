@@ -15,7 +15,8 @@ bedtools intersect -wao -a RA.GWAS.SNP.hg38.bed -b ~/hpc/db/hg38/commonSNP150.hg
 ```
 collect miRNA with hg38-common-SNP150
 ```
-
+bedtools window -w 500000 -a ~/hpc/db/hg38/miRNA.hg38.bed -b ~/hpc/rheumatology/RA/miRNASNP/RA.GWAS.SNP.hg38.commonSNP.uni.sort.bed | awk '{print $4}' | sort -u | wc -l
 ```
+32 miRNA were identified nearby 500K regions of RA-GWAS-Significant-SNPs
 
 
