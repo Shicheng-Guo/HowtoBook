@@ -40,4 +40,9 @@ CHB and CHS performance for these 93 SNPs
 ```
 
 ```
+CpG-loss-SNP occurred in RA-hypermethylation regions play predictive roles while CpG-gain-SNPs occurred in RA-hypomethylation regions play risk roles
+```
+
+```
+
 
