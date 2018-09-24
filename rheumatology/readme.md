@@ -20,5 +20,8 @@ bedtools window -w 500000 -a miRNA.seed.commonSNP150.hg38.bed -b AutoImmue.GWAS.
 bedtools window -w 500000 -a miRNA.seed.commonSNP150.hg38.bed -b AutoImmue.GWAS.SNP.hg38.commonSNP.bed | awk '{print $8}' | sort -u | wc -l
 bedtools window -w 500000 -a miRNA.seed.commonSNP150.hg38.bed -b AutoImmue.GWAS.SNP.hg38.commonSNP.bed | awk '{print $13}' | sort -u | wc -l
 ```
+CHB and CHS performance for these 93 SNPs
+```
 
+```
 
