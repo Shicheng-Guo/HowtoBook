@@ -25,10 +25,9 @@ echo cd $(pwd) >> chr$i.job
 echo perl cpgsnp.pl chr$i >> chr$i.job
 qsub chr$i.job
 done
-
-
 ```
 
+#Plan2
 1. merge CpG-SNP list
 ```
 for i in `ls *cpgsnp.bed`
