@@ -88,7 +88,7 @@ my @pos=&match_all_positions($maskgenome);
 foreach my $pos(@pos){
 	my $start= $$pos[2] eq "C"? $$pos[0]:($$pos[0]+1);
 	my $end =$$pos[2] eq "C"? $$pos[0]+1:($$pos[0]+2);
-	my $mode=join "", @seq[($$pos[0]-1)..(($$pos[1]))];
+	my $mode=join "", @seq[($$pos[0]-3)..(($$pos[1]+1))];
 	my @output=split /\s+/,$database{$end};
 	print OUT2 "$chr\t$start\t$end\t$output[4]\t$output[8]\t$output[9]\t$mode\n";
 }
