@@ -5,7 +5,7 @@ wget http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz
 
 2. fa2mask.pl: change SNP to IUPAC
 ```
-cd ~/hpc/db/hg19/1000Genome
+cd ~/hpc/db/hg38/fa/chroms
 for i in {1..22} X Y
 do
 echo \#PBS -N chr$i  > chr$i.job
