@@ -56,14 +56,6 @@ while(<F1>){
 }
 my @seq=split //,$genome;
 close F1;
-open OUT,">$chr.mask.fa";
-my $cline=0;
-foreach my $seq(@seq){
-	$cline++;
-	print OUT "$seq";
-	print OUT "\n" if $cline % 200 ==0;
-}
-close OUT;
 
 open F2,"/gpfs/home/guosa/hpc/db/hg38/commonSNP150.hg38" || die "cannot open ~/db/hg38/commonSNP150.hg38\n";
 my %database;
@@ -74,12 +66,21 @@ while(<F2>){
     my (undef,$mychr,$start,$end,$rs,undef,$strand,undef,$ref,$obs,undef)=split/\s+/,$line;
 	next if $mychr ne $chr;
     my $position=$end-1;
-	print "$mychr\t$chr\t$position\t$rs\t$ref\t$obs\t$iupac{$obs}\n";
 	next if !$iupac{$obs};
+	print "$mychr\t$chr\t$position\t$rs\t$ref\t$obs\t$iupac{$obs}\n";
     $seq[$position]=$iupac{$obs};
     $database{$end}=$line;
 }
 close F2;
+
+open OUT,">$chr.mask.fa";
+my $cline=0;
+foreach my $seq(@seq){
+	$cline++;
+	print OUT "$seq";
+	print OUT "\n" if $cline % 200 ==0;
+}
+close OUT;
 
 my $maskgenome=join "",@seq;
 open OUT2,">$chr.CpGSnp.bed" || die "cannot open $chr.CpGSnp.bed!\n";
