@@ -1,4 +1,4 @@
-### A Gene-Based Recessive Diplotype Exome Scan Discovers Novel Type II diabetes and Obesity Genes
+#### A Gene-Based Recessive Diplotype Exome Scan Discovers Novel Type II diabetes and Obesity Genes
 ```
 cd /gpfs/home/guosa/hpc/T2D
 list.files()
