@@ -26,12 +26,12 @@ echo perl cpgsnp.pl chr$i >> chr$i.job
 qsub chr$i.job
 done
 ```
-4. Suppose, you don't have enough memory (>512G)
+4. Suppose, you don't have enough memory (>512G) Go to CHG1
 ```
 cd ~/hpc/db/hg38/fa/chroms
 for i in {1..22} X Y
 do
-perl cpgsnp.pl chr$i
+perl episnp.pl chr$i
 done
 ```
 
