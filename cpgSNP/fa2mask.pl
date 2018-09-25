@@ -18,8 +18,9 @@ my %iupac=(
 'A/G/T' => 'D',
 'A/C/G/T' => 'N',
 );
-my $input="~/hpc/db/hg38/commonSNP150.hg38";
-my $chr=shift @ARGV;
+my $input="/gpfs/home/guosa/hpc/db/hg38/commonSNP150.hg38";
+chomp(my $chr=shift @ARGV);
+print "$chr\t";
 sub match_all_positions {
 	my @regex1= qw /YG MG SG HG BG VG NG QG/;
 	my @regex2= qw /CR CK CS CB CV CD CN/;
@@ -34,50 +35,52 @@ sub match_all_positions {
 	my $regex3=join "|",@regex3;
     my ($string) = shift @_;
     my @ret;
-    while ($string =~ /$regex1/g) {
+    while ($string =~ /$regex1/ig) {
         push @ret, [$-[0], $+[0],"C"];
     }
-    while ($string =~ /$regex2/g) {
+    while ($string =~ /$regex2/ig) {
         push @ret, [$-[0], $+[0],"G"];
     }
-    while ($string =~ /$regex3/g) {
+    while ($string =~ /$regex3/ig) {
         push @ret, [$-[0], $+[0],"C"];
     }
     return @ret
 }
 
 sub match_CpG_positions {
-	my @regex= qw /CG/;
+	my @regex= qw/CG/;
 	my $regex=join "|",@regex;
     my ($string) = shift @_;
     my @ret;
-    while ($string =~ /$regex/g) {
+    while ($string =~ /$regex/ig) {
         push @ret, [$-[0], $+[0],"CG"];
     }
     return @ret
 }
 
-open F1,"$chr.fa";
+open F1,"$chr.fa" || die "cannot open $chr.fa!\n";
 my $genome;
 while(<F1>){
     chomp;
     next if />/;
-    $_=~s/N/X/g;
+    $_=~ s/N/X/ig;
     $genome .=$_;
 }
 my @seq=split //,$genome;
+close F1;
 
-open F2,"$input" || die "cannot open $input! (commonSNP or allSNP)\n";
+open F2,"$input" || die "cannot open $input!\n";
 open OUT,">$chr.mask.fa";
 my %database;
 while(<F2>){
     chomp;
     my $line=$_;
-    my (undef,$chr,$start,$end,$rs,undef,$strand,undef,$ref,$obs)=split/\s+/,$line;
+    my (undef,$mychr,$start,$end,$rs,undef,$strand,undef,$ref,$obs,undef)=split/\s+/,$line;
+	next if $mychr ne $chr;
     my $position=$end-1;
 	next if !$iupac{$obs};
     $seq[$position]=$iupac{$obs};
-    $database{"$end"}=$line;
+    $database{$end}=$line;
 }
 close F2;
 
@@ -88,3 +91,4 @@ foreach my $seq(@seq){
 	print OUT "\n" if $cline % 100 ==0;
 }
 close OUT;
+
