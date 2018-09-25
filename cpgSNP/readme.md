@@ -31,7 +31,7 @@ done
 cd ~/hpc/db/hg38/fa/chroms
 for i in {1..22} X Y
 do
-perl episnp.pl chr$i
+perl epiallele.pl chr$i
 done
 ```
 
