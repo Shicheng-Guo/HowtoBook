@@ -4,7 +4,7 @@ use POSIX;
 my $dir = getcwd;
 chdir $dir;
 
-my $chr=shift @ARGV;
+chomp(my $chr=shift @ARGV);
 
 my %iupac=(
 'A/G' => 'R',
@@ -34,13 +34,13 @@ sub match_all_positions {
 	my $regex3=join "|",@regex3;
     my ($string) = shift @_;
     my @ret;
-    while ($string =~ /$regex1/g) {
+    while ($string =~ /$regex1/ig) {
         push @ret, [$-[0], $+[0],"C"];
     }
-    while ($string =~ /$regex2/g) {
+    while ($string =~ /$regex2/ig) {
         push @ret, [$-[0], $+[0],"G"];
     }
-    while ($string =~ /$regex3/g) {
+    while ($string =~ /$regex3/ig) {
         push @ret, [$-[0], $+[0],"C"];
     }
     return @ret
@@ -51,31 +51,34 @@ my $genome;
 while(<F1>){
     chomp;
     next if />/;
-    $_=~s/N/X/g;
+    $_=~ s/N/X/ig;
     $genome .=$_;
 }
 my @seq=split //,$genome;
 close F1;
 
-open F2,"$chr.vcf.bed" || die "cannot open $chr.vcf.bed! (commonSNP or allSNP)\n";
-open OUT,">$chr.mask.fa";
+open F2,"/home/guosa/hpc/db/hg38/commonSNP150.hg38" || die "cannot open commonSNP150.hg38\n";
 my %database;
 while(<F2>){
+    next if /bin/;
     chomp;
     my $line=$_;
-    my ($chr,$start,$end,$rs,$strand,$ref,$alt)=split/\s+/,$line;
+    my (undef,$mychr,$start,$end,$rs,undef,$strand,undef,$ref,$obs,undef)=split/\s+/,$line;
+    next if $mychr ne $chr;
     my $position=$end-1;
-	next if !$iupac{$alt};
-    $seq[$position]=$iupac{$alt};
-    $database{"$end"}=$line;
+    next if !$iupac{$obs};
+    print "$mychr\t$chr\t$position\t$rs\t$ref\t$obs\t$iupac{$obs}\n";
+    $seq[$position]=$iupac{$obs};
+    $database{$end}=$line;
 }
 close F2;
 
-my $line=0;
+open OUT,">$chr.mask.fa";
+my $cline=0;
 foreach my $seq(@seq){
-	$line++;
+	$cline++;
 	print OUT "$seq";
-	print OUT "\n" if $line % 100 ==0;
+	print OUT "\n" if $cline % 200 ==0;
 }
 close OUT;
 
@@ -86,7 +89,7 @@ foreach my $pos(@pos){
 	my $start= $$pos[2] eq "C"? $$pos[0]:($$pos[0]+1);
 	my $end =$$pos[2] eq "C"? $$pos[0]+1:($$pos[0]+2);
 	my $mode=join "", @seq[($$pos[0]-1)..(($$pos[1]))];
-	my $output=join "\t",split /\s+/,$database{$end};
-	print OUT2 "$chr\t$start\t$end\t$output\t$mode\n";
+	my @output=split /\s+/,$database{$end};
+	print OUT2 "$chr\t$start\t$end\t$output[4]\t$output[8]\t$output[9]\t$mode\n";
 }
 close OUT2;
