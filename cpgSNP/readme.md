@@ -26,6 +26,14 @@ echo perl cpgsnp.pl chr$i >> chr$i.job
 qsub chr$i.job
 done
 ```
+4. Suppose, you don't have enough memory (>512G)
+```
+cd ~/hpc/db/hg38/fa/chroms
+for i in {1..22} X Y
+do
+perl cpgsnp.pl chr$i
+done
+```
 
 #Plan2
 1. merge CpG-SNP list
