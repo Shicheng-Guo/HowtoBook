@@ -14,16 +14,19 @@ echo perl fa2mask.pl chr$i >> chr$i.job
 qsub chr$i.job
 done
 ```
-3. creat cpg-snp list for hg38
+3. creat cpg-snp list for hg38 (ppn=20 to keep memmory enough)
 ```
 cd ~/hpc/db/hg38/fa/chroms
 for i in {1..22} X Y
 do
 echo \#PBS -N chr$i  > chr$i.job
+echo \#PBS -l nodes=1:ppn=20 >> $i.job
 echo cd $(pwd) >> chr$i.job
 echo perl cpgsnp.pl chr$i >> chr$i.job
 qsub chr$i.job
 done
+
+
 ```
 
 1. merge CpG-SNP list
