@@ -1,4 +1,26 @@
+1. download hg19/hg38 fa file
+```
+wget http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz
+```
+
+2. fa2mask.pl: change SNP to IUPAC
+```
+cd ~/hpc/db/hg19/1000Genome
+for i in {1..22} X Y
+do
+echo \#PBS -N chr$i  > chr$i.job
+echo cd $(pwd) >> chr$i.job
+echo perl fa2mask.pl chr$i >> chr$i.job
+qsub chr$i.job
+done
+```
+3. 
+
+
+
 1. merge CpG-SNP list
+
+
 ```
 for i in `ls *cpgsnp.bed`
 do
