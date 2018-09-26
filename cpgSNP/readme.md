@@ -34,6 +34,17 @@ do
 perl epiallele.pl chr$i
 done
 ```
+5. find the adjacent CpG-SNP counts
+```
+cd /home/guosa/hpc/db/hg38/fa/chroms
+for i in {1..22} X Y
+do
+bedtools window -w 2000 -a chr$i.CpGSnp.bed -b chr$i.CpGSnp.bed > chr$i.count
+echo $i
+done
+```
+
+
 
 #Plan2
 1. merge CpG-SNP list
