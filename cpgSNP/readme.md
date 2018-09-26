@@ -42,8 +42,14 @@ do
 bedtools window -w 2000 -a chr$i.CpGSnp.bed -b chr$i.CpGSnp.bed > chr$i.count
 echo $i
 done
-```
 
+cat *count.sort.bedgraph > commonCpGSnp.hg38.bedgraph
+```
+6. upload to ucsc, add the track information to bedgraph
+```
+browser position chr6:32457705-32995816
+track type=bedGraph name=CpG-SNP description="CpG_SNP Marshfield Clinic (commonSNP150)" visibility=full color=0,0,255 maxHeightPixels=128:60:1
+```
 
 
 #Plan2
