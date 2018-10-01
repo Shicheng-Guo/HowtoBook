@@ -46,5 +46,23 @@ CpG-loss-SNP occurred in RA-hypermethylation regions play predictive roles while
 ```
 
 ```
-### Plan A: pre-miRNA, allSNP150, CHB and CHS
+### Plan B: pre-miRNA, allSNP150, CHB and CHS
+```
+cd /home/guosa/hpc/rheumatology/RA/miRNASNP/planB
+bedtools intersect -wo -a ~/hpc/db/hg38/miRNA.hg38.bed -b ~/hpc/db/hg38/allSNP150.GRCH38.bed > miRNA.hg38.allSNP150.bed
+awk '{print $8}' miRNA.hg38.allSNP150.bed | sort -u > miRNA.hg38.allSNP150.list.txt
 
+for i in chr{1..22} chrX chrY
+do
+plink --bfile ~/hpc/db/hg19/1000Genome/plink/$i --keep ~/hpc/rheumatology/RA/miRNASNP/CHB_CHS_221.txt --extract miRNA.hg38.allSNP150.list.txt --maf 0.01 --freq --out $i
+done
+
+rm Freq.txt
+cat *frq >> Freq.txt
+awk '$5>0.01' Freq.txt | grep -v CHR > miRNA.hg38.allSNP150.maf.list.txt
+data<-read.table("miRNA.hg38.allSNP150.maf.list.txt")
+r1<-which(nchar(as.character(data$V4))>1)
+r2<-which(nchar(as.character(data$V3))>1)
+newdata=data[-unique(c(r1,r2)),]
+write.table(newdata,file="miRNA.hg38.allSNP150.maf.list.uni.snp.txt",sep="\t",quote=F,row.names=F,col.names=F)
+```
