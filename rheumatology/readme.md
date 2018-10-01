@@ -46,6 +46,5 @@ CpG-loss-SNP occurred in RA-hypermethylation regions play predictive roles while
 ```
 
 ```
-
-Plan A: miRNA, allSNP150, CHB and CHS
+### Plan A: pre-miRNA, allSNP150, CHB and CHS
 
