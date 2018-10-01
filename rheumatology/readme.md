@@ -1,6 +1,6 @@
 Readme:
 
-Plan A: miRNA, GWAS and commonSNP150
+Plan A: miRNA (mature), GWAS and commonSNP150
 
 1000 genome dataset re-trim (from vcf to plink without any filtering)
 ```
