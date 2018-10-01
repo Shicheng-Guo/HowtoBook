@@ -7,9 +7,11 @@ rs17482078	ERAP1	26% population attributable risk
 rs10050860	ERAP1	26% population attributable risk
 rs30187	ERAP1	26% population attributable risk
 rs2287987	ERAP1	26% population attributable risk
+rs2549803	ERAP1	26% population attributable risk
 rs11209026	IL23R	10% population attributable risk
 rs1004819	IL23R	10% population attributable risk
 rs10489629	IL23R	10% population attributable risk
 rs11465804	IL23R	10% population attributable risk
 rs1343151	IL23R	10% population attributable risk
 rs10889677	IL23R	10% population attributable risk
+rs11209026	IL23R	10% population attributable risk
