@@ -1,5 +1,7 @@
 Readme:
 
+Plan A: miRNA, GWAS and commonSNP150
+
 1000 genome dataset re-trim (from vcf to plink without any filtering)
 ```
 cd ~/hpc/db/hg19/1000Genome
@@ -45,4 +47,5 @@ CpG-loss-SNP occurred in RA-hypermethylation regions play predictive roles while
 
 ```
 
+Plan A: miRNA, allSNP150, CHB and CHS
 
