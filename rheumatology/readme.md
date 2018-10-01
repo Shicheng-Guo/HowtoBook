@@ -1,4 +1,4 @@
-Readme: Genome-wide Association Study 
+## Genome-wide Association Study 
 
 ### Plan A: miRNA (mature), GWAS and commonSNP150
 
