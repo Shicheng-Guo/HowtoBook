@@ -1,0 +1,42 @@
+
+input<-read.table("candidate.txt",sep="\t",head=T)
+data<-read.table("GSE55457.txt",sep="\t",head=T)
+out<-data.frame(input,data[match(input$rightID,data$Gene.symbol),])
+x1<-subset(out,regulation.m=="down"  & as.numeric(as.character(logFC))>0)
+x2<-subset(out,regulation.m=="up"  & as.numeric(as.character(logFC))<0)
+xx<-rbind(x1,x2)
+write.table(xx,file="GSE55457.rlt.txt",sep="\t",quote=F,col.names = T,row.names = T)
+
+
+input<-read.table("candidate.txt",sep="\t",head=T)
+data<-read.table("GSE55235.txt",sep="\t",head=T)
+out<-data.frame(input,data[match(input$rightID,data$Gene.symbol),])
+x1<-subset(out,regulation.m=="down"  & as.numeric(as.character(logFC))>0)
+x2<-subset(out,regulation.m=="up"  & as.numeric(as.character(logFC))<0)
+xx<-rbind(x1,x2)
+write.table(xx,file="GSE55235.rlt.txt",sep="\t",quote=F,col.names = T,row.names = T)
+
+input<-read.table("candidate.txt",sep="\t",head=T)
+data<-read.table("GSE7669.txt",sep="\t",head=T)
+out<-data.frame(input,data[match(input$rightID,data$Gene.symbol),])
+x1<-subset(out,regulation.m=="down"  & as.numeric(as.character(logFC))>0)
+x2<-subset(out,regulation.m=="up"  & as.numeric(as.character(logFC))<0)
+xx<-rbind(x1,x2)
+write.table(xx,file="GSE7669.rlt.txt",sep="\t",quote=F,col.names = T,row.names = T)
+
+
+input<-read.table("candidate.txt",sep="\t",head=T)
+data<-read.table("GSE55584.txt",sep="\t",head=T)
+out<-data.frame(input,data[match(input$rightID,data$Gene.symbol),])
+x1<-subset(out,regulation.m=="down"  & as.numeric(as.character(logFC))>0)
+x2<-subset(out,regulation.m=="up"  & as.numeric(as.character(logFC))<0)
+xx<-rbind(x1,x2)
+write.table(xx,file="GSE55584.rlt.txt",sep="\t",quote=F,col.names = T,row.names = T)
+
+input<-read.table("candidate.txt",sep="\t",head=T)
+data<-read.table("GSE49604.txt",sep="\t",head=T)
+out<-data.frame(input,data[match(input$rightID,data$Gene.symbol),])
+x1<-subset(out,regulation.m=="down"  & as.numeric(as.character(logFC))>0)
+x2<-subset(out,regulation.m=="up"  & as.numeric(as.character(logFC))<0)
+xx<-rbind(x1,x2)
+write.table(xx,file="GSE49604.rlt.txt",sep="\t",quote=F,col.names = T,row.names = T)
