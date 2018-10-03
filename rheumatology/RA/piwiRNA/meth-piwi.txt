@@ -1,0 +1,35 @@
+GSE	GSM	species	tissue	cell type	methylation type	experiment
+GSE16368	GSM1127117	Homo sapiens	testis	sperm	5mC	Bisulfite-Seq
+GSE16368	GSM1127119	Homo sapiens	testis	sperm	5mC	Bisulfite-Seq
+GSE16368	GSM669604	Homo sapiens	brain	fetal brain tissue	5mC	MRE-Seq
+GSE16368	GSM669605	Homo sapiens	brain	fetal brain tissue	5mC	MRE-Seq
+GSE16368	GSM669614	Homo sapiens	brain	fetal brain tissue	5mC	MeDIP-Seq
+GSE16368	GSM669615	Homo sapiens	brain	fetal brain tissue	5mC	MeDIP-Seq
+GSE17312	GSM706838	Homo sapiens	brain	fetal brain tissue	5mC	Bisulfite-Seq
+GSE17312	GSM706840	Homo sapiens	brain	fetal brain tissue	5mC	Bisulfite-Seq
+GSE16368	GSM707015	Homo sapiens	brain	fetal brain tissue	5mC	MRE-Seq
+GSE16368	GSM707019	Homo sapiens	brain	fetal brain tissue	5mC	MeDIP-Seq
+GSE16368	GSM707023	Homo sapiens	brain	brain (germinal matrix) tissue	5mC	MeDIP-Seq
+GSE16368	GSM817248	Homo sapiens	brain	fetal brain tissue	5mC	MeDIP-Seq
+GSE16368	GSM817249	Homo sapiens	brain	fetal brain tissue	5mC	MeDIP-Seq
+GSE17312	GSM916050	Homo sapiens	brain	hippocampus middle cells	5mC	Bisulfite-Seq
+GSE17312	GSM916074	Homo sapiens	brain	anterior caudate cells	5mC	Bisulfite-Seq
+GSE17312	GSM916078	Homo sapiens	brain	substantia nigra cells	5mC	Bisulfite-Seq
+GSE17312	GSM916079	Homo sapiens	brain	anterior caudate cells	5mC	Bisulfite-Seq
+GSE17312	GSM916080	Homo sapiens	brain	inferior temporal lobe cells	5mC	Bisulfite-Seq
+GSE17312	GSM916085	Homo sapiens	brain	mid frontal lobe cells	5mC	Bisulfite-Seq
+GSE17312	GSM916086	Homo sapiens	brain	substantia nigra cells	5mC	Bisulfite-Seq
+GSE17312	GSM916087	Homo sapiens	brain	angular gyrus cells	5mC	Bisulfite-Seq
+GSE17312	GSM916090	Homo sapiens	brain	cingulate gyrus cells	5mC	Bisulfite-Seq
+GSE16368	GSM941747	Homo sapiens	brain	brain (germinal matrix)	5mC	Bisulfite-Seq
+GSE17312	GSM1112838	Homo sapiens	brain	hippocampus middle cells	5mC	Bisulfite-Seq
+GSE63048	GSM1547685	Mus musculus	testis	germ cells	5mC	Bisulfite-Seq
+GSE63048	GSM1547686	Mus musculus	testis	germ cells	5mC	Bisulfite-Seq
+GSE63048	GSM1547687	Mus musculus	testis	germ cells	5mC	Bisulfite-Seq
+GSE63048	GSM1547688	Mus musculus	testis	germ cells	5mC	Bisulfite-Seq
+GSE63048	GSM1547689	Mus musculus	testis	germ cells	5mC	Bisulfite-Seq
+GSE63048	GSM1547690	Mus musculus	testis	germ cells	5mC	Bisulfite-Seq
+GSE63527	GSM1551779	Rattus norvegicus	brain	brain	5mC	MeDIP-seq
+GSE63527	GSM1551783	Rattus norvegicus	brain	brain	5mC	MRE-seq
+GSE63527	GSM1551780	Rattus norvegicus	testis	sperm	5mC	MeDIP-seq
+GSE63527	GSM1551784	Rattus norvegicus	testis	sperm	5mC	MRE-seq
