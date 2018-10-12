@@ -39,13 +39,8 @@ bedtools window -w 500000 -a miRNA.seed.commonSNP150.hg38.bed -b AutoImmue.GWAS.
 bedtools window -w 500000 -a miRNA.seed.commonSNP150.hg38.bed -b AutoImmue.GWAS.SNP.hg38.commonSNP.bed | awk '{print $16}' | sort -u | wc -l
 ```
 CHB and CHS performance for these 93 SNPs
-```
-
-```
 CpG-loss-SNP occurred in RA-hypermethylation regions play predictive roles while CpG-gain-SNPs occurred in RA-hypomethylation regions play risk roles
-```
 
-```
 ### Plan B: pre-miRNA, allSNP150, CHB and CHS (N=116)
 ```
 cd /home/guosa/hpc/rheumatology/RA/miRNASNP/planB
