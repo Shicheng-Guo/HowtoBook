@@ -2,12 +2,19 @@
 
 ### Plan A: miRNA (mature), GWAS and commonSNP150
 1000 genome dataset re-trim (from vcf to plink without any filtering)
+
 1982 auto-immnue GWAS-SNP and 2016 immune-disease GWAS records(hg38 bed)
+
 miRNA (hg38) mature region (seed) download from ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
+
 241 miRNA-SNP (commonSNP150) were identified in the seed region of 2883 miRNA records.
+
 9 miRNA, 17 miRNA-SNPs and 19 RA-GWAS-SNP were collected in the study.
+
 56 miRNA, 64 miRNA-SNPs and 195 immune-disease-GWAS-SNP were collected in the study.
+
 CHB and CHS performance for these 93 SNPs
+
 CpG-loss-SNP occurred in RA-hypermethylation regions play predictive roles while CpG-gain-SNPs occurred in RA-hypomethylation regions play risk roles
 ```
 cd ~/hpc/db/hg19/1000Genome
