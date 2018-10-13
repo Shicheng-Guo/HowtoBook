@@ -1,0 +1,43 @@
+				
+	rank	total.cites	impact.factor	eigen-score
+nature reviews immunology	11	34,948	39.932	0.09301
+annual review of immunology	28	17,290	28.396	0.03641
+immunity	42	43,303	22.845	0.14964
+nature immunology	47	38,936	21.506	0.11348
+trends in immunology	131	10,436	13.287	0.0291
+journal of allergy and clinical immunology	137	46,218	13.081	0.0834
+annals of the rheumatic diseases	140	39,185	12.811	0.08392
+nature reviews rheumatology	155	5,316	12.188	0.02055
+immunological reviews	228	13,751	9.614	0.03466
+autoimmunity reviews	263	7,670	8.961	0.01931
+current opinion in immunology	298	9,083	8.384	0.0235
+journal of autoimmunity	336	5,472	7.641	0.01316
+arthritis & rheumatology	413	5,357	6.918	0.02572
+frontiers in immunology	469	12,225	6.429	0.05835
+epigenetics & chromatin	734	1,093	5.189	0.00645
+clinical epigenetics	780	1,322	4.987	0.00449
+rheumatology	838	17,249	4.818	0.03322
+osteoarthritis and cartilage	869	13,462	4.742	0.02577
+epigenomics	948	1,566	4.541	0.00569
+seminars in arthritis and rheumatism	968	4,700	4.498	0.00962
+current opinion in rheumatology	975	4,317	4.475	0.01009
+epigenetics	1012	4,665	4.394	0.01691
+rheumatic disease clinics of north america	1850	1,824	3.341	0.00288
+joint bone spine	1866	3,234	3.329	0.00683
+journal of rheumatology	2087	22,091	3.15	0.02599
+current rheumatology reports	2508	2,042	2.865	0.00571
+scandinavian journal of rheumatology	2837	2,903	2.667	0.00487
+clinical and experimental rheumatology	2893	7,111	2.634	0.01176
+international journal of rheumatic diseases	2916	1,416	2.624	0.00447
+lupus	3261	6,259	2.454	0.01027
+clinical rheumatology	3467	6,347	2.365	0.01242
+pediatric rheumatology	3679	703	2.283	0.00231
+connective tissue research	4831	1,970	1.832	0.00255
+rheumatology international	4864	5,292	1.824	0.01232
+modern rheumatology	4882	2,235	1.818	0.00602
+bmc musculoskeletal disorders	5142	7,100	1.739	0.01947
+jcr-journal of clinical rheumatology	6643	1,521	1.322	0.00327
+revista brasileira de reumatologia	8021	653	1	0.00136
+acta reumatologica portuguesa	8370	326	0.929	0.00068
+archives of rheumatology	11320	39	0.312	8.00E-05
+journal of musculoskeletal pain	11320	268	0.312	0.00026
