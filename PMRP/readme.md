@@ -1,3 +1,18 @@
+
+1. CEU Reference from 1000 Genome Project
+```
+cd /gpfs/home/guosa/hpc/tools/beagle/
+for i in {1..24}
+do
+echo \#PBS -N chr$i  > chr$i.job
+echo \#PBS -l nodes=1:ppn=1 >> chr$i.job
+echo cd $(pwd) >> chr$i.job
+echo plink --vcf chr$i.1kg.phase3.v5a.vcf.gz --recode vcf --keep EUR.incl --make-bed --out chr$i.1kg.phase3.v5a >> chr$i.job
+qsub chr$i.job
+done
+```
+
+
 ```
 cd /gpfs/home/guosa/hpc/project/pmrp/phase2/phase
 for i in {1..24}
