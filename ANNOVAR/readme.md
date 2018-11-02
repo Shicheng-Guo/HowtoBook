@@ -55,3 +55,18 @@ echo annotate_variation.pl -out ../annovar/chr$i.annovar.txt -build hg19 ../anno
 qsub chr$i.job
 done
 ```
+
+
+# Annotation and Compound heterozygotes scanning
+'''
+cd ~/hpc/project/pmrp/Exom2/imputation
+for i in {1..22} 
+do
+echo \#PBS -N chr$i  > chr$i.job
+echo \#PBS -l nodes=1:ppn=1 >> chr$i.job
+echo cd $(pwd) >> chr$i.job
+echo convert2annovar.pl -format vcf4 -allsample -withfreq -includeinfo -withzyg chr$i.dose.filter.9.vcf.gz  \> ../annovar/chr$i.dose.vcf.9.avinput >> chr$i.job
+echo table_annovar.pl ../annovar/chr$i.dose.vcf.9.avinput ~/hpc/tools/annovar/humandb/ --thread 4 -buildver hg19 --csvout -out ../annovar/chr$i.9 -remove -protocol refGene,ljb23_fathmm,ljb23_metasvm,ljb23_metalr,eigen,gwasCatalog,wgRna,targetScanS,tfbsConsSites -operation gx,r,f,f,r,r,r,r -nastring . -otherinfo  -polish -xref ~/hpc/tools/annovar/humandb/gene_fullxref.txt >> chr$i.job
+qsub chr$i.job
+done
+'''
