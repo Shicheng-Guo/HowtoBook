@@ -1,7 +1,13 @@
 How to use ANNOVAR to annotate VCF files:
 
+check all ANNOVAR database
+
 ```
-## Step 1:  Download Annotation Files
+-webfrom annovar -downdb avdblist
+```
+
+Download Annotation Files
+```
 cd /home/guosa/hpc/tools/annovar
 # just for allele frequency
 annotate_variation.pl -downdb -webfrom annovar exac03 humandb -buildver hg19  &
