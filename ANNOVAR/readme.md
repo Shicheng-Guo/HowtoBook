@@ -1,4 +1,4 @@
-How to use ANNOVAR to annotate VCF files:
+## How to use ANNOVAR to annotate VCF files:
 
 check all ANNOVAR database
 
