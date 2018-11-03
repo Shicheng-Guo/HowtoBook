@@ -76,3 +76,16 @@ echo table_annovar.pl ../annovar/chr$i.dose.vcf.9.avinput ~/hpc/tools/annovar/hu
 qsub chr$i.job
 done
 ```
+## from annovar to vcf,bcf,annotation and add this inforamation as INFO in vcf
+```
+cd /gpfs/home/guosa/hpc/project/pmrp/Exom2/annovar
+for i in chr{1..22}
+do
+echo \#PBS -N $i  > $i.job
+echo \#PBS -l nodes=1:ppn=1 >> $i.job
+echo cd $(pwd) >> $i.job
+echo bgzip -c $i.anno.txt > $i.anno.vcf.gz  >> $i.job
+echo tabix -p vcf $i.anno.vcf.gz >> $i.job
+qsub $i.job
+done
+```
