@@ -1,11 +1,16 @@
 ## How to use ANNOVAR to annotate VCF files:
 
-As the following command, annovar can download all the db files from ucsc which are suffix as `txt.gz`. After the downloading, annovar will prefix the file with hg19 or hg19 and save it to the directory assigned (humandb/). 
+As the following command, annovar can download all the db files from ucsc which are suffix as `txt.gz`. After the downloading, annovar will prefix the file with hg19 or hg19 and save it to the directory assigned (`humandb/`).  
 ```
+cd ~/hpc/tools/annovar
 annotate_variation.pl -downdb -build hg19 gtexEqtlTissueArteryAorta  humandb/
 ```
+As the following command, annovar will make annotation as the fifth column of the db file. 
+```
+cd ~/hpc/project/pmrp/Exom2/annovar
+table_annovar.pl chr22.vcf.avinput ~/hpc/tools/annovar/humandb/ --thread 4 -buildver hg19 --csvout -out chr22 -remove -protocol refGene,gwasCatalog,gtexEqtlCluster -operation gx,r,r -nastring . 
+```
 
-check all ANNOVAR database
 
 ```
 -webfrom annovar -downdb avdblist
