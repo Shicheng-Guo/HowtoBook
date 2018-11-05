@@ -89,3 +89,9 @@ echo tabix -p vcf $i.anno.vcf.gz >> $i.job
 qsub $i.job
 done
 ```
+## eQTL annotation files based on hg19 in annovar
+```
+cd ~/hpc/tools/annovar
+annotate_variation.pl -downdb -build hg19 gtexEqtlTissueArteryAorta  humandb/
+annotate_variation.pl -downdb -build hg19 gtexEqtlCluster  humandb/
+```
