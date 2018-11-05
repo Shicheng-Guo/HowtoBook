@@ -10,7 +10,7 @@ As the following command, annovar will make annotation as the fifth column of th
 cd ~/hpc/project/pmrp/Exom2/annovar
 table_annovar.pl chr22.vcf.avinput ~/hpc/tools/annovar/humandb/ --thread 4 -buildver hg19 --csvout -out chr22 -remove -protocol refGene,gwasCatalog,gtexEqtlCluster -operation gx,r,r -nastring . 
 ```
-How to prepare customed db file
+5 column customed db files can be preapre: `chr start  end ref alt info`
 ```
 ```
 
