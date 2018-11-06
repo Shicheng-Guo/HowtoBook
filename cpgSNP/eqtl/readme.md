@@ -1,5 +1,7 @@
 ### CpG-SNP-Loss-Gain and eQTL in human tissues
 
+* `gene_fullxref.txt` avoid + : [] characteristic in this file.  
+
 ```
 cd ~/hpc/db/hg19
 perl annovar2bed.pl > cpgSNP.hg19.bed.V12.avinput
