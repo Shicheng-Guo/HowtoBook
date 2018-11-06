@@ -1,7 +1,6 @@
-
+HLA
 
 * ERAP1
-
 
 ```
 #HLA-DRB1*0401
