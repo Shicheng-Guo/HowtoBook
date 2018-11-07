@@ -1,7 +1,7 @@
 Step 3. Phase the genotyping data with beagle or michigen imputation server
 
 
-Step 4. Do the annotation to identify functional variants
+Step 3. Do the annotation to identify functional variants
 ```
 cd ~/hpc/project/pmrp/Exom2/imputation
 for i in chr{1..22} 
@@ -16,8 +16,9 @@ echo table_annovar.pl ../annovar/$i.vcf.avinput ~/hpc/tools/annovar/humandb/ --t
 qsub $i.job
 done
 ```
-
-
+Step 4. rebuild vcf files only containning functional loss-of-function variance in the samples
+```
+```
 
 Step 5. Run the test
 ```
