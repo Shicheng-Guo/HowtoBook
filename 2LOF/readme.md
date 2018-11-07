@@ -18,6 +18,16 @@ done
 ```
 Step 4. rebuild vcf files only containning functional loss-of-function variance in the samples
 ```
+# add INFO annotation to LOSS ALLLELS
+cd /gpfs/home/guosa/hpc/project/pmrp/Exom2/annovar
+for i in chr{1..22}
+do
+echo \#PBS -N $i  > $i.job
+echo \#PBS -l nodes=1:ppn=1 >> $i.job
+echo cd $(pwd) >> $i.job
+echo Rscript --vanilla readanno.R $i >> $i.job
+qsub $i.job
+done
 ```
 
 Step 5. Run the test
