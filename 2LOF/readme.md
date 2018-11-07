@@ -1,0 +1,13 @@
+
+
+```
+cd /gpfs/home/guosa/hpc/project/pmrp/Exom2/2LOF
+for i in `ls *.update.vcf`
+do
+echo \#PBS -N $i  > $i.job
+echo \#PBS -l nodes=1:ppn=8 >> $i.job
+echo cd $(pwd) >> $i.job
+echo Rscript --vanilla 2LOF.R $i >> $i.job
+qsub $i.job
+done
+```
