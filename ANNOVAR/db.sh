@@ -1,5 +1,8 @@
 ## Step 1:  Download Annotation Files
 cd ~/hpc/tools/annovar
+annotate_variation.pl -downdb -webfrom annovar -build hg19 dbnsfp35c  humandb/ &
+cd -
+
 annotate_variation.pl -downdb -webfrom annovar -build hg19 dbnsfp33a  humandb/
 annotate_variation.pl -downdb -webfrom annovar -build hg19 ljb23_all  humandb/
 annotate_variation.pl -downdb -webfrom annovar ljb23_fathmm humandb -buildver hg19  &
