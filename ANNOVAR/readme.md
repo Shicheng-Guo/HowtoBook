@@ -1,6 +1,6 @@
 ## How to use ANNOVAR to annotate VCF files:
 
-preferred annotation command:
+Preferred annotation command:
 
 ```
 avinput="chr22.vcf.avinput"
