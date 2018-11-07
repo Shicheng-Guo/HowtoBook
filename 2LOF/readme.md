@@ -1,5 +1,6 @@
 
 
+Step 5. Run the test
 ```
 cd /gpfs/home/guosa/hpc/project/pmrp/Exom2/2LOF
 for i in `ls *.update.vcf`
