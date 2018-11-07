@@ -1,3 +1,7 @@
+Step 3. Phase the genotyping data with beagle or michigen imputation server
+
+
+Step 4. Do the annotation to identify functional variants
 
 
 Step 5. Run the test
