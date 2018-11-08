@@ -6,8 +6,7 @@ wget https://storage.googleapis.com/gnomad-public/release/2.1/vcf/genomes/gnomad
 wget https://storage.googleapis.com/gnomad-public/release/2.1/vcf/exomes/gnomad.exomes.r2.1.sites.chr$i.vcf.bgz.tbi
 done
 ```
-2. extract the VEP annotation to SNV
-
+2. bgz to gz and re-tabix
 ```
 cd /gpfs/home/guosa/hpc/db/Gnomad
 for i in `ls *bgz`
@@ -15,8 +14,9 @@ do
 echo \#PBS -N $i  > $i.job
 echo \#PBS -l nodes=1:ppn=16 >> $i.job
 echo cd $(pwd) >> $i.job
-echo mv $i > $i.gz >> $i.job
+echo mv $i \> $i.gz >> $i.job
 echo tabix -p vcf $i.gz >> $i.job
 qsub $i.job
 done
 ```
+3.  extract the VEP annotation to SNV
