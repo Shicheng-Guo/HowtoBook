@@ -30,7 +30,36 @@ qsub $i.job
 done
 ```
 
-Step 5. Run the test
+step 5. build annotation file for vcf as the input of bcftools
+```
+cd /gpfs/home/guosa/hpc/project/pmrp/Exom2/annovar
+for i in chr{1..22}
+do
+echo \#PBS -N $i  > $i.job
+echo \#PBS -l nodes=1:ppn=1 >> $i.job
+echo cd $(pwd) >> $i.job
+echo sort -k1,1 -k2,2n $i.anno.txt \> $i.sort.anno.txt >> $i.job
+echo bgzip -c $i.sort.anno.txt \> $i.anno.gz  >> $i.job
+echo tabix -s1 -b2 -e2 $i.anno.gz >> $i.job
+qsub $i.job
+done
+```
+step 6. add INFO annotation to LOSS ALLLELS
+```
+cd /gpfs/home/guosa/hpc/project/pmrp/Exom2/2LOF/
+for i in chr{1..22}
+do
+echo \#PBS -N $i  > $i.job
+echo \#PBS -l nodes=1:ppn=1 >> $i.job
+echo cd $(pwd) >> $i.job
+echo bcftools view ../imputation/$i.dose.trim.9.vcf.gz -R ../annovar/$i.anno.txt -Oz -o ../2LOF/$i.vcf.gz >> $i.job
+echo bcftools annotate -x INFO,FILTER ../2LOF/$i.vcf.gz -Oz -o ../2LOF/$i.vcf.tmp.gz >> $i.job
+echo bcftools annotate -a ../annovar/$i.anno.gz -h ../annovar/head.hdr -c CHROM,POS,REF,ALT,-,-,TAG3 $i.vcf.tmp.gz -Oz -o $i.update.vcf.gz >> $i.job
+echo rm ../2LOF/$i.vcf.tmp.gz >> $i.job
+qsub $i.job
+done
+```
+Step 7. Run the test
 ```
 cd /gpfs/home/guosa/hpc/project/pmrp/Exom2/2LOF
 for i in `ls *.update.vcf`
