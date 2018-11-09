@@ -22,12 +22,12 @@ done
 3.  extract the VEP annotation to SNV
 ```
 cd /gpfs/home/guosa/hpc/db/Gnomad
-for i in `ls *gz`
+for i in {1..22} X Y
 do
 echo \#PBS -N $i  > $i.job
 echo \#PBS -l nodes=1:ppn=1 >> $i.job
 echo cd $(pwd) >> $i.job
-echo recode.pl $i \> $i.avinput >> $i.job
+echo perl recode.pl gnomad.genomes.r2.1.sites.chr$i.vcf.bgz \> gnomad.genomes.r2.1.sites.chr$i.vcf.bgz.annovar.txt >> $i.job
 qsub $i.job
 done
 ```
