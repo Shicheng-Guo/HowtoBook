@@ -67,7 +67,16 @@ do
 echo \#PBS -N $i  > $i.job
 echo \#PBS -l nodes=1:ppn=8 >> $i.job
 echo cd $(pwd) >> $i.job
-echo Rscript --vanilla 2LOF.R $i >> $i.job
+echo Rscript --vanilla 2LOF.R $i /gpfs/home/guosa/hpc/project/pmrp/phen/IBDCH_Phetyp10_Obesity_SampleIDs.Michigen.txt >> $i.job
+echo Rscript --vanilla 2LOF.R $i /gpfs/home/guosa/hpc/project/pmrp/phen/IBDCH_Phetyp1_RA_rev2_SampleIDs.Michigen.txt >> $i.job
+echo Rscript --vanilla 2LOF.R $i /gpfs/home/guosa/hpc/project/pmrp/phen/IBDCH_Phetyp7_Iron_C1_rev2_SampleIDs.Michigen.txt >> $i.job
+echo Rscript --vanilla 2LOF.R $i /gpfs/home/guosa/hpc/project/pmrp/phen/IBDCH_Phetyp7_Iron_C2_rev2_SampleIDs.Michigen.txt >> $i.job
+echo Rscript --vanilla 2LOF.R $i /gpfs/home/guosa/hpc/project/pmrp/phen/IBDCH_Phetyp3_PA_rev2_SampleIDs.Michigen.txt >> $i.job
+echo Rscript --vanilla 2LOF.R $i /gpfs/home/guosa/hpc/project/pmrp/phen/IBDCH_Phetyp5_Thyroid_C1_rev2_SampleIDs.Michigen.txt >> $i.job
+echo Rscript --vanilla 2LOF.R $i /gpfs/home/guosa/hpc/project/pmrp/phen/IBDCH_Phetyp5_Thyroid_C2_rev2_SampleIDs.Michigen.txt >> $i.job
+echo Rscript --vanilla 2LOF.R $i /gpfs/home/guosa/hpc/project/pmrp/phen/IBDCH_Phetyp6_SSc_rev2_SampleIDs.Michigen.txt >> $i.job
+echo Rscript --vanilla 2LOF.R $i /gpfs/home/guosa/hpc/project/pmrp/phen/IBDCH_Phetyp6_ANA_rev2_SampleIDs.Michigen.txt >> $i.job
+echo Rscript --vanilla 2LOF.R $i /gpfs/home/guosa/hpc/project/pmrp/phen/IBDCH_Phetyp6_ENA_rev2_SampleIDs.Michigen.txt >> $i.job
 qsub $i.job
 done
 ```
