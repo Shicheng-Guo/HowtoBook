@@ -59,7 +59,7 @@ echo rm ../2LOF/$i.vcf.tmp.gz >> $i.job
 qsub $i.job
 done
 ```
-Step 7. Run the test
+Step 7a. Run the test, each phenotype, each run
 ```
 
 cd /gpfs/home/guosa/hpc/project/pmrp/Exom2/2LOF
@@ -79,5 +79,18 @@ echo  Rscript --vanilla 2LOF.R chr$i.update.vcf /gpfs/home/guosa/hpc/project/pmr
 echo  Rscript --vanilla 2LOF.R chr$i.update.vcf /gpfs/home/guosa/hpc/project/pmrp/phen/IBDCH_Phetyp6_ANA_rev2_SampleIDs.Michigen.txt >> $i.job
 echo  Rscript --vanilla 2LOF.R chr$i.update.vcf /gpfs/home/guosa/hpc/project/pmrp/phen/IBDCH_Phetyp6_ENA_rev2_SampleIDs.Michigen.txt >> $i.job
 qsub $i.job
+done
+```
+Step 7b. Speed up analysis, each chr, each phenotype, each run 
+```
+cd /gpfs/home/guosa/hpc/project/pmrp/Exom2/2LOF
+for i in {1..22}
+do
+for j in `ls /gpfs/home/guosa/hpc/project/pmrp/phen/IBDCH_Phe*.Michigen.txt`
+echo \#PBS -N chr$i.$j.Guo  > $j.$i.job
+echo \#PBS -l nodes=1:ppn=1 >> $j.$i.job
+echo cd $(pwd) >> $j.$i.job
+echo Rscript --vanilla 2LOF.R chr$i.update.vcf /gpfs/home/guosa/hpc/project/pmrp/phen/$j >> $j.$i.job
+qsub $j.$i.job
 done
 ```
