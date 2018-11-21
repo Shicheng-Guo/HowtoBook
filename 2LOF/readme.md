@@ -39,7 +39,7 @@ do
 echo \#PBS -N $i  > $i.job
 echo \#PBS -l nodes=1:ppn=1 >> $i.job
 echo cd $(pwd) >> $i.job
-echo Rscript --vanilla readanno.R $i 2>> $i.job
+echo Rscript --vanilla readanno.R $i \2>> $i.job
 qsub $i.job
 done
 ```
