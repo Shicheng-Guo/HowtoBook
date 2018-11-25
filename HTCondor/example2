@@ -1,0 +1,23 @@
+
+## view.sub
+
+executable = view.sh
+should_transfer_files = IF_NEEDED
+when_to_transfer_output = ON_EXIT
+arguments=$(Process)
+log = $(job)_$(Cluster).log
+output = $(job)_$(Cluster)_$(Process).out
+error = $(job)_$(Cluster)_$(Process).err
+request_cpus = 1
+request_memory = 20MB
+request_disk = 20MB
+queue 200
+
+
+## view.sh
+
+#!/bin/bash
+echo $1m
+sleep $1m
+wget https://www.frontiersin.org -O $1.txt
+rm $1.txt
