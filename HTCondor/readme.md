@@ -18,7 +18,8 @@ condor_submit job.sub
 condor_q
 ```
 
-4. check the status
+4. check the status and corresponding reason (hold)
 ```
+condor_q -hold -af HoldReason
 
 ```
