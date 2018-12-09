@@ -19,26 +19,26 @@ while (<FH>) {
       $tmpEmail = "None";
     }
     if ($tmpEmail =~ m/@/){
-	  next if $tmpEmail=~/@\w.*\s*\w.*@/;
-	  next if $tmpEmail=~/,/;
-	  next if $tmpEmail=~/\>/;
-	  next if $tmpEmail=~/Affiliatio/;
-	  next if $tmpEmail=~/\s+/;
-	  next if $tmpEmail=~/mail\:/;
-	  next if $tmpEmail=~/\:/;
-	  next if $tmpEmail=~/\(/;
-	  next if $tmpEmail=~/\)/;
-	  next if $tmpEmail=~/\//;
-	  next if $tmpEmail=~/\\/;
-	  next if $tmpEmail=~/gov1/;
-	  next if $tmpEmail=~/stanfordedu/;
+          next if $tmpEmail=~/@\w.*\s*\w.*@/;
+          next if $tmpEmail=~/,/;
+          next if $tmpEmail=~/\>/;
+          next if $tmpEmail=~/Affiliatio/;
+          next if $tmpEmail=~/\s+/;
+          next if $tmpEmail=~/mail\:/;
+          next if $tmpEmail=~/\:/;
+          next if $tmpEmail=~/\(/;
+          next if $tmpEmail=~/\)/;
+          next if $tmpEmail=~/\//;
+          next if $tmpEmail=~/\\/;
+          next if $tmpEmail=~/gov1/;
+          next if $tmpEmail=~/stanfordedu/;
       $tmpEmail=lc $tmpEmail;
-	  my @email=split/\./,$tmpEmail;
-	  next if defined $email{$tmpEmail};
-      print OUT "$tmpEmail\tDr\t$tmpForeName\t$tmpLastName\t$tmpLastName\tResearch\n" if ! defined $email{$tmpEmail};
-	  $email{$tmpEmail}++;
+          my @email=split/\./,$tmpEmail;
+          next if defined $email{$tmpEmail};
+      print OUT "$tmpEmail\tDr\t$tmpForeName\t$tmpLastName\t.\t$tmpLastName\n" if ! defined $email{$tmpEmail};
+          $email{$tmpEmail}++;
       $tmpEmail = "None";
-	  my $country=$email[$#email];
+          my $country=$email[$#email];
     }
   }
 }
