@@ -20,3 +20,9 @@ do
 plink --bfile S_Hebbring_Unr.Guo --recode vcf --chr $i --snps-only just-acgt --out ./beagle/S_Hebbring_Unr.Guo.Forward.chr$i
 done
 ```
+
+```
+pdf("MRCI.PMRP.MAF.distribution.pdf")
+hist(log(newdata$MAF,10),xlim=c(-5,0),main="Histogram of Log(MAF, 10)",xlab="Log(MAF, 10)",col="blue")
+dev.off()
+```
