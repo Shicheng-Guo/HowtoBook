@@ -1,0 +1,1 @@
+ perl -lane 'print $1 if $_=~/(rs\d+)\s+/g' pubmed_result_RA.xml > RA.RS.txt
