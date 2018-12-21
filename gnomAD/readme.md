@@ -48,8 +48,12 @@ perl index.pl gnomad.genomes.r2.1.sites.chr2.vcf.bgz.annovar.db 1000
 ```
 6. annotate SNPs with gnomad-annovar-db
 ```
-
 ```
-
+7. prepare eQTL annotation
+```
+```
+8. prepare methylation annotation
+```
+```
 
 
