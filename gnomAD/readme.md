@@ -1,4 +1,4 @@
-##### gnomAD (hg19)
+gnomAD (hg19)
 
 1. download gnomAD
 ```
