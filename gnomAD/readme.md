@@ -31,3 +31,17 @@ echo perl recode.pl gnomad.genomes.r2.1.sites.chr$i.vcf.bgz \> gnomad.genomes.r2
 qsub $i.job
 done
 ```
+
+4. prepre gnomad annotation to annovar db
+
+```
+
+```
+
+5. annotate SNPs with gnomad-annovar-db
+```
+
+```
+
+
+
