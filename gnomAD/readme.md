@@ -33,15 +33,20 @@ echo perl recode.pl gnomad.genomes.r2.1.sites.chr$i.vcf.bgz \> gnomad.genomes.r2
 qsub $i.job
 done
 ```
-
-4. prepre gnomad annotation to annovar db (4 column bed file is the best choice for annovar-anno-db)
+4. remove non-rs SNPs
+```
+for i in {1..22}
+do
+perl -lane '{print $_ if @F[6]=~/rs/}' gnomad.genomes.r2.1.sites.chr$i.vcf.bgz.annovar.txt > gnomad.genomes.r2.1.sites.chr$i.vcf.bgz.annovar.hg19.bed
+done
+```
+5. prepre gnomad annotation to annovar db (4 column bed file is the best choice for annovar-anno-db)
 ```
 cd /gpfs/home/guosa/hpc/db/Gnomad
 cat *.txt > gnomad.genomes.r2.1.sites.chr2.vcf.bgz.annovar.db
 perl index.pl gnomad.genomes.r2.1.sites.chr2.vcf.bgz.annovar.db 1000
 ```
-
-5. annotate SNPs with gnomad-annovar-db
+6. annotate SNPs with gnomad-annovar-db
 ```
 
 ```
