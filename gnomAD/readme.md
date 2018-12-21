@@ -36,6 +36,8 @@ done
 
 4. prepre gnomad annotation to annovar db (4 column bed file is the best choice for annovar-anno-db)
 ```
+cd /gpfs/home/guosa/hpc/db/Gnomad
+cat *.txt > gnomad.genomes.r2.1.sites.chr2.vcf.bgz.annovar.db
 
 ```
 
