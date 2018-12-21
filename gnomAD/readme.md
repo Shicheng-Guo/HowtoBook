@@ -1,3 +1,6 @@
+
+:gnomAD (hg19)
+
 1. download gnomAD
 ```
 for i in {1..22} X Y
