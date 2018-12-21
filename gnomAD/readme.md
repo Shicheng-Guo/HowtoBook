@@ -34,8 +34,7 @@ qsub $i.job
 done
 ```
 
-4. prepre gnomad annotation to annovar db
-
+4. prepre gnomad annotation to annovar db (4 column bed file is the best choice for annovar-anno-db)
 ```
 
 ```
