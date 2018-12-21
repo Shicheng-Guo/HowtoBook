@@ -38,7 +38,7 @@ done
 ```
 cd /gpfs/home/guosa/hpc/db/Gnomad
 cat *.txt > gnomad.genomes.r2.1.sites.chr2.vcf.bgz.annovar.db
-
+perl index.pl gnomad.genomes.r2.1.sites.chr2.vcf.bgz.annovar.db 1000
 ```
 
 5. annotate SNPs with gnomad-annovar-db
