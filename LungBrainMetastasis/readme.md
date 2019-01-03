@@ -1,1 +1,1 @@
-Genetic mutations associated with lung cancer metastasis to the brain.
+Whole-exome sequencing identifies somatic mutations associated with mortality and lung cancer metastasis to the brain
