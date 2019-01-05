@@ -1,7 +1,7 @@
 ## How to use ANNOVAR to annotate VCF files:
 
 Preferred annotation command:
-
+##
 ```
 avinput="chr22.vcf.avinput"
 table_annovar.pl $avinput ~/hpc/tools/annovar/humandb/ --thread 12 -buildver hg19 --csvout -out $avinput -remove -protocol refGene,dbnsfp35c,gnomad_genome,gwasCatalog,gtexEqtlCluster -operation g,f,f,r,r -nastring . 
