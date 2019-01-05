@@ -2,6 +2,7 @@ Step 3. Phase the genotyping data with beagle or michigen imputation server
 
 ```
 cd ~/hpc/project/pmrp/Exom2/imputation
+
 for i in chr{1..22} 
 do
 echo \#PBS -N $i  > $i.job
