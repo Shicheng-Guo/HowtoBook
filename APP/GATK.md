@@ -1,2 +1,2 @@
-GATK Usage Documents
+### GATK Usage Documents
 1. [Somatic calling is NOT simply a difference between two callsets](https://software.broadinstitute.org/gatk/documentation/article?id=11127)
