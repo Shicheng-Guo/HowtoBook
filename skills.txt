@@ -1,0 +1,7 @@
+Bioinformatics and Comparative Genomics NGS data (GBS, RNASeq), De novo and Reference based Reads Assembly, SNP Variation Calling (Tophat, VCFTools, BCFTools, SamTools, PLink), Selective Sweep Scan (SweeD, H12 test), Gene Expression Analysis (Cufflinks, CummeRbund, DESeq), Gene Annotation (SnpEff), Gene Ontology, CIRCOS plot, LeafJ
+ 
+Computer and Data Science Linux/Unix, Python (Pandas, Numpy, Scipy, Scikit-learn), R (R/qtl, ggplot2, RMarkdown), SQL, LaTex, GitHub.
+ 
+Population and Quantitative Genetics STRUCTURE, PCA, DIY-ABC, ∂a∂i, PAML, fastSimCoal, SLiM, WGCNA, QTL mapping, GWAS, Marker Assistant Selection.
+ 
+Biogeography TCS, Ecological Niche Modeling, Phylogeny Construction (RAxML, BEAST, TreeMix)
