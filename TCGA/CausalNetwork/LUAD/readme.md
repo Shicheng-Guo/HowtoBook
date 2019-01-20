@@ -1,5 +1,7 @@
 Protocol To Downlad TCGA Data From GDC in Windows and to network directory
 ```
+Set-Location \\mcrfnas2\bigdata\Genetic\Projects\shg047\tcga\xiong\luad
+
 mkdir mh450
 mkdir fpkm-uq
 mkdir miRNA
