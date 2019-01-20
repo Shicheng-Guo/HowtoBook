@@ -2,6 +2,8 @@
 
 #### Full dataset for Causal Network Analysis
 
+Marshfield Clinic don't support Linux gdc-client. I download gdc-client.exe and run it in Windows System. 
+
 LUAD: Lung Adenocarcinoma (TCGA-LUAD) data collection 
 ```
 cd /gpfs/home/guosa/hpc/tcga/xiong/luad
