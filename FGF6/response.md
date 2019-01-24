@@ -7,6 +7,15 @@ plink --bfile FinalRelease_QC_20140311_Team1_Marshfield.MIND.GENO.fSNP --freq --
 ```
 
 ```
+data<-read.table("plink1.frq",sep="",head=T)
+L1<-nrow(subset(data,MAF==0))
+L2<-nrow(subset(data,MAF>0 & MAF<0.001))
+L3<-nrow(subset(data,MAF>0.001 & MAF<0.005))
+L4<-nrow(subset(data,MAF>0.005 & MAF<0.01))
+L5<-nrow(subset(data,MAF>0.01 & MAF<0.05))
+L6<-nrow(subset(data,MAF>0.05))
+x1<-c(L1,L2,L3,L4,L5,L6)
+
 data<-read.table("plink2.frq",sep="",head=T)
 L1<-nrow(subset(data,MAF==0))
 L2<-nrow(subset(data,MAF>0 & MAF<0.001))
@@ -14,4 +23,5 @@ L3<-nrow(subset(data,MAF>0.001 & MAF<0.005))
 L4<-nrow(subset(data,MAF>0.005 & MAF<0.01))
 L5<-nrow(subset(data,MAF>0.01 & MAF<0.05))
 L6<-nrow(subset(data,MAF>0.05))
+x2<-c(L1,L2,L3,L4,L5,L6)
 ```
