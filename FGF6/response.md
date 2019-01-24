@@ -4,9 +4,7 @@ plink --bfile ../FinalRelease_QC_20140311_Team1_Marshfield --mind 0.05 --geno 0.
 plink --bfile FinalRelease_QC_20140311_Team1_Marshfield.MIND.GENO --freq --out plink1
 plink --bfile FinalRelease_QC_20140311_Team1_Marshfield.MIND.GENO --extract fSNP.bed --range --make-bed --out FinalRelease_QC_20140311_Team1_Marshfield.MIND.GENO.fSNP
 plink --bfile FinalRelease_QC_20140311_Team1_Marshfield.MIND.GENO.fSNP --freq --out plink2
-```
 
-```
 data<-read.table("plink1.frq",sep="",head=T)
 L1<-nrow(subset(data,MAF==0))
 L2<-nrow(subset(data,MAF>0 & MAF<0.001))
