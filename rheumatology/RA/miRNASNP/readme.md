@@ -2,7 +2,6 @@
 miRNA-SNP: http://bioinfo.life.hust.edu.cn/miRNASNP2/download.php
 
 * miRNA_gain_by_SNPs_in_gene_3utr.txt
-
 * miRNA_loss_by_SNPs_in_gene_3utr.txt
 
 * miRNA_targets_loss_by_SNPs_in_seed_regions.txt
