@@ -1,0 +1,52 @@
+rs4673993	ATIC	Efficacy	2B	methotrexate	Arthritis, Rheumatoid
+rs66554220	HLA-G	Efficacy	3	methotrexate	Arthritis, Rheumatoid
+rs45445694	C18orf56,TYMS	Efficacy	3	methotrexate	Arthritis, Rheumatoid
+rs5760410	ADORA2A,SPECC1L	Toxicity/ADR	3	methotrexate	Arthritis, Rheumatoid
+rs762551	CYP1A2	Toxicity/ADR	3	leflunomide	Arthritis, Rheumatoid
+rs2853539	TYMS	Efficacy	3	methotrexate	Arthritis, Rheumatoid
+rs1544105	FPGS	Efficacy	3	methotrexate	Arthritis, Rheumatoid
+rs4846051	MTHFR	Toxicity/ADR	3	methotrexate	Arthritis, Rheumatoid,Drug Toxicity
+rs1800909	GGH	Efficacy	3	methotrexate	Arthritis, Rheumatoid
+rs2298383	ADORA2A	Toxicity/ADR	3	methotrexate	Arthritis, Rheumatoid
+rs3761422	ADORA2A	Toxicity/ADR	3	methotrexate	Arthritis, Rheumatoid
+rs2267076	ADORA2A	Toxicity/ADR	3	methotrexate	Arthritis, Rheumatoid
+rs2236624	ADORA2A	Toxicity/ADR	3	methotrexate	Arthritis, Rheumatoid
+rs9340799	ESR1	Efficacy	3	leflunomide	Arthritis, Rheumatoid
+rs3758149	GGH	Efficacy	3	methotrexate	Arthritis, Rheumatoid
+rs45445694	C18orf56,TYMS	Efficacy,Toxicity/ADR	3	methotrexate,pemetrexed,raltitrexed	Arthritis, Rheumatoid,Colorectal Neoplasms,Neoplasms,Precursor Cell Lymphoblastic Leukemia-Lymphoma,Psoriasis
+rs4986790	TLR4	Toxicity/ADR	3	folic acid,methotrexate	Arthritis, Rheumatoid
+rs16853826	ATIC	Toxicity/ADR	3	methotrexate	Arthritis, Rheumatoid
+rs2231142	ABCG2	Efficacy	3	sulfasalazine	Arthritis, Rheumatoid
+rs3763980	SLC16A7	Efficacy	3	methotrexate	Arthritis, Juvenile Rheumatoid
+rs11231809	SLC22A11	Efficacy	3	methotrexate	Arthritis, Rheumatoid
+rs246240	ABCC1	Efficacy	3	methotrexate	Arthritis, Rheumatoid
+rs3784864	ABCC1	Efficacy	3	methotrexate	Arthritis, Rheumatoid
+rs719235	GGH	Toxicity/ADR	3	methotrexate	Arthritis, Rheumatoid
+rs2234693	ESR1	Efficacy	3	leflunomide	Arthritis, Rheumatoid
+rs1801131	MTHFR	Efficacy	3	methotrexate	Arthritis, Rheumatoid
+rs151264360	TYMS	Efficacy	3	methotrexate	Arthritis, Rheumatoid,Precursor Cell Lymphoblastic Leukemia-Lymphoma
+rs1801133	MTHFR	Efficacy,Toxicity/ADR	3	methotrexate	Arthritis, Juvenile Rheumatoid,Arthritis, Psoriatic,Arthritis, Rheumatoid,Drug Toxicity
+rs2231142	ABCG2	Toxicity/ADR	3	methotrexate	Arthritis, Rheumatoid
+rs1801131	MTHFR	Toxicity/ADR	3	methotrexate	Arthritis, Rheumatoid
+rs1051266	SLC19A1	Efficacy,Toxicity/ADR	3	methotrexate	Arthritis, Rheumatoid
+rs1128503	ABCB1	Toxicity/ADR	3	methotrexate	Arthritis, Rheumatoid,Precursor Cell Lymphoblastic Leukemia-Lymphoma
+rs2273697	ABCC2	Toxicity/ADR	3	methotrexate	Arthritis, Rheumatoid
+rs1045642	ABCB1	Efficacy,Toxicity/ADR	3	methotrexate	Arthritis, Rheumatoid
+rs1703794		Efficacy	3	methotrexate	Arthritis, Rheumatoid
+rs35592	ABCC1	Efficacy	3	methotrexate	Arthritis, Rheumatoid,Psoriasis
+rs17602729	AMPD1	Efficacy,Toxicity/ADR	3	methotrexate	Arthritis, Rheumatoid
+rs2372536	ATIC	Efficacy	3	methotrexate	Arthritis, Rheumatoid
+rs1127354	ITPA	Efficacy,Toxicity/ADR	3	methotrexate	Arthritis, Rheumatoid,Precursor Cell Lymphoblastic Leukemia-Lymphoma
+rs9977268	SLC19A1	Efficacy	4	methotrexate	Arthritis, Rheumatoid
+rs1476413	MTHFR	Efficacy	4	methotrexate	Arthritis, Rheumatoid
+rs17421511	MTHFR	Efficacy	4	methotrexate	Arthritis, Rheumatoid
+rs10197559	ATIC	Toxicity/ADR	4	methotrexate	Arthritis, Rheumatoid
+rs1643650	DHFR	Efficacy	4	methotrexate	Arthritis, Rheumatoid
+rs1979277	SHMT1	Other	4	methotrexate	Arthritis, Rheumatoid
+rs3213422	DHODH	Efficacy	4	leflunomide	Arthritis, Rheumatoid
+rs7624766		Efficacy	4	methotrexate	Arthritis, Rheumatoid
+rs1901633		Efficacy	4	methotrexate	Arthritis, Rheumatoid
+rs4982133		Efficacy	4	methotrexate	Arthritis, Rheumatoid
+rs6506569	PTPRM	Efficacy	4	methotrexate	Arthritis, Rheumatoid
+rs2650972		Efficacy	4	methotrexate	Arthritis, Rheumatoid
+rs6064463		Efficacy	4	methotrexate	Arthritis, Rheumatoid
