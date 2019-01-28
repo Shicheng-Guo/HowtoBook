@@ -16,7 +16,7 @@ Rheumatoid Arthritis
 
 
 Reference: 
-1. Guo, S., Q. Zhu, T. Jiang, R. Wang, Y. Shen, X. Zhu, Y. Wang, F. Bai, Q. Ding, X. Zhou, G. Chen, and D.Y. He, Genome-Wide DNA Methylation Patterns in Cd4+ T Cells from Chinese Han Patients with Rheumatoid Arthritis. Mod Rheumatol, 2017. 27(3): p. 441-447.
+[1]. Guo, S., Q. Zhu, T. Jiang, R. Wang, Y. Shen, X. Zhu, Y. Wang, F. Bai, Q. Ding, X. Zhou, G. Chen, and D.Y. He, Genome-Wide DNA Methylation Patterns in Cd4+ T Cells from Chinese Han Patients with Rheumatoid Arthritis. Mod Rheumatol, 2017. 27(3): p. 441-447.
 
 
 
