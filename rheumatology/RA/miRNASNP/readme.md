@@ -1,4 +1,6 @@
 
+miRNA-SNP: http://bioinfo.life.hust.edu.cn/miRNASNP2/download.php
+
 ```
 setwd("/gpfs/home/guosa/hpc/rheumatology/RA/miRNASNP/All_Target_Locations.hg19.bed")
 d1<-read.table("/gpfs/home/guosa/hpc/rheumatology/RA/KEGG_90_RA_GeneList.txt")
