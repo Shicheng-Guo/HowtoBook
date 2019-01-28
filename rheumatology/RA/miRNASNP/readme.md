@@ -11,7 +11,7 @@ wget http://bioinfo.life.hust.edu.cn/miRNASNP2/download/miRNA_targets_loss_by_SN
 wget http://bioinfo.life.hust.edu.cn/miRNASNP2/download/miRNA_gain_by_SNPs_in_gene_3utr.txt
 wget http://bioinfo.life.hust.edu.cn/miRNASNP2/download/miRNA_loss_by_SNPs_in_gene_3utr.txt
 ```
-prepare shared SNPs
+Prepare shared SNPs
 ```
 setwd("/gpfs/home/guosa/hpc/rheumatology/RA/miRNASNP/All_Target_Locations.hg19.bed")
 d1<-read.table("/gpfs/home/guosa/hpc/rheumatology/RA/KEGG_90_RA_GeneList.txt")
