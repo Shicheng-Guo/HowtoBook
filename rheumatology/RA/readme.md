@@ -14,6 +14,10 @@ Rheumatoid Arthritis
 * Rheumatoid Arthritis Associated Pathways
 
 
+```
+wget ftp://ftp.broadinstitute.org/pub/rheumatoid_arthritis/Stahl_etal_2010NG/RA_GWASmeta2_20090505-results.txt
+wget ftp://ftp.broadinstitute.org/pub/rheumatoid_arthritis/Stahl_etal_2010NG/RA_GWASmeta2_20090505-results-README.txt
+```
 
 
 Reference: 
