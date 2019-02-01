@@ -1,7 +1,7 @@
 #### bcftools — utilities for variant calling and manipulating VCFs and BCFs.
 #### version: 1.9- 2019-01-31
 
-How to select bi-allelic SNPs from VCF files. 
+How to select bi-allelic SNPs from VCF files. (-d and -m cannot be used at the same time)
 ```
 bcftools sort check.temp.17.vcf > check.17.vcf
 bcftools norm  -m + check.17.vcf > check.17.recover.vcf
