@@ -1,5 +1,5 @@
 
-identify VIP gene bi-allelic SNPs to be genotyped
+Identify VIP gene bi-allelic SNPs to be genotyped
 ```
 for i in {1..22} X 
 do
