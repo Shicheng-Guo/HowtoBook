@@ -11,6 +11,7 @@ bcftools view -m2 -M2 -v snps check.17.recover.2.vcf > check.17.trim.vcf
 grep rs1799966 check.17.trim.vcf | less -S 
 ```
 Time difference between different output format: u > v > b > z
+uncompressed bcf is the fast choice
 ```
 time(bcftools norm -m + gnomad.exomes.r2.1.sites.chr22.vcf.sort.bgz -Ob -o gnomad.exomes.r2.1.sites.chr22.rec.vcf.bgz)
 Lines   total/split/realigned/skipped:  416866/0/0/0
