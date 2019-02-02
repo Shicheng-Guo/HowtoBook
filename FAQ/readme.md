@@ -7,7 +7,7 @@ You have conducted your genome-wide association study (GWAS) and have tested eac
 	# For z-scores, just square them
 	chisq <- data$z^2
 
-# For chi-squared values, keep as is
+        # For chi-squared values, keep as is
 	chisq <- data$chisq
 
 	# For p-values, calculate chi-squared statistic
