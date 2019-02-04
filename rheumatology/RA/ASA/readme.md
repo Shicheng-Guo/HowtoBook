@@ -19,6 +19,7 @@ done
 
 Identify EpiFactors gene bi-allelic SNPs to be genotyped
 ```
+cd /gpfs/home/guosa/hpc/project/EpiVar/functionalSnps
 for i in {1..22} X 
 do
 echo \#PBS -N $i  > $i.job
