@@ -1,6 +1,7 @@
 
 ```
 69   PADI(1-4) Variants in RA Risk
+327  eQTL for VIP genes
 1763 Epigene Functional Variants
 3325 GWAS Immnue System Desases
 16013 CpGSNP-eQTL-Overlap Variants
