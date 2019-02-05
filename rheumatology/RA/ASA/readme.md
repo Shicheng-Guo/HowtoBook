@@ -140,6 +140,17 @@ grep -v "#" gnomad.exomes.r2.1.sites.rec.InnateDB.merge.vcf | awk '{print $1"\t"
 
 miRNA-SNPs located in 824 Immune-related genes UTR3 regions(csv): https://www.innatedb.com/moleculeSearch.do
 ```
+wget http://bioinfo.life.hust.edu.cn/miRNASNP2/download/miRNA_targets_gain_by_SNPs_in_seed_regions.txt
+wget http://bioinfo.life.hust.edu.cn/miRNASNP2/download/miRNA_targets_loss_by_SNPs_in_seed_regions.txt
+wget http://bioinfo.life.hust.edu.cn/miRNASNP2/download/miRNA_gain_by_SNPs_in_gene_3utr.txt
+wget http://bioinfo.life.hust.edu.cn/miRNASNP2/download/miRNA_loss_by_SNPs_in_gene_3utr.txt
 
+InnateDB<-read.table(file="InnateDB.hg19.bed",sep="\t")
+data1<-read.table("miRNA_gain_by_SNPs_in_gene_3utr.txt",sep="\t")
+data2<-read.table("miRNA_loss_by_SNPs_in_gene_3utr.txt",sep="\t")
+SNP1<-data1[data1[,2] %in% InnateDB[,5],4]
+SNP2<-data2[data2[,2] %in% InnateDB[,5],4]
+SNP<-c(as.character(SNP1),as.character(SNP2))
+write.table(sort(table(SNP),decreasing=T),file="InnateDB.UTR3.snp.txt",sep="\t",quote=F,col.names=F)
 ```
 
