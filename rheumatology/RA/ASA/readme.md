@@ -1,6 +1,7 @@
 
 ```
 69   PADI(1-4) Variants in RA Risk
+241  SNPs in the 3-UTR regions of VIP genes (miRNA-UTR3 double pairs)
 327  eQTL for VIP genes
 1763 Epigene Functional Variants
 3325 GWAS Immnue System Desases
