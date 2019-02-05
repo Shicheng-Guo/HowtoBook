@@ -106,7 +106,7 @@ dim(data4)
 write.table(vip.eqtl.snp,file="vip.eqtl.snp.txt",sep="\t",quote=F,col.names=F,row.names=F)
 ```
 
-Functional SNPs located in 824 Immune-related genes (csv): https://www.innatedb.com/moleculeSearch.do
+N=2518 Functional SNPs located in 824 Immune-related genes (csv): https://www.innatedb.com/moleculeSearch.do
 ```
 perl -F"\s" -lane  "{print @F[6]}" InnateDB_genes.txt | grep -v name > InnateDB_genes.symbol.txt
 ### R
@@ -138,7 +138,7 @@ bcftools concat -f concat.txt -Ov -o gnomad.exomes.r2.1.sites.rec.InnateDB.merge
 grep -v "#" gnomad.exomes.r2.1.sites.rec.InnateDB.merge.vcf | awk '{print $1"\t"$2"\t"$3"\t"$4"\t"$5}' > gnomad.exomes.r2.1.sites.rec.InnateDB.merge.vcf.bed
 ```
 
-4215 miRNA-SNPs located in 824 Immune-related genes UTR3 regions(csv): https://www.innatedb.com/moleculeSearch.do
+N=4215 miRNA-SNPs located in 824 Immune-related genes UTR3 regions(csv): https://www.innatedb.com/moleculeSearch.do
 ```
 wget http://bioinfo.life.hust.edu.cn/miRNASNP2/download/miRNA_targets_gain_by_SNPs_in_seed_regions.txt
 wget http://bioinfo.life.hust.edu.cn/miRNASNP2/download/miRNA_targets_loss_by_SNPs_in_seed_regions.txt
