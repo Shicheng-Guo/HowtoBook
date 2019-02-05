@@ -109,11 +109,14 @@ write.table(vip.eqtl.snp,file="vip.eqtl.snp.txt",sep="\t",quote=F,col.names=F,ro
 Functional SNPs located in 824 Immune-related genes (csv): https://www.innatedb.com/moleculeSearch.do
 ```
 perl -F"\s" -lane  "{print @F[6]}" InnateDB_genes.txt | grep -v name > InnateDB_genes.symbol.txt
+### R
 genesymbol<-read.table("InnateDB_genes.symbol.txt")
 db<-read.table("~/hpc/db/hg19/refGene.hg19.bed",head=F)
 rlt<-db[db[,5] %in% genesymbol[,1],]
 write.table(rlt,file="InnateDB.hg19.bed",sep="\t",quote=F,col.names=F,row.names=F)
+### R
 
+perl -p -i -e "s/chr//" InnateDB.hg19.bed
 mkdir temp
 for i in {1..22} X 
 do
