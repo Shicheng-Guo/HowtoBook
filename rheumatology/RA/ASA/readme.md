@@ -105,3 +105,10 @@ dim(data3)
 dim(data4)
 write.table(vip.eqtl.snp,file="vip.eqtl.snp.txt",sep="\t",quote=F,col.names=F,row.names=F)
 ```
+
+Functional SNPs located in 824 Immune-related genes: https://www.innatedb.com/moleculeSearch.do
+```
+
+```
+
+
