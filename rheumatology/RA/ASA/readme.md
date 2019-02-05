@@ -8,6 +8,8 @@
 
 Identify VIP gene bi-allelic SNPs to be genotyped
 ```
+wget https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/rheumatology/RA/ASA/VIP.hg19.bed
+
 for i in {1..22} X 
 do
 echo \#PBS -N $i  > $i.job
