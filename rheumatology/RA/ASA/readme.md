@@ -4,6 +4,7 @@
 241  SNPs in the 3-UTR regions of VIP genes (miRNA-UTR3 double pairs)
 322  VIP functional variants
 327  eQTL for VIP genes
+478  SNPs located in miRNAs seed region
 1763 Epigene Functional Variants
 3325 GWAS Immnue System Desases
 16013 CpGSNP-eQTL-Overlap Variants
