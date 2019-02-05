@@ -138,4 +138,8 @@ bcftools concat -f concat.txt -Ov -o gnomad.exomes.r2.1.sites.rec.InnateDB.merge
 grep -v "#" gnomad.exomes.r2.1.sites.rec.InnateDB.merge.vcf | awk '{print $1"\t"$2"\t"$3"\t"$4"\t"$5}' > gnomad.exomes.r2.1.sites.rec.InnateDB.merge.vcf.bed
 ```
 
+miRNA-SNPs located in 824 Immune-related genes UTR3 regions(csv): https://www.innatedb.com/moleculeSearch.do
+```
+
+```
 
