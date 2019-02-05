@@ -114,6 +114,7 @@ db<-read.table("~/hpc/db/hg19/refGene.hg19.bed",head=F)
 rlt<-db[db[,5] %in% genesymbol[,1],]
 write.table(rlt,file="InnateDB.hg19.bed",sep="\t",quote=F,col.names=F,row.names=F)
 
+mkdir temp
 for i in {1..22} X 
 do
 echo \#PBS -N $i  > $i.job
