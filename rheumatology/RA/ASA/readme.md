@@ -69,7 +69,7 @@ vip.utr.mirna.snp<-names(table(vip.variant[,4]))
 write.table(vip.utr.mirna.snp,file="vip.utr3.mirna.snp.txt",sep="\t",quote=F,col.names=F,row.names=F)
 ```
 
-eQTL of VIP genes
+eQTL of VIP genes (327 SNPs)
 ```
 wget https://storage.googleapis.com/gtex_analysis_v7/single_tissue_eqtl_data/GTEx_Analysis_v7_eQTL.tar.gz
 tar xzvf GTEx_Analysis_v7_eQTL.tar.gz
