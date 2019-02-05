@@ -2,13 +2,14 @@
 ```
 69   PADI(1-4) Variants in RA Risk
 241  SNPs in the 3-UTR regions of VIP genes (miRNA-UTR3 double pairs)
+322  VIP functional variants
 327  eQTL for VIP genes
 1763 Epigene Functional Variants
 3325 GWAS Immnue System Desases
 16013 CpGSNP-eQTL-Overlap Variants
 ```
 
-Identify VIP gene bi-allelic SNPs to be genotyped
+Identify VIP gene biallelic SNPs to be genotyped (N=322)
 ```
 wget https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/rheumatology/RA/ASA/VIP.hg19.bed
 
@@ -40,7 +41,7 @@ awk '{print $5}' miRNA_targets_gain_by_SNPs_in_seed_regions.txt | sort -u | grep
 awk '{print $5}' miRNA_targets_loss_by_SNPs_in_seed_regions.txt | sort -u | grep rs >> miRNA-SNPs.snponly.list.txt
 ```
 
-Identify EpiFactors gene bi-allelic SNPs to be genotyped
+Identify EpiFactors gene bi-allelic SNPs to be genotyped (1763 SNPs)
 ```
 for i in {1..22} X 
 do
