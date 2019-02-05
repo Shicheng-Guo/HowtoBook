@@ -27,6 +27,18 @@ echo bcftools view -m2 -M2 -v snps gnomad.exomes.r2.1.sites.chr$i.rec.vip.sort.r
 qsub $i.job
 done
 ```
+Identify all SNPs located in miRNAs (478 SNPs)
+```
+wget http://bioinfo.life.hust.edu.cn/miRNASNP2/download/miRNA_targets_gain_by_SNPs_in_seed_regions.txt
+wget http://bioinfo.life.hust.edu.cn/miRNASNP2/download/miRNA_targets_loss_by_SNPs_in_seed_regions.txt
+wget http://bioinfo.life.hust.edu.cn/miRNASNP2/download/miRNA_gain_by_SNPs_in_gene_3utr.txt
+wget http://bioinfo.life.hust.edu.cn/miRNASNP2/download/miRNA_loss_by_SNPs_in_gene_3utr.txt
+
+awk '{print $4"\t"$5}' miRNA_targets_gain_by_SNPs_in_seed_regions.txt | sort -u | grep rs > miRNA-SNPs.list.txt
+awk '{print $4"\t"$5}' miRNA_targets_loss_by_SNPs_in_seed_regions.txt | sort -u | grep rs >> miRNA-SNPs.list.txt
+awk '{print $5}' miRNA_targets_gain_by_SNPs_in_seed_regions.txt | sort -u | grep rs > miRNA-SNPs.snponly.list.txt
+awk '{print $5}' miRNA_targets_loss_by_SNPs_in_seed_regions.txt | sort -u | grep rs >> miRNA-SNPs.snponly.list.txt
+```
 
 Identify EpiFactors gene bi-allelic SNPs to be genotyped
 ```
