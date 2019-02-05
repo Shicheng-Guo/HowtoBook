@@ -36,6 +36,6 @@ qsub $i.job
 done
 ls *rec.Epi.sort.rmdup.biallelic.vcf.bgz > concat.txt
 bcftools concat -f concat.txt -Ov -o gnomad.exomes.r2.1.sites.rec.Epi.merge.vcf
-grep -v "#" gnomad.exomes.r2.1.sites.rec.Epi.merge.vcf | wc -l
+grep -v "#" gnomad.exomes.r2.1.sites.rec.Epi.merge.vcf | awk '{print $1"\t"$2"\t"$3"\t"$4"\t"$5}' > gnomad.exomes.r2.1.sites.rec.Epi.merge.vcf.bed
 ```
 
