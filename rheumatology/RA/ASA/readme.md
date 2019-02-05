@@ -1,12 +1,14 @@
 
 ```
-69   PADI(1-4) Variants in RA Risk
-241  SNPs in the 3-UTR regions of VIP genes (miRNA-UTR3 double pairs)
-322  VIP functional variants
-327  eQTL for VIP genes
-478  SNPs located in miRNAs seed region
-1763 Epigene Functional Variants
-3325 GWAS Immnue System Desases
+69    PADI(1-4) Variants in RA Risk
+241   SNPs in the 3-UTR regions of VIP genes (miRNA-UTR3 double pairs)
+322   VIP functional variants
+327   eQTL for VIP genes
+478   SNPs located in miRNAs seed region
+1763  Epigene Functional Variants
+3325  GWAS Immnue System Desases
+2518  Functional SNPs located in 824 Immune-related genes
+4215  miRNA-SNPs located in 824 Immune-related genes UTR3 regions
 16013 CpGSNP-eQTL-Overlap Variants
 ```
 
