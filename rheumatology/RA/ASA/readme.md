@@ -7,7 +7,7 @@
 478   SNPs located in miRNAs seed region
 1763  Epigene Functional Variants
 3325  GWAS Immnue System Desases
-3591  Functional variants within 40K regions of GWAS Immnue System Desases
+3591  Functional variants within 40K regions of GWAS Immnue System Desases(gnomad.exomes.r2.1.sites.rec.40KGWASAID.merge.vcf.bed)
 2518  Functional SNPs located in 824 Immune-related genes
 4215  miRNA-SNPs located in 824 Immune-related genes UTR3 regions
 16013 CpGSNP-eQTL-Overlap Variants
