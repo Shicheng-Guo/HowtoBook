@@ -235,7 +235,13 @@ bcftools concat -f concat.txt -Ov -o gnomad.exomes.r2.1.sites.rec.5KGWASAID.merg
 grep -v "#" gnomad.exomes.r2.1.sites.rec.5KGWASAID.merge.vcf | awk '{print $1"\t"$2"\t"$3"\t"$4"\t"$5}' > gnomad.exomes.r2.1.sites.rec.5KGWASAID.merge.vcf.bed
 
 ```
-
+N=6200 TFBS-SNPs in lncRNA promoter region
+```
+wget http://210.46.85.180:8080/SNP_linc_tfbs/download/linc_tfbs_chipseq_snp.txt
+wget http://210.46.85.180:8080/SNP_linc_tfbs/download/linc_tfbs_snp.txt
+awk '{print $2"\t"$17-1"\t"$17+1"\t"$16}' linc_tfbs_snp.txt | grep rs |sort -u > linc_tfbs_snp.hg19.bed
+awk '{print $2"\t"$19-1"\t"$19+1"\t"$18}' linc_tfbs_chipseq_snp.txt |grep rs | sort -u > linc_tfbs_chipseq_snp.hg19.bed
+```
 
 
 
