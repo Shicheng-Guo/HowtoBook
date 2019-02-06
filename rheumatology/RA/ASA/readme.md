@@ -5,6 +5,7 @@
 322   VIP functional variants
 327   eQTL for VIP genes
 478   SNPs located in miRNAs seed region
+907   HLA functional SNPs (6:29671116-33106890)
 1763  Epigene Functional Variants
 3325  GWAS Immnue System Desases
 3591  Functional variants within 40K regions of GWAS Immnue System Desases(gnomad.exomes.r2.1.sites.rec.40KGWASAID.merge.vcf.bed)
