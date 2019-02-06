@@ -10,6 +10,7 @@
 2518  Functional SNPs located in 824 Immune-related genes
 4215  miRNA-SNPs located in 824 Immune-related genes UTR3 regions
 16013 CpGSNP-eQTL-Overlap Variants
+44326 CpGI-TFSB-DNase-BUR SNPs(CpGI.TFBS.DNase.BUR.hg19.bed)
 ```
 
 Identify VIP gene biallelic SNPs to be genotyped (N=322)
