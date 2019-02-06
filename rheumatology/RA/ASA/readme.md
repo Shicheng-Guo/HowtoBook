@@ -15,7 +15,9 @@
 16013 CpGSNP-eQTL-Overlap Variants
 44326 CpGI-TFSB-DNase-BUR SNPs(CpGI.TFBS.DNase.BUR.hg19.bed)
 ```
-
+PADI,PTPN, MUC5B
+```
+```
 Identify VIP gene biallelic SNPs to be genotyped (N=322)
 ```
 wget https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/rheumatology/RA/ASA/VIP.hg19.bed
