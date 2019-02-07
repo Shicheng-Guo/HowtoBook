@@ -8,7 +8,7 @@
 478   SNPs located in miRNAs seed region
 907   HLA functional SNPs (6:29671116-33106890)
 1763  Epigene Functional Variants
-2665  GWAS RA signficant, LD R2>0.8 SNPs (not include intron)
+2665  GWAS RA signficant, LD R2>0.8 SNPs (not include intron,HaploReg)
 3325  GWAS Immnue System Desases
 3591  40K regions of GWAS Immnue System Desases(gnomad.exomes.r2.1.sites.rec.40KGWASAID.merge.vcf.bed)
 2518  Functional SNPs located in 824 Immune-related genes
