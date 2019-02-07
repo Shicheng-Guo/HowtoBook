@@ -13,6 +13,7 @@
 3591  40K regions of GWAS Immnue System Desases(gnomad.exomes.r2.1.sites.rec.40KGWASAID.merge.vcf.bed)
 2518  Functional SNPs located in 824 Immune-related genes
 4215  miRNA-SNPs located in 824 Immune-related genes UTR3 regions
+4728  Reactome database related immnue system genes (9 pathway and 1571 genes)
 16013 CpGSNP-eQTL-Overlap Variants
 ==========================================================
 6200  TFBS-SNPs in lncRNA promoter region
