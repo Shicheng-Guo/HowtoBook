@@ -1,5 +1,6 @@
 
 ```
+48    SNPs in Genetic Risk Score in European (non-HLA 48 + HLA)
 69    PADI,PTPN,MUC Variants in RA Risk
 241   SNPs in the 3-UTR regions of VIP genes (miRNA-UTR3 double pairs)
 322   VIP functional variants
