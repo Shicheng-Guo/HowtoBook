@@ -6,8 +6,13 @@ Rheumatoid Arthritis
 
 * Rheumatoid Arthritis Associated Genes
 * 2018: PTPN22, TLR8, UBASH3A, IRF8, CREM, PAX5, BC017643, KLRC3, MEF2C, FAIM3, CXCR4, ID2, IL2, FOXP3, CD55
-
-
+```
+cd /gpfs/home/guosa/hpc/rheumatology/RA/ASA
+for i in PTPN22 TLR8 UBASH3A IRF8 CREM PAX5 BC017643 KLRC3 MEF2C FAIM3 CXCR4 ID2 IL2 FOXP3 CD55
+do
+grep $i GHRA_ASA.hg19.bed
+done
+```
 * Rheumatoid Arthritis Associated DNA Methylation Loci
 
 
