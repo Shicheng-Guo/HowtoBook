@@ -1,4 +1,3 @@
-
 ```
 48    SNPs in Genetic Risk Score in European (non-HLA 48 + HLA)
 69    PADI,PTPN Variants in RA Risk
@@ -21,6 +20,7 @@
 ```
 PADI,PTPN, MUC5B
 ```
+
 ```
 Identify VIP gene biallelic SNPs to be genotyped (N=322)
 ```
