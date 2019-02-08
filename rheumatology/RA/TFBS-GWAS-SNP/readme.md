@@ -7,7 +7,7 @@ Method:
 * S2: R2>0.6 -> eQTL(Full) -> TFBS -> DNase -> CpG-Island -> [17 Genomic Regions](S2-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.merge.sort.bed) and [19 SNPs](S2-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.sort.bed)
 * S3: R2>0.6 -> mis-sense variants -> [104 SNPs](gnomad.exomes.r2.1.sites.rec.GWAS-RA-792.R2.6.rsSNP.input.hg19.vcf.bed)
 
-S1: S1: R2>0.6 -> eQTL(PRA) -> TFBS -> DNase -> CpG-Island -> [7 Genomic Regions](S1-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.merge.sort.bed), [7 SNPs](S1-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.bed)
+S1: R2>0.6 -> eQTL(PRA) -> TFBS -> DNase -> CpG-Island -> [7 Genomic Regions](S1-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.merge.sort.bed), [7 SNPs](S1-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.bed)
 ```
 cd /gpfs/home/guosa/hpc/rheumatology/RA/TFBS_GWAS_RA_SNP
 for i in {1..22} X Y
