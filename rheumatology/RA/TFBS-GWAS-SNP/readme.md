@@ -4,7 +4,7 @@ We download 791 GWAS-Significant SNPs from GWAS Catalog and we collected all the
 
 Method 1:
 
-* RA-LD-SNP (21079) -> TFBS (18621) -> DNase (2054) -> CpGisland (129), we obtained the final target: 129 SNPs. We merged the adjust SNPs and found 77 genomic regions (see: [RA-77-TFBS-DNase-CpG-island Regions](GWAS-RA-R2.6.tfbs.DNase.CpGI.129.hg19.sort.merge.hg19.bed))
+* RA-LD-SNP (21079) -> TFBS (18621) -> DNase (2054) -> CpGisland (129) -> [77 regions](GWAS-RA-R2.6.tfbs.DNase.CpGI.129.hg19.sort.merge.hg19.bed) and [129 SNPs]()
 * RA-LD-SNP (21079) -> TFBS (18621) -> DNase (2054) -> CpG-Shore ()
 * RA-LD-SNP (21079) -> TFBS (18621) -> DNase (2054) -> CpG-Shelf ()
 
