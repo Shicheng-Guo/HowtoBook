@@ -1,4 +1,7 @@
+DNA Methylation in GWAS Significant Rheumatoid Arthritis Associated Regions. 
 
+* identify 50 GWAS-RA signficant regions
+* 
 
 ```
 for i in {1..22} X Y
