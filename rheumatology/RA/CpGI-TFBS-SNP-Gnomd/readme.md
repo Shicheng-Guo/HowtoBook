@@ -1,3 +1,5 @@
+
+We download 791 GWAS-Significant SNPs from GWAS Catalog and we collected all the linked SNPs with R2>0.6 in Asian Population. Totally, we identified xx SNPs with above method. 
 ```
 
 for i in {1..22} X Y
