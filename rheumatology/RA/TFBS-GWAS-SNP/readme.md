@@ -13,7 +13,7 @@ Summary (1): 10 multi-hits SNPs and [82 unique SNP](RA-GWAS-Functional-SNPs-Fina
 [Method 2](method2.md): 
 
 * S1: R2>0.6 -> eQTL(PRA, [206 SNPs](GWAS-RA-792.R2.6.rsSNP.PRA.eQTL.hg19.bed)) -> TFBS -> DNase -> CpG-Island -> [7 Genomic Regions](S1-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.merge.sort.bed) and [7 SNPs](S1-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.bed)
-* S2: R2>0.6 -> eQTL(Full,[741 SNPs](GWAS-RA-792.R2.6.rsSNP.FullRA.eQTL.hg19.bed)) -> TFBS -> DNase -> CpG-Island -> [17 Genomic Regions](S2-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.merge.sort.bed) and [19 SNPs](S2-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.sort.bed)
+* S2: R2>0.6 -> eQTL(Full, [741 SNPs](GWAS-RA-792.R2.6.rsSNP.FullRA.eQTL.hg19.bed)) -> TFBS -> DNase -> CpG-Island -> [17 Genomic Regions](S2-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.merge.sort.bed) and [19 SNPs](S2-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.sort.bed)
 * S3: R2>0.6 -> exom + missense + stop + frame + MAF_Asian>0.1% -> [104 SNPs](gnomad.exomes.r2.1.sites.rec.GWAS-RA-792.R2.6.rsSNP.input.hg19.vcf.bed)
 
 Summary (1 & 2): 36 multi-hits SNPs and [186 unique SNP](RA-GWAS-Functional-SNPs-Final.186.Snp.20190208.bed) and [124 genomic regions](RA-GWAS-Functional-SNPs-Final.186.Snp.20190208.sort.merge.hg19.bed) were occured in the final SNPs list. 
