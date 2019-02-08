@@ -25,12 +25,12 @@ length(table(eqtl))
 eqtl.snp<-names(table(eqtl))
 write.table(eqtl.snp,file="eqtl.snp.txt",sep="\t",quote=F,col.names=F,row.names=F)
 
-input<-read.table("../GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI.hg19.bed ",head=F)
+input<-read.table("../GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI.hg19.bed",head=F)
 output<-input[input[,4] %in% eqtl.snp,]
 dim(output)
 write.table(output,file="../GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI.eQTL.hg19.bed",sep="\t",col.names=F,row.names=F,quote=F)
 
-input<-read.table("../GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI_Shore.hg19.bed ",head=F)
+input<-read.table("../GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI_Shore.hg19.bed",head=F)
 output<-input[input[,4] %in% eqtl.snp,]
 dim(output)
 write.table(output,file="../GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI_Shore.eQTL.hg19.bed",sep="\t",col.names=F,row.names=F,quote=F)
