@@ -2,7 +2,7 @@ DNA Methylation in GWAS Significant Rheumatoid Arthritis Associated Regions.
 
 We download 791 GWAS-Significant SNPs from GWAS Catalog and we collected all the linked SNPs with R2>0.6 in Asian Population. Totally, we identified 21,079 SNPs with above method. 
 
-Method 1:
+[Method 1](method1.sh):
 
 * RA-LD-SNP (21079) -> TFBS (3766) -> DNase (2054) -> CpGisland (129) -> [129 SNPs](GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI.hg19.bed)
 * RA-LD-SNP (21079) -> TFBS (3766) -> DNase (2054) -> CpG-Shore (316)-> [316 SNPs](GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI_Shore.hg19.bed)
