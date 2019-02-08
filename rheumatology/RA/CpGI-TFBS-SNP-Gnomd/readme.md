@@ -1,5 +1,5 @@
 
-We download 791 GWAS-Significant SNPs from GWAS Catalog and we collected all the linked SNPs with R2>0.6 in Asian Population. Totally, we identified 21,079 SNPs with above method. 
+We download 791 GWAS-Significant SNPs from GWAS Catalog and we collected all the linked SNPs with R2>0.6 in Asian Population. Totally, we identified 21,079 SNPs with above method. After TFBS (18621), DNase (2054) and CpG-island (129) filtering, we obtained the final target: 129 SNPs. 
 
 ```
 
