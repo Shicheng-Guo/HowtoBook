@@ -6,7 +6,6 @@ We download 791 GWAS-Significant SNPs from GWAS Catalog and we collected all the
 ```
 cd /gpfs/home/guosa/hpc/rheumatology/RA/TFBS_GWAS_RA_SNP
 
-
 for i in {1..22} X Y
 do
 wget https://storage.googleapis.com/gnomad-public/release/2.1/vcf/genomes/gnomad.genomes.r2.1.sites.chr$i.vcf.bgz
@@ -15,6 +14,10 @@ wget https://storage.googleapis.com/gnomad-public/release/2.1/vcf/exomes/gnomad.
 wget https://storage.googleapis.com/gnomad-public/release/2.1/vcf/exomes/gnomad.exomes.r2.1.sites.chr$i.vcf.bgz.tbi
 done
 
+## Step 1. eQTL
+
+
+## Step 2. eQTL
 
 wget http://hgdownload.soe.ucsc.edu/goldenPath/hg19/encodeDCC/wgEncodeRegTfbsClustered/wgEncodeRegTfbsClusteredV3.bed.gz
 gunzip wgEncodeRegTfbsClusteredV3.bed.gz
