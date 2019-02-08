@@ -21,8 +21,6 @@ wc -l GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.hg19.bed
 wc -l GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI.hg19.bed 
 wc -l GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI_Shore.hg19.bed 
 wc -l GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI_Shelf.hg19.bed 
- 
-
 ```
 
 
