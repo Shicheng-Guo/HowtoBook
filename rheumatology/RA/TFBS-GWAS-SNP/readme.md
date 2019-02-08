@@ -78,8 +78,7 @@ eqtl<-c(eqtl,as.character(data[,19]))
 }
 length(table(eqtl))
 eqtl.snp<-names(table(eqtl))
-write.table(eqtl.snp,file="vip.eqtl.snp.txt",sep="\t",quote=F,col.names=F,row.names=F)
-#################################
+write.table(eqtl.snp,file="eqtl.snp.txt",sep="\t",quote=F,col.names=F,row.names=F)
 input<-read.table("../GWAS-RA-792.R2.6.rsSNP.hg19.bed",head=F)
 output<-input[input[,4] %in% eqtl.snp,]
 dim(output)
@@ -97,8 +96,8 @@ awk '{print $1"\t"$2"\t"$3}' wgEncodeRegDnaseClusteredV3.bed > wgEncodeRegDnaseC
 bedtools intersect -wa -a GWAS-RA-792.R2.6.rsSNP.eQTL.hg19.bed -b wgEncodeRegTfbsClusteredV3.hg19.bed > GWAS-RA-R2.6.eQTL.tfbs.hg19.bed
 bedtools intersect -wa -a GWAS-RA-R2.6.eQTL.tfbs.hg19.bed -b wgEncodeRegDnaseClusteredV3.bed | sort -u > GWAS-RA-R2.6.eQTL.tfbs.DNase.hg19.bed
 bedtools intersect -wa -a GWAS-RA-R2.6.eQTL.tfbs.DNase.hg19.bed -b ~/hpc/db/hg19/CpGI.hg19.bed > GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.bed
-bedtools sort -i GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.bed > GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.sort.bed
-bedtools merge -d 2000 -i GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.sort.bed > S2-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.merge.sort.bed
+bedtools sort -i GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.bed > S2-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.sort.bed
+bedtools merge -d 2000 -i S2-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.sort.bed > S2-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.merge.sort.bed
 ```
 * S3: R2>0.6 -> mis-sense variants -> [104 SNPs](gnomad.exomes.r2.1.sites.rec.GWAS-RA-792.R2.6.rsSNP.input.hg19.vcf.bed)
 ```
