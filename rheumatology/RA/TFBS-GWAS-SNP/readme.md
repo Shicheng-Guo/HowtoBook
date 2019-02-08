@@ -7,7 +7,7 @@ Method 1:
 * S2: R2>0.6 -> eQTL(Full) -> TFBS -> DNase -> CpG-Island -> [17 Genomic Regions](S2-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.merge.sort.bed) and [SNPs](S2-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.bed)
 * S3: R2>0.6 -> mis-sense variants -> [104 SNPs](gnomad.exomes.r2.1.sites.rec.GWAS-RA-792.R2.6.rsSNP.input.hg19.vcf.bed)
 
-S1: R2>0.6 -> eQTL(PRA) -> TFBS -> DNase -> CpG-Island -> 7 Genomic Regions
+S1: S1: R2>0.6 -> eQTL(PRA) -> TFBS -> DNase -> CpG-Island -> [7 Genomic Regions](S1-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.merge.sort.bed), [7 SNPs](S1-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.bed)
 ```
 cd /gpfs/home/guosa/hpc/rheumatology/RA/TFBS_GWAS_RA_SNP
 for i in {1..22} X Y
@@ -53,7 +53,7 @@ bedtools intersect -wa -a GWAS-RA-R2.6.eQTL.tfbs.DNase.hg19.bed -b ~/hpc/db/hg19
 bedtools sort -i GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.bed > GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.sort.bed
 bedtools merge -d 2000 -i GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.sort.bed > S1-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.merge.sort.bed
 ```
-S2: R2>0.6 -> eQTL(Full) -> TFBS -> DNase -> CpG-Island -> 17 Genomic Regions
+S2: S2: R2>0.6 -> eQTL(Full) -> TFBS -> DNase -> CpG-Island -> [17 Genomic Regions](S2-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.merge.sort.bed) and [SNPs](S2-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.bed)
 ```
 cd /gpfs/home/guosa/hpc/rheumatology/RA/TFBS_GWAS_RA_SNP
 for i in {1..22} X Y
