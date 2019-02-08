@@ -4,11 +4,25 @@ We download 791 GWAS-Significant SNPs from GWAS Catalog and we collected all the
 
 Method 1:
 
-* RA-LD-SNP (21079) -> TFBS (18621) -> DNase (2054) -> CpGisland (129) -> [77 regions](GWAS-RA-R2.6.tfbs.DNase.CpGI.129.hg19.sort.merge.hg19.bed) and [129 SNPs]()
-* RA-LD-SNP (21079) -> TFBS (18621) -> DNase (2054) -> CpG-Shore ()
-* RA-LD-SNP (21079) -> TFBS (18621) -> DNase (2054) -> CpG-Shelf ()
+* RA-LD-SNP (21079) -> TFBS (3766) -> DNase (2054) -> CpGisland (129) -> [129 SNPs](GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI.hg19.bed)
+* RA-LD-SNP (21079) -> TFBS (3766) -> DNase (2054) -> CpG-Shore (316)-> [316 SNPs](GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI_Shore.hg19.bed)
+* RA-LD-SNP (21079) -> TFBS (3766) -> DNase (2054) -> CpG-Shelf (202)-> [202 SNPs](GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI_Shelf.hg19.bed)
 
 ```
+bedtools sort -i  GWAS-RA-792.R2.6.rsSNP.hg19.bed > GWAS-RA-792.R2.6.rsSNP.sort.hg19.bed
+bedtools intersect -wa -a GWAS-RA-792.R2.6.rsSNP.sort.hg19.bed -b wgEncodeRegTfbsClusteredV3.hg19.bed | sort -u > GWAS-RA-792.R2.6.rsSNP.sort.tfbs.hg19.bed
+bedtools intersect -wa -a GWAS-RA-792.R2.6.rsSNP.sort.tfbs.hg19.bed -b wgEncodeRegDnaseClusteredV3.hg19.bed | sort -u > GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.hg19.bed 
+bedtools intersect -wa -a GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.hg19.bed  -b ~/hpc/db/hg19/CpGI_Shore.hg19.bed | sort -u >  GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI_Shore.hg19.bed 
+bedtools intersect -wa -a GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.hg19.bed  -b ~/hpc/db/hg19/CpGI_Shelf.hg19.bed | sort -u >  GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI_Shelf.hg19.bed 
+bedtools intersect -wa -a GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.hg19.bed  -b ~/hpc/db/hg19/CpGI.hg19.bed | sort -u >  GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI.hg19.bed 
+
+wc -l GWAS-RA-792.R2.6.rsSNP.sort.tfbs.hg19.bed
+wc -l GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.hg19.bed
+wc -l GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI.hg19.bed 
+wc -l GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI_Shore.hg19.bed 
+wc -l GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI_Shelf.hg19.bed 
+ 
+
 ```
 
 
