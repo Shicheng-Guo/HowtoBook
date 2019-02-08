@@ -2,6 +2,7 @@
 wget https://storage.googleapis.com/gtex_analysis_v7/single_tissue_eqtl_data/GTEx_Analysis_v7_eQTL.tar.gz
 tar xzvf GTEx_Analysis_v7_eQTL.tar.gz
 cd GTEx_Analysis_v7_eQTL
+gunzip *.gz 
 
 qval_threshold=0.000000000000000000000005
 data1<-subset(read.table("Whole_Blood.v7.egenes.txt",head=T,sep="\t"),qval<0.000000000000000000000001*qval_threshold)
