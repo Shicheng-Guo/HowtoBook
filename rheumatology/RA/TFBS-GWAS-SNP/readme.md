@@ -7,6 +7,7 @@ We download 791 GWAS-Significant SNPs from GWAS Catalog and we collected all the
 * RA-LD-SNP (21079) -> TFBS (3766) -> DNase (2054) -> CpGisland (129) -> [129 SNPs](GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI.hg19.bed) -> eQTL([19 SNP](GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI.eQTL.hg19.bed))
 * RA-LD-SNP (21079) -> TFBS (3766) -> DNase (2054) -> CpG-Shore (316)-> [316 SNPs](GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI_Shore.hg19.bed) -> eQTL([43 SNP](GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI_Shore.eQTL.hg19.bed))
 * RA-LD-SNP (21079) -> TFBS (3766) -> DNase (2054) -> CpG-Shelf (202)-> [202 SNPs](GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI_Shelf.hg19.bed) -> eQTL([39 SNP](GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI_Shelf.eQTL.hg19.bed))
+Summary: 36 multi-hits SNPs and [186 unique SNP](RA-GWAS-Functional-SNPs-Final.186.Snp.20190208.bed) and [124 genomic regions](RA-GWAS-Functional-SNPs-Final.186.Snp.20190208.sort.merge.hg19.bed) were occured in the final SNPs list. 
 
 [Method 2](method2.md): 
 
