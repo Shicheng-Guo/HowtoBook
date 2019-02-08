@@ -8,7 +8,7 @@ We download 791 GWAS-Significant SNPs from GWAS Catalog and we collected all the
 * RA-LD-SNP (21079) -> TFBS (3766) -> DNase (2054) -> CpG-Shore (316)-> [316 SNPs](GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI_Shore.hg19.bed)
 * RA-LD-SNP (21079) -> TFBS (3766) -> DNase (2054) -> CpG-Shelf (202)-> [202 SNPs](GWAS-RA-792.R2.6.rsSNP.sort.tfbs.Dnase.CpGI_Shelf.hg19.bed)
 
-Method 2: 
+[Method 2](method2.sh): 
 
 * S1: R2>0.6 -> eQTL(PRA) -> TFBS -> DNase -> CpG-Island -> [7 Genomic Regions](S1-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.merge.sort.bed) and [7 SNPs](S1-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.bed)
 * S2: R2>0.6 -> eQTL(Full) -> TFBS -> DNase -> CpG-Island -> [17 Genomic Regions](S2-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.merge.sort.bed) and [19 SNPs](S2-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.sort.bed)
