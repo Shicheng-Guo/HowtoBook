@@ -5,7 +5,7 @@ We download 791 GWAS-Significant SNPs from GWAS Catalog and we collected all the
 Method: 
 * S1: R2>0.6 -> eQTL(PRA) -> TFBS -> DNase -> CpG-Island -> [7 Genomic Regions](S1-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.merge.sort.bed) and [7 SNPs](S1-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.bed)
 * S2: R2>0.6 -> eQTL(Full) -> TFBS -> DNase -> CpG-Island -> [17 Genomic Regions](S2-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.merge.sort.bed) and [19 SNPs](S2-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.sort.bed)
-* S3: R2>0.6 -> mis-sense variants -> [104 SNPs](gnomad.exomes.r2.1.sites.rec.GWAS-RA-792.R2.6.rsSNP.input.hg19.vcf.bed)
+* S3: R2>0.6 -> missense + stop + frame + MAF_Asian>0.1% -> [104 SNPs](gnomad.exomes.r2.1.sites.rec.GWAS-RA-792.R2.6.rsSNP.input.hg19.vcf.bed)
 
 S1: R2>0.6 -> eQTL(PRA) -> TFBS -> DNase -> CpG-Island -> [7 Genomic Regions](S1-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.merge.sort.bed), [7 SNPs](S1-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.bed)
 ```
