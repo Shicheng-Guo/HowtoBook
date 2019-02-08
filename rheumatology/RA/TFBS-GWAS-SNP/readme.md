@@ -6,6 +6,10 @@ Method 1:
 
 * RA-LD-SNP (21079) -> TFBS (18621) -> DNase (2054) -> CpGisland (129), we obtained the final target: 129 SNPs. We merged the adjust SNPs and found 77 genomic regions (see: [RA-77-TFBS-DNase-CpG-island Regions](https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/rheumatology/RA/TFBS-GWAS-SNP/GWAS-RA-R2.6.tfbs.DNase.CpGI.129.hg19.sort.merge.hg19.bed))
 
+```
+```
+
+
 Method 2: 
 
 * S1: R2>0.6 -> eQTL(PRA) -> TFBS -> DNase -> CpG-Island -> [7 Genomic Regions](S1-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.merge.sort.bed) and [7 SNPs](S1-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.bed)
