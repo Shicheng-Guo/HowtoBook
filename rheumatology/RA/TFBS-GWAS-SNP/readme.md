@@ -14,4 +14,4 @@ We download 791 GWAS-Significant SNPs from GWAS Catalog and we collected all the
 * S2: R2>0.6 -> eQTL(Full) -> TFBS -> DNase -> CpG-Island -> [17 Genomic Regions](S2-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.merge.sort.bed) and [19 SNPs](S2-GWAS-RA-R2.6.eQTL.tfbs.DNase.CpGI.hg19.sort.bed)
 * S3: R2>0.6 -> exom + missense + stop + frame + MAF_Asian>0.1% -> [104 SNPs](gnomad.exomes.r2.1.sites.rec.GWAS-RA-792.R2.6.rsSNP.input.hg19.vcf.bed)
 
-Summary 36 multi-hits SNPs and [186 unique SNPs](final.186.snp.bed) were occured in the final SNPs list. 
+Summary 36 multi-hits SNPs and [186 unique SNPs](RA-GWAS-Functional-SNPs-Final.186.Snp.20190208.bed) were occured in the final SNPs list. 
