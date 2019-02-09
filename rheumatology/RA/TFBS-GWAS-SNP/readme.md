@@ -18,4 +18,6 @@ Summary (1): 10 multi-hits SNPs and [82 unique SNP](RA-GWAS-Functional-SNPs-Fina
 
 Summary (1 & 2): 36 multi-hits SNPs and [186 unique SNP](RA-GWAS-Functional-SNPs-Final.186.Snp.20190208.bed) and [124 genomic regions](RA-GWAS-Functional-SNPs-Final.186.Snp.20190208.sort.merge.hg19.bed) were occured in the final SNPs list. 
 
-[Method 3](method2.md): check the summary data from GWAS-Meta
+[Method 3](method2.md): 
+
+* GWAS-Meta
