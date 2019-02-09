@@ -20,4 +20,4 @@ Summary (1 & 2): 36 multi-hits SNPs and [186 unique SNP](RA-GWAS-Functional-SNPs
 
 [Method 3](method2.md): 
 
-* GWAS-Meta-[129-SNPs]() + [186-unique-SNPs](RA-GWAS-Functional-SNPs-Final.186.Snp.20190208.bed) -> 
+* GWAS-Meta-[129-SNPs]() + Candidate [186-unique-SNPs](RA-GWAS-Functional-SNPs-Final.186.Snp.20190208.bed) -> 
