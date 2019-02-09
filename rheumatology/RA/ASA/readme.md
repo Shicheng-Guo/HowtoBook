@@ -39,10 +39,6 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 
 ==========================================================
 
-PADI,PTPN, MUC5B
-```
-
-```
 Identify VIP gene biallelic SNPs to be genotyped (N=322)
 ```
 wget https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/rheumatology/RA/ASA/VIP.hg19.bed
