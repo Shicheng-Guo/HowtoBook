@@ -5,7 +5,7 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 
 * 69    PADI,PTPN Variants in RA Risk
 
-* 128   GWAS-Meta Validated SNPs (GWAS-Meta-128-SNPs.20190208.vcf)
+* 128   [GWAS-Meta Validated SNPs](GWAS-Meta-128-SNPs.20190208.vcf)
 
 * 241   SNPs in the 3-UTR regions of VIP genes (miRNA-UTR3 double pairs)
 
