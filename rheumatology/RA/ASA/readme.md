@@ -1,7 +1,7 @@
 Genetics of Rheumatoid Arthritis: 2019 Status
 ==========================================================
 
-* 48    SNPs in Genetic Risk Score in European (non-HLA 48 + HLA)
+* [47](48-SNPs-Genetic-Risk-Score-EUR.txt)    SNPs in Genetic Risk Score in European (non-HLA 48 + HLA)
 
 * 69    PADI,PTPN Variants in RA Risk
 
