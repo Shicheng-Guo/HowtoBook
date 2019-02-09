@@ -1,4 +1,4 @@
-Genetics of rheumatoid arthritis: 2019 Status
+Genetics of Rheumatoid Arthritis: 2019 Status
 ==========================================================
 
 * 48    SNPs in Genetic Risk Score in European (non-HLA 48 + HLA)
