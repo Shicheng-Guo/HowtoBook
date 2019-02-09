@@ -11,7 +11,7 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 
 * 322   VIP functional variants
 
-* 327   eQTL for VIP genes
+* 327   [eQTL for VIP genes](VIP.eQTL.327.SNPs.txt)
 
 * 478   SNPs located in miRNAs seed region
 
