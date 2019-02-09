@@ -1,6 +1,7 @@
 ```
 48    SNPs in Genetic Risk Score in European (non-HLA 48 + HLA)
 69    PADI,PTPN Variants in RA Risk
+128   GWAS-Meta Validated SNPs (GWAS-Meta-128-SNPs.20190208.vcf)
 241   SNPs in the 3-UTR regions of VIP genes (miRNA-UTR3 double pairs)
 322   VIP functional variants
 327   eQTL for VIP genes
