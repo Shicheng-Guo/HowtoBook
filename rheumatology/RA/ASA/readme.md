@@ -1,3 +1,4 @@
+==========================================================
 
 * 48    SNPs in Genetic Risk Score in European (non-HLA 48 + HLA)
 
@@ -30,8 +31,6 @@
 * 4728  Reactome database related immnue system genes (9 pathway and 1571 genes)
 
 * 16013 CpGSNP-eQTL-Overlap Variants
-
-* ==========================================================
 
 * 6200  TFBS-SNPs in lncRNA promoter region
 
