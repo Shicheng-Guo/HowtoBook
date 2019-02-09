@@ -12,3 +12,6 @@ echo tabix -p vcf ALL.chr$i.phase3_shapeit2_mvncall_integrated_v5a.20130502.geno
 qsub $i.job
 done
 
+
+
+
