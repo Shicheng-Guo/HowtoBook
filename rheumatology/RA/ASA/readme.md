@@ -1,23 +1,41 @@
 
 * 48    SNPs in Genetic Risk Score in European (non-HLA 48 + HLA)
-69    PADI,PTPN Variants in RA Risk
-128   GWAS-Meta Validated SNPs (GWAS-Meta-128-SNPs.20190208.vcf)
-241   SNPs in the 3-UTR regions of VIP genes (miRNA-UTR3 double pairs)
-322   VIP functional variants
-327   eQTL for VIP genes
-478   SNPs located in miRNAs seed region
-907   HLA functional SNPs (6:29671116-33106890)
-1763  Epigene Functional Variants
-2665  GWAS RA signficant; 789 SNPs; LD R2>0.8 SNPs (not include intron,HaploReg)
-3325  GWAS Immnue System Desases
-3591  40K regions of GWAS Immnue System Desases(gnomad.exomes.r2.1.sites.rec.40KGWASAID.merge.vcf.bed)
-2518  Functional SNPs located in 824 Immune-related genes
-4215  miRNA-SNPs located in 824 Immune-related genes UTR3 regions
-4728  Reactome database related immnue system genes (9 pathway and 1571 genes)
-16013 CpGSNP-eQTL-Overlap Variants
-==========================================================
-6200  TFBS-SNPs in lncRNA promoter region
-44326 CpGI-TFSB-DNase-BUR SNPs(CpGI.TFBS.DNase.BUR.hg19.bed)
+
+* 69    PADI,PTPN Variants in RA Risk
+
+* 128   GWAS-Meta Validated SNPs (GWAS-Meta-128-SNPs.20190208.vcf)
+
+* 241   SNPs in the 3-UTR regions of VIP genes (miRNA-UTR3 double pairs)
+
+* 322   VIP functional variants
+
+* 327   eQTL for VIP genes
+
+* 478   SNPs located in miRNAs seed region
+
+* 907   HLA functional SNPs (6:29671116-33106890)
+
+* 1763  Epigene Functional Variants
+
+* 2665  GWAS RA signficant; 789 SNPs; LD R2>0.8 SNPs (not include intron,HaploReg)
+
+* 3325  GWAS Immnue System Desases
+
+* 3591  40K regions of GWAS Immnue System Desases(gnomad.exomes.r2.1.sites.rec.40KGWASAID.merge.vcf.bed)
+
+* 2518  Functional SNPs located in 824 Immune-related genes
+
+* 4215  miRNA-SNPs located in 824 Immune-related genes UTR3 regions
+
+* 4728  Reactome database related immnue system genes (9 pathway and 1571 genes)
+
+* 16013 CpGSNP-eQTL-Overlap Variants
+
+* ==========================================================
+
+* 6200  TFBS-SNPs in lncRNA promoter region
+
+* 44326 CpGI-TFSB-DNase-BUR SNPs(CpGI.TFBS.DNase.BUR.hg19.bed)
 
 PADI,PTPN, MUC5B
 ```
