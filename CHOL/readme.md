@@ -9,7 +9,7 @@ DNA Methylation
 
 ncRNA and lncRNA
 
-1. [GSE103909](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103909):   [GSE103909.R](GSE103909.R)
+1. [GSE103909](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE103909):  9 CCA + 9 adjacent + 3 Normal  [GSE103909.R](GSE103909.R)
 
 
 
