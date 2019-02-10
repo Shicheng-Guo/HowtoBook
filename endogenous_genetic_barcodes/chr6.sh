@@ -1,3 +1,5 @@
+cd /gpfs/home/guosa/hpc/db/hg19/1000Genome
+
 for i in `seq 63854 250 171114067`
 do
 j=$((i+500))
