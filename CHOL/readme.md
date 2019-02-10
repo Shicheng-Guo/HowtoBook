@@ -1,6 +1,4 @@
-Cholangiocarcinoma 
-
-### Background
+Genetics and Epigenetics of Cholangiocarcinoma 
 
 
 ### DNA Methylation
