@@ -15,7 +15,7 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 
 * 478   SNPs located in miRNAs seed region
 
-* 907   HLA functional SNPs (6:29671116-33106890)
+* 907   [HLA functional SNPs](gnomad.exomes.r2.1.sites.rec.HLA.hg19.vcf.bed) (6:29671116-33106890)
 
 * 1375  [Cytoband (>10 records)](../cytoband/1375.gnomad.exomes.r2.1.sites.rec.RA-GWAS-Cytoband.hg19.vcf.bed) from GWAS-Catalog-RA records
 
