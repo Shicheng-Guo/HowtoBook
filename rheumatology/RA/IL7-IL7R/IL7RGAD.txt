@@ -1,0 +1,44 @@
+SNP	Phenotype	Disease Class	Gene	Pubmed
+rs6897932	multiple sclerosis	IMMUNE	IL7R	15674389
+rs6897932	stem cell transplantation	HEMATOLOGICAL	IL7R	16435014
+rs6897932	allergy	IMMUNE	IL7R	17504502
+rs6897932	Multiple Sclerosis	IMMUNE	IL7R	19879194
+rs6897932	multiple sclerosis	IMMUNE	IL7R	19865102
+rs6897932	multiple sclerosis	IMMUNE	IL7R	19834503
+rs6897932	Arthritis, Juvenile Rheumatoid|Arthritis, Rheumatoid|	IMMUNE	IL7R	19744146
+rs6897932	bladder cancer	CANCER	IL7R	19692168
+rs6897932	Lung Diseases|Lymphomatoid Granulomatosis|Sarcoidosis|Syndrome	UNKNOWN	IL7R	19626041
+rs6897932	chronic obstructive pulmonary disease	OTHER	IL7R	19625176
+rs6897932	Multiple Sclerosis	IMMUNE	IL7R	19525955
+rs6897932	Multiple Sclerosis	IMMUNE	IL7R	19506219
+rs6897932	lung cancer 	CANCER	IL7R	19505916
+rs6897932		UNKNOWN	IL7R	19253027
+rs6897932	Celiac Disease|	IMMUNE	IL7R	19240061
+rs6897932	Multiple Sclerosis	IMMUNE	IL7R	19231135
+rs6897932	Asthma|Bronchial Hyperreactivity	IMMUNE	IL7R	18774388
+rs6897932	Multiple Sclerosis	IMMUNE	IL7R	18721276
+rs6897932	Helicobacter Infections|Stomach Neoplasms	CANCER	IL7R	18687755
+rs6897932	lung cancer 	CANCER	IL7R	18676680
+rs6897932	Multiple Sclerosis	IMMUNE	IL7R	18650830
+rs6897932	Lymphoma, Large B-Cell, Diffuse	CANCER	IL7R	18633131
+rs6897932	diabetes, type 1 	IMMUNE	IL7R	18563381
+rs6897932	Multiple Sclerosis	IMMUNE	IL7R	18354419
+rs6897932	multiple sclerosis	IMMUNE	IL7R	18272905
+rs6897932	multiple sclerosis	IMMUNE	IL7R	17660817
+rs6897932	Lymphopenia|SCID|Severe Combined Immunodeficiency	UNKNOWN	IL7R	14726805
+rs6897932	multiple sclerosis	IMMUNE	IL7R	21280076
+rs6897932	Autoimmune Diseases|Lupus Erythematosus, Systemic|Systemic lupus erythematosus	IMMUNE	IL7R	20962850
+rs6897932	Lymphoma, Non-Hodgkin|Lymphoma, Non-Hodgkin's	CANCER	IL7R	20952689
+rs6897932	HIV Infections|[X]Human immunodeficiency virus disease	INFECTION	IL7R	20812848
+rs6897932	longevity	AGING	IL7R	20800603
+rs6897932	Dermatitis, Atopic|Eczema allergic|Kaposi Varicelliform Eruption	IMMUNE	IL7R	20466416
+rs6897932	Hyperparathyroidism, Secondary	METABOLIC	IL7R	20424473
+rs6897932	Tobacco Use Disorder	CHEMDEPENDENCY	IL7R	20379614
+rs6897932	multiple sclerosis	IMMUNE	IL7R	20378664
+rs6897932	multiple sclerosis	IMMUNE	IL7R	20194581
+rs6897932	multiple sclerosis	IMMUNE	IL7R	20072142
+rs6897932	Arthritis, Juvenile Rheumatoid|Chronic Childhood Arthritis	IMMUNE	IL7R	20072139
+rs6897932	lung cancer	CANCER	IL7R	19170196
+rs6897932	Diabetes Mellitus, Type 1	IMMUNE	IL7R	17554260
+rs6897932	Multiple Sclerosis	IMMUNE	IL7R	17660530
+rs6897932	Multiple Sclerosis	IMMUNE	IL7R	19525953
