@@ -9,7 +9,7 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 
 * 241   SNPs in the 3-UTR regions of VIP genes (miRNA-UTR3 double pairs)
 
-* 322   VIP functional variants
+* 334   [VIP functional variants](gnomad.exomes.r2.1.sites.rec.VIP.hg19.vcf.bed)
 
 * 327   [eQTL for VIP genes](VIP.eQTL.327.SNPs.txt)
 
