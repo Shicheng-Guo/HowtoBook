@@ -41,7 +41,7 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 
 ==========================================================
 
-Identify VIP gene biallelic SNPs to be genotyped (N=322) [code]()
+Identify VIP gene biallelic SNPs to be genotyped (N=322) [code](VIP.biallelic.MFS.sh)
 
 Identify all SNPs located in miRNAs (478 SNPs)
 ```
