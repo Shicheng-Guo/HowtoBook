@@ -17,6 +17,8 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 
 * 907   HLA functional SNPs (6:29671116-33106890)
 
+* 1375  [Cytoband (>10 records)](../cytoband/1375.gnomad.exomes.r2.1.sites.rec.RA-GWAS-Cytoband.hg19.vcf.bed) from GWAS-Catalog-RA records
+
 * 1763  Epigene Functional Variants
 
 * 2665  GWAS RA signficant; 789 SNPs; LD R2>0.8 SNPs (not include intron,HaploReg)
