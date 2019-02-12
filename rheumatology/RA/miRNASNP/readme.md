@@ -1,11 +1,7 @@
 
 http://www.targetscan.org/vert_72/vert_72_data_download/All_Target_Locations.hg19.bed.zip
 
-[targetScan](http://www.targetscan.org/vert_72/vert_72_data_download/All_Target_Locations.hg19.bed.zip)
-```
-wget http://www.targetscan.org/vert_72/vert_72_data_download/Predicted_Target_Locations.default_predictions.hg19.bed.zip
-unzip Predicted_Target_Locations.default_predictions.hg19.bed.zip
-```
+[targetScan](http://www.targetscan.org/cgi-bin/targetscan/data_download.vert72.cgi)
 
 
 
