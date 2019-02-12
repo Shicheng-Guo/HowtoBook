@@ -27,7 +27,7 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 
 * 3591  [40K regions of GWAS Immnue System Desases](gnomad.exomes.r2.1.sites.rec.40KGWASAID.merge.vcf.bed)
 
-* 2518  Functional SNPs located in 824 Immune-related genes
+* 2518  [Functional SNPs located in 824 Immune-related genes](gnomad.exomes.r2.1.sites.rec.InnateDB.merge.vcf.bed)
 
 * 4215  miRNA-SNPs located in 824 Immune-related genes UTR3 regions
 
