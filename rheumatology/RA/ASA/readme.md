@@ -19,7 +19,7 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 
 * 1375  [Cytoband (>10 records)](../cytoband/1375.gnomad.exomes.r2.1.sites.rec.RA-GWAS-Cytoband.hg19.vcf.bed) from GWAS-Catalog-RA records
 
-* 1763  Epigene Functional Variants
+* 1763  [Epigene Functional Variants](gnomad.exomes.r2.1.sites.rec.Epi.merge.vcf.bed)
 
 * 2665  GWAS RA signficant; 789 SNPs; LD R2>0.8 SNPs (not include intron,HaploReg)
 
