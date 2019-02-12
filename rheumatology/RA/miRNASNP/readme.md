@@ -1,4 +1,10 @@
 
+http://www.targetscan.org/vert_72/vert_72_data_download/All_Target_Locations.hg19.bed.zip
+
+[targetScan](http://www.targetscan.org/vert_72/vert_72_data_download/All_Target_Locations.hg19.bed.zip)
+
+
+
 miRNA-SNP: http://bioinfo.life.hust.edu.cn/miRNASNP2/download.php
 
 * miRNA_gain_by_SNPs_in_gene_3utr.txt
