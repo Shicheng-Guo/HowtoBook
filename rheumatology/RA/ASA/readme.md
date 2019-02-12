@@ -78,7 +78,7 @@ bcftools concat -f concat.txt -Ov -o gnomad.exomes.r2.1.sites.rec.Epi.merge.vcf
 grep -v "#" gnomad.exomes.r2.1.sites.rec.Epi.merge.vcf | awk '{print $1"\t"$2"\t"$3"\t"$4"\t"$5}' > gnomad.exomes.r2.1.sites.rec.Epi.merge.vcf.bed
 ```
 
-SNPs in the 3-UTR regions of VIP genes (241 SNPs)
+SNPs in the 3-UTR regions of VIP genes (241 SNPs): these 241 actually is a subset of SNPs in seed regions of miRNA
 ```
 cd /gpfs/home/guosa/hpc/rheumatology/RA/ASA/miRNA-SNP
 wget http://bioinfo.life.hust.edu.cn/miRNASNP2/download/miRNA_targets_gain_by_SNPs_in_seed_regions.txt
