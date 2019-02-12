@@ -29,7 +29,7 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 
 * 2518  [Functional SNPs located in 824 Immune-related genes](gnomad.exomes.r2.1.sites.rec.InnateDB.merge.vcf.bed)
 
-* 4215  miRNA-SNPs located in 824 Immune-related genes UTR3 regions
+* [11842](InnateDB.UTR3.snp.txt)  miRNA-SNPs located in 824 Immune-related genes UTR3 regions
 
 * 4728  Reactome database related immnue system genes (9 pathway and 1571 genes)
 
