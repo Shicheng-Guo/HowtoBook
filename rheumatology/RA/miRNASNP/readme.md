@@ -1,10 +1,6 @@
 
 
-miRNA target prediction by [targetScan](http://www.targetscan.org/cgi-bin/targetscan/data_download.vert72.cgi) can be download with [default mode](http://www.targetscan.org/vert_72/vert_72_data_download/Predicted_Target_Locations.default_predictions.hg19.bed.zip) and [full mode](http://www.targetscan.org/vert_72/vert_72_data_download/Conserved_Site_Context_Scores.txt.zip).
-
-
-
-miRNA-SNP: http://bioinfo.life.hust.edu.cn/miRNASNP2/download.php
+miRNA target prediction by [targetScan](http://www.targetscan.org/cgi-bin/targetscan/data_download.vert72.cgi) can be download with [default mode](http://www.targetscan.org/vert_72/vert_72_data_download/Predicted_Target_Locations.default_predictions.hg19.bed.zip) and [full mode](http://www.targetscan.org/vert_72/vert_72_data_download/Conserved_Site_Context_Scores.txt.zip). Meanwhile, [miRNA-SNP website](http://bioinfo.life.hust.edu.cn/miRNASNP2/download.php) also provide SNPs for miRNA.
 
 * miRNA_gain_by_SNPs_in_gene_3utr.txt
 * miRNA_loss_by_SNPs_in_gene_3utr.txt
