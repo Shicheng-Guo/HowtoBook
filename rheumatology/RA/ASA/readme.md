@@ -152,7 +152,7 @@ bcftools concat -f concat.txt -Ov -o gnomad.exomes.r2.1.sites.rec.InnateDB.merge
 grep -v "#" gnomad.exomes.r2.1.sites.rec.InnateDB.merge.vcf | awk '{print $1"\t"$2"\t"$3"\t"$4"\t"$5}' > gnomad.exomes.r2.1.sites.rec.InnateDB.merge.vcf.bed
 ```
 
-N=11842 miRNA-SNPs located in [824 Immune-related genes](https://www.innatedb.com/moleculeSearch.do) UTR3 regions(csv). We cannot scan all of them, so we filter them with allele frequency in East Asian with GnomAD exom data. Interesting thing is only [196 SNPs]( gnomad.exomes.r2.1.sites.rec.innateDbUTR3.hg19.vcf.bed) remained with the filtering. I don't know whether it is caused by bed file (0 base or 1 base) or AF<0.001. 
+N=11842 miRNA-SNPs located in [824 Immune-related genes](https://www.innatedb.com/moleculeSearch.do) UTR3 regions(csv). We cannot scan all of them, so we filter them with allele frequency in East Asian with GnomAD exom data. Interesting thing is only [196 SNPs]( gnomad.exomes.r2.1.sites.rec.innateDbUTR3.hg19.vcf.bed) remained with the filtering. I don't know whether it is caused by bed file (0 base or 1 base) or AF<0.001. After the checking, I find the reason, the Exome based Gnomad is not good enough and majority of the UTR SNPs are not existed in Exom based Gnomad. Therefore, I check the database to Genomic based Gnomad and then the matched SNPs numbers were signficantly increased and the script running time become very long. 
 ```
 wget http://bioinfo.life.hust.edu.cn/miRNASNP2/download/miRNA_targets_gain_by_SNPs_in_seed_regions.txt
 wget http://bioinfo.life.hust.edu.cn/miRNASNP2/download/miRNA_targets_loss_by_SNPs_in_seed_regions.txt
