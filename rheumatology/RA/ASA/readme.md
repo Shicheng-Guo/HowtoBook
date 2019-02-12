@@ -31,7 +31,7 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 
 * [1635](gnomad.genomes.r2.1.sites.rec.innateDbUTR3.merge.vcf.bed) miRNA-SNPs located in 824 Immune-related genes UTR3 regions ([raw 11842](InnateDB.UTR3.snp.txt) )
 
-* 4728  Reactome database related immnue system genes (9 pathway and 1571 genes)
+* [4728](gnomad.exomes.r2.1.4728.rec.ReactomePathWay.immnueGene.hg19.vcf.bed)  Reactome database related immnue system genes (9 pathway and 1571 genes)
 
 * 16013 CpGSNP-eQTL-Overlap Variants
 
