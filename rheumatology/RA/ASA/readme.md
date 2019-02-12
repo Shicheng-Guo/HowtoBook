@@ -21,7 +21,7 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 
 * 1763  [Epigene Functional Variants](gnomad.exomes.r2.1.sites.rec.EpiVar.txt)
 
-* 2665  GWAS RA signficant; 789 SNPs; LD R2>0.8 SNPs (not include intron,HaploReg)
+* [2665](2665-GWAS-LD0.8-ASN.hg19.rsList.txt)  GWAS RA signficant; 789 SNPs; LD R2>0.8 SNPs (not include intron,HaploReg)
 
 * 3325  GWAS Immnue System Desases
 
