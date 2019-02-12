@@ -23,7 +23,7 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 
 * [2665](2665-GWAS-LD0.8-ASN.hg19.rsList.txt)  GWAS RA signficant; 789 SNPs; LD R2>0.8 SNPs (not include intron,HaploReg)
 
-* 3325  GWAS Immnue System Desases
+* 3325  [GWAS Immnue System Desases](GWAS-immnue-3325_SNP.hg19.bed)
 
 * 3591  [40K regions of GWAS Immnue System Desases](gnomad.exomes.r2.1.sites.rec.40KGWASAID.merge.vcf.bed)
 
