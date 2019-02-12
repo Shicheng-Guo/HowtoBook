@@ -166,8 +166,6 @@ SNP1<-data1[data1[,2] %in% InnateDB[,5],4]
 SNP2<-data2[data2[,2] %in% InnateDB[,5],4]
 SNP<-c(as.character(SNP1),as.character(SNP2))
 write.table(sort(table(SNP),decreasing=T),file="InnateDB.UTR3.snp.txt",sep="\t",quote=F,col.names=F)
-
-
 ```
 
 CpGI-TFBS-DNase-BUR-SNPs
