@@ -1,3 +1,4 @@
+cd /gpfs/home/guosa/hpc/rheumatology/RA/ASA/innateDB/utrSNP
 panel="innateDbUTR3"
 bed="innateDbUTR3.hg19.bed"
 mkdir temp
