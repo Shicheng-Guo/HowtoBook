@@ -152,7 +152,7 @@ bcftools concat -f concat.txt -Ov -o gnomad.exomes.r2.1.sites.rec.InnateDB.merge
 grep -v "#" gnomad.exomes.r2.1.sites.rec.InnateDB.merge.vcf | awk '{print $1"\t"$2"\t"$3"\t"$4"\t"$5}' > gnomad.exomes.r2.1.sites.rec.InnateDB.merge.vcf.bed
 ```
 
-N=4215 miRNA-SNPs located in [824 Immune-related genes](https://www.innatedb.com/moleculeSearch.do) UTR3 regions(csv): 
+N=11842 miRNA-SNPs located in [824 Immune-related genes](https://www.innatedb.com/moleculeSearch.do) UTR3 regions(csv). We cannot scan all of them, so we filter them with allele frequency in East Asian with GnomAD exom data.
 ```
 wget http://bioinfo.life.hust.edu.cn/miRNASNP2/download/miRNA_targets_gain_by_SNPs_in_seed_regions.txt
 wget http://bioinfo.life.hust.edu.cn/miRNASNP2/download/miRNA_targets_loss_by_SNPs_in_seed_regions.txt
@@ -166,6 +166,8 @@ SNP1<-data1[data1[,2] %in% InnateDB[,5],4]
 SNP2<-data2[data2[,2] %in% InnateDB[,5],4]
 SNP<-c(as.character(SNP1),as.character(SNP2))
 write.table(sort(table(SNP),decreasing=T),file="InnateDB.UTR3.snp.txt",sep="\t",quote=F,col.names=F)
+
+
 ```
 
 CpGI-TFBS-DNase-BUR-SNPs
