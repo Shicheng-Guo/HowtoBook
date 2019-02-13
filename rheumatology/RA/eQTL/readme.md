@@ -1,7 +1,7 @@
 
 
 In the first step, we collected all the eQTL from whole blood, liver, colon, stomach and lung. 
-
+* [21098](eQTL.hg19.bed) eQTL SNPs were collected from the GTEx project with FDR<0.05
 * [14285](gnomad.genomes.r2.1.sites.rec.eQTL.merge.vcf.bed) SNPs identified by Gnomad.Genomes data with MAF>0.1%
 * [772](gnomad.exomes.r2.1.sites.rec.eQTL.hg19.vcf.bed) SNPs identified by Gnomad.Genomes data with MAF>0.1%
 
