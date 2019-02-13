@@ -13,5 +13,6 @@ However, when I check it again, I found I lost the lung eqtl data. After I add l
 I made a brief checking to these eqtl candidates.
 
 * [6876](gnomad.genomes.eQTL.cpgSNP.uni.hg19.bed) in 20667 is belong to CpG-SNP  (Ratio=33%)
+* [1199] SNPs were "Conflicting CpG-SNP" such as rs999941, rs9974367, they have pattern C[C/G]G
 
 
