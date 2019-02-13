@@ -1,6 +1,6 @@
 
 
-772 eQTL-exmoic SNPs and 
+In the first step, we collected all the eQTL from whole blood, liver, colon, stomach and lung. We found 772 eQTL-exmoic SNPs and 
 
 
 ```
