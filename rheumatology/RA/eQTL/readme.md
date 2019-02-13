@@ -19,7 +19,7 @@ data4<-subset(read.table("Stomach.v7.egenes.txt",head=T,sep="\t"),qval<qval_thre
 eqtl<-c(as.character(data1[,19]),as.character(data2[,19]),as.character(data3[,19]),as.character(data4[,19]))
 length(table(eqtl))
 eqtl.snp<-names(table(eqtl))
-write.table(eqtl.snp,file="vip.eqtl.snp.txt",sep="\t",quote=F,col.names=F,row.names=F)
+write.table(eqtl.snp,file="eqtl.snp.txt",sep="\t",quote=F,col.names=F,row.names=F)
 ```
 
 
