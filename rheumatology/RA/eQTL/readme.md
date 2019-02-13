@@ -1,27 +1,13 @@
 
 
-In the first step, we collected all the eQTL from whole blood, liver, colon, stomach and lung. 
+In the first step, we collected all the eQTL from whole blood, liver, colon, stomach [etql set1](eqtl.set1.sh). 
 * [21098](eQTL.hg19.bed) eQTL SNPs were collected from the GTEx project with FDR<0.05
 * [14285](gnomad.genomes.r2.1.sites.rec.eQTL.merge.vcf.bed) SNPs identified by Gnomad.Genomes data with MAF>0.1%
 * [772](gnomad.exomes.r2.1.sites.rec.eQTL.hg19.vcf.bed) SNPs identified by Gnomad.Genomes data with MAF>0.1%
-
-```
-wget https://storage.googleapis.com/gtex_analysis_v7/single_tissue_eqtl_data/GTEx_Analysis_v7_eQTL.tar.gz
-tar xzvf GTEx_Analysis_v7_eQTL.tar.gz
-cd GTEx_Analysis_v7_eQTL
-gunzip *.gz 
-
-qval_threshold=0.05
-data1<-subset(read.table("Whole_Blood.v7.egenes.txt",head=T,sep="\t"),qval<qval_threshold)
-data2<-subset(read.table("Liver.v7.egenes.txt",head=T,sep="\t"),qval<qval_threshold)
-data3<-subset(read.table("Small_Intestine_Terminal_Ileum.v7.egenes.txt",head=T,sep="\t"),qval<qval_threshold)
-data4<-subset(read.table("Stomach.v7.egenes.txt",head=T,sep="\t"),qval<qval_threshold)
-eqtl<-c(as.character(data1[,19]),as.character(data2[,19]),as.character(data3[,19]),as.character(data4[,19]))
-length(table(eqtl))
-eqtl.snp<-names(table(eqtl))
-write.table(eqtl.snp,file="eqtl.snp.txt",sep="\t",quote=F,col.names=F,row.names=F)
-```
-
+However, when I check it again, I found I lost the lung eqtl data. After I add lung eqtl [eqtl set2](eqtl.set2.sh)
+* [30517](eQTL.hg19.bed) eQTL SNPs were collected from the GTEx project with FDR<0.05
+* [14285](gnomad.genomes.r2.1.sites.rec.eQTL.merge.vcf.bed) SNPs identified by Gnomad.Genomes data with MAF>0.1%
+* [772](gnomad.exomes.r2.1.sites.rec.eQTL.hg19.vcf.bed) SNPs identified by Gnomad.Genomes data with MAF>0.1%
 
 ```
 #####################################################################
