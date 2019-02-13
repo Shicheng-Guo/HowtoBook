@@ -1,9 +1,10 @@
 # Since I want to see the haplotype, I increased the AF
+# be careful, the bed file require 0 based bed file
 #####################################################################
 cd /gpfs/home/guosa/hpc/cpgSNP/Asian
 cp /gpfs/home/guosa/hpc/db/hg19/cpgSNP.hg19.bed ./
 perl -p -i -e 's/chr//g' cpgSNP.hg19.bed
-panel="cpgSNP"
+panel="cpgSNPs"
 mkdir temp
 ## Function Variants in Genome Regions
 for i in {1..22} X 
