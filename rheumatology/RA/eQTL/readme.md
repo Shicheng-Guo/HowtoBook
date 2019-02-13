@@ -16,12 +16,8 @@ data3<-subset(read.table("Small_Intestine_Terminal_Ileum.v7.egenes.txt",head=T,s
 data4<-subset(read.table("Stomach.v7.egenes.txt",head=T,sep="\t"),qval<qval_threshold)
 eqtl<-c(as.character(data1[,19]),as.character(data2[,19]),as.character(data3[,19]),as.character(data4[,19]))
 length(table(eqtl))
-vip.eqtl.snp<-names(table(eqtl))
-dim(data1)
-dim(data2)
-dim(data3)
-dim(data4)
-write.table(vip.eqtl.snp,file="vip.eqtl.snp.txt",sep="\t",quote=F,col.names=F,row.names=F)
+eqtl.snp<-names(table(eqtl))
+write.table(eqtl.snp,file="vip.eqtl.snp.txt",sep="\t",quote=F,col.names=F,row.names=F)
 ```
 
 
