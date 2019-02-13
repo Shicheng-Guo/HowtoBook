@@ -12,7 +12,6 @@ However, when I check it again, I found I lost the lung eqtl data. After I add l
 
 I made a brief checking to these eqtl candidates.
 
-* in 30517 is CpG-SNP
-* in 30517 is CpG-SNP
-* in 30517 is CpG-SNP
+* [6876](gnomad.genomes.eQTL.cpgSNP.uni.hg19.bed) in 20667 is belong to CpG-SNP
+
 
