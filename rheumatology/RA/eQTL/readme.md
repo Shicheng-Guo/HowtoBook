@@ -1,6 +1,11 @@
 
 
-In the first step, we collected all the eQTL from whole blood, liver, colon, stomach and lung. We found 772 eQTL-exmoic SNPs and 
+In the first step, we collected all the eQTL from whole blood, liver, colon, stomach and lung. 
+
+
+* [14285](gnomad.genomes.r2.1.sites.rec.eQTL.merge.vcf.bed) SNPs identified by Gnomad.Genomes data with MAF>0.1%
+
+We found 772 eQTL-exmoic SNPs and 
 
 
 ```
