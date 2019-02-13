@@ -16,7 +16,7 @@ echo \#PBS -e $(pwd)/temp/ >>$i.job
 echo cd $(pwd) >> $i.job
 echo \# bcftools norm -m \+ /gpfs/home/guosa/hpc/db/Gnomad/vcf/gnomad.genomes.r2.1.sites.chr$i.vcf.bgz -Oz -o gnomad.genomes.r2.1.sites.chr$i.rec.vcf.bgz >> $i.job
 echo \# tabix -p vcf gnomad.genomes.r2.1.sites.chr$i.rec.vcf.bgz >> $i.job
-echo bcftools view -v snps -f PASS -i \'INFO/AF_eas\>0.01 \&INFO/AF_eas\<0.99\' -T $panel.hg19.bed  /gpfs/home/guosa/hpc/db/Gnomad/vcf/gnomad.genomes.r2.1.sites.chr$i.rec.vcf.bgz -Ou -o  gnomad.genomes.r2.1.sites.chr$i.rec.$panel.vcf.bgz >>$i.job
+echo bcftools view -v snps -f PASS -i \'INFO/AF_eas\>0.05 \&INFO/AF_eas\<0.95\' -T $panel.hg19.bed  /gpfs/home/guosa/hpc/db/Gnomad/vcf/gnomad.genomes.r2.1.sites.chr$i.rec.vcf.bgz -Ou -o  gnomad.genomes.r2.1.sites.chr$i.rec.$panel.vcf.bgz >>$i.job
 echo bcftools sort gnomad.genomes.r2.1.sites.chr$i.rec.$panel.vcf.bgz -Ou -o gnomad.genomes.r2.1.sites.chr$i.rec.$panel.sort.vcf.bgz >> $i.job
 echo bcftools norm -d all gnomad.genomes.r2.1.sites.chr$i.rec.$panel.sort.vcf.bgz -Ou -o gnomad.genomes.r2.1.sites.chr$i.rec.$panel.sort.rmdup.vcf.bgz >> $i.job
 echo bcftools view -m2 -M2 -v snps gnomad.genomes.r2.1.sites.chr$i.rec.$panel.sort.rmdup.vcf.bgz -Ov -o gnomad.genomes.r2.1.sites.chr$i.rec.$panel.sort.rmdup.biallelic.vcf.bgz >>$i.job
