@@ -14,5 +14,6 @@ I made a brief checking to these eqtl candidates.[eqtl set3 code](eqtl.set3.sh)
 
 * [6876](gnomad.genomes.eQTL.cpgSNP.uni.hg19.bed) in 20667 is belong to CpG-SNP  (Ratio=33%)
 * [1199] SNPs were "Conflicting CpG-SNP" such as rs999941, rs9974367, they have pattern [C[C/G]G](https://www.ncbi.nlm.nih.gov/projects/SNP/snp_ref.cgi?do_not_redirect&rs=rs9974367)
+* []() in 20667 SNPs are non-conflicted CpG-SNP eQTL and were added to ASA array. 
 
 
