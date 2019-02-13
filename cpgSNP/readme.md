@@ -1,3 +1,6 @@
+
+Let's check SNP rs17885645, the interesting result occurred to this SNP. 
+
 1. download hg19/hg38 fa file
 ```
 wget http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz
