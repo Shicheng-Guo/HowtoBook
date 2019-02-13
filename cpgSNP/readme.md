@@ -1,13 +1,12 @@
 
 Let's check SNP rs17885645, the interesting result occurred to this SNP. 
 
-1. download hg19/hg38 fa file
 ```
+# 1. download hg19/hg38 fa file
 wget http://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz
-```
 
-2. fa2mask.pl: change SNP to IUPAC
-```
+# 2. fa2mask.pl: change SNP to IUPAC
+
 cd /gpfs/home/guosa/hpc/db/hg38/fa/chroms
 cd ~/hpc/db/hg38/fa/chroms
 
@@ -18,9 +17,9 @@ echo cd $(pwd) >> chr$i.job
 echo perl fa2mask.pl chr$i >> chr$i.job
 qsub chr$i.job
 done
-```
-3. creat cpg-snp list for hg38 (ppn=20 to keep memmory enough)
-```
+
+# 3. creat cpg-snp list for hg38 (ppn=20 to keep memmory enough)
+
 cd ~/hpc/db/hg38/fa/chroms
 for i in {1..22} X Y
 do
