@@ -11,3 +11,8 @@ However, when I check it again, I found I lost the lung eqtl data. After I add l
 * [772](gnomad.exomes.r2.1.sites.rec.eQTL.set2.hg19.vcf.bed) SNPs identified by Gnomad.Genomes data with MAF>0.1% in East Asian
 
 I made a brief checking to these eqtl candidates.
+
+* in 30517 is CpG-SNP
+* in 30517 is CpG-SNP
+* in 30517 is CpG-SNP
+
