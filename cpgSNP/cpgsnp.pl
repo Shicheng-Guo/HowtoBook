@@ -6,7 +6,7 @@ chdir $dir;
 
 chomp(my $chr=shift @ARGV);
 
-my %iupac=(
+my %iupac1=(
 'A/G' => 'R',
 'C/T' => 'Y',
 'A/C' => 'M',
@@ -17,6 +17,20 @@ my %iupac=(
 'C/G/T' => 'B',
 'A/C/G' => 'V',
 'A/G/T' => 'D',
+'A/C/G/T' => 'N',
+);
+
+my %iupac2=(
+'A/G' => 'Y',
+'C/T' => 'R',
+'A/C' => 'K',
+'G/T' => 'M',
+'C/G' => 'S',
+'A/T' => 'W',
+'A/C/T' => 'D', 
+'C/G/T' => 'V',
+'A/C/G' => 'B', 
+'A/G/T' => 'H',
 'A/C/G/T' => 'N',
 );
 
@@ -65,11 +79,18 @@ while(<F2>){
     my $line=$_;
     my (undef,$mychr,$start,$end,$rs,undef,$strand,undef,$ref,$obs,undef)=split/\s+/,$line;
 	next if $mychr ne $chr;
-    my $position=$end-1;
-	next if !$iupac{$obs};
-	print "$mychr\t$chr\t$position\t$rs\t$ref\t$obs\t$iupac{$obs}\n";
-    $seq[$position]=$iupac{$obs};
-    $database{$end}=$line;
+        my $position=$end-1;
+	if($strand eq "+"){
+	next if !$iupac1{$obs};
+	print "$mychr\t$chr\t$position\t$rs\t$ref\t$obs\t$iupac1{$obs}\n";
+        $seq[$position]=$iupac1{$obs};
+        $database{$end}=$line;
+	}else{
+	next if !$iupac2{$obs};
+	print "$mychr\t$chr\t$position\t$rs\t$ref\t$obs\t$iupac2{$obs}\n";
+        $seq[$position]=$iupac2{$obs};
+        $database{$end}=$line;
+	}
 }
 close F2;
 
@@ -90,6 +111,6 @@ foreach my $pos(@pos){
 	my $end =$$pos[2] eq "C"? $$pos[0]+1:($$pos[0]+2);
 	my $mode=join "", @seq[($$pos[0]-3)..(($$pos[1]+1))];
 	my @output=split /\s+/,$database{$end};
-	print OUT2 "$chr\t$start\t$end\t$output[4]\t$output[8]\t$output[9]\t$mode\n";
+	print OUT2 "$chr\t$start\t$end\t$output[4]\t$output[6]\t$output[8]\t$output[9]\t$mode\n";
 }
 close OUT2;
