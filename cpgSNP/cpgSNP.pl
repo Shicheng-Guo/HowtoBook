@@ -111,7 +111,7 @@ foreach my $pos(@pos){
 	my $end =$$pos[2] eq "C"? $$pos[0]+1:($$pos[0]+2);
 	my $mode=join "", @seq[($$pos[0]-3)..(($$pos[1]+1))];
 	my @output=split /\s+/,$database{$end};
-	my $LossGain= $output[4] eq "C" ? "Loss" : "Gain";
+	my $LossGain= $output[8] eq "C" ? "Loss" : "Gain";
 	print OUT2 "$chr\t$start\t$end\t$output[4]\t$output[6]\t$LossGain\t$output[8]\t$output[9]\t$mode\n";
 }
 close OUT2;
