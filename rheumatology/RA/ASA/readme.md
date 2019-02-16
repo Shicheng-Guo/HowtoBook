@@ -60,7 +60,7 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 * 1152 in [3591](gnomad.exomes.r2.1.sites.rec.40KGWASAID.merge.hg19.bed) added into ASA-CHINA-GuangHua
 * 46 in [2518](gnomad.exomes.r2.1.sites.rec.InnateDB.merge.hg19.bed) added into ASA-CHINA-GuangHua
 * 1361 in [1635](gnomad.genomes.r2.1.sites.rec.innateDbUTR3.merge.hg19.bed) added into ASA-CHINA-GuangHua
-* 5091 in [57543](gnomad.genomes.eQTL.TFBS.uni.hg19.bed -b ASA.hg19.bed) added into ASA-CHINA-GuangHua
+* 5091 in [57543](gnomad.genomes.eQTL.TFBS.uni.hg19.bed) added into ASA-CHINA-GuangHua
 
 
 
