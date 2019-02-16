@@ -33,7 +33,7 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 
 * [4728](gnomad.exomes.r2.1.4728.rec.ReactomePathWay.immnueGene.hg19.vcf.bed)  Reactome database related immnue system genes (9 pathway and 1571 genes)
 
-* 16013 CpGSNP-eQTL-Overlap Variants
+* [7087](../eQTL/gnomad.genomes.eQTL.cpgSNP.uni.ASA.hg19.bed) CpGSNP-eQTL-Overlap Variants
 
 * 6200  TFBS-SNPs in lncRNA promoter region
 
