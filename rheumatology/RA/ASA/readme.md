@@ -2,47 +2,26 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 ==========================================================
 
 * [47](48-SNPs-Genetic-Risk-Score-EUR.txt)    SNPs in Genetic Risk Score in European (non-HLA 48 + HLA)
-
 * 69    PADI,PTPN Variants in RA Risk
-
 * 128   [GWAS-Meta Validated SNPs](GWAS-Meta-128-SNPs.20190208.vcf)
-
 * 241   SNPs in the 3-UTR regions of VIP genes (miRNA-UTR3 double pairs)
-
 * 334   [VIP functional variants](gnomad.exomes.r2.1.sites.rec.VIP.hg19.vcf.bed)
-
 * 327   [eQTL for VIP genes](VIP.eQTL.327.SNPs.txt)
-
 * 478   SNPs located in miRNAs seed region
-
 * 907   [HLA functional SNPs](gnomad.exomes.r2.1.sites.rec.HLA.hg19.vcf.bed) (6:29671116-33106890)
-
 * 1375  [Cytoband (>10 records)](../cytoband/1375.gnomad.exomes.r2.1.sites.rec.RA-GWAS-Cytoband.hg19.vcf.bed) from GWAS-Catalog-RA records
-
 * 1763  [Epigene Functional Variants](gnomad.exomes.r2.1.sites.rec.EpiVar.txt)
-
 * [2665](2665-GWAS-LD0.8-ASN.hg19.rsList.txt)  GWAS RA signficant; 789 SNPs; LD R2>0.8 SNPs (not include intron,HaploReg)
-
 * 3325  [GWAS Immnue System Desases](GWAS-immnue-3325_SNP.hg19.bed)
-
 * 3591  [40K regions of GWAS Immnue System Desases](gnomad.exomes.r2.1.sites.rec.40KGWASAID.merge.vcf.bed)
-
 * 2518  [Functional SNPs located in 824 Immune-related genes](gnomad.exomes.r2.1.sites.rec.InnateDB.merge.vcf.bed)
-
 * [1635](gnomad.genomes.r2.1.sites.rec.innateDbUTR3.merge.vcf.bed) miRNA-SNPs located in 824 Immune-related genes UTR3 regions ([raw 11842](InnateDB.UTR3.snp.txt) )
-
 * [4728](gnomad.exomes.r2.1.4728.rec.ReactomePathWay.immnueGene.hg19.vcf.bed)  Reactome database related immnue system genes (9 pathway and 1571 genes)
-
 * [5819](gnomad.genomes.eQTL.TFBS.uni.hg19.bed) eQTL-TFBS Overlap Variants
-
 * [7087](../eQTL/gnomad.genomes.eQTL.cpgSNP.uni.ASA.hg19.bed) CpGSNP-eQTL-Overlap Variants
-
 * [14873](gnomad.exomes.r2.1.sites.rec.TotalCandidateGene.hg19.vcf.bed) Frame+Loss+Missense+Stop+Gain in [interesting Genes](TotalCandidateGene.hg19.bed)
-
 * 6200  TFBS-SNPs in lncRNA promoter region
-
 * 44326 CpGI-TFSB-DNase-BUR SNPs(CpGI.TFBS.DNase.BUR.hg19.bed)
-
 ==========================================================
 
 [ASA-primary-SNPs](ASA.hg19.bed) 738,981 primary SNPs in ASA-CHINA ARRAY
