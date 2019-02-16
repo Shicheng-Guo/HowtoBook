@@ -47,9 +47,9 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 
 [ASA-primary-SNPs](ASA.hg19.bed) 738,981 primary SNPs in ASA-CHINA ARRAY
 
-* 10,648 in [14873](gnomad.exomes.r2.1.sites.rec.TotalCandidateGene.hg19.vcf.bed) added into ASA-CHINA-GuangHua
-* 1,708 in [4728](gnomad.exomes.r2.1.4728.rec.ReactomePathWay.immnueGene.hg19.vcf.bed) added into ASA-CHINA-GuangHua
-* 1,257 in [8501](gnomad.exomes.r2.1.8501.rec.GHRA_ASA.hg19.vcf.bed) added into ASA-CHINA-GuangHua
+* 10648 in [14873](gnomad.exomes.r2.1.sites.rec.TotalCandidateGene.hg19.vcf.bed) added into ASA-CHINA-GuangHua
+* 1708 in [4728](gnomad.exomes.r2.1.4728.rec.ReactomePathWay.immnueGene.hg19.vcf.bed) added into ASA-CHINA-GuangHua
+* 1257 in [8501](gnomad.exomes.r2.1.8501.rec.GHRA_ASA.hg19.vcf.bed) added into ASA-CHINA-GuangHua
 * 35 in [128](GWAS-Meta-128-SNPs.20190208.vcf.bed) added into ASA-CHINA-GuangHua
 * 0 in [48](48-SNPs-Genetic-Risk-Score-EUR.hg19.bed) added into ASA-CHINA-GuangHua
 * 44 in [907](gnomad.exomes.r2.1.sites.rec.HLA.hg19.vcf.hg19.bed) added into ASA-CHINA-GuangHua
