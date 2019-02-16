@@ -37,6 +37,8 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 
 * [7087](../eQTL/gnomad.genomes.eQTL.cpgSNP.uni.ASA.hg19.bed) CpGSNP-eQTL-Overlap Variants
 
+* [14873](gnomad.exomes.r2.1.sites.rec.TotalCandidateGene.hg19.vcf.bed) Frame+Loss+Missense+Stop+Gain in interesting Genes
+
 * 6200  TFBS-SNPs in lncRNA promoter region
 
 * 44326 CpGI-TFSB-DNase-BUR SNPs(CpGI.TFBS.DNase.BUR.hg19.bed)
