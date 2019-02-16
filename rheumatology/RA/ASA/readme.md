@@ -4,7 +4,7 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 * [47](48-SNPs-Genetic-Risk-Score-EUR.txt)    SNPs in Genetic Risk Score in European (non-HLA 48 + HLA)
 * 69    PADI,PTPN Variants in RA Risk
 * 128   [GWAS-Meta Validated SNPs](GWAS-Meta-128-SNPs.20190208.vcf)
-* 241   SNPs in the 3-UTR regions of VIP genes (miRNA-UTR3 double pairs)
+* [241](miRNASeedSNP.hg19.bed)   SNPs in the 3-UTR regions of VIP genes (miRNA-UTR3 double pairs)
 * 334   [VIP functional variants](gnomad.exomes.r2.1.sites.rec.VIP.hg19.vcf.bed)
 * 327   [eQTL for VIP genes](VIP.eQTL.327.SNPs.txt)
 * 478   SNPs located in miRNAs seed region
