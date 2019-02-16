@@ -45,3 +45,5 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 
 ==========================================================
 
+[ASA-primary-SNPs](ASA.hg19.bed) 738981 primary SNPs in ASA-CHINA ARRAY
+
