@@ -16,6 +16,7 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 * 3591  [40K regions of GWAS Immnue System Desases](gnomad.exomes.r2.1.sites.rec.40KGWASAID.merge.vcf.bed)
 * 2518  [Functional SNPs located in 824 Immune-related genes](gnomad.exomes.r2.1.sites.rec.InnateDB.merge.vcf.bed)
 * [1635](gnomad.genomes.r2.1.sites.rec.innateDbUTR3.merge.vcf.bed) miRNA-SNPs located in 824 Immune-related genes UTR3 regions ([raw 11842](InnateDB.UTR3.snp.txt) )
+* [21327](gnomad.genomes.r2.1.sites.rec.GWASCatalog.ASA.merge.vcf.hg19.bed) GWAS-Catalog (68193 (GWAS-Catalog) -> 42630 (MAF>1%) -> 21327(-ASA))
 * [4728](gnomad.exomes.r2.1.4728.rec.ReactomePathWay.immnueGene.hg19.vcf.bed)  Reactome database related immnue system genes (9 pathway and 1571 genes)
 * [5819](gnomad.genomes.eQTL.TFBS.uni.hg19.bed) eQTL-TFBS Overlap Variants
 * [7087](../eQTL/gnomad.genomes.eQTL.cpgSNP.uni.ASA.hg19.bed) CpGSNP-eQTL-Overlap Variants
