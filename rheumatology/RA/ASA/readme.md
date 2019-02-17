@@ -20,7 +20,7 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 * [5819](gnomad.genomes.eQTL.TFBS.uni.hg19.bed) eQTL-TFBS Overlap Variants
 * [7087](../eQTL/gnomad.genomes.eQTL.cpgSNP.uni.ASA.hg19.bed) CpGSNP-eQTL-Overlap Variants
 * [12380](12380.ASA.gnomad.exomes.r2.1.sites.rec.refGene.hg19.vcf.bed) Genome-wide Functional SNPs (MAF>1%, mis,frame,gain,loss,splice)
-* [14873](gnomad.exomes.r2.1.sites.rec.TotalCandidateGene.hg19.vcf.bed) Frame+Loss+Missense+Stop+Gain in [interesting Genes](TotalCandidateGene.hg19.bed)
+* [14873](gnomad.exomes.r2.1.sites.rec.TotalCandidateGene.hg19.vcf.bed) MAF=0.1% Frame+Loss+Missense+Stop+Gain in [interesting Genes](TotalCandidateGene.hg19.bed)
 * 6200  TFBS-SNPs in lncRNA promoter region
 * 44326 CpGI-TFSB-DNase-BUR SNPs(CpGI.TFBS.DNase.BUR.hg19.bed)
 ==========================================================
