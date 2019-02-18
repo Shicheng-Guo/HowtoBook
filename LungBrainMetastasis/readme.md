@@ -8,4 +8,7 @@ Mathod and Materials
 * Phylogenetic Tree Construction: All nonsilent mutations that passed validation (EAC001, EAC003,and EAC005) or further fi ltering (EAC006, EAC009, EAC014, EAC015,and EAC017) were considered for the purpose of determining phylogenetic trees. Trees were built using binary presence/absence matrices built from the regional distribution of variants within the tumor. The R Bioconductor package phangorn was utilized to perform the parsimony ratchet method, generating unrooted trees. Branch lengths were determined using the acctran function
 * Canopy, a method for inferring the evolutionary phylogeny of a tumor using both somatic copy number alterations and single-nucleotide
 alterations from one or more samples derived from a single patient. Canopy is applied to bulk sequencing datasets of both longitudinal and spatial experimental designs and to a transplantable metastasis model derived from human cancer cell line MDA-MB-231
+* [MAGI](http://magi.brown.edu/upload): MAGI is a tool for annotating, exploring, and analyzing gene sets that may be associated with cancer.
+* [cBioPortal](https://www.cbioportal.org/): The cBioPortal for Cancer Genomics provides visualization, analysis and download of large-scale cancer genomics data sets.
+
 
