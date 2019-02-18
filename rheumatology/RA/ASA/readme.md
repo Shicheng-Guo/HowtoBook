@@ -25,7 +25,7 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 * [14873](gnomad.exomes.r2.1.sites.rec.TotalCandidateGene.hg19.vcf.bed) MAF=0.1% Frame+Loss+Missense+Stop+Gain in [interesting Genes](TotalCandidateGene.hg19.bed)
 * 6200  TFBS-SNPs in lncRNA promoter region
 * 44326 CpGI-TFSB-DNase-BUR SNPs(CpGI.TFBS.DNase.BUR.hg19.bed)
-==========================================================
+=========================================================================
 
 [ASA-primary-SNPs](ASA.hg19.bed) 738,981 primary SNPs in ASA-CHINA ARRAY
 * [12380](12380.ASA.gnomad.exomes.r2.1.sites.rec.refGene.hg19.vcf.bed) Genome-wide Functional SNPs (MAF>1%, mis,frame,gain,loss,splice)
@@ -49,7 +49,8 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 * 361 in [632](hsa-miRNALD.hg19.bed) added into ASA-CHINA-GuangHua
 * 60 in [115](HLA-TagSnp.hg19.bed) added into ASA-CHINA-GuangHua
 * 10089 in [11818](UTR3-miRNA.hg19.bed) added into ASA-CHINA-GuangHua
-==================================================================
+=============================================================================
+
 Finally, apply 1000 Genome CHB+CHS dataset to remove R2>0.8 SNPs (only keep 1 of them)
 
 
