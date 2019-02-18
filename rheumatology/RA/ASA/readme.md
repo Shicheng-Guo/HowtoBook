@@ -49,6 +49,7 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 * 361 in [632](hsa-miRNALD.hg19.bed) added into ASA-CHINA-GuangHua
 * 60 in [115](HLA-TagSnp.hg19.bed) added into ASA-CHINA-GuangHua
 ==========================================================
+
 [ASA-primary-SNPs](ASA.hg19.bed) 738,981 primary SNPs in ASA-CHINA ARRAY
 * [12380](12380.ASA.gnomad.exomes.r2.1.sites.rec.refGene.hg19.vcf.bed) Genome-wide Functional SNPs (MAF>1%, mis,frame,gain,loss,splice)
 
