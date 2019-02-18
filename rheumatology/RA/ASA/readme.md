@@ -48,7 +48,8 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 * 324 in [325](T325.hg19.bed)  added into ASA-CHINA-GuangHua
 * 361 in [632](hsa-miRNALD.hg19.bed) added into ASA-CHINA-GuangHua
 * 60 in [115](HLA-TagSnp.hg19.bed) added into ASA-CHINA-GuangHua
-
 * 10089 in [11818](UTR3-miRNA.hg19.bed) added into ASA-CHINA-GuangHua
+==============================================================================================================
+Finally, apply 1000 Genome CHB+CHS dataset to remove R2>0.8 SNPs (only keep 1 of them)
 
 
