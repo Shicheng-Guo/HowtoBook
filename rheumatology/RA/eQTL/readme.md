@@ -8,7 +8,7 @@ In the first step, we collected all the eQTL from whole blood, liver, colon, sto
 However, when I check it again, I found I lost the lung eqtl data. After I add lung eqtl [eqtl set2 code](eqtl.set2.sh)
 * [30517](eQTL.set2.hg19.bed) eQTL SNPs were collected from the GTEx project with FDR<0.05
 * [16954](16954.MRCI.ASA.eQTL.hg19.bed) SNPs remained with plink (--indep-pairphase 100kb 1 0.9 ) filtering to remove linked SNPs
-* [20667](gnomad.genomes.r2.1.sites.rec.eQTL.set2.merge.vcf.bed) SNPs identified by Gnomad.Genomes data with MAF>0.1% in East Asian
+* [15446](15446.MRCI.ASA.eQTL.hg19.MAF0.001.hg19.bed) SNPs identified by Gnomad.Genomes data with MAF>0.1% + R2<0.9 in East Asian
 * [1062](gnomad.exomes.r2.1.sites.rec.eQTL.set2.hg19.vcf.bed) SNPs identified by Gnomad.exomes data with MAF>0.1% in East Asian
 
 I made a brief checking to these eqtl candidates.[eqtl set3 code](eqtl.set3.sh)
