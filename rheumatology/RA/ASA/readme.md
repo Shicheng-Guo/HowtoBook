@@ -12,7 +12,6 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 * [1062](1062.gnomad.exomes.r2.1.sites.rec.eQTL.missense.set2.hg19.vcf.bed) eQTL + mis-sense SNPs with MAF>0.1% in East Asian
 * 1375  [Cytoband (>10 records)](../cytoband/1375.gnomad.exomes.r2.1.sites.rec.RA-GWAS-Cytoband.hg19.vcf.bed) from GWAS-Catalog-RA records
 * 1763  [Epigene Functional Variants](gnomad.exomes.r2.1.sites.rec.EpiVar.txt)
-* [2665](2665-GWAS-LD0.8-ASN.hg19.rsList.txt)  GWAS RA signficant; 789 SNPs; LD R2>0.8 SNPs (not include intron,HaploReg)
 * 3325  [GWAS Immnue System Desases](GWAS-immnue-3325_SNP.hg19.bed)
 * 3591  [40K regions of GWAS Immnue System Desases](gnomad.exomes.r2.1.sites.rec.40KGWASAID.merge.vcf.bed)
 * 2518  [Functional SNPs located in 824 Immune-related genes](gnomad.exomes.r2.1.sites.rec.InnateDB.merge.vcf.bed)
@@ -26,6 +25,7 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 * [14873](gnomad.exomes.r2.1.sites.rec.TotalCandidateGene.hg19.vcf.bed) MAF=0.1% Frame+Loss+Missense+Stop+Gain in [interesting Genes](TotalCandidateGene.hg19.bed)
 * 6200  TFBS-SNPs in lncRNA promoter region
 * 44326 CpGI-TFSB-DNase-BUR SNPs(CpGI.TFBS.DNase.BUR.hg19.bed)
+* [2665](2665-GWAS-LD0.8-ASN.hg19.rsList.txt)  GWAS RA signficant; 789 SNPs; LD R2>0.8 SNPs (not include intron,HaploReg)
 =========================================================================
 
 [ASA-primary-SNPs](ASA.hg19.bed) 738,981 primary SNPs in ASA-CHINA ARRAY
