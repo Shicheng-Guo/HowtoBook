@@ -9,6 +9,7 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 * 327   [eQTL for VIP genes](VIP.eQTL.327.SNPs.txt)
 * 478   SNPs located in miRNAs seed region
 * 907   [HLA functional SNPs](gnomad.exomes.r2.1.sites.rec.HLA.hg19.vcf.bed) (6:29671116-33106890)
+* [1062](1062.gnomad.exomes.r2.1.sites.rec.eQTL.missense.set2.hg19.vcf.bed) eQTL + mis-sense SNPs with MAF>0.1% in East Asian
 * 1375  [Cytoband (>10 records)](../cytoband/1375.gnomad.exomes.r2.1.sites.rec.RA-GWAS-Cytoband.hg19.vcf.bed) from GWAS-Catalog-RA records
 * 1763  [Epigene Functional Variants](gnomad.exomes.r2.1.sites.rec.EpiVar.txt)
 * [2665](2665-GWAS-LD0.8-ASN.hg19.rsList.txt)  GWAS RA signficant; 789 SNPs; LD R2>0.8 SNPs (not include intron,HaploReg)
