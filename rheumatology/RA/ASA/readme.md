@@ -52,4 +52,4 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 =============================================================================
 
 Finally, apply 1000 Genome CHB+CHS dataset to remove R2>0.8 SNPs (only keep 1 of them)
-* [52895](MRCI.ASA.hg19.bed) in [69987](MRCI.hg19.bed) were selected to be customed probes.
+* [52895](MRCI.ASA.hg19.bed) in [69987](MRCI.hg19.bed) were selected to be customed probes 
