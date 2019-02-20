@@ -33,6 +33,7 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 * [12380](12380.ASA.gnomad.exomes.r2.1.sites.rec.refGene.hg19.vcf.bed) Genome-wide Functional SNPs (MAF>1%, mis,frame,gain,loss,splice) added to ASA-CHINA-GuangHua
 * [15446](../eQTL/15446.MRCI.ASA.eQTL.hg19.MAF0.001.hg19.bed) eQTL-SNPs with MAF>0.1% + R2<0.9 in East Asian added to ASA-CHINA-GuangHua
 * 10648 in [14873](gnomad.exomes.r2.1.sites.rec.TotalCandidateGene.hg19.vcf.bed) added into ASA-CHINA-GuangHua
+* [4678](https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/miRNAome/4678.UTR3miRNAsNP.EAS.MAF0.01.hg19.bed) SNPs in UTR3 of 2133 immnue genes
 * 1708 in [4728](gnomad.exomes.r2.1.4728.rec.ReactomePathWay.immnueGene.hg19.vcf.bed) added into ASA-CHINA-GuangHua
 * 1257 in [8501](gnomad.exomes.r2.1.8501.rec.GHRA_ASA.hg19.vcf.bed) added into ASA-CHINA-GuangHua
 * 35 in [128](GWAS-Meta-128-SNPs.20190208.vcf.bed) added into ASA-CHINA-GuangHua
