@@ -1,3 +1,4 @@
+High diversity genomic regions in CHB > 150 haplotypes (N=103 individuals in CHB): 
 ```
 CHR	START	END	#Haplotype
 1	31904677	31905177	196
