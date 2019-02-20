@@ -14,6 +14,7 @@ Genetics of Rheumatoid Arthritis: 2019 Status
 * 1763  [Epigene Functional Variants](gnomad.exomes.r2.1.sites.rec.EpiVar.txt)
 * 3325  [GWAS Immnue System Desases](GWAS-immnue-3325_SNP.hg19.bed)
 * 3591  [40K regions of GWAS Immnue System Desases](gnomad.exomes.r2.1.sites.rec.40KGWASAID.merge.vcf.bed)
+* [4678](https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/miRNAome/4678.UTR3miRNAsNP.EAS.MAF0.01.hg19.bed) SNPs in UTR3 of 2133 immnue genes
 * 2518  [Functional SNPs located in 824 Immune-related genes](gnomad.exomes.r2.1.sites.rec.InnateDB.merge.vcf.bed)
 * [1635](gnomad.genomes.r2.1.sites.rec.innateDbUTR3.merge.vcf.bed) miRNA-SNPs located in 824 Immune-related genes UTR3 regions ([raw 11842](InnateDB.UTR3.snp.txt) )
 * [21327](gnomad.genomes.r2.1.sites.rec.GWASCatalog.ASA.merge.vcf.hg19.bed) GWAS-Catalog (68193 (GWAS-Catalog) -> 42630 (MAF>1%) -> 21327(-ASA))
