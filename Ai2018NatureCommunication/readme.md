@@ -1,3 +1,6 @@
+Comprehensive epigenetic landscape of rheumatoid arthritis fibroblast-like synoviocytes
+
+[Rizi Ai](https://www.nature.com/articles/s41467-018-04310-9) published this paper in Nature Commnunication in 2018. 
 
 
 1. 1000 Genome phase 3 Data Download (2535 samples, 99 CEU+103CHB+YRI ) 
