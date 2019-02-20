@@ -77,6 +77,41 @@ bedtools intersect -v -a miRNASeedSNP.hg19.bed -b ASA.hg19.bed | awk '{print $1,
 wc -l ASA-GH-Guo.A1.bed
 cat ASA-GH-Guo.A1.bed >> ASA.hg19.bed
 
+bedtools intersect -v -a RA-GWAS-Functional-SNPs-Final.186.Snp.20190208.bed -b ASA.hg19.bed | awk '{print $1,$2,$3,$4}' OFS="\t" | sort -u > ASA-GH-Guo.A1.bed
+wc -l ASA-GH-Guo.A1.bed
+cat ASA-GH-Guo.A1.bed >> ASA.hg19.bed
+
+bedtools intersect -v -a GWAS-RA-792.hg19.bed -b ASA.hg19.bed | awk '{print $1,$2,$3,$4}' OFS="\t" | sort -u > ASA-GH-Guo.A1.bed
+wc -l ASA-GH-Guo.A1.bed
+cat ASA-GH-Guo.A1.bed >> ASA.hg19.bed
+
+bedtools intersect -v -a HLA-DRB1-SE.hg19.bed -b ASA.hg19.bed | awk '{print $1,$2,$3,$4}' OFS="\t" | sort -u > ASA-GH-Guo.A1.bed
+wc -l ASA-GH-Guo.A1.bed
+cat ASA-GH-Guo.A1.bed >> ASA.hg19.bed
+
+bedtools intersect -v -a 89.UTR3miRNAsNP.EAS.PADI.hg19.bed -b ASA.hg19.bed | awk '{print $1,$2,$3,$4}' OFS="\t" | sort -u > ASA-GH-Guo.A1.bed
+wc -l ASA-GH-Guo.A1.bed
+cat ASA-GH-Guo.A1.bed >> ASA.hg19.bed
+
+bedtools intersect -v -a SNPedia.hg19.bed -b ASA.hg19.bed | awk '{print $1,$2,$3,$4}' OFS="\t" | sort -u > ASA-GH-Guo.A1.bed
+wc -l ASA-GH-Guo.A1.bed
+cat ASA-GH-Guo.A1.bed >> ASA.hg19.bed
+
+bedtools intersect -v -a 350.UTR3miRNAsNP.EAS.HLA.hg19.bed -b ASA.hg19.bed | awk '{print $1,$2,$3,$4}' OFS="\t" | sort -u > ASA-GH-Guo.A1.bed
+wc -l ASA-GH-Guo.A1.bed
+cat ASA-GH-Guo.A1.bed >> ASA.hg19.bed
+
+bedtools intersect -v -a AimSNChina.hg19.bed -b ASA.hg19.bed | awk '{print $1,$2,$3,$4}' OFS="\t" | sort -u > ASA-GH-Guo.A1.bed
+wc -l ASA-GH-Guo.A1.bed
+cat ASA-GH-Guo.A1.bed >> ASA.hg19.bed
+
+bedtools intersect -v -a UTR3miRNAsNP.EAS.AHRR.V.hg19.bed -b ASA.hg19.bed | awk '{print $1,$2,$3,$4}' OFS="\t" | sort -u > ASA-GH-Guo.A1.bed
+wc -l ASA-GH-Guo.A1.bed
+cat ASA-GH-Guo.A1.bed >> ASA.hg19.bed
+
+bedtools intersect -v -a cpgSNPisland.hg19.binarySNP.bed -b ASA.hg19.bed | awk '{print $1,$2,$3,$4}' OFS="\t" | sort -u > ASA-GH-Guo.A1.bed
+wc -l ASA-GH-Guo.A1.bed
+cat ASA-GH-Guo.A1.bed >> ASA.hg19.bed
 
 grep -v 'CHROM'  ASA.hg19.bed | sort -u > ASA.hg19.P2.bed
 wc -l ASA.hg19.P2.bed
@@ -84,4 +119,3 @@ awk '{print "chr"$2,$3-1,$3,$4}' OFS="\t" ASACHIA_rsID.txt | grep -v CHROM | sor
 wc -l ASA.hg19.P1.bed
 bedtools intersect -v -a ASA.hg19.P2.bed  -b ASA.hg19.P1.bed| awk '{print $1,$2,$3,$4}' OFS="\t" | sort -u > MRCI.hg19.bed
 wc -l MRCI.hg19.bed
-
