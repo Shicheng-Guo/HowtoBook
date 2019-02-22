@@ -23,12 +23,11 @@ ncRNA and lncRNA
 
 
 
-### Method
+Method
 * Sample control: LINE-1
 * Study design: Case-Control
 * Sex control: RBMY1F
 * Positive control: LINE-1
 * Negative control: CHRM
-
-### Precision Medicine of Cholangiocarcinoma: Status 2019
+Precision Medicine of Cholangiocarcinoma: Status 2019
 
