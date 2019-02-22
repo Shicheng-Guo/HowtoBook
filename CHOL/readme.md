@@ -19,12 +19,8 @@ ncRNA and lncRNA
 
 
 ### Method
-
-Sample control: LINE-1
-Study design: Case-Control
-
-Sex control: RBMY1F
-
-Positive control:
-
-Negative control:
+* Sample control: LINE-1
+* Study design: Case-Control
+* Sex control: RBMY1F
+* Positive control: LINE-1
+* Negative control:
