@@ -23,4 +23,5 @@ ncRNA and lncRNA
 * Study design: Case-Control
 * Sex control: RBMY1F
 * Positive control: LINE-1
-* Negative control:
+* Negative control: CHRM
+
