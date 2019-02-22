@@ -57,7 +57,7 @@ write.table(Table,file="chol.rlt.txt",sep="\t",quote=F,col.names = NA,row.names 
 
 methdata[1:5,1:5]
 GeneSymbol<-unique(sapply(colnames(methdata)[2:ncol(methdata)],function(x) unlist(strsplit(x,split="[_]"))[[1]]))
-GeneSymbol<-GeneSymbol[-grep("cg",GeneSymbol)]
+# GeneSymbol<-GeneSymbol[-grep("cg",GeneSymbol)]
 OR<-c()
 Logistic.P<-c()
 CI.upper<-c()
@@ -72,10 +72,12 @@ for(i in 1:length(GeneSymbol)){
   Logistic.P[i] = summary(glm.fit)$coefficients[2,4]
   CI.upper[i] = log(exp(confint(glm.fit)[2,2]),base = 10)
   CI.lower[i] = log(exp(confint(glm.fit)[2,1]),base = 10)
-  Group<-c(Group,GeneSymbol)
+  Group<-c(Group,GeneSymbol[i])
 }
 Table = data.frame(OR,LowerLimit=CI.lower,UpperLimit=CI.upper,Group)
-
+dim(Table)
+Table=Table[order(Table$OR),]
+head(Table)
 p = ggplot(data=Table,
            aes(x = Group,y = OR, ymin = LowerLimit, ymax = UpperLimit))+
   geom_pointrange(aes(col=Group))+
