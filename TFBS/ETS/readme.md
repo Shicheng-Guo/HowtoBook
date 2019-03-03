@@ -10,3 +10,56 @@ Science 杂志部分内容  To determine the in vivo binding specificity to the 
 
 我想我们至少可以得到1.在甲状腺中高表达的ETS转录因子。2.与 tert promoter区域结合的转录因子。这两部分数据，只要我们找到比science杂志筛选的13个ETS多的转录因子，就说明可行和有价值
 
+上述16种转录因子和28种ETS转录因子进行正常甲状腺组织和甲状腺癌组织、BRAF突变和非突变癌组织的表达差异。
+
+1. 16个差异转录因子为：
+SIN3A
+MAZ
+MXI1
+POLR2A
+MAX
+RBBP5
+CHD2
+GABPA
+MYC
+SIN3AK20
+E2F4
+TAF1
+BHLHE40
+USF2
+USF1
+E2F6
+
+2.27个ETS转录因子，下面名称为TCGA通用名为：
+ETS1
+ETS2
+ERG
+FLI1
+FEV
+GABPA
+EFNA2
+ELF2
+ELF4
+ELF3
+ELF5
+EHF
+ETV3
+ERF
+ETV6
+ETV7
+ETV4
+ETV2
+ETV1
+ETV5
+SPI1
+SPIB
+SPIC
+Elk1
+ELK4
+ELK3
+SPDEF
+
+3. BRAF基因有4种突变模式，我们只用将其分为V600E突变和非突变两种模式即可。
+
+
+
