@@ -2,6 +2,8 @@ library("Haplin")
 library("qqman")
 
 setwd("//mcrfnas2/bigdata/Genetic/Projects/shg047/rheumatology/SSc/FGF6")
+
+
 data<-read.table("Iron.Gene.in.SSc.Trim.Pvalue.txt",head=T,row.names = 1)
 bed<-read.table("Iron.Gene.in.SSc.hg19.bed",head=F)
 
