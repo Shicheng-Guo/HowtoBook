@@ -1,3 +1,23 @@
+Genome-wide epigenetic meta-analysis identifies SHOX2 associated with multiple autoimmune disease
+
+DRB1*15:01
+
+
+
+ 	HLA-DRB1	HDAC-INHIBITOR	NASID
+RA	Yes	Yes	Yes
+SLE	No	No	Yes
+SSC	No	No	No
+SS	No	No	Yes
+AAV	Yes	No	No
+BD	Yes	No	No
+AS	Yes	No	Yes
+PSA	Yes	No	Yes
+OA	No	No	Yes
+GOUT	No	No	Yes
+IBD	Yes	No	No
+CD	Yes	No	No
+
 
 https://www.nature.com/articles/s12276-019-0215-5
 
