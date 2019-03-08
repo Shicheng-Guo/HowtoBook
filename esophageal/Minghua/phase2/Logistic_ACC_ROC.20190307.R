@@ -106,11 +106,63 @@ rownames(AUC)<-unique(genesymbol)
 write.table(AUC,file="Phase2.ESCC.Sen.Spe.Average.AUC.txt",col.names=NA,row.names = T,quote=F,sep="\t")
 
 
-combineAUC(methdata,recombination=c("SHOX2","CDO1"))
-combineAUC(methdata,recombination=c("SHOX2"))
+rlt14<-combineAUC(methdata,recombination=c("SHOX2","CDO1","SLC6A2","TRH","AKAP12"))
+rlt14
 
-recombination=c("SHOX2","CDO1")
-recombination=c("SHOX2")
+genesymbol= unlist(lapply(colnames(methdata)[2:ncol(methdata)], function(x) strsplit(as.character(x),"_")[[1]][1]))
+rlt15<-combineAUC(methdata,recombination=unique(genesymbol))
+rlt15
+
+rlt14<-combineAUC(methdata,recombination=c("CYP2A13","ZNF415","NTM","LINE.1"))
+rlt14
+
+
+bestcombineAUC<-function(methdata,recombination="."){
+  Table<-list()
+  temp <- methdata[,grepl(paste(recombination, collapse="|"), colnames(methdata))]
+  genesymbol= unlist(lapply(colnames(temp), function(x) strsplit(as.character(x),"_")[[1]][1]))
+  temp<-t(apply(temp,1,function(x) tapply(x, genesymbol,function(x) mean(x,na.rm=T))))
+  head(temp)
+  if(nrow(temp)==1){
+    temp<-t(temp)
+    colnames(temp)<-unique(genesymbol)
+  }
+  head(temp)
+  phen=rep(0,nrow(temp))  
+  phen[grep("T",rownames(temp))]<-1
+  
+  temp=na.omit(data.frame(phen,temp))
+  
+  glm.null <- glm(phen ~ 1, data = temp,family = "binomial")
+  glm.fit  = glm(phen~ ., data = temp, family = "binomial")
+  step_model <- step(glm.null, scope = list(lower = glm.null, upper = glm.fit), direction = "forward")
+  
+  summary(step_model)
+  pred <- predict(step_model,temp[,2:ncol(temp)],type="response")
+  real <- temp$phen
+  plot.roc(real,pred, col = 3, main="ROC Validation set",percent = TRUE, print.auc = TRUE)
+  
+  summary(step_model)
+  logOR = log(exp(summary(step_model)$coefficients[,1]),base = 10)
+  Logistic.P = summary(step_model)$coefficients[,4]
+  CI.upper=log(exp(confint(step_model)[,2]),base = 10)
+  CI.lower = log(exp(confint(step_model)[,1]),base = 10)
+  #Do the analysis of the sens, spec, and AUC
+  predicted.value = predict(step_model)
+  predicted.data  = data.frame(Type=na.omit(temp)[,1], predicted.value)
+  logistic.rocobj  = roc(predicted.data$Type, predicted.data$predicted.value,smooth = FALSE)
+  logistic.rocdata = data.frame(Sens = logistic.rocobj$sensitivities, Spec = logistic.rocobj$specificities)
+  AUC = logistic.rocobj$auc[[1]]
+  #Find the best Sens and Spec
+  logistic.rocdata[,3] = logistic.rocdata[,1] + logistic.rocdata[,2]
+  seq.max = which(logistic.rocdata[,3] == max(logistic.rocdata[,3]))
+  Sens = logistic.rocdata[seq.max,1]
+  Spec = logistic.rocdata[seq.max,2]
+  Table$matrix = data.frame(logOR, CI.upper, CI.lower, Logistic.P)
+  Table$model=c(Sen=Sens,Spec=Spec,AUC=AUC)
+  Table$roc=logistic.rocobj
+  return(Table)
+}
 
 
 combineAUC<-function(methdata,recombination="."){
@@ -136,6 +188,11 @@ combineAUC<-function(methdata,recombination="."){
   CI.lower = log(exp(confint(glm.fit)[,1]),base = 10)
   #Do the analysis of the sens, spec, and AUC
   predicted.value = predict(glm.fit)
+  
+  pred <- predict(glm.fit,temp[,2:ncol(temp)],type="response")
+  real <- temp$phen
+  plot.roc(real,pred, col = 3, main="ROC Validation set",percent = TRUE, print.auc = TRUE)
+  
   predicted.data  = data.frame(Type=na.omit(temp)[,1], predicted.value)
   logistic.rocobj  = roc(predicted.data$Type, predicted.data$predicted.value,smooth = FALSE)
   logistic.rocdata = data.frame(Sens = logistic.rocobj$sensitivities, Spec = logistic.rocobj$specificities)
