@@ -27,7 +27,8 @@ methdata[1:5,1:5]
 
 methdata=ColNARemove(methdata)
 methdata[1:5,1:5]
-
+genesymbol= unlist(lapply(colnames(methdata)[2:ncol(methdata)], function(x) strsplit(as.character(x),"_")[[1]][1]))
+head(genesymbol)
 
 rlt<-Table2Generator(methdata)
 genesymbol= unlist(lapply(rownames(rlt), function(x) strsplit(as.character(x),"_")[[1]][1]))
@@ -77,14 +78,56 @@ lines(rlt8$roc,col=5)
 lines(rlt9$roc,col=2)
 legend("bottomright",cex=0.9,legend=c("LINC00466+TCONS_00021941","LINC00466+MIR129-2","MIR129-2+TCONS_00021941","LINC00466+MIR129-2+TCONS_00021941"),col=c(3,4,5,2),lty=1,bty="n")
 
+rlt10<-combineAUC(methdata,recombination=c("LINC00466"))
+rlt11<-combineAUC(methdata,recombination=c("SOX11"))
+rlt12<-combineAUC(methdata,recombination=c("LINE.1"))
+rlt13<-combineAUC(methdata,recombination=c("SHOX2"))
+
+pdf("SOX11.LINC00466.pdf")
+par(mfrow=c(2,2))
+plot(rlt10$roc,col=3,main="LINC00466")
+text(x=0.25,y=0.25,paste("AUC=",round(rlt10$model[3],3),sep=""))
+plot(rlt11$roc,col=3,main="SOX11")
+text(x=0.25,y=0.25,paste("AUC=",round(rlt11$model[3],3),sep=""))
+plot(rlt12$roc,col=3,main="LINE-1")
+text(x=0.25,y=0.25,paste("AUC=",round(rlt12$model[3],3),sep=""))
+plot(rlt13$roc,col=3,main="SHOX2")
+text(x=0.25,y=0.25,paste("AUC=",round(rlt13$model[3],3),sep=""))
+dev.off()
+
+AUC<-c()
+GENE<-unlist(lapply(unique(genesymbol),function(x) unlist(strsplit(x,"[-]"))[1]))
+for(i in GENE){
+  print(i)
+  rlt<-combineAUC(methdata,recombination=c(i))
+  AUC<-rbind(AUC,rlt$model)
+}
+rownames(AUC)<-unique(genesymbol)
+write.table(AUC,file="Phase2.ESCC.Sen.Spe.Average.AUC.txt",col.names=NA,row.names = T,quote=F,sep="\t")
+
+
+combineAUC(methdata,recombination=c("SHOX2","CDO1"))
+combineAUC(methdata,recombination=c("SHOX2"))
+
+recombination=c("SHOX2","CDO1")
+recombination=c("SHOX2")
+
+
 combineAUC<-function(methdata,recombination="."){
   Table<-list()
   temp <- methdata[,grepl(paste(recombination, collapse="|"), colnames(methdata))]
   genesymbol= unlist(lapply(colnames(temp), function(x) strsplit(as.character(x),"_")[[1]][1]))
   temp<-t(apply(temp,1,function(x) tapply(x, genesymbol,function(x) mean(x,na.rm=T))))
+  head(temp)
+  if(nrow(temp)==1){
+  temp<-t(temp)
+  colnames(temp)<-unique(genesymbol)
+  }
+  head(temp)
   phen=rep(0,nrow(temp))  
   phen[grep("T",rownames(temp))]<-1
   temp=data.frame(phen,temp)
+  head(temp)
   glm.fit  = glm(phen~ ., data = temp, family = "binomial")
   summary(glm.fit)
   logOR = log(exp(summary(glm.fit)$coefficients[,1]),base = 10)
