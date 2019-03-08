@@ -34,11 +34,73 @@ genesymbol= unlist(lapply(rownames(rlt), function(x) strsplit(as.character(x),"_
 rlt<-data.frame(genesymbol,rlt)
 
 write.table(rlt,file="Phase2.ESCC.Sen.Spe.Acc.txt",col.names=NA,row.names = T,quote=F,sep="\t")
-
 xueqing<-rlt[rlt$genesymbol %in% c("SOX11","LINE.1","SHOX2"),]
 write.table(xueqing,file="Phase2.ESCC.Sen.Spe.Acc.xueqing.txt",col.names=NA,row.names = T,quote=F,sep="\t")
 
+rlt1<-combineAUC(methdata,c("LINE.1","SHOX2"))
+rlt2<-combineAUC(methdata,c("LINE.1","SOX11"))
+rlt3<-combineAUC(methdata,c("SHOX2","SOX11"))
+rlt4<-combineAUC(methdata,c("LINE.1","SHOX2","SOX11"))
 
+write.table(rlt1$matrix,file="Phase2.ESCC.Sen.Spe.Acc.xueqing.rlt1.matrix.txt",col.names=NA,row.names = T,quote=F,sep="\t")
+write.table(rlt1$model,file="Phase2.ESCC.Sen.Spe.Acc.xueqing.rlt1.AUC.txt",col.names=F,row.names = T,quote=F,sep="\t")
+
+write.table(rlt2$matrix,file="Phase2.ESCC.Sen.Spe.Acc.xueqing.rlt2.matrix.txt",col.names=NA,row.names = T,quote=F,sep="\t")
+write.table(rlt2$model,file="Phase2.ESCC.Sen.Spe.Acc.xueqing.rlt2.AUC.txt",col.names=F,row.names = T,quote=F,sep="\t")
+
+write.table(rlt3$matrix,file="Phase2.ESCC.Sen.Spe.Acc.xueqing.rlt3.matrix.txt",col.names=NA,row.names = T,quote=F,sep="\t")
+write.table(rlt3$model,file="Phase2.ESCC.Sen.Spe.Acc.xueqing.rlt3.AUC.txt",col.names=F,row.names = T,quote=F,sep="\t")
+
+write.table(rlt4$matrix,file="Phase2.ESCC.Sen.Spe.Acc.xueqing.rlt4.matrix.txt",col.names=NA,row.names = T,quote=F,sep="\t")
+write.table(rlt4$model,file="Phase2.ESCC.Sen.Spe.Acc.xueqing.rlt4.AUC.txt",col.names=F,row.names = T,quote=F,sep="\t")
+
+rlt6<-combineAUC(methdata,recombination=c("LINC00466","LncRNA"))
+rlt7<-combineAUC(methdata,recombination=c("LINC00466","MIR129"))
+rlt8<-combineAUC(methdata,recombination=c("MIR129","LncRNA"))
+rlt9<-combineAUC(methdata,recombination=c("LINC00466","MIR129","LncRNA"))
+
+write.table(rlt6$matrix,file="Phase2.ESCC.Sen.Spe.Acc.LINC00466.rlt6.matrix.txt",col.names=NA,row.names = T,quote=F,sep="\t")
+write.table(rlt6$model,file="Phase2.ESCC.Sen.Spe.Acc.LINC00466.rlt6.AUC.txt",col.names=F,row.names = T,quote=F,sep="\t")
+
+write.table(rlt7$matrix,file="Phase2.ESCC.Sen.Spe.Acc.LINC00466.rlt7.matrix.txt",col.names=NA,row.names = T,quote=F,sep="\t")
+write.table(rlt7$model,file="Phase2.ESCC.Sen.Spe.Acc.LINC00466.rlt7.AUC.txt",col.names=F,row.names = T,quote=F,sep="\t")
+
+write.table(rlt8$matrix,file="Phase2.ESCC.Sen.Spe.Acc.LINC00466.rlt8.matrix.txt",col.names=NA,row.names = T,quote=F,sep="\t")
+write.table(rlt9$model,file="Phase2.ESCC.Sen.Spe.Acc.LINC00466.rlt8.AUC.txt",col.names=F,row.names = T,quote=F,sep="\t")
+
+write.table(rlt9$matrix,file="Phase2.ESCC.Sen.Spe.Acc.LINC00466.rlt9.matrix.txt",col.names=NA,row.names = T,quote=F,sep="\t")
+write.table(rlt9$model,file="Phase2.ESCC.Sen.Spe.Acc.LINC00466.rlt9.AUC.txt",col.names=F,row.names = T,quote=F,sep="\t")
+
+
+combineAUC<-function(methdata,recombination="."){
+  Table<-list()
+  temp <- methdata[,grepl(paste(recombination, collapse="|"), colnames(methdata))]
+  genesymbol= unlist(lapply(colnames(temp), function(x) strsplit(as.character(x),"_")[[1]][1]))
+  temp<-t(apply(temp,1,function(x) tapply(x, genesymbol,function(x) mean(x,na.rm=T))))
+  phen=rep(0,nrow(temp))  
+  phen[grep("T",rownames(temp))]<-1
+  temp=data.frame(phen,temp)
+  glm.fit  = glm(phen~ ., data = temp, family = "binomial")
+  summary(glm.fit)
+  logOR = log(exp(summary(glm.fit)$coefficients[,1]),base = 10)
+  Logistic.P = summary(glm.fit)$coefficients[,4]
+  CI.upper=log(exp(confint(glm.fit)[,2]),base = 10)
+  CI.lower = log(exp(confint(glm.fit)[,1]),base = 10)
+  #Do the analysis of the sens, spec, and AUC
+  predicted.value = predict(glm.fit)
+  predicted.data  = data.frame(Type=na.omit(temp)[,1], predicted.value)
+  logistic.rocobj  = roc(predicted.data$Type, predicted.data$predicted.value,smooth = FALSE)
+  logistic.rocdata = data.frame(Sens = logistic.rocobj$sensitivities, Spec = logistic.rocobj$specificities)
+  AUC = logistic.rocobj$auc[[1]]
+  #Find the best Sens and Spec
+  logistic.rocdata[,3] = logistic.rocdata[,1] + logistic.rocdata[,2]
+  seq.max = which(logistic.rocdata[,3] == max(logistic.rocdata[,3]))
+  Sens = logistic.rocdata[seq.max,1]
+  Spec = logistic.rocdata[seq.max,2]
+  Table$matrix = data.frame(logOR, CI.upper, CI.lower, Logistic.P)
+  Table$model=c(Sen=Sens,Spec=Spec,AUC=AUC)
+  return(Table)
+}
 
 
 Table2Generator = function(methdata){
