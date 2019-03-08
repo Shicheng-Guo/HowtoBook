@@ -71,6 +71,11 @@ write.table(rlt9$model,file="Phase2.ESCC.Sen.Spe.Acc.LINC00466.rlt8.AUC.txt",col
 write.table(rlt9$matrix,file="Phase2.ESCC.Sen.Spe.Acc.LINC00466.rlt9.matrix.txt",col.names=NA,row.names = T,quote=F,sep="\t")
 write.table(rlt9$model,file="Phase2.ESCC.Sen.Spe.Acc.LINC00466.rlt9.AUC.txt",col.names=F,row.names = T,quote=F,sep="\t")
 
+plot(rlt6$roc,col=3)
+lines(rlt7$roc,col=4)
+lines(rlt8$roc,col=5)
+lines(rlt9$roc,col=2)
+legend("bottomright",cex=0.9,legend=c("LINC00466+TCONS_00021941","LINC00466+MIR129-2","MIR129-2+TCONS_00021941","LINC00466+MIR129-2+TCONS_00021941"),col=c(3,4,5,2),lty=1,bty="n")
 
 combineAUC<-function(methdata,recombination="."){
   Table<-list()
@@ -99,6 +104,7 @@ combineAUC<-function(methdata,recombination="."){
   Spec = logistic.rocdata[seq.max,2]
   Table$matrix = data.frame(logOR, CI.upper, CI.lower, Logistic.P)
   Table$model=c(Sen=Sens,Spec=Spec,AUC=AUC)
+  Table$roc=logistic.rocobj
   return(Table)
 }
 
