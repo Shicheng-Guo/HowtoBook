@@ -7,3 +7,5 @@ for(i in 1:length(files)){
   print(i)
 }
 colnames(methdata)<-files
+save(methdata,file="methdata.pancancer.RData")
+save.image("methdata.pancancer.env.RData")
