@@ -9,8 +9,7 @@ I have been used TCGA data for quite a while since they have Methylation data.
 Don't have Methylation data, but including miRNA-seq and RNA-seq
 
 3. CCLE Overview
-
-this dataset is not bad, but only focus on cell line. they have methylation dataset.
+this dataset is not bad, but only focus on cell line. they have methylation dataset. Can be used for methylation-expression analysis.
 
 
 4. CGCI Overview
