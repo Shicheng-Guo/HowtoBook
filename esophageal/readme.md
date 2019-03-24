@@ -14,3 +14,5 @@ Genetic and Epigenetic of Esophageal Squamous Cell Carcinoma (ESCC): 2019 Status
 ```
 C:\Admin\gdc-client.exe download --manifest .\gdc_manifest.2019-02-15.txt
 ```
+
+* [GSE20347](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE20347) Gene expression in 17 paired ESCC samples
