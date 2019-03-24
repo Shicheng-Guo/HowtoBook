@@ -1,4 +1,4 @@
-![Tumor Supressor Genes](VolcanoPlot.tiff)
+![VolcanoPlot.tiff](VolcanoPlot.tiff)
 ```
 data1<-read.table("https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/TCGA/lung/TissueLowExpHyperGene.txt",head=T)
 rlt<-data.frame(MethQ0=tapply(data1$Q0,data1$GENESYMBOL,mean),MethQ25=tapply(data1$Q25,data1$GENESYMBOL,mean),TPMBlood=tapply(data1$Blood,data1$GENESYMBOL,mean),Blood2TissueRatio=tapply(data1$B2TRatio,data1$GENESYMBOL,mean))
