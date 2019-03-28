@@ -1,4 +1,3 @@
-
 1. CEU Reference from 1000 Genome Project
 ```
 cd /gpfs/home/guosa/hpc/tools/beagle/
