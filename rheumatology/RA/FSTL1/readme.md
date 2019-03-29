@@ -4,4 +4,4 @@
 
 3. High gene expression of FSTL1 is risk factor of overall survival time for human cancer (renal cancer, P<0.001)
 
-4. 
+4. High
