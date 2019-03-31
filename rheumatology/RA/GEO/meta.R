@@ -20,16 +20,16 @@ newphen2<-phen2$'clinical status:ch1'
 newphen3<-phen3$'disease state:ch1'
 
 newphen1<-gsub("normal control","GSE55457_Normal",newphen1)
-newphen1<-gsub("rheumatoid arthritis","GSE55457_RA",newphen1)
+newphen1<-gsub("rheumatoid arthritis","GSE55457_Case_RA",newphen1)
 newphen1<-gsub("osteoarthritis","GSE55457_Normal",newphen1)
 
 newphen2<-gsub("osteoarthritis","GSE55584_Normal",newphen2)
-newphen2<-gsub("rheumatoid arthritis","GSE55584_RA",newphen2)
+newphen2<-gsub("rheumatoid arthritis","GSE55584_Case_RA",newphen2)
 
 newphen3<-gsub("healthy control","GSE55235_Normal",newphen3)
 newphen3<-gsub("osteoarthritis","GSE55235_Normal",newphen3)
 newphen3<-gsub("synovial tissue isolated from osteoarthritic joint","GSE55235_Normal",newphen3)
-newphen3<-gsub("rheumatoid arthritis","GSE55235_RA",newphen3)
+newphen3<-gsub("rheumatoid arthritis","GSE55235_Case_RA",newphen3)
 
 input<-data.frame(data1,data2,data3)
 Seq<-c(newphen1,newphen2,newphen3)
@@ -38,6 +38,8 @@ Symbol<-GPL96[match(rownames(input),GPL96$ID),2]
 
 P<-c()
 beta<-c()
+rlt<-c()
+coll<-c()
 for(i in 1:nrow(input)){
   print(rownames(input)[i])
   mean<-tapply(as.numeric(input[i,]),Seq,function(x) mean(x,na.rm=T))
@@ -55,6 +57,8 @@ for(i in 1:nrow(input)){
   output<-na.omit(output)
   es<-escalc(m1i=m1i, sd1i=sd1i, n1i=n1i, m2i=m2i, sd2i=sd2i, n2i=n2i,measure="MD",data=output)
   res <- rma(es,slab=source,method = "REML", measure = "SMD",data=output,verbose=TRUE, digits=5, control=list(maxiter=1000))
+  rlt<-rbind(rlt,c(i,-res$beta,res$pval,res$ci.lb,res$ci.ub,res$I2,res$tau2))
+  coll<-c(coll,i)
   P<-c(P,res$pval)
   beta<-c(beta,res$beta)
   filename=gsub("/","_",Symbol[i])
@@ -75,5 +79,17 @@ for(i in 1:nrow(input)){
     system("mv *.pdf ./meta")
   }
 }
+
+rownames(rlt)<-Symbol
+colnames(rlt)<-c("idx","beta","pval","cilb","ciub","i2","tau2")
+rlt<-data.frame(rlt)
+write.table(rlt,file="GSE55457_GSE55584_GSE55235_RA_GPL960_meta.txt",sep="\t",quote=F,col.names=NA,row.names=T)
+
+library("Haplin")
+pdf("qqplot.pdf")
+pQQ(rlt$pval, nlabs =nrow(output), conf = 0.95) 
+dev.off()
+
+
 
 
