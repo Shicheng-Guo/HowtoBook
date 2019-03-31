@@ -1,5 +1,3 @@
-setwd("/mnt/bigdata/Genetic/Projects/shg047/rheumatology/RA/GEO")
-
 library("metafor")
 library("GEOquery")
 
@@ -31,7 +29,7 @@ newphen2<-gsub("rheumatoid arthritis","GSE55584_RA",newphen2)
 newphen3<-gsub("healthy control","GSE55235_Normal",newphen3)
 newphen3<-gsub("osteoarthritis","GSE55235_Normal",newphen3)
 newphen3<-gsub("synovial tissue isolated from osteoarthritic joint","GSE55235_Normal",newphen3)
-newphen3<-gsub("rheumatoid arthritis","GSE55584_RA",newphen3)
+newphen3<-gsub("rheumatoid arthritis","GSE55235_RA",newphen3)
 
 input<-data.frame(data1,data2,data3)
 Seq<-c(newphen1,newphen2,newphen3)
@@ -56,7 +54,7 @@ for(i in 1:nrow(input)){
   output$source=Source
   output<-na.omit(output)
   es<-escalc(m1i=m1i, sd1i=sd1i, n1i=n1i, m2i=m2i, sd2i=sd2i, n2i=n2i,measure="MD",data=output)
-  res <- rma(es,slab=source,method = "REML", measure = "SMD",data=output)
+  res <- rma(es,slab=source,method = "REML", measure = "SMD",data=output,verbose=TRUE, digits=5, control=list(maxiter=1000))
   P<-c(P,res$pval)
   beta<-c(beta,res$beta)
   filename=gsub("/","_",Symbol[i])
@@ -77,10 +75,5 @@ for(i in 1:nrow(input)){
     system("mv *.pdf ./meta")
   }
 }
-
-
-
-
-
 
 
