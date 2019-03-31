@@ -1,3 +1,5 @@
+setwd("/mnt/bigdata/Genetic/Projects/shg047/rheumatology/RA/GEO")
+
 library("metafor")
 library("GEOquery")
 
