@@ -3,6 +3,9 @@
 
 Postive control:  CSF2RB, PSM9 over expressed in RA while JUND, NFIL3 low expressed in RA
 
+[FSTL1 in Rheumatoid Arthritis](https://www.ncbi.nlm.nih.gov/geoprofiles/?term=FSTL3%5BAll+Fields%5D+and+Homo+sapiens+and+rheumatoid
+): 29 dataset.
+
 339 DEGs were derived from 11 RA FLS vs 11 OA by RNA-seq published in Nature Communication in 2018
 
 Suppose LLDT-8 affect the therapy of RA, then LLDT-8 should recover parts of these 339 genes. 
