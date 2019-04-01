@@ -1,0 +1,1 @@
+[Rubio-Perez, C., Tamborero, D., Schroeder, MP., Antolín, AA., Deu-Pons,J., Perez-Llamas, C., Mestres, J., Gonzalez-Perez, A., Lopez-Bigas, N. In silico prescription of anticancer drugs to cohorts of 28 tumor types reveals novel targeting opportunities. Cancer Cell 27 (2015), pp. 382-396](https://www.intogen.org/search?)
