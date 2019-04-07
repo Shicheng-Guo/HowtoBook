@@ -1,7 +1,5 @@
 setwd("/mnt/bigdata/Genetic/Projects/shg047/methylation/Pancancer")
 
-install.packages("pROC")
-install.packages("ggplot2")
 library("pROC")
 library("ggplot2")
 id2phen4<-function(filename){
@@ -113,9 +111,9 @@ Seq<-paste(phen$pid,phen$bin,sep="-")
 head(phen)
 input[1:5,1:5]
 
-LUSC<-grep("LUSC",colnames(input))
-newinput<-input[,LUSC]
-newphen<-phen[LUSC,]
+SELE<-grep("LUSC",colnames(input))
+newinput<-input[,SELE]
+newphen<-phen[SELE,]
 newinput[1:5,1:5]
 head(newphen)
 methdata=data.frame(newphen$bin,t(newinput))
@@ -127,5 +125,4 @@ map<-read.table("/mnt/bigdata/Genetic/Projects/shg047/db/hg19/GPL13534_450K_hg19
 newrlt<-data.frame(map[match(rownames(rlt),map[,4]),],rlt)
 head(newrlt)
 write.table(newrlt,file="TCGA_LUSC_meth450_marker.txt",col.names=NA,row.names = T,quote=F,sep="\t")
-
 
