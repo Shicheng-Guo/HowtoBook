@@ -1,369 +1,369 @@
-Protein class	Evidence	Antibody
-Predicted intracellular proteins	Evidence at protein level	HPA046086
-Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level	CAB010142, HPA049158
-Predicted membrane proteins	Evidence at protein level	
-Plasma proteins, Predicted secreted proteins	Evidence at protein level	CAB034436, HPA044132
-Predicted intracellular proteins, Transcription factors	Evidence at protein level	HPA002860, HPA023879
-Enzymes, Predicted intracellular proteins	Evidence at protein level	CAB007744, HPA031134
-Disease related genes, Predicted intracellular proteins	Evidence at protein level	CAB007786, HPA061615
-Predicted intracellular proteins	Evidence at protein level	HPA038975, HPA038976
-Predicted intracellular proteins	Evidence at protein level	HPA036199
-Enzymes, FDA approved drug targets, Plasma proteins, Predicted intracellular proteins	Evidence at protein level	CAB004967, HPA021775, HPA026700
-Enzymes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level	HPA006311, HPA022904
-Disease related genes, Plasma proteins, Potential drug targets, Predicted intracellular proteins, Predicted membrane proteins, Transporters	Evidence at protein level	HPA049458, HPA049755
-Enzymes, Predicted intracellular proteins	Evidence at protein level	HPA006699, HPA027146
-Predicted membrane proteins	Evidence at protein level	
-Disease related genes, Predicted intracellular proteins, RAS pathway related proteins	Evidence at protein level	CAB022946, HPA047820
-Cancer-related genes, Plasma proteins, Predicted membrane proteins	Evidence at protein level	HPA006154, CAB009454, HPA012012
-Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level	HPA011004, HPA071865
-Cancer-related genes, Disease related genes, Predicted intracellular proteins, Transcription factors	Evidence at protein level	CAB003815, HPA029207
-Cancer-related genes, CD markers, Disease related genes, Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level	
-Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level	
-Cancer-related genes, Candidate cardiovascular disease genes, Disease related genes, Plasma proteins, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level	HPA000927, HPA001292, CAB013211, CAB016648, CAB073396
-Cancer-related genes, Predicted intracellular proteins, Transcription factors	Evidence at protein level	HPA002692, HPA005941, CAB010272
-Plasma proteins, Predicted intracellular proteins	Evidence at protein level	HPA034799
-Cancer-related genes, CD markers, FDA approved drug targets, Predicted membrane proteins	Evidence at protein level	
-Predicted intracellular proteins	Evidence at protein level	HPA035593
-Predicted intracellular proteins	Evidence at protein level	HPA045350
-Enzymes, Predicted intracellular proteins	Evidence at transcript level	HPA036796
-Predicted intracellular proteins, Transcription factors	Evidence at protein level	HPA067581
-Predicted intracellular proteins	Evidence at protein level	HPA054347, HPA058007
-Predicted intracellular proteins	Evidence at protein level	HPA039634, HPA048127
-Predicted intracellular proteins	Evidence at protein level	HPA055116
-Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level	HPA047136, HPA060203
-Disease related genes, Enzymes, Plasma proteins, Potential drug targets, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level	HPA000951, HPA001817, HPA001832, CAB016381
-Cancer-related genes, Predicted secreted proteins	Evidence at protein level	HPA067758
-Predicted intracellular proteins	Evidence at protein level	HPA038470
-Predicted intracellular proteins	Evidence at protein level	HPA001808
-Predicted intracellular proteins	Evidence at protein level	HPA035424, HPA061710
-Enzymes, Predicted intracellular proteins	Evidence at protein level	HPA026538, HPA027168
-CD markers, Predicted membrane proteins	Evidence at protein level	CAB002503, HPA050525
-Disease related genes, Predicted secreted proteins	Evidence at protein level	HPA037844, HPA037845
-CD markers, Predicted membrane proteins	Evidence at protein level	HPA039113
-Predicted intracellular proteins, Predicted membrane proteins	Evidence at transcript level	
-Predicted intracellular proteins	Evidence at protein level	
-CD markers, Disease related genes, FDA approved drug targets, Predicted intracellular proteins, Predicted membrane proteins, Transporters	Evidence at protein level	CAB000015, HPA014341, HPA014391
-Cancer-related genes, Disease related genes, Predicted intracellular proteins	Evidence at protein level	HPA005972
-Cancer-related genes, CD markers, Predicted intracellular proteins, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level	HPA006404, CAB026150, CAB030007
-Predicted intracellular proteins, Transcription factors	Evidence at protein level	HPA018523
-Disease related genes, Predicted intracellular proteins	Evidence at protein level	HPA021004, HPA027614
-Enzymes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level	CAB004566, HPA005673
-Predicted intracellular proteins	Evidence at transcript level	HPA069713
-Predicted intracellular proteins	Evidence at protein level	HPA022531
-Enzymes, Predicted intracellular proteins	Evidence at protein level	HPA023062
-Plasma proteins, Predicted intracellular proteins	Evidence at protein level	CAB008364, HPA039437
-Cancer-related genes, Plasma proteins, Predicted secreted proteins	Evidence at protein level	
-Predicted intracellular proteins, Transporters	Evidence at protein level	HPA055123, HPA065285
-Cancer-related genes, Plasma proteins, Predicted intracellular proteins, Transcription factors	Evidence at protein level	CAB005268, HPA063029
-Enzymes, FDA approved drug targets, Predicted intracellular proteins	Evidence at protein level	HPA067657
-Enzymes, Predicted intracellular proteins	Evidence at protein level	CAB011198, HPA045392, HPA051976
-Enzymes, Predicted membrane proteins	Evidence at protein level	
-Enzymes, Plasma proteins, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level	HPA041113, HPA052733
-Predicted intracellular proteins, Transcription factors	Evidence at protein level	HPA030813, CAB032306, HPA057327
-Disease related genes, Enzymes, Plasma proteins, Potential drug targets, Predicted intracellular proteins	Evidence at protein level	HPA022971
-Disease related genes, Predicted intracellular proteins, Transcription factors	Evidence at protein level	HPA031165
-Predicted intracellular proteins	Evidence at protein level	HPA036283, HPA070305
-Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level	HPA045372
-Plasma proteins, Predicted intracellular proteins	Evidence at protein level	HPA043113
-G-protein coupled receptors, Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level	HPA029903
-Disease related genes, Predicted membrane proteins	Evidence at protein level	HPA031813
-Predicted intracellular proteins, Ribosomal proteins	Evidence at protein level	HPA060776, HPA063379
-Cancer-related genes, Candidate cardiovascular disease genes, Plasma proteins, Predicted secreted proteins	Evidence at protein level	CAB000023, HPA017369, CAB040544, CAB055506, CAB058688
-Disease related genes, Plasma proteins, Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level	HPA059449, HPA062780
-Cancer-related genes, CD markers, Disease related genes, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level	CAB000019
-Predicted intracellular proteins	Evidence at protein level	HPA043175
-Plasma proteins, Predicted intracellular proteins	Evidence at protein level	HPA006632
-Predicted intracellular proteins	Evidence at transcript level	HPA019724, HPA055805
-Cancer-related genes, Disease related genes, Plasma proteins, Predicted intracellular proteins, Transcription factors	Evidence at protein level	CAB009886, HPA047513, HPA054689
-Predicted intracellular proteins, Transcription factors	Evidence at protein level	HPA030306, HPA060782
-Enzymes, Predicted intracellular proteins	Evidence at protein level	HPA048652, HPA055972, HPA055973
-Predicted intracellular proteins, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level	HPA051504
-Predicted intracellular proteins	Evidence at protein level	HPA007704
-Predicted intracellular proteins, Ribosomal proteins	Evidence at protein level	HPA054133
-Disease related genes, Enzymes, Potential drug targets, Predicted intracellular proteins	Evidence at protein level	HPA059155
-Cancer-related genes, CD markers, Disease related genes, Predicted membrane proteins	Evidence at protein level	CAB002506, HPA010592
-Cancer-related genes, Disease related genes, Plasma proteins, Predicted intracellular proteins, Transcription factors	Evidence at protein level	CAB000083, HPA006288, HPA007010
-Predicted intracellular proteins	Evidence at protein level	HPA031355
-Predicted intracellular proteins	Evidence at protein level	HPA038709, HPA038710
-Enzymes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level	HPA061293, CAB069930
-Enzymes, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level	HPA034944
-Predicted intracellular proteins	Evidence at protein level	HPA031347
-Enzymes, Predicted intracellular proteins	Evidence at protein level	HPA007532, HPA070811
-Predicted intracellular proteins	Evidence at protein level	HPA062661
-Cancer-related genes, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level	HPA030651
-Disease related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level	CAB000027, CAB000129, HPA059479
-Predicted intracellular proteins	Evidence at protein level	HPA000518
-Disease related genes, Predicted intracellular proteins, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level	CAB012422, HPA017377
-Cancer-related genes, Disease related genes, Plasma proteins, Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level	HPA043673, HPA052963
-CD markers, Predicted membrane proteins	Evidence at protein level	CAB002666, HPA055244
-Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level	HPA037987
-Predicted intracellular proteins	Evidence at protein level	CAB034238, HPA057028, HPA058315
-Predicted intracellular proteins	Evidence at protein level	HPA045946
-Disease related genes, Enzymes, Plasma proteins, Potential drug targets, Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level	HPA036986, HPA036987
-Predicted intracellular proteins, Transcription factors	Evidence at protein level	HPA035689
-Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level	HPA065705, HPA065713
-Enzymes, Predicted intracellular proteins	Evidence at protein level	HPA039751
-Disease related genes, Plasma proteins, Predicted intracellular proteins, Ribosomal proteins	Evidence at protein level	HPA003364
-Predicted intracellular proteins	Evidence at transcript level	HPA036040, HPA036041
-Cancer-related genes, Plasma proteins, Predicted intracellular proteins, Transcription factors	Evidence at protein level	CAB007753, HPA040506
-Plasma proteins, Predicted membrane proteins	Evidence at protein level	CAB015444, HPA058182
-Predicted intracellular proteins	Evidence at protein level	HPA030266, HPA054308
-Predicted intracellular proteins	Evidence at protein level	HPA065352
-Cancer-related genes, Enzymes, Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level	HPA055120
-Plasma proteins, Predicted intracellular proteins	Evidence at protein level	CAB001514, HPA049546
-Cancer-related genes, Disease related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level	CAB011193
-CD markers, Disease related genes, FDA approved drug targets, Predicted membrane proteins	Evidence at protein level	CAB000010, HPA040957, HPA043955, CAB072863, CAB072864
-Cancer-related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level	HPA000798, HPA052504
-Predicted intracellular proteins	Evidence at protein level	HPA031997, HPA057346
-Predicted intracellular proteins, Transcription factors	Evidence at transcript level	HPA006206, CAB009373
-Predicted membrane proteins, Transporters	Evidence at transcript level	HPA023164
-Predicted intracellular proteins, Transporters	Evidence at protein level	CAB015425, HPA043036, HPA047754
-Enzymes, Predicted intracellular proteins	Evidence at protein level	HPA054908
-Plasma proteins, Predicted secreted proteins	Evidence at protein level	
-CD markers, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level	CAB002489, CAB016252
-Predicted intracellular proteins	Evidence at protein level	HPA042978, HPA048473
-Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level	HPA039545
-Disease related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level	
-Predicted intracellular proteins	Evidence at protein level	HPA068787
-Cancer-related genes, Disease related genes, Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level	HPA035106, HPA035107
-Predicted intracellular proteins	Evidence at protein level	HPA035072
-Cancer-related genes, Predicted secreted proteins	Evidence at protein level	HPA031950, HPA042369
-Cancer-related genes, Enzymes, Predicted intracellular proteins	Evidence at protein level	CAB025563
-Predicted intracellular proteins	Evidence at protein level	HPA046800, HPA062242
-Enzymes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level	HPA018433
-Plasma proteins, Predicted intracellular proteins	Evidence at protein level	HPA031727, HPA031729
-Predicted intracellular proteins, Transcription factors	Evidence at protein level	HPA046099
-Predicted membrane proteins	Evidence at transcript level	HPA026993
-Predicted intracellular proteins, Predicted membrane proteins, RNA polymerase related proteins	Evidence at protein level	HPA022527, HPA052400
-Enzymes, Predicted intracellular proteins	Evidence at protein level	HPA047829
-Enzymes, Plasma proteins, Predicted secreted proteins	Evidence at protein level	HPA062452, HPA063471
-Predicted intracellular proteins, Predicted secreted proteins	Evidence at transcript level	HPA006353, HPA029871
-Enzymes, Predicted intracellular proteins	Evidence at protein level	CAB001701, HPA036961
-Plasma proteins, Predicted intracellular proteins	Evidence at protein level	HPA013385
-Predicted intracellular proteins	Evidence at protein level	HPA052083, HPA061644
-Predicted intracellular proteins	Evidence at protein level	HPA054434, HPA057089
-Predicted intracellular proteins	Evidence at protein level	HPA020998
-Predicted intracellular proteins	Evidence at protein level	CAB025488, HPA028825, CAB058697
-Disease related genes, Plasma proteins, Predicted intracellular proteins, Ribosomal proteins	Evidence at protein level	HPA002734, HPA074839
-Disease related genes, Predicted intracellular proteins	Evidence at protein level	HPA001333, CAB034046
-Predicted intracellular proteins	Evidence at protein level	
-Predicted intracellular proteins	Evidence at protein level	HPA042212, HPA042456, HPA066168
-Predicted intracellular proteins	Evidence at protein level	HPA052251
-Plasma proteins, Predicted intracellular proteins	Evidence at protein level	CAB012477, HPA035029
-Cancer-related genes, Disease related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level	CAB000134, HPA000452, HPA000539, HPA023040
-Disease related genes, Predicted intracellular proteins, Ribosomal proteins	Evidence at protein level	HPA004107
-Disease related genes, Plasma proteins, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level	HPA007066
-Enzymes, Predicted intracellular proteins	Evidence at protein level	HPA040674, HPA074168
-Predicted intracellular proteins	Evidence at protein level	HPA027559, HPA043084
-Predicted intracellular proteins	Evidence at protein level	HPA070644
-Disease related genes, Predicted intracellular proteins	Evidence at protein level	HPA028589
-Predicted intracellular proteins, RNA polymerase related proteins	Evidence at protein level	HPA027288
-Enzymes, FDA approved drug targets, Plasma proteins, Predicted intracellular proteins	Evidence at protein level	HPA006764, HPA007244
-CD markers, Disease related genes, FDA approved drug targets, Predicted intracellular proteins, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level	CAB013055
-Predicted intracellular proteins	Evidence at protein level	HPA051758, HPA052623
-Predicted intracellular proteins	Evidence at protein level	HPA064466
-Enzymes, Plasma proteins, Predicted secreted proteins	Evidence at protein level	CAB016345
-Predicted membrane proteins, Transporters	Evidence at transcript level	HPA062625
-G-protein coupled receptors, Predicted membrane proteins	Evidence at protein level	HPA060601, HPA067232
-Predicted intracellular proteins	Evidence at protein level	HPA039806, HPA040369
-Predicted intracellular proteins	Evidence at protein level	HPA043648, HPA052896
-Cancer-related genes, Disease related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level	HPA008312, CAB010194, CAB016304
-Disease related genes, Predicted intracellular proteins	Evidence at protein level	HPA056679, HPA056680
-Predicted intracellular proteins	Evidence at protein level	HPA023994
-Predicted membrane proteins, Transporters	Evidence at protein level	HPA023311, HPA024729
-Predicted intracellular proteins	Evidence at protein level	HPA000813
-Enzymes, Predicted intracellular proteins	Evidence at protein level	HPA018670, HPA019570
-Predicted intracellular proteins	Evidence at protein level	HPA043168
-Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level	HPA013589
-Predicted intracellular proteins, Transcription factors	Evidence at protein level	HPA051421, HPA054639
-Cancer-related genes, Disease related genes, Enzymes, Plasma proteins, Potential drug targets, Predicted intracellular proteins	Evidence at protein level	HPA002317
-Predicted intracellular proteins	Evidence at protein level	HPA039576
-Disease related genes, Enzymes, Potential drug targets, Predicted membrane proteins	Evidence at protein level	CAB033779
-Predicted membrane proteins, Transporters	Evidence at protein level	HPA023617, HPA050655
-Cancer-related genes, Candidate cardiovascular disease genes, CD markers, Plasma proteins, Predicted membrane proteins	Evidence at protein level	CAB002144, HPA051972
-Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level	HPA069743
-Cancer-related genes, CD markers, G-protein coupled receptors, Predicted membrane proteins	Evidence at protein level	CAB003796, HPA031383, HPA074467
-CD markers, Plasma proteins, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level	CAB002497, HPA055146
-Predicted intracellular proteins	Evidence at protein level	HPA043328
-Enzymes, Predicted intracellular proteins	Evidence at protein level	CAB046022, HPA061803, HPA062802
-Plasma proteins, Predicted secreted proteins	Evidence at protein level	CAB026769, HPA043706, HPA044763
-Predicted intracellular proteins, Predicted membrane proteins, Transporters	Evidence at protein level	HPA069520
-Predicted intracellular proteins	Evidence at protein level	HPA042001
-Predicted secreted proteins	Evidence at protein level	HPA044605
-Cancer-related genes, Disease related genes, Plasma proteins, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level	HPA001527, HPA005692, CAB009538
-CD markers, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level	CAB015392, CAB020308, HPA043416, HPA060839
-Enzymes, Plasma proteins, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level	HPA017265, CAB033648, HPA058960
-Predicted membrane proteins	Evidence at transcript level	
-Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level	HPA040796
-Cancer-related genes, Predicted intracellular proteins	Evidence at protein level	HPA004021
-Predicted intracellular proteins	Evidence at transcript level	
-Enzymes, Predicted intracellular proteins	Evidence at protein level	HPA038941
-Predicted intracellular proteins, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level	HPA003910
-Cancer-related genes, Disease related genes, Predicted intracellular proteins, Predicted membrane proteins, Transcription factors	Evidence at protein level	CAB009247, HPA035221, HPA035222
-Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level	HPA013846
-Predicted intracellular proteins, Transcription factors	Evidence at protein level	CAB025341, HPA055371
-Enzymes, Predicted secreted proteins, RAS pathway related proteins	Evidence at protein level	
-CD markers, FDA approved drug targets, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level	CAB002430, HPA003883
-Disease related genes, Enzymes, Plasma proteins, Potential drug targets, Predicted intracellular proteins	Evidence at protein level	HPA018479
-Predicted intracellular proteins	Evidence at protein level	CAB007057, HPA024426
-Cancer-related genes, Disease related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level	CAB000029, HPA000452, HPA000453, HPA000539, HPA045062
-Predicted intracellular proteins	Evidence at transcript level	HPA060727
-Cancer-related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level	HPA023910, HPA024554
-Cancer-related genes, Predicted intracellular proteins, Transporters	Evidence at protein level	HPA002321, CAB002752, CAB022717, HPA064740
-Predicted membrane proteins	Evidence at transcript level	HPA060139
-Predicted intracellular proteins, Transcription factors	Evidence at protein level	HPA043800, HPA053762, HPA072145
-Predicted intracellular proteins, Predicted secreted proteins	Evidence at transcript level	HPA008546
-Predicted intracellular proteins	Evidence at protein level	HPA041928, HPA043537
-Predicted membrane proteins	Evidence at protein level	HPA064625
-Predicted intracellular proteins	Evidence at protein level	CAB004972, HPA039247, HPA043684, HPA063394
-Predicted intracellular proteins	Evidence at protein level	HPA001812, HPA073637
-Disease related genes, Predicted intracellular proteins	Evidence at protein level	CAB012220, HPA068569
-Plasma proteins, Predicted intracellular proteins	Evidence at protein level	HPA061626
-Disease related genes, Enzymes, Plasma proteins, Potential drug targets, Predicted intracellular proteins	Evidence at protein level	HPA007316, HPA007571, CAB008636
-Enzymes, Predicted intracellular proteins	Evidence at protein level	HPA004701
-Predicted intracellular proteins	Evidence at protein level	
-Disease related genes, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level	HPA059061, HPA069807
-Enzymes, Predicted intracellular proteins	Evidence at protein level	HPA036059
-Predicted intracellular proteins	Evidence at protein level	HPA041156, HPA041228
-Cancer-related genes, Plasma proteins, Predicted secreted proteins	Evidence at protein level	CAB002170, HPA003425
-Predicted intracellular proteins	Evidence at protein level	HPA023074
-Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level	HPA002569
-Enzymes, Predicted intracellular proteins	Evidence at protein level	HPA000750
-Predicted intracellular proteins	Evidence at protein level	HPA002969, CAB025882, CAB055513
-Plasma proteins, Predicted intracellular proteins, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level	
-Disease related genes, Enzymes, FDA approved drug targets, Plasma proteins, Predicted intracellular proteins	Evidence at protein level	HPA046995, HPA050327
-Cancer-related genes, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level	CAB025972
-Predicted intracellular proteins	Evidence at transcript level	HPA060727
-Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level	HPA017319
-Predicted membrane proteins	Evidence at protein level	HPA042310
-Predicted membrane proteins	Evidence at transcript level	HPA052569
-Cancer-related genes, Enzymes, Predicted intracellular proteins	Evidence at protein level	HPA004847
-Plasma proteins, Predicted intracellular proteins	Evidence at protein level	HPA016434, HPA052004
-Predicted intracellular proteins, Predicted membrane proteins	Evidence at transcript level	HPA046562
-Plasma proteins, Predicted intracellular proteins	Evidence at protein level	CAB009733, HPA041551
-Predicted intracellular proteins	Evidence at protein level	HPA019486, HPA021517
-Predicted intracellular proteins	Evidence at protein level	HPA044751, HPA060187
-Plasma proteins, Predicted intracellular proteins	Evidence at protein level	HPA071308
-Cancer-related genes, Candidate cardiovascular disease genes, Plasma proteins, Predicted secreted proteins	Evidence at protein level	HPA040520
-Predicted intracellular proteins	Evidence at protein level	HPA016593, HPA018162
-Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level	
-Predicted intracellular proteins	Evidence at protein level	HPA008214, HPA011144
-Predicted intracellular proteins	Evidence at protein level	HPA045723
-G-protein coupled receptors, Predicted membrane proteins	Evidence at protein level	HPA029395
-Plasma proteins, Predicted intracellular proteins	Evidence at protein level	CAB002665, HPA050918, HPA054667
-Predicted intracellular proteins	Evidence at protein level	HPA037893, HPA037894, HPA071950
-Enzymes, Predicted intracellular proteins	Evidence at protein level	HPA015267
-Cancer-related genes, Plasma proteins, Predicted intracellular proteins, Transcription factors	Evidence at protein level	CAB003860, HPA027873, HPA042128, HPA049883, HPA051156
-Predicted intracellular proteins	Evidence at transcript level	HPA048922
-Cancer-related genes, Enzymes, Predicted intracellular proteins	Evidence at protein level	HPA001473, CAB004348, HPA046488
-G-protein coupled receptors, Predicted membrane proteins	Evidence at protein level	
-Plasma proteins, Predicted intracellular proteins	Evidence at protein level	CAB009502, HPA012924, HPA060784
-Predicted intracellular proteins	Evidence at protein level	HPA036162, HPA036163
-Cancer-related genes, Disease related genes, Nuclear receptors, Predicted intracellular proteins, Transcription factors	Evidence at protein level	HPA043360
-Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level	HPA050101, HPA063569
-Predicted intracellular proteins, Transcription factors	Evidence at protein level	HPA043573
-Predicted intracellular proteins	Evidence at protein level	HPA037766, HPA057533
-Predicted intracellular proteins	Evidence at protein level	HPA027820, HPA045837
-Cancer-related genes, Predicted intracellular proteins	Evidence at protein level	CAB002224, HPA008736, HPA008797, CAB025546, HPA065779
-Predicted intracellular proteins	Evidence at protein level	
-Predicted intracellular proteins	Evidence at protein level	CAB011574, HPA048677, HPA056480
-Cancer-related genes, Predicted intracellular proteins	Evidence at protein level	HPA045383, HPA072477
-Predicted membrane proteins	Evidence at protein level	CAB009789, HPA013166
-Enzymes, Predicted intracellular proteins	Evidence at protein level	HPA048189, HPA059841
-Predicted intracellular proteins	Evidence at protein level	HPA008507
-CD markers, Disease related genes, FDA approved drug targets, Plasma proteins, Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level	CAB017520, HPA038494
-Cancer-related genes, Plasma proteins, Predicted secreted proteins	Evidence at protein level	
-Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level	HPA031121
-Predicted intracellular proteins	Evidence at protein level	HPA045384
-Cancer-related genes, Disease related genes, Predicted intracellular proteins, Transcription factors	Evidence at protein level	HPA002038, HPA002698, CAB013508
-Predicted secreted proteins	Evidence at protein level	CAB002773, HPA062683
-G-protein coupled receptors, Predicted intracellular proteins, Predicted membrane proteins, Predicted secreted proteins, Transporters	Evidence at protein level	HPA052612, HPA054617
-Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level	HPA041843, HPA046309
-Predicted intracellular proteins	Evidence at transcript level	HPA045526
-Plasma proteins, Predicted intracellular proteins	Evidence at protein level	CAB017194, HPA051828, HPA054787
-Predicted intracellular proteins	Evidence at protein level	HPA014933
-Plasma proteins, Predicted secreted proteins	Evidence at protein level	HPA040442
-CD markers, Plasma proteins, Predicted membrane proteins	Evidence at protein level	HPA017060
-Disease related genes, Potential drug targets, Predicted membrane proteins, Transporters	Evidence at protein level	HPA038832, HPA038833
-Enzymes, Predicted intracellular proteins	Evidence at protein level	HPA003328, CAB073407
-Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level	HPA036228
-CD markers, Disease related genes, Plasma proteins, Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level	CAB002659, HPA052942, HPA060715
-Predicted intracellular proteins	Evidence at protein level	HPA026661
-Predicted intracellular proteins	Evidence at transcript level	
-Plasma proteins, Predicted secreted proteins	Evidence at protein level	CAB009449, HPA017737
-Enzymes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level	HPA037603, HPA037604
-Cancer-related genes, Candidate cardiovascular disease genes, CD markers, FDA approved drug targets, Plasma proteins, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level	HPA002126, CAB002142, HPA004877
-Predicted intracellular proteins, Transcription factors	Evidence at protein level	HPA015792
-Predicted intracellular proteins, Transcription factors	Evidence at protein level	HPA029534, HPA050750
-Predicted secreted proteins	Evidence at protein level	HPA029595, CAB034214, CAB034332
-Plasma proteins, Predicted membrane proteins	Evidence at transcript level	
-Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level	HPA068560
-Enzymes, Plasma proteins, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level	CAB000376, HPA003418
-Enzymes, Predicted secreted proteins	Evidence at protein level	HPA054134
-Cancer-related genes, Disease related genes, Predicted intracellular proteins	Evidence at protein level	CAB025912, HPA058406
-Predicted intracellular proteins	Evidence at protein level	HPA042763, HPA043615, HPA064578
-Plasma proteins, Predicted intracellular proteins	Evidence at protein level	HPA062872
-Cancer-related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level	CAB004510, HPA027464
-Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level	HPA013844
-Predicted intracellular proteins	Evidence at protein level	HPA042682, CAB045975
-Cancer-related genes, Candidate cardiovascular disease genes, Disease related genes, Enzymes, FDA approved drug targets, Plasma proteins, Predicted secreted proteins	Evidence at protein level	HPA003412, CAB009335
-Disease related genes, Predicted intracellular proteins	Evidence at protein level	HPA034598
-Predicted intracellular proteins	Evidence at protein level	HPA057707
-Predicted intracellular proteins	Evidence at protein level	
-Plasma proteins, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level	HPA018241
-Cancer-related genes, Plasma proteins, Predicted secreted proteins	Evidence at protein level	
-Predicted intracellular proteins, Transcription factors	Evidence at protein level	HPA066042
-Enzymes, Plasma proteins, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level	HPA011338, CAB026172
-Predicted intracellular proteins	Evidence at protein level	HPA057428
-Predicted intracellular proteins	Evidence at protein level	HPA041145, HPA041211
-Cancer-related genes, Predicted intracellular proteins	Evidence at protein level	
-Predicted intracellular proteins	Evidence at protein level	
-Predicted intracellular proteins	Evidence at protein level	HPA002932
-Disease related genes, Predicted intracellular proteins, Transcription factors	Evidence at protein level	HPA058532, HPA067952
-Enzymes, Predicted membrane proteins	Evidence at protein level	HPA030359, HPA030360, HPA046593
-Disease related genes, Potential drug targets, Predicted intracellular proteins, Predicted membrane proteins, Transporters	Evidence at protein level	CAB009492
-Cancer-related genes, Enzymes, Predicted secreted proteins	Evidence at protein level	HPA017195
-Disease related genes, Potential drug targets, Predicted membrane proteins, Transporters	Evidence at protein level	HPA006119, HPA016599
-Plasma proteins, Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level	HPA019096, HPA019687
-Disease related genes, Plasma proteins, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level	HPA008069, CAB078183
-Predicted intracellular proteins	Evidence at protein level	HPA022895
-Cancer-related genes, Disease related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level	CAB009104
-Cancer-related genes, Predicted intracellular proteins	Evidence at protein level	HPA002355
-Predicted intracellular proteins	Evidence at protein level	HPA043795
-Predicted membrane proteins, Transporters	Evidence at protein level	HPA049984, HPA053529
-Enzymes, Predicted secreted proteins	Evidence at protein level	HPA063181
-Predicted intracellular proteins	Evidence at transcript level	HPA038115, HPA038533
-Predicted intracellular proteins	Evidence at protein level	HPA051750
-Predicted secreted proteins	Evidence at protein level	HPA077718
-Predicted intracellular proteins, Transcription factors	Evidence at protein level	HPA051894, HPA055460
-Cancer-related genes, CD markers, FDA approved drug targets, Predicted membrane proteins	Evidence at protein level	CAB030018, CAB076385
-Cancer-related genes, Candidate cardiovascular disease genes, Plasma proteins, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level	HPA000893, HPA002560, CAB016647
-Disease related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level	HPA001114, HPA042505
-Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level	HPA015718, HPA017281
-Disease related genes, Enzymes, FDA approved drug targets, Predicted intracellular proteins, RAS pathway related proteins	Evidence at protein level	CAB010050, HPA050062, HPA054206
-CD markers, Disease related genes, FDA approved drug targets, Predicted membrane proteins	Evidence at protein level	CAB004651, HPA008750
-Disease related genes, Enzymes, Potential drug targets, Predicted intracellular proteins	Evidence at protein level	HPA006782
-Enzymes, Predicted intracellular proteins	Evidence at protein level	HPA040092
-Predicted intracellular proteins	Evidence at protein level	HPA028483, HPA028557, HPA029384
-Plasma proteins, Predicted intracellular proteins, Ribosomal proteins	Evidence at protein level	HPA048746
-Enzymes, Predicted intracellular proteins	Evidence at protein level	HPA042163
-Predicted intracellular proteins	Evidence at transcript level	HPA022857, HPA023105
-Predicted intracellular proteins	Evidence at protein level	HPA035453
-Cancer-related genes, Disease related genes, Predicted intracellular proteins, Transcription factors	Evidence at protein level	HPA005714
-CD markers, Predicted membrane proteins	Evidence at protein level	HPA051363, HPA051903
-Disease related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level	CAB000130, HPA045697, HPA061168
-Predicted intracellular proteins	Evidence at protein level	HPA028450, HPA028461, HPA028466
-Predicted membrane proteins, Predicted secreted proteins, Transporters	Evidence at protein level	HPA040668
-Candidate cardiovascular disease genes, Plasma proteins, Predicted secreted proteins	Evidence at protein level	HPA002695, CAB016549, CAB016550
-Cancer-related genes, Enzymes, FDA approved drug targets, Plasma proteins, Predicted intracellular proteins	Evidence at protein level	CAB013088
-Predicted intracellular proteins	Evidence at protein level	HPA044255
-Cancer-related genes, Disease related genes, Plasma proteins, Predicted intracellular proteins, Transcription factors	Evidence at protein level	CAB002051, HPA047514
-Plasma proteins, Predicted intracellular proteins, Ribosomal proteins	Evidence at protein level	HPA066851
-Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level	HPA019197, HPA063522
-CD markers, FDA approved drug targets, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level	HPA003539, CAB018374
-Cancer-related genes, Enzymes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level	HPA008399, CAB015221, HPA017017
-Predicted intracellular proteins, Transcription factors	Evidence at protein level	HPA031430
-Plasma proteins, Predicted intracellular proteins, Ribosomal proteins	Evidence at protein level	HPA050159, HPA055007
-Disease related genes, Predicted intracellular proteins	Evidence at protein level	HPA049894, HPA060945
-Enzymes, Predicted intracellular proteins	Evidence at protein level	HPA004774
-Enzymes, Predicted intracellular proteins	Evidence at protein level	HPA042132
+Gene	Ensembl	Gene description	Chromosome	Position	Protein class	Evidence
+ZNF385B	ENSG00000144331	Zinc finger protein 385B	2	179441982-179861505	Predicted intracellular proteins	Evidence at protein level
+TFPI2	ENSG00000105825	Tissue factor pathway inhibitor 2	7	93885397-93890991	Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level
+IL27RA	ENSG00000104998	Interleukin 27 receptor subunit alpha	19	14031748-14053216	Predicted membrane proteins	Evidence at protein level
+JCHAIN	ENSG00000132465	Joining chain of multimeric IgA and IgM	4	70655541-70681817	Plasma proteins, Predicted secreted proteins	Evidence at protein level
+ARID5A	ENSG00000196843	AT-rich interaction domain 5A	2	96536743-96552638	Predicted intracellular proteins, Transcription factors	Evidence at protein level
+MAP2K6	ENSG00000108984	Mitogen-activated protein kinase kinase 6	17	69414698-69543331	Enzymes, Predicted intracellular proteins	Evidence at protein level
+NEFH	ENSG00000100285	Neurofilament heavy	22	29480230-29491390	Disease related genes, Predicted intracellular proteins	Evidence at protein level
+DEF6	ENSG00000023892	DEF6, guanine nucleotide exchange factor	6	35297852-35321771	Predicted intracellular proteins	Evidence at protein level
+C6orf141	ENSG00000197261	Chromosome 6 open reading frame 141	6	49550646-49561907	Predicted intracellular proteins	Evidence at protein level
+CA3	ENSG00000164879	Carbonic anhydrase 3	8	85373436-85449040	Enzymes, FDA approved drug targets, Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+GSTK1	ENSG00000197448	Glutathione S-transferase kappa 1	7	143244093-143270854	Enzymes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+PEX10	ENSG00000157911	Peroxisomal biogenesis factor 10	1	2403964-2413797	Disease related genes, Plasma proteins, Potential drug targets, Predicted intracellular proteins, Predicted membrane proteins, Transporters	Evidence at protein level
+SGK3	ENSG00000104205	Serum/glucocorticoid regulated kinase family member 3	8	66712418-66862022	Enzymes, Predicted intracellular proteins	Evidence at protein level
+SLC5A8	ENSG00000256870	Solute carrier family 5 member 8	12	101155493-101210407	Predicted membrane proteins	Evidence at protein level
+RAC2	ENSG00000128340	Ras-related C3 botulinum toxin substrate 2 (rho family, small GTP binding protein Rac2)	22	37225261-37244448	Disease related genes, Predicted intracellular proteins, RAS pathway related proteins	Evidence at protein level
+PIGR	ENSG00000162896	Polymeric immunoglobulin receptor	1	206928518-206946466	Cancer-related genes, Plasma proteins, Predicted membrane proteins	Evidence at protein level
+ZMYM6	ENSG00000163867	Zinc finger MYM-type containing 6	1	34986165-35031968	Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level
+NFKBIA	ENSG00000100906	NFKB inhibitor alpha	14	35401511-35404749	Cancer-related genes, Disease related genes, Predicted intracellular proteins, Transcription factors	Evidence at protein level
+TNFRSF17	ENSG00000048462	TNF receptor superfamily member 17	16	11965107-11968068	Cancer-related genes, CD markers, Disease related genes, Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level
+RARRES3	ENSG00000133321	Retinoic acid receptor responder 3	11	63536809-63546462	Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level
+SERPINA1	ENSG00000197249	Serpin family A member 1	14	94376747-94390693	Cancer-related genes, Candidate cardiovascular disease genes, Disease related genes, Plasma proteins, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level
+NFKBIE	ENSG00000146232	NFKB inhibitor epsilon	6	44258166-44265788	Cancer-related genes, Predicted intracellular proteins, Transcription factors	Evidence at protein level
+TRAPPC12	ENSG00000171853	Trafficking protein particle complex 12	2	3379675-3485094	Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+CD52	ENSG00000169442	CD52 molecule	1	26317957-26320523	Cancer-related genes, CD markers, FDA approved drug targets, Predicted membrane proteins	Evidence at protein level
+RASGEF1A	ENSG00000198915	RasGEF domain family member 1A	10	43194535-43266919	Predicted intracellular proteins	Evidence at protein level
+C6orf226	ENSG00000221821	Chromosome 6 open reading frame 226	6	42890265-42890816	Predicted intracellular proteins	Evidence at protein level
+TIPARP	ENSG00000163659	TCDD inducible poly(ADP-ribose) polymerase	3	156673235-156706770	Enzymes, Predicted intracellular proteins	Evidence at transcript level
+CEBPD	ENSG00000221869	CCAAT/enhancer binding protein delta	8	47736909-47739086	Predicted intracellular proteins, Transcription factors	Evidence at protein level
+BEND5	ENSG00000162373	BEN domain containing 5	1	48727523-48776969	Predicted intracellular proteins	Evidence at protein level
+ARL14EP	ENSG00000152219	ADP ribosylation factor like GTPase 14 effector protein	11	30323051-30338227	Predicted intracellular proteins	Evidence at protein level
+APOBEC3D	ENSG00000243811	Apolipoprotein B mRNA editing enzyme catalytic subunit 3D	22	39021113-39033276	Predicted intracellular proteins	Evidence at protein level
+KRTCAP3	ENSG00000157992	Keratinocyte associated protein 3	2	27442366-27446481	Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level
+CFB	ENSG00000243649	Complement factor B	6	31945650-31952084	Disease related genes, Enzymes, Plasma proteins, Potential drug targets, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level
+CCL19	ENSG00000172724	C-C motif chemokine ligand 19	9	34689567-34691277	Cancer-related genes, Predicted secreted proteins	Evidence at protein level
+SNX22	ENSG00000157734	Sorting nexin 22	15	64151715-64157481	Predicted intracellular proteins	Evidence at protein level
+SAV1	ENSG00000151748	Salvador family WW domain containing protein 1	14	50632058-50668331	Predicted intracellular proteins	Evidence at protein level
+CCDC24	ENSG00000159214	Coiled-coil domain containing 24	1	43991359-43996528	Predicted intracellular proteins	Evidence at protein level
+KYAT3	ENSG00000137944	Kynurenine aminotransferase 3	1	88935773-88992953	Enzymes, Predicted intracellular proteins	Evidence at protein level
+CD69	ENSG00000110848	CD69 molecule	12	9752486-9760901	CD markers, Predicted membrane proteins	Evidence at protein level
+STOX1	ENSG00000165730	Storkhead box 1	10	68827541-68895432	Disease related genes, Predicted secreted proteins	Evidence at protein level
+KLRB1	ENSG00000111796	Killer cell lectin like receptor B1	12	9594551-9607886	CD markers, Predicted membrane proteins	Evidence at protein level
+TOPORS-AS1	ENSG00000235453	TOPORS antisense RNA 1	9	32551144-32567005	Predicted intracellular proteins, Predicted membrane proteins	Evidence at transcript level
+ENDOV	ENSG00000173818	Endonuclease V	17	80415165-80438086	Predicted intracellular proteins	Evidence at protein level
+MS4A1	ENSG00000156738	Membrane spanning 4-domains A1	11	60455752-60470760	CD markers, Disease related genes, FDA approved drug targets, Predicted intracellular proteins, Predicted membrane proteins, Transporters	Evidence at protein level
+BTG1	ENSG00000133639	BTG anti-proliferation factor 1	12	92140278-92145897	Cancer-related genes, Disease related genes, Predicted intracellular proteins	Evidence at protein level
+TNFRSF14	ENSG00000157873	TNF receptor superfamily member 14	1	2555639-2565382	Cancer-related genes, CD markers, Predicted intracellular proteins, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level
+SPIB	ENSG00000269404	Spi-B transcription factor	19	50418938-50431313	Predicted intracellular proteins, Transcription factors	Evidence at protein level
+MYBPC1	ENSG00000196091	Myosin binding protein C, slow type	12	101568353-101686018	Disease related genes, Predicted intracellular proteins	Evidence at protein level
+TRIM21	ENSG00000132109	Tripartite motif containing 21	11	4384897-4393696	Enzymes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+C17orf107	ENSG00000205710	Chromosome 17 open reading frame 107	17	4899418-4902932	Predicted intracellular proteins	Evidence at transcript level
+FAM117A	ENSG00000121104	Family with sequence similarity 117 member A	17	49710332-49789180	Predicted intracellular proteins	Evidence at protein level
+ADHFE1	ENSG00000147576	Alcohol dehydrogenase, iron containing 1	8	66430185-66471601	Enzymes, Predicted intracellular proteins	Evidence at protein level
+TPT1	ENSG00000133112	Tumor protein, translationally-controlled 1	13	45333471-45341370	Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+CXCL2	ENSG00000081041	C-X-C motif chemokine ligand 2	4	74097035-74099293	Cancer-related genes, Plasma proteins, Predicted secreted proteins	Evidence at protein level
+CLIC6	ENSG00000159212	Chloride intracellular channel 6	21	34669389-34718227	Predicted intracellular proteins, Transporters	Evidence at protein level
+JUND	ENSG00000130522	JunD proto-oncogene, AP-1 transcription factor subunit	19	18279760-18281622	Cancer-related genes, Plasma proteins, Predicted intracellular proteins, Transcription factors	Evidence at protein level
+PARP3	ENSG00000041880	Poly(ADP-ribose) polymerase family member 3	3	51942345-51948867	Enzymes, FDA approved drug targets, Predicted intracellular proteins	Evidence at protein level
+ALKBH2	ENSG00000189046	AlkB homolog 2, alpha-ketoglutarate dependent dioxygenase	12	109088188-109093631	Enzymes, Predicted intracellular proteins	Evidence at protein level
+ELOVL2	ENSG00000197977	ELOVL fatty acid elongase 2	6	10980759-11044314	Enzymes, Predicted membrane proteins	Evidence at protein level
+NME3	ENSG00000103024	NME/NM23 nucleoside diphosphate kinase 3	16	1770286-1771730	Enzymes, Plasma proteins, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level
+IRF2	ENSG00000168310	Interferon regulatory factor 2	4	184387713-184474580	Predicted intracellular proteins, Transcription factors	Evidence at protein level
+GRHPR	ENSG00000137106	Glyoxylate and hydroxypyruvate reductase	9	37422666-37436990	Disease related genes, Enzymes, Plasma proteins, Potential drug targets, Predicted intracellular proteins	Evidence at protein level
+EGR2	ENSG00000122877	Early growth response 2	10	62811996-62919900	Disease related genes, Predicted intracellular proteins, Transcription factors	Evidence at protein level
+PHF7	ENSG00000010318	PHD finger protein 7	3	52410657-52423641	Predicted intracellular proteins	Evidence at protein level
+STC2	ENSG00000113739	Stanniocalcin 2	5	173314713-173329503	Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level
+GNA15	ENSG00000060558	G protein subunit alpha 15	19	3136193-3163769	Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+NPY1R	ENSG00000164128	Neuropeptide Y receptor Y1	4	163323961-163344832	G-protein coupled receptors, Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level
+REEP2	ENSG00000132563	Receptor accessory protein 2	5	138439017-138446969	Disease related genes, Predicted membrane proteins	Evidence at protein level
+RPL27A	ENSG00000166441	Ribosomal protein L27a	11	8682411-8714759	Predicted intracellular proteins, Ribosomal proteins	Evidence at protein level
+CHGA	ENSG00000100604	Chromogranin A	14	92923080-92935293	Cancer-related genes, Candidate cardiovascular disease genes, Plasma proteins, Predicted secreted proteins	Evidence at protein level
+DOK7	ENSG00000175920	Docking protein 7	4	3463311-3494483	Disease related genes, Plasma proteins, Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level
+CD79A	ENSG00000105369	CD79a molecule	19	41877120-41881372	Cancer-related genes, CD markers, Disease related genes, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level
+NDUFA5	ENSG00000128609	NADH:ubiquinone oxidoreductase subunit A5	7	123536997-123558255	Predicted intracellular proteins	Evidence at protein level
+PSME1	ENSG00000092010	Proteasome activator subunit 1	14	24136158-24138967	Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+ZBED6CL	ENSG00000188707	ZBED6 C-terminal like	7	150329789-150332721	Predicted intracellular proteins	Evidence at transcript level
+SFPQ	ENSG00000116560	Splicing factor proline and glutamine rich	1	35176378-35193148	Cancer-related genes, Disease related genes, Plasma proteins, Predicted intracellular proteins, Transcription factors	Evidence at protein level
+ZNF586	ENSG00000083828	Zinc finger protein 586	19	57769655-57819939	Predicted intracellular proteins, Transcription factors	Evidence at protein level
+GSTM4	ENSG00000168765	Glutathione S-transferase mu 4	1	109656081-109674836	Enzymes, Predicted intracellular proteins	Evidence at protein level
+BTN2A2	ENSG00000124508	Butyrophilin subfamily 2 member A2	6	26383096-26394874	Predicted intracellular proteins, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level
+GNAI2	ENSG00000114353	G protein subunit alpha i2	3	50226292-50259355	Predicted intracellular proteins	Evidence at protein level
+MRPL16	ENSG00000166902	Mitochondrial ribosomal protein L16	11	59806135-59810872	Predicted intracellular proteins, Ribosomal proteins	Evidence at protein level
+CYP27A1	ENSG00000135929	Cytochrome P450 family 27 subfamily A member 1	2	218781749-218815293	Disease related genes, Enzymes, Potential drug targets, Predicted intracellular proteins	Evidence at protein level
+CD74	ENSG00000019582	CD74 molecule	5	150401637-150412929	Cancer-related genes, CD markers, Disease related genes, Predicted membrane proteins	Evidence at protein level
+TP63	ENSG00000073282	Tumor protein p63	3	189631416-189897279	Cancer-related genes, Disease related genes, Plasma proteins, Predicted intracellular proteins, Transcription factors	Evidence at protein level
+BTBD6	ENSG00000184887	BTB domain containing 6	14	105248490-105251093	Predicted intracellular proteins	Evidence at protein level
+MORN3	ENSG00000139714	MORN repeat containing 3	12	121648742-121672631	Predicted intracellular proteins	Evidence at protein level
+SIAH2	ENSG00000181788	Siah E3 ubiquitin protein ligase 2	3	150741127-150763477	Enzymes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+ACYP1	ENSG00000119640	Acylphosphatase 1	14	75053221-75069483	Enzymes, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level
+TSPYL5	ENSG00000180543	TSPY like 5	8	97273474-97277964	Predicted intracellular proteins	Evidence at protein level
+IP6K2	ENSG00000068745	Inositol hexakisphosphate kinase 2	3	48688003-48740353	Enzymes, Predicted intracellular proteins	Evidence at protein level
+PSME2	ENSG00000100911	Proteasome activator subunit 2	14	24143362-24147570	Predicted intracellular proteins	Evidence at protein level
+SEMA3B	ENSG00000012171	Semaphorin 3B	3	50267558-50277546	Cancer-related genes, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level
+KRT5	ENSG00000186081	Keratin 5	12	52514575-52520687	Disease related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+KLHDC7B	ENSG00000130487	Kelch domain containing 7B	22	50548033-50551023	Predicted intracellular proteins	Evidence at protein level
+CDON	ENSG00000064309	Cell adhesion associated, oncogene regulated	11	125955796-126063335	Disease related genes, Predicted intracellular proteins, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level
+COL17A1	ENSG00000065618	Collagen type XVII alpha 1 chain	10	104031286-104086002	Cancer-related genes, Disease related genes, Plasma proteins, Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level
+SPN	ENSG00000197471	Sialophorin	16	29662979-29670876	CD markers, Predicted membrane proteins	Evidence at protein level
+RNF150	ENSG00000170153	Ring finger protein 150	4	140859807-141212877	Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level
+DHRS12	ENSG00000102796	Dehydrogenase/reductase 12	13	51767993-51804157	Predicted intracellular proteins	Evidence at protein level
+IFI35	ENSG00000068079	Interferon induced protein 35	17	43006725-43014456	Predicted intracellular proteins	Evidence at protein level
+QARS	ENSG00000172053	Glutaminyl-tRNA synthetase	3	49095932-49105135	Disease related genes, Enzymes, Plasma proteins, Potential drug targets, Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level
+RFX3	ENSG00000080298	Regulatory factor X3	9	3218297-3526004	Predicted intracellular proteins, Transcription factors	Evidence at protein level
+TTC39C	ENSG00000168234	Tetratricopeptide repeat domain 39C	18	23992773-24135610	Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level
+OSGEP	ENSG00000092094	O-sialoglycoprotein endopeptidase	14	20446411-20455105	Enzymes, Predicted intracellular proteins	Evidence at protein level
+RPS24	ENSG00000138326	Ribosomal protein S24	10	78033760-78056812	Disease related genes, Plasma proteins, Predicted intracellular proteins, Ribosomal proteins	Evidence at protein level
+DRC3	ENSG00000171962	Dynein regulatory complex subunit 3	17	17972813-18016889	Predicted intracellular proteins	Evidence at transcript level
+RELB	ENSG00000104856	RELB proto-oncogene, NF-kB subunit	19	45001430-45038198	Cancer-related genes, Plasma proteins, Predicted intracellular proteins, Transcription factors	Evidence at protein level
+UBA7	ENSG00000182179	Ubiquitin like modifier activating enzyme 7	3	49805207-49813946	Plasma proteins, Predicted membrane proteins	Evidence at protein level
+TRIM45	ENSG00000134253	Tripartite motif containing 45	1	117111060-117122587	Predicted intracellular proteins	Evidence at protein level
+C1orf53	ENSG00000203724	Chromosome 1 open reading frame 53	1	197902647-197907367	Predicted intracellular proteins	Evidence at protein level
+OMA1	ENSG00000162600	OMA1 zinc metallopeptidase	1	58415384-58546802	Cancer-related genes, Enzymes, Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level
+FBL	ENSG00000105202	Fibrillarin	19	39834458-39846414	Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+POU2AF1	ENSG00000110777	POU class 2 associating factor 1	11	111352252-111455630	Cancer-related genes, Disease related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+CD3E	ENSG00000198851	CD3e molecule	11	118304545-118316175	CD markers, Disease related genes, FDA approved drug targets, Predicted membrane proteins	Evidence at protein level
+HSPA2	ENSG00000126803	Heat shock protein family A (Hsp70) member 2	14	64535905-64546173	Cancer-related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+HPDL	ENSG00000186603	4-hydroxyphenylpyruvate dioxygenase like	1	45326905-45328533	Predicted intracellular proteins	Evidence at protein level
+EGR3	ENSG00000179388	Early growth response 3	8	22687659-22693302	Predicted intracellular proteins, Transcription factors	Evidence at transcript level
+MFSD6L	ENSG00000185156	Major facilitator superfamily domain containing 6 like	17	8797162-8799349	Predicted membrane proteins, Transporters	Evidence at transcript level
+MAGOH	ENSG00000162385	Mago homolog, exon junction complex core component	1	53226892-53238610	Predicted intracellular proteins, Transporters	Evidence at protein level
+TRIM17	ENSG00000162931	Tripartite motif containing 17	1	228407940-228416861	Enzymes, Predicted intracellular proteins	Evidence at protein level
+TCN1	ENSG00000134827	Transcobalamin 1	11	59852800-59866575	Plasma proteins, Predicted secreted proteins	Evidence at protein level
+CD6	ENSG00000013725	CD6 molecule	11	60971680-61020377	CD markers, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level
+PLEKHA4	ENSG00000105559	Pleckstrin homology domain containing A4	19	48837097-48868632	Predicted intracellular proteins	Evidence at protein level
+TAPBPL	ENSG00000139192	TAP binding protein like	12	6451690-6466517	Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level
+SH2D1A	ENSG00000183918	SH2 domain containing 1A	X	124227868-124373197	Disease related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+PHGR1	ENSG00000233041	Proline, histidine and glycine rich 1	15	40351033-40356434	Predicted intracellular proteins	Evidence at protein level
+ARHGAP26	ENSG00000145819	Rho GTPase activating protein 26	5	142770384-143229011	Cancer-related genes, Disease related genes, Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level
+TTC22	ENSG00000006555	Tetratricopeptide repeat domain 22	1	54779712-54801267	Predicted intracellular proteins	Evidence at protein level
+MIA	ENSG00000261857	Melanoma inhibitory activity	19	40771648-40777490	Cancer-related genes, Predicted secreted proteins	Evidence at protein level
+CASP7	ENSG00000165806	Caspase 7	10	113679162-113730907	Cancer-related genes, Enzymes, Predicted intracellular proteins	Evidence at protein level
+FBXO27	ENSG00000161243	F-box protein 27	19	38990714-39032785	Predicted intracellular proteins	Evidence at protein level
+CBR1	ENSG00000159228	Carbonyl reductase 1	21	36069941-36073166	Enzymes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+REC8	ENSG00000100918	REC8 meiotic recombination protein	14	24171853-24180257	Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+ZNF671	ENSG00000083814	Zinc finger protein 671	19	57719751-57727624	Predicted intracellular proteins, Transcription factors	Evidence at protein level
+TMEM69	ENSG00000159596	Transmembrane protein 69	1	45687214-45694443	Predicted membrane proteins	Evidence at transcript level
+POLR1E	ENSG00000137054	RNA polymerase I subunit E	9	37485935-37503697	Predicted intracellular proteins, Predicted membrane proteins, RNA polymerase related proteins	Evidence at protein level
+ENOSF1	ENSG00000132199	Enolase superfamily member 1	18	670324-712676	Enzymes, Predicted intracellular proteins	Evidence at protein level
+PRSS2	ENSG00000275896	Protease, serine 2	7	142760398-142774564	Enzymes, Plasma proteins, Predicted secreted proteins	Evidence at protein level
+SCUBE2	ENSG00000175356	Signal peptide, CUB domain and EGF like domain containing 2	11	9020391-9138114	Predicted intracellular proteins, Predicted secreted proteins	Evidence at transcript level
+ADPRH	ENSG00000144843	ADP-ribosylarginine hydrolase	3	119579268-119589945	Enzymes, Predicted intracellular proteins	Evidence at protein level
+RGS2	ENSG00000116741	Regulator of G-protein signaling 2	1	192809039-192812283	Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+U2AF1L4	ENSG00000161265	U2 small nuclear RNA auxiliary factor 1 like 4	19	35742464-35745445	Predicted intracellular proteins	Evidence at protein level
+TNFAIP8	ENSG00000145779	TNF alpha induced protein 8	5	119268692-119399688	Predicted intracellular proteins	Evidence at protein level
+LAMTOR4	ENSG00000188186	Late endosomal/lysosomal adaptor, MAPK and MTOR activator 4	7	100148907-100155944	Predicted intracellular proteins	Evidence at protein level
+FABP7	ENSG00000164434	Fatty acid binding protein 7	6	122779475-122784074	Predicted intracellular proteins	Evidence at protein level
+RPL11	ENSG00000142676	Ribosomal protein L11	1	23691779-23696425	Disease related genes, Plasma proteins, Predicted intracellular proteins, Ribosomal proteins	Evidence at protein level
+RAB27A	ENSG00000069974	RAB27A, member RAS oncogene family	15	55202966-55319113	Disease related genes, Predicted intracellular proteins	Evidence at protein level
+HNRNPA1L2	ENSG00000139675	Heterogeneous nuclear ribonucleoprotein A1-like 2	13	52640786-52643796	Predicted intracellular proteins	Evidence at protein level
+SH3D21	ENSG00000214193	SH3 domain containing 21	1	36306387-36324886	Predicted intracellular proteins	Evidence at protein level
+C1orf226	ENSG00000239887	Chromosome 1 open reading frame 226	1	162366908-162386818	Predicted intracellular proteins	Evidence at protein level
+EEF1B2	ENSG00000114942	Eukaryotic translation elongation factor 1 beta 2	2	206159585-206162928	Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+KRT14	ENSG00000186847	Keratin 14	17	41582279-41586921	Cancer-related genes, Disease related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+RPS29	ENSG00000213741	Ribosomal protein S29	14	49570984-49599164	Disease related genes, Predicted intracellular proteins, Ribosomal proteins	Evidence at protein level
+TAPBP	ENSG00000231925	TAP binding protein	6	33299694-33314387	Disease related genes, Plasma proteins, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level
+PMPCB	ENSG00000105819	Peptidase, mitochondrial processing beta subunit	7	103297422-103329511	Enzymes, Predicted intracellular proteins	Evidence at protein level
+SORBS1	ENSG00000095637	Sorbin and SH3 domain containing 1	10	95311771-95561414	Predicted intracellular proteins	Evidence at protein level
+INO80B	ENSG00000115274	INO80 complex subunit B	2	74455023-74457960	Predicted intracellular proteins	Evidence at protein level
+CCDC28B	ENSG00000160050	Coiled-coil domain containing 28B	1	32200386-32205387	Disease related genes, Predicted intracellular proteins	Evidence at protein level
+POLR3GL	ENSG00000121851	RNA polymerase III subunit G like	1	145964702-145978848	Predicted intracellular proteins, RNA polymerase related proteins	Evidence at protein level
+ACAA1	ENSG00000060971	Acetyl-CoA acyltransferase 1	3	38103129-38137242	Enzymes, FDA approved drug targets, Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+CD3D	ENSG00000167286	CD3d molecule	11	118338954-118342744	CD markers, Disease related genes, FDA approved drug targets, Predicted intracellular proteins, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level
+MZT2A	ENSG00000173272	Mitotic spindle organizing protein 2A	2	131464900-131492743	Predicted intracellular proteins	Evidence at protein level
+SEC14L2	ENSG00000100003	SEC14 like lipid binding 2	22	30396857-30425317	Predicted intracellular proteins	Evidence at protein level
+CTSW	ENSG00000172543	Cathepsin W	11	65879809-65883741	Enzymes, Plasma proteins, Predicted secreted proteins	Evidence at protein level
+TMEM60	ENSG00000135211	Transmembrane protein 60	7	77793728-77798580	Predicted membrane proteins, Transporters	Evidence at transcript level
+S1PR4	ENSG00000125910	Sphingosine-1-phosphate receptor 4	19	3172346-3180332	G-protein coupled receptors, Predicted membrane proteins	Evidence at protein level
+TTC23	ENSG00000103852	Tetratricopeptide repeat domain 23	15	99136323-99251223	Predicted intracellular proteins	Evidence at protein level
+CCDC69	ENSG00000198624	Coiled-coil domain containing 69	5	151181052-151224145	Predicted intracellular proteins	Evidence at protein level
+PML	ENSG00000140464	Promyelocytic leukemia	15	73994673-74047812	Cancer-related genes, Disease related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+GTF2IRD2B	ENSG00000174428	GTF2I repeat domain containing 2B	7	75092573-75149817	Disease related genes, Predicted intracellular proteins	Evidence at protein level
+GSAP	ENSG00000186088	Gamma-secretase activating protein	7	77310751-77416400	Predicted intracellular proteins	Evidence at protein level
+SLC28A3	ENSG00000197506	Solute carrier family 28 member 3	9	84275457-84340683	Predicted membrane proteins, Transporters	Evidence at protein level
+WDR89	ENSG00000140006	WD repeat domain 89	14	63597039-63641861	Predicted intracellular proteins	Evidence at protein level
+DHX58	ENSG00000108771	DExH-box helicase 58	17	42101404-42112733	Enzymes, Predicted intracellular proteins	Evidence at protein level
+DOC2B	ENSG00000272636	Double C2 domain beta	17	142789-181636	Predicted intracellular proteins	Evidence at protein level
+GIMAP2	ENSG00000106560	GTPase, IMAP family member 2	7	150685697-150693641	Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level
+ZNF394	ENSG00000160908	Zinc finger protein 394	7	99486519-99500324	Predicted intracellular proteins, Transcription factors	Evidence at protein level
+BIRC3	ENSG00000023445	Baculoviral IAP repeat containing 3	11	102317450-102339403	Cancer-related genes, Disease related genes, Enzymes, Plasma proteins, Potential drug targets, Predicted intracellular proteins	Evidence at protein level
+NAT6	ENSG00000243477	N-acetyltransferase 6	3	50296402-50299421	Predicted intracellular proteins	Evidence at protein level
+MT-ND1	ENSG00000198888	Mitochondrially encoded NADH:ubiquinone oxidoreductase core subunit 1	MT	3307-4262	Disease related genes, Enzymes, Potential drug targets, Predicted membrane proteins	Evidence at protein level
+TTYH1	ENSG00000167614	Tweety family member 1	19	54415219-54436900	Predicted membrane proteins, Transporters	Evidence at protein level
+SELL	ENSG00000188404	Selectin L	1	169690667-169711698	Cancer-related genes, Candidate cardiovascular disease genes, CD markers, Plasma proteins, Predicted membrane proteins	Evidence at protein level
+TBC1D10C	ENSG00000175463	TBC1 domain family member 10C	11	67403915-67410089	Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level
+CCR7	ENSG00000126353	C-C motif chemokine receptor 7	17	40553769-40565472	Cancer-related genes, CD markers, G-protein coupled receptors, Predicted membrane proteins	Evidence at protein level
+CD48	ENSG00000117091	CD48 molecule	1	160678746-160711851	CD markers, Plasma proteins, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level
+C3orf62	ENSG00000188315	Chromosome 3 open reading frame 62	3	49268602-49277909	Predicted intracellular proteins	Evidence at protein level
+STK39	ENSG00000198648	Serine/threonine kinase 39	2	167954020-168248141	Enzymes, Predicted intracellular proteins	Evidence at protein level
+CST1	ENSG00000170373	Cystatin SN	20	23747553-23751268	Plasma proteins, Predicted secreted proteins	Evidence at protein level
+WLS	ENSG00000116729	Wntless Wnt ligand secretion mediator	1	68098473-68233120	Predicted intracellular proteins, Predicted membrane proteins, Transporters	Evidence at protein level
+C19orf66	ENSG00000130813	Chromosome 19 open reading frame 66	19	10086122-10093252	Predicted intracellular proteins	Evidence at protein level
+SPOCK2	ENSG00000107742	SPARC/osteonectin, cwcv and kazal like domains proteoglycan 2	10	72059035-72089032	Predicted secreted proteins	Evidence at protein level
+TF	ENSG00000091513	Transferrin	3	133745956-133779006	Cancer-related genes, Disease related genes, Plasma proteins, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level
+CD5	ENSG00000110448	CD5 molecule	11	61102395-61127852	CD markers, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level
+CYP4F11	ENSG00000171903	Cytochrome P450 family 4 subfamily F member 11	19	15912367-15934867	Enzymes, Plasma proteins, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level
+TMEM156	ENSG00000121895	Transmembrane protein 156	4	38966744-39032922	Predicted membrane proteins	Evidence at transcript level
+TRAF3IP3	ENSG00000009790	TRAF3 interacting protein 3	1	209756032-209782320	Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level
+MLLT6	ENSG00000275023	MLLT6, PHD finger domain containing	17	38705542-38729803	Cancer-related genes, Predicted intracellular proteins	Evidence at protein level
+PIGBOS1	ENSG00000225973	PIGB opposite strand 1	15	55317184-55319161	Predicted intracellular proteins	Evidence at transcript level
+NEK10	ENSG00000163491	NIMA related kinase 10	3	27110085-27369460	Enzymes, Predicted intracellular proteins	Evidence at protein level
+FCMR	ENSG00000162894	Fc fragment of IgM receptor	1	206904386-206923247	Predicted intracellular proteins, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level
+IKZF1	ENSG00000185811	IKAROS family zinc finger 1	7	50304124-50405101	Cancer-related genes, Disease related genes, Predicted intracellular proteins, Predicted membrane proteins, Transcription factors	Evidence at protein level
+HLA-DOB	ENSG00000241106	Major histocompatibility complex, class II, DO beta	6	32812763-32817048	Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level
+MAFF	ENSG00000185022	MAF bZIP transcription factor F	22	38200767-38216511	Predicted intracellular proteins, Transcription factors	Evidence at protein level
+PLA2G2D	ENSG00000117215	Phospholipase A2 group IID	1	20111939-20119566	Enzymes, Predicted secreted proteins, RAS pathway related proteins	Evidence at protein level
+CD2	ENSG00000116824	CD2 molecule	1	116754385-116769228	CD markers, FDA approved drug targets, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level
+AK2	ENSG00000004455	Adenylate kinase 2	1	33007940-33080996	Disease related genes, Enzymes, Plasma proteins, Potential drug targets, Predicted intracellular proteins	Evidence at protein level
+IL33	ENSG00000137033	Interleukin 33	9	6215786-6257983	Predicted intracellular proteins	Evidence at protein level
+KRT17	ENSG00000128422	Keratin 17	17	41619437-41624842	Cancer-related genes, Disease related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+CCDC74B	ENSG00000152076	Coiled-coil domain containing 74B	2	130139287-130145134	Predicted intracellular proteins	Evidence at transcript level
+KRT15	ENSG00000171346	Keratin 15	17	41513743-41522529	Cancer-related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+MVP	ENSG00000013364	Major vault protein	16	29820394-29848039	Cancer-related genes, Predicted intracellular proteins, Transporters	Evidence at protein level
+SAA2-SAA4	ENSG00000255071	SAA2-SAA4 readthrough	11	18231423-18248635	Predicted membrane proteins	Evidence at transcript level
+ZNF552	ENSG00000178935	Zinc finger protein 552	19	57803841-57814913	Predicted intracellular proteins, Transcription factors	Evidence at protein level
+C2orf40	ENSG00000119147	Chromosome 2 open reading frame 40	2	106063246-106078159	Predicted intracellular proteins, Predicted secreted proteins	Evidence at transcript level
+EVA1B	ENSG00000142694	Eva-1 homolog B	1	36322031-36324154	Predicted intracellular proteins	Evidence at protein level
+PAQR8	ENSG00000170915	Progestin and adipoQ receptor family member 8	6	52361421-52407777	Predicted membrane proteins	Evidence at protein level
+TUBA3D	ENSG00000075886	Tubulin alpha 3d	2	131476093-131482934	Predicted intracellular proteins	Evidence at protein level
+APOBEC3G	ENSG00000239713	Apolipoprotein B mRNA editing enzyme catalytic subunit 3G	22	39077005-39087743	Predicted intracellular proteins	Evidence at protein level
+SOCS3	ENSG00000184557	Suppressor of cytokine signaling 3	17	78356778-78360077	Disease related genes, Predicted intracellular proteins	Evidence at protein level
+GTF2B	ENSG00000137947	General transcription factor IIB	1	88852932-88891944	Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+GLUL	ENSG00000135821	Glutamate-ammonia ligase	1	182381704-182392206	Disease related genes, Enzymes, Plasma proteins, Potential drug targets, Predicted intracellular proteins	Evidence at protein level
+GSTZ1	ENSG00000100577	Glutathione S-transferase zeta 1	14	77320884-77331597	Enzymes, Predicted intracellular proteins	Evidence at protein level
+SH2D2A	ENSG00000027869	SH2 domain containing 2A	1	156806243-156816862	Predicted intracellular proteins	Evidence at protein level
+TINF2	ENSG00000092330	TERF1 interacting nuclear factor 2	14	24239643-24242674	Disease related genes, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level
+DPP9	ENSG00000142002	Dipeptidyl peptidase 9	19	4675224-4724673	Enzymes, Predicted intracellular proteins	Evidence at protein level
+ATF7IP2	ENSG00000166669	Activating transcription factor 7 interacting protein 2	16	10326434-10483638	Predicted intracellular proteins	Evidence at protein level
+TFF1	ENSG00000160182	Trefoil factor 1	21	42362282-42366594	Cancer-related genes, Plasma proteins, Predicted secreted proteins	Evidence at protein level
+KLHL26	ENSG00000167487	Kelch like family member 26	19	18636965-18671714	Predicted intracellular proteins	Evidence at protein level
+C14orf93	ENSG00000100802	Chromosome 14 open reading frame 93	14	22985908-23010166	Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level
+GSTT2B	ENSG00000133433	Glutathione S-transferase theta 2B (gene/pseudogene)	22	23957414-23961186	Enzymes, Predicted intracellular proteins	Evidence at protein level
+SKAP1	ENSG00000141293	Src kinase associated phosphoprotein 1	17	48133440-48430275	Predicted intracellular proteins	Evidence at protein level
+CLSTN3	ENSG00000139182	Calsyntenin 3	12	7129698-7158945	Plasma proteins, Predicted intracellular proteins, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level
+PSMB8	ENSG00000204264	Proteasome subunit beta 8	6	32840717-32844703	Disease related genes, Enzymes, FDA approved drug targets, Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+IL24	ENSG00000162892	Interleukin 24	1	206897443-206904139	Cancer-related genes, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level
+CCDC74A	ENSG00000163040	Coiled-coil domain containing 74A	2	131527675-131533666	Predicted intracellular proteins	Evidence at transcript level
+IFNLR1	ENSG00000185436	Interferon lambda receptor 1	1	24154157-24187959	Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level
+SUSD3	ENSG00000157303	Sushi domain containing 3	9	93058688-93085138	Predicted membrane proteins	Evidence at protein level
+TMEM42	ENSG00000169964	Transmembrane protein 42	3	44861869-44865670	Predicted membrane proteins	Evidence at transcript level
+MATK	ENSG00000007264	Megakaryocyte-associated tyrosine kinase	19	3777970-3802129	Cancer-related genes, Enzymes, Predicted intracellular proteins	Evidence at protein level
+CUL9	ENSG00000112659	Cullin 9	6	43182175-43224587	Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+TMEM229B	ENSG00000198133	Transmembrane protein 229B	14	67447084-67533739	Predicted intracellular proteins, Predicted membrane proteins	Evidence at transcript level
+PARD6A	ENSG00000102981	Par-6 family cell polarity regulator alpha	16	67660946-67662778	Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+ING2	ENSG00000168556	Inhibitor of growth family member 2	4	183504994-183511096	Predicted intracellular proteins	Evidence at protein level
+TPRG1	ENSG00000188001	Tumor protein p63 regulated 1	3	188947214-189325304	Predicted intracellular proteins	Evidence at protein level
+RCL1	ENSG00000120158	RNA terminal phosphate cyclase like 1	9	4792869-4885917	Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+APOD	ENSG00000189058	Apolipoprotein D	3	195568702-195584205	Cancer-related genes, Candidate cardiovascular disease genes, Plasma proteins, Predicted secreted proteins	Evidence at protein level
+YBEY	ENSG00000182362	YbeY metallopeptidase (putative)	21	46286337-46297751	Predicted intracellular proteins	Evidence at protein level
+HLA-DQB2	ENSG00000232629	Major histocompatibility complex, class II, DQ beta 2	6	32756098-32763534	Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level
+PLGRKT	ENSG00000107020	Plasminogen receptor with a C-terminal lysine	9	5357973-5437878	Predicted intracellular proteins	Evidence at protein level
+FHL3	ENSG00000183386	Four and a half LIM domains 3	1	37996770-38005606	Predicted intracellular proteins	Evidence at protein level
+GPR27	ENSG00000170837	G protein-coupled receptor 27	3	71754050-71756496	G-protein coupled receptors, Predicted membrane proteins	Evidence at protein level
+CLTA	ENSG00000122705	Clathrin light chain A	9	36190856-36304781	Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+TNIP1	ENSG00000145901	TNFAIP3 interacting protein 1	5	151029945-151093577	Predicted intracellular proteins	Evidence at protein level
+CDK14	ENSG00000058091	Cyclin dependent kinase 14	7	90466424-91210590	Enzymes, Predicted intracellular proteins	Evidence at protein level
+STAT5A	ENSG00000126561	Signal transducer and activator of transcription 5A	17	42287547-42311943	Cancer-related genes, Plasma proteins, Predicted intracellular proteins, Transcription factors	Evidence at protein level
+ZNF688	ENSG00000229809	Zinc finger protein 688	16	30569346-30572734	Predicted intracellular proteins	Evidence at transcript level
+CASP9	ENSG00000132906	Caspase 9	1	15490832-15526534	Cancer-related genes, Enzymes, Predicted intracellular proteins	Evidence at protein level
+S1PR3	ENSG00000213694	Sphingosine-1-phosphate receptor 3	9	88991447-89005010	G-protein coupled receptors, Predicted membrane proteins	Evidence at protein level
+ARHGEF1	ENSG00000076928	Rho guanine nucleotide exchange factor 1	19	41883161-41930150	Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+MITD1	ENSG00000158411	Microtubule interacting and trafficking domain containing 1	2	99161427-99181058	Predicted intracellular proteins	Evidence at protein level
+NR4A3	ENSG00000119508	Nuclear receptor subfamily 4 group A member 3	9	99821855-99866891	Cancer-related genes, Disease related genes, Nuclear receptors, Predicted intracellular proteins, Transcription factors	Evidence at protein level
+WNT11	ENSG00000085741	Wnt family member 11	11	76186325-76210736	Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level
+NFKBID	ENSG00000167604	NFKB inhibitor delta	19	35887653-35902303	Predicted intracellular proteins, Transcription factors	Evidence at protein level
+LRRC23	ENSG00000010626	Leucine rich repeat containing 23	12	6873569-6914243	Predicted intracellular proteins	Evidence at protein level
+PNRC2	ENSG00000189266	Proline rich nuclear receptor coactivator 2	1	23959109-23963462	Predicted intracellular proteins	Evidence at protein level
+DAXX	ENSG00000204209	Death domain associated protein	6	33318558-33329286	Cancer-related genes, Predicted intracellular proteins	Evidence at protein level
+IGLL5	ENSG00000254709	Immunoglobulin lambda like polypeptide 5	22	22887780-22896107	Predicted intracellular proteins	Evidence at protein level
+CBX7	ENSG00000100307	Chromobox 7	22	39120167-39152674	Predicted intracellular proteins	Evidence at protein level
+TXLNA	ENSG00000084652	Taxilin alpha	1	32179686-32198285	Cancer-related genes, Predicted intracellular proteins	Evidence at protein level
+CLDN11	ENSG00000013297	Claudin 11	3	170418865-170860380	Predicted membrane proteins	Evidence at protein level
+GDPGP1	ENSG00000183208	GDP-D-glucose phosphorylase 1	15	90233808-90245811	Enzymes, Predicted intracellular proteins	Evidence at protein level
+SVBP	ENSG00000177868	Small vasohibin binding protein	1	42807052-42817252	Predicted intracellular proteins	Evidence at protein level
+CD3G	ENSG00000160654	CD3g molecule	11	118344344-118355161	CD markers, Disease related genes, FDA approved drug targets, Plasma proteins, Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level
+CXCL9	ENSG00000138755	C-X-C motif chemokine ligand 9	4	76001275-76007488	Cancer-related genes, Plasma proteins, Predicted secreted proteins	Evidence at protein level
+DHRS7	ENSG00000100612	Dehydrogenase/reductase 7	14	60144120-60169856	Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level
+BEX1	ENSG00000133169	Brain expressed X-linked 1	X	103062651-103064240	Predicted intracellular proteins	Evidence at protein level
+IRF4	ENSG00000137265	Interferon regulatory factor 4	6	391739-411447	Cancer-related genes, Disease related genes, Predicted intracellular proteins, Transcription factors	Evidence at protein level
+BMP6	ENSG00000153162	Bone morphogenetic protein 6	6	7726797-7881422	Predicted secreted proteins	Evidence at protein level
+ADGRB2	ENSG00000121753	Adhesion G protein-coupled receptor B2	1	31727117-31764893	G-protein coupled receptors, Predicted intracellular proteins, Predicted membrane proteins, Predicted secreted proteins, Transporters	Evidence at protein level
+C19orf47	ENSG00000160392	Chromosome 19 open reading frame 47	19	40319536-40348527	Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level
+NXNL2	ENSG00000130045	Nucleoredoxin-like 2	9	88535101-88584274	Predicted intracellular proteins	Evidence at transcript level
+TLN2	ENSG00000171914	Talin 2	15	62390526-62844631	Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+TRIM47	ENSG00000132481	Tripartite motif containing 47	17	75874161-75878575	Predicted intracellular proteins	Evidence at protein level
+CST7	ENSG00000077984	Cystatin F	20	24949230-24959928	Plasma proteins, Predicted secreted proteins	Evidence at protein level
+BST2	ENSG00000130303	Bone marrow stromal cell antigen 2	19	17402939-17405648	CD markers, Plasma proteins, Predicted membrane proteins	Evidence at protein level
+SLC39A8	ENSG00000138821	Solute carrier family 39 member 8	4	102251041-102431258	Disease related genes, Potential drug targets, Predicted membrane proteins, Transporters	Evidence at protein level
+UBE2L6	ENSG00000156587	Ubiquitin conjugating enzyme E2 L6	11	57551656-57568284	Enzymes, Predicted intracellular proteins	Evidence at protein level
+APOL3	ENSG00000128284	Apolipoprotein L3	22	36140330-36166177	Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level
+CR2	ENSG00000117322	Complement C3d receptor 2	1	207454230-207489895	CD markers, Disease related genes, Plasma proteins, Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level
+STARD10	ENSG00000214530	StAR related lipid transfer domain containing 10	11	72754729-72794168	Predicted intracellular proteins	Evidence at protein level
+RP11-211G3.2	ENSG00000223401		3	187743686-187746028	Predicted intracellular proteins	Evidence at transcript level
+PI3	ENSG00000124102	Peptidase inhibitor 3	20	45174876-45176544	Plasma proteins, Predicted secreted proteins	Evidence at protein level
+GSTO1	ENSG00000148834	Glutathione S-transferase omega 1	10	104235356-104267459	Enzymes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+ICAM1	ENSG00000090339	Intercellular adhesion molecule 1	19	10270835-10286615	Cancer-related genes, Candidate cardiovascular disease genes, CD markers, FDA approved drug targets, Plasma proteins, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level
+ZNF516	ENSG00000101493	Zinc finger protein 516	18	76358190-76495190	Predicted intracellular proteins, Transcription factors	Evidence at protein level
+ZNF655	ENSG00000197343	Zinc finger protein 655	7	99558406-99576453	Predicted intracellular proteins, Transcription factors	Evidence at protein level
+SBSPON	ENSG00000164764	Somatomedin B and thrombospondin type 1 domain containing	8	73064540-73124088	Predicted secreted proteins	Evidence at protein level
+ITGA10	ENSG00000143127	Integrin subunit alpha 10	1	145891208-145910189	Plasma proteins, Predicted membrane proteins	Evidence at transcript level
+IFRD2	ENSG00000214706	Interferon related developmental regulator 2	3	50287732-50292918	Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level
+GZMB	ENSG00000100453	Granzyme B	14	24630954-24634267	Enzymes, Plasma proteins, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level
+GZMA	ENSG00000145649	Granzyme A	5	55102648-55110252	Enzymes, Predicted secreted proteins	Evidence at protein level
+DDB2	ENSG00000134574	Damage specific DNA binding protein 2	11	47214465-47239240	Cancer-related genes, Disease related genes, Predicted intracellular proteins	Evidence at protein level
+RGL3	ENSG00000205517	Ral guanine nucleotide dissociation stimulator like 3	19	11384341-11419342	Predicted intracellular proteins	Evidence at protein level
+KDM4B	ENSG00000127663	Lysine demethylase 4B	19	4969113-5153595	Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+NAB2	ENSG00000166886	NGFI-A binding protein 2	12	57088894-57095476	Cancer-related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+FAM3D	ENSG00000198643	Family with sequence similarity 3 member D	3	58633946-58666848	Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level
+GBP2	ENSG00000162645	Guanylate binding protein 2	1	89106132-89150456	Predicted intracellular proteins	Evidence at protein level
+PLAT	ENSG00000104368	Plasminogen activator, tissue type	8	42175233-42207724	Cancer-related genes, Candidate cardiovascular disease genes, Disease related genes, Enzymes, FDA approved drug targets, Plasma proteins, Predicted secreted proteins	Evidence at protein level
+CCDC115	ENSG00000136710	Coiled-coil domain containing 115	2	130338241-130342349	Disease related genes, Predicted intracellular proteins	Evidence at protein level
+RBMXL1	ENSG00000213516	RNA binding motif protein, X-linked like 1	1	88979456-88992960	Predicted intracellular proteins	Evidence at protein level
+PLIN5	ENSG00000214456	Perilipin 5	19	4522531-4535224	Predicted intracellular proteins	Evidence at protein level
+CHAD	ENSG00000136457	Chondroadherin	17	50464496-50468966	Plasma proteins, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level
+CXCL1	ENSG00000163739	C-X-C motif chemokine ligand 1	4	73869393-73871242	Cancer-related genes, Plasma proteins, Predicted secreted proteins	Evidence at protein level
+ZNF548	ENSG00000188785	Zinc finger protein 548	19	57389850-57402992	Predicted intracellular proteins, Transcription factors	Evidence at protein level
+C1RL	ENSG00000139178	Complement C1r subcomponent like	12	7089587-7109273	Enzymes, Plasma proteins, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level
+PCP2	ENSG00000174788	Purkinje cell protein 2	19	7631611-7633748	Predicted intracellular proteins	Evidence at protein level
+WIPF3	ENSG00000122574	WAS/WASL interacting protein family member 3	7	29806486-29917066	Predicted intracellular proteins	Evidence at protein level
+ZRSR2	ENSG00000169249	Zinc finger CCCH-type, RNA binding motif and serine/arginine rich 2	X	15790472-15823260	Cancer-related genes, Predicted intracellular proteins	Evidence at protein level
+RILP	ENSG00000167705	Rab interacting lysosomal protein	17	1646145-1650077	Predicted intracellular proteins	Evidence at protein level
+TIMM9	ENSG00000100575	Translocase of inner mitochondrial membrane 9	14	58408494-58427614	Predicted intracellular proteins	Evidence at protein level
+ERF	ENSG00000105722	ETS2 repressor factor	19	42247572-42255157	Disease related genes, Predicted intracellular proteins, Transcription factors	Evidence at protein level
+RHBDL1	ENSG00000103269	Rhomboid like 1	16	675666-678268	Enzymes, Predicted membrane proteins	Evidence at protein level
+CYBA	ENSG00000051523	Cytochrome b-245 alpha chain	16	88643283-88651152	Disease related genes, Potential drug targets, Predicted intracellular proteins, Predicted membrane proteins, Transporters	Evidence at protein level
+KLK10	ENSG00000129451	Kallikrein related peptidase 10	19	51012739-51020175	Cancer-related genes, Enzymes, Predicted secreted proteins	Evidence at protein level
+SLC19A2	ENSG00000117479	Solute carrier family 19 member 2	1	169463909-169486003	Disease related genes, Potential drug targets, Predicted membrane proteins, Transporters	Evidence at protein level
+THOC1	ENSG00000079134	THO complex 1	18	214520-268050	Plasma proteins, Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level
+LAMB3	ENSG00000196878	Laminin subunit beta 3	1	209614870-209652466	Disease related genes, Plasma proteins, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level
+RAPGEFL1	ENSG00000108352	Rap guanine nucleotide exchange factor like 1	17	40177010-40195656	Predicted intracellular proteins	Evidence at protein level
+MYD88	ENSG00000172936	Myeloid differentiation primary response 88	3	38138478-38143022	Cancer-related genes, Disease related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+BTG2	ENSG00000159388	BTG anti-proliferation factor 2	1	203305491-203309602	Cancer-related genes, Predicted intracellular proteins	Evidence at protein level
+FCHSD1	ENSG00000197948	FCH and double SH3 domains 1	5	141639302-141651419	Predicted intracellular proteins	Evidence at protein level
+XKR8	ENSG00000158156	XK related 8	1	27959462-27968096	Predicted membrane proteins, Transporters	Evidence at protein level
+GZMK	ENSG00000113088	Granzyme K	5	55024253-55034570	Enzymes, Predicted secreted proteins	Evidence at protein level
+METTL12	ENSG00000214756	Methyltransferase like 12	11	62665309-62668496	Predicted intracellular proteins	Evidence at transcript level
+SPDYE3	ENSG00000214300	Speedy/RINGO cell cycle regulator family member E3	7	100307702-100322196	Predicted intracellular proteins	Evidence at protein level
+OLFM4	ENSG00000102837	Olfactomedin 4	13	53028759-53052057	Predicted secreted proteins	Evidence at protein level
+HHEX	ENSG00000152804	Hematopoietically expressed homeobox	10	92689951-92695646	Predicted intracellular proteins, Transcription factors	Evidence at protein level
+CD274	ENSG00000120217	CD274 molecule	9	5450503-5470566	Cancer-related genes, CD markers, FDA approved drug targets, Predicted membrane proteins	Evidence at protein level
+SERPINA3	ENSG00000196136	Serpin family A member 3	14	94612377-94624055	Cancer-related genes, Candidate cardiovascular disease genes, Plasma proteins, Predicted intracellular proteins, Predicted secreted proteins	Evidence at protein level
+RAB39B	ENSG00000155961	RAB39B, member RAS oncogene family	X	155258241-155264589	Disease related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+FAM69A	ENSG00000154511	Family with sequence similarity 69 member A	1	92832737-92961522	Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level
+PLA2G4A	ENSG00000116711	Phospholipase A2 group IVA	1	186828953-186988981	Disease related genes, Enzymes, FDA approved drug targets, Predicted intracellular proteins, RAS pathway related proteins	Evidence at protein level
+CD247	ENSG00000198821	CD247 molecule	1	167430640-167518610	CD markers, Disease related genes, FDA approved drug targets, Predicted membrane proteins	Evidence at protein level
+PNKP	ENSG00000039650	Polynucleotide kinase 3'-phosphatase	19	49859882-49878351	Disease related genes, Enzymes, Potential drug targets, Predicted intracellular proteins	Evidence at protein level
+HYI	ENSG00000178922	Hydroxypyruvate isomerase (putative)	1	43451003-43453989	Enzymes, Predicted intracellular proteins	Evidence at protein level
+DIRAS3	ENSG00000162595	DIRAS family GTPase 3	1	68045962-68051631	Predicted intracellular proteins	Evidence at protein level
+RPS9	ENSG00000170889	Ribosomal protein S9	19	54200742-54249003	Plasma proteins, Predicted intracellular proteins, Ribosomal proteins	Evidence at protein level
+SNRK	ENSG00000163788	SNF related kinase	3	43286512-43424764	Enzymes, Predicted intracellular proteins	Evidence at protein level
+MYO15B	ENSG00000266714	Myosin XVB	17	75588058-75626501	Predicted intracellular proteins	Evidence at transcript level
+ANKRD35	ENSG00000198483	Ankyrin repeat domain 35	1	145866560-145885866	Predicted intracellular proteins	Evidence at protein level
+FOXJ1	ENSG00000129654	Forkhead box J1	17	76136333-76141299	Cancer-related genes, Disease related genes, Predicted intracellular proteins, Transcription factors	Evidence at protein level
+SLAMF6	ENSG00000162739	SLAM family member 6	1	160485030-160523262	CD markers, Predicted membrane proteins	Evidence at protein level
+KRT6B	ENSG00000185479	Keratin 6B	12	52446651-52452126	Disease related genes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+ZNF326	ENSG00000162664	Zinc finger protein 326	1	89995112-90035531	Predicted intracellular proteins	Evidence at protein level
+SLC8B1	ENSG00000089060	Solute carrier family 8 member B1	12	113298759-113359493	Predicted membrane proteins, Predicted secreted proteins, Transporters	Evidence at protein level
+LCN2	ENSG00000148346	Lipocalin 2	9	128149071-128153455	Candidate cardiovascular disease genes, Plasma proteins, Predicted secreted proteins	Evidence at protein level
+JAK1	ENSG00000162434	Janus kinase 1	1	64833229-64966504	Cancer-related genes, Enzymes, FDA approved drug targets, Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+ETFRF1	ENSG00000205707	Electron transfer flavoprotein regulatory factor 1	12	25195216-25209645	Predicted intracellular proteins	Evidence at protein level
+BCL3	ENSG00000069399	B-cell CLL/lymphoma 3	19	44747705-44760044	Cancer-related genes, Disease related genes, Plasma proteins, Predicted intracellular proteins, Transcription factors	Evidence at protein level
+RPS27	ENSG00000177954	Ribosomal protein S27	1	153990759-153992150	Plasma proteins, Predicted intracellular proteins, Ribosomal proteins	Evidence at protein level
+BRICD5	ENSG00000182685	BRICHOS domain containing 5	16	2209253-2211950	Predicted intracellular proteins, Predicted membrane proteins	Evidence at protein level
+IL3RA	ENSG00000185291	Interleukin 3 receptor subunit alpha	X	1336616-1382689	CD markers, FDA approved drug targets, Predicted membrane proteins, Predicted secreted proteins	Evidence at protein level
+LTA4H	ENSG00000111144	Leukotriene A4 hydrolase	12	96000828-96043520	Cancer-related genes, Enzymes, Plasma proteins, Predicted intracellular proteins	Evidence at protein level
+ZNF512	ENSG00000243943	Zinc finger protein 512	2	27582969-27623215	Predicted intracellular proteins, Transcription factors	Evidence at protein level
+RPS18	ENSG00000231500	Ribosomal protein S18	6	33272010-33276510	Plasma proteins, Predicted intracellular proteins, Ribosomal proteins	Evidence at protein level
+AP1S2	ENSG00000182287	Adaptor related protein complex 1 sigma 2 subunit	X	15825806-15855014	Disease related genes, Predicted intracellular proteins	Evidence at protein level
+PCSK6	ENSG00000140479	Proprotein convertase subtilisin/kexin type 6	15	101297142-101525202	Enzymes, Predicted intracellular proteins	Evidence at protein level
+HSD17B8	ENSG00000204228	Hydroxysteroid 17-beta dehydrogenase 8	6	33204642-33206831	Enzymes, Predicted intracellular proteins	Evidence at protein level
