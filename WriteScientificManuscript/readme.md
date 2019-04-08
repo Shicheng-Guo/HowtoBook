@@ -1,3 +1,4 @@
+## How to prepare introduction
 (1) Start from a general problem to connect to more general readers. (2) Use logic to convince the readers of what they need to know, and the specific questions need to be answered in order to solve the general problem. 
 
 A typical rhetoric pattern for the first part of the introduction is like “The importance of problem X has been widely recognized. A has found that… B has found that…. And that is why C is critical for solving the problem X. However, it remains unclear whether C is true or not.”
