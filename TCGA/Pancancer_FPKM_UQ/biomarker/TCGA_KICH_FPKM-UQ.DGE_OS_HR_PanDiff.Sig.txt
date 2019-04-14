@@ -1,0 +1,1 @@
+	Estimate	Std. Error	t value	Pr(>|t|)	idx	beta	pval	cilb	ciub	i2	tau2	Symbol	coef	exp(coef)	se(coef)	z	Pr(>|z|)
