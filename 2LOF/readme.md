@@ -1,3 +1,4 @@
+
 Step 3. Phase the genotyping data with beagle or michigen imputation server
 
 ```
