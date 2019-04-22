@@ -25,7 +25,6 @@ echo \#PBS -m abe  >> $i.job
 echo \#PBS -o $(pwd)/temp/ >>$i.job
 echo \#PBS -e $(pwd)/temp/ >>$i.job
 echo cd $(pwd) >> $i.job
-echo java -Xmx4g -jar ~/hpc/tools/snpEff/snpEff.jar "GRCh37.75" $i > $i.anno.vcf >> $i.job 
+echo java -Xmx4g -jar ~/hpc/tools/snpEff/snpEff.jar "GRCh37.75" $i \> $i.anno.vcf >> $i.job 
 qsub $i.job
 done
-
