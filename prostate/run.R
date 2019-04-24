@@ -157,7 +157,39 @@ roundPhylogram(root(pratchet,outgroup="Germline"),cex=0.25)
 
 #################################################################################################################
 #################################################################################################################
+#install.packages("VennDiagram")
+library(gplots)
+library(VennDiagram)
 
+count<-read.table("mutation.counts.txt")
+count<-count[1:(nrow(count)-1),]
+label<-unlist(lapply(strsplit(as.character(count[,2]),"[.]"),function(x) x[1]))
+vector<-as.numeric(count[,1])
+names(vector)<-label
+barplot(vector,col="blue")
 
+setwd("//mcrfnas2/bigdata/Genetic/Projects/shg047/project/prostate/vcf")
+data<-read.table("symbol.snv.txt",head=T,sep="\t",row.names = 1)
+data<-data.matrix(data)
 
+for(id in iid){
+inr<-grep(id,colnames(data))
+if(length(inr)==3){
+input<-data[,inr]
+input[input ==1]=0
+input[input>1] = 1
+head(input)
+input<-input[-which(rowSums(input)==0),]
+colnames(input)
+T1<-rownames(input)[which(input[,1]>0)]
+T2<-rownames(input)[which(input[,2]>0)]
+T3<-rownames(input)[which(input[,3]>0)]
+vd <- venn.diagram(list(T1=T1, T2=T2, T3=T3),fill = 2:4,filename=NULL)
+pdf(paste("Figure",id,"venn.pdf",sep="."))
+grid.draw(vd)
+dev.off()
+}
+}
 
+#################################################################################################################
+#################################################################################################################
