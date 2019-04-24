@@ -171,9 +171,9 @@ barplot(vector,col="blue")
 setwd("//mcrfnas2/bigdata/Genetic/Projects/shg047/project/prostate/vcf")
 data<-read.table("symbol.snv.txt",head=T,sep="\t",row.names = 1)
 data<-data.matrix(data)
-
+sid<-unlist(lapply(strsplit(colnames(data),"_"),function(x) x[1]))
 for(id in iid){
-inr<-grep(id,colnames(data))
+inr<-which(sid %in% id)
 if(length(inr)==3){
 input<-data[,inr]
 input[input ==1]=0
@@ -191,5 +191,135 @@ dev.off()
 }
 }
 
+for(id in iid){
+  inr<-which(sid %in% id)
+  if(length(inr)==2){
+    input<-data[,inr]
+    input[input ==1]=0
+    input[input>1] = 1
+    head(input)
+    input<-input[-which(rowSums(input)==0),]
+    colnames(input)
+    dim(input)
+    T1<-rownames(input)[which(input[,1]>0)]
+    T2<-rownames(input)[which(input[,2]>0)]
+    vd <- venn.diagram(list(T1=T1, T2=T2),fill = 2:3,filename=NULL)
+    pdf(paste("Figure",id,"venn.pdf",sep="."))
+    grid.draw(vd)
+    dev.off()
+  }
+}
+
+for(id in iid){
+  inr<-which(sid %in% id)
+  if(length(inr)==4){
+    input<-data[,inr]
+    input[input ==1]=0
+    input[input>1] = 1
+    head(input)
+    input<-input[-which(rowSums(input)==0),]
+    colnames(input)
+    T1<-rownames(input)[which(input[,1]>0)]
+    T2<-rownames(input)[which(input[,2]>0)]
+    T3<-rownames(input)[which(input[,3]>0)]
+    T4<-rownames(input)[which(input[,4]>0)]
+    vd <- venn.diagram(list(T1=T1, T2=T2),fill = 2:5,filename=NULL)
+    pdf(paste("Figure",id,"venn.pdf",sep="."))
+    grid.draw(vd)
+    dev.off()
+  }
+}
+
 #################################################################################################################
 #################################################################################################################
+tps<-c()
+Rowname<-c()
+for(id in unique(iid)){
+  print(id)
+  inr<-which(sid %in% id)
+  if(length(inr)>2){
+  input<-data[,inr]
+  input[input ==1]=0
+  input[input>1] = 1
+  head(input)
+  input<-input[-which(rowSums(input)==0),]
+  colnames(input)
+  head(input)
+  trunk<-sum(rowSums(input)==3)
+  private<-sum(rowSums(input)==1)
+  share<-nrow(input)-trunk-private
+  tps<-rbind(tps,c(trunk,share,private))
+  Rowname<-c(Rowname,id)
+  }
+}
+
+rownames(tps)<-Rowname
+colnames(tps)<-c("trunk","share","private")
+TPS<-tps/(rowSums(tps))
+write.table(tps,file="trunk.share.private.tps.num.txt",sep="\t",col.names = NA,row.names = T,quote=F)
+write.table(TPS,file="trunk.share.private.tps.prop.txt",sep="\t",col.names = NA,row.names = T,quote=F)
+
+#################################################################################################################
+#################################################################################################################
+
+setwd("//mcrfnas2/bigdata/Genetic/Projects/shg047/project/prostate/vcf")
+data<-read.table("symbol.snv.txt",head=T,sep="\t",row.names = 1)
+data<-data.matrix(data)
+sid<-unlist(lapply(strsplit(colnames(data),"_"),function(x) x[1]))
+sid
+output<-c()
+for(id in unique(iid)){
+    print(id)
+    inr<-which(sid %in% id)
+    input<-data[,inr]
+    input[input ==1]=0
+    input[input>1] = 1
+    head(input)
+    idata<-unlist(apply(data.frame(input),1,function(x) sum(x)>0))
+    output<-cbind(output,idata)
+}
+colnames(output)<-unique(iid)
+output[output=="TRUE"]<-1
+output[output=="FALSE"]<-0
+head(output)
+write.table(output,file="prostate.mutationProfile.txt",sep="\t",col.names = NA,row.names = T,quote=F)
+
+
+
+#################################################################################################################
+#################################################################################################################
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+BiocManager::install("clusterProfiler", version = "3.8")
+library("fgsea")
+library("ReactomePA")
+library("clusterProfiler")
+library(org.Hs.eg.db)
+library(DOSE)
+library(ReactomePA)
+
+data(geneList)
+de <- names(geneList)[abs(geneList) > 1.5]
+de <-c("4312","8318","10874","55143","55388","991")
+x <- enrichPathway(gene=de,pvalueCutoff=0.05, readable=T)
+barplot(x, showCategory=8)
+dotplot(x, showCategory=15)
+emapplot(x)
+cnetplot(x, categorySize="pvalue", foldChange=geneList)
+
+
+y <- gsePathway(geneList, nPerm=10000,pvalueCutoff=0.2,pAdjustMethod="BH", verbose=FALSE)
+res <- as.data.frame(y)
+head(res)
+emapplot(y, color="pvalue")
+gseaplot(y, geneSetID = "R-HSA-69242")
+viewPathway("E2F mediated regulation of DNA replication", readable=TRUE, foldChange=geneList)
+
+
+
+#################################################################################################################
+#################################################################################################################
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+BiocManager::install("CancerMutationAnalysis", version = "3.8")
+
