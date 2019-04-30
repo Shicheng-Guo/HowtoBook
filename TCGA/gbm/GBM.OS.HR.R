@@ -34,8 +34,8 @@ head(phen)
 HR<-c()
 for(i in 1:nrow(newdata)){
   dat<-data.frame(Rna=newdata[i,],phen)
-  dat$Rna[dat$Rna<=median(dat$Rna)]<-0
-  dat$Rna[dat$Rna>median(dat$Rna)]<-1
+  dat$Rna[dat$Rna<=0.3]<-0
+  dat$Rna[dat$Rna>0.3]<-1
   hr<-summary(coxph(Surv(month,censored)~Rna,dat))$coefficients[1,]
   HR<-rbind(HR,hr)
   print(i)
@@ -43,6 +43,6 @@ for(i in 1:nrow(newdata)){
 rownames(HR)<-rownames(newdata)
 map<-read.table("/mnt/bigdata/Genetic/Projects/shg047/db/hg19/GPL13534_450K_hg19.bed",sep="\t")
 rlt<-data.frame(HR,map[match(rownames(HR),map[,4]),])
-write.table(rlt,file="~/hpc/methylation/TCGA_HM450_Suvival_HR.txt",sep="\t",quote=F,row.names = T,col.names = NA)
+write.table(rlt,file="~/hpc/methylation/TCGA_HM450_GBM_Suvival_HR.txt",sep="\t",quote=F,row.names = T,col.names = NA)
 
 
