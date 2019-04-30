@@ -14,9 +14,9 @@ Seq<-paste(phen$pid,phen$bin,sep="-")
 head(phen)
 input[1:5,1:5]
 
-BRCA<-grep("BRCA",colnames(input))
-newinput<-input[,BRCA]
-newphen<-phen[BRCA,]
+GBM<-grep("GBM",colnames(input))
+newinput<-input[,GBM]
+newphen<-phen[GBM,]
 newinput[1:5,1:5]
 library("survival")
 library("survminer")
