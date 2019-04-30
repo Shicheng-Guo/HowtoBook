@@ -1,7 +1,6 @@
 setwd("/mnt/bigdata/Genetic/Projects/shg047/methylation/Pancancer")
 load("methdata.pancancer.RData")
 methdata[1:5,1:5]
-
 methdata<-methdata[,grep("LGG",colnames(methdata))]
 phen4<-id2phen4(colnames(methdata))
 phen3<-id2phen3(colnames(methdata))
@@ -14,10 +13,9 @@ input<-methdata[,-exclude]
 Seq<-paste(phen$pid,phen$bin,sep="-")
 head(phen)
 input[1:5,1:5]
-
-GBM<-grep("GBM",colnames(input))
-newinput<-input[,GBM]
-newphen<-phen[GBM,]
+LGG<-grep("LGG",colnames(input))
+newinput<-input[,LGG]
+newphen<-phen[LGG,]
 newinput[1:5,1:5]
 library("survival")
 library("survminer")
@@ -31,7 +29,6 @@ head(phen)
 phen$censored<-as.numeric(! phen$censored)
 phen$month=phen$time/30
 head(phen)
-
 HR<-c()
 for(i in 1:nrow(newdata)){
   dat<-data.frame(Rna=newdata[i,],phen)
@@ -44,4 +41,4 @@ for(i in 1:nrow(newdata)){
 rownames(HR)<-rownames(newdata)
 map<-read.table("/mnt/bigdata/Genetic/Projects/shg047/db/hg19/GPL13534_450K_hg19.bed",sep="\t")
 rlt<-data.frame(HR,map[match(rownames(HR),map[,4]),])
-write.table(rlt,file="~/hpc/methylation/TCGA_HM450_Suvival_HR.txt",sep="\t",quote=F,row.names = T,col.names = NA)
+write.table(rlt,file="~/hpc/methylation/TCGA_HM450_LGG_Suvival_HR.txt",sep="\t",quote=F,row.names = T,col.names = NA)
