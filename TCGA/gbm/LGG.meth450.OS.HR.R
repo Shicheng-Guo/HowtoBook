@@ -2,6 +2,7 @@
 setwd("/mnt/bigdata/Genetic/Projects/shg047/methylation/Pancancer")
 load("methdata.pancancer.RData")
 methdata[1:5,1:5]
+methdata<-methdata[,grep("LGG",colnames(methdata))]
 phen4<-id2phen4(colnames(methdata))
 phen3<-id2phen3(colnames(methdata))
 bin<-id2bin(colnames(methdata))
@@ -14,9 +15,9 @@ Seq<-paste(phen$pid,phen$bin,sep="-")
 head(phen)
 input[1:5,1:5]
 
-BRCA<-grep("BRCA",colnames(input))
-newinput<-input[,BRCA]
-newphen<-phen[BRCA,]
+LGG<-grep("LGG",colnames(input))
+newinput<-input[,LGG]
+newphen<-phen[LGG,]
 newinput[1:5,1:5]
 library("survival")
 library("survminer")
