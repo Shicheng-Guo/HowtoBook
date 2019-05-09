@@ -4,7 +4,7 @@ awk -F'[:|\t]' '{print $1,$2,$3,$4,$5,$6,$9,$10,$12}' OFS="\t" 40001_M069.assoc.
 awk -F'[:|\t]' '{print $1,$2,$3,$4,$5,$6,$9,$10,$12}' OFS="\t" M05.assoc.tsv  > M05.assoc.txt &
 awk -F'[:|\t]' '{print $1,$2,$3,$4,$5,$6,$9,$10,$12}' OFS="\t" M06.assoc.tsv  > M06.assoc.txt &
 
-echo "CHRBP\tA1\tA2\tSNP\tN\tBETA\tSE\tP" > head.txt
+echo "CHRBP\tA1A2\tSNP\tN\tBETA\tSE\tP" > head.txt
 cat head.txt 20002_1464.assoc.txt > 20002_1464.assoc.hg19.txt &
 cat head.txt 40001_M069.assoc.txt > 40001_M069.assoc.hg19.txt &
 cat head.txt M05.assoc.txt > M05.assoc.hg19.txt &
