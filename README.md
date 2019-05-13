@@ -4,7 +4,9 @@ How to install R-3.3.0 in RedHat EL6.0
 
 #### install anaconda3 for python 3.xxx
 #### install anaconda2 for python 2.xxx
-#### Be careful, some software can only be run in python 2 or python 3, for example, BSSeerker2 only works in python 2 rather than python 3. 
+#### Be careful, some software can only be run in python 2 or python 3, for example, BSSeerker2 only works in python 2 rather than python 
+
+3. Update: 
 
 #### install pip by anaconda3 (pip in anaconda3 maybe not updated, you can update with )
 pip install --upgrade pip
