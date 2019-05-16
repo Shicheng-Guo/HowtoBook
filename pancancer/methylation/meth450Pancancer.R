@@ -48,6 +48,7 @@ Table2Generator = function(methdata){
   Spec=c()
   AUC =c()
   for(i in 1:(ncol(methdata)-1 )){
+    print(colnames(methdata)[i+1])
     temp = methdata[,c(1,i+1 )]
     temp[,1] = ifelse(temp[,1] ==1,1,0)
     temp[,1] = as.factor(temp[,1])
