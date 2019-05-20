@@ -27,7 +27,7 @@ for(i in 1:k){
   train.cv <- input[index,]
   test.cv <- input[-index,]
   
-  RF <- randomForest(as.factor(phen) ~ ., data=input, importance=TRUE,proximity=T)
+  RF <- randomForest(as.factor(phen) ~ ., data=train.cv, importance=TRUE,proximity=T)
   imp<-RF$importance
   head(imp)
   imp<-imp[order(imp[,4],decreasing = T),]
@@ -40,7 +40,7 @@ for(i in 1:k){
   f <- as.formula(paste("phen ~", paste(n[!n %in% "phen"], collapse = " + ")))
   
   nn <- neuralnet(f,data=train.cv,hidden=c(3),act.fct = "logistic",linear.output = FALSE)
-  plot(nn,lwd=0.85,cex=1)
+  # plot(nn,lwd=0.85,cex=1)
   pr.nn <- compute(nn,test.cv)
   trainRlt<-data.frame(phen=train.cv[,1],pred=unlist(nn$net.result))
   testRlt<-data.frame(phen=test.cv[,1],pred=unlist(pr.nn$net.result))
