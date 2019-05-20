@@ -50,9 +50,12 @@ for(i in 1:k){
   rlt2<-rbind(rlt2,testRlt)
   pbar$step()
 }
-data<-na.omit(data.frame(rlt))
-model.glm1 <- bayesglm(phen~.,data=rlt,family=binomial(),na.action=na.omit)
+data1<-na.omit(data.frame(rlt1))
+data2<-na.omit(data.frame(rlt2))
+model.glm1 <- bayesglm(phen~.,data=rlt1,family=binomial(),na.action=na.omit)
+model.glm2 <- bayesglm(phen~.,data=rlt2,family=binomial(),na.action=na.omit)
 pred1 <- predRisk(model.glm1)
-rlt1
-plotROC(data=data,cOutcome=1,predrisk=cbind(pred1))
-
+pred2 <- predRisk(model.glm2)
+par(mfrow=c(2,2),cex.lab=1.5,cex.axis=1.5)
+plotROC(data=data1,cOutcome=1,predrisk=cbind(pred1))
+plotROC(data=data2,cOutcome=1,predrisk=cbind(pred2))
