@@ -9,30 +9,50 @@ phen<-data.frame(read_xlsx("ROC.xlsx",sheet=1))
 rownames(beta)<-paste(beta[,1],":",beta[,2],"-",beta[,3],sep="")
 beta<-beta[,4:ncol(beta)]
 input<-na.omit(data.frame(phen=phen$phen,t(beta)))
-set.seed(200)
 cost <- function(r, pi = 0) mean(abs(r-pi) > 0.5)
-glm.fit <- glm(phen~.,data=input,family=binomial)
-xx<-cv.glm(input,glm.fit,cost,K=10)$delta
-input<-input[,1:7]
-colnames(input)<-c("Phenotypes",'Genetics',"Epigenetics","Environmental","Lifestyle","Image","Pathological")
-head(input)
-set.seed(450)
+
+set.seed(49)
+library("randomForest")
+library("arm")
+library("plyr") 
+library("PredictABEL")
 cv.error <- NULL
 k <- 10
-library("plyr") 
 pbar <- create_progress_bar('text')
 pbar$init(k)
-n <- names(input)
-f <- as.formula(paste("Phenotypes ~", paste(n[!n %in% "Phenotypes"], collapse = " + ")))
-rlt<-c()
+rlt1<-c()
+rlt2<-c()
 for(i in 1:k){
   index <- sample(1:nrow(input),round(0.9*nrow(input)))
   train.cv <- input[index,]
   test.cv <- input[-index,]
-  nn <- neuralnet(f,data=train.cv,hidden=c(5,2),act.fct = "logistic",linear.output = FALSE)
-  plot(nn,lwd=0.85,cex=1.2)
+  
+  RF <- randomForest(as.factor(phen) ~ ., data=input, importance=TRUE,proximity=T)
+  imp<-RF$importance
+  head(imp)
+  imp<-imp[order(imp[,4],decreasing = T),]
+  topvar<-match(rownames(imp)[1:10],colnames(input))
+  
+  train.cv <- input[index,c(1,topvar)]
+  test.cv <- input[-index,c(1,topvar)]
+  
+  n <- colnames(train.cv)
+  f <- as.formula(paste("phen ~", paste(n[!n %in% "phen"], collapse = " + ")))
+  
+  nn <- neuralnet(f,data=train.cv,hidden=c(3),act.fct = "logistic",linear.output = FALSE)
+  plot(nn,lwd=0.85,cex=1)
   pr.nn <- compute(nn,test.cv)
-  rlt<-rbind(rlt,data.frame(test.cv[,1],pr.nn$net.result))  
+  trainRlt<-data.frame(phen=train.cv[,1],pred=unlist(nn$net.result))
+  testRlt<-data.frame(phen=test.cv[,1],pred=unlist(pr.nn$net.result))
+  rownames(trainRlt)=row.names(train.cv)
+  rownames(testRlt)=row.names(test.cv)
+  rlt1<-rbind(rlt1,trainRlt)  
+  rlt2<-rbind(rlt2,testRlt)
   pbar$step()
 }
+data<-na.omit(data.frame(rlt))
+model.glm1 <- bayesglm(phen~.,data=rlt,family=binomial(),na.action=na.omit)
+pred1 <- predRisk(model.glm1)
+rlt1
+plotROC(data=data,cOutcome=1,predrisk=cbind(pred1))
 
