@@ -1,1 +1,1 @@
-### Fitting a neural network in R; neuralnet package
+### Fitting a neural network in R: neuralnet package
