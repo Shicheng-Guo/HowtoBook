@@ -13,6 +13,20 @@ p<- p+scale_fill_manual(values=c('red','green','blue'))
 print(p)
 
 
+input<-data.frame(CON=c("0nm","6nm","13nm","25nm","50nm","100nm"),mean=c(100,95.61,92.26,90.56,87.94,86.53),sd=c(0,26.67,20.78,20.85,25.33,27.52))
+input$CON <- factor(input$CON,levels = c("0nm","6nm","13nm","25nm","50nm","100nm"))
+p<- ggplot(input, aes(x=CON, y=mean, fill=CON)) 
+p<- p+ geom_bar(stat="identity", color="black",position=position_dodge(),size=1.1) 
+p<- p+ geom_errorbar(aes(ymin=mean-sd, ymax=mean+sd), width=.2,position=position_dodge(.9),size=1.1) 
+p<- p+labs(title="", x="", y = "Relative Absorbance at 450nm")
+p<- p+ theme_classic()
+p<-p+theme(text = element_text(size=25,family="TT Arial"))
+p<- p+scale_fill_manual(values=2:7)
+print(p)
+
+
+
+
 library("GEOquery")
 GSE45665 <- getGEO("GSE45665")
 data1 <- as.data.frame(exprs(GSE45665[[1]]))
@@ -49,5 +63,4 @@ OP<-c(OP,sum(P<0.05)/length(P))
 names(OP)<-gene
 par(cex.lab=1.5,cex.axis=1.5)
 barplot(OP,col=rainbow(9)[1:9],ylab="Power",main="Sample Size=10")
-
 ```
