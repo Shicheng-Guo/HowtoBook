@@ -1,14 +1,10 @@
-library("TCGAbiolinks")
-clinical <- GDCquery_clinic(project = "TCGA-OV", type = "clinical")
-query <- GDCquery(project = "TCGA-OV", data.category = "Clinical",file.type = "xml")
-clinical.drug <- GDCprepare_clinic(query, clinical.info = "drug")
-
-
-library("TCGAbiolinks")
-library("data.table")
 if (!requireNamespace("BiocManager", quietly = TRUE))
   install.packages("BiocManager")
 BiocManager::install("TCGAbiolinks", version = "3.8")
+
+library("TCGAbiolinks")
+library("data.table")
+
 followup2csv<-function(clinical.fellowup){
   bcr_patient_barcode=clinical.fellowup$bcr_patient_barcode
   lost_follow_up=clinical.fellowup$lost_follow_up
