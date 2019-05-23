@@ -1,0 +1,22 @@
+bcr_patient_barcode	therapy_types	drug_name	measure_of_response	days_to_drug_therapy_start	days_to_drug_therapy_end	therapy_ongoing
+TCGA-KL-8323	Immunotherapy	Lymphocyte Infusion		880	NA	NO
+TCGA-KL-8323	Targeted Molecular therapy	PTK-ZK		911	942	NO
+TCGA-KL-8336	Targeted Molecular therapy	Sunitinib		138	559	NO
+TCGA-KL-8336	Chemotherapy	Temsirolimus		558	817	NO
+TCGA-KL-8336	Chemotherapy	Bevacizumab		824	838	NO
+TCGA-KL-8339	Targeted Molecular therapy	Sunitinib		111	251	NO
+TCGA-KL-8341	Targeted Molecular therapy	Sunitinib		196	366	NO
+TCGA-KL-8341	Chemotherapy	Bevacizumab		196	366	NO
+TCGA-KL-8341	Targeted Molecular therapy	Sunitinib		397	457	NO
+TCGA-KL-8341	Chemotherapy	Temsirolimus		567	609	NO
+TCGA-KL-8341	Targeted Molecular therapy	Sorafenib		624	NA	NO
+TCGA-KM-8438	Targeted Molecular therapy	Sutent		2342	2731	NO
+TCGA-KM-8438	Targeted Molecular therapy	Temsirolimus		2731	4436	NO
+TCGA-KM-8438	Targeted Molecular therapy	Bevacizumab		3554	3858	NO
+TCGA-KM-A7Q8	Targeted Molecular therapy	Sunitinib	Clinical Progressive Disease	NA	NA	NO
+TCGA-KN-8426	Targeted Molecular therapy	Avastin		NA	NA	NO
+TCGA-KN-8426	Targeted Molecular therapy	Sorafenib		NA	NA	NO
+TCGA-KN-8428	Targeted Molecular therapy	sorafenib	Clinical Progressive Disease	510	638	NO
+TCGA-KO-8404	Chemotherapy	Thalidomide	Clinical Progressive Disease	117	139	NO
+TCGA-UW-A7GR	Immunotherapy	Interferon	Partial Response	22	288	NO
+TCGA-UW-A7GR	Chemotherapy	Sorafenib	Partial Response	22	288	NO

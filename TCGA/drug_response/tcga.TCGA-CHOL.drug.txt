@@ -1,0 +1,15 @@
+bcr_patient_barcode	therapy_types	drug_name	measure_of_response	days_to_drug_therapy_start	days_to_drug_therapy_end	therapy_ongoing
+TCGA-3X-AAV9	Chemotherapy	Gemcitabine	Clinical Progressive Disease	253	326	NO
+TCGA-3X-AAV9	Chemotherapy	Cisplatin	Clinical Progressive Disease	253	326	NO
+TCGA-4G-AAZO	Chemotherapy	GEMCITABINE	Stable Disease	427	NA	YES
+TCGA-W5-AA2H	Chemotherapy	gemcitabine	Complete Response	59	271	NO
+TCGA-W5-AA2T	Chemotherapy	Gemcitabine	Complete Response	56	205	NO
+TCGA-W5-AA2Z	Chemotherapy	Cisplatin	Clinical Progressive Disease	63	NA	YES
+TCGA-W5-AA2Z	Chemotherapy	Gemcitabine	Clinical Progressive Disease	63	NA	YES
+TCGA-W5-AA36	Chemotherapy	Gemcitabine	Stable Disease	41	76	NO
+TCGA-W5-AA36	Chemotherapy	Capecitabine	Stable Disease	41	76	NO
+TCGA-W6-AA0S	Chemotherapy	gemcitabine		33	123	NO
+TCGA-W6-AA0S	Chemotherapy	cisplatin		33	123	NO
+TCGA-ZH-A8Y4	Chemotherapy	Gemzar	Partial Response	70	162	NO
+TCGA-ZH-A8Y5	Chemotherapy	Gemzar	Partial Response	132	246	NO
+TCGA-ZH-A8Y5	Chemotherapy	Cisplatin	Partial Response	132	231	NO

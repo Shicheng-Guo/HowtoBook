@@ -1,0 +1,131 @@
+bcr_patient_barcode	therapy_types	drug_name	measure_of_response	days_to_drug_therapy_start	days_to_drug_therapy_end	therapy_ongoing
+TCGA-2A-A8VT	Hormone Therapy	Lupron	Stable Disease	85	1086	NO
+TCGA-4L-AA1F	Hormone Therapy	Zoladex		15	NA	YES
+TCGA-CH-5741	Hormone Therapy	Leuprorelin	Complete Response	61	334	NO
+TCGA-CH-5751	Hormone Therapy	Bicalutamide		122	NA	YES
+TCGA-CH-5751	Hormone Therapy	Leuprorelin		122	NA	YES
+TCGA-CH-5751	Ancillary	Zoledronic acid		245	NA	YES
+TCGA-CH-5752	Hormone Therapy	Leuprorelin		578	NA	YES
+TCGA-CH-5788	Hormone Therapy	Triptorelin	Clinical Progressive Disease	151	396	NO
+TCGA-CH-5788	Hormone Therapy	Leuprorelin		609	NA	YES
+TCGA-FC-A4JI	Hormone Therapy	Casodex	Complete Response	52	143	NO
+TCGA-FC-A5OB	Hormone Therapy	Lupron		118	NA	YES
+TCGA-G9-7521	Hormone Therapy	Luprolide Depot		207	NA	YES
+TCGA-G9-7521	Hormone Therapy	Lupron		207	NA	YES
+TCGA-G9-7521	Hormone Therapy	Casodex		676	NA	YES
+TCGA-G9-A9S0	Hormone Therapy	Zoladex	Clinical Progressive Disease	115	762	NO
+TCGA-G9-A9S0	Hormone Therapy	casodex	Clinical Progressive Disease	444	528	NO
+TCGA-G9-A9S0	Chemotherapy	taxotere	Clinical Progressive Disease	591	654	NO
+TCGA-G9-A9S0	Chemotherapy	cabazitaxel	Clinical Progressive Disease	727	727	NO
+TCGA-G9-A9S4	Hormone Therapy	lupron		93	NA	YES
+TCGA-HC-7742	Hormone Therapy	Eligard	Partial Response	211	NA	YES
+TCGA-HC-8257	Hormone Therapy	Goserelin		91	NA	YES
+TCGA-HC-A48F	Hormone Therapy	Eligard		57	NA	YES
+TCGA-HC-A9TE	Hormone Therapy	Eligard	Stable Disease	216	417	NO
+TCGA-HC-A9TH	Hormone Therapy	Firmagon		455	NA	YES
+TCGA-HI-7168	Hormone Therapy	Lupron		341	1923	NO
+TCGA-HI-7168	Hormone Therapy	Lupron	Complete Response	1552	2014	NO
+TCGA-HI-7168	Hormone Therapy	Lupron		2511	NA	YES
+TCGA-HI-7171	Hormone Therapy	Ketoconazole		648	NA	
+TCGA-HI-7171	Hormone Therapy	Lupron		NA	NA	NO
+TCGA-HI-7171	Hormone Therapy	Casodex		NA	NA	NO
+TCGA-HI-7171	Hormone Therapy	Casodex		559	NA	NO
+TCGA-J4-A6G3	Hormone Therapy	leuprolide		30	NA	YES
+TCGA-J4-A83N	Chemotherapy	Gemcitabine		488	NA	YES
+TCGA-J4-AATZ	Hormone Therapy	Eligard		142	NA	YES
+TCGA-J9-A52B	Hormone Therapy	Zoladex	Partial Response	88	198	NO
+TCGA-J9-A52E	Hormone Therapy	Zoladex		209	NA	YES
+TCGA-KC-A4BR	Hormone Therapy	Lupron	Complete Response	1079	NA	YES
+TCGA-KK-A59X	Hormone Therapy	Leuprolide acetate		2169	NA	YES
+TCGA-KK-A59X	Chemotherapy	Cabazitaxel	Partial Response	2262	2455	NO
+TCGA-KK-A59X	Chemotherapy	Carboplatin	Partial Response	2262	2455	NO
+TCGA-KK-A59X	Hormone Therapy	Abiraterone		2535	NA	YES
+TCGA-KK-A59Y	Hormone Therapy	Leuprolide Acetate	Complete Response	71	1072	NO
+TCGA-KK-A6E0	Hormone Therapy	Abiraterone		1078	NA	YES
+TCGA-KK-A6E0	Hormone Therapy	Leuprolide		1078	NA	YES
+TCGA-KK-A6E0	Hormone Therapy	Lupron	Complete Response	424	605	NO
+TCGA-KK-A6E1	Hormone Therapy	Lupron	Complete Response	107	778	NO
+TCGA-KK-A7AQ	Hormone Therapy	Abiraterone		1219	NA	YES
+TCGA-KK-A7AQ	Hormone Therapy	Leuprolide acetate		1219	NA	YES
+TCGA-KK-A7AU	Hormone Therapy	Casodex	Stable Disease	207	676	NO
+TCGA-KK-A7AU	Hormone Therapy	Lupron	Stable Disease	207	564	NO
+TCGA-KK-A7AU	Hormone Therapy	Lupron		1287	NA	YES
+TCGA-KK-A7B0	Hormone Therapy	Leuprolide		913	NA	YES
+TCGA-KK-A7B4	Hormone Therapy	Leuprolide Acetate		119	NA	YES
+TCGA-KK-A7B4	Hormone Therapy	Casodex	Stable Disease	312	439	NO
+TCGA-KK-A8I4	Hormone Therapy	Lupron	Stable Disease	1204	1984	NO
+TCGA-KK-A8I4	Hormone Therapy	Leuprolide acetate		2259	NA	YES
+TCGA-KK-A8I7	Hormone Therapy	leuprolide		1311	NA	YES
+TCGA-KK-A8I7	Hormone Therapy	Leuprolide Acetate	Complete Response	1757	1757	NO
+TCGA-KK-A8I9	Hormone Therapy	Lupron	Complete Response	151	427	NO
+TCGA-KK-A8IA	Hormone Therapy	Lupron		210	NA	YES
+TCGA-KK-A8IC	Hormone Therapy	Leuprolide acetate		2051	NA	YES
+TCGA-KK-A8IC	Hormone Therapy	Abiraterone		2051	NA	YES
+TCGA-KK-A8ID	Hormone Therapy	Lupron	Complete Response	97	1455	NO
+TCGA-KK-A8II	Hormone Therapy	Lupron		904	1106	NO
+TCGA-KK-A8II	Hormone Therapy	Lupron	Clinical Progressive Disease	2453	3467	NO
+TCGA-KK-A8II	Hormone Therapy	degarelix	Clinical Progressive Disease	2431	3467	NO
+TCGA-KK-A8II	Chemotherapy	Docetaxel	Clinical Progressive Disease	2516	2738	NO
+TCGA-KK-A8II	Chemotherapy	jevtana	Clinical Progressive Disease	2780	2892	NO
+TCGA-M7-A723	Hormone Therapy	Lupron		74	NA	YES
+TCGA-M7-A723	Hormone Therapy	Bicalutamide		74	NA	YES
+TCGA-M7-A724	Hormone Therapy	Lupron		179	NA	YES
+TCGA-V1-A8MU	Hormone Therapy	LHRH Agonist		259	NA	YES
+TCGA-V1-A8WV	Hormone Therapy	LHRH Agonist	Complete Response	250	615	NO
+TCGA-V1-A8WW	Hormone Therapy	LHRH Agonist	Clinical Progressive Disease	112	NA	YES
+TCGA-V1-A9O5	Hormone Therapy	LHRH Agonist and Anti-Androgens "Combined Androgen Blockade"		118	NA	YES
+TCGA-VN-A88K	Hormone Therapy	Lupron		130	NA	YES
+TCGA-VN-A88R	Hormone Therapy	Goserelin		666	NA	YES
+TCGA-VN-A88R	Hormone Therapy	Casodex	Partial Response	652	666	NO
+TCGA-VP-A878	Hormone Therapy	Lupron		2376	NA	YES
+TCGA-VP-A878	Hormone Therapy	Zoladex	Complete Response	115	784	NO
+TCGA-VP-A87B	Hormone Therapy	Leuprolide		2540	NA	YES
+TCGA-VP-A87D	Chemotherapy	Docetaxel	Complete Response	248	370	NO
+TCGA-VP-A87D	Hormone Therapy	Casodex	Complete Response	370	837	NO
+TCGA-VP-A87D	Hormone Therapy	Lupron	Complete Response	248	837	NO
+TCGA-X4-A8KQ	Hormone Therapy	Eligard		963	NA	YES
+TCGA-XJ-A9DI	Hormone Therapy	Lupron		151	NA	YES
+TCGA-XJ-A9DI	Hormone Therapy	Nilutamide	Partial Response	1339	1461	NO
+TCGA-XJ-A9DI	Hormone Therapy	Casodex	Partial Response	913	1339	NO
+TCGA-XJ-A9DX	Hormone Therapy	Casodex		151	NA	YES
+TCGA-XJ-A9DX	Hormone Therapy	Lupron		151	NA	YES
+TCGA-XK-AAIV	Hormone Therapy	Lupron		111	NA	YES
+TCGA-XK-AAIV	Hormone Therapy	Casodex	Complete Response	97	126	NO
+TCGA-YL-A8HJ	Hormone Therapy	Casodex	Complete Response	209	306	NO
+TCGA-YL-A8HJ	Hormone Therapy	Zoladex	Complete Response	209	1036	NO
+TCGA-YL-A8HK	Hormone Therapy	Casodex	Complete Response	179	208	NO
+TCGA-YL-A8HK	Hormone Therapy	Eligard		192	NA	YES
+TCGA-YL-A8HL	Hormone Therapy	Casodex	Complete Response	132	162	NO
+TCGA-YL-A8HL	Hormone Therapy	Lupron	Complete Response	132	1228	NO
+TCGA-YL-A8HM	Hormone Therapy	Casodex	Complete Response	216	251	NO
+TCGA-YL-A8HM	Hormone Therapy	Zoladex	Complete Response	216	752	NO
+TCGA-YL-A8SB	Hormone Therapy	Casodex	Complete Response	270	299	NO
+TCGA-YL-A8SB	Hormone Therapy	Lupron	Complete Response	280	998	NO
+TCGA-YL-A8SB	Hormone Therapy	Casodex		1600	1630	NO
+TCGA-YL-A8SB	Hormone Therapy	Lupron		1609	NA	YES
+TCGA-YL-A8SC	Hormone Therapy	Casodex	Partial Response	166	195	NO
+TCGA-YL-A8SC	Hormone Therapy	Trelstar	Partial Response	166	NA	YES
+TCGA-YL-A8SI	Hormone Therapy	Eligard		1482	NA	YES
+TCGA-YL-A8SK	Hormone Therapy		Complete Response	163	940	NO
+TCGA-YL-A8SL	Hormone Therapy	Casodex	Complete Response	266	296	NO
+TCGA-YL-A8SL	Hormone Therapy	Eligard		266	NA	YES
+TCGA-YL-A8SO	Hormone Therapy	Casodex	Complete Response	1387	1862	NO
+TCGA-YL-A8SO	Hormone Therapy	Zoladex		1387	NA	YES
+TCGA-YL-A8SP	Hormone Therapy	Eligard	Complete Response	359	749	NO
+TCGA-YL-A8SP	Hormone Therapy	Casodex	Complete Response	359	749	NO
+TCGA-YL-A8SP	Hormone Therapy	Lupron	Partial Response	1183	2170	NO
+TCGA-YL-A8SP	Hormone Therapy	Casodex	Partial Response	1814	2170	NO
+TCGA-YL-A8SQ	Hormone Therapy	Casodex		481	NA	YES
+TCGA-YL-A8SQ	Hormone Therapy	Leuprolide		481	NA	YES
+TCGA-YL-A9WH	Hormone Therapy	Casodex	Complete Response	203	232	NO
+TCGA-YL-A9WH	Hormone Therapy	Trelstar	Complete Response	210	650	NO
+TCGA-YL-A9WK	Hormone Therapy	Eligard	Complete Response	360	834	NO
+TCGA-YL-A9WK	Hormone Therapy	Lupron	Complete Response	1163	1527	NO
+TCGA-YL-A9WK	Hormone Therapy	Lupron		1897	NA	YES
+TCGA-YL-A9WK	Hormone Therapy	Casodex		1891	NA	YES
+TCGA-YL-A9WL	Hormone Therapy	Lupron	Complete Response	271	349	NO
+TCGA-YL-A9WY	Hormone Therapy	Casodex		236	NA	YES
+TCGA-YL-A9WY	Hormone Therapy	Lupron		236	NA	YES
+TCGA-ZG-A8QZ	Hormone Therapy	Bicalutamide		89	NA	YES
+TCGA-ZG-A9LN	Hormone Therapy	Trenantone		73	NA	YES
+TCGA-ZG-A9N3	Hormone Therapy	Bicalutamid		140	NA	YES

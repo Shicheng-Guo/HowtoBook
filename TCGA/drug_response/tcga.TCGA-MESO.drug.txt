@@ -1,0 +1,160 @@
+bcr_patient_barcode	therapy_types	drug_name	measure_of_response	days_to_drug_therapy_start	days_to_drug_therapy_end	therapy_ongoing
+TCGA-3H-AB3K	Targeted Molecular therapy	dasatinib	Partial Response	52	71	NO
+TCGA-3H-AB3K	Targeted Molecular therapy	Cediranib		898	919	NO
+TCGA-3H-AB3L	Targeted Molecular therapy	Dasatinib	Clinical Progressive Disease	69	96	NO
+TCGA-3H-AB3M	Targeted Molecular therapy	Dasatinib	Clinical Progressive Disease	38	66	NO
+TCGA-3H-AB3M	Chemotherapy	Cisplatin	Stable Disease	120	386	NO
+TCGA-3H-AB3M	Chemotherapy	Pemetrexed	Stable Disease	120	386	NO
+TCGA-3H-AB3M	Targeted Molecular therapy	imatinib	Stable Disease	120	386	NO
+TCGA-3H-AB3M	Targeted Molecular therapy	everolimus	Clinical Progressive Disease	120	386	NO
+TCGA-3H-AB3M	Chemotherapy	Carboplatin	Clinical Progressive Disease	736	800	NO
+TCGA-3H-AB3M	Chemotherapy	Doxorubicin	Stable Disease	471	604	NO
+TCGA-3H-AB3M	Targeted Molecular therapy	Bevacizumab	Stable Disease	471	604	NO
+TCGA-3H-AB3M	Targeted Molecular therapy	Temsirolimus	Stable Disease	471	604	NO
+TCGA-3H-AB3O	Targeted Molecular therapy	Dasatinib	Partial Response	54	93	NO
+TCGA-3H-AB3O	Targeted Molecular therapy	Dasatinib	Partial Response	194	908	NO
+TCGA-3H-AB3O	Chemotherapy	Cisplatin	Partial Response	197	286	NO
+TCGA-3H-AB3O	Chemotherapy	Pemetrexed	Partial Response	197	286	NO
+TCGA-3H-AB3O	Targeted Molecular therapy	Cediranib	Partial Response	1084	1265	NO
+TCGA-3H-AB3O	Chemotherapy	Cisplatin	Partial Response	1084	1265	NO
+TCGA-3H-AB3O	Chemotherapy	Pemetrexed	Partial Response	1084	1265	NO
+TCGA-3H-AB3S	Targeted Molecular therapy	Dasatinib	Clinical Progressive Disease	47	79	NO
+TCGA-3H-AB3S	Targeted Molecular therapy	Tarceva	Clinical Progressive Disease	221	275	NO
+TCGA-3H-AB3S	Chemotherapy	gemcitabine	Clinical Progressive Disease	221	264	NO
+TCGA-3H-AB3S	Targeted Molecular therapy	R1507	Clinical Progressive Disease	221	271	NO
+TCGA-3H-AB3T	Targeted Molecular therapy	Dasatinib	Clinical Progressive Disease	35	61	NO
+TCGA-3H-AB3T	Targeted Molecular therapy	Vorinostat	Clinical Progressive Disease	321	370	NO
+TCGA-3H-AB3T		Cisplatin, pemetrexed		NA	NA	
+TCGA-3H-AB3U	Targeted Molecular therapy	Dasatinib	Clinical Progressive Disease	90	110	NO
+TCGA-3H-AB3X	Targeted Molecular therapy	Dasatinib		91	123	NO
+TCGA-3H-AB3X	Chemotherapy	Cisplatin	Complete Response	435	461	NO
+TCGA-3H-AB3X	Chemotherapy	Pemetrexed	Complete Response	435	461	NO
+TCGA-3U-A98E	Targeted Molecular therapy	Amatuximab (MORab-009)		61	509	NO
+TCGA-3U-A98E	Chemotherapy	Cisplatin		61	173	NO
+TCGA-3U-A98E	Chemotherapy	Pemetrexed (Alimta)		61	173	NO
+TCGA-3U-A98E	Targeted Molecular therapy	GDC-0980	Partial Response	802	1060	NO
+TCGA-3U-A98E	Targeted Molecular therapy	Tivantinib (ARQ-197)	Stable Disease	1286	1430	NO
+TCGA-3U-A98E		DS-8273a	Stable Disease	1446	1489	NO
+TCGA-3U-A98F	Targeted Molecular therapy		Clinical Progressive Disease	379	463	NO
+TCGA-3U-A98F	Chemotherapy	Carboplatin	Stable Disease	162	302	NO
+TCGA-3U-A98F	Chemotherapy	Pemetrexed (Alimta)	Stable Disease	162	302	NO
+TCGA-3U-A98H	Targeted Molecular therapy	Tivantinib (ARQ-197)	Clinical Progressive Disease	910	1022	NO
+TCGA-3U-A98I	Chemotherapy	Gemcitabine		551	NA	YES
+TCGA-3U-A98I	Targeted Molecular therapy			439	467	NO
+TCGA-3U-A98I	Chemotherapy	Carboplatin		74	215	NO
+TCGA-3U-A98I	Chemotherapy	Pemetrexed (Alimta)		74	215	NO
+TCGA-3U-A98J	Chemotherapy	Carboplatin	Clinical Progressive Disease	137	228	NO
+TCGA-3U-A98J	Chemotherapy	Pemetrexed (Alimta)	Clinical Progressive Disease	137	228	NO
+TCGA-3U-A98J	Targeted Molecular therapy			627	627	NO
+TCGA-LK-A4NW	Chemotherapy	Cisplatin	Clinical Progressive Disease	0	0	NO
+TCGA-LK-A4NW	Chemotherapy	Gemcitabine	Clinical Progressive Disease	525	NA	NO
+TCGA-LK-A4NW	Chemotherapy	Carboplatin	Clinical Progressive Disease	525	NA	NO
+TCGA-LK-A4NY	Chemotherapy	Cisplatin		52	NA	NO
+TCGA-LK-A4NY	Chemotherapy	Cisplatin		139	NA	NO
+TCGA-LK-A4NY	Chemotherapy	ALIMTA		139	NA	NO
+TCGA-LK-A4NZ	Chemotherapy	Cisplatin	Clinical Progressive Disease	36	36	NO
+TCGA-LK-A4O0	Chemotherapy	Cisplatinum	Complete Response	53	53	NO
+TCGA-LK-A4O4	Chemotherapy		Clinical Progressive Disease	344	394	NO
+TCGA-LK-A4O5	Chemotherapy	CISPLATINUM	Clinical Progressive Disease	60	60	NO
+TCGA-LK-A4O5	Chemotherapy	Cisplatin	Clinical Progressive Disease	118	174	NO
+TCGA-LK-A4O5	Chemotherapy	Alimta	Clinical Progressive Disease	118	174	NO
+TCGA-LK-A4O5	Chemotherapy	Adriamycin	Clinical Progressive Disease	187	274	NO
+TCGA-LK-A4O7	Chemotherapy	Cisplatin	Clinical Progressive Disease	177	238	NO
+TCGA-LK-A4O7	Chemotherapy	Alimta	Clinical Progressive Disease	177	238	NO
+TCGA-MQ-A4KX		Tetrathiomolybdate		248	406	NO
+TCGA-MQ-A4KX	Chemotherapy	Cisplatin		NA	NA	NO
+TCGA-MQ-A4KX	Chemotherapy	Alimta		NA	NA	NO
+TCGA-MQ-A4LC		Tetrathiomolybdate		38	1056	NO
+TCGA-MQ-A4LI	Chemotherapy			NA	NA	NO
+TCGA-MQ-A4LI	Chemotherapy	cisplatin		NA	NA	
+TCGA-MQ-A4LI	Chemotherapy	Gemzar		NA	NA	
+TCGA-MQ-A4LJ	Chemotherapy	Gemzar		NA	NA	
+TCGA-MQ-A4LJ	Chemotherapy	Cisplatin		NA	NA	
+TCGA-MQ-A4LM				NA	NA	NO
+TCGA-MQ-A4LV		Tetrathiomolybdate		73	96	NO
+TCGA-MQ-A6BL	Chemotherapy	Cisplatin		26	144	NO
+TCGA-MQ-A6BL	Chemotherapy	Alimta		26	144	NO
+TCGA-MQ-A6BN	Chemotherapy	Gemcitabine (Gemzar)	Complete Response	22	519	NO
+TCGA-MQ-A6BN	Chemotherapy	Cisplatin	Complete Response	22	519	NO
+TCGA-MQ-A6BN	Chemotherapy	Alimta	Complete Response	519	672	NO
+TCGA-MQ-A6BQ	Chemotherapy	Cisplatinum	Stable Disease	11	133	NO
+TCGA-MQ-A6BQ	Chemotherapy	Alimta	Stable Disease	11	133	NO
+TCGA-MQ-A6BR	Chemotherapy	Cisplatin	Complete Response	NA	117	NO
+TCGA-MQ-A6BR	Chemotherapy	Alimta	Complete Response	NA	117	NO
+TCGA-MQ-A6BS	Chemotherapy	Pemetrexed		NA	96	NO
+TCGA-MQ-A6BS	Chemotherapy	Cisplatin		NA	96	NO
+TCGA-MQ-A6BS	Vaccine	WT-1 Vaccine		151	243	NO
+TCGA-SC-A6LM	Chemotherapy	Cisplatin		25	25	NO
+TCGA-SC-A6LM	Chemotherapy	Pemetrexed		25	25	NO
+TCGA-SC-A6LM	Chemotherapy	EVERolimus	Clinical Progressive Disease	391	543	NO
+TCGA-SC-A6LM	Chemotherapy	Gemcitabine	Clinical Progressive Disease	564	711	NO
+TCGA-SC-A6LM	Chemotherapy	Carboplatin	Clinical Progressive Disease	571	634	NO
+TCGA-SC-A6LM	Chemotherapy	Pemetrexed	Clinical Progressive Disease	739	760	NO
+TCGA-SC-A6LM	Chemotherapy	Vinorelbine	Stable Disease	790	816	NO
+TCGA-SC-A6LN	Chemotherapy	Carboplatin		29	92	NO
+TCGA-SC-A6LN	Chemotherapy	Pemetrexed		29	92	NO
+TCGA-SC-A6LP	Chemotherapy	Cisplatin	Clinical Progressive Disease	12	12	NO
+TCGA-SC-A6LP	Chemotherapy	Pemetrexed	Clinical Progressive Disease	12	12	NO
+TCGA-SC-A6LQ	Chemotherapy	Pemetrexed	Stable Disease	74	137	NO
+TCGA-SC-A6LQ	Chemotherapy	Cisplatin	Stable Disease	74	137	NO
+TCGA-SC-A6LR	Chemotherapy	Pemetrexed	Stable Disease	83	146	NO
+TCGA-SC-A6LR	Chemotherapy	Cisplatin	Stable Disease	83	146	NO
+TCGA-SC-A6LR	Vaccine			NA	NA	
+TCGA-SC-AA5Z	Vaccine	GL-ONC1	Clinical Progressive Disease	34	34	NO
+TCGA-SC-AA5Z	Chemotherapy	Pemetrexed	Stable Disease	106	170	NO
+TCGA-SC-AA5Z	Chemotherapy	Carboplatin	Stable Disease	106	170	NO
+TCGA-SH-A7BC	Chemotherapy	Carboplatin	Partial Response	165	278	NO
+TCGA-SH-A7BC	Chemotherapy	Pemetrexed	Partial Response	165	278	NO
+TCGA-SH-A7BC	Chemotherapy	Carboplatin	Partial Response	573	649	NO
+TCGA-SH-A7BC	Chemotherapy	Pemetrexed	Partial Response	573	649	NO
+TCGA-SH-A7BD	Chemotherapy	Pemetrexed	Partial Response	58	163	NO
+TCGA-SH-A7BD	Chemotherapy	Cisplatin	Partial Response	58	163	NO
+TCGA-SH-A7BD	Chemotherapy	Pemetrexed	Partial Response	388	429	NO
+TCGA-SH-A7BD	Chemotherapy	Cisplatin	Partial Response	388	429	NO
+TCGA-SH-A7BH	Chemotherapy	Cisplatin	Clinical Progressive Disease	153	195	NO
+TCGA-SH-A7BH	Chemotherapy	Pemetrexed	Clinical Progressive Disease	153	195	NO
+TCGA-SH-A9CT	Chemotherapy	Cisplatin	Partial Response	46	155	NO
+TCGA-SH-A9CT	Chemotherapy	Pemetrexed	Partial Response	46	155	NO
+TCGA-SH-A9CU	Chemotherapy			NA	257	NO
+TCGA-SH-A9CU	Chemotherapy	Pemetrexed	Partial Response	56	178	NO
+TCGA-SH-A9CU	Chemotherapy	Cisplatin	Partial Response	56	178	NO
+TCGA-SH-A9CU	Chemotherapy	Pemetrexed		481	602	NO
+TCGA-TS-A7OY	Ancillary	Porfimer Sodium(Photofin)		70	73	NO
+TCGA-TS-A7P0	Ancillary	Porfimer Sodium (Photofrin)		11	11	NO
+TCGA-TS-A7P1	Ancillary	Porfimer Sodium (Photofrin)		51	54	NO
+TCGA-TS-A7P3	Ancillary	Porfimer Sodium (Photofrin)		17	20	NO
+TCGA-TS-A7P6	Ancillary	2-[1-hexyloxyethyl]-2-devinyl pyropheophorbide-alpha (HPPH or Photochlor)		24	27	NO
+TCGA-TS-A7P8	Ancillary	Porfimer Sodium (Photofin)		61	64	NO
+TCGA-TS-A7PB	Ancillary	2-[1-hexyloxyethyl]-2-devinyl pyropheophorbide-alpha (HPPH or Photochlor)		487	490	NO
+TCGA-TS-A8AF	Ancillary	Porfimer Sodium (Photofin)		39	42	NO
+TCGA-TS-A8AI	Ancillary	Porfimer Sodium (Photofin)		25	28	NO
+TCGA-TS-A8AS	Ancillary	2-[1-hexyloxyethyl]-2-devinyl pyropheophorbide-alpha (HPPH or Photochlor)		51	54	NO
+TCGA-TS-A8AV	Ancillary	2-[1-hexyloxyethyl]-2-devinyl pyropheophorbide-alpha (HPPH or Photochlor)		199	202	NO
+TCGA-TS-A8AY	Ancillary	Porfimer Sodium (Photofin)		37	40	NO
+TCGA-UD-AABZ			Clinical Progressive Disease	42	56	NO
+TCGA-UD-AABZ	Chemotherapy	Carboplatin		103	168	NO
+TCGA-UD-AABZ	Chemotherapy	Alimta		103	168	NO
+TCGA-UD-AAC1	Chemotherapy	Cisplatin		94	94	NO
+TCGA-UD-AAC1	Chemotherapy	Carboplatin	Clinical Progressive Disease	148	183	NO
+TCGA-UD-AAC1	Chemotherapy	Gemcitabine	Clinical Progressive Disease	94	183	NO
+TCGA-UD-AAC4	Chemotherapy	Cisplatin	Stable Disease	308	462	NO
+TCGA-UD-AAC4	Chemotherapy	Alimta	Clinical Progressive Disease	693	693	NO
+TCGA-UD-AAC4	Chemotherapy	Sutent	Clinical Progressive Disease	608	651	NO
+TCGA-UD-AAC4	Chemotherapy	Gemcitabine	Stable Disease	308	462	NO
+TCGA-UD-AAC5	Chemotherapy	Cisplatin		152	203	NO
+TCGA-UD-AAC5	Chemotherapy	Pemetrexed		152	203	NO
+TCGA-UD-AAC6	Chemotherapy	Carboplatin	Stable Disease	138	256	NO
+TCGA-UD-AAC6	Chemotherapy	Pemetrexed	Stable Disease	138	256	NO
+TCGA-UD-AAC7	Chemotherapy	Cisplatin		62	92	NO
+TCGA-UD-AAC7	Chemotherapy	Carboplatin		113	161	NO
+TCGA-UD-AAC7	Chemotherapy	Alimta		62	161	NO
+TCGA-UT-A88C	Chemotherapy	Cisplatin	Stable Disease	24	66	NO
+TCGA-UT-A88C	Chemotherapy	Pemetrexed	Stable Disease	24	66	NO
+TCGA-UT-A88D	Chemotherapy	Pemetrexed	Stable Disease	24	66	NO
+TCGA-UT-A88D	Chemotherapy	Cisplatin	Stable Disease	24	66	NO
+TCGA-ZN-A9VO	Chemotherapy	Pemetrexed		NA	NA	NO
+TCGA-ZN-A9VO	Chemotherapy	Cisplatin		NA	NA	YES
+TCGA-ZN-A9VP	Chemotherapy	Cisplatin		136	228	NO
+TCGA-ZN-A9VP	Chemotherapy	Alimta		136	228	NO
+TCGA-ZN-A9VV	Chemotherapy	Carboplatin		190	270	NO
+TCGA-ZN-A9VV	Chemotherapy	Alimta		190	270	NO

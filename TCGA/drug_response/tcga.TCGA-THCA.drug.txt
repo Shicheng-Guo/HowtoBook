@@ -1,0 +1,57 @@
+bcr_patient_barcode	therapy_types	drug_name	measure_of_response	days_to_drug_therapy_start	days_to_drug_therapy_end	therapy_ongoing
+TCGA-BJ-A2N7	Hormone Therapy	SYNTHROID	Stable Disease	16	NA	NO
+TCGA-CE-A481	Chemotherapy	Doxorubicin	Complete Response	172	322	NO
+TCGA-CE-A482		Doxorubicin	Complete Response	142	294	NO
+TCGA-DO-A1JZ	Hormone Therapy	Synthroid		169	NA	YES
+TCGA-DO-A1K0	Hormone Therapy	synthroid		73	NA	YES
+TCGA-E3-A3DY	Hormone Therapy	Cytomel		84	NA	
+TCGA-E3-A3DY	Hormone Therapy	Synthroid	Complete Response	267	NA	YES
+TCGA-E3-A3DZ	Hormone Therapy	Levothroid		25	25	NO
+TCGA-E3-A3DZ	Hormone Therapy	Cytomel		30	56	NO
+TCGA-E3-A3DZ	Hormone Therapy	Synthroid		59	NA	YES
+TCGA-E3-A3E0	Hormone Therapy	Cytomel	Complete Response	182	NA	NO
+TCGA-E3-A3E1	Hormone Therapy	Synthroid		63	NA	YES
+TCGA-E3-A3E2	Hormone Therapy	Cytomel		55	116	NO
+TCGA-E3-A3E2	Hormone Therapy	Synthroid		116	NA	
+TCGA-E3-A3E3	Hormone Therapy	Cytomel		41	59	NO
+TCGA-E3-A3E3	Hormone Therapy	Levothyroxine		70	NA	YES
+TCGA-E3-A3E5	Hormone Therapy	Cytomel		39	74	NO
+TCGA-E3-A3E5	Hormone Therapy	Levothyroxine		73	NA	YES
+TCGA-E8-A242	Hormone Therapy	Synthroid		36	NA	YES
+TCGA-E8-A2JQ	Hormone Therapy	Synthroid		1	NA	YES
+TCGA-FY-A3ON	Hormone Therapy	Levothyroxine		86	NA	YES
+TCGA-FY-A3R8	Hormone Therapy	Levothyroxine		296	NA	YES
+TCGA-FY-A3R9	Hormone Therapy	Levothyroxine		27	NA	YES
+TCGA-FY-A3W9	Hormone Therapy	Levothyroxine	Complete Response	214	NA	YES
+TCGA-FY-A3YR	Hormone Therapy	Synthroid		102	NA	YES
+TCGA-FY-A40K	Hormone Therapy	Synthroid		461	NA	YES
+TCGA-FY-A40L	Hormone Therapy	Levothyroxine		224	NA	YES
+TCGA-FY-A40M	Hormone Therapy	Levothyroxine		188	NA	YES
+TCGA-FY-A40N	Hormone Therapy	Levothyroxine		26	NA	YES
+TCGA-FY-A4B0	Hormone Therapy	Synthroid		12	NA	YES
+TCGA-FY-A4B4	Hormone Therapy	Levothyroxine		35	NA	YES
+TCGA-IM-A3ED	Hormone Therapy	Armour Thyroid		761	NA	YES
+TCGA-IM-A41Y	Hormone Therapy	Synthroid		86	NA	YES
+TCGA-IM-A41Z	Hormone Therapy	Synthroid		8	NA	YES
+TCGA-KS-A41F	Hormone Therapy	Synthroid		53	NA	YES
+TCGA-KS-A41I	Hormone Therapy	synthroid		38	NA	YES
+TCGA-KS-A41J	Hormone Therapy	cytomel		1	47	NO
+TCGA-KS-A41J	Hormone Therapy	synthroid		47	NA	YES
+TCGA-KS-A41L	Hormone Therapy	Levoxyl		217	NA	YES
+TCGA-KS-A4I1	Hormone Therapy	cytomel	Complete Response	88	166	NO
+TCGA-KS-A4I1	Hormone Therapy	synthroid		182	NA	YES
+TCGA-KS-A4I3	Hormone Therapy	cytomel	Complete Response	17	34	NO
+TCGA-KS-A4I3	Hormone Therapy	levothyroxine		48	NA	YES
+TCGA-KS-A4I5	Hormone Therapy	levoxyl		140	NA	YES
+TCGA-KS-A4I7	Hormone Therapy	levothyroxine		76	NA	YES
+TCGA-KS-A4I9	Hormone Therapy	cytomel	Complete Response	38	61	NO
+TCGA-KS-A4I9	Hormone Therapy	levoxyl		77	NA	YES
+TCGA-KS-A4IB	Hormone Therapy	cytomel	Complete Response	50	71	NO
+TCGA-KS-A4IB	Hormone Therapy	levoxyl		91	NA	YES
+TCGA-KS-A4IC	Hormone Therapy	cytomel	Complete Response	2	20	NO
+TCGA-KS-A4IC	Hormone Therapy	levothyroxine		34	NA	YES
+TCGA-KS-A4ID	Hormone Therapy	cytomel	Complete Response	1	75	NO
+TCGA-KS-A4ID	Hormone Therapy	synthroid		78	NA	YES
+TCGA-MK-A4N6	Hormone Therapy	levothyroxine		70	NA	YES
+TCGA-MK-A4N7	Hormone Therapy	levothyroxine		139	NA	YES
+TCGA-MK-A4N9	Hormone Therapy	levothyroxine		319	NA	YES

@@ -1,0 +1,67 @@
+bcr_patient_barcode	therapy_types	drug_name	measure_of_response	days_to_drug_therapy_start	days_to_drug_therapy_end	therapy_ongoing
+TCGA-2Y-A9GV	Chemotherapy	Naxavar	Clinical Progressive Disease	2233	2304	NO
+TCGA-2Y-A9GZ	Chemotherapy	Naxavar		719	842	NO
+TCGA-2Y-A9H8	Chemotherapy	Naxavar		398	491	NO
+TCGA-2Y-A9H8	Chemotherapy	everolimus	Stable Disease	498	608	NO
+TCGA-2Y-A9H8	Hormone Therapy	SOM 230	Stable Disease	498	608	NO
+TCGA-2Y-A9H9	Chemotherapy	Naxavar		1017	NA	YES
+TCGA-3K-AAZ8		Sarafenib	Clinical Progressive Disease	212	304	NO
+TCGA-3K-AAZ8		Regorafenib		304	NA	YES
+TCGA-BC-4073	Chemotherapy	Sorafenib		81	NA	YES
+TCGA-BC-4073	Chemotherapy	Sorafenib		166	NA	YES
+TCGA-BC-A10Q	Other, specify in noteschemoembolization	adriamycin		217	217	NO
+TCGA-BC-A10Q	Other, specify in noteschemoembolization	Mitomycin C		217	217	NO
+TCGA-BC-A10Q	Hormone Therapy	Tamoxifen		359	408	NO
+TCGA-BC-A10Q	Chemotherapy	Gemcitabine		426	751	NO
+TCGA-BC-A10R	Other, specify in noteschemoembolization			237	237	NO
+TCGA-BC-A10W	Chemotherapy			82	85	NO
+TCGA-BC-A8YO	Chemotherapy	Nexavar	Partial Response	54	186	NO
+TCGA-BW-A5NP	Chemotherapy	Nexavar	Clinical Progressive Disease	128	289	NO
+TCGA-CC-A8HV	Targeted Molecular therapy	Nexavar	Clinical Progressive Disease	158	188	NO
+TCGA-DD-A115	Chemotherapy		Stable Disease	502	841	NO
+TCGA-DD-A11D	Chemotherapy	Sorafenib	Clinical Progressive Disease	586	641	NO
+TCGA-DD-A11D	Chemotherapy	ABT-888 and temozolomide	Partial Response	709	1105	NO
+TCGA-DD-A11D	Chemotherapy	Temozolomide	Stable Disease	1408	1474	NO
+TCGA-DD-A1EC	Chemotherapy			330	NA	YES
+TCGA-DD-A1EG	Chemotherapy	Sorafenib		1154	1310	NO
+TCGA-DD-A1EH	Chemotherapy	Sorafenib	Partial Response	358	863	NO
+TCGA-DD-A1EH	Chemotherapy	doxorubicin	Partial Response	553	721	NO
+TCGA-DD-A1EH	Chemotherapy	Everolimus, Gemcitabine, and Cisplatin	Clinical Progressive Disease	862	975	NO
+TCGA-DD-A1EJ	Chemotherapy	Sorafenib	Clinical Progressive Disease	264	887	NO
+TCGA-DD-A1EK	Chemotherapy	Sorafenib	Clinical Progressive Disease	188	349	NO
+TCGA-DD-A3A4	Chemotherapy	Gemcitabine	Clinical Progressive Disease	459	486	NO
+TCGA-DD-A3A7	Chemotherapy		Clinical Progressive Disease	146	192	NO
+TCGA-DD-A4ND	Chemotherapy	Adriamycin/Cytoxan	Complete Response	20	218	NO
+TCGA-DD-A4NE	Chemotherapy	Sorafenib		225	NA	YES
+TCGA-DD-A4NH	Chemotherapy	Sorafenib	Clinical Progressive Disease	162	305	NO
+TCGA-DD-A4NQ	Chemotherapy	Sorafenib		151	290	NO
+TCGA-DD-A4NS	Chemotherapy	Sorafenib	Clinical Progressive Disease	1116	1314	NO
+TCGA-DD-A4NS	Chemotherapy	ABT-888	Clinical Progressive Disease	1349	1425	NO
+TCGA-DD-A4NS	Chemotherapy	LY228820	Clinical Progressive Disease	1685	1903	NO
+TCGA-DD-A4NS	Chemotherapy	Temozolomide	Clinical Progressive Disease	1349	1425	NO
+TCGA-ED-A459	Ancillary	Alvesin	Complete Response	38	103	NO
+TCGA-EP-A2KA	Targeted Molecular therapy	Sorafenib		312	NA	YES
+TCGA-FV-A3I0	Chemotherapy	Gemcitabine	Clinical Progressive Disease	166	586	NO
+TCGA-FV-A3R2	Chemotherapy	Cisplatin		25	NA	NO
+TCGA-FV-A3R2	Chemotherapy	Gemcitabine		25	NA	NO
+TCGA-G3-A25S	Chemotherapy	Sunitinib	Clinical Progressive Disease	313	348	NO
+TCGA-G3-A25S	Chemotherapy	Sorafenib	Clinical Progressive Disease	351	369	NO
+TCGA-G3-A3CG	Targeted Molecular therapy	Sorafenib	Stable Disease	367	577	NO
+TCGA-G3-A3CH	Chemotherapy	Sorafenib		717	NA	YES
+TCGA-G3-A3CJ	Targeted Molecular therapy	Sorafenib	Clinical Progressive Disease	346	367	NO
+TCGA-G3-A5SI	Chemotherapy	Sorafenib	Clinical Progressive Disease	599	733	NO
+TCGA-G3-AAV5	Chemotherapy	HEC.1 - Sorafenib vs Sorafenib plus Doxorubicin		227	NA	YES
+TCGA-K7-AAU7		gemcitabine		42	NA	YES
+TCGA-K7-AAU7		cisplatin		42	NA	YES
+TCGA-LG-A9QD	Chemotherapy	Sorafinib ( Nexavar)		61	NA	YES
+TCGA-UB-A7MA	Chemotherapy	gemcitabine	Clinical Progressive Disease	60	207	NO
+TCGA-UB-A7MA	Chemotherapy	cisplatin	Clinical Progressive Disease	60	207	NO
+TCGA-UB-A7MA	Targeted Molecular therapy	temsirolimus		485	NA	YES
+TCGA-UB-A7MA	Targeted Molecular therapy	sorafenib		485	NA	YES
+TCGA-UB-A7MB	Targeted Molecular therapy	sorafenib	Clinical Progressive Disease	123	168	NO
+TCGA-UB-A7MB	Targeted Molecular therapy		Stable Disease	187	382	NO
+TCGA-UB-A7MB	Chemotherapy	5-fluorouracil	Clinical Progressive Disease	480	510	NO
+TCGA-UB-A7MB	Chemotherapy	oxaliplatin	Clinical Progressive Disease	480	510	NO
+TCGA-UB-A7MB	Targeted Molecular therapy			525	NA	YES
+TCGA-WX-AA44	Targeted Molecular therapy	SORAFENIB	Partial Response	306	375	NO
+TCGA-WX-AA47	Chemotherapy	Sorafenib	Clinical Progressive Disease	331	493	NO

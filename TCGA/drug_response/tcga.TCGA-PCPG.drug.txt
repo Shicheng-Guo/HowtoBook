@@ -1,0 +1,10 @@
+bcr_patient_barcode	therapy_types	drug_name	measure_of_response	days_to_drug_therapy_start	days_to_drug_therapy_end	therapy_ongoing
+TCGA-QR-A6GT	Chemotherapy	Cytoxan, vincristine and dacarbazine	Partial Response	2435	3452	NO
+TCGA-QR-A700	Chemotherapy			535	652	NO
+TCGA-QR-A70P	Chemotherapy	cyclophosphamide, vincristine, and dacarbazine	Clinical Progressive Disease	966	NA	NO
+TCGA-QT-A5XJ	Chemotherapy	Xeloda	Clinical Progressive Disease	113	326	NO
+TCGA-QT-A5XJ	Chemotherapy	Temodar	Clinical Progressive Disease	113	326	NO
+TCGA-WB-A81Q	Chemotherapy	vincristine	Clinical Progressive Disease	620	704	NO
+TCGA-WB-A81Q	Chemotherapy	Dacarbazine	Clinical Progressive Disease	620	704	NO
+TCGA-WB-A81Q	Chemotherapy	Gemcitabine	Clinical Progressive Disease	707	749	NO
+TCGA-WB-A81Q	Chemotherapy	Cyclophosphamide	Clinical Progressive Disease	620	704	NO

@@ -1,0 +1,2393 @@
+bcr_patient_barcode	therapy_types	drug_name	measure_of_response	days_to_drug_therapy_start	days_to_drug_therapy_end	therapy_ongoing
+TCGA-3C-AAAU	Chemotherapy	Zoladex		1828	NA	YES
+TCGA-3C-AALI		Poly E	Complete Response	43	117	NO
+TCGA-3C-AALJ		Metformin		368	511	NO
+TCGA-3C-AALJ	Chemotherapy	Trastuzumab		154	490	NO
+TCGA-3C-AALJ	Chemotherapy	Doxorubicin		63	126	NO
+TCGA-3C-AALJ	Chemotherapy	Cyclophosphamide		63	126	NO
+TCGA-3C-AALJ	Chemotherapy	Herceptin		151	511	NO
+TCGA-3C-AALK	Chemotherapy	Docetaxel		371	528	NO
+TCGA-3C-AALK	Chemotherapy	Herceptin		507	829	NO
+TCGA-3C-AALK	Chemotherapy	Carboplatin		371	528	NO
+TCGA-3C-AALK	Chemotherapy	Trastuzumab		371	528	NO
+TCGA-4H-AAAK	Chemotherapy	Cyclophosphamide	Complete Response	27	98	NO
+TCGA-4H-AAAK	Chemotherapy	Doxorubicin	Complete Response	27	98	NO
+TCGA-4H-AAAK	Chemotherapy	5-Fluorouracil	Complete Response	27	98	NO
+TCGA-5L-AAT0	Hormone Therapy	Tamoxifen		322	NA	YES
+TCGA-5L-AAT1	Hormone Therapy	Letrozol		46	NA	YES
+TCGA-5T-A9QA		Adriamycin	Complete Response	23	94	NO
+TCGA-5T-A9QA	Hormone Therapy	Letrozole		304	NA	YES
+TCGA-5T-A9QA	Chemotherapy	Taxol		115	198	NO
+TCGA-5T-A9QA	Chemotherapy	Cytoxan	Complete Response	NA	94	NO
+TCGA-A1-A0SF	Other, specify in notesAromatase Inhibitor	arimidex		1010	NA	YES
+TCGA-A1-A0SF	Hormone Therapy	tamoxifen		157	918	NO
+TCGA-A1-A0SF	Chemotherapy	tc		65	126	NO
+TCGA-A1-A0SG	Chemotherapy			111	NA	NO
+TCGA-A1-A0SH	Chemotherapy	TC		102	179	NO
+TCGA-A1-A0SN	Chemotherapy	ac		87	179	NO
+TCGA-A1-A0SN	Chemotherapy	taxol		179	270	NO
+TCGA-A1-A0SN	Targeted Molecular therapy	herceptin		179	879	NO
+TCGA-A1-A0SO	Chemotherapy			61	180	NO
+TCGA-A1-A0SP	Chemotherapy			108	173	NO
+TCGA-A1-A0SQ	Chemotherapy	ac		148	NA	NO
+TCGA-A1-A0SQ	Hormone Therapy	tamoxifen		299	NA	YES
+TCGA-A1-A0SQ	Chemotherapy	taxol		NA	237	NO
+TCGA-A2-A04N	Hormone Therapy	Arimidex		308	2121	NO
+TCGA-A2-A04N	Chemotherapy	Cytoxan		42	107	NO
+TCGA-A2-A04N	Chemotherapy	Adriamycin		42	107	NO
+TCGA-A2-A04P	Hormone Therapy	Exemestane		424	NA	NO
+TCGA-A2-A04P	Chemotherapy	TAXOTERE		242	303	NO
+TCGA-A2-A04P	Chemotherapy	ADRIAMYCIN		303	424	NO
+TCGA-A2-A04P	Chemotherapy	NAVELBINE		424	424	NO
+TCGA-A2-A04P	Chemotherapy	Cisplatin		424	424	NO
+TCGA-A2-A04P	Chemotherapy	TAXOL		69	180	NO
+TCGA-A2-A04P	Chemotherapy	XELODA		180	242	NO
+TCGA-A2-A04P	Chemotherapy	GEMZAR		242	303	NO
+TCGA-A2-A04Q	Chemotherapy	ADRIAMYCIN		23	85	NO
+TCGA-A2-A04Q	Chemotherapy	CYTOXAN		43	85	NO
+TCGA-A2-A04R	Chemotherapy	CYTOXAN		119	184	NO
+TCGA-A2-A04R	Chemotherapy	Adriamycin		119	184	NO
+TCGA-A2-A04R	Hormone Therapy	Anastrozole		910	NA	YES
+TCGA-A2-A04R	Hormone Therapy	Tamoxifen		399	909	NO
+TCGA-A2-A04R	Chemotherapy	TAXOL		45	45	NO
+TCGA-A2-A04T	Chemotherapy	Cyclophosphamide		75	117	NO
+TCGA-A2-A04T	Chemotherapy	Taxol		131	173	NO
+TCGA-A2-A04T	Chemotherapy	Adriamycin		75	117	NO
+TCGA-A2-A04U	Chemotherapy	Adriamycin		78	120	NO
+TCGA-A2-A04U	Other, specify in notesBisphosphonate	Zometa		481	671	NO
+TCGA-A2-A04U	Chemotherapy	Cytoxan		78	120	NO
+TCGA-A2-A04U	Chemotherapy	Taxotere		134	197	NO
+TCGA-A2-A04V	Chemotherapy	CYTOXAN		50	92	NO
+TCGA-A2-A04V	Hormone Therapy	EXEMESTANE		1452	NA	NO
+TCGA-A2-A04V	Hormone Therapy	TAMOXIFEN		107	1258	NO
+TCGA-A2-A04V	Hormone Therapy	LETROZOLE		1269	1439	NO
+TCGA-A2-A04V	Chemotherapy	XELODA		1577	NA	NO
+TCGA-A2-A04V	Chemotherapy	ADRIAMYCIN		50	92	NO
+TCGA-A2-A04W	Chemotherapy	Cytoxan		58	100	NO
+TCGA-A2-A04W	Chemotherapy	Adriamycin		58	100	NO
+TCGA-A2-A04W	Chemotherapy	Taxol		114	191	NO
+TCGA-A2-A04W	Targeted Molecular therapy	Herceptin		198	352	NO
+TCGA-A2-A04W	Other, specify in notesBisphosphonate	Zometa		1023	NA	YES
+TCGA-A2-A04X	Chemotherapy	ADRIAMYCIN		80	122	NO
+TCGA-A2-A04X	Chemotherapy	CYTOXAN		80	122	NO
+TCGA-A2-A04X	Targeted Molecular therapy	HERCEPTIN		133	383	NO
+TCGA-A2-A04X	Chemotherapy	TAXOL		133	210	NO
+TCGA-A2-A04X	Hormone Therapy	TAMOXIFEN		352	490	NO
+TCGA-A2-A04Y	Chemotherapy	Cytoxan		93	135	NO
+TCGA-A2-A04Y	Targeted Molecular therapy	Herceptin		149	659	NO
+TCGA-A2-A04Y	Chemotherapy	Adriamycin		93	135	NO
+TCGA-A2-A04Y	Other, specify in notesBisphosphonate therapy	Zometa		503	NA	YES
+TCGA-A2-A04Y	Chemotherapy	Taxol		149	226	NO
+TCGA-A2-A04Y	Hormone Therapy	Tamoxifen		273	371	NO
+TCGA-A2-A04Y	Hormone Therapy	Arimidex		372	NA	YES
+TCGA-A2-A0CK	Chemotherapy	Adriamycin	Complete Response	NA	NA	NO
+TCGA-A2-A0CK	Chemotherapy	Cytoxan	Complete Response	NA	NA	NO
+TCGA-A2-A0CK	Chemotherapy	Taxol	Complete Response	NA	NA	NO
+TCGA-A2-A0CK	Chemotherapy	Taxotere	Complete Response	1451	1518	NO
+TCGA-A2-A0CK	Hormone Therapy	Anastrozole		1569	NA	YES
+TCGA-A2-A0CK	Vaccine	E-75		NA	NA	NO
+TCGA-A2-A0CL	Chemotherapy	Taxol		126	168	NO
+TCGA-A2-A0CL	Chemotherapy	Cytoxan		69	112	NO
+TCGA-A2-A0CL	Hormone Therapy	Arimidex		505	NA	YES
+TCGA-A2-A0CL	Chemotherapy	Adriamycin		69	112	NO
+TCGA-A2-A0CL	Other, specify in notesBisphosphonate	Zometa		752	NA	YES
+TCGA-A2-A0CL	Hormone Therapy	Tamoxifen		269	504	NO
+TCGA-A2-A0CL	Chemotherapy	Gemcitabine	Complete Response	126	168	NO
+TCGA-A2-A0CM	Chemotherapy	Adriamycin		98	147	NO
+TCGA-A2-A0CM	Chemotherapy	Capecetabine		391	615	NO
+TCGA-A2-A0CM	Chemotherapy	Cytoxan		98	147	NO
+TCGA-A2-A0CM	Hormone Therapy	Tamoxifen		234	NA	NO
+TCGA-A2-A0CM	Chemotherapy	Docetaxel		391	601	NO
+TCGA-A2-A0CM	Other, specify in notesBisphosphonate therapy	Zometa		391	433	NO
+TCGA-A2-A0CO	Hormone Therapy	Tamoxifen	Complete Response	84	512	NO
+TCGA-A2-A0CO	Hormone Therapy	Arimidex		513	NA	
+TCGA-A2-A0CP	Hormone Therapy	Anastrozole		206	2043	NO
+TCGA-A2-A0CP	Chemotherapy	Cytoxan		70	134	NO
+TCGA-A2-A0CP	Chemotherapy	Adriamycin		70	134	NO
+TCGA-A2-A0CQ	Chemotherapy	Adriamycin		99	162	NO
+TCGA-A2-A0CQ	Hormone Therapy	Arimidex		201	NA	YES
+TCGA-A2-A0CQ	Chemotherapy	Cytoxan		99	162	NO
+TCGA-A2-A0CQ	Immunotherapy	AE-37		492	628	NO
+TCGA-A2-A0CR	Chemotherapy	Adriamycin	Complete Response	105	147	NO
+TCGA-A2-A0CR	Chemotherapy	Cyclophosphamide	Complete Response	105	147	NO
+TCGA-A2-A0CR	Chemotherapy	Paclitaxel	Complete Response	140	203	NO
+TCGA-A2-A0CR	Hormone Therapy	Tamoxifen	Complete Response	224	300	NO
+TCGA-A2-A0CR	Hormone Therapy	Anastrazole		315	NA	YES
+TCGA-A2-A0CS	Other, specify in notesBisphosphonate	Zometa		217	597	NO
+TCGA-A2-A0CS	Hormone Therapy	Anastrozole		190	NA	YES
+TCGA-A2-A0CT	Hormone Therapy	Tamoxifen		559	1537	NO
+TCGA-A2-A0CT	Chemotherapy	Cytoxan		75	138	NO
+TCGA-A2-A0CT	Hormone Therapy	Arimidex		160	433	NO
+TCGA-A2-A0CT	Chemotherapy	Adriamycin		75	138	NO
+TCGA-A2-A0CU	Hormone Therapy	Tamoxifen		98	NA	NO
+TCGA-A2-A0CV	Hormone Therapy	Tamoxifen		274	NA	YES
+TCGA-A2-A0CV	Chemotherapy	Taxol		120	176	NO
+TCGA-A2-A0CV	Chemotherapy	Cytoxan		64	106	NO
+TCGA-A2-A0CV	Chemotherapy	Adriamycin		64	106	NO
+TCGA-A2-A0CW	Hormone Therapy	Anastrozole		156	NA	YES
+TCGA-A2-A0CX	Other, specify in notesGiven to induce menopause	Zoladex		601	NA	NO
+TCGA-A2-A0CX	Chemotherapy	Adriamycin		64	127	NO
+TCGA-A2-A0CX	Chemotherapy	Cytoxan		64	127	NO
+TCGA-A2-A0CX	Chemotherapy	Taxol		148	169	NO
+TCGA-A2-A0CX	Targeted Molecular therapy	Herceptin		162	367	NO
+TCGA-A2-A0CX	Hormone Therapy	Letrozole		686	NA	YES
+TCGA-A2-A0CX	Hormone Therapy	Tamoxifen		1184	1273	NO
+TCGA-A2-A0CY	Chemotherapy	Gemzar		133	147	NO
+TCGA-A2-A0CY	Hormone Therapy	Letrozole		1261	NA	YES
+TCGA-A2-A0CY	Chemotherapy	Cytoxan		77	119	NO
+TCGA-A2-A0CY	Chemotherapy	Taxol		133	177	NO
+TCGA-A2-A0CY	Hormone Therapy	Exemestane		1071	1162	NO
+TCGA-A2-A0CY	Hormone Therapy	Tamoxifen		197	357	NO
+TCGA-A2-A0CY	Hormone Therapy	Anastrozole		455	507	NO
+TCGA-A2-A0CY	Chemotherapy	Adriamycin		77	119	NO
+TCGA-A2-A0CY	Hormone Therapy	Anastrozole		634	665	NO
+TCGA-A2-A0CZ	Chemotherapy	Cytoxan		106	148	NO
+TCGA-A2-A0CZ	Chemotherapy	Adriamycin		106	148	NO
+TCGA-A2-A0CZ	Hormone Therapy	Tamoxifen		236	NA	YES
+TCGA-A2-A0D0	Chemotherapy	Cytoxan		62	125	NO
+TCGA-A2-A0D0	Chemotherapy	Docetaxel		62	125	NO
+TCGA-A2-A0D1	Chemotherapy	Taxotere		79	79	NO
+TCGA-A2-A0D1	Chemotherapy	Abraxane		131	201	NO
+TCGA-A2-A0D1	Chemotherapy	Carboplatin		79	79	NO
+TCGA-A2-A0D1	Targeted Molecular therapy	Herceptin		79	428	NO
+TCGA-A2-A0D2	Chemotherapy	Adriamycin		74	123	NO
+TCGA-A2-A0D2	Chemotherapy	Cytoxan		74	123	NO
+TCGA-A2-A0D2	Chemotherapy	Taxol		137	179	NO
+TCGA-A2-A0D3	Chemotherapy	Carboplatin		69	173	NO
+TCGA-A2-A0D3	Hormone Therapy	Tamoxifen		195	NA	YES
+TCGA-A2-A0D3	Chemotherapy	Docetaxel		69	173	NO
+TCGA-A2-A0D3	Targeted Molecular therapy	Herceptin		69	196	NO
+TCGA-A2-A0D4	Hormone Therapy	Tamoxifen		279	NA	YES
+TCGA-A2-A0D4	Chemotherapy	Adriamycin		57	99	NO
+TCGA-A2-A0D4	Chemotherapy	Cytoxan		57	99	NO
+TCGA-A2-A0D4	Chemotherapy	Taxol		113	155	NO
+TCGA-A2-A0EM	Hormone Therapy	Tamoxifen		75	NA	NO
+TCGA-A2-A0EN	Hormone Therapy	Anastrozole		1985	NA	YES
+TCGA-A2-A0EN	Hormone Therapy	Tamoxifen		64	1926	NO
+TCGA-A2-A0EO	Hormone Therapy	Exemestane		876	NA	YES
+TCGA-A2-A0EO	Hormone Therapy	Tamoxifen		158	876	NO
+TCGA-A2-A0EO	Immunotherapy	E-75		244	361	NO
+TCGA-A2-A0EP	Chemotherapy	Cyclophosphamide	Complete Response	92	141	NO
+TCGA-A2-A0EP	Chemotherapy	Adriamycin	Complete Response	92	141	NO
+TCGA-A2-A0EP	Chemotherapy	Paclitaxel	Complete Response	169	195	NO
+TCGA-A2-A0EP	Hormone Therapy	Arimidex	Complete Response	222	1781	NO
+TCGA-A2-A0EP	Hormone Therapy	Arimidex	Complete Response	1959	2461	NO
+TCGA-A2-A0EQ	Chemotherapy	Adriamycin		84	146	NO
+TCGA-A2-A0EQ	Targeted Molecular therapy	Herceptin		229	586	NO
+TCGA-A2-A0EQ	Chemotherapy	Cytoxan		84	146	NO
+TCGA-A2-A0EQ	Chemotherapy	Paclitaxel		167	167	NO
+TCGA-A2-A0EQ	Immunotherapy	AE-37		679	796	NO
+TCGA-A2-A0ER	Chemotherapy	Docetaxel		154	154	NO
+TCGA-A2-A0ER	Hormone Therapy	Arimidex		183	NA	YES
+TCGA-A2-A0ER	Chemotherapy	Cytoxan		98	140	NO
+TCGA-A2-A0ER	Chemotherapy	Adriamycin		98	140	NO
+TCGA-A2-A0ER	Immunotherapy	E-75		327	615	NO
+TCGA-A2-A0ES	Hormone Therapy	Anastrozole		203	458	NO
+TCGA-A2-A0ES	Chemotherapy	Docetaxel		77	141	NO
+TCGA-A2-A0ES	Chemotherapy	Cytoxan		77	141	NO
+TCGA-A2-A0ES	Hormone Therapy	Exemestane		459	NA	YES
+TCGA-A2-A0ET	Chemotherapy	Cytoxan		101	169	NO
+TCGA-A2-A0ET	Chemotherapy	Adriamycin		101	169	NO
+TCGA-A2-A0ET	Hormone Therapy	Anastrozole		282	NA	YES
+TCGA-A2-A0ET	Chemotherapy	Taxol		183	225	NO
+TCGA-A2-A0EW	Hormone Therapy	Arimidex		221	812	NO
+TCGA-A2-A0EW	Chemotherapy	Adriamycin		85	127	NO
+TCGA-A2-A0EW	Chemotherapy	Cytoxan		85	127	NO
+TCGA-A2-A0EW	Chemotherapy	Taxol		141	184	NO
+TCGA-A2-A0EW	Hormone Therapy	Letrozole	Complete Response	813	903	NO
+TCGA-A2-A0EW	Hormone Therapy	Arimidex	Complete Response	904	1001	NO
+TCGA-A2-A0EW	Hormone Therapy	Exemestane	Clinical Progressive Disease	1002	1365	NO
+TCGA-A2-A0EW	Ancillary	Zoledronic Acid	Clinical Progressive Disease	1158	1422	NO
+TCGA-A2-A0EW	Hormone Therapy	Fulvestrant	Clinical Progressive Disease	1366	1562	NO
+TCGA-A2-A0EW	Ancillary	Denosumab	Clinical Progressive Disease	1425	1718	NO
+TCGA-A2-A0EW	Hormone Therapy	Tamoxifen	Clinical Progressive Disease	1618	1722	NO
+TCGA-A2-A0EW	Chemotherapy	Doxorubicin Liposome	Clinical Progressive Disease	1696	1787	NO
+TCGA-A2-A0EX	Hormone Therapy	Lupron		172	222	NO
+TCGA-A2-A0EX	Hormone Therapy	Tamoxifen		165	NA	YES
+TCGA-A2-A0EX	Hormone Therapy	Zoladex		273	NA	YES
+TCGA-A2-A0EY	Chemotherapy	Adriamycin		105	154	NO
+TCGA-A2-A0EY	Chemotherapy	Docetaxel		183	245	NO
+TCGA-A2-A0EY	Targeted Molecular therapy	Lapatinib		183	NA	YES
+TCGA-A2-A0EY	Hormone Therapy	Arimidex		329	NA	YES
+TCGA-A2-A0EY	Targeted Molecular therapy	Herceptin		183	NA	YES
+TCGA-A2-A0EY	Chemotherapy	Cytoxan		105	154	NO
+TCGA-A2-A0ST	Chemotherapy	Adriamycin		44	85	NO
+TCGA-A2-A0ST	Chemotherapy	Taxol		85	155	NO
+TCGA-A2-A0ST	Hormone Therapy	Letrozole		251	286	NO
+TCGA-A2-A0ST	Chemotherapy	Cytoxan		44	85	NO
+TCGA-A2-A0ST	Hormone Therapy	Anastrozole		287	NA	
+TCGA-A2-A0ST	Hormone Therapy	Tamoxifen		495	NA	
+TCGA-A2-A0SU	Hormone Therapy	Arimidex		93	NA	YES
+TCGA-A2-A0SV	Other, specify in notesBisphosphonate therapy	Zometa		65	253	NO
+TCGA-A2-A0SV	Hormone Therapy	Arimidex		79	168	NO
+TCGA-A2-A0SV	Hormone Therapy	Fulvestrant		170	223	NO
+TCGA-A2-A0SV	Chemotherapy	Xeloda		304	NA	NO
+TCGA-A2-A0SW	Hormone Therapy	Arimidex		85	479	NO
+TCGA-A2-A0SW	Hormone Therapy	Tamoxifen		479	1365	NO
+TCGA-A2-A0SX	Chemotherapy	Adriamycin		62	132	NO
+TCGA-A2-A0SX	Chemotherapy	Cytoxan		62	132	NO
+TCGA-A2-A0SX	Chemotherapy	Carboplatin		1289	1359	NO
+TCGA-A2-A0SX	Chemotherapy	Gemcitabine		1289	1359	NO
+TCGA-A2-A0SX	Chemotherapy	Xeloda		1429	NA	YES
+TCGA-A2-A0SY	Chemotherapy	Taxotere		NA	NA	NO
+TCGA-A2-A0SY	Targeted Molecular therapy	Herceptin		NA	NA	NO
+TCGA-A2-A0SY	Hormone Therapy	Arimidex		256	NA	YES
+TCGA-A2-A0SY	Chemotherapy	Cytoxan		NA	NA	NO
+TCGA-A2-A0SY	Chemotherapy	Adriamycin		NA	NA	NO
+TCGA-A2-A0T0	Chemotherapy	Taxotere		50	234	NO
+TCGA-A2-A0T0	Chemotherapy	Cytoxan		50	234	NO
+TCGA-A2-A0T0	Chemotherapy	Adriamycin		50	234	NO
+TCGA-A2-A0T1	Targeted Molecular therapy	Herceptin		46	NA	YES
+TCGA-A2-A0T1	Chemotherapy	Carboplatin		46	187	NO
+TCGA-A2-A0T1	Chemotherapy	Taxotere		46	187	NO
+TCGA-A2-A0T2	Chemotherapy	Xeloda		105	225	NO
+TCGA-A2-A0T3	Chemotherapy	Adriamycin		70	177	NO
+TCGA-A2-A0T3	Hormone Therapy	Tamoxifen		NA	NA	YES
+TCGA-A2-A0T3	Chemotherapy	Cytoxan		70	177	NO
+TCGA-A2-A0T3	Chemotherapy	Taxotere		70	177	NO
+TCGA-A2-A0T4	Hormone Therapy	Femara		85	NA	YES
+TCGA-A2-A0T5	Chemotherapy	Taxotere		NA	166	NO
+TCGA-A2-A0T5	Chemotherapy	Cytoxan		NA	166	NO
+TCGA-A2-A0T5	Hormone Therapy	Tamoxifen		NA	NA	NO
+TCGA-A2-A0T6	Hormone Therapy	Tamoxifen		232	NA	YES
+TCGA-A2-A0T6	Chemotherapy	Adriamycin		95	204	NO
+TCGA-A2-A0T6	Chemotherapy	Taxotere		95	204	NO
+TCGA-A2-A0T6	Chemotherapy	Cytoxan		95	204	NO
+TCGA-A2-A0T7	Chemotherapy	Adriamycin		117	145	NO
+TCGA-A2-A0T7	Chemotherapy	Taxol		159	243	NO
+TCGA-A2-A0T7	Hormone Therapy	Tamoxifen		365	NA	YES
+TCGA-A2-A0T7	Chemotherapy	Cytoxan		117	145	NO
+TCGA-A2-A0YC	Hormone Therapy	Arimidex		103	NA	YES
+TCGA-A2-A0YD	Chemotherapy	Cytoxan		63	136	NO
+TCGA-A2-A0YD	Chemotherapy	Adriamycin		63	136	NO
+TCGA-A2-A0YD	Hormone Therapy	Arimidex		143	NA	YES
+TCGA-A2-A0YE	Chemotherapy	Taxotere		NA	NA	NO
+TCGA-A2-A0YE	Chemotherapy	Adriamycin		NA	NA	NO
+TCGA-A2-A0YE	Chemotherapy	Cytoxan		NA	NA	NO
+TCGA-A2-A0YF	Hormone Therapy	Arimidex		NA	NA	YES
+TCGA-A2-A0YG	Chemotherapy	Taxotere		173	173	NO
+TCGA-A2-A0YG	Chemotherapy	Taxol		152	232	NO
+TCGA-A2-A0YG	Chemotherapy	Cytoxan		68	131	NO
+TCGA-A2-A0YG	Chemotherapy	Adriamycin		68	131	NO
+TCGA-A2-A0YG	Hormone Therapy	Arimidex		NA	NA	YES
+TCGA-A2-A0YG	Targeted Molecular therapy	Herceptin		152	NA	YES
+TCGA-A2-A0YH	Chemotherapy	Taxotere		74	179	NO
+TCGA-A2-A0YH	Chemotherapy	Cytoxan		74	179	NO
+TCGA-A2-A0YH	Hormone Therapy	Arimidex		NA	NA	YES
+TCGA-A2-A0YH	Chemotherapy	Adriamycin		60	60	NO
+TCGA-A2-A0YI	Hormone Therapy	Femara		NA	NA	NO
+TCGA-A2-A0YJ	Chemotherapy	Cytoxan		46	150	NO
+TCGA-A2-A0YJ	Chemotherapy	Taxotere		46	150	NO
+TCGA-A2-A0YK	Hormone Therapy	Arimidex		NA	NA	YES
+TCGA-A2-A0YK	Chemotherapy	Cytoxan		78	141	NO
+TCGA-A2-A0YK	Chemotherapy	Taxotere		78	141	NO
+TCGA-A2-A0YL	Chemotherapy	Cytoxan		50	154	NO
+TCGA-A2-A0YL	Chemotherapy	Taxotere		50	154	NO
+TCGA-A2-A0YL	Chemotherapy	Adriamycin		50	154	NO
+TCGA-A2-A0YL	Hormone Therapy	Arimidex		177	NA	YES
+TCGA-A2-A0YT	Hormone Therapy	Arimidex		286	723	NO
+TCGA-A2-A1FV	Chemotherapy	Cyclophosphamide		70	133	NO
+TCGA-A2-A1FV	Hormone Therapy	Arimidex		141	NA	YES
+TCGA-A2-A1FV	Chemotherapy	Docetaxel		70	133	NO
+TCGA-A2-A1FW	Chemotherapy	Cytoxan		65	154	NO
+TCGA-A2-A1FW	Chemotherapy	Adriamycin		65	154	NO
+TCGA-A2-A1FW	Chemotherapy	Taxotere		175	245	NO
+TCGA-A2-A1FW	Hormone Therapy	Femara		364	NA	YES
+TCGA-A2-A1FX	Chemotherapy	Taxotere		74	155	NO
+TCGA-A2-A1FX	Hormone Therapy	Arimidex		198	NA	YES
+TCGA-A2-A1FX	Chemotherapy	Cytoxan		74	155	NO
+TCGA-A2-A1FZ	Hormone Therapy	Arimidex		NA	NA	YES
+TCGA-A2-A1G0	Chemotherapy	Adriamycin		72	177	NO
+TCGA-A2-A1G0	Chemotherapy	Taxotere		52	177	NO
+TCGA-A2-A1G0	Chemotherapy	Cytoxan		72	177	NO
+TCGA-A2-A1G0	Hormone Therapy	Tamoxifen		NA	NA	YES
+TCGA-A2-A1G4	Chemotherapy	Adriamycin		80	185	NO
+TCGA-A2-A1G4	Hormone Therapy	Femara		207	NA	YES
+TCGA-A2-A1G4	Chemotherapy	Cytoxan		80	185	NO
+TCGA-A2-A1G4	Chemotherapy	Taxotere		80	185	NO
+TCGA-A2-A1G6	Chemotherapy	Docetaxel		132	172	NO
+TCGA-A2-A1G6	Chemotherapy	Adriamycin		69	119	NO
+TCGA-A2-A1G6	Chemotherapy	Cytoxan		69	119	NO
+TCGA-A2-A259	Hormone Therapy	Arimidex		96	NA	YES
+TCGA-A2-A25A	Chemotherapy	Cytoxan		NA	NA	
+TCGA-A2-A25A	Hormone Therapy	Femara		NA	NA	
+TCGA-A2-A25A	Chemotherapy	Adriamycin		NA	NA	
+TCGA-A2-A25A	Chemotherapy	Taxol		NA	NA	
+TCGA-A2-A25B	Chemotherapy	Taxotere		64	148	NO
+TCGA-A2-A25B	Chemotherapy	Cytoxan		64	148	NO
+TCGA-A2-A25B	Chemotherapy	Adriamycin		64	148	NO
+TCGA-A2-A25B	Hormone Therapy	Tamoxifen		293	NA	YES
+TCGA-A2-A25C	Chemotherapy	Taxotere		108	193	NO
+TCGA-A2-A25C	Chemotherapy	Adriamycin		108	193	NO
+TCGA-A2-A25C	Chemotherapy	Cytoxan		108	193	NO
+TCGA-A2-A25C	Hormone Therapy	Tamoxifen		292	325	NO
+TCGA-A2-A25C	Hormone Therapy	Aromasin		476	NA	YES
+TCGA-A2-A25C	Hormone Therapy	Femara		325	475	NO
+TCGA-A2-A25D	Hormone Therapy	Tamoxifen		0	NA	YES
+TCGA-A2-A25D	Hormone Therapy	Exemestane		0	0	NO
+TCGA-A2-A25D	Hormone Therapy	Arimidex		0	0	NO
+TCGA-A2-A25E	Chemotherapy	Cytoxan		67	136	NO
+TCGA-A2-A25E	Chemotherapy	Adriamycin		67	136	NO
+TCGA-A2-A25E	Immunotherapy	Herceptin		250	601	NO
+TCGA-A2-A25E	Chemotherapy	Taxol		158	242	NO
+TCGA-A2-A25E	Hormone Therapy	Goserelin		2380	NA	YES
+TCGA-A2-A25E	Hormone Therapy	Tamoxifen		334	2155	NO
+TCGA-A2-A25E	Hormone Therapy	Anastrozole		3055	NA	YES
+TCGA-A2-A25F	Chemotherapy	Taxotere		64	212	NO
+TCGA-A2-A25F	Chemotherapy	Cytoxan		64	212	NO
+TCGA-A2-A3KC	Chemotherapy	Adriamycin		77	182	NO
+TCGA-A2-A3KC	Chemotherapy	Cytoxan		77	182	NO
+TCGA-A2-A3KC	Hormone Therapy	Tamoxifen		203	1101	NO
+TCGA-A2-A3KC	Chemotherapy	Taxotere		77	182	NO
+TCGA-A2-A3KC	Hormone Therapy	Arimidex		1102	NA	YES
+TCGA-A2-A3KD	Chemotherapy	Taxotere		127	190	NO
+TCGA-A2-A3KD	Chemotherapy	Cytoxan		127	190	NO
+TCGA-A2-A3KD	Hormone Therapy	Tamoxifen		282	NA	YES
+TCGA-A2-A3XS	Chemotherapy	Cytoxan	Complete Response	112	154	NO
+TCGA-A2-A3XS	Chemotherapy	Adriamycin	Complete Response	112	154	NO
+TCGA-A2-A3XS	Chemotherapy	Paclitaxel	Complete Response	167	210	NO
+TCGA-A2-A3XS	Hormone Therapy	Tamoxifen	Clinical Progressive Disease	281	682	NO
+TCGA-A2-A3XS	Chemotherapy	Docetaxel	Clinical Progressive Disease	695	806	NO
+TCGA-A2-A3XS	Ancillary	Avastin	Clinical Progressive Disease	895	958	NO
+TCGA-A2-A3XS	Chemotherapy	Xeloda	Clinical Progressive Disease	874	980	NO
+TCGA-A2-A3XS	Chemotherapy	Navelbine	Clinical Progressive Disease	986	1022	NO
+TCGA-A2-A3XT	Chemotherapy	Cyclophosphamide	Partial Response	35	83	NO
+TCGA-A2-A3XT	Chemotherapy	Doxorubicin	Partial Response	35	83	NO
+TCGA-A2-A3XT	Chemotherapy	Docetaxel	Partial Response	97	161	NO
+TCGA-A2-A3XU	Chemotherapy	Adriamycin		NA	155	NO
+TCGA-A2-A3XU	Chemotherapy	Cytoxan		NA	155	NO
+TCGA-A2-A3XU	Chemotherapy	Taxotere		NA	155	NO
+TCGA-A2-A3XU	Hormone Therapy	Arimidex	Clinical Progressive Disease	596	718	NO
+TCGA-A2-A3XU	Chemotherapy	Xeloda	Clinical Progressive Disease	657	902	NO
+TCGA-A2-A3XV	Chemotherapy	Carboplatin	Complete Response	62	175	NO
+TCGA-A2-A3XV	Chemotherapy	Docetaxel	Complete Response	62	175	NO
+TCGA-A2-A3XV	Targeted Molecular therapy	Trastuzumab	Complete Response	62	428	NO
+TCGA-A2-A3XV	Hormone Therapy	Tamoxifen		429	NA	YES
+TCGA-A2-A3XW	Chemotherapy	Adriamyicin	Complete Response	69	139	NO
+TCGA-A2-A3XW	Chemotherapy	Cyclophosphamide	Complete Response	69	139	NO
+TCGA-A2-A3XW	Chemotherapy	Taxol	Complete Response	153	223	NO
+TCGA-A2-A3XW	Hormone Therapy	Tamoxifen		341	NA	YES
+TCGA-A2-A3XX	Chemotherapy	Cyclophosphamide	Complete Response	80	129	NO
+TCGA-A2-A3XX	Chemotherapy	Adriamycin	Complete Response	80	129	NO
+TCGA-A2-A3XX	Chemotherapy	Paclitaxel	Complete Response	143	185	NO
+TCGA-A2-A3XY	Chemotherapy	Adriamycin	Complete Response	86	149	NO
+TCGA-A2-A3XY	Chemotherapy	Cyclophosphamide	Complete Response	86	149	NO
+TCGA-A2-A3XY	Chemotherapy	Adriamycin	Complete Response	170	170	NO
+TCGA-A2-A3XY	Chemotherapy	Cyclophosphamide	Complete Response	170	170	NO
+TCGA-A2-A3XY	Chemotherapy	Paclitaxel	Complete Response	184	254	NO
+TCGA-A2-A3XY	Chemotherapy	Carboplatin	Clinical Progressive Disease	816	913	NO
+TCGA-A2-A3XY	Chemotherapy	Gemcitabine	Clinical Progressive Disease	816	1019	NO
+TCGA-A2-A3XY	Chemotherapy	Docetaxel	Clinical Progressive Disease	1040	1061	NO
+TCGA-A2-A3XY	Ancillary	Denosumab	Clinical Progressive Disease	816	1058	NO
+TCGA-A2-A3XZ	Chemotherapy	Carboplatin	Complete Response	97	202	NO
+TCGA-A2-A3XZ	Chemotherapy	Docetaxel	Complete Response	97	202	NO
+TCGA-A2-A3XZ	Targeted Molecular therapy	Trastuzumab	Complete Response	97	423	NO
+TCGA-A2-A3Y0	Chemotherapy	Adriamycin	Complete Response	74	137	NO
+TCGA-A2-A3Y0	Chemotherapy	Cytoxan	Complete Response	74	137	NO
+TCGA-A2-A3Y0	Chemotherapy	Docetaxel	Complete Response	165	247	NO
+TCGA-A2-A3Y0	Hormone Therapy	Arimidex	Complete Response	NA	NA	NO
+TCGA-A2-A3Y0	Hormone Therapy	Femara	Complete Response	NA	NA	NO
+TCGA-A2-A3Y0	Hormone Therapy	Tamoxifen		NA	NA	YES
+TCGA-A2-A4RY	Chemotherapy	Taxotere	Complete Response	58	164	NO
+TCGA-A2-A4RY	Chemotherapy	Adriamycin	Complete Response	58	164	NO
+TCGA-A2-A4RY	Chemotherapy	Cytoxan	Complete Response	58	164	NO
+TCGA-A2-A4RY	Hormone Therapy	Tamoxifen		203	NA	YES
+TCGA-A2-A4S2	Chemotherapy	Adriamycin	Complete Response	47	96	NO
+TCGA-A2-A4S2	Chemotherapy	Cytoxan	Complete Response	47	96	NO
+TCGA-A2-A4S2	Chemotherapy	Paclitaxel	Complete Response	110	173	NO
+TCGA-A2-A4S2	Hormone Therapy	Arimidex		261	NA	YES
+TCGA-A7-A0CD	Hormone Therapy	Arimidex		112	NA	YES
+TCGA-A7-A0CE	Chemotherapy	Adriamycin		63	105	NO
+TCGA-A7-A0CE	Chemotherapy	Taxol		119	161	NO
+TCGA-A7-A0CE	Chemotherapy	Cytoxan		63	105	NO
+TCGA-A7-A0CH	Hormone Therapy	Arimidex		107	NA	YES
+TCGA-A7-A0CJ	Chemotherapy	Cytoxan		61	124	NO
+TCGA-A7-A0CJ	Chemotherapy	Taxotere		61	124	NO
+TCGA-A7-A0CJ	Hormone Therapy	Arimidex		203	NA	YES
+TCGA-A7-A0D9	Chemotherapy	Taxotere		62	125	NO
+TCGA-A7-A0D9	Hormone Therapy	Tamoxifen		157	NA	YES
+TCGA-A7-A0D9	Chemotherapy	Cytoxan		62	125	NO
+TCGA-A7-A0DA	Chemotherapy	Adriamycin		65	107	NO
+TCGA-A7-A0DA	Chemotherapy	Cytoxan		65	107	NO
+TCGA-A7-A0DA	Chemotherapy	Taxol		122	199	NO
+TCGA-A7-A0DB	Hormone Therapy	Arimidex		141	NA	YES
+TCGA-A7-A0DC	Chemotherapy	Methotrexate		77	231	NO
+TCGA-A7-A0DC	Chemotherapy	Fluorouracil		77	231	NO
+TCGA-A7-A0DC	Chemotherapy	Cyclophosphamide		77	231	NO
+TCGA-A7-A0DC	Hormone Therapy	Arimidex		264	NA	YES
+TCGA-A7-A0DC	Hormone Therapy	Arimidex		264	509	NO
+TCGA-A7-A0DC	Hormone Therapy	Tamoxifen		510	NA	NO
+TCGA-A7-A13D	Chemotherapy	Cytoxan		71	155	NO
+TCGA-A7-A13D	Chemotherapy	Taxotere		71	155	NO
+TCGA-A7-A13E	Hormone Therapy	Arimidex		211	NA	YES
+TCGA-A7-A13E	Targeted Molecular therapy	Bevacizumab		67	193	NO
+TCGA-A7-A13E	Chemotherapy	Doxorubicin		67	108	NO
+TCGA-A7-A13E	Chemotherapy	Cyclophosphamide		67	108	NO
+TCGA-A7-A13E	Chemotherapy	Paclitaxel		123	207	NO
+TCGA-A7-A13E	Chemotherapy	Taxol		574	574	NO
+TCGA-A7-A13E	Hormone Therapy	Anastrozole		211	589	NO
+TCGA-A7-A13F	Chemotherapy	Docetaxel		105	175	NO
+TCGA-A7-A13F	Chemotherapy	Doxorubicin		49	91	NO
+TCGA-A7-A13F	Chemotherapy	Cyclophosphamide		49	91	NO
+TCGA-A7-A13F	Hormone Therapy	Tamoxifen		179	210	NO
+TCGA-A7-A13F	Hormone Therapy	Arimidex		358	NA	YES
+TCGA-A7-A13G	Hormone Therapy	Arimidex		33	NA	YES
+TCGA-A7-A13H	Hormone Therapy	Anastrozole		78	NA	YES
+TCGA-A7-A26E	Hormone Therapy	Arimidex		247	NA	YES
+TCGA-A7-A26E	Chemotherapy	Cytoxan		101	164	NO
+TCGA-A7-A26E	Chemotherapy	Taxotere		101	164	NO
+TCGA-A7-A26F	Chemotherapy	Taxotere		77	140	NO
+TCGA-A7-A26F	Chemotherapy	Cytoxan		77	140	NO
+TCGA-A7-A26G	Chemotherapy	Taxotere		89	152	NO
+TCGA-A7-A26G	Chemotherapy	Cytoxan		89	152	NO
+TCGA-A7-A26H	Hormone Therapy	Anastrozole		44	296	NO
+TCGA-A7-A26H	Chemotherapy	Taxol		311	486	NO
+TCGA-A7-A26I	Chemotherapy	Cytoxan		60	164	NO
+TCGA-A7-A26I	Chemotherapy	Taxotere		60	164	NO
+TCGA-A7-A26J	Hormone Therapy	Tamoxifen		92	NA	YES
+TCGA-A7-A2KD	Chemotherapy	Cytoxan		57	97	NO
+TCGA-A7-A2KD	Chemotherapy	Taxotere		57	161	NO
+TCGA-A7-A2KD	Chemotherapy	Carboplatin		118	161	NO
+TCGA-A7-A2KD	Targeted Molecular therapy	Herceptin	Complete Response	57	435	NO
+TCGA-A7-A3IY	Hormone Therapy	Anastrozole		151	NA	YES
+TCGA-A7-A3IZ	Chemotherapy	Cytoxan		73	134	NO
+TCGA-A7-A3IZ	Chemotherapy	Taxotere		73	134	NO
+TCGA-A7-A3IZ	Hormone Therapy	Anastrozole		124	NA	YES
+TCGA-A7-A3J0	Hormone Therapy	Anastrazole		72	NA	YES
+TCGA-A7-A3J1	Hormone Therapy	Anastrazole		137	175	NO
+TCGA-A7-A3J1	Hormone Therapy	Tamoxifen		189	251	NO
+TCGA-A7-A3J1	Hormone Therapy	Aromasin		300	NA	YES
+TCGA-A7-A3RF	Hormone Therapy	Anastrozole	Clinical Progressive Disease	137	NA	YES
+TCGA-A7-A425	Chemotherapy	Adriamycin		127	197	NO
+TCGA-A7-A425	Chemotherapy	Cytoxan		127	197	NO
+TCGA-A7-A425	Chemotherapy	Taxol		211	288	NO
+TCGA-A7-A425	Hormone Therapy	Arimidex		378	NA	YES
+TCGA-A7-A426	Chemotherapy	Adriamycin		55	97	NO
+TCGA-A7-A426	Chemotherapy	Cytoxan		55	97	NO
+TCGA-A7-A426	Chemotherapy	Taxol		111	202	NO
+TCGA-A7-A426	Hormone Therapy	Tamoxifen		258	NA	YES
+TCGA-A7-A4SA	Chemotherapy	Doxorubicin	Complete Response	73	115	NO
+TCGA-A7-A4SA	Chemotherapy	Cyclophosphamide	Complete Response	73	115	NO
+TCGA-A7-A4SA	Chemotherapy	Paclitaxel	Complete Response	136	213	NO
+TCGA-A7-A4SA	Hormone Therapy	Tamoxifen		217	NA	YES
+TCGA-A7-A4SB	Chemotherapy	Docetaxel	Complete Response	61	124	NO
+TCGA-A7-A4SB	Chemotherapy	Cyclophosphamide	Complete Response	61	124	NO
+TCGA-A7-A4SB	Hormone Therapy	Anastrozole		218	NA	YES
+TCGA-A7-A4SC	Hormone Therapy	TAMOXIFEN		61	139	NO
+TCGA-A7-A4SC	Hormone Therapy	TAMOXIFEN		169	NA	YES
+TCGA-A7-A4SD	Chemotherapy	Taxotere	Complete Response	64	134	NO
+TCGA-A7-A4SD	Chemotherapy	Cytoxan	Complete Response	64	134	NO
+TCGA-A7-A4SE	Chemotherapy	Adriamycin	Complete Response	49	91	NO
+TCGA-A7-A4SE	Chemotherapy	Cytoxan	Complete Response	49	91	NO
+TCGA-A7-A4SE	Chemotherapy	Taxol	Complete Response	105	154	NO
+TCGA-A7-A4SF	Chemotherapy	Carboplatin	Complete Response	89	202	NO
+TCGA-A7-A4SF	Chemotherapy	Docetaxel	Complete Response	89	202	NO
+TCGA-A7-A4SF	Targeted Molecular therapy	Trastuzumab	Complete Response	89	453	NO
+TCGA-A7-A4SF	Hormone Therapy	Anastrozole		306	NA	YES
+TCGA-A7-A56D	Hormone Therapy	Arimidex		157	NA	YES
+TCGA-A7-A5ZV	Chemotherapy	Doxorubicin	Complete Response	95	137	NO
+TCGA-A7-A5ZV	Chemotherapy	Cyclophosphamide	Complete Response	95	137	NO
+TCGA-A7-A5ZV	Chemotherapy	Paclitaxel	Complete Response	151	193	NO
+TCGA-A7-A5ZW	Chemotherapy	Cyclophosphamide	Complete Response	71	176	NO
+TCGA-A7-A5ZW	Chemotherapy	Taxotere	Complete Response	71	176	NO
+TCGA-A7-A5ZW	Hormone Therapy	Tamoxifen		269	NA	YES
+TCGA-A7-A5ZX	Chemotherapy	Doxorubicin	Complete Response	76	118	NO
+TCGA-A7-A5ZX	Chemotherapy	Cyclophosphamide	Complete Response	76	118	NO
+TCGA-A7-A5ZX	Chemotherapy	Paclitaxel	Complete Response	132	174	NO
+TCGA-A7-A5ZX	Hormone Therapy	Tamoxifen	Complete Response	268	NA	YES
+TCGA-A7-A6VV	Chemotherapy	Cyclophosphamide	Complete Response	160	266	NO
+TCGA-A7-A6VV	Chemotherapy	Taxotere	Complete Response	160	266	NO
+TCGA-A7-A6VW	Chemotherapy	Taxol	Complete Response	148	257	NO
+TCGA-A7-A6VW	Chemotherapy	Doxorubicin	Complete Response	84	134	NO
+TCGA-A7-A6VW	Chemotherapy	Cyclophosphamide	Complete Response	84	134	NO
+TCGA-A7-A6VX	Chemotherapy	Docetaxel	Complete Response	79	142	NO
+TCGA-A7-A6VX	Chemotherapy	Cyclophosphamide	Complete Response	79	142	NO
+TCGA-A7-A6VX	Hormone Therapy	Anastrazole		230	NA	YES
+TCGA-A7-A6VY	Chemotherapy	Cyclophosphamide	Complete Response	68	111	NO
+TCGA-A7-A6VY	Chemotherapy	Doxorubicin	Complete Response	68	111	NO
+TCGA-A7-A6VY	Chemotherapy	Paclitaxel	Complete Response	126	167	NO
+TCGA-A8-A06O	Hormone Therapy	Letrozole		62	NA	YES
+TCGA-A8-A06P	Chemotherapy			NA	NA	
+TCGA-A8-A06P	Hormone Therapy	Tamoxifen		NA	NA	
+TCGA-A8-A06R	Chemotherapy	5-Fluorouracil	Complete Response	59	151	NO
+TCGA-A8-A06R	Chemotherapy	Doxorubicin	Complete Response	59	151	NO
+TCGA-A8-A06R	Chemotherapy	Cyclophosphamide	Complete Response	59	151	NO
+TCGA-A8-A06R	Hormone Therapy	Tamoxifen	Complete Response	243	334	NO
+TCGA-A8-A06T	Hormone Therapy	Anastrozole		0	NA	YES
+TCGA-A8-A06Y	Hormone Therapy	Anastrozole		92	NA	YES
+TCGA-A8-A075	Chemotherapy	Epirubicoin	Complete Response	31	122	NO
+TCGA-A8-A075	Chemotherapy	Cyclophosphamide	Complete Response	31	122	NO
+TCGA-A8-A075	Chemotherapy	Docetaxel	Complete Response	122	214	NO
+TCGA-A8-A075	Hormone Therapy	Tamoxifen		275	NA	YES
+TCGA-A8-A075	Ancillary	Zoledronic acid		214	NA	YES
+TCGA-A8-A076	Hormone Therapy	Anastrozole		59	NA	YES
+TCGA-A8-A079	Chemotherapy	5-Fluorouracil		30	183	NO
+TCGA-A8-A079	Chemotherapy	Epirubicin		30	183	NO
+TCGA-A8-A079	Chemotherapy	Cyclophosphamide		30	183	NO
+TCGA-A8-A07C	Chemotherapy	5-Fluorouracil	Complete Response	0	62	NO
+TCGA-A8-A07C	Chemotherapy	Epirubicin	Complete Response	0	62	NO
+TCGA-A8-A07C	Chemotherapy	Cyclophosphamide	Complete Response	0	62	NO
+TCGA-A8-A07C	Chemotherapy	Docetaxel	Complete Response	92	123	NO
+TCGA-A8-A07E	Hormone Therapy	Letrozole		0	NA	YES
+TCGA-A8-A07F	Chemotherapy	5-Fluorouracil	Complete Response	NA	31	NO
+TCGA-A8-A07F	Chemotherapy	Epirubicin	Complete Response	NA	31	NO
+TCGA-A8-A07F	Chemotherapy	Cyclophosphamide	Complete Response	NA	31	NO
+TCGA-A8-A07F	Hormone Therapy	Tamoxifen		365	NA	YES
+TCGA-A8-A07G	Chemotherapy	5-Fluorouracil	Complete Response	59	181	NO
+TCGA-A8-A07G	Chemotherapy	Methotrexate	Complete Response	59	181	NO
+TCGA-A8-A07G	Chemotherapy	Cyclophosphamide	Complete Response	59	181	NO
+TCGA-A8-A07G	Hormone Therapy	Letrozole		243	NA	YES
+TCGA-A8-A07I	Chemotherapy	5-Fluorouracil	Complete Response	61	122	NO
+TCGA-A8-A07I	Chemotherapy	Epirubicin	Complete Response	61	122	NO
+TCGA-A8-A07I	Chemotherapy	Cyclophosphamide	Complete Response	61	122	NO
+TCGA-A8-A07I	Chemotherapy	Docetaxel	Complete Response	122	183	NO
+TCGA-A8-A07I	Hormone Therapy	Exemestane	Clinical Progressive Disease	183	NA	YES
+TCGA-A8-A07I	Targeted Molecular therapy	Trastuzumab	Complete Response	183	334	NO
+TCGA-A8-A07J	Chemotherapy	5-Fluorouracil	Complete Response	31	92	NO
+TCGA-A8-A07J	Chemotherapy	Epirubicin	Complete Response	31	92	NO
+TCGA-A8-A07J	Chemotherapy	Cyclophosphamide	Complete Response	31	92	NO
+TCGA-A8-A07J	Chemotherapy	Docetaxel	Complete Response	92	153	NO
+TCGA-A8-A07J	Hormone Therapy	Tamoxifen		184	NA	YES
+TCGA-A8-A07L	Chemotherapy		Complete Response	31	122	NO
+TCGA-A8-A07L	Hormone Therapy	Anastrozole		184	NA	YES
+TCGA-A8-A07O	Chemotherapy		Complete Response	61	151	NO
+TCGA-A8-A07P	Chemotherapy	5-Fluorouracil		61	181	NO
+TCGA-A8-A07P	Chemotherapy	Doxorubicin		61	181	NO
+TCGA-A8-A07P	Chemotherapy	Cyclophosphamide		61	181	NO
+TCGA-A8-A07P	Chemotherapy	Docetaxel		61	181	NO
+TCGA-A8-A07P	Hormone Therapy	Anastrozole		273	NA	YES
+TCGA-A8-A07R	Ancillary	Zoledronic acid		181	NA	YES
+TCGA-A8-A07S	Hormone Therapy	Tamoxifen		151	NA	YES
+TCGA-A8-A07U	Chemotherapy	5-Fluorouracil		30	30	NO
+TCGA-A8-A07U	Chemotherapy	Epirubicin		30	30	NO
+TCGA-A8-A07U	Chemotherapy	Cyclophosphamide		30	30	NO
+TCGA-A8-A07U	Chemotherapy	Docetaxel		NA	122	NO
+TCGA-A8-A07W	Hormone Therapy	Exemestane		212	NA	YES
+TCGA-A8-A07W	Chemotherapy			NA	NA	
+TCGA-A8-A07Z	Hormone Therapy	Exemestane		NA	NA	YES
+TCGA-A8-A082	Chemotherapy	5-Fluorouracil	Complete Response	31	122	NO
+TCGA-A8-A082	Chemotherapy	Epirubicin	Complete Response	31	122	NO
+TCGA-A8-A082	Chemotherapy	Cyclophosphamide	Complete Response	31	122	NO
+TCGA-A8-A082	Chemotherapy	Docetaxel	Complete Response	92	92	NO
+TCGA-A8-A082	Hormone Therapy	Letrozole		184	NA	YES
+TCGA-A8-A082	Hormone Therapy	Exemestane	Complete Response	852	914	NO
+TCGA-A8-A085	Hormone Therapy	Tamoxifen		394	NA	YES
+TCGA-A8-A086	Chemotherapy	Docetaxel	Complete Response	0	92	NO
+TCGA-A8-A086	Chemotherapy	Cyclophosphamide	Complete Response	0	92	NO
+TCGA-A8-A08B	Chemotherapy	5-Fluorouracil	Complete Response	31	122	NO
+TCGA-A8-A08B	Chemotherapy	Epirubicin	Complete Response	31	122	NO
+TCGA-A8-A08B	Chemotherapy	Cyclophosphamide	Complete Response	31	122	NO
+TCGA-A8-A08B	Hormone Therapy	Tamoxifen	Complete Response	214	883	NO
+TCGA-A8-A08B	Targeted Molecular therapy	Trastuzumab	Complete Response	214	579	NO
+TCGA-A8-A08B	Hormone Therapy	Letrozole		914	NA	YES
+TCGA-A8-A08C	Chemotherapy	5-Fluorouracil	Complete Response	31	151	NO
+TCGA-A8-A08C	Chemotherapy	Epirubicin	Complete Response	31	151	NO
+TCGA-A8-A08C	Chemotherapy	Cyclophosphamide	Complete Response	31	151	NO
+TCGA-A8-A08C	Hormone Therapy	Tamoxifen		243	NA	YES
+TCGA-A8-A08F	Chemotherapy	5-Fluorouracil	Complete Response	31	92	NO
+TCGA-A8-A08F	Chemotherapy	Epirubicin	Complete Response	31	92	NO
+TCGA-A8-A08F	Chemotherapy	Cyclophosphamide	Complete Response	31	92	NO
+TCGA-A8-A08F	Chemotherapy	Docetaxel	Complete Response	92	123	NO
+TCGA-A8-A08F	Hormone Therapy	Letrozole		243	NA	YES
+TCGA-A8-A08G	Chemotherapy	5-Fluorouracil	Complete Response	28	89	NO
+TCGA-A8-A08G	Chemotherapy	Epirubicin	Complete Response	28	89	NO
+TCGA-A8-A08G	Chemotherapy	Cyclophosphamide	Complete Response	28	89	NO
+TCGA-A8-A08G	Chemotherapy	Docetaxel	Complete Response	89	150	NO
+TCGA-A8-A08G	Hormone Therapy	Exemestane		181	NA	YES
+TCGA-A8-A08I	Chemotherapy	5-Fluorouracil	Complete Response	31	153	NO
+TCGA-A8-A08I	Chemotherapy	Epirubicin	Complete Response	31	153	NO
+TCGA-A8-A08I	Chemotherapy	Cyclophosphamide	Complete Response	31	153	NO
+TCGA-A8-A08I	Hormone Therapy	Letrozole		212	NA	YES
+TCGA-A8-A08O	Chemotherapy	Docetaxel	Clinical Progressive Disease	31	121	NO
+TCGA-A8-A08O	Chemotherapy	Vinorelbine	Clinical Progressive Disease	790	790	NO
+TCGA-A8-A08O	Hormone Therapy	Anastrozole	Clinical Progressive Disease	366	397	NO
+TCGA-A8-A08O	Hormone Therapy	Tamoxifen		943	NA	YES
+TCGA-A8-A08O	Targeted Molecular therapy	Bevacizumab	Clinical Progressive Disease	60	335	NO
+TCGA-A8-A08O	Ancillary	Ibandronate		60	NA	YES
+TCGA-A8-A08P	Chemotherapy	5-Fluorouracil	Complete Response	60	182	NO
+TCGA-A8-A08P	Chemotherapy	Doxorubicin	Complete Response	60	182	NO
+TCGA-A8-A08P	Chemotherapy	Cyclophosphamide	Complete Response	60	182	NO
+TCGA-A8-A08P	Chemotherapy	Docetaxel	Complete Response	60	182	NO
+TCGA-A8-A08P	Hormone Therapy	Exemestane		244	NA	YES
+TCGA-A8-A08P	Targeted Molecular therapy	Trastuzumab	Complete Response	213	578	NO
+TCGA-A8-A08S	Hormone Therapy	Anastrozole		62	NA	YES
+TCGA-A8-A08X	Chemotherapy	Doxorubicin	Complete Response	0	61	NO
+TCGA-A8-A08X	Chemotherapy	Cyclophosphamide	Complete Response	0	61	NO
+TCGA-A8-A08X	Chemotherapy	Paclitaxel	Complete Response	91	153	NO
+TCGA-A8-A08X	Targeted Molecular therapy	Trastuzumab	Complete Response	182	1249	NO
+TCGA-A8-A08X	Chemotherapy	Vinorelbine	Complete Response	669	884	NO
+TCGA-A8-A08X	Hormone Therapy	Tamoxifen		366	NA	YES
+TCGA-A8-A091	Chemotherapy	5-Fluorouracil		0	123	NO
+TCGA-A8-A091	Chemotherapy	Epirubicin		0	123	NO
+TCGA-A8-A091	Chemotherapy	Cyclophosphamide		0	123	NO
+TCGA-A8-A091	Hormone Therapy	Tamoxifen	Stable Disease	184	639	NO
+TCGA-A8-A091	Hormone Therapy	Letrozole		639	NA	YES
+TCGA-A8-A091	Ancillary	Zoledronic acid		700	NA	YES
+TCGA-A8-A091	Ancillary	Pamidronate	Stable Disease	580	669	NO
+TCGA-A8-A092	Chemotherapy	Paclitaxel	Complete Response	30	91	NO
+TCGA-A8-A092	Chemotherapy	Epirubicin	Complete Response	30	153	NO
+TCGA-A8-A092	Chemotherapy	Cyclophosphamide	Complete Response	30	153	NO
+TCGA-A8-A092	Hormone Therapy	Tamoxifen		181	NA	YES
+TCGA-A8-A093	Hormone Therapy	Tamoxifen		28	NA	YES
+TCGA-A8-A095	Chemotherapy	5-Fluorouracil	Complete Response	0	120	NO
+TCGA-A8-A095	Chemotherapy	Doxorubicin	Complete Response	0	120	NO
+TCGA-A8-A095	Chemotherapy	Cyclophosphamide	Complete Response	0	120	NO
+TCGA-A8-A095	Hormone Therapy	Tamoxifen		181	NA	YES
+TCGA-A8-A097	Chemotherapy	Docetaxel	Complete Response	61	153	NO
+TCGA-A8-A097	Chemotherapy	Cyclophosphamide	Complete Response	61	153	NO
+TCGA-A8-A097	Hormone Therapy	Tamoxifen		31	NA	YES
+TCGA-A8-A099	Hormone Therapy	Exemestane		61	NA	YES
+TCGA-A8-A09A	Chemotherapy	5-Fluorouracil		NA	31	NO
+TCGA-A8-A09A	Chemotherapy	Epirubicin		NA	31	NO
+TCGA-A8-A09A	Chemotherapy	Cyclophosphamide		NA	31	NO
+TCGA-A8-A09A	Chemotherapy	Docetaxel		NA	182	NO
+TCGA-A8-A09A	Hormone Therapy	Tamoxifen		243	NA	YES
+TCGA-A8-A09B	Chemotherapy	5-Fluorouracil		30	30	NO
+TCGA-A8-A09B	Chemotherapy	Epirubicin		30	30	NO
+TCGA-A8-A09B	Chemotherapy	Cyclophosphamide		30	30	NO
+TCGA-A8-A09B	Chemotherapy	Docetaxel		NA	122	NO
+TCGA-A8-A09B	Hormone Therapy	Anastrozole		153	242	NO
+TCGA-A8-A09D	Chemotherapy	Doxorubicin	Complete Response	0	92	NO
+TCGA-A8-A09D	Chemotherapy	Cyclophosphamide	Complete Response	0	92	NO
+TCGA-A8-A09D	Chemotherapy	Paclitaxel	Complete Response	92	153	NO
+TCGA-A8-A09D	Hormone Therapy	Tamoxifen	Complete Response	274	1400	NO
+TCGA-A8-A09D	Hormone Therapy	Anastrozole		1400	NA	YES
+TCGA-A8-A09E	Hormone Therapy	Anastrozole		335	NA	YES
+TCGA-A8-A09I	Hormone Therapy	Anastrozole		31	NA	YES
+TCGA-A8-A09M	Chemotherapy	Paclitaxel	Complete Response	31	184	NO
+TCGA-A8-A09M	Hormone Therapy	Exemestane		276	NA	YES
+TCGA-A8-A09Q	Hormone Therapy	Anastrozole		31	NA	YES
+TCGA-A8-A09R	Hormone Therapy	Letrozole		0	NA	YES
+TCGA-A8-A09T	Hormone Therapy	Anastrozole		122	NA	YES
+TCGA-A8-A09V	Hormone Therapy	Tamoxifen		123	NA	YES
+TCGA-A8-A0A1	Hormone Therapy	Tamoxifen		31	NA	YES
+TCGA-A8-A0A2	Hormone Therapy	Tamoxifen		92	NA	YES
+TCGA-A8-A0A4	Hormone Therapy	Tamoxifen	Complete Response	31	215	NO
+TCGA-A8-A0A4	Hormone Therapy	Letrozole		215	NA	YES
+TCGA-A8-A0A6	Chemotherapy	Epirubicin	Complete Response	61	184	NO
+TCGA-A8-A0A6	Chemotherapy	Cyclophosphamide	Complete Response	61	184	NO
+TCGA-A8-A0A6	Hormone Therapy	Exemestane	Complete Response	214	245	NO
+TCGA-A8-A0A6	Hormone Therapy	Anastrozole		245	NA	YES
+TCGA-A8-A0A6	Ancillary	Zoledronic acid		306	NA	YES
+TCGA-A8-A0A9	Hormone Therapy	Anastrozole		31	NA	YES
+TCGA-A8-A0AB	Chemotherapy	5-Fluorouracil	Complete Response	61	184	NO
+TCGA-A8-A0AB	Chemotherapy	Doxorubicin	Complete Response	61	184	NO
+TCGA-A8-A0AB	Chemotherapy	Cyclophosphamide	Complete Response	61	184	NO
+TCGA-A8-A0AB	Hormone Therapy	Tamoxifen		214	NA	YES
+TCGA-A8-A0AD	Hormone Therapy	Tamoxifen		61	NA	YES
+TCGA-AC-A23C	Chemotherapy	Chemo, NOS	Complete Response	77	204	NO
+TCGA-AC-A23E	Hormone Therapy	Tamoxifen		111	NA	YES
+TCGA-AC-A23G	Chemotherapy	Cytoxan	Complete Response	109	190	NO
+TCGA-AC-A23G	Chemotherapy	Adriamycin	Complete Response	109	190	NO
+TCGA-AC-A23G	Chemotherapy	Taxol	Complete Response	190	220	NO
+TCGA-AC-A23G	Hormone Therapy	Arimidex	Complete Response	237	NA	NO
+TCGA-AC-A2B8	Chemotherapy	Chemo, NOS	Complete Response	135	NA	NO
+TCGA-AC-A2B8	Hormone Therapy	Arimidex		NA	NA	YES
+TCGA-AC-A2BK	Chemotherapy	Cytoxan	Complete Response	73	136	NO
+TCGA-AC-A2BK	Chemotherapy	Adriamycin	Complete Response	73	136	NO
+TCGA-AC-A2BK	Chemotherapy	Taxol	Complete Response	149	164	NO
+TCGA-AC-A2BK	Chemotherapy	Avastin	Complete Response	149	164	NO
+TCGA-AC-A2FB	Chemotherapy	Taxotere	Complete Response	101	205	NO
+TCGA-AC-A2FB	Chemotherapy	Herceptin	Complete Response	212	443	NO
+TCGA-AC-A2FB	Hormone Therapy	Arimidex	Complete Response	225	895	NO
+TCGA-AC-A2FE	Chemotherapy	Adriamycin	Partial Response	67	173	NO
+TCGA-AC-A2FE	Chemotherapy	Taxol	Partial Response	67	173	NO
+TCGA-AC-A2FE	Hormone Therapy	Arimidex		273	NA	
+TCGA-AC-A2FE	Chemotherapy	Cytoxan	Complete Response	67	173	NO
+TCGA-AC-A2FE	Chemotherapy	Xeloda	Clinical Progressive Disease	2516	NA	NO
+TCGA-AC-A2FE	Chemotherapy	Abraxane	Clinical Progressive Disease	2516	NA	NO
+TCGA-AC-A2FF	Chemotherapy	Cytoxan	Complete Response	70	153	NO
+TCGA-AC-A2FF	Chemotherapy	Adriamycin	Complete Response	70	153	NO
+TCGA-AC-A2FF	Chemotherapy	Taxol	Complete Response	153	245	NO
+TCGA-AC-A2FF	Hormone Therapy	Tamoxifen	Complete Response	382	NA	NO
+TCGA-AC-A2FG	Hormone Therapy	Arimidex	Complete Response	39	NA	
+TCGA-AC-A2FK	Chemotherapy	Cytoxan	Complete Response	51	174	NO
+TCGA-AC-A2FK	Chemotherapy	Adriamycin	Complete Response	51	174	NO
+TCGA-AC-A2FK	Hormone Therapy	Femara	Complete Response	294	NA	NO
+TCGA-AC-A2FK	Chemotherapy	Taxotere	Complete Response	51	174	NO
+TCGA-AC-A2FO	Chemotherapy	Chemo, NOS	Complete Response	105	NA	NO
+TCGA-AC-A2FO	Hormone Therapy	Hormone, NOS	Complete Response	225	NA	NO
+TCGA-AC-A2QH	Chemotherapy	Cytoxan	Complete Response	94	208	NO
+TCGA-AC-A2QH	Chemotherapy	Adriamycin	Complete Response	94	208	NO
+TCGA-AC-A2QH	Ancillary	Aloxi	Complete Response	94	208	NO
+TCGA-AC-A2QI	Chemotherapy	Cytoxan	Complete Response	100	275	NO
+TCGA-AC-A2QI	Chemotherapy	5-FU	Complete Response	100	275	NO
+TCGA-AC-A2QI	Chemotherapy	Methotrexate	Complete Response	100	275	NO
+TCGA-AC-A2QJ	Chemotherapy	Cytoxan	Clinical Progressive Disease	69	111	NO
+TCGA-AC-A2QJ	Chemotherapy	Adriamycin	Clinical Progressive Disease	69	111	NO
+TCGA-AC-A2QJ	Chemotherapy	Abraxane	Clinical Progressive Disease	125	202	NO
+TCGA-AC-A2QJ	Chemotherapy	Gemzar	Clinical Progressive Disease	322	385	NO
+TCGA-AC-A2QJ	Chemotherapy	Carboplatin	Clinical Progressive Disease	386	407	NO
+TCGA-AC-A2QJ	Hormone Therapy	Faslodex	Clinical Progressive Disease	349	418	NO
+TCGA-AC-A3BB	Chemotherapy	Cytoxan	Complete Response	92	197	NO
+TCGA-AC-A3BB	Chemotherapy	Adriamycin	Complete Response	92	197	NO
+TCGA-AC-A3BB	Chemotherapy	Taxotere	Complete Response	92	197	NO
+TCGA-AC-A3QP	Hormone Therapy	Femara		115	NA	YES
+TCGA-AC-A3TM	Chemotherapy	Cytoxan	Complete Response	132	213	NO
+TCGA-AC-A3TM	Chemotherapy	Taxotere	Complete Response	132	213	NO
+TCGA-AC-A3TM	Immunotherapy		Complete Response	132	213	NO
+TCGA-AC-A3TM	Hormone Therapy	Arimidex		272	NA	YES
+TCGA-AC-A3TN	Hormone Therapy	Arimidex		55	NA	YES
+TCGA-AC-A3W5	Chemotherapy	Docetaxel	Complete Response	56	139	NO
+TCGA-AC-A3W5	Chemotherapy	Cyclophosphamide	Complete Response	56	139	NO
+TCGA-AC-A3W5	Targeted Molecular therapy	Herceptin	Complete Response	56	392	NO
+TCGA-AC-A3W5	Hormone Therapy	Letrozole		170	NA	YES
+TCGA-AC-A3W7	Hormone Therapy	Femara		65	NA	YES
+TCGA-AC-A3YI	Chemotherapy	Cytoxan	Complete Response	82	167	NO
+TCGA-AC-A3YI	Chemotherapy	Methotrexate	Complete Response	82	167	NO
+TCGA-AC-A3YI	Chemotherapy	5-FU	Complete Response	82	167	NO
+TCGA-AC-A3YJ	Hormone Therapy	Arimidex		62	247	NO
+TCGA-AC-A3YJ	Hormone Therapy	Femara		256	NA	YES
+TCGA-AC-A5XS	Hormone Therapy	Femara		97	NA	YES
+TCGA-AC-A5XU	Hormone Therapy	Letrozole		235	NA	YES
+TCGA-AC-A62V	Ancillary	Denosumab	Partial Response	21	266	NO
+TCGA-AC-A62V	Chemotherapy	Paclitaxel	Partial Response	114	245	NO
+TCGA-AO-A03L	Chemotherapy	Cyclophosphamide		36	140	NO
+TCGA-AO-A03L	Chemotherapy	Doxorubicin		36	140	NO
+TCGA-AO-A03L	Hormone Therapy	Tamoxifen		227	2057	NO
+TCGA-AO-A03L	Hormone Therapy	Lupron		363	2057	NO
+TCGA-AO-A03L	Chemotherapy	Paclitaxel		36	140	NO
+TCGA-AO-A03M	Chemotherapy	Paclitaxel		119	161	NO
+TCGA-AO-A03M	Hormone Therapy	Tamoxifen		161	NA	YES
+TCGA-AO-A03M	Chemotherapy	Cyclophosphamide		63	105	NO
+TCGA-AO-A03M	Chemotherapy	Doxorubicin		63	105	NO
+TCGA-AO-A03N	Hormone Therapy	Femara		450	820	NO
+TCGA-AO-A03N	Hormone Therapy	Tamoxifen		1007	NA	YES
+TCGA-AO-A03N	Chemotherapy	Cyclophosphamide		55	153	NO
+TCGA-AO-A03N	Chemotherapy	Doxorubicin		55	153	NO
+TCGA-AO-A03N	Chemotherapy	Paclitaxel		55	153	NO
+TCGA-AO-A03N	Hormone Therapy	Arimidex		207	449	NO
+TCGA-AO-A03N	Hormone Therapy	Aromasin		821	1007	NO
+TCGA-AO-A03N	Chemotherapy	Paclitaxel		1814	1828	NO
+TCGA-AO-A03N	Chemotherapy	Gemcitabine		1835	1842	NO
+TCGA-AO-A03N	Chemotherapy	Tesetaxel		1699	1762	NO
+TCGA-AO-A03N	Hormone Therapy	Fulvestrant		1639	1667	NO
+TCGA-AO-A03N	Chemotherapy	Vinorelbine		1857	NA	YES
+TCGA-AO-A03N	Other, specify in notesBone metastases	Xgeva		1989	NA	YES
+TCGA-AO-A03O	Hormone Therapy	ANASTROZOLE (ARIMIDEX)		182	993	NO
+TCGA-AO-A03O	Chemotherapy	DOXORUBICIN		54	98	NO
+TCGA-AO-A03O	Chemotherapy	CYCLOPHOSPHAMIDE		54	98	NO
+TCGA-AO-A03O	Chemotherapy	PACLITAXEL		112	158	NO
+TCGA-AO-A03P	Immunotherapy	BEVACIZUMAB		2451	2822	NO
+TCGA-AO-A03P	Chemotherapy	CAPECITABINE		2422	2839	NO
+TCGA-AO-A03P	Hormone Therapy	EXEMESTANE (AROMASIN)		2332	2422	NO
+TCGA-AO-A03P	Hormone Therapy	LETROZOLE (FEMARA)		1918	2331	NO
+TCGA-AO-A03P	Hormone Therapy	FULVESTRANT		2853	2881	NO
+TCGA-AO-A03R	Chemotherapy	DOXORUBICIN		67	109	NO
+TCGA-AO-A03R	Hormone Therapy	LETROZOLE (FEMARA)		192	NA	YES
+TCGA-AO-A03R	Chemotherapy	PACLITAXEL		123	165	NO
+TCGA-AO-A03R	Chemotherapy	CYCLOPHOSPHAMIDE		67	109	NO
+TCGA-AO-A03T	Chemotherapy	CYCLOPHOSPHAMIDE		80	122	NO
+TCGA-AO-A03T	Chemotherapy	DOXORUBICIN		80	122	NO
+TCGA-AO-A03T	Chemotherapy	PACLITAXEL		136	178	NO
+TCGA-AO-A03T	Hormone Therapy	TAMOXIFEN (NOVADEX)		232	1095	NO
+TCGA-AO-A03T	Hormone Therapy	LUPRON		1095	NA	YES
+TCGA-AO-A03T	Hormone Therapy	LETROZOLE (FEMARA)		1130	NA	YES
+TCGA-AO-A03U	Chemotherapy	Cyclophosphamide		70	216	NO
+TCGA-AO-A03U	Chemotherapy	Fluorouracil		70	216	NO
+TCGA-AO-A03U	Chemotherapy	Methotrexate		70	216	NO
+TCGA-AO-A03V	Chemotherapy	Fluorouracil		102	200	NO
+TCGA-AO-A03V	Chemotherapy	Cyclophosphamide		102	200	NO
+TCGA-AO-A03V	Hormone Therapy	Tamoxifen		200	735	NO
+TCGA-AO-A03V	Hormone Therapy	Arimidex		753	NA	YES
+TCGA-AO-A03V	Chemotherapy	Methotrexate		102	200	NO
+TCGA-AO-A0J2	Chemotherapy	PACLITAXEL		120	162	NO
+TCGA-AO-A0J2	Chemotherapy	CYCLOPHOSPHAMIDE		64	106	NO
+TCGA-AO-A0J2	Chemotherapy	DOXORUBICIN		64	106	NO
+TCGA-AO-A0J3	Chemotherapy	METHOTREXATE		149	191	NO
+TCGA-AO-A0J3	Chemotherapy	CYCLOPHOSPHAMIDE		66	107	NO
+TCGA-AO-A0J3	Chemotherapy	FLOUROURACIL		149	191	NO
+TCGA-AO-A0J3	Chemotherapy	DOXORUBICIN		66	107	NO
+TCGA-AO-A0J3	Chemotherapy	CYCLOPHOSPHAMIDE		149	191	NO
+TCGA-AO-A0J3	Hormone Therapy	ANASTROZOLE (ARIMIDEX)		245	NA	YES
+TCGA-AO-A0J3	Chemotherapy	PACLITAXEL		121	121	NO
+TCGA-AO-A0J4	Chemotherapy	Doxorubicin		131	175	NO
+TCGA-AO-A0J4	Chemotherapy	Cyclophasphamide		131	175	NO
+TCGA-AO-A0J4	Chemotherapy	Paclitaxel		189	203	NO
+TCGA-AO-A0J5	Other, specify in notesBisphosphonate	Zoledronic Acid		-1	NA	YES
+TCGA-AO-A0J5	Chemotherapy	Xeloda (Capecitabine)		422	NA	YES
+TCGA-AO-A0J5	Hormone Therapy	Femara (Letrozole)		9	422	NO
+TCGA-AO-A0J5	Hormone Therapy	Fulvestrant (Faslodex)		618	NA	YES
+TCGA-AO-A0J6	Chemotherapy	PACLITAXEL		130	172	NO
+TCGA-AO-A0J6	Chemotherapy	DOXORUBICIN		74	116	NO
+TCGA-AO-A0J6	Chemotherapy	CYCLOPHOSPHAMIDE		74	116	NO
+TCGA-AO-A0J7	Chemotherapy	DOXORUBICIN		97	140	NO
+TCGA-AO-A0J7	Hormone Therapy	ANASTROZOLE (ARIMIDEX)		202	NA	YES
+TCGA-AO-A0J7	Chemotherapy	CYCLOPHOSPHAMIDE		97	140	NO
+TCGA-AO-A0J7	Chemotherapy	PACLITAXEL		154	195	NO
+TCGA-AO-A0J8	Chemotherapy	CYCLOPHOSPHAMIDE		63	224	NO
+TCGA-AO-A0J8	Hormone Therapy	ANASTROZOLE (ARIMIDEX)		277	NA	YES
+TCGA-AO-A0J8	Chemotherapy	METHOTREXATE		63	224	NO
+TCGA-AO-A0J8	Chemotherapy	Fluorouracil		63	224	NO
+TCGA-AO-A0J9	Chemotherapy	PACLITAXEL		141	141	NO
+TCGA-AO-A0J9	Chemotherapy	CYCLOPHOSPHAMIDE		85	128	NO
+TCGA-AO-A0J9	Chemotherapy	DOCETAXEL		161	204	NO
+TCGA-AO-A0J9	Hormone Therapy	ARIMIDEX (ANASTROZOLE)		239	1023	NO
+TCGA-AO-A0J9	Chemotherapy	DOXORUBICIN		85	128	NO
+TCGA-AO-A0J9	Other, specify in notesBISPHOSPHONATE	ZOLEDRONIC ACID		1072	NA	YES
+TCGA-AO-A0J9	Hormone Therapy	AROMASIN (EXEMESTANE)		1072	1207	NO
+TCGA-AO-A0J9	Hormone Therapy	TAMOXIFEN		1207	NA	YES
+TCGA-AO-A0JA	Chemotherapy	PACLITAXEL		292	NA	YES
+TCGA-AO-A0JA	Hormone Therapy	LEUPROLIDE ACETATE (LUPRON)		166	NA	YES
+TCGA-AO-A0JA	Other, specify in notesBISPHOSPHONATE	ZOLEDRONIC ACID		166	NA	YES
+TCGA-AO-A0JA	Hormone Therapy	TAMOXIFEN		166	242	NO
+TCGA-AO-A0JB	Chemotherapy	CYCLOPHOSPHAMIDE		49	92	NO
+TCGA-AO-A0JB	Hormone Therapy	TAMOXIFEN		175	NA	YES
+TCGA-AO-A0JB	Chemotherapy	PACLITAXEL		105	147	NO
+TCGA-AO-A0JB	Chemotherapy	DOXORUBICIN		49	92	NO
+TCGA-AO-A0JC	Hormone Therapy	LETROZOLE (FEMARA)		292	NA	YES
+TCGA-AO-A0JC	Chemotherapy	FLUOROURACIL		70	221	NO
+TCGA-AO-A0JC	Chemotherapy	CYCLOPHOSPHAMIDE		70	221	NO
+TCGA-AO-A0JC	Chemotherapy	METHOTREXATE		70	221	NO
+TCGA-AO-A0JD	Hormone Therapy	ANASTROZOLE (ARIMIDEX)		261	NA	YES
+TCGA-AO-A0JD	Chemotherapy	CYCLOPHOSPHAMIDE		62	104	NO
+TCGA-AO-A0JD	Chemotherapy	PACLITAXEL		118	160	NO
+TCGA-AO-A0JD	Chemotherapy	DOXORUBICIN		62	104	NO
+TCGA-AO-A0JE	Chemotherapy	PACLITAXEL		119	161	NO
+TCGA-AO-A0JE	Targeted Molecular therapy	TRASTUZUMAB		119	462	NO
+TCGA-AO-A0JE	Chemotherapy	DOXORUBICIN		63	105	NO
+TCGA-AO-A0JE	Chemotherapy	CYCLOPHOSPHAMIDE		63	105	NO
+TCGA-AO-A0JF	Chemotherapy	DOXORUBICIN		105	155	NO
+TCGA-AO-A0JF	Chemotherapy	PACLITAXEL		172	256	NO
+TCGA-AO-A0JF	Hormone Therapy	ANASTROZOLE (ARIMIDEX)		336	353	NO
+TCGA-AO-A0JF	Hormone Therapy	LETROZOLE (FEMARA)		356	NA	YES
+TCGA-AO-A0JF	Chemotherapy	CYCLOPHOSPHAMIDE		105	155	NO
+TCGA-AO-A0JG	Chemotherapy	PACLITAXEL		136	185	NO
+TCGA-AO-A0JG	Chemotherapy	DOXORUBICIN		80	122	NO
+TCGA-AO-A0JG	Hormone Therapy	ARIMIDEX		197	NA	YES
+TCGA-AO-A0JG	Chemotherapy	CYCLOPHOSPHAMIDE		80	122	NO
+TCGA-AO-A0JI	Chemotherapy	Cyclophosphamide		98	140	NO
+TCGA-AO-A0JI	Hormone Therapy	Arimidex (Anastrozole)		224	NA	YES
+TCGA-AO-A0JI	Chemotherapy	Doxorubicin		98	140	NO
+TCGA-AO-A0JI	Chemotherapy	Paclitaxel		154	196	NO
+TCGA-AO-A0JJ	Chemotherapy	Abraxane		126	154	NO
+TCGA-AO-A0JJ	Chemotherapy	Cyclophospamide		56	98	NO
+TCGA-AO-A0JJ	Hormone Therapy	Letrozole (Femara)		154	NA	YES
+TCGA-AO-A0JJ	Chemotherapy	Doxorubicin		56	98	NO
+TCGA-AO-A0JJ	Chemotherapy	Paclitaxel		112	112	NO
+TCGA-AO-A0JL	Chemotherapy	DOXORUBICIN		80	122	NO
+TCGA-AO-A0JL	Targeted Molecular therapy	TRASTUZUMAB		136	493	NO
+TCGA-AO-A0JL	Chemotherapy	CYCLOPHOSPHAMIDE		80	122	NO
+TCGA-AO-A0JL	Chemotherapy	PACLITAXEL		136	178	NO
+TCGA-AO-A0JM	Hormone Therapy	TAMOXIFEN		330	NA	YES
+TCGA-AO-A0JM	Targeted Molecular therapy	TRASTUZUMAB		134	498	NO
+TCGA-AO-A0JM	Chemotherapy	DOXORUBICIN		78	120	NO
+TCGA-AO-A0JM	Chemotherapy	PACLITAXEL		134	177	NO
+TCGA-AO-A0JM	Chemotherapy	CYCLOPHOSPHAMIDE		78	120	NO
+TCGA-AO-A124	Chemotherapy	Doxorubicin		60	126	NO
+TCGA-AO-A124	Chemotherapy	Paclitaxel		147	238	NO
+TCGA-AO-A124	Chemotherapy	Cyclophosphamide		60	126	NO
+TCGA-AO-A125	Hormone Therapy	Aromasin (Exemestane)		799	2535	NO
+TCGA-AO-A125	Hormone Therapy	Tamoxifen		129	799	NO
+TCGA-AO-A126	Chemotherapy	Methotrexate		91	238	NO
+TCGA-AO-A126	Chemotherapy	Cyclophosphamide		91	238	NO
+TCGA-AO-A126	Chemotherapy	Fluorouracil		91	238	NO
+TCGA-AO-A126	Hormone Therapy	Tamoxifen		320	1795	NO
+TCGA-AO-A126	Hormone Therapy	Zoladex		323	1639	NO
+TCGA-AO-A128	Chemotherapy	Doxorubicin		82	124	NO
+TCGA-AO-A128	Chemotherapy	Paclitaxel		160	222	NO
+TCGA-AO-A128	Chemotherapy	Cyclophosphamide		82	124	NO
+TCGA-AO-A129	Chemotherapy	Paclitaxel		67	162	NO
+TCGA-AO-A129	Chemotherapy	Cyclophosphamide		67	162	NO
+TCGA-AO-A129	Chemotherapy	Doxorubicin		67	162	NO
+TCGA-AO-A12A	Hormone Therapy	Tamoxifen		186	830	NO
+TCGA-AO-A12A	Chemotherapy	Cyclophosphamide		67	112	NO
+TCGA-AO-A12A	Hormone Therapy	Aromasin		831	1918	NO
+TCGA-AO-A12A	Chemotherapy	Doxorubicin		67	112	NO
+TCGA-AO-A12A	Chemotherapy	Paclitaxel		126	168	NO
+TCGA-AO-A12B	Chemotherapy	Methotrexate		45	118	NO
+TCGA-AO-A12B	Chemotherapy	Cyclophosphamide		45	118	NO
+TCGA-AO-A12B	Hormone Therapy	Arimidex		140	1980	NO
+TCGA-AO-A12B	Chemotherapy	Fluorouracil		45	118	NO
+TCGA-AO-A12C	Chemotherapy	Doxorubicin		116	158	NO
+TCGA-AO-A12C	Chemotherapy	Paclitaxel		179	221	NO
+TCGA-AO-A12C	Hormone Therapy	Tamoxifen		335	2149	NO
+TCGA-AO-A12C	Targeted Molecular therapy	Trastuzumab		179	524	NO
+TCGA-AO-A12C	Chemotherapy	Cyclophosphamide		116	158	NO
+TCGA-AO-A12D	Targeted Molecular therapy	Trastuzumab		170	503	NO
+TCGA-AO-A12D	Chemotherapy	Albumin-Bound Paclitaxel		149	212	NO
+TCGA-AO-A12D	Chemotherapy	Cyclophosphamide		65	128	NO
+TCGA-AO-A12D	Chemotherapy	Doxorubicin		65	128	NO
+TCGA-AO-A12E	Chemotherapy	Doxorubicin		85	127	NO
+TCGA-AO-A12E	Chemotherapy	Paclitaxel		141	184	NO
+TCGA-AO-A12E	Chemotherapy	Cyclophosphamide		85	127	NO
+TCGA-AO-A12E	Hormone Therapy	Tamoxifen		222	NA	YES
+TCGA-AO-A12F	Chemotherapy	Paclitaxel		63	189	NO
+TCGA-AO-A12F	Chemotherapy	Cyclophosphamide		63	189	NO
+TCGA-AO-A12F	Chemotherapy	Doxorubicin		63	189	NO
+TCGA-AO-A12G	Hormone Therapy	Arimidex (Anastrozole)		177	NA	YES
+TCGA-AO-A12H	Hormone Therapy	Arimidex (Anastrozole)		73	NA	YES
+TCGA-AO-A1KO	Chemotherapy	Paclitaxel		70	160	NO
+TCGA-AO-A1KO	Chemotherapy	Cyclophosphamide		70	160	NO
+TCGA-AO-A1KO	Hormone Therapy	Tamoxifen		231	NA	YES
+TCGA-AO-A1KO	Chemotherapy	Doxorubicin		70	160	NO
+TCGA-AO-A1KP	Chemotherapy	Fluorouracil		86	237	NO
+TCGA-AO-A1KP	Chemotherapy	Cyclophosphamide		86	237	NO
+TCGA-AO-A1KP	Chemotherapy	Methotrexate		86	237	NO
+TCGA-AO-A1KP	Hormone Therapy	Arimidex		335	2161	NO
+TCGA-AO-A1KQ	Hormone Therapy	Tamoxifen		49	NA	YES
+TCGA-AO-A1KR	Chemotherapy	paclitaxel		132	174	NO
+TCGA-AO-A1KR	Chemotherapy	cyclophosphamide		76	118	NO
+TCGA-AO-A1KR	Chemotherapy	doxorubicin		76	118	NO
+TCGA-AO-A1KS	Hormone Therapy	Arimidex		155	NA	YES
+TCGA-AO-A1KT	Hormone Therapy	Arimidex		323	NA	YES
+TCGA-AO-A1KT	Chemotherapy	Fluorouracil		62	209	NO
+TCGA-AO-A1KT	Chemotherapy	Methotrexate		62	209	NO
+TCGA-AO-A1KT	Chemotherapy	Cyclophosphamide		62	209	NO
+TCGA-AQ-A04H	Hormone Therapy	Femara		175	NA	YES
+TCGA-AQ-A04H	Chemotherapy	Taxotere		29	133	NO
+TCGA-AQ-A04H	Chemotherapy	Carboplatin	Complete Response	29	133	NO
+TCGA-AQ-A04H	Chemotherapy	Herceptin	Complete Response	29	133	NO
+TCGA-AQ-A04J	Chemotherapy	Cytoxan		61	104	NO
+TCGA-AQ-A04J	Chemotherapy	Adriamycin		61	104	NO
+TCGA-AQ-A04J	Chemotherapy	Taxol		118	160	NO
+TCGA-AQ-A04L	Chemotherapy	Adriamycin		48	111	NO
+TCGA-AQ-A04L	Hormone Therapy	Tamoxifen		141	1957	NO
+TCGA-AQ-A04L	Chemotherapy	Cytoxan		48	111	NO
+TCGA-AQ-A0Y5	Chemotherapy	Cytoxan		83	146	NO
+TCGA-AQ-A0Y5	Chemotherapy	Herceptin		83	146	NO
+TCGA-AQ-A0Y5	Chemotherapy	Taxotere		83	146	NO
+TCGA-AQ-A1H2	Chemotherapy	Herceptin		98	462	NO
+TCGA-AQ-A1H2	Hormone Therapy	Arimidex		378	NA	YES
+TCGA-AQ-A1H2	Chemotherapy	Taxol		98	182	NO
+TCGA-AQ-A1H3	Chemotherapy	Taxol		120	162	NO
+TCGA-AQ-A1H3	Chemotherapy	Adriamycin		64	106	NO
+TCGA-AQ-A1H3	Hormone Therapy	Tamoxifen		239	NA	YES
+TCGA-AQ-A1H3	Chemotherapy	Cytoxan		64	106	NO
+TCGA-AQ-A54O	Chemotherapy	Adriamycin	Complete Response	77	118	NO
+TCGA-AQ-A54O	Chemotherapy	Cytoxan	Complete Response	77	118	NO
+TCGA-AQ-A54O	Chemotherapy	Taxol	Complete Response	132	176	NO
+TCGA-AQ-A54O	Hormone Therapy	Tamoxifen		199	NA	YES
+TCGA-AQ-A7U7	Immunotherapy	Rituximab	Complete Response	123	193	NO
+TCGA-AQ-A7U7	Chemotherapy	Cyclophosphamide	Complete Response	123	193	NO
+TCGA-AQ-A7U7	Chemotherapy	Doxorubicin	Complete Response	123	193	NO
+TCGA-AQ-A7U7	Chemotherapy	Vincristine	Complete Response	123	165	NO
+TCGA-AQ-A7U7	Hormone Therapy	Prednisone	Complete Response	123	193	NO
+TCGA-AQ-A7U7	Hormone Therapy	Letrozole		296	NA	YES
+TCGA-AR-A0TP	Chemotherapy	Doxorubicin		32	97	NO
+TCGA-AR-A0TP	Chemotherapy	Cytoxan		32	97	NO
+TCGA-AR-A0TQ	Chemotherapy	Doxorubicin		37	79	NO
+TCGA-AR-A0TQ	Immunotherapy	Trastuzumab		254	482	NO
+TCGA-AR-A0TQ	Chemotherapy	Paclitaxel		114	226	NO
+TCGA-AR-A0TQ	Immunotherapy	Trastuzumab		93	93	NO
+TCGA-AR-A0TQ	Chemotherapy	Paclitaxel		93	107	NO
+TCGA-AR-A0TQ	Immunotherapy	Trastuzumab		100	226	NO
+TCGA-AR-A0TQ	Chemotherapy	Cytoxan		37	79	NO
+TCGA-AR-A0TQ	Hormone Therapy	Exemestane		233	1867	NO
+TCGA-AR-A0TQ	Hormone Therapy	Triptorelin		37	1864	NO
+TCGA-AR-A0TR	Hormone Therapy	Tamoxifen		25	160	NO
+TCGA-AR-A0TS	Chemotherapy	Doxorubicin		61	100	NO
+TCGA-AR-A0TS	Chemotherapy	Paclitaxel		114	156	NO
+TCGA-AR-A0TS	Chemotherapy	Cytoxan		61	100	NO
+TCGA-AR-A0TT	Chemotherapy	Paclitaxel		105	147	NO
+TCGA-AR-A0TT	Hormone Therapy	Tamoxifen		385	NA	YES
+TCGA-AR-A0TT	Hormone Therapy	Anastrozole		230	376	NO
+TCGA-AR-A0TT	Chemotherapy	Doxorubicin		48	91	NO
+TCGA-AR-A0TT	Chemotherapy	Cytoxan		48	91	NO
+TCGA-AR-A0TU	Chemotherapy	Doxorubicin		NA	NA	NO
+TCGA-AR-A0TU	Chemotherapy	Docetaxel		NA	NA	NO
+TCGA-AR-A0TU	Chemotherapy	Cytoxan		NA	NA	NO
+TCGA-AR-A0TW	Chemotherapy	Doxorubicin		62	111	NO
+TCGA-AR-A0TW	Chemotherapy	Cytoxan		62	111	NO
+TCGA-AR-A0TW	Chemotherapy	Paclitaxel		125	167	NO
+TCGA-AR-A0TY	Chemotherapy	Paclitaxel		NA	NA	NO
+TCGA-AR-A0TY	Hormone Therapy	Anastrozole		NA	557	NO
+TCGA-AR-A0TY	Chemotherapy	Doxorubicin		NA	NA	NO
+TCGA-AR-A0TY	Chemotherapy	Cytoxan		NA	NA	NO
+TCGA-AR-A0TZ	Chemotherapy	Doxorubicin		NA	NA	NO
+TCGA-AR-A0TZ	Hormone Therapy	Tamoxifen		NA	NA	NO
+TCGA-AR-A0TZ	Chemotherapy	Paclitaxel		NA	NA	NO
+TCGA-AR-A0TZ	Hormone Therapy			NA	NA	NO
+TCGA-AR-A0TZ	Chemotherapy	Cytoxan		NA	NA	NO
+TCGA-AR-A0U1	Chemotherapy	Paclitaxel		NA	NA	NO
+TCGA-AR-A0U1	Chemotherapy	Cytoxan		NA	NA	NO
+TCGA-AR-A0U1	Chemotherapy	Doxorubicin		NA	NA	NO
+TCGA-AR-A0U2	Chemotherapy	Cytoxan		NA	NA	NO
+TCGA-AR-A0U2	Chemotherapy	Paclitaxel		NA	NA	NO
+TCGA-AR-A0U2	Hormone Therapy	Tamoxifen		142	NA	NO
+TCGA-AR-A0U2	Chemotherapy	Doxorubicin		NA	NA	NO
+TCGA-AR-A0U2	Hormone Therapy	Exemestane		NA	1603	NO
+TCGA-AR-A0U3	Chemotherapy	Doxorubicin		41	69	NO
+TCGA-AR-A0U3	Hormone Therapy	Anastrozole		166	2015	NO
+TCGA-AR-A0U3	Chemotherapy	Cytoxan		41	69	NO
+TCGA-AR-A0U3	Chemotherapy	Paclitaxel		95	137	NO
+TCGA-AR-A0U4	Chemotherapy	Cytoxan		53	98	NO
+TCGA-AR-A0U4	Chemotherapy	Doxorubicin		53	98	NO
+TCGA-AR-A0U4	Chemotherapy	Paclitaxel		112	154	NO
+TCGA-AR-A1AH	Chemotherapy			NA	NA	NO
+TCGA-AR-A1AH	Hormone Therapy	Tamoxifen		NA	2241	NO
+TCGA-AR-A1AI	Chemotherapy	Cytoxan		35	77	NO
+TCGA-AR-A1AI	Chemotherapy	Doxorubicin		35	77	NO
+TCGA-AR-A1AI	Chemotherapy	Paclitaxel		91	134	NO
+TCGA-AR-A1AK	Hormone Therapy	Anastrozole		33	1843	NO
+TCGA-AR-A1AL	Chemotherapy	Paclitaxel		NA	NA	NO
+TCGA-AR-A1AL	Chemotherapy	Cytoxan		NA	NA	NO
+TCGA-AR-A1AL	Hormone Therapy	Anastrozole		192	366	NO
+TCGA-AR-A1AL	Chemotherapy	Doxorubicin		NA	NA	NO
+TCGA-AR-A1AL	Hormone Therapy	Letrozole		387	NA	YES
+TCGA-AR-A1AL	Chemotherapy	Docetaxel		NA	NA	NO
+TCGA-AR-A1AM	Chemotherapy	Adriamycin		55	97	NO
+TCGA-AR-A1AM	Hormone Therapy	Tamoxifen		127	314	NO
+TCGA-AR-A1AM	Hormone Therapy	Anastrozole		314	336	NO
+TCGA-AR-A1AM	Chemotherapy	cytoxan		55	97	NO
+TCGA-AR-A1AN	Hormone Therapy	Anastrozole		442	NA	YES
+TCGA-AR-A1AN	Hormone Therapy	Anastrozole		162	300	NO
+TCGA-AR-A1AN	Hormone Therapy	Tamoxifen		301	441	NO
+TCGA-AR-A1AN	Chemotherapy	Cytoxan		47	91	NO
+TCGA-AR-A1AN	Chemotherapy	Doxorubicin		47	91	NO
+TCGA-AR-A1AN	Chemotherapy	Paclitaxel		105	154	NO
+TCGA-AR-A1AO	Hormone Therapy	Tamoxifen		160	NA	YES
+TCGA-AR-A1AO	Chemotherapy	Doxorubicin		76	118	NO
+TCGA-AR-A1AO	Chemotherapy	Cytoxan		76	118	NO
+TCGA-AR-A1AO	Chemotherapy	Paclitaxel		139	139	NO
+TCGA-AR-A1AP	Hormone Therapy	Anastrozole		29	NA	YES
+TCGA-AR-A1AQ	Chemotherapy	Doxorubicin		32	74	NO
+TCGA-AR-A1AQ	Chemotherapy	Paclitaxel		88	88	NO
+TCGA-AR-A1AQ	Chemotherapy	Cytoxan		32	74	NO
+TCGA-AR-A1AR	Chemotherapy	Docetaxel		NA	159	NO
+TCGA-AR-A1AR	Chemotherapy			NA	159	NO
+TCGA-AR-A1AR	Chemotherapy	Doxorubicin		NA	159	NO
+TCGA-AR-A1AS	Hormone Therapy	Anastrozole		57	NA	YES
+TCGA-AR-A1AS	Chemotherapy	Doxorubicin		29	43	NO
+TCGA-AR-A1AS	Chemotherapy	Cytoxan		29	43	NO
+TCGA-AR-A1AT	Hormone Therapy	Anastrozole		174	1272	NO
+TCGA-AR-A1AT	Immunotherapy	Trastuzumab		NA	NA	NO
+TCGA-AR-A1AT	Chemotherapy	Not otherwise specified		NA	NA	NO
+TCGA-AR-A1AU	Chemotherapy	Doxorubicin		43	85	NO
+TCGA-AR-A1AU	Hormone Therapy	Tamoxifen		157	NA	YES
+TCGA-AR-A1AU	Chemotherapy	Cytoxan		43	85	NO
+TCGA-AR-A1AU	Chemotherapy	Paclitaxel		99	141	NO
+TCGA-AR-A1AV	Hormone Therapy	Tamoxifen		175	NA	YES
+TCGA-AR-A1AV	Chemotherapy	Cytoxan		50	105	NO
+TCGA-AR-A1AV	Chemotherapy	Doxorubicin		50	105	NO
+TCGA-AR-A1AV	Chemotherapy	Paclitaxel		126	170	NO
+TCGA-AR-A1AW	Chemotherapy	Docetaxel		50	50	NO
+TCGA-AR-A1AW	Chemotherapy	Cytoxan		50	50	NO
+TCGA-AR-A1AW	Hormone Therapy	Anastrozole		157	NA	YES
+TCGA-AR-A1AX	Immunotherapy	Trastuzumab		117	482	NO
+TCGA-AR-A1AX	Hormone Therapy	Letrozole		341	NA	YES
+TCGA-AR-A1AX	Chemotherapy	Paclitaxel		NA	160	NO
+TCGA-AR-A1AX	Chemotherapy	Cytoxan		54	NA	NO
+TCGA-AR-A1AX	Hormone Therapy	Exemestane		249	295	NO
+TCGA-AR-A1AX	Chemotherapy	Doxorubicin		54	NA	NO
+TCGA-AR-A1AY	Chemotherapy	Doxorubicin		NA	117	NO
+TCGA-AR-A1AY	Chemotherapy	Cytoxan		NA	117	NO
+TCGA-AR-A24H	Hormone Therapy	Tamoxifen		23	1042	NO
+TCGA-AR-A24H	Hormone Therapy	Anastrozole		1042	3094	NO
+TCGA-AR-A24K	Chemotherapy	Paclitaxel		NA	170	NO
+TCGA-AR-A24K	Chemotherapy	Cytoxan		NA	NA	NO
+TCGA-AR-A24K	Chemotherapy	Doxorubicin		NA	NA	NO
+TCGA-AR-A24L	Chemotherapy	Paclitaxel		NA	NA	NO
+TCGA-AR-A24L	Chemotherapy	Doxorubicin		NA	NA	NO
+TCGA-AR-A24L	Chemotherapy	Cytoxan		NA	NA	NO
+TCGA-AR-A24L	Hormone Therapy	Tamoxifen		145	1414	NO
+TCGA-AR-A24M	Chemotherapy	Cytoxan		NA	NA	NO
+TCGA-AR-A24M	Hormone Therapy	Tamoxifen		171	597	NO
+TCGA-AR-A24M	Chemotherapy	Paclitaxel		NA	NA	NO
+TCGA-AR-A24M	Chemotherapy	Doxorubicin		NA	NA	NO
+TCGA-AR-A24M	Hormone Therapy	Letrozole		597	NA	YES
+TCGA-AR-A24O	Chemotherapy	Paclitaxel		107	149	NO
+TCGA-AR-A24O	Chemotherapy	Cytoxan		44	93	NO
+TCGA-AR-A24O	Chemotherapy	Doxorubicin		44	93	NO
+TCGA-AR-A24O	Hormone Therapy	Tamoxifen		153	1994	NO
+TCGA-AR-A24O	Hormone Therapy	Letrozole		1998	2283	NO
+TCGA-AR-A24Q	Immunotherapy	Trastuzumab		86	155	NO
+TCGA-AR-A24Q	Immunotherapy	Trastuzumab		180	511	NO
+TCGA-AR-A24Q	Chemotherapy	Doxorubicin		36	50	NO
+TCGA-AR-A24Q	Hormone Therapy	Anastrozole		208	1988	NO
+TCGA-AR-A24Q	Chemotherapy	Cytoxan		36	50	NO
+TCGA-AR-A24Q	Chemotherapy	Paclitaxel		79	155	NO
+TCGA-AR-A24Q	Immunotherapy	Trastuzumab		79	79	NO
+TCGA-AR-A24Q	Chemotherapy	Docetaxel		87	155	NO
+TCGA-AR-A24R	Hormone Therapy	Letrozole		1969	NA	YES
+TCGA-AR-A24R	Chemotherapy	Cytoxan		53	157	NO
+TCGA-AR-A24R	Chemotherapy	Paclitaxel		172	214	NO
+TCGA-AR-A24R	Chemotherapy	Doxorubicin		53	151	NO
+TCGA-AR-A24R	Hormone Therapy	Tamoxifen		228	1904	NO
+TCGA-AR-A24S	Hormone Therapy	Exemestane		129	1124	NO
+TCGA-AR-A24S	Hormone Therapy	Anastrozole		32	126	NO
+TCGA-AR-A24T	Hormone Therapy	Letrozole		1995	NA	YES
+TCGA-AR-A24T	Chemotherapy	Cytoxan		38	80	NO
+TCGA-AR-A24T	Chemotherapy	Doxorubicin		38	80	NO
+TCGA-AR-A24T	Chemotherapy	Paclitaxel		94	157	NO
+TCGA-AR-A24T	Hormone Therapy	Tamoxifen		189	1864	NO
+TCGA-AR-A24U	Chemotherapy	Doxorubicin		55	97	NO
+TCGA-AR-A24U	Chemotherapy	Cytoxan		55	97	NO
+TCGA-AR-A24U	Chemotherapy	Paclitaxel		111	188	NO
+TCGA-AR-A24U	Immunotherapy	Trustuzumab		111	111	NO
+TCGA-AR-A24U	Immunotherapy	Trastuzumab		118	476	NO
+TCGA-AR-A24U	Immunotherapy	Trustuzumab		118	476	NO
+TCGA-AR-A24V	Chemotherapy	Doxorubicin		53	95	NO
+TCGA-AR-A24V	Chemotherapy	Cytoxan		53	95	NO
+TCGA-AR-A24V	Chemotherapy	Paclitaxel		109	151	NO
+TCGA-AR-A24V	Immunotherapy	Bevacizumab		109	178	NO
+TCGA-AR-A24V	Hormone Therapy	Tamoxifen		193	1027	NO
+TCGA-AR-A24V	Hormone Therapy	Anastrozole		1027	NA	YES
+TCGA-AR-A24W	Chemotherapy	Doxorubicin		NA	NA	NO
+TCGA-AR-A24W	Chemotherapy	Cytoxan		NA	NA	NO
+TCGA-AR-A24W	Chemotherapy	Paclitaxel		NA	NA	NO
+TCGA-AR-A24W	Hormone Therapy	Letrozole		164	345	NO
+TCGA-AR-A24W	Hormone Therapy	Anastrozole		345	NA	YES
+TCGA-AR-A24X	Chemotherapy	Doxorubicin		NA	NA	NO
+TCGA-AR-A24X	Chemotherapy	Cytoxan		NA	NA	NO
+TCGA-AR-A24X	Hormone Therapy	Tamoxifen		130	1926	NO
+TCGA-AR-A24Z	Chemotherapy	Doxorubicin		49	91	NO
+TCGA-AR-A24Z	Chemotherapy	Cytoxan		49	91	NO
+TCGA-AR-A24Z	Hormone Therapy	Anastrozole		133	1912	NO
+TCGA-AR-A250	Chemotherapy	Doxorubicin		45	88	NO
+TCGA-AR-A250	Chemotherapy	Cytoxan		45	88	NO
+TCGA-AR-A250	Chemotherapy	Paclitaxel		102	179	NO
+TCGA-AR-A250	Immunotherapy	Trastuzumab		102	102	NO
+TCGA-AR-A250	Immunotherapy	Trustuzumab		109	179	NO
+TCGA-AR-A250	Immunotherapy	Trastuzumab		193	466	NO
+TCGA-AR-A250	Hormone Therapy	Anastrozole		194	NA	YES
+TCGA-AR-A251	Chemotherapy	Doxorubicin		44	87	NO
+TCGA-AR-A251	Chemotherapy	Cytoxan		44	87	NO
+TCGA-AR-A251	Chemotherapy	Paclitaxel		100	141	NO
+TCGA-AR-A251	Hormone Therapy	Tamoxifen		175	1969	NO
+TCGA-AR-A252	Chemotherapy	Doxorubicin		55	97	NO
+TCGA-AR-A252	Chemotherapy	Cytoxan		55	97	NO
+TCGA-AR-A252	Hormone Therapy	Tamoxifen		116	NA	YES
+TCGA-AR-A254	Chemotherapy	Paclitaxel		22	43	NO
+TCGA-AR-A254	Chemotherapy	Abraxane		50	99	NO
+TCGA-AR-A254	Chemotherapy	Fluorouracil		106	173	NO
+TCGA-AR-A254	Chemotherapy	Epirubicin		106	170	NO
+TCGA-AR-A254	Chemotherapy	Cytoxan		106	170	NO
+TCGA-AR-A254	Immunotherapy	Trastuzumab		22	22	NO
+TCGA-AR-A254	Immunotherapy	Trastuzumab		29	184	NO
+TCGA-AR-A254	Immunotherapy	Trastuzumab		232	344	NO
+TCGA-AR-A254	Hormone Therapy	Tamoxifen		262	NA	YES
+TCGA-AR-A255	Immunotherapy	Trastuzumab		54	54	NO
+TCGA-AR-A255	Immunotherapy	Trastuzumab		75	419	NO
+TCGA-AR-A255	Hormone Therapy	Anastrozole		96	NA	YES
+TCGA-AR-A256	Chemotherapy	Doxorubicin		38	101	NO
+TCGA-AR-A256	Chemotherapy	Cytoxan		38	101	NO
+TCGA-AR-A2LE	Hormone Therapy	Tamoxifen		17	1869	NO
+TCGA-AR-A2LH	Chemotherapy	Adriamycin		42	84	NO
+TCGA-AR-A2LH	Chemotherapy	Cytoxan		42	84	NO
+TCGA-AR-A2LH	Chemotherapy	Paclitaxel		98	140	NO
+TCGA-AR-A2LJ	Chemotherapy	Adriamycin		42	84	NO
+TCGA-AR-A2LJ	Chemotherapy	Cytoxan		42	84	NO
+TCGA-AR-A2LJ	Chemotherapy	Paclitaxel		98	175	NO
+TCGA-AR-A2LJ	Immunotherapy	Trastuzumab		98	465	NO
+TCGA-AR-A2LJ	Hormone Therapy	Tamoxifen		190	NA	YES
+TCGA-AR-A2LK	Chemotherapy	Adriamycin		NA	NA	NO
+TCGA-AR-A2LK	Chemotherapy	Cytoxan		NA	NA	NO
+TCGA-AR-A2LK	Chemotherapy	Paclitaxel		NA	NA	NO
+TCGA-AR-A2LK	Hormone Therapy	Anastrozole		263	1310	NO
+TCGA-AR-A2LL	Hormone Therapy	Tamoxifen		54	224	NO
+TCGA-AR-A2LM	Chemotherapy	Docetaxel		78	99	NO
+TCGA-AR-A2LM	Chemotherapy	Cytoxan		78	141	NO
+TCGA-AR-A2LM	Chemotherapy	Abraxane		120	141	NO
+TCGA-AR-A2LM	Hormone Therapy	Tamoxifen		170	967	NO
+TCGA-AR-A2LN	Hormone Therapy	Letrozole		15	NA	YES
+TCGA-AR-A2LO	Chemotherapy	Adriamycin		44	84	NO
+TCGA-AR-A2LO	Chemotherapy	Cytoxan		44	84	NO
+TCGA-AR-A2LO	Chemotherapy	Paclitaxel		98	175	NO
+TCGA-AR-A2LO	Immunotherapy	Bevacizumab		44	161	NO
+TCGA-AR-A2LO	Hormone Therapy	Tamoxifen		199	903	NO
+TCGA-AR-A2LO	Hormone Therapy	Anastrozole		903	NA	YES
+TCGA-AR-A2LQ	Chemotherapy	Docetaxel		89	152	NO
+TCGA-AR-A2LQ	Chemotherapy	Cytoxan		89	152	NO
+TCGA-AR-A2LQ	Hormone Therapy	Anastrozole		176	NA	YES
+TCGA-AR-A2LR	Chemotherapy	Adriamycin		-1428	-1386	NO
+TCGA-AR-A2LR	Chemotherapy	Cytoxan		-1428	-1386	NO
+TCGA-AR-A5QM	Hormone Therapy	Anastrozole		36	NA	YES
+TCGA-AR-A5QN	Chemotherapy	Taxotere		39	102	NO
+TCGA-AR-A5QN	Chemotherapy	Cytoxan		39	102	NO
+TCGA-AR-A5QN	Hormone Therapy	Anastrozole		128	388	NO
+TCGA-AR-A5QN	Hormone Therapy	Exemestane		388	NA	YES
+TCGA-AR-A5QP	Hormone Therapy	Tamoxifen		46	NA	YES
+TCGA-AR-A5QQ	Chemotherapy	Carboplatin		69	91	NO
+TCGA-AR-A5QQ	Chemotherapy	Taxol		69	91	NO
+TCGA-AR-A5QQ	Chemotherapy	Ifosfamide		119	143	NO
+TCGA-AR-A5QQ	Ancillary	MESNA-1		119	143	NO
+TCGA-AR-A5QQ	Ancillary	MESNA-2		119	143	NO
+TCGA-AR-A5QQ	Chemotherapy	VP-16		119	143	NO
+TCGA-B6-A3ZX	Chemotherapy	Cyclophosphamide		91	147	NO
+TCGA-B6-A3ZX	Chemotherapy	Doxorubicin		91	147	NO
+TCGA-B6-A3ZX	Chemotherapy	Paclitaxel		148	225	NO
+TCGA-B6-A401	Chemotherapy	Cyclophosphamide		50	155	NO
+TCGA-B6-A401	Chemotherapy	Doxetaxel		50	155	NO
+TCGA-B6-A401	Chemotherapy	Doxorubicin		50	155	NO
+TCGA-B6-A401	Chemotherapy	Femara		375	NA	YES
+TCGA-B6-A402	Chemotherapy	Cyclophosphamide	Partial Response	30	93	NO
+TCGA-B6-A402	Chemotherapy	Doxorubicin	Partial Response	30	93	NO
+TCGA-B6-A402	Chemotherapy	Paclitaxel	Partial Response	112	191	NO
+TCGA-B6-A402	Chemotherapy	Doxil	Partial Response	2176	2232	NO
+TCGA-B6-A408	Chemotherapy	Cyclophosphamide		55	163	NO
+TCGA-B6-A408	Chemotherapy	Docetaxel		58	163	NO
+TCGA-B6-A408	Chemotherapy	Doxorubicin		58	163	NO
+TCGA-B6-A409	Chemotherapy	Cyclophosphamide		51	93	NO
+TCGA-B6-A409	Chemotherapy	Doxorubicin		51	93	NO
+TCGA-B6-A409	Chemotherapy	Paclitaxel		107	149	NO
+TCGA-B6-A40C	Hormone Therapy	Cyclophosphamide		37	107	NO
+TCGA-B6-A40C	Chemotherapy	Doxorubicin		37	107	NO
+TCGA-B6-A40C	Chemotherapy	Paclitaxel		128	170	NO
+TCGA-BH-A0AV	Chemotherapy	Taxotere	Complete Response	146	259	NO
+TCGA-BH-A0AV	Chemotherapy	Cytoxan	Complete Response	146	259	NO
+TCGA-BH-A0AW	Chemotherapy	Carboplatin		53	150	NO
+TCGA-BH-A0AW	Hormone Therapy	Arimidex		200	515	NO
+TCGA-BH-A0AW	Chemotherapy	Taxotere		53	150	NO
+TCGA-BH-A0AW	Chemotherapy	Herceptin		53	410	NO
+TCGA-BH-A0AW	Hormone Therapy	Aromasin		543	NA	YES
+TCGA-BH-A0AY	Chemotherapy			131	192	NO
+TCGA-BH-A0AY	Hormone Therapy	Aromasin		209	NA	YES
+TCGA-BH-A0AZ	Chemotherapy	Doxorubicin	Complete Response	126	209	NO
+TCGA-BH-A0AZ	Chemotherapy	Cytoxan	Complete Response	126	209	NO
+TCGA-BH-A0AZ	Chemotherapy	Taxol	Complete Response	209	293	NO
+TCGA-BH-A0AZ	Immunotherapy	Avastin	Complete Response	126	482	NO
+TCGA-BH-A0B0	Chemotherapy	Adriamycin	Complete Response	82	194	NO
+TCGA-BH-A0B0	Chemotherapy	Cytoxan	Complete Response	82	194	NO
+TCGA-BH-A0B1	Chemotherapy	Adriamycin		53	232	NO
+TCGA-BH-A0B1	Chemotherapy	Paclitaxel		251	311	NO
+TCGA-BH-A0B1	Chemotherapy	Cytoxan		53	232	NO
+TCGA-BH-A0B1	Hormone Therapy	Arimidex		269	NA	YES
+TCGA-BH-A0B3	Chemotherapy	CYCLOPHOSPHAMIDE		52	115	NO
+TCGA-BH-A0B3	Chemotherapy	Doxorubicin		52	115	NO
+TCGA-BH-A0B3	Chemotherapy	Paclitaxel		136	213	NO
+TCGA-BH-A0B4	Chemotherapy	Docetaxel		692	797	NO
+TCGA-BH-A0B4	Hormone Therapy	Tamoxifen		211	NA	YES
+TCGA-BH-A0B5	Chemotherapy	Adriamycin	Complete Response	63	NA	NO
+TCGA-BH-A0B5	Chemotherapy	Cytoxan	Complete Response	63	NA	NO
+TCGA-BH-A0B5	Chemotherapy	Taxol	Complete Response	NA	257	NO
+TCGA-BH-A0B7	Chemotherapy	Adriamycin	Complete Response	105	168	NO
+TCGA-BH-A0B7	Chemotherapy	Taxol	Complete Response	196	378	NO
+TCGA-BH-A0B8	Hormone Therapy	Arimidex		114	NA	YES
+TCGA-BH-A0B9	Chemotherapy	CYCLOPHOSPHAMIDE		48	111	NO
+TCGA-BH-A0B9	Chemotherapy	Doxorubicin		48	111	NO
+TCGA-BH-A0BA	Chemotherapy	Cytoxan		63	94	NO
+TCGA-BH-A0BA	Chemotherapy	Paclitaxel		119	171	NO
+TCGA-BH-A0BA	Chemotherapy	Adriamycin		63	94	NO
+TCGA-BH-A0BC	Chemotherapy	Doxorubicin		106	169	NO
+TCGA-BH-A0BC	Chemotherapy	Docetaxel		795	900	NO
+TCGA-BH-A0BC	Chemotherapy	CYCLOPHOSPHAMIDE		106	169	NO
+TCGA-BH-A0BC	Hormone Therapy	Arimidex		106	NA	YES
+TCGA-BH-A0BC	Chemotherapy	Paclitaxel		190	239	NO
+TCGA-BH-A0BD	Chemotherapy	Doxorubicin		61	166	NO
+TCGA-BH-A0BD	Hormone Therapy	Tamoxifen		244	NA	YES
+TCGA-BH-A0BD	Chemotherapy	CYCLOPHOSPHAMIDE		61	166	NO
+TCGA-BH-A0BJ	Chemotherapy	DOXORUBICIN		126	198	NO
+TCGA-BH-A0BJ	Chemotherapy	PACLITAXEL		219	296	NO
+TCGA-BH-A0BJ	Chemotherapy	CYCLOPHOSPHAMIDE		126	198	NO
+TCGA-BH-A0BJ	Hormone Therapy	ARIMIDEX		343	NA	YES
+TCGA-BH-A0BL	Chemotherapy	Adriamycin	Complete Response	72	142	NO
+TCGA-BH-A0BL	Chemotherapy	Cytoxan	Complete Response	72	142	NO
+TCGA-BH-A0BL	Chemotherapy	Taxol	Complete Response	163	240	NO
+TCGA-BH-A0BM	Chemotherapy	TAXOTERE		164	229	NO
+TCGA-BH-A0BM	Chemotherapy	ADRIAMYCIN		80	138	NO
+TCGA-BH-A0BM	Chemotherapy	CYTOXAN		80	138	NO
+TCGA-BH-A0BS	Chemotherapy	Adriamycin	Complete Response	44	207	NO
+TCGA-BH-A0BS	Chemotherapy	Cytoxan	Complete Response	44	207	NO
+TCGA-BH-A0BT	Chemotherapy	Adriamycin	Complete Response	97	139	NO
+TCGA-BH-A0BT	Chemotherapy	Cytoxan	Complete Response	97	139	NO
+TCGA-BH-A0BV	Chemotherapy	DOXORUBICIN		88	153	NO
+TCGA-BH-A0BV	Hormone Therapy	ARIMIDEX		262	NA	YES
+TCGA-BH-A0BV	Chemotherapy	CYCLOPHOSPHAMIDE		88	153	NO
+TCGA-BH-A0BV	Chemotherapy	PACLITAXEL		174	262	NO
+TCGA-BH-A0BW	Chemotherapy	Adriamycin	Complete Response	51	114	NO
+TCGA-BH-A0BW	Chemotherapy	Cytoxan	Complete Response	51	114	NO
+TCGA-BH-A0BZ	Chemotherapy	Doxorubicin	Complete Response	76	167	NO
+TCGA-BH-A0BZ	Chemotherapy	Cyclophosphamide	Complete Response	76	167	NO
+TCGA-BH-A0BZ	Chemotherapy	Abraxane	Complete Response	167	197	NO
+TCGA-BH-A0C0	Hormone Therapy	ARIMIDEX		158	NA	YES
+TCGA-BH-A0C0	Chemotherapy	CARBOPLATIN		57	162	NO
+TCGA-BH-A0C0	Chemotherapy	DOCETAXEL		57	162	NO
+TCGA-BH-A0C1	Chemotherapy	Adriamycin	Clinical Progressive Disease	119	1167	NO
+TCGA-BH-A0C1	Chemotherapy	Cytoxan	Clinical Progressive Disease	119	1167	NO
+TCGA-BH-A0C3	Chemotherapy	Adriamycin	Clinical Progressive Disease	109	209	NO
+TCGA-BH-A0C3	Chemotherapy	Cytoxan	Clinical Progressive Disease	109	209	NO
+TCGA-BH-A0C7	Chemotherapy	Adriamycin	Complete Response	50	113	NO
+TCGA-BH-A0C7	Chemotherapy	Cytoxan	Complete Response	50	113	NO
+TCGA-BH-A0C7	Chemotherapy	Taxol	Complete Response	50	113	NO
+TCGA-BH-A0DD	Chemotherapy	Docetaxel	Complete Response	105	217	NO
+TCGA-BH-A0DD	Chemotherapy	Carboplatin	Complete Response	105	217	NO
+TCGA-BH-A0DG	Chemotherapy	Taxotere	Complete Response	48	166	NO
+TCGA-BH-A0DG	Chemotherapy	Adriamycin	Complete Response	48	166	NO
+TCGA-BH-A0DG	Chemotherapy	Cytoxan	Complete Response	48	166	NO
+TCGA-BH-A0DH	Chemotherapy	CYCLOPHOSPHAMIDE		71	143	NO
+TCGA-BH-A0DH	Hormone Therapy	FEMARA		164	NA	YES
+TCGA-BH-A0DH	Chemotherapy	TAXOTERE		71	143	NO
+TCGA-BH-A0DH	Chemotherapy	DOXORUBICIN		71	143	NO
+TCGA-BH-A0DI	Chemotherapy	Adriamycin	Complete Response	131	194	NO
+TCGA-BH-A0DI	Chemotherapy	Cytoxan	Complete Response	131	194	NO
+TCGA-BH-A0DI	Chemotherapy	Taxol	Complete Response	215	319	NO
+TCGA-BH-A0DK	Hormone Therapy	TAMOXIFEN		112	NA	YES
+TCGA-BH-A0DL	Chemotherapy	Cytoxan	Complete Response	58	121	NO
+TCGA-BH-A0DL	Chemotherapy	Taxotere	Complete Response	58	205	NO
+TCGA-BH-A0DP	Hormone Therapy	ARIMIDEX		97	NA	YES
+TCGA-BH-A0DQ	Chemotherapy	DOXORUBICIN		141	204	NO
+TCGA-BH-A0DQ	Chemotherapy	CYCLOPHOSPHAMIDE		141	204	NO
+TCGA-BH-A0DQ	Chemotherapy	TAXOL		225	309	NO
+TCGA-BH-A0DS	Chemotherapy	CYCLOPHOSPHAMIDE		47	NA	NO
+TCGA-BH-A0DS	Chemotherapy	TAXOTERE		78	NA	NO
+TCGA-BH-A0DT	Chemotherapy	Taxotere	Complete Response	118	287	NO
+TCGA-BH-A0DT	Chemotherapy	Adriamycin	Complete Response	118	287	NO
+TCGA-BH-A0DT	Chemotherapy	Cytoxan	Complete Response	118	287	NO
+TCGA-BH-A0DV	Chemotherapy	Taxotere	Complete Response	48	176	NO
+TCGA-BH-A0DV	Chemotherapy	Adriamycin	Complete Response	48	177	NO
+TCGA-BH-A0DV	Chemotherapy	Cytoxan	Complete Response	48	177	NO
+TCGA-BH-A0DX	Chemotherapy	Taxotere	Complete Response	79	143	NO
+TCGA-BH-A0DX	Chemotherapy	Cytoxan	Complete Response	79	143	NO
+TCGA-BH-A0DX	Chemotherapy	Cytoxan	Complete Response	143	171	NO
+TCGA-BH-A0DX	Chemotherapy	Methotrexate	Complete Response	143	171	NO
+TCGA-BH-A0DZ	Hormone Therapy	TAMOXIFEN		234	NA	YES
+TCGA-BH-A0DZ	Chemotherapy	DOCETAXEL		89	217	NO
+TCGA-BH-A0DZ	Chemotherapy	HERCEPTIN		89	224	NO
+TCGA-BH-A0DZ	Chemotherapy	CARBOPLATIN		89	217	NO
+TCGA-BH-A0E0	Chemotherapy	DOCETAXEL		38	143	NO
+TCGA-BH-A0E0	Chemotherapy	DOXORUBICIN		38	143	NO
+TCGA-BH-A0E0	Chemotherapy	CYCLOPHOSPHAMIDE		38	143	NO
+TCGA-BH-A0E1	Chemotherapy	CYTOXAN		140	203	NO
+TCGA-BH-A0E1	Chemotherapy	ADRIAMYCIN		140	203	NO
+TCGA-BH-A0E1	Chemotherapy	TAXOTERE		308	596	NO
+TCGA-BH-A0E1	Hormone Therapy	ARIMIDEX		349	NA	YES
+TCGA-BH-A0E2	Hormone Therapy	TAMOXIFEN		256	NA	YES
+TCGA-BH-A0E2	Chemotherapy	DOXORUBICIN		81	151	NO
+TCGA-BH-A0E2	Chemotherapy	CYCLOPHOSPHAMIDE		81	151	NO
+TCGA-BH-A0E2	Chemotherapy	PACLITAXEL		172	221	NO
+TCGA-BH-A0E6	Chemotherapy	CYTOXAN		58	121	NO
+TCGA-BH-A0E6	Chemotherapy	TAXOTERE		58	121	NO
+TCGA-BH-A0E7	Hormone Therapy	ARIMIDEX		26	NA	YES
+TCGA-BH-A0E9	Chemotherapy	Taxotere	Complete Response	96	503	NO
+TCGA-BH-A0E9	Chemotherapy	Adriamycin	Complete Response	96	503	NO
+TCGA-BH-A0E9	Chemotherapy	Cytoxan	Complete Response	96	503	NO
+TCGA-BH-A0EA	Chemotherapy	Taxotere	Complete Response	84	363	NO
+TCGA-BH-A0EA	Chemotherapy	Cytoxan	Complete Response	363	522	NO
+TCGA-BH-A0EB	Hormone Therapy	ARIMIDEX		55	NA	YES
+TCGA-BH-A0EE	Chemotherapy	Docetaxel		47	173	NO
+TCGA-BH-A0EE	Chemotherapy	Carboplatin		47	173	NO
+TCGA-BH-A0EE	Chemotherapy	Trastuzumab		47	411	NO
+TCGA-BH-A0GY	Hormone Therapy	Arimidex		351	NA	YES
+TCGA-BH-A0GY	Chemotherapy	Cyotxan		202	NA	NO
+TCGA-BH-A0GY	Chemotherapy	Adriamycin		202	NA	NO
+TCGA-BH-A0GZ	Hormone Therapy	ARIMIDEX		157	NA	YES
+TCGA-BH-A0H0	Hormone Therapy	ARIMIDEX		67	NA	YES
+TCGA-BH-A0H5	Chemotherapy	Cytoxan	Complete Response	174	NA	NO
+TCGA-BH-A0H5	Chemotherapy	Taxotere	Complete Response	174	NA	NO
+TCGA-BH-A0H7	Hormone Therapy	ARIMIDEX		298	NA	YES
+TCGA-BH-A0H7	Chemotherapy	DOXORUBICIN		85	148	NO
+TCGA-BH-A0H7	Chemotherapy	BEVACIZUMAB (AVASTIN)/PLACEBO PROVIDED BY STUDY		85	232	NO
+TCGA-BH-A0H7	Chemotherapy	PACLITAXEL		169	246	NO
+TCGA-BH-A0H7	Chemotherapy	CYCLOPHOSPHAMIDE		85	148	NO
+TCGA-BH-A0H9	Hormone Therapy	Arimidex		101	NA	YES
+TCGA-BH-A0HB	Hormone Therapy	Arimidex		317	NA	YES
+TCGA-BH-A0HB	Chemotherapy	Docetaxel		71	134	NO
+TCGA-BH-A0HB	Chemotherapy	Cyclophosphamide		71	134	NO
+TCGA-BH-A0HB	Other, specify in notesancillary	Zoledronic Acid		162	893	NO
+TCGA-BH-A0HF	Hormone Therapy	Arimidex		34	NA	YES
+TCGA-BH-A0HI	Hormone Therapy	Arimidex		88	NA	YES
+TCGA-BH-A0HK	Hormone Therapy	ARIMIDEX		38	NA	YES
+TCGA-BH-A0HL	Chemotherapy	CYCLOPHOSPHAMIDE		72	135	NO
+TCGA-BH-A0HL	Chemotherapy	DOXORUBICIN		72	135	NO
+TCGA-BH-A0HL	Hormone Therapy	ARIMIDEX		492	NA	YES
+TCGA-BH-A0HL	Chemotherapy	TAXOTERE		156	237	NO
+TCGA-BH-A0HN	Hormone Therapy	ARIMIDEX		82	NA	YES
+TCGA-BH-A0HO	Chemotherapy	Cyclophosphamide		119	182	NO
+TCGA-BH-A0HO	Chemotherapy	Paclitaxel		210	287	NO
+TCGA-BH-A0HO	Chemotherapy	Doxorubicin		119	182	NO
+TCGA-BH-A0HO	Hormone Therapy	Tamoxifen		378	NA	YES
+TCGA-BH-A0HP	Chemotherapy	Paclitaxel		147	238	NO
+TCGA-BH-A0HP	Chemotherapy	Doxorubicin		63	126	NO
+TCGA-BH-A0HP	Chemotherapy	Cyclophosphamide		63	126	NO
+TCGA-BH-A0HP	Hormone Therapy	Arimidex		347	NA	YES
+TCGA-BH-A0HQ	Hormone Therapy	Arimidex		70	NA	YES
+TCGA-BH-A0HU	Hormone Therapy	Tamoxifen		110	NA	YES
+TCGA-BH-A0HU	Chemotherapy	Docetaxel		47	110	NO
+TCGA-BH-A0HU	Chemotherapy	Cyclophosphamide		47	110	NO
+TCGA-BH-A0HW	Hormone Therapy	Arimidex		223	NA	YES
+TCGA-BH-A0HW	Chemotherapy	Doxorubicin		72	135	NO
+TCGA-BH-A0HW	Chemotherapy	Cyclophosphamide		72	135	NO
+TCGA-BH-A0HX	Hormone Therapy	Arimidex		278	NA	YES
+TCGA-BH-A0HX	Chemotherapy	Adrimycin		117	NA	NO
+TCGA-BH-A0HX	Chemotherapy	Taxotere		NA	NA	NO
+TCGA-BH-A0HX	Chemotherapy	Cytoxan		117	NA	NO
+TCGA-BH-A0HY	Hormone Therapy	Taxotere	Complete Response	88	190	NO
+TCGA-BH-A0HY	Chemotherapy	Carboplatin	Complete Response	88	190	NO
+TCGA-BH-A0HY	Chemotherapy	Herceptin	Complete Response	88	427	NO
+TCGA-BH-A0RX	Chemotherapy	Fluorouracil		50	155	NO
+TCGA-BH-A0RX	Chemotherapy	Cyclophosphamide		50	155	NO
+TCGA-BH-A0RX	Chemotherapy	Methotrexate		50	155	NO
+TCGA-BH-A0W5	Hormone Therapy	Arimidex	Complete Response	22	144	NO
+TCGA-BH-A0W7	Chemotherapy	Taxotere	Complete Response	76	138	NO
+TCGA-BH-A0W7	Chemotherapy	Cytoxan	Complete Response	76	138	NO
+TCGA-BH-A0W7	Hormone Therapy	Tamoxifen	Complete Response	168	1233	NO
+TCGA-BH-A0W7	Hormone Therapy	Arimidex	Complete Response	1171	1324	NO
+TCGA-BH-A18F	Chemotherapy	Taxotere	Complete Response	101	189	NO
+TCGA-BH-A18F	Chemotherapy	Cytoxan	Complete Response	101	189	NO
+TCGA-BH-A18H	Chemotherapy	Adriamycin	Complete Response	34	118	NO
+TCGA-BH-A18H	Chemotherapy	Cytoxan	Complete Response	34	118	NO
+TCGA-BH-A18H	Chemotherapy	Taxotere	Complete Response	118	219	NO
+TCGA-BH-A18I	Chemotherapy	Taxotere	Complete Response	121	220	NO
+TCGA-BH-A18I	Chemotherapy	Cytoxan	Complete Response	121	220	NO
+TCGA-BH-A202	Chemotherapy	Carboplatin	Complete Response	47	169	NO
+TCGA-BH-A202	Chemotherapy	Taxotere	Complete Response	47	169	NO
+TCGA-BH-A28O	Chemotherapy	Cytoxan	Complete Response	338	430	NO
+TCGA-BH-A28O	Chemotherapy	Doxorubicin	Complete Response	338	430	NO
+TCGA-BH-A2L8	Chemotherapy	Cytoxan	Complete Response	136	197	NO
+TCGA-BH-A5IZ	Chemotherapy	Adriamycin	Complete Response	77	140	NO
+TCGA-BH-A5IZ	Chemotherapy	Taxotere	Complete Response	161	161	NO
+TCGA-BH-A5IZ	Chemotherapy	Cyclophosphamide	Complete Response	77	140	NO
+TCGA-BH-A8G0	Chemotherapy	Taxotere	Complete Response	155	267	NO
+TCGA-BH-A8G0	Chemotherapy	Cytoxan	Complete Response	155	267	NO
+TCGA-BH-AB28	Chemotherapy	Taxotere		122	NA	YES
+TCGA-BH-AB28	Chemotherapy	Cytoxan		122	NA	YES
+TCGA-C8-A12Z	Chemotherapy	5-Flourouracil	Complete Response	102	107	NO
+TCGA-C8-A12Z	Chemotherapy	Doxorubicin	Complete Response	102	107	NO
+TCGA-C8-A12Z	Chemotherapy	Cyclophosphamide	Complete Response	102	107	NO
+TCGA-C8-A131	Chemotherapy	5-Flourouracil	Complete Response	34	57	NO
+TCGA-C8-A131	Chemotherapy	Doxorubicin	Complete Response	34	57	NO
+TCGA-C8-A131	Chemotherapy	Cyclophosphamide	Complete Response	34	57	NO
+TCGA-C8-A134	Chemotherapy	5-Flourouracil	Complete Response	38	41	NO
+TCGA-C8-A134	Chemotherapy	Epirubicin	Complete Response	38	41	NO
+TCGA-C8-A134	Chemotherapy	Cyclophosphamide	Complete Response	38	41	NO
+TCGA-C8-A135	Chemotherapy	5-Flourouracil	Complete Response	40	51	NO
+TCGA-C8-A135	Chemotherapy	Doxorubicin	Complete Response	40	51	NO
+TCGA-C8-A135	Chemotherapy	Cyclophosphamide	Complete Response	40	51	NO
+TCGA-C8-A135	Chemotherapy	Taxol	Complete Response	40	51	NO
+TCGA-C8-A1HM	Chemotherapy	Doxorubicin	Complete Response	26	49	NO
+TCGA-C8-A1HM	Chemotherapy	Cyclophosphamide	Complete Response	26	49	NO
+TCGA-C8-A1HM	Chemotherapy	Taxol	Complete Response	26	49	NO
+TCGA-C8-A1HO	Chemotherapy	5-Fluorouracil	Complete Response	-49	-45	NO
+TCGA-C8-A1HO	Chemotherapy	Epirubicin	Complete Response	-49	-45	NO
+TCGA-C8-A1HO	Chemotherapy	Cyclophosphamide	Complete Response	-49	-45	NO
+TCGA-C8-A26V	Hormone Therapy	Tamoxifen	Complete Response	247	613	NO
+TCGA-C8-A26W	Chemotherapy	Doxorubicin	Complete Response	23	193	NO
+TCGA-C8-A26W	Chemotherapy	Cyclophosphamide	Complete Response	23	193	NO
+TCGA-C8-A26X	Chemotherapy	5-Flourouracil	Complete Response	200	207	NO
+TCGA-C8-A26X	Chemotherapy	Cyclophosphamide	Complete Response	200	207	NO
+TCGA-C8-A26X	Chemotherapy	Doxorubicin	Complete Response	200	207	NO
+TCGA-C8-A26Z	Hormone Therapy	Tamoxifen	Complete Response	11	NA	YES
+TCGA-C8-A273	Hormone Therapy	Tamoxifen		13	NA	YES
+TCGA-C8-A274	Hormone Therapy	Tamoxifen		8	NA	YES
+TCGA-C8-A278	Hormone Therapy	Tamoxifen		23	NA	YES
+TCGA-C8-A27A	Chemotherapy	5-Flourouracil	Complete Response	411	434	NO
+TCGA-C8-A27A	Chemotherapy	Doxorubicin	Complete Response	411	434	NO
+TCGA-C8-A27A	Chemotherapy	Cyclophosphamide	Complete Response	411	434	NO
+TCGA-C8-A27A	Chemotherapy	Taxol	Complete Response	411	434	NO
+TCGA-C8-A27B	Chemotherapy	5-Flourouracil	Complete Response	62	85	NO
+TCGA-C8-A27B	Chemotherapy	Cyclophosphamide	Complete Response	62	85	NO
+TCGA-C8-A27B	Chemotherapy	Doxorubicin	Complete Response	62	85	NO
+TCGA-C8-A27B	Chemotherapy	Taxol	Complete Response	62	85	NO
+TCGA-C8-A3M8	Hormone Therapy	Tamoxifen	Complete Response	79	NA	YES
+TCGA-C8-A8HP	Chemotherapy	5-Flourouracil	Complete Response	31	224	NO
+TCGA-C8-A8HP	Chemotherapy	Epirubicin	Complete Response	31	224	NO
+TCGA-C8-A8HP	Chemotherapy	Cyclophosphamide	Complete Response	31	224	NO
+TCGA-C8-A8HR	Chemotherapy	5 fluorouracil	Complete Response	43	237	NO
+TCGA-C8-A8HR	Chemotherapy	Epirubicin	Complete Response	43	237	NO
+TCGA-C8-A8HR	Chemotherapy	Cyclophosphamide	Complete Response	43	237	NO
+TCGA-C8-A9FZ	Chemotherapy	Doxorubicin	Complete Response	29	99	NO
+TCGA-C8-A9FZ	Chemotherapy	5-Flourouracil	Complete Response	29	99	NO
+TCGA-C8-A9FZ	Chemotherapy	Cyclophosphamide	Complete Response	29	99	NO
+TCGA-C8-A9FZ	Hormone Therapy	Tamoxifen		169	NA	YES
+TCGA-D8-A13Y	Chemotherapy	doxorubicin		7	161	NO
+TCGA-D8-A13Y	Chemotherapy	cyclophosphamide		7	161	NO
+TCGA-D8-A13Z	Chemotherapy	doxorubicine		52	157	NO
+TCGA-D8-A13Z	Chemotherapy	cyclophosphamide		52	157	NO
+TCGA-D8-A13Z	Hormone Therapy	tamoxifen		52	157	NO
+TCGA-D8-A140	Chemotherapy	doxorubicin+cyclophosphamid		27	181	NO
+TCGA-D8-A141	Chemotherapy	doxorubicine		50	113	NO
+TCGA-D8-A141	Chemotherapy	cyclophosphamide		50	113	NO
+TCGA-D8-A141	Hormone Therapy	tamoxifen		50	113	NO
+TCGA-D8-A142	Chemotherapy	cyclophosphamid		61	271	NO
+TCGA-D8-A142	Chemotherapy	metotreksat		61	271	NO
+TCGA-D8-A142	Chemotherapy	fluorouracil		61	271	NO
+TCGA-D8-A143	Chemotherapy	doxorubicin		67	172	NO
+TCGA-D8-A143	Chemotherapy	cyclophosphamide		67	172	NO
+TCGA-D8-A145	Hormone Therapy	Tamoxifen		42	NA	YES
+TCGA-D8-A147	Chemotherapy	doxorubicine		21	135	NO
+TCGA-D8-A147	Chemotherapy	cyclophosphamide		21	135	NO
+TCGA-D8-A147	Chemotherapy	paclitaxel		21	135	NO
+TCGA-D8-A147	Chemotherapy	docetaxel		21	135	NO
+TCGA-D8-A1J8	Hormone Therapy	nolvadex		32	NA	YES
+TCGA-D8-A1JA	Chemotherapy	adriamycin		340	403	NO
+TCGA-D8-A1JA	Chemotherapy	cyclophosphamide		340	403	NO
+TCGA-D8-A1JB	Chemotherapy	adriamycin		51	111	NO
+TCGA-D8-A1JB	Chemotherapy	cyclophosphamide		51	111	NO
+TCGA-D8-A1JC	Chemotherapy	adriamycin		24	87	NO
+TCGA-D8-A1JC	Chemotherapy	cyclophosphamide		24	87	NO
+TCGA-D8-A1JD	Chemotherapy	Adriamycin		50	113	NO
+TCGA-D8-A1JD	Chemotherapy	cyclophosphamide		50	113	NO
+TCGA-D8-A1JE	Chemotherapy	adriamicin		103	162	NO
+TCGA-D8-A1JE	Chemotherapy	cyclophosphamid		103	162	NO
+TCGA-D8-A1JG	Chemotherapy	doxorubicin		269	NA	YES
+TCGA-D8-A1JG	Chemotherapy	cyclophosphamide		269	NA	YES
+TCGA-D8-A1JH	Hormone Therapy	nolvadex		66	NA	YES
+TCGA-D8-A1JI	Chemotherapy	doxorubicine		41	162	NO
+TCGA-D8-A1JI	Chemotherapy	cyclophosphamide		41	162	NO
+TCGA-D8-A1JI	Hormone Therapy	letrozolum		41	162	NO
+TCGA-D8-A1JJ	Chemotherapy	doxorubicine		137	143	NO
+TCGA-D8-A1JJ	Chemotherapy	cyclophosphamide		137	143	NO
+TCGA-D8-A1JM	ChemotherapyHormone Therapy	doxorubicine cyclophosphamide tamoxifen		39	144	NO
+TCGA-D8-A1JN	Hormone Therapy	anastrozolum		63	NA	YES
+TCGA-D8-A1JP	Hormone Therapy	TAMOXIFEN		68	NA	YES
+TCGA-D8-A1JS	Hormone Therapy	Tamoxifen		14	NA	YES
+TCGA-D8-A1JT	Hormone Therapy	Arimidex		47	NA	YES
+TCGA-D8-A1JU	Hormone Therapy	Tamoxifen		87	NA	YES
+TCGA-D8-A1X5	Hormone Therapy	Tamoxifen		55	NA	YES
+TCGA-D8-A1X6	Hormone Therapy	tamoxifen		65	NA	YES
+TCGA-D8-A1X7	ChemotherapyHormone Therapy	doxorubicine+cyclophosphamide+tamoxifen		64	134	NO
+TCGA-D8-A1X8	Chemotherapy	adrimicin+cyclophosphamide		23	182	NO
+TCGA-D8-A1X9	Chemotherapy	adriamycin+cyclophosphamide		197	320	NO
+TCGA-D8-A1XF	Chemotherapy	adriamycin+cyclophosphamide		311	356	NO
+TCGA-D8-A1XJ	Hormone Therapy	tamoxifen		85	NA	YES
+TCGA-D8-A1XK	Chemotherapy	paclitaxelum		149	233	NO
+TCGA-D8-A1XK	Chemotherapy	doxorubicine+cyclophosphamide		65	128	NO
+TCGA-D8-A1XL	Hormone Therapy	tamoxiphene+leuporeline+gosereline		250	NA	YES
+TCGA-D8-A1XL	Chemotherapy	doxorubicine+cyclophosphamide+tamoxifen		65	128	NO
+TCGA-D8-A1XO	Hormone Therapy	Tamoxifen		93	NA	YES
+TCGA-D8-A1XR	Chemotherapy	adriamycin+cyclophosphamide		105	168	NO
+TCGA-D8-A1XS	Chemotherapy	adriamycin+cyclophosphamide		85	548	NO
+TCGA-D8-A1XT	Chemotherapy	adriamycin+cyclophosphamide		74	228	NO
+TCGA-D8-A1XW	Chemotherapy	adriamycin+cyclophosphamide		76	181	NO
+TCGA-D8-A1XY	Chemotherapy	Tamoxifen		421	NA	YES
+TCGA-D8-A1XZ	Hormone Therapy	tamoxiphene+anastrozolum		94	NA	YES
+TCGA-D8-A1Y0	Hormone Therapy	tamoxiphene		540	NA	YES
+TCGA-D8-A1Y0	Chemotherapy	cyclophosphamide+methotrexatum+fluorouracillum		62	167	NO
+TCGA-D8-A1Y1	Hormone Therapy	Tamoxifen		58	302	NO
+TCGA-D8-A1Y2	Hormone Therapy	Tamoxifen		66	NA	YES
+TCGA-D8-A1Y3	Hormone Therapy	tamoxiphene		133	NA	YES
+TCGA-D8-A1Y3	Chemotherapy	doxorubicine+cyclophosphamide		62	125	NO
+TCGA-D8-A27E	Hormone Therapy	tamoxiphen+anastrazolum		125	NA	YES
+TCGA-D8-A27F	Chemotherapy	adriamycin+cyclophosphamide		379	488	NO
+TCGA-D8-A27H	Chemotherapy	doxorubicin+ cyclophosphamide		36	141	NO
+TCGA-D8-A27I	Chemotherapy	adrimycin+cyclophosphamide		76	160	NO
+TCGA-D8-A27K	Chemotherapy	adriamycin+cyclophosphamid		49	117	NO
+TCGA-D8-A27K	Hormone Therapy	Tamoxifen		49	NA	YES
+TCGA-D8-A27L	Chemotherapy	adriamycin+cuclophosphamide		100	238	NO
+TCGA-D8-A27M	Chemotherapy	methotrexate+5 fluorouracil+cyclophosphamide		84	238	NO
+TCGA-D8-A27N	Chemotherapy	taxol+adriamycin+cyclophosphamide+herceptin		68	NA	YES
+TCGA-D8-A27R	Chemotherapy	adriamycin+cyclophosphamide		57	218	NO
+TCGA-D8-A27T	Hormone Therapy	Tamoxifen		227	NA	YES
+TCGA-D8-A27T	Chemotherapy	doxorubicine+cyclophosphamide		115	220	NO
+TCGA-D8-A27V	Hormone Therapy	Tamoxifen		48	NA	YES
+TCGA-D8-A27W	Chemotherapy	doxorubicine+cyclophosphamide		56	162	NO
+TCGA-D8-A27W	Hormone Therapy	Tamoxifen		226	NA	YES
+TCGA-D8-A3Z6	Chemotherapy	cyclophosphamidum	Stable Disease	22	86	NO
+TCGA-D8-A3Z6	Chemotherapy	taxol	Stable Disease	108	185	NO
+TCGA-D8-A3Z6	Hormone Therapy	tamoxifen		260	NA	YES
+TCGA-D8-A3Z6	Chemotherapy	Doxorubicinum	Stable Disease	22	86	NO
+TCGA-D8-A4Z1	Hormone Therapy	Tamoxifen		104	NA	YES
+TCGA-D8-A73U	Hormone Therapy	tamoxifen		75	NA	YES
+TCGA-D8-A73W	Hormone Therapy	Tamoxifen	Clinical Progressive Disease	-709	-620	NO
+TCGA-D8-A73X	Hormone Therapy	tamoxifen		12	NA	YES
+TCGA-E2-A105	Hormone Therapy	Arimidex		65	NA	YES
+TCGA-E2-A106	Hormone Therapy	Zoladex		883	NA	YES
+TCGA-E2-A106	Hormone Therapy	Tamoxifen		883	NA	YES
+TCGA-E2-A107	Chemotherapy	Avastin		165	333	NO
+TCGA-E2-A107	Chemotherapy	Taxol		165	242	NO
+TCGA-E2-A107	Hormone Therapy	Tamoxifen		459	NA	YES
+TCGA-E2-A107	Hormone Therapy	Arimidex		305	355	NO
+TCGA-E2-A107	Chemotherapy	Adriamycin, cytoxan, avastin		109	151	NO
+TCGA-E2-A107	Chemotherapy	Cyclophosphamide		109	151	NO
+TCGA-E2-A107	Chemotherapy	Doxorubicin		109	151	NO
+TCGA-E2-A107	Hormone Therapy	Aromasin		397	417	NO
+TCGA-E2-A107	Chemotherapy	Bevacizumab		249	333	NO
+TCGA-E2-A107	Chemotherapy	Paclitaxel		165	242	NO
+TCGA-E2-A108	Chemotherapy	Adriamycin		102	144	NO
+TCGA-E2-A108	Chemotherapy	Taxol		151	187	NO
+TCGA-E2-A108	Hormone Therapy	Femara		244	NA	YES
+TCGA-E2-A108	Chemotherapy	Cytoxan		95	NA	NO
+TCGA-E2-A109	Hormone Therapy	Femara		857	NA	YES
+TCGA-E2-A109	Hormone Therapy	Aromasin		643	685	NO
+TCGA-E2-A109	Chemotherapy	Cytoxan		111	215	NO
+TCGA-E2-A109	Hormone Therapy	Tamoxifen		734	807	NO
+TCGA-E2-A109	Chemotherapy	Adriamycin		111	209	NO
+TCGA-E2-A109	Hormone Therapy	Arimidex		318	608	NO
+TCGA-E2-A109	Chemotherapy	Taxol		230	300	NO
+TCGA-E2-A109	Hormone Therapy	Femara		699	734	NO
+TCGA-E2-A10A	Hormone Therapy	Tamoxifen		91	NA	YES
+TCGA-E2-A10A	Hormone Therapy	Zoladex		88	NA	YES
+TCGA-E2-A10A	Targeted Molecular therapy	Zometa		148	NA	YES
+TCGA-E2-A10B	Hormone Therapy	Arimidex		232	NA	YES
+TCGA-E2-A10B	Chemotherapy	Paclitaxel		252	398	NO
+TCGA-E2-A10B	Chemotherapy	Carboplatin		252	398	NO
+TCGA-E2-A10B	Chemotherapy	Bevacizumab		301	301	NO
+TCGA-E2-A10B	Chemotherapy	Pemetrexed		657	748	NO
+TCGA-E2-A10B	Hormone Therapy	Arimidex		230	NA	YES
+TCGA-E2-A10C	Chemotherapy	Taxol		160	252	NO
+TCGA-E2-A10C	Chemotherapy	Cytoxan		95	139	NO
+TCGA-E2-A10C	Hormone Therapy	Arimidex		282	343	NO
+TCGA-E2-A10C	Hormone Therapy	Femara		343	NA	YES
+TCGA-E2-A10C	Chemotherapy	Adriamycin		95	139	NO
+TCGA-E2-A10E	Chemotherapy	Cytoxan and Taxotere		60	123	NO
+TCGA-E2-A10E	Hormone Therapy	Arimidex		217	NA	YES
+TCGA-E2-A10E	Chemotherapy	Docetaxel		60	123	NO
+TCGA-E2-A10E	Chemotherapy	Cyclophosphamide		60	123	NO
+TCGA-E2-A10F	Hormone Therapy	Tamoxifen		223	337	NO
+TCGA-E2-A10F	Chemotherapy	Docetaxel		69	132	NO
+TCGA-E2-A10F	Chemotherapy	Cyclophosphamide		69	132	NO
+TCGA-E2-A14N	Chemotherapy	Cyclophosphamide		64	148	NO
+TCGA-E2-A14N	Chemotherapy	Docetaxel		87	148	NO
+TCGA-E2-A14N	Chemotherapy	Doxorubicin		64	64	NO
+TCGA-E2-A14O	Hormone Therapy	Arimidex		53	NA	YES
+TCGA-E2-A14P	Chemotherapy	Trastuzumab		39	396	NO
+TCGA-E2-A14Q	Hormone Therapy	Tamoxifen		53	NA	YES
+TCGA-E2-A14R	Chemotherapy	Doxorubicin		89	131	NO
+TCGA-E2-A14R	Chemotherapy	Paclitaxel (Protein-Bound)		128	187	NO
+TCGA-E2-A14R	Chemotherapy	Paclitaxel		145	145	NO
+TCGA-E2-A14R	Chemotherapy	Cyclophosphamide		89	131	NO
+TCGA-E2-A14S	Hormone Therapy	Aromasin		147	NA	YES
+TCGA-E2-A14S	Chemotherapy	Cytoxan		50	119	NO
+TCGA-E2-A14S	Chemotherapy	Taxotere		50	119	NO
+TCGA-E2-A14T	Hormone Therapy	Arimidex		159	NA	YES
+TCGA-E2-A14T	Chemotherapy	Paclitaxel		103	145	NO
+TCGA-E2-A14T	Chemotherapy	Doxorubicin		47	89	NO
+TCGA-E2-A14T	Chemotherapy	Cyclophosphamide		47	89	NO
+TCGA-E2-A14U	Hormone Therapy	Arimidex		129	NA	YES
+TCGA-E2-A14V	Chemotherapy	cyclophosphamide		55	97	NO
+TCGA-E2-A14V	Chemotherapy	paclitaxel		118	195	NO
+TCGA-E2-A14V	Chemotherapy	lapatinib		118	468	NO
+TCGA-E2-A14V	Hormone Therapy	arimidex		304	NA	YES
+TCGA-E2-A14V	Chemotherapy	doxorubicin		55	97	NO
+TCGA-E2-A14W	Chemotherapy	Cytoxan		43	106	NO
+TCGA-E2-A14W	Chemotherapy	Herceptin		43	321	NO
+TCGA-E2-A14W	Chemotherapy	Docetaxel		43	106	NO
+TCGA-E2-A14W	Hormone Therapy	Tamoxifen		169	NA	YES
+TCGA-E2-A14X	Chemotherapy	doxorubicin		55	97	NO
+TCGA-E2-A14X	Chemotherapy	avastin		55	188	NO
+TCGA-E2-A14X	Chemotherapy	paclitaxel		111	199	NO
+TCGA-E2-A14X	Other, specify in notesclinical trial - bisphosphonates as adjuvant therapy	clodronic acid		182	280	NO
+TCGA-E2-A14X	Chemotherapy	cyclophosphamide		55	97	NO
+TCGA-E2-A14Y	Hormone Therapy	Tamoxifen		190	547	NO
+TCGA-E2-A14Y	Chemotherapy	Carboplatin		44	149	NO
+TCGA-E2-A14Y	Hormone Therapy	Fareston		548	NA	YES
+TCGA-E2-A14Y	Chemotherapy	Zoledronic Acid		212	1185	NO
+TCGA-E2-A14Y	Chemotherapy	Trastuzumab		44	384	NO
+TCGA-E2-A14Y	Chemotherapy	Docetaxel		44	149	NO
+TCGA-E2-A14Z	Hormone Therapy	Arimidex		110	188	NO
+TCGA-E2-A14Z	Chemotherapy	Carboplatin		196	266	NO
+TCGA-E2-A14Z	Chemotherapy	Taxol		196	266	NO
+TCGA-E2-A150	Chemotherapy	Doxorubicin		24	96	NO
+TCGA-E2-A150	Chemotherapy	Paclitaxel (Protein-Bound)		80	129	NO
+TCGA-E2-A150	Chemotherapy	Cyclophosphamide		24	66	NO
+TCGA-E2-A152	Chemotherapy	Trastuzumab		42	NA	YES
+TCGA-E2-A152	Chemotherapy	Cyclophosphamide		42	42	NO
+TCGA-E2-A152	Chemotherapy	Docetaxel		42	42	NO
+TCGA-E2-A152	Hormone Therapy	Arimidex		231	NA	YES
+TCGA-E2-A152	Chemotherapy	Paclitaxel (Protein-Bound)		63	217	NO
+TCGA-E2-A153	Hormone Therapy	tamoxifen		229	NA	YES
+TCGA-E2-A153	Chemotherapy	paclitaxel		112	196	NO
+TCGA-E2-A153	Chemotherapy	doxorubicin		42	98	NO
+TCGA-E2-A153	Chemotherapy	cyclophosphamide		42	98	NO
+TCGA-E2-A154	Hormone Therapy	arimidex		325	NA	YES
+TCGA-E2-A155	Chemotherapy	Cytoxan		30	NA	NO
+TCGA-E2-A155	Hormone Therapy	Tamoxifen		NA	249	NO
+TCGA-E2-A155	Chemotherapy	Taxol		NA	NA	NO
+TCGA-E2-A155	Chemotherapy	Adriamycin		30	NA	NO
+TCGA-E2-A155	Hormone Therapy	Arimidex		249	NA	YES
+TCGA-E2-A156	Hormone Therapy	Arimidex		119	NA	YES
+TCGA-E2-A158	Chemotherapy	arimidex		450	NA	YES
+TCGA-E2-A158	Chemotherapy	doxorubicin		NA	228	NO
+TCGA-E2-A158	Chemotherapy	cytoxan		NA	228	NO
+TCGA-E2-A158	Chemotherapy	Taxane		NA	228	NO
+TCGA-E2-A159	Chemotherapy	Cyclophosphamide		50	91	NO
+TCGA-E2-A159	Chemotherapy	Paclitaxel (Protein-Bound)		113	141	NO
+TCGA-E2-A159	Chemotherapy	Doxorubicin		50	91	NO
+TCGA-E2-A15A	Chemotherapy	Paclitaxel		103	145	NO
+TCGA-E2-A15A	Chemotherapy	Cyclophosphamide		47	89	NO
+TCGA-E2-A15A	Chemotherapy	Doxorubicin		47	89	NO
+TCGA-E2-A15A	Chemotherapy	Zoledronic Acid		103	NA	YES
+TCGA-E2-A15C	Hormone Therapy	arimidex		65	NA	YES
+TCGA-E2-A15D	Hormone Therapy	Tamoxifen		111	316	NO
+TCGA-E2-A15E	Chemotherapy	trastuzumab		119	489	NO
+TCGA-E2-A15E	Other, specify in notesclinical trial - bisphosphonates as adjuvant therapy	clodronate		77	NA	YES
+TCGA-E2-A15E	Chemotherapy	doxorubicin		63	105	NO
+TCGA-E2-A15E	Chemotherapy	paclitaxel		119	198	NO
+TCGA-E2-A15E	Hormone Therapy	tamoxifen		203	448	NO
+TCGA-E2-A15E	Hormone Therapy	aromasin		451	NA	YES
+TCGA-E2-A15E	Chemotherapy	cyclophosphamide		63	105	NO
+TCGA-E2-A15F	Hormone Therapy	Arimidex		87	NA	YES
+TCGA-E2-A15G	Hormone Therapy	Arimidex		125	NA	YES
+TCGA-E2-A15H	Chemotherapy	Herceptin		83	NA	NO
+TCGA-E2-A15I	Hormone Therapy	Tamoxifen		41	NA	YES
+TCGA-E2-A15J	Chemotherapy	Docetaxel		65	128	NO
+TCGA-E2-A15J	Hormone Therapy	Tamoxifen		151	NA	YES
+TCGA-E2-A15J	Chemotherapy	Cyclophosphamide		65	128	NO
+TCGA-E2-A15K	Chemotherapy	Adriamycin		61	131	NO
+TCGA-E2-A15K	Chemotherapy	Taxol		146	208	NO
+TCGA-E2-A15K	Chemotherapy	Cytoxan		61	131	NO
+TCGA-E2-A15L	Hormone Therapy	Arimidex		45	NA	YES
+TCGA-E2-A15M	Hormone Therapy	Arimidex		202	NA	NO
+TCGA-E2-A15O	Hormone Therapy	aromasin		96	289	NO
+TCGA-E2-A15O	Hormone Therapy	arimidex		48	104	NO
+TCGA-E2-A15O	Hormone Therapy	femara		289	NA	
+TCGA-E2-A15O	Hormone Therapy	Femara		289	NA	YES
+TCGA-E2-A15P	Hormone Therapy	Arimidex		105	220	NO
+TCGA-E2-A15P	Hormone Therapy	Aromasin		223	NA	YES
+TCGA-E2-A15R	Chemotherapy	cyclophosphamide		92	134	NO
+TCGA-E2-A15R	Chemotherapy	doxorubicin		92	134	NO
+TCGA-E2-A15R	Hormone Therapy	arimidex		266	NA	YES
+TCGA-E2-A15R	Chemotherapy	paclitaxel		148	197	NO
+TCGA-E2-A15S	Hormone Therapy	Arimidex		314	NA	YES
+TCGA-E2-A15S	Chemotherapy	Doxorubicin		50	78	NO
+TCGA-E2-A15S	Chemotherapy	Cyclophosphamide		50	78	NO
+TCGA-E2-A15S	Chemotherapy	Taxol		NA	NA	NO
+TCGA-E2-A15T	Hormone Therapy	Arimidex		34	NA	YES
+TCGA-E2-A1AZ	Chemotherapy	Adriamycin		61	121	NO
+TCGA-E2-A1AZ	Chemotherapy	Cytoxan		61	121	NO
+TCGA-E2-A1B0	Chemotherapy	cytoxan		35	119	NO
+TCGA-E2-A1B0	Chemotherapy	herceptin		231	557	NO
+TCGA-E2-A1B0	Chemotherapy	taxol		140	217	NO
+TCGA-E2-A1B0	Chemotherapy	adriamycin		35	119	NO
+TCGA-E2-A1B1	Chemotherapy	paclitaxel		155	232	NO
+TCGA-E2-A1B1	Chemotherapy	herceptin		155	491	NO
+TCGA-E2-A1B1	Other, specify in notesbiphosphonate	zoledronic acid		71	969	NO
+TCGA-E2-A1B1	Chemotherapy	adriamycin		71	134	NO
+TCGA-E2-A1B1	Hormone Therapy	tamoxifen		239	NA	YES
+TCGA-E2-A1B1	Hormone Therapy	triptorelin		71	NA	YES
+TCGA-E2-A1B1	Chemotherapy	cyclophosphamide		71	134	NO
+TCGA-E2-A1B4	Hormone Therapy	arimidex		176	1004	NO
+TCGA-E2-A1B5	Chemotherapy	taxol		NA	190	NO
+TCGA-E2-A1B5	Hormone Therapy	tamoxifen		190	NA	YES
+TCGA-E2-A1B5	Chemotherapy	cytoxan		NA	190	NO
+TCGA-E2-A1B6	Chemotherapy	Adriamycin		NA	163	NO
+TCGA-E2-A1B6	Chemotherapy	Taxol		NA	163	NO
+TCGA-E2-A1B6	Chemotherapy	Cytoxan		NA	163	NO
+TCGA-E2-A1BC	Hormone Therapy	Arimidex		11	NA	YES
+TCGA-E2-A1BD	Hormone Therapy	Arimidex		170	NA	YES
+TCGA-E2-A1IE	Hormone Therapy	Tamoxifen		500	NA	YES
+TCGA-E2-A1IE	Chemotherapy	Doxorubicin		62	104	NO
+TCGA-E2-A1IE	Chemotherapy	Cyclophosphamide		62	104	NO
+TCGA-E2-A1IE	Chemotherapy	Paclitaxel		118	171	NO
+TCGA-E2-A1IE	Hormone Therapy	Arimidex		252	437	NO
+TCGA-E2-A1IE	Hormone Therapy	Femara	Clinical Progressive Disease	1844	1928	NO
+TCGA-E2-A1IE	Hormone Therapy	Faslodex	Clinical Progressive Disease	1928	2187	NO
+TCGA-E2-A1IE	Hormone Therapy	Exemestane		2187	NA	YES
+TCGA-E2-A1IE	Chemotherapy	Everolimus		2187	NA	YES
+TCGA-E2-A1IF	Hormone Therapy	Arimidex		41	NA	YES
+TCGA-E2-A1IG	Chemotherapy	Paclitaxel		108	150	NO
+TCGA-E2-A1IG	Hormone Therapy	Tamoxifen		234	NA	YES
+TCGA-E2-A1IG	Chemotherapy	Cyclophosphamide		52	94	NO
+TCGA-E2-A1IG	Chemotherapy	Doxorubicin		52	94	NO
+TCGA-E2-A1IG	Hormone Therapy	Letrozole		1991	NA	YES
+TCGA-E2-A1IH	Hormone Therapy	Aromasin		32	NA	YES
+TCGA-E2-A1II	Chemotherapy	Paclitaxel		129	171	NO
+TCGA-E2-A1II	Chemotherapy	Doxorubicin		73	115	NO
+TCGA-E2-A1II	Chemotherapy	Cyclophosphamide		73	115	NO
+TCGA-E2-A1IJ	Hormone Therapy	Arimidex		48	NA	YES
+TCGA-E2-A1IK	Hormone Therapy	Arimidex		92	NA	YES
+TCGA-E2-A1IL	Hormone Therapy	Arimidex		64	NA	YES
+TCGA-E2-A1IN	Hormone Therapy	Arimidex		103	NA	YES
+TCGA-E2-A1IO	Chemotherapy	Docetaxel		84	147	NO
+TCGA-E2-A1IO	Chemotherapy	Cyclophosphamide		84	147	NO
+TCGA-E2-A1IO	Hormone Therapy	Tamoxifen		266	NA	YES
+TCGA-E2-A1IU	Hormone Therapy	Arimidex		36	NA	YES
+TCGA-E2-A1L6	Chemotherapy	Cyclophosphamide		49	91	NO
+TCGA-E2-A1L6	Other, specify in notesPhase III Clinical Trial	Triptorelin		49	NA	YES
+TCGA-E2-A1L6	Other, specify in notesPhase III Clinical Trial	Clodronate		49	1120	NO
+TCGA-E2-A1L6	Chemotherapy	Doxorubicin		49	91	NO
+TCGA-E2-A1L6	Hormone Therapy	Tamoxifen		148	NA	YES
+TCGA-E2-A1L6	Chemotherapy	Paclitaxel		105	147	NO
+TCGA-E2-A1L7	Chemotherapy	Cyclophosphamide		41	83	NO
+TCGA-E2-A1L7	Chemotherapy	Doxorubicin		41	83	NO
+TCGA-E2-A1L7	Other, specify in notesPhase III Clinical Trial	Clodronate		170	NA	YES
+TCGA-E2-A1L7	Hormone Therapy	Arimidex		240	NA	YES
+TCGA-E2-A1L7	Chemotherapy	Paclitaxel		97	153	NO
+TCGA-E2-A1L8	Chemotherapy	Cyclophosphamide		57	99	NO
+TCGA-E2-A1L8	Other, specify in notesPhase III Clinical Trial	Clodronate		211	NA	YES
+TCGA-E2-A1L8	Hormone Therapy	Arimidex		246	NA	YES
+TCGA-E2-A1L8	Chemotherapy	Doxorubicin		57	99	NO
+TCGA-E2-A1L8	Chemotherapy	Paclitaxel		113	155	NO
+TCGA-E2-A1L9	Hormone Therapy	Tamoxifen		187	NA	YES
+TCGA-E2-A1L9	Chemotherapy	Taxotere		56	122	NO
+TCGA-E2-A1L9	Chemotherapy	Cytoxan		55	122	NO
+TCGA-E2-A1LA	Hormone Therapy	Arimidex		48	NA	YES
+TCGA-E2-A1LB	Chemotherapy	taxol		121	199	NO
+TCGA-E2-A1LB	Chemotherapy	cytoxan		66	108	NO
+TCGA-E2-A1LB	Chemotherapy	adriamycin		66	128	NO
+TCGA-E2-A1LB	Chemotherapy	herceptin		121	441	NO
+TCGA-E2-A1LE	Chemotherapy	herceptin		54	54	NO
+TCGA-E2-A1LE	Chemotherapy	docetaxel		54	54	NO
+TCGA-E2-A1LE	Chemotherapy	cyclophosphamide		54	54	NO
+TCGA-E2-A1LE	Chemotherapy	gemcitabine		468	530	NO
+TCGA-E2-A1LG	Chemotherapy	Doxorubicin		70	112	NO
+TCGA-E2-A1LG	Chemotherapy	Paclitaxel		126	203	NO
+TCGA-E2-A1LG	Chemotherapy	Cyclophosphamide		70	112	NO
+TCGA-E2-A1LG	Other, specify in notesPhase III clinical trial	Bevacizumab or Placebo		70	179	NO
+TCGA-E2-A1LH	Chemotherapy	Adriamycin		41	104	NO
+TCGA-E2-A1LH	Chemotherapy	Cytoxan		41	104	NO
+TCGA-E2-A1LI	Chemotherapy	Adriamycin		42	112	NO
+TCGA-E2-A1LI	Chemotherapy	Cytoxan		42	112	NO
+TCGA-E2-A1LL	Chemotherapy	Docetaxel		49	49	NO
+TCGA-E2-A1LL	Chemotherapy	Cyclophosphamide		49	49	NO
+TCGA-E2-A1LS	Chemotherapy	Cyclophosphamide		NA	112	NO
+TCGA-E2-A1LS	Chemotherapy	Taxotere		NA	112	NO
+TCGA-E2-A2P5	Hormone Therapy	Arimidex		163	NA	YES
+TCGA-E2-A2P6	Hormone Therapy	Anastrozole		106	NA	YES
+TCGA-E2-A3DX	Chemotherapy	Doxorubicin		63	105	NO
+TCGA-E2-A3DX	Chemotherapy	Cyclophosphamide		63	105	NO
+TCGA-E2-A3DX	Chemotherapy	Paclitaxel		119	196	NO
+TCGA-E2-A3DX	Chemotherapy	Trastuzumab	Complete Response	119	427	NO
+TCGA-E2-A3DX	Hormone Therapy	Tamoxifen		280	NA	YES
+TCGA-E2-A56Z	Hormone Therapy	Arimidex		130	NA	YES
+TCGA-E2-A570	Hormone Therapy	Anastrozole		252	NA	YES
+TCGA-E2-A572	Chemotherapy	Doxorubicin		91	133	NO
+TCGA-E2-A572	Chemotherapy	Taxol	Complete Response	147	200	NO
+TCGA-E2-A572	Hormone Therapy	Arimidex		263	NA	YES
+TCGA-E2-A573	Chemotherapy	Taxotere	Complete Response	104	167	NO
+TCGA-E2-A573	Chemotherapy	Cytoxan	Complete Response	104	167	NO
+TCGA-E2-A574	Chemotherapy	Adriamycin		64	106	NO
+TCGA-E2-A574	Chemotherapy	Cytoxan		64	106	NO
+TCGA-E2-A574	Chemotherapy	Abraxane		120	162	NO
+TCGA-E2-A576	Hormone Therapy	Arimidex		252	NA	YES
+TCGA-E2-A576	Chemotherapy	Taxotere		88	151	NO
+TCGA-E2-A576	Chemotherapy	Cytoxan		88	151	NO
+TCGA-E2-A9RU	Hormone Therapy	Arimidex		0	NA	YES
+TCGA-E9-A1N3	Chemotherapy	5-Fluorouracil	Complete Response	15	68	NO
+TCGA-E9-A1N3	Chemotherapy	Doxorubicin	Complete Response	15	68	NO
+TCGA-E9-A1N3	Chemotherapy	Cyclophosphamide	Complete Response	15	68	NO
+TCGA-E9-A1N3	Hormone Therapy	Tamoxifen		130	NA	YES
+TCGA-E9-A1N4	Chemotherapy	Doxorubicin		118	194	NO
+TCGA-E9-A1N4	Chemotherapy	5-Fluorouracil		118	194	NO
+TCGA-E9-A1N4	Chemotherapy	Cyclophosphane		118	194	NO
+TCGA-E9-A1N4	Hormone Therapy	Tamoxifen		230	NA	YES
+TCGA-E9-A1N5	Chemotherapy	Doxorubicin		22	133	NO
+TCGA-E9-A1N5	Chemotherapy	5-Fluorouracil		22	133	NO
+TCGA-E9-A1N5	Hormone Therapy	Tamoxifen		173	NA	YES
+TCGA-E9-A1N5	Chemotherapy	Cyclophosphane		22	133	NO
+TCGA-E9-A1N6	Hormone Therapy	Tamoxifen		128	NA	YES
+TCGA-E9-A1N6	Chemotherapy	Doxorubicin	Stable Disease	447	574	NO
+TCGA-E9-A1N6	Chemotherapy	Cyclophosphane	Stable Disease	447	574	NO
+TCGA-E9-A1N6	Hormone Therapy	Letrozole	Clinical Progressive Disease	575	678	NO
+TCGA-E9-A1N8	Chemotherapy	Doxorubicin		22	107	NO
+TCGA-E9-A1N8	Chemotherapy	5-Fluorouracil		22	107	NO
+TCGA-E9-A1N8	Chemotherapy	Cyclophosphane		22	107	NO
+TCGA-E9-A1N9	Chemotherapy	Doxorubicin		14	91	NO
+TCGA-E9-A1N9	Hormone Therapy	Tamoxifen		119	NA	YES
+TCGA-E9-A1NA	Chemotherapy	Cyclophosphamide		12	148	NO
+TCGA-E9-A1NA	Chemotherapy	Carboplatin		12	148	NO
+TCGA-E9-A1NA	Hormone Therapy	Letrozole		206	NA	YES
+TCGA-E9-A1NC	Chemotherapy	Doxorubicin	Complete Response	10	122	NO
+TCGA-E9-A1NC	Chemotherapy	5-Fluorouracil	Complete Response	10	122	NO
+TCGA-E9-A1NC	Chemotherapy	Cyclophosphane	Complete Response	10	122	NO
+TCGA-E9-A1NC	Hormone Therapy	Tamoxifen	Complete Response	134	708	NO
+TCGA-E9-A1ND	Hormone Therapy	Aromasin		31	NA	YES
+TCGA-E9-A1ND	Hormone Therapy	Tamoxifen		31	78	NO
+TCGA-E9-A1NE	Chemotherapy	Doxorubicin	Complete Response	10	121	NO
+TCGA-E9-A1NE	Chemotherapy	Cyclophosphamide	Complete Response	10	121	NO
+TCGA-E9-A1NE	Chemotherapy	5-Fluorouracil	Complete Response	10	121	NO
+TCGA-E9-A1NE	Hormone Therapy	Tamoxifen		184	NA	YES
+TCGA-E9-A1NF	Chemotherapy	Doxorubicin		21	63	NO
+TCGA-E9-A1NF	Chemotherapy	Cyclophosphamide		21	63	NO
+TCGA-E9-A1NF	Chemotherapy	5-Fluorouracil		21	63	NO
+TCGA-E9-A1NF	Chemotherapy	Vinorelbine		91	178	NO
+TCGA-E9-A1NF	Chemotherapy	Mitomycin		91	178	NO
+TCGA-E9-A1NF	Hormone Therapy	Tamoxifen		280	NA	YES
+TCGA-E9-A1NG	Hormone Therapy	Letrozole		34	NA	YES
+TCGA-E9-A1NG	Hormone Therapy	Tamoxifen	Complete Response	34	786	NO
+TCGA-E9-A1NH	Hormone Therapy	Tamoxifen		33	NA	YES
+TCGA-E9-A1NI	Chemotherapy	Doxorubicin	Complete Response	0	80	NO
+TCGA-E9-A1NI	Chemotherapy	Cyclophosphane	Complete Response	0	80	NO
+TCGA-E9-A1NI	Chemotherapy	5-Fluorouracil	Complete Response	0	80	NO
+TCGA-E9-A1NI	Hormone Therapy	Tamoxifen		86	NA	YES
+TCGA-E9-A1R0	Chemotherapy	Cyclophosphamide		36	103	NO
+TCGA-E9-A1R0	Chemotherapy	Doxorubicin		36	103	NO
+TCGA-E9-A1R2	Chemotherapy	Taxotere	Complete Response	36	144	NO
+TCGA-E9-A1R2	Chemotherapy	Adriamycin	Complete Response	36	144	NO
+TCGA-E9-A1R2	Chemotherapy	Cytoxan	Complete Response	36	144	NO
+TCGA-E9-A1R3	Chemotherapy	Methotrexate		41	50	NO
+TCGA-E9-A1R3	Chemotherapy	Cyclophosphamide		41	50	NO
+TCGA-E9-A1R3	Hormone Therapy	Tamoxifen		45	NA	YES
+TCGA-E9-A1R3	Chemotherapy	5-Fluorouracil		41	50	NO
+TCGA-E9-A1R4	Hormone Therapy	Tamoxifen		12	NA	YES
+TCGA-E9-A1R4	Chemotherapy	5-Fluorouracil		9	45	NO
+TCGA-E9-A1R4	Chemotherapy	Methotrexate		9	45	NO
+TCGA-E9-A1R4	Chemotherapy	Cyclophosphamide		9	45	NO
+TCGA-E9-A1R5	Hormone Therapy	Tamoxifen		24	NA	YES
+TCGA-E9-A1R6	Hormone Therapy	Tamoxifen		66	NA	YES
+TCGA-E9-A1R7	Hormone Therapy	Fareston		25	NA	YES
+TCGA-E9-A1R7	Hormone Therapy	Tamoxifen		53	NA	YES
+TCGA-E9-A1RA	Chemotherapy	Doxorubicin		10	80	NO
+TCGA-E9-A1RA	Hormone Therapy	Tamoxifen		9	NA	YES
+TCGA-E9-A1RA	Chemotherapy	Cyclophosphamide		10	80	NO
+TCGA-E9-A1RB	Hormone Therapy	Tamoxifen		15	NA	YES
+TCGA-E9-A1RB	Chemotherapy	Methotrexate		11	107	NO
+TCGA-E9-A1RB	Chemotherapy	5-Fluorouracil		11	107	NO
+TCGA-E9-A1RB	Chemotherapy	Cyclophosphamide		11	107	NO
+TCGA-E9-A1RC	Chemotherapy	Mitoxantrone		1222	1222	NO
+TCGA-E9-A1RC	Chemotherapy	Methotrexate		1222	1222	NO
+TCGA-E9-A1RC	Hormone Therapy	Tamoxifen		1220	NA	YES
+TCGA-E9-A1RC	Chemotherapy	Mitomycin		1222	1222	NO
+TCGA-E9-A1RD	Hormone Therapy	Tamoxifen		13	NA	YES
+TCGA-E9-A1RE	Chemotherapy	Doxorubicin		50	145	NO
+TCGA-E9-A1RE	Chemotherapy	5-Fluorouracil		50	145	NO
+TCGA-E9-A1RE	Chemotherapy	Cyclophosphamide		50	145	NO
+TCGA-E9-A1RE	Hormone Therapy	Tamoxifen		39	NA	YES
+TCGA-E9-A1RF	Chemotherapy	Doxorubicin		54	194	NO
+TCGA-E9-A1RF	Chemotherapy	5-Fluorouracil		54	194	NO
+TCGA-E9-A1RF	Hormone Therapy	Tamoxifen		30	NA	YES
+TCGA-E9-A1RF	Chemotherapy	Cyclophosphamide		54	194	NO
+TCGA-E9-A1RG	Chemotherapy	Methotrexate		32	200	NO
+TCGA-E9-A1RG	Chemotherapy	Cyclophosphamide		32	200	NO
+TCGA-E9-A1RG	Chemotherapy	5-Fluorouracil		32	200	NO
+TCGA-E9-A1RG	Hormone Therapy	Tamoxifen		31	NA	YES
+TCGA-E9-A1RH	Chemotherapy	5-Fluorouracil		11	205	NO
+TCGA-E9-A1RH	Chemotherapy	Methotrexate		11	214	NO
+TCGA-E9-A1RH	Chemotherapy	Cyclophosphamide		11	214	NO
+TCGA-E9-A1RH	Chemotherapy	5-Fluorouracil		11	214	NO
+TCGA-E9-A1RI	Chemotherapy	Doxorubicin		32	78	NO
+TCGA-E9-A1RI	Chemotherapy	5-Fluorouracil		32	78	NO
+TCGA-E9-A1RI	Hormone Therapy	Tamoxifen		28	NA	YES
+TCGA-E9-A1RI	Hormone Therapy	Leuprolide	Complete Response	418	425	NO
+TCGA-E9-A1RI	Chemotherapy	Cyclophosphamide		32	78	NO
+TCGA-E9-A226	Hormone Therapy	Tamoxifen		13	NA	YES
+TCGA-E9-A226	Chemotherapy	Cyclophosphamide		13	205	NO
+TCGA-E9-A226	Chemotherapy	5-Fluorouracil		13	205	NO
+TCGA-E9-A226	Chemotherapy	Doxorubicin		13	205	NO
+TCGA-E9-A226	Ancillary	Pamidronate	Partial Response	790	937	NO
+TCGA-E9-A227	Chemotherapy	Taxotere	Complete Response	92	197	NO
+TCGA-E9-A227	Hormone Therapy	Tamoxifen		239	NA	YES
+TCGA-E9-A228	Hormone Therapy	Tamoxifen		287	NA	YES
+TCGA-E9-A228	Chemotherapy	Doxorubicin		35	131	NO
+TCGA-E9-A228	Chemotherapy	Cyclophosphamide		35	131	NO
+TCGA-E9-A229	Chemotherapy	5-Fluorouracil		24	182	NO
+TCGA-E9-A229	Chemotherapy	Doxorubicin		24	182	NO
+TCGA-E9-A229	Chemotherapy	Cyclophosphamide		24	182	NO
+TCGA-E9-A22A	Hormone Therapy	Tamoxifen		111	NA	YES
+TCGA-E9-A22B	Hormone Therapy	Tamoxifen		50	NA	YES
+TCGA-E9-A22D	Hormone Therapy	Tamoxifen		193	NA	YES
+TCGA-E9-A22D	Chemotherapy	5-Fluorouracil		16	189	NO
+TCGA-E9-A22D	Chemotherapy	Cyclophosphane		16	189	NO
+TCGA-E9-A22D	Chemotherapy	Doxorubicin		16	189	NO
+TCGA-E9-A22E	Chemotherapy	Cyclophosphane		13	226	NO
+TCGA-E9-A22E	Chemotherapy	5-Fluorouracil		13	226	NO
+TCGA-E9-A22E	Chemotherapy	Doxorubicin		13	226	NO
+TCGA-E9-A22G	Chemotherapy	Cyclophosphane		31	170	NO
+TCGA-E9-A22G	Chemotherapy	Doxorubicin		14	136	NO
+TCGA-E9-A22H	Chemotherapy	Doxorubicin		15	226	NO
+TCGA-E9-A22H	Hormone Therapy	Tamoxifen		330	NA	YES
+TCGA-E9-A22H	Chemotherapy	5-Fluorouracil		15	226	NO
+TCGA-E9-A22H	Chemotherapy	Cyclophosphane		15	226	NO
+TCGA-E9-A243	Chemotherapy	5-Fluorouracil		53	235	NO
+TCGA-E9-A243	Chemotherapy	Vincristine		53	235	NO
+TCGA-E9-A243	Chemotherapy	Cyclophosphamide		53	235	NO
+TCGA-E9-A243	Chemotherapy	Methotrexate		53	235	NO
+TCGA-E9-A243	Ancillary	Pamidronate	Stable Disease	305	520	NO
+TCGA-E9-A244	Chemotherapy	Cyclophosphamide		16	16	NO
+TCGA-E9-A244	Chemotherapy	Doxorubicin		16	16	NO
+TCGA-E9-A245	Hormone Therapy	Tamoxifen		20	NA	NO
+TCGA-E9-A247	Hormone Therapy	Tamoxifen		10	NA	YES
+TCGA-E9-A248	Chemotherapy	Cyclophosphamide		16	59	NO
+TCGA-E9-A248	Chemotherapy	Doxorubicin		16	59	NO
+TCGA-E9-A249	Chemotherapy	Cyclophosphamide		28	100	NO
+TCGA-E9-A249	Hormone Therapy	Tamoxifen		28	NA	YES
+TCGA-E9-A249	Chemotherapy	Doxorubicin		28	100	NO
+TCGA-E9-A24A	Hormone Therapy	Tamoxifen		9	NA	YES
+TCGA-E9-A295	Hormone Therapy	Tamoxifen		152	NA	YES
+TCGA-E9-A2JS	Hormone Therapy	Tamoxifen		21	NA	YES
+TCGA-E9-A2JS	Chemotherapy	Cyclophosphamide	Complete Response	17	191	NO
+TCGA-E9-A2JS	Chemotherapy	Methotrexate	Complete Response	17	191	NO
+TCGA-E9-A2JS	Chemotherapy	5-Fluorouracil	Complete Response	17	191	NO
+TCGA-E9-A2JS	Ancillary	Pamidronic acid		524	846	NO
+TCGA-E9-A2JS	Hormone Therapy	Zoladex	Clinical Progressive Disease	677	713	NO
+TCGA-E9-A2JT	Hormone Therapy	Tamoxifen		27	NA	YES
+TCGA-E9-A3HO	Chemotherapy	Cyclophosphamide	Complete Response	26	26	NO
+TCGA-E9-A3HO	Chemotherapy	5-Fluorouracil	Complete Response	26	26	NO
+TCGA-E9-A3HO	Chemotherapy	Methotrexate	Complete Response	26	26	NO
+TCGA-E9-A3HO	Hormone Therapy	Tamoxifen		28	NA	YES
+TCGA-E9-A3HO	Hormone Therapy	Leuprorelin	Complete Response	313	337	NO
+TCGA-E9-A3HO	Hormone Therapy	Zoladex	Complete Response	61	64	NO
+TCGA-E9-A3Q9	Chemotherapy	Cyclophosphane	Complete Response	28	51	NO
+TCGA-E9-A3Q9	Chemotherapy	Mitoxantrone	Complete Response	28	51	NO
+TCGA-E9-A3Q9	Chemotherapy	5-Fluorouracil	Complete Response	28	51	NO
+TCGA-E9-A3Q9	Hormone Therapy	Tamoxifen		108	NA	YES
+TCGA-E9-A3X8	Chemotherapy	Cyclophosphane	Complete Response	14	160	NO
+TCGA-E9-A3X8	Chemotherapy	Doxorubicin	Complete Response	14	160	NO
+TCGA-E9-A3X8	Chemotherapy	5-Fluorouracil	Complete Response	14	160	NO
+TCGA-E9-A3X8	Hormone Therapy	Tamoxifen		324	NA	YES
+TCGA-E9-A5FK	Chemotherapy	Cyclophosphamide	Complete Response	21	200	NO
+TCGA-E9-A5FK	Chemotherapy	Methotrexate	Complete Response	21	200	NO
+TCGA-E9-A5FK	Chemotherapy	5-Fluorouracil	Complete Response	21	200	NO
+TCGA-E9-A5UP	Hormone Therapy	Tamoxifen		8	NA	YES
+TCGA-E9-A6HE	Chemotherapy	Adriamycin	Complete Response	104	174	NO
+TCGA-E9-A6HE	Chemotherapy	Cyclophosphamide	Complete Response	104	174	NO
+TCGA-E9-A6HE	Chemotherapy	Paclitaxel	Complete Response	104	307	NO
+TCGA-E9-A6HE	Hormone Therapy	Tamoxifen		547	NA	YES
+TCGA-EW-A1IW	Hormone Therapy	Aromasin		71	NA	YES
+TCGA-EW-A1IX	Hormone Therapy	Femara		871	NA	YES
+TCGA-EW-A1IY	Chemotherapy	Taxotere/Cytoxan		57	119	NO
+TCGA-EW-A1IZ	Chemotherapy	Taxotere		70	176	NO
+TCGA-EW-A1IZ	Hormone Therapy	Femara		199	NA	YES
+TCGA-EW-A1IZ	Chemotherapy	Adriamycin		70	176	NO
+TCGA-EW-A1IZ	Chemotherapy	Cyclophosphamide		70	176	NO
+TCGA-EW-A1J1	Chemotherapy	Taxotere		71	176	NO
+TCGA-EW-A1J1	Hormone Therapy	Tamoxifen		276	497	NO
+TCGA-EW-A1J1	Hormone Therapy	Zoladex		513	NA	YES
+TCGA-EW-A1J1	Chemotherapy	Adriamycin		71	176	NO
+TCGA-EW-A1J1	Chemotherapy	Cytoxan		71	176	NO
+TCGA-EW-A1J2	Chemotherapy	Taxotere		76	140	NO
+TCGA-EW-A1J2	Hormone Therapy	Arimidex		150	NA	YES
+TCGA-EW-A1J2	Chemotherapy	Cytoxan		76	140	NO
+TCGA-EW-A1J3	Chemotherapy	Carboplatin		189	294	NO
+TCGA-EW-A1J3	Hormone Therapy	Arimidex		336	NA	YES
+TCGA-EW-A1J3	Chemotherapy	Docetaxel		189	294	NO
+TCGA-EW-A1J3	Chemotherapy	Trastuzumab		189	294	NO
+TCGA-EW-A1J5	Chemotherapy	Adriamycin		94	247	NO
+TCGA-EW-A1J5	Chemotherapy	Cyclophosphamide		94	247	NO
+TCGA-EW-A1J5	Chemotherapy	Paclitaxel		94	247	NO
+TCGA-EW-A1J5	Chemotherapy	Herceptin		94	247	NO
+TCGA-EW-A1J6	Hormone Therapy	Femara		111	NA	YES
+TCGA-EW-A1OV	Chemotherapy	Epirubicin		203	252	NO
+TCGA-EW-A1OV	Chemotherapy	Docetaxel		273	314	NO
+TCGA-EW-A1OV	Chemotherapy	Cyclophosphamide		203	252	NO
+TCGA-EW-A1OV	Chemotherapy	Fluorouracil		203	252	NO
+TCGA-EW-A1OW	Chemotherapy	Fluorouracil		108	213	NO
+TCGA-EW-A1OW	Chemotherapy	Taxotere		108	213	NO
+TCGA-EW-A1OW	Chemotherapy	Epirubicin		108	213	NO
+TCGA-EW-A1OW	Chemotherapy	Cyclophosphamide		108	213	NO
+TCGA-EW-A1OX	Chemotherapy	Taxotere		120	198	NO
+TCGA-EW-A1OX	Chemotherapy	Cytoxan		120	198	NO
+TCGA-EW-A1OX	Hormone Therapy	Zoladex		227	NA	YES
+TCGA-EW-A1OX	Hormone Therapy	Tamoxifen		227	NA	YES
+TCGA-EW-A1OY	Hormone Therapy	Femara		478	NA	YES
+TCGA-EW-A1OY	Chemotherapy	Doxorubicin		109	161	NO
+TCGA-EW-A1OY	Chemotherapy	Cyclophosphamide		109	161	NO
+TCGA-EW-A1OY	Chemotherapy	Paclitaxel	Stable Disease	180	308	NO
+TCGA-EW-A1OZ	Chemotherapy	Trastuzumab		144	487	NO
+TCGA-EW-A1OZ	Chemotherapy	Paclitaxel		256	291	NO
+TCGA-EW-A1OZ	Chemotherapy	Carboplatin		144	228	NO
+TCGA-EW-A1OZ	Chemotherapy	Aromasin		301	NA	YES
+TCGA-EW-A1OZ	Chemotherapy	Docetaxel		144	186	NO
+TCGA-EW-A1P0	Hormone Therapy	Arimidex		1033	1245	NO
+TCGA-EW-A1P1	Chemotherapy	Taxol		140	147	NO
+TCGA-EW-A1P1	Chemotherapy	Taxotere		77	119	NO
+TCGA-EW-A1P1	Chemotherapy	Adriamycin		157	178	NO
+TCGA-EW-A1P1	Chemotherapy	Cyclophosphamide		77	119	NO
+TCGA-EW-A1P1	Chemotherapy	Adriamycin		77	119	NO
+TCGA-EW-A1P1	Chemotherapy	Cyclophosphamide		157	178	NO
+TCGA-EW-A1P3	Hormone Therapy	Tamoxifen	Stable Disease	261	1175	NO
+TCGA-EW-A1P3	Hormone Therapy	Femara		1181	NA	YES
+TCGA-EW-A1P3	Chemotherapy	Fluorouracil		105	147	NO
+TCGA-EW-A1P3	Chemotherapy	Epirubicin		105	147	NO
+TCGA-EW-A1P3	Chemotherapy	Cyclophosphamide		105	147	NO
+TCGA-EW-A1P3	Chemotherapy	Paclitaxel	Stable Disease	167	233	NO
+TCGA-EW-A1P4	Chemotherapy	Docetaxel		73	144	NO
+TCGA-EW-A1P4	Chemotherapy	Cyclophosphamide		73	144	NO
+TCGA-EW-A1P5	Hormone Therapy	Anastrozole		199	NA	YES
+TCGA-EW-A1P6	Chemotherapy	Cyclophosphamide		162	205	NO
+TCGA-EW-A1P6	Chemotherapy	Paclitaxel		254	303	NO
+TCGA-EW-A1P6	Chemotherapy	Docetaxel		233	233	NO
+TCGA-EW-A1P6	Chemotherapy	Fluorouracil		162	205	NO
+TCGA-EW-A1P6	Chemotherapy	Epirubicin		162	205	NO
+TCGA-EW-A1P6	Hormone Therapy	Arimidex		444	NA	YES
+TCGA-EW-A1P7	Chemotherapy	Carboplatin		93	NA	YES
+TCGA-EW-A1P7	Chemotherapy	Taxol		93	NA	YES
+TCGA-EW-A1P8	Chemotherapy	Fluorouracil		40	140	NO
+TCGA-EW-A1P8	Chemotherapy	Epirubicin		40	140	NO
+TCGA-EW-A1P8	Chemotherapy	Cyclophosphamide		40	140	NO
+TCGA-EW-A1PA	Chemotherapy	Cyclophosphamide		143	206	NO
+TCGA-EW-A1PA	Chemotherapy	Fluorouracil		143	206	NO
+TCGA-EW-A1PA	Chemotherapy	Epirubicin		143	206	NO
+TCGA-EW-A1PA	Chemotherapy	Docetaxel		143	206	NO
+TCGA-EW-A1PA	Hormone Therapy	Nolvadex		262	NA	YES
+TCGA-EW-A1PC	Hormone Therapy	Tamoxifen		98	NA	YES
+TCGA-EW-A1PD	Chemotherapy	Docetaxel		112	217	NO
+TCGA-EW-A1PD	Chemotherapy	Trastuzumab		112	405	NO
+TCGA-EW-A1PD	Chemotherapy	Carboplatin		112	217	NO
+TCGA-EW-A1PE	Chemotherapy	Taxotere		132	174	NO
+TCGA-EW-A1PE	Chemotherapy	Fluorouracil		71	111	NO
+TCGA-EW-A1PE	Chemotherapy	Cyclophosphamide		71	111	NO
+TCGA-EW-A1PE	Hormone Therapy	Exemestane		269	NA	YES
+TCGA-EW-A1PE	Chemotherapy	Epirubicin		71	111	NO
+TCGA-EW-A1PF	Chemotherapy	Docetaxel		125	188	NO
+TCGA-EW-A1PF	Chemotherapy	Cyclophosphamide		125	188	NO
+TCGA-EW-A1PF	Hormone Therapy	Arimidex		217	NA	YES
+TCGA-EW-A1PG	Chemotherapy	Docetaxel		157	262	NO
+TCGA-EW-A1PG	Chemotherapy	Fluorouracil		157	262	NO
+TCGA-EW-A1PG	Chemotherapy	CYCLOPHOSPHAMIDE		157	262	NO
+TCGA-EW-A1PG	Chemotherapy	Epirubicin		157	262	NO
+TCGA-EW-A1PG	Hormone Therapy	Aromasin		263	NA	YES
+TCGA-EW-A1PH	Chemotherapy	Cyclophosphamide		98	140	NO
+TCGA-EW-A1PH	Chemotherapy	Docetaxel		161	161	NO
+TCGA-EW-A1PH	Chemotherapy	Fluorouracil		98	140	NO
+TCGA-EW-A1PH	Chemotherapy	Epirubicin		98	140	NO
+TCGA-EW-A1PH	Chemotherapy	Taxol		215	271	NO
+TCGA-EW-A2FR	Chemotherapy	Epirubicin		34	76	NO
+TCGA-EW-A2FR	Chemotherapy	Fluorouracil		34	76	NO
+TCGA-EW-A2FR	Chemotherapy	Cyclophosphamide		34	76	NO
+TCGA-EW-A2FR	Chemotherapy	Paclitaxel	Stable Disease	97	174	NO
+TCGA-EW-A2FS	Hormone Therapy	Tamoxifen		343	NA	YES
+TCGA-EW-A2FS	Hormone Therapy	Goserelin	Stable Disease	140	1166	NO
+TCGA-EW-A2FS	Chemotherapy	Doxorubicin		164	227	NO
+TCGA-EW-A2FS	Chemotherapy	Cyclophosphamide		164	227	NO
+TCGA-EW-A2FS	Chemotherapy	Bevacizumab		164	318	NO
+TCGA-EW-A2FS	Chemotherapy	Paclitaxel		248	332	NO
+TCGA-EW-A2FV	Chemotherapy	Docetaxel		141	246	NO
+TCGA-EW-A2FV	Chemotherapy	Doxorubicin		141	246	NO
+TCGA-EW-A2FV	Chemotherapy	Cyclophosphamide		141	246	NO
+TCGA-EW-A2FV	Hormone Therapy	Tamoxifen		268	NA	YES
+TCGA-EW-A2FV	Hormone Therapy	Goserelin		268	NA	YES
+TCGA-EW-A2FW	Chemotherapy	Fluorouracil		112	154	NO
+TCGA-EW-A2FW	Chemotherapy	Epirubicin		112	154	NO
+TCGA-EW-A2FW	Chemotherapy	Cyclophosphamide		112	154	NO
+TCGA-EW-A2FW	Chemotherapy	Docetaxel		175	217	NO
+TCGA-EW-A2FW	Hormone Therapy	Exemestane		0	NA	YES
+TCGA-EW-A3E8	Hormone Therapy	Anastrozole		196	NA	YES
+TCGA-EW-A3U0	Chemotherapy	Cisplatin	Complete Response	85	127	NO
+TCGA-EW-A3U0	Chemotherapy	Taxotere	Complete Response	85	127	NO
+TCGA-EW-A3U0	Chemotherapy	Doxorubicin	Complete Response	148	197	NO
+TCGA-EW-A3U0	Chemotherapy	Cyclophosphamide	Complete Response	148	197	NO
+TCGA-EW-A423	Hormone Therapy	Anastrozole		205	NA	YES
+TCGA-EW-A424	Chemotherapy	Docetaxel	Complete Response	118	181	NO
+TCGA-EW-A424	Chemotherapy	Cyclophosphamide	Complete Response	118	181	NO
+TCGA-EW-A424	Hormone Therapy	Arimidex		154	NA	YES
+TCGA-EW-A6SC	Hormone Therapy	aromatase exemestane		114	NA	YES
+TCGA-EW-A6SD	Chemotherapy	TCH		86	198	NO
+TCGA-GI-A2C8	Chemotherapy	Adriamycin		NA	166	NO
+TCGA-GI-A2C8	Chemotherapy	Cytoxen		NA	166	NO
+TCGA-GI-A2C8	Chemotherapy	Taxotere		NA	166	NO
+TCGA-GI-A2C9	Chemotherapy			NA	3349	NO
+TCGA-GM-A2D9	Hormone Therapy	Arimidex	Stable Disease	559	1265	NO
+TCGA-GM-A2D9	Hormone Therapy	Tamoxifen	Stable Disease	1266	1354	NO
+TCGA-GM-A2D9	Chemotherapy	Xeloda	Clinical Progressive Disease	1362	1455	NO
+TCGA-GM-A2D9	Chemotherapy	Gemcitabine	Clinical Progressive Disease	1470	1567	NO
+TCGA-GM-A2DA	Chemotherapy	fluorouracil	Complete Response	74	147	NO
+TCGA-GM-A2DA	Chemotherapy	Adriamycin	Complete Response	74	147	NO
+TCGA-GM-A2DA	Chemotherapy	Cytoxan	Complete Response	74	147	NO
+TCGA-GM-A2DA	Chemotherapy	Methotrexate	Complete Response	203	276	NO
+TCGA-GM-A2DA	Chemotherapy	Vinblastine	Complete Response	203	276	NO
+TCGA-GM-A2DA	Hormone Therapy	Tamoxifen	Clinical Progressive Disease	3061	3131	NO
+TCGA-GM-A2DA	Hormone Therapy	Aromasin	Clinical Progressive Disease	3061	3131	NO
+TCGA-GM-A2DA	Chemotherapy	Taxotere	Stable Disease	3141	3415	NO
+TCGA-GM-A2DA	Hormone Therapy	Letrozole	Clinical Progressive Disease	3434	4307	NO
+TCGA-GM-A2DA	Hormone Therapy	Megace	Clinical Progressive Disease	4347	4435	NO
+TCGA-GM-A2DA	Chemotherapy	Xeloda	Clinical Progressive Disease	4470	4494	NO
+TCGA-GM-A2DA	Chemotherapy	Yondelis	Clinical Progressive Disease	4470	4494	NO
+TCGA-GM-A2DA	Chemotherapy	Xeloda	Stable Disease	4515	4720	NO
+TCGA-GM-A2DA	Hormone Therapy	Aromasin	Stable Disease	4721	5015	NO
+TCGA-GM-A2DA	Chemotherapy	Xeloda	Stable Disease	5021	5455	NO
+TCGA-GM-A2DA	Chemotherapy	Abraxane	Stable Disease	5455	5678	NO
+TCGA-GM-A2DA	Chemotherapy	Ixabepilone	Clinical Progressive Disease	5684	5797	NO
+TCGA-GM-A2DA	Immunotherapy	Herceptin	Stable Disease	5797	6028	NO
+TCGA-GM-A2DA	Hormone Therapy	Tamoxifen	Clinical Progressive Disease	5909	6029	NO
+TCGA-GM-A2DA	Chemotherapy	Xeloda	Stable Disease	6051	6213	NO
+TCGA-GM-A2DA	Chemotherapy	Lapatinib	Stable Disease	6051	6536	NO
+TCGA-GM-A2DA	Chemotherapy	Navelbine	Clinical Progressive Disease	6372	6422	NO
+TCGA-GM-A2DA	Immunotherapy	Herceptin	Stable Disease	6372	6536	NO
+TCGA-GM-A2DB	Chemotherapy	Taxol	Complete Response	91	167	NO
+TCGA-GM-A2DB	Chemotherapy	Fluorouracil	Complete Response	181	248	NO
+TCGA-GM-A2DB	Chemotherapy	Epirubicin	Complete Response	181	248	NO
+TCGA-GM-A2DB	Chemotherapy	Cytoxan	Complete Response	181	248	NO
+TCGA-GM-A2DC	Chemotherapy	Xeloda	Complete Response	57	119	NO
+TCGA-GM-A2DC	Chemotherapy	Taxotere	Complete Response	57	119	NO
+TCGA-GM-A2DC	Chemotherapy		Complete Response	140	208	NO
+TCGA-GM-A2DC	Chemotherapy	Epirubicin	Complete Response	140	208	NO
+TCGA-GM-A2DC	Chemotherapy	Cytoxan	Complete Response	140	208	NO
+TCGA-GM-A2DC	Hormone Therapy	Letrozole	Complete Response	294	341	NO
+TCGA-GM-A2DC	Hormone Therapy	Arimidex	Complete Response	355	383	NO
+TCGA-GM-A2DD	Chemotherapy	Fluorouracil	Complete Response	90	202	NO
+TCGA-GM-A2DD	Chemotherapy	Adriamycin	Complete Response	90	202	NO
+TCGA-GM-A2DD	Chemotherapy	Cytoxan	Complete Response	90	202	NO
+TCGA-GM-A2DF	Chemotherapy	Taxol	Complete Response	82	159	NO
+TCGA-GM-A2DF	Chemotherapy	Fluorouracil	Complete Response	166	229	NO
+TCGA-GM-A2DF	Chemotherapy	Epirubicin	Complete Response	166	229	NO
+TCGA-GM-A2DF	Chemotherapy	Cytoxan	Complete Response	166	229	NO
+TCGA-GM-A2DH	Chemotherapy	Taxol	Complete Response	86	163	NO
+TCGA-GM-A2DH	Chemotherapy	Fluorouracil	Complete Response	170	233	NO
+TCGA-GM-A2DH	Chemotherapy	Adriamycin	Complete Response	170	233	NO
+TCGA-GM-A2DH	Chemotherapy	Cytoxan	Complete Response	170	233	NO
+TCGA-GM-A2DI	Chemotherapy	Taxotere	Complete Response	70	133	NO
+TCGA-GM-A2DI	Chemotherapy	Fluorouracil	Complete Response	154	217	NO
+TCGA-GM-A2DI	Chemotherapy	Epirubicin	Complete Response	154	217	NO
+TCGA-GM-A2DI	Chemotherapy	Cytoxan	Complete Response	154	217	NO
+TCGA-GM-A2DK	Hormone Therapy	Arimidex	Complete Response	79	1893	NO
+TCGA-GM-A2DL	Hormone Therapy	Tamoxifen	Complete Response	158	1989	NO
+TCGA-GM-A2DL	Hormone Therapy	Arimidex		1990	NA	YES
+TCGA-GM-A2DM	Chemotherapy	Taxol	Complete Response	81	169	NO
+TCGA-GM-A2DM	Chemotherapy	Fluorouracil	Complete Response	176	218	NO
+TCGA-GM-A2DM	Chemotherapy	Epirubicin	Complete Response	176	218	NO
+TCGA-GM-A2DM	Chemotherapy	Cytoxan	Complete Response	176	218	NO
+TCGA-GM-A2DM	Hormone Therapy	Arimidex	Complete Response	279	772	NO
+TCGA-GM-A2DN	Chemotherapy	Taxol	Complete Response	167	244	NO
+TCGA-GM-A2DN	Chemotherapy	Fluorouracil	Complete Response	251	314	NO
+TCGA-GM-A2DN	Chemotherapy	Epirubicin	Complete Response	251	314	NO
+TCGA-GM-A2DN	Chemotherapy	Cytoxan	Complete Response	251	314	NO
+TCGA-GM-A2DN	Hormone Therapy	Arimidex	Complete Response	335	1063	NO
+TCGA-GM-A2DO	Hormone Therapy	Tamoxifen	Complete Response	219	2051	NO
+TCGA-GM-A3NW	Hormone Therapy	Arimidex	Stable Disease	205	2055	NO
+TCGA-GM-A3NW	Chemotherapy	Fluorouracil	Stable Disease	65	181	NO
+TCGA-GM-A3NW	Chemotherapy	Cytoxan	Stable Disease	65	181	NO
+TCGA-GM-A3NW	Chemotherapy	Epirubicin	Stable Disease	65	181	NO
+TCGA-GM-A3NY	Hormone Therapy	Arimidex		160	NA	YES
+TCGA-GM-A3XG	Chemotherapy	Paclitaxel	Complete Response	163	247	NO
+TCGA-GM-A3XG	Chemotherapy	Fluorouracil	Complete Response	261	324	NO
+TCGA-GM-A3XG	Chemotherapy	Adriamycin	Complete Response	261	324	NO
+TCGA-GM-A3XG	Chemotherapy	Cytoxan	Complete Response	261	324	NO
+TCGA-GM-A3XG	Hormone Therapy	Tamoxifen	Complete Response	434	473	NO
+TCGA-GM-A3XG	Hormone Therapy	Arimidex	Complete Response	813	843	NO
+TCGA-GM-A3XL	Chemotherapy	Fluorouracil	Complete Response	100	163	NO
+TCGA-GM-A3XL	Chemotherapy	Adriamycin	Complete Response	100	163	NO
+TCGA-GM-A3XL	Chemotherapy	Cytoxan	Complete Response	100	163	NO
+TCGA-GM-A3XL	Chemotherapy	Paclitaxel	Complete Response	191	248	NO
+TCGA-GM-A3XN	Chemotherapy	Paclitaxel	Complete Response	134	211	NO
+TCGA-GM-A3XN	Chemotherapy	Fluorouracil	Complete Response	218	282	NO
+TCGA-GM-A3XN	Chemotherapy	Adriamycin	Complete Response	218	282	NO
+TCGA-GM-A3XN	Chemotherapy	Cytoxan	Complete Response	218	282	NO
+TCGA-GM-A3XN	Hormone Therapy	Tamoxifen	Complete Response	416	1591	NO
+TCGA-GM-A3XN	Hormone Therapy	Arimidex		1592	NA	YES
+TCGA-GM-A4E0	Chemotherapy	Xeloda	Complete Response	121	184	NO
+TCGA-GM-A4E0	Chemotherapy	Taxotere	Complete Response	121	184	NO
+TCGA-GM-A4E0	Chemotherapy	5-FU	Complete Response	226	289	NO
+TCGA-GM-A4E0	Chemotherapy	Epirubicin	Complete Response	226	289	NO
+TCGA-GM-A4E0	Chemotherapy	Cytoxan	Complete Response	226	289	NO
+TCGA-GM-A4E0	Hormone Therapy	Arimidex		320	NA	YES
+TCGA-GM-A5PV	Chemotherapy	Taxotere	Complete Response	107	174	NO
+TCGA-GM-A5PV	Chemotherapy	Cytoxan	Complete Response	107	174	NO
+TCGA-GM-A5PX	Hormone Therapy	Arimidex	Complete Response	112	236	NO
+TCGA-GM-A5PX	Hormone Therapy	Aromasin	Complete Response	265	339	NO
+TCGA-GM-A5PX	Hormone Therapy	Tamoxifen		340	NA	YES
+TCGA-HN-A2NL	Chemotherapy	Cyclophosphamide		59	NA	
+TCGA-HN-A2NL	Chemotherapy	Doxorubicin		59	NA	
+TCGA-HN-A2OB	Chemotherapy	Fluorouracil		105	147	NO
+TCGA-HN-A2OB	Chemotherapy	Epirubicin		105	147	NO
+TCGA-HN-A2OB	Chemotherapy	Cyclophosphamide		105	147	NO
+TCGA-HN-A2OB	Chemotherapy	Docetaxel		168	210	NO
+TCGA-LD-A66U	Chemotherapy	Taxol		141	183	NO
+TCGA-LD-A66U	Chemotherapy	Adriamycin		85	127	NO
+TCGA-LD-A66U	Chemotherapy	Cytoxan		85	127	NO
+TCGA-LD-A66U	Hormone Therapy	Tamoxifen		278	NA	YES
+TCGA-LD-A74U	Chemotherapy	Taxotere	Stable Disease	52	301	NO
+TCGA-LD-A7W5	Chemotherapy	Taxotere	Stable Disease	82	145	NO
+TCGA-LD-A7W5	Chemotherapy	Cytoxan		82	NA	YES
+TCGA-LD-A7W6	Chemotherapy	Letrozole		146	NA	YES
+TCGA-LD-A9QF	Chemotherapy	Taxol		190	NA	YES
+TCGA-LD-A9QF	Chemotherapy	Herceptin		190	NA	YES
+TCGA-LL-A440	Hormone Therapy	ARIMIDEX		200	NA	YES
+TCGA-LL-A440	Chemotherapy	CYTOXAN	Complete Response	60	123	NO
+TCGA-LL-A440	Chemotherapy	TAXOTERE	Complete Response	60	123	NO
+TCGA-LL-A441	Chemotherapy	Taxotere	Complete Response	61	133	NO
+TCGA-LL-A441	Chemotherapy	Cytoxan	Complete Response	61	133	NO
+TCGA-LL-A442	Hormone Therapy	Arimidex		111	NA	YES
+TCGA-LL-A50Y	Hormone Therapy	ARIMIDEX	Complete Response	54	608	NO
+TCGA-LL-A5YL	Chemotherapy	Adriamycin		78	150	NO
+TCGA-LL-A5YL	Chemotherapy	Cytoxan		78	150	NO
+TCGA-LL-A5YL	Chemotherapy	Paclitaxel		169	246	NO
+TCGA-LL-A5YL	Chemotherapy	Herceptin		169	NA	YES
+TCGA-LL-A5YL	Hormone Therapy	ARIMIDEX		341	NA	YES
+TCGA-LL-A5YM	Hormone Therapy	letrozole		NA	NA	YES
+TCGA-LL-A5YN	Chemotherapy	Carboplatin		55	166	NO
+TCGA-LL-A5YN	Chemotherapy	Docetaxel		55	166	NO
+TCGA-LL-A5YN	Chemotherapy	Trastuzumab		55	421	NO
+TCGA-LL-A5YN	Hormone Therapy	tamoxifen citrate		229	NA	YES
+TCGA-LL-A5YO	Chemotherapy	TAXOTERE	Complete Response	56	160	NO
+TCGA-LL-A5YO	Chemotherapy	CYTOXAN	Complete Response	56	160	NO
+TCGA-LL-A5YP	Chemotherapy	Cytoxan		50	92	NO
+TCGA-LL-A5YP	Chemotherapy	Adriamycin		50	92	NO
+TCGA-LL-A5YP	Immunotherapy	herceptin		113	457	NO
+TCGA-LL-A5YP	Hormone Therapy	arimidex		302	NA	YES
+TCGA-LL-A6FP	Hormone Therapy	Arimidex		0	NA	YES
+TCGA-LL-A6FP	Hormone Therapy	Tamoxifen		0	0	NO
+TCGA-LL-A6FR	Chemotherapy	Adriamycin		62	104	NO
+TCGA-LL-A6FR	Chemotherapy	CYTOXAN		62	104	NO
+TCGA-LL-A6FR	Immunotherapy	HERCEPTIN		118	489	NO
+TCGA-LL-A6FR	Chemotherapy	TAXOL		118	195	NO
+TCGA-LL-A73Y	Chemotherapy	taxotere		42	126	NO
+TCGA-LL-A73Y	Chemotherapy	cytoxan		42	126	NO
+TCGA-LL-A73Z	Chemotherapy	Adriamycin	Clinical Progressive Disease	18	60	NO
+TCGA-LL-A73Z	Chemotherapy	Cytoxan	Clinical Progressive Disease	18	60	NO
+TCGA-LL-A73Z	Chemotherapy	taxol	Clinical Progressive Disease	74	109	NO
+TCGA-LL-A73Z	Hormone Therapy	faslodex	Clinical Progressive Disease	123	179	NO
+TCGA-LL-A740	Chemotherapy	ADRIAMYCIN	Complete Response	122	164	NO
+TCGA-LL-A740	Chemotherapy	CYTOXAN	Complete Response	122	164	NO
+TCGA-LL-A740	Chemotherapy	TAXOL	Complete Response	178	255	NO
+TCGA-LL-A7SZ	Chemotherapy	ADRIAMYCIN	Complete Response	62	104	NO
+TCGA-LL-A7SZ	Chemotherapy	CYTOXAN	Complete Response	62	104	NO
+TCGA-LL-A7SZ	Chemotherapy		Complete Response	132	209	NO
+TCGA-LL-A7SZ	Hormone Therapy	TAMOXIFEN		237	NA	YES
+TCGA-LL-A8F5	Chemotherapy	cyclophosphamide		112	154	NO
+TCGA-LL-A8F5	Chemotherapy	doxorubicin HCL		112	154	NO
+TCGA-LL-A8F5	Chemotherapy	paclitaxel		175	175	NO
+TCGA-LL-A8F5	Chemotherapy	abraxane	Complete Response	189	259	NO
+TCGA-LL-A8F5	Hormone Therapy	ARIMIDEX		315	NA	YES
+TCGA-LL-A9Q3	Immunotherapy	HERCEPTIN	Complete Response	118	531	NO
+TCGA-LL-A9Q3	Chemotherapy	TAXOL		118	216	NO
+TCGA-LL-A9Q3	Hormone Therapy	ARIMIDEX		273	NA	YES
+TCGA-LQ-A4E4	Hormone Therapy	Anastrozole		111	NA	YES
+TCGA-MS-A51U	Chemotherapy	Paclitaxel	Stable Disease	130	178	NO
+TCGA-MS-A51U	Chemotherapy	Adriamycin	Stable Disease	57	116	NO
+TCGA-MS-A51U	Chemotherapy	Cytoxan	Stable Disease	57	116	NO
+TCGA-OL-A5D7	Chemotherapy	Cytoxan	Complete Response	41	104	NO
+TCGA-OL-A5D7	Chemotherapy	Taxotere	Complete Response	41	104	NO
+TCGA-OL-A5RU	Chemotherapy	cyclophosphamide	Complete Response	71	134	NO
+TCGA-OL-A5RU	Chemotherapy	docetaxel	Complete Response	71	134	NO
+TCGA-OL-A5RV	Chemotherapy	Doxorubicin	Complete Response	63	161	NO
+TCGA-OL-A5RV	Chemotherapy	CYTOXAN	Complete Response	63	161	NO
+TCGA-OL-A5RV	Chemotherapy	Paclitaxel	Complete Response	63	161	NO
+TCGA-OL-A5RW	Chemotherapy	ADRIAMYCIN	Complete Response	69	234	NO
+TCGA-OL-A5RW	Chemotherapy	Cytoxan	Complete Response	69	234	NO
+TCGA-OL-A5RW	Chemotherapy	TAXOL	Complete Response	69	234	NO
+TCGA-OL-A5RZ	Chemotherapy	Doxorubicin	Complete Response	239	331	NO
+TCGA-OL-A5RZ	Chemotherapy	Cytoxan	Complete Response	239	331	NO
+TCGA-OL-A5S0	Chemotherapy	TAXOL	Complete Response	67	228	NO
+TCGA-OL-A5S0	Hormone Therapy	HERCEPTIN	Complete Response	67	228	NO
+TCGA-OL-A66I	Chemotherapy	ADRIAMYCIN	Complete Response	43	312	NO
+TCGA-OL-A66I	Chemotherapy	CYTOXAN	Complete Response	43	312	NO
+TCGA-OL-A66I	Chemotherapy	TAXOL	Complete Response	43	312	NO
+TCGA-OL-A66O	Chemotherapy	Cytoxan	Complete Response	129	192	NO
+TCGA-OL-A66O	Chemotherapy	Taxotere	Complete Response	129	192	NO
+TCGA-OL-A66P	Chemotherapy	Cytoxan	Complete Response	71	162	NO
+TCGA-OL-A66P	Chemotherapy	Taxotere	Complete Response	71	162	NO
+TCGA-OL-A6VO	Chemotherapy	TAXOTERE	Complete Response	71	147	NO
+TCGA-OL-A6VO	Chemotherapy	Cytoxan	Complete Response	71	147	NO
+TCGA-PE-A5DD	Hormone Therapy	Femara		191	NA	YES
+TCGA-PE-A5DD	Chemotherapy		Complete Response	38	NA	NO
+TCGA-PE-A5DE	Chemotherapy	Taxotere	Complete Response	42	105	NO
+TCGA-PE-A5DE	Chemotherapy	Cytoxan	Complete Response	42	105	NO
+TCGA-PE-A5DE	Hormone Therapy	Tamoxifen		182	NA	YES
+TCGA-PL-A8LZ	Chemotherapy	paclitaxel		4	48	NO
+TCGA-S3-A6ZF	Chemotherapy	taxotere	Complete Response	65	170	NO
+TCGA-S3-A6ZF	Immunotherapy	Trastuzumab	Complete Response	65	429	NO
+TCGA-S3-A6ZF	Ancillary	Neulasta	Complete Response	78	170	NO
+TCGA-S3-A6ZF	Chemotherapy	Cytoxan	Complete Response	65	170	NO
+TCGA-S3-A6ZF	Hormone Therapy	LETROZOLE		191	278	NO
+TCGA-S3-A6ZF	Hormone Therapy	ANASTROZOLE		278	NA	YES
+TCGA-S3-A6ZG	Chemotherapy	Doxorubicin	Complete Response	52	100	NO
+TCGA-S3-A6ZG	Chemotherapy	Cytoxan	Complete Response	52	100	NO
+TCGA-S3-A6ZG	Hormone Therapy	Taxol	Complete Response	116	221	NO
+TCGA-S3-A6ZG	Hormone Therapy	Anastrozole		256	NA	YES
+TCGA-S3-A6ZG	Ancillary	NEULASTA	Complete Response	52	100	NO
+TCGA-S3-A6ZH	Chemotherapy	Adriamycin	Complete Response	141	185	NO
+TCGA-S3-A6ZH	Chemotherapy	Cytoxan	Complete Response	141	185	NO
+TCGA-S3-A6ZH	Ancillary	Neulasta	Complete Response	141	185	NO
+TCGA-S3-A6ZH	Chemotherapy	Taxol		200	NA	YES
+TCGA-S3-A6ZH	Hormone Therapy	TAMOXIFEN		293	NA	YES
+TCGA-S3-AA0Z	Ancillary	NEULASTA	Complete Response	84	84	NO
+TCGA-S3-AA0Z	Chemotherapy	DOXORUBICIN	Complete Response	84	84	NO
+TCGA-S3-AA0Z	Chemotherapy	CYTOXAN	Complete Response	84	84	NO
+TCGA-S3-AA0Z	Hormone Therapy	ANASTROZOLE		113	NA	YES
+TCGA-S3-AA10	Chemotherapy	CYTOXAN	Complete Response	75	199	NO
+TCGA-S3-AA10	Chemotherapy	TAXOTERE	Complete Response	75	199	NO
+TCGA-S3-AA10	Ancillary	NEULASTA	Complete Response	75	199	NO
+TCGA-S3-AA10	Hormone Therapy	ANASTROZOLE		265	NA	YES
+TCGA-S3-AA11	Hormone Therapy	LETROZOLE	Complete Response	53	169	NO
+TCGA-S3-AA11	Hormone Therapy	EXEMESTANE	Complete Response	169	309	NO
+TCGA-S3-AA11	Hormone Therapy	ANASTROZOLE	Complete Response	309	NA	YES
+TCGA-S3-AA12	Hormone Therapy	ANASTROZOLE		58	NA	YES
+TCGA-S3-AA14	Chemotherapy	ADRIAMYCIN	Complete Response	62	104	NO
+TCGA-S3-AA14	Chemotherapy	CYTOXAN	Complete Response	62	104	NO
+TCGA-S3-AA14	Ancillary	NEULASTA	Complete Response	62	104	NO
+TCGA-S3-AA14	Targeted Molecular therapy	TRASTUZUMAB		118	NA	YES
+TCGA-S3-AA14	Chemotherapy	TAXOL		118	NA	YES
+TCGA-S3-AA15	Chemotherapy	ADRIAMYCIN	Complete Response	82	125	NO
+TCGA-S3-AA15	Chemotherapy	CYTOXAN	Complete Response	82	125	NO
+TCGA-S3-AA15	Ancillary	NEULASTA	Complete Response	82	125	NO
+TCGA-S3-AA15	Chemotherapy	TAXOL	Complete Response	138	236	NO
+TCGA-S3-AA17	Hormone Therapy	ANASTROZOLE		99	NA	YES
+TCGA-UL-AAZ6	Chemotherapy	Herceptin		122	NA	YES
+TCGA-V7-A7HQ	Hormone Therapy	letrozole	Complete Response	129	1869	NO
+TCGA-W8-A86G	Hormone Therapy	Arimidex		161	NA	YES
+TCGA-WT-AB41	Hormone Therapy	Arimidex	Complete Response	181	273	NO
+TCGA-WT-AB41	Hormone Therapy	Tamoxifen		273	NA	YES
+TCGA-WT-AB41	Chemotherapy	Taxotere	Complete Response	89	150	NO
+TCGA-WT-AB41	Chemotherapy	Cytoxan	Complete Response	89	150	NO
+TCGA-WT-AB44	Hormone Therapy	Arimidex		31	NA	YES
+TCGA-XX-A899	Chemotherapy	Cytoxan	Complete Response	96	201	NO
+TCGA-XX-A899	Chemotherapy	Taxotere	Complete Response	96	201	NO
+TCGA-XX-A899	Hormone Therapy	Zoladex		103	NA	YES
+TCGA-Z7-A8R5	Chemotherapy	Adriamycin	Stable Disease	61	181	NO
+TCGA-Z7-A8R5	Chemotherapy	Cytoxan	Stable Disease	61	181	NO
+TCGA-Z7-A8R5		Taxol	Stable Disease	61	181	NO
+TCGA-Z7-A8R6		Adriamycin	Complete Response	31	153	NO
+TCGA-Z7-A8R6		Cytoxan	Complete Response	31	153	NO
+TCGA-Z7-A8R6		Taxol	Complete Response	31	153	NO

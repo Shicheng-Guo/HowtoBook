@@ -1,0 +1,209 @@
+bcr_patient_barcode	therapy_types	drug_name	measure_of_response	days_to_drug_therapy_start	days_to_drug_therapy_end	therapy_ongoing
+TCGA-3B-A9HI	Chemotherapy	Adriamycin	Stable Disease	850	959	NO
+TCGA-3B-A9HI	Chemotherapy	dacarbazine	Stable Disease	850	959	NO
+TCGA-3B-A9HI	Chemotherapy	Gemcitabine	Partial Response	983	1262	NO
+TCGA-3B-A9HI	Chemotherapy	Docetaxel	Partial Response	983	1262	NO
+TCGA-3B-A9HI	Chemotherapy	Gemcitabine		1493	NA	YES
+TCGA-3B-A9HL	Chemotherapy	Adriamycin		185	215	NO
+TCGA-3B-A9HL	Chemotherapy	DTIC, Dacarbazine		447	481	NO
+TCGA-3B-A9HL	Chemotherapy	Gemcitabine	Clinical Progressive Disease	229	432	NO
+TCGA-3B-A9HL	Chemotherapy	Docetaxel	Clinical Progressive Disease	229	432	NO
+TCGA-3B-A9HL	Chemotherapy	Pazopanib		532	542	NO
+TCGA-3B-A9HP	Chemotherapy	Gemcitabine	Stable Disease	595	616	NO
+TCGA-3B-A9HP	Chemotherapy	Taxotere	Stable Disease	595	616	NO
+TCGA-3B-A9HR	Chemotherapy	Adriamycin		1019	1088	NO
+TCGA-3B-A9HR	Chemotherapy	IFOSFAMIDE		1019	1088	NO
+TCGA-3B-A9HR	Chemotherapy	trabectedin	Clinical Progressive Disease	1425	1621	NO
+TCGA-3B-A9HR	Chemotherapy	dacarbazine	Clinical Progressive Disease	1758	2096	NO
+TCGA-3B-A9HR	Chemotherapy	gemcitabine	Clinical Progressive Disease	2117	2396	NO
+TCGA-3B-A9HR	Chemotherapy	docetaxel	Clinical Progressive Disease	2117	2396	NO
+TCGA-3B-A9HR	Chemotherapy	pazopanib	Clinical Progressive Disease	2396	2683	NO
+TCGA-3B-A9HS	Chemotherapy	ADRIAMYCIN		568	592	NO
+TCGA-3B-A9HS	Chemotherapy	IFOSFAMIDE		568	592	NO
+TCGA-3B-A9HS	Chemotherapy	gemcitabine	Clinical Progressive Disease	1034	1132	NO
+TCGA-3B-A9HS	Chemotherapy	docetaxel	Clinical Progressive Disease	1034	1132	NO
+TCGA-3B-A9HS	Chemotherapy	temozolomide		1202	1243	NO
+TCGA-3B-A9HT	Chemotherapy	CISPLATINUM	Complete Response	51	103	NO
+TCGA-3B-A9HV	Chemotherapy	DOCETAXEL	Clinical Progressive Disease	112	271	NO
+TCGA-3B-A9HV	Chemotherapy	GEMCITABINE	Clinical Progressive Disease	105	270	NO
+TCGA-3B-A9HV	Chemotherapy	ADRIAMYCIN	Clinical Progressive Disease	339	369	NO
+TCGA-3B-A9HV	Chemotherapy	IFOSFAMIDE	Clinical Progressive Disease	339	369	NO
+TCGA-3B-A9HZ	Chemotherapy	DOCETAXEL	Clinical Progressive Disease	482	602	NO
+TCGA-3B-A9HZ	Chemotherapy	GEMCITABINE	Clinical Progressive Disease	482	602	NO
+TCGA-3B-A9HZ	Chemotherapy	Pazopanib	Clinical Progressive Disease	834	889	NO
+TCGA-3B-A9HZ	Chemotherapy	DOCETAXEL	Clinical Progressive Disease	906	1164	NO
+TCGA-3B-A9HZ	Chemotherapy	GEMCITABINE	Clinical Progressive Disease	906	1164	NO
+TCGA-3B-A9I0	Chemotherapy	doxorubicin	Stable Disease	580	706	NO
+TCGA-3B-A9I0	Chemotherapy	DOCETAXEL	Clinical Progressive Disease	948	1054	NO
+TCGA-3B-A9I0	Chemotherapy	GEMCITABINE	Clinical Progressive Disease	941	1054	NO
+TCGA-3B-A9I1	Chemotherapy	ADRIAMYCIN	Clinical Progressive Disease	71	176	NO
+TCGA-3B-A9I1	Chemotherapy	DOCETAXEL		36	36	NO
+TCGA-3B-A9I1	Chemotherapy	GEMCITABINE	Clinical Progressive Disease	332	388	NO
+TCGA-3B-A9I1	Immunotherapy	Femara	Clinical Progressive Disease	437	500	NO
+TCGA-DX-A3LU	Chemotherapy	Gemcitabine	Clinical Progressive Disease	451	492	NO
+TCGA-DX-A3LU	Chemotherapy	Taxotere	Clinical Progressive Disease	451	492	NO
+TCGA-DX-A3LU	Chemotherapy	PD 0332991	Clinical Progressive Disease	1974	2200	NO
+TCGA-DX-A3U6	Chemotherapy	PD 0332991	Clinical Progressive Disease	484	540	NO
+TCGA-DX-A3U6	Chemotherapy	Ifosfamide	Partial Response	554	966	NO
+TCGA-DX-A3U7	Chemotherapy	Taxotere	Partial Response	350	549	NO
+TCGA-DX-A3U7	Chemotherapy	Gemcitabine	Partial Response	350	606	NO
+TCGA-DX-A3U7	Chemotherapy	Gemcitabine	Partial Response	741	922	NO
+TCGA-DX-A3U7	Chemotherapy	Taxotere	Clinical Progressive Disease	741	922	NO
+TCGA-DX-A3U7	Chemotherapy	Doxorubicin	Clinical Progressive Disease	942	945	NO
+TCGA-DX-A3U7	Chemotherapy	Doxil	Clinical Progressive Disease	969	1126	NO
+TCGA-DX-A3U7	Chemotherapy	Pazopanib	Clinical Progressive Disease	1133	1182	NO
+TCGA-DX-A3U7	Chemotherapy	Dacarbazine	Clinical Progressive Disease	1258	1301	NO
+TCGA-DX-A3U7	Chemotherapy	Ifosfamide	Clinical Progressive Disease	1352	1427	NO
+TCGA-DX-A3UC	Chemotherapy	Doxorubicin	Stable Disease	629	709	NO
+TCGA-DX-A3UC	Chemotherapy	Gemcitabine	Clinical Progressive Disease	1045	1119	NO
+TCGA-DX-A3UC	Chemotherapy	Taxotere	Clinical Progressive Disease	1045	1119	NO
+TCGA-DX-A3UC	Chemotherapy	Pazopanib	Clinical Progressive Disease	1144	1287	NO
+TCGA-DX-A3UC	Chemotherapy	ET-743	Clinical Progressive Disease	1308	1329	NO
+TCGA-DX-A3UC	Chemotherapy	Dacarbazine	Clinical Progressive Disease	1675	1675	NO
+TCGA-DX-A3UF	Chemotherapy	MORAb-004	Clinical Progressive Disease	1802	1915	NO
+TCGA-DX-A3UF	Chemotherapy	MLN8237	Clinical Progressive Disease	1938	1945	NO
+TCGA-DX-A6B7	Chemotherapy	Gemcitabine	Complete Response	65	86	NO
+TCGA-DX-A6B7	Chemotherapy	Docetaxel	Complete Response	65	72	NO
+TCGA-DX-A6B8	Chemotherapy	Adriamycin	Clinical Progressive Disease	NA	255	NO
+TCGA-DX-A6BA	Targeted Molecular therapy	Pazopanib		1493	NA	YES
+TCGA-DX-A6BA	Chemotherapy	Doxil		705	867	NO
+TCGA-DX-A6BA	Targeted Molecular therapy	Everolimus		525	567	NO
+TCGA-DX-A6BA	Targeted Molecular therapy	R1507		525	567	NO
+TCGA-DX-A6BA	Chemotherapy	Gemcitabine		446	507	NO
+TCGA-DX-A6BG	Chemotherapy	PD 0332991		161	191	NO
+TCGA-DX-A6BG	Chemotherapy	Gemcitabine		198	NA	YES
+TCGA-DX-A6BG	Chemotherapy	Docetaxel		198	NA	YES
+TCGA-DX-A6YX	Chemotherapy	Gemcitabine	Clinical Progressive Disease	285	407	NO
+TCGA-DX-A6YX	Chemotherapy	Docetaxel	Clinical Progressive Disease	292	407	NO
+TCGA-DX-A6YX	Chemotherapy	Liposomal doxorubicin	Clinical Progressive Disease	444	484	NO
+TCGA-DX-A7EI	Chemotherapy	Doxil		990	991	NO
+TCGA-DX-A7EN	Chemotherapy	Pazopanib		352	NA	YES
+TCGA-DX-A7EN	Chemotherapy	Gemcitabine	Complete Response	34	216	NO
+TCGA-DX-A7EN	Chemotherapy	Docetaxel	Complete Response	34	216	NO
+TCGA-DX-A7EQ	Chemotherapy	Vorinostat	Clinical Progressive Disease	791	830	NO
+TCGA-DX-A7EQ	Chemotherapy	Dacarbazine	Clinical Progressive Disease	559	675	NO
+TCGA-DX-A7EQ	Targeted Molecular therapy	Sorafenib	Clinical Progressive Disease	559	675	NO
+TCGA-DX-A7EQ	Chemotherapy	Cisplatin	Clinical Progressive Disease	451	508	NO
+TCGA-DX-A7EQ	Chemotherapy	Ifosfamide	Clinical Progressive Disease	403	424	NO
+TCGA-DX-A7EQ	Chemotherapy	Doxil	Clinical Progressive Disease	293	349	NO
+TCGA-DX-A8BH	Chemotherapy	Gemcitabine		280	NA	YES
+TCGA-DX-A8BT	Chemotherapy	Gemcitabine	Complete Response	697	773	NO
+TCGA-DX-A8BT	Chemotherapy	Docetaxel	Complete Response	697	773	NO
+TCGA-DX-A8BU	Chemotherapy	Ifosfamide	Clinical Progressive Disease	1080	1081	NO
+TCGA-DX-A8BU	Chemotherapy	Docetaxel	Clinical Progressive Disease	678	1035	NO
+TCGA-DX-A8BU	Chemotherapy	Gemcitabine	Clinical Progressive Disease	678	1035	NO
+TCGA-DX-A8BU	Chemotherapy	Doxil	Clinical Progressive Disease	590	647	NO
+TCGA-DX-A8BU	Chemotherapy	Adriamycin	Clinical Progressive Disease	123	228	NO
+TCGA-DX-A8BU	Chemotherapy	Ifosfamide	Clinical Progressive Disease	123	228	NO
+TCGA-DX-A8BV	Chemotherapy	Docetaxel	Clinical Progressive Disease	750	903	NO
+TCGA-DX-A8BV	Chemotherapy	Gemcitabine	Clinical Progressive Disease	750	903	NO
+TCGA-DX-A8BV	Chemotherapy	Adriamycin	Stable Disease	415	446	NO
+TCGA-DX-A8BV	Chemotherapy	Ifosfamide	Stable Disease	415	446	NO
+TCGA-DX-AB2E	Chemotherapy	Adriamycin	Partial Response	133	222	NO
+TCGA-DX-AB2E	Chemotherapy	Ifosfamide	Partial Response	133	222	NO
+TCGA-DX-AB2E	Chemotherapy	Doxil		253	NA	YES
+TCGA-DX-AB3B	Chemotherapy	Adriamycin	Complete Response	158	269	NO
+TCGA-DX-AB3B	Chemotherapy	Ifosfamide	Complete Response	158	269	NO
+TCGA-DX-AB3C	Chemotherapy	Ifosfamide	Complete Response	48	181	NO
+TCGA-DX-AB3C	Chemotherapy	Etoposide	Complete Response	90	181	NO
+TCGA-DX-AB3C	Chemotherapy	Adriamycin	Complete Response	48	89	NO
+TCGA-FX-A3RE	Chemotherapy	Adriamycin	Complete Response	63	136	NO
+TCGA-FX-A48G	Chemotherapy	Taxotere	Clinical Progressive Disease	54	168	NO
+TCGA-FX-A48G	Chemotherapy	Gemzar	Clinical Progressive Disease	54	168	NO
+TCGA-FX-A48G	Chemotherapy	Adriamycin	Clinical Progressive Disease	174	289	NO
+TCGA-FX-A48G	Chemotherapy	Ifosfamide	Clinical Progressive Disease	309	414	NO
+TCGA-FX-A48G	Chemotherapy	Carboplatin	Clinical Progressive Disease	503	593	NO
+TCGA-FX-A8OO	Chemotherapy	Ifosfamide	Complete Response	118	243	NO
+TCGA-HB-A3L4	Chemotherapy	Taxotere		32	216	NO
+TCGA-HB-A3L4	Chemotherapy	Gemzar		32	216	NO
+TCGA-HB-A3L4	Chemotherapy	Adriamycin		431	473	NO
+TCGA-HB-A3L4	Chemotherapy	Ifosfamide		734	945	NO
+TCGA-HB-A3L4	Hormone Therapy	Letrozole		582	NA	YES
+TCGA-HB-A43Z	Chemotherapy	Gemzar	Complete Response	42	105	NO
+TCGA-HB-A43Z	Chemotherapy	Taxotere	Complete Response	42	105	NO
+TCGA-HB-A43Z	Chemotherapy	Adriamycin	Complete Response	126	189	NO
+TCGA-HS-A5N9	Chemotherapy	Gemcitabine		42	91	NO
+TCGA-HS-A5N9	Chemotherapy	Docetaxel	Complete Response	49	91	NO
+TCGA-IE-A3OV	Chemotherapy	Dacarbazine (DTIC)	Clinical Progressive Disease	102	NA	NO
+TCGA-IE-A3OV	Chemotherapy	Adriamycin	Clinical Progressive Disease	102	NA	NO
+TCGA-IE-A3OV	Chemotherapy	Gemcitabine	Clinical Progressive Disease	778	836	NO
+TCGA-IE-A3OV	Chemotherapy	Taxotere	Clinical Progressive Disease	787	836	NO
+TCGA-IE-A3OV	Chemotherapy	ET-743	Clinical Progressive Disease	1411	1594	NO
+TCGA-IE-A3OV	Chemotherapy	AP-23573 (ARIAD)	Clinical Progressive Disease	1609	1660	NO
+TCGA-IE-A3OV	Targeted Molecular therapy	EZN-2968	Clinical Progressive Disease	1834	1918	NO
+TCGA-IE-A3OV	Immunotherapy	Enoticumab	Clinical Progressive Disease	1973	2037	NO
+TCGA-IE-A3OV	Chemotherapy	Threshold-302	Clinical Progressive Disease	2073	2093	NO
+TCGA-IE-A3OV	Chemotherapy	Alimta	Clinical Progressive Disease	2232	2293	NO
+TCGA-IE-A4EH	Chemotherapy	Taxotere	Complete Response	326	448	NO
+TCGA-IE-A4EH	Chemotherapy	Gemcitabine	Complete Response	326	448	NO
+TCGA-IE-A6BZ	Chemotherapy	Adriamycin	Complete Response	112	204	NO
+TCGA-IE-A6BZ	Chemotherapy	Ifosfamide	Complete Response	112	204	NO
+TCGA-IE-A6BZ	Ancillary	Mesna	Complete Response	112	204	NO
+TCGA-IF-A3RQ	Chemotherapy	Adriamycin	Partial Response	441	457	NO
+TCGA-IF-A4AJ	Chemotherapy	Adriamycin	Clinical Progressive Disease	567	600	NO
+TCGA-IS-A3K7	Chemotherapy	Doxorubicin	Partial Response	126	238	NO
+TCGA-IS-A3KA	Hormone Therapy	Tamoxifen	Clinical Progressive Disease	101	187	NO
+TCGA-IS-A3KA	Hormone Therapy	Megace	Clinical Progressive Disease	101	187	NO
+TCGA-IW-A3M4	Chemotherapy	Taxotere	Complete Response	58	170	NO
+TCGA-IW-A3M4	Chemotherapy	Gemzar	Complete Response	58	170	NO
+TCGA-IW-A3M5	Chemotherapy	Gemcitabine		147	170	NO
+TCGA-IW-A3M5	Chemotherapy	Docetaxel		154	154	NO
+TCGA-IW-A3M6	Chemotherapy	Docetaxel		24	45	NO
+TCGA-IW-A3M6	Chemotherapy	Gemcitabine		24	45	NO
+TCGA-JV-A5VE	Chemotherapy	Gemcitabine	Complete Response	38	165	NO
+TCGA-JV-A5VE	Chemotherapy	Docetaxel	Complete Response	38	165	NO
+TCGA-JV-A75J	Chemotherapy	Gemcitabine		19	NA	YES
+TCGA-JV-A75J	Chemotherapy	Docetaxel		19	NA	YES
+TCGA-K1-A3PN	Chemotherapy	Gemcitabine	Clinical Progressive Disease	121	182	NO
+TCGA-K1-A3PN	Chemotherapy	Docetaxel	Clinical Progressive Disease	151	182	NO
+TCGA-K1-A42X	Chemotherapy	Doxil	Clinical Progressive Disease	2134	2293	NO
+TCGA-K1-A42X	Chemotherapy	Gemzar	Clinical Progressive Disease	3256	3417	NO
+TCGA-K1-A6RT	Chemotherapy	Doxil		275	NA	YES
+TCGA-K1-A6RU	Chemotherapy	Adriamycin	Clinical Progressive Disease	143	NA	NO
+TCGA-KD-A5QS	Chemotherapy	Taxotere	Partial Response	30	72	NO
+TCGA-KD-A5QS	Hormone Therapy	Gemzar	Partial Response	30	72	NO
+TCGA-KD-A5QS	Chemotherapy	Ifosfamide	Partial Response	366	876	NO
+TCGA-KD-A5QS	Chemotherapy	Doxorubicin	Partial Response	366	471	NO
+TCGA-KD-A5QS	Chemotherapy	Gemzar	Clinical Progressive Disease	499	876	NO
+TCGA-KD-A5QU	Chemotherapy	Gemzar	Complete Response	93	219	NO
+TCGA-KD-A5QU	Chemotherapy	Cisplatin	Complete Response	93	219	NO
+TCGA-KF-A41W	Chemotherapy	Taxotere	Complete Response	61	137	NO
+TCGA-LI-A67I	Chemotherapy	Doxil	Clinical Progressive Disease	595	670	NO
+TCGA-MB-A5Y8	Chemotherapy	Doxil		248	NA	YES
+TCGA-MB-A5Y8		ifosfamide		248	NA	YES
+TCGA-MO-A47P		Doxorubicin	Complete Response	33	227	NO
+TCGA-PT-A8TR	Chemotherapy	Gemzar	Complete Response	40	155	NO
+TCGA-PT-A8TR	Chemotherapy	Taxotere	Complete Response	40	155	NO
+TCGA-QQ-A5VB	Chemotherapy			NA	NA	NO
+TCGA-QQ-A8VD	Ancillary	Sulindac	Clinical Progressive Disease	529	1499	NO
+TCGA-QQ-A8VD	Hormone Therapy	tamoxifen	Clinical Progressive Disease	613	1499	NO
+TCGA-QQ-A8VD	Chemotherapy	Gleevec	Stable Disease	2094	2780	NO
+TCGA-QQ-A8VD	Hormone Therapy	raloxifene	Clinical Progressive Disease	2807	2886	NO
+TCGA-QQ-A8VD	Chemotherapy	doxorubicin	Clinical Progressive Disease	2898	3026	NO
+TCGA-QQ-A8VD	Chemotherapy	Sorafenib		3939	NA	YES
+TCGA-RN-AAAQ	Chemotherapy	Ifosfamide	Complete Response	40	89	NO
+TCGA-RN-AAAQ	Chemotherapy	Ifosfamide	Partial Response	362	392	NO
+TCGA-RN-AAAQ	Chemotherapy	Adriamycin	Partial Response	392	453	NO
+TCGA-RN-AAAQ	Chemotherapy	Ifosfamide	Partial Response	392	453	NO
+TCGA-SG-A6Z4	Chemotherapy			228	NA	YES
+TCGA-SI-A71O	Immunotherapy	Avastin	Clinical Progressive Disease	350	462	NO
+TCGA-SI-A71O	Chemotherapy	Everolimus	Clinical Progressive Disease	350	462	NO
+TCGA-SI-A71O	Chemotherapy	Tivozanib	Clinical Progressive Disease	489	545	NO
+TCGA-SI-A71P	Chemotherapy	Ifosfamide	Complete Response	174	269	NO
+TCGA-X2-A95T	Chemotherapy	taxotere	Complete Response	10	132	NO
+TCGA-X2-A95T	Chemotherapy	gemcitabine	Complete Response	10	132	NO
+TCGA-X6-A7WC	Chemotherapy	Gemcitabine	Stable Disease	819	854	NO
+TCGA-X6-A8C2	Chemotherapy	Doxorubicin		677	NA	YES
+TCGA-X6-A8C4	Targeted Molecular therapy			156	NA	YES
+TCGA-X6-A8C4	Chemotherapy	Doxetaxel	Clinical Progressive Disease	327	504	NO
+TCGA-X6-A8C4	Chemotherapy	Trabectedin		511	NA	YES
+TCGA-X6-A8C4	Chemotherapy	Bevacizumab	Clinical Progressive Disease	327	504	NO
+TCGA-X6-A8C4	Chemotherapy	Gemcitabine	Clinical Progressive Disease	327	504	NO
+TCGA-X6-A8C4	Targeted Molecular therapy	Valproic Acid	Clinical Progressive Disease	327	504	NO
+TCGA-X6-A8C6	Chemotherapy	Doxirubicin	Clinical Progressive Disease	785	840	NO
+TCGA-X6-A8C6	Chemotherapy	Gemcitabine	Clinical Progressive Disease	911	966	NO
+TCGA-X9-A971	Chemotherapy	DOCETAXEL	Clinical Progressive Disease	413	434	NO
+TCGA-X9-A971	Chemotherapy	GEMCITABINE	Clinical Progressive Disease	413	434	NO
+TCGA-X9-A973	Chemotherapy	adriamycin	Stable Disease	323	392	NO
+TCGA-X9-A973	Chemotherapy	dacarbazine	Stable Disease	323	392	NO
+TCGA-X9-A973	Chemotherapy	Ifosfamide	Stable Disease	323	392	NO

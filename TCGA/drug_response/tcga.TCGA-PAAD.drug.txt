@@ -1,0 +1,255 @@
+bcr_patient_barcode	therapy_types	drug_name	measure_of_response	days_to_drug_therapy_start	days_to_drug_therapy_end	therapy_ongoing
+TCGA-2J-AAB1	Chemotherapy	Gemcitabine		38	59	NO
+TCGA-2J-AAB4	Chemotherapy	Gemcitabine		145	187	NO
+TCGA-2J-AAB6	Chemotherapy	Gemcitabine		NA	NA	NO
+TCGA-2J-AAB8	Chemotherapy	Gemcitabine		64	262	NO
+TCGA-2J-AAB9	Chemotherapy	Gemcitabine		50	308	NO
+TCGA-2J-AABA	Chemotherapy	Gemcitabine		NA	NA	NO
+TCGA-2J-AABE	Chemotherapy	Gemcitabine		49	91	NO
+TCGA-2J-AABE	Chemotherapy	5-FU		112	185	NO
+TCGA-2J-AABF	Chemotherapy	Gemcitabine		69	244	NO
+TCGA-2J-AABH	Chemotherapy	Gemcitabine		40	229	NO
+TCGA-2J-AABI	Chemotherapy	Gemcitabine		103	222	NO
+TCGA-2J-AABK	Chemotherapy			NA	NA	NO
+TCGA-2J-AABO	Chemotherapy	Gemcitabine		57	NA	NO
+TCGA-2J-AABP	Chemotherapy	Gemcitabine		54	237	NO
+TCGA-2J-AABR	Chemotherapy	Gemcitabine		43	252	NO
+TCGA-2J-AABT	Chemotherapy	Gemcitabine		90	NA	NO
+TCGA-2J-AABU	Chemotherapy	Gemcitabine		69	139	NO
+TCGA-2J-AABV	Chemotherapy	Gemcitabine		97	126	NO
+TCGA-2L-AAQA	Chemotherapy	Gemcitabine	Clinical Progressive Disease	82	126	NO
+TCGA-2L-AAQE	Chemotherapy	Gemcitabine	Clinical Progressive Disease	NA	NA	NO
+TCGA-2L-AAQI	Chemotherapy	Gemcitabine	Clinical Progressive Disease	42	72	NO
+TCGA-2L-AAQJ	Chemotherapy	Gemcitabine	Clinical Progressive Disease	50	171	NO
+TCGA-3A-A9I5	Chemotherapy	Gemcitabine	Complete Response	78	211	NO
+TCGA-3A-A9I5	Chemotherapy	5 FU	Complete Response	110	147	NO
+TCGA-3A-A9I7	Chemotherapy	Capecitabine		191	203	NO
+TCGA-3A-A9I7	Chemotherapy	5 FU		103	139	NO
+TCGA-3A-A9I7	Chemotherapy	Gemcitabine		72	86	NO
+TCGA-3A-A9I9	Hormone Therapy	Dexamethasone		518	620	NO
+TCGA-3A-A9I9	Hormone Therapy	Megace		518	620	NO
+TCGA-3A-A9I9	Chemotherapy	Oxaliplatin	Stable Disease	294	336	NO
+TCGA-3A-A9I9	Chemotherapy	5 FU	Stable Disease	97	336	NO
+TCGA-3A-A9I9	Chemotherapy	Gemcitabine	Stable Disease	73	265	NO
+TCGA-3A-A9I9	Chemotherapy	5 FU	Clinical Progressive Disease	518	620	NO
+TCGA-3A-A9I9	Chemotherapy	Oxaliplatin	Clinical Progressive Disease	518	620	NO
+TCGA-3A-A9IC	Chemotherapy	Gemcitabine	Stable Disease	168	245	NO
+TCGA-3A-A9IC	Chemotherapy	5 FU	Stable Disease	125	151	NO
+TCGA-3A-A9IC	Chemotherapy	Gemcitabine	Stable Disease	98	105	NO
+TCGA-3A-A9IC	Chemotherapy	Gemcitabine	Clinical Progressive Disease	512	722	NO
+TCGA-3A-A9IH	Chemotherapy	Gemcitabine	Stable Disease	71	237	NO
+TCGA-3A-A9IH	Chemotherapy	Oxaliplatin	Stable Disease	379	538	NO
+TCGA-3A-A9IH	Chemotherapy	5-FU		379	NA	YES
+TCGA-3A-A9IH	Chemotherapy	leucovorin		379	NA	YES
+TCGA-3A-A9IH	Chemotherapy	Irinotecan		763	NA	YES
+TCGA-3A-A9IN	Chemotherapy	CAPECITABINE		193	231	NO
+TCGA-3A-A9IU	Chemotherapy	Gemcitabine		89	371	NO
+TCGA-3A-A9IX	Chemotherapy	5 FU	Complete Response	97	128	NO
+TCGA-3A-A9IX	Chemotherapy	Gemcitabine	Complete Response	155	239	NO
+TCGA-3A-A9IZ	Chemotherapy	Gemcitabine	Clinical Progressive Disease	111	224	NO
+TCGA-3A-A9J0	Chemotherapy	Gemcitabine	Clinical Progressive Disease	153	335	NO
+TCGA-3A-A9J0	Chemotherapy	leucovorin		393	NA	YES
+TCGA-3A-A9J0	Chemotherapy	5-FU		393	NA	YES
+TCGA-3A-A9J0	Chemotherapy	Camptosar		393	470	NO
+TCGA-3A-A9J0	Chemotherapy	Eloxatin		393	NA	YES
+TCGA-3E-AAAY	Chemotherapy	Gemcitabine		42	NA	NO
+TCGA-3E-AAAZ	Chemotherapy	Docetaxel	Partial Response	1332	1789	NO
+TCGA-3E-AAAZ	Chemotherapy	Capecitabine		1332	1789	NO
+TCGA-3E-AAAZ	Chemotherapy	Gemcitabine	Partial Response	1332	1789	NO
+TCGA-F2-6879	Chemotherapy	Gemcitabine	Partial Response	190	225	NO
+TCGA-F2-6880	Chemotherapy	Gemcitabine	Complete Response	77	167	NO
+TCGA-F2-7273	Chemotherapy	Xeloda	Clinical Progressive Disease	53	90	NO
+TCGA-F2-7273	Chemotherapy	Gemcitabine	Stable Disease	123	221	NO
+TCGA-F2-7273	Chemotherapy	Oxaliplatin		280	NA	YES
+TCGA-F2-7273	Chemotherapy	Irinotecan		280	NA	YES
+TCGA-F2-7273	Ancillary	Leucovorin		280	NA	YES
+TCGA-F2-7273	Chemotherapy	5FU		280	NA	YES
+TCGA-F2-7276	Chemotherapy	Gemcitabine	Clinical Progressive Disease	41	141	NO
+TCGA-F2-A44G	Chemotherapy	Gemzar	Complete Response	60	75	NO
+TCGA-F2-A44G	Chemotherapy	Xeloda	Complete Response	98	144	NO
+TCGA-F2-A44H	Chemotherapy	Gemzar	Complete Response	98	196	NO
+TCGA-F2-A44H	Chemotherapy	Xeloda	Complete Response	228	267	NO
+TCGA-F2-A8YN	Chemotherapy	Gemzar	Clinical Progressive Disease	116	147	NO
+TCGA-FB-A4P5	Chemotherapy	Cisplatin		73	138	NO
+TCGA-FB-A4P6	Chemotherapy	Gemcitabine		130	221	NO
+TCGA-FB-A4P6	Chemotherapy	Capecitabine		55	96	NO
+TCGA-FB-A4P6	Chemotherapy	Irinotecan	Complete Response	698	726	NO
+TCGA-FB-A4P6	Chemotherapy	5-Fluorouracil	Complete Response	698	726	NO
+TCGA-FB-A4P6	Chemotherapy	Oxaliplatin	Complete Response	698	726	NO
+TCGA-FB-A545	Chemotherapy	5-Fluorouracil	Complete Response	113	224	NO
+TCGA-FB-A545	Chemotherapy	Gemcitabine	Complete Response	113	224	NO
+TCGA-FB-A545	Chemotherapy	5-Fluorouracil	Clinical Progressive Disease	457	634	NO
+TCGA-FB-A545	Ancillary	Leucovorin	Clinical Progressive Disease	457	634	NO
+TCGA-FB-A545	Chemotherapy	Oxaliplatin	Clinical Progressive Disease	457	634	NO
+TCGA-FB-A5VM	Chemotherapy	Gemcitabine	Clinical Progressive Disease	77	162	NO
+TCGA-FB-A5VM	Chemotherapy	5-Fluorouracil		195	NA	YES
+TCGA-FB-A5VM	Chemotherapy	Oxaliplatin		195	NA	YES
+TCGA-FB-A78T	Chemotherapy	Gemcitabine	Complete Response	106	115	NO
+TCGA-FB-AAPP	Chemotherapy	Gemzar	Clinical Progressive Disease	89	150	NO
+TCGA-FB-AAPP	Chemotherapy	Capecitabine	Clinical Progressive Disease	181	303	NO
+TCGA-FB-AAPP	Chemotherapy	Gemzar	Clinical Progressive Disease	181	303	NO
+TCGA-FB-AAPQ	Chemotherapy		Clinical Progressive Disease	NA	NA	NO
+TCGA-FB-AAPY	Chemotherapy	Gemzar	Complete Response	92	243	NO
+TCGA-FB-AAPZ	Chemotherapy	Gemcitabine		435	543	NO
+TCGA-FB-AAPZ	Chemotherapy	Oxaliplatin		435	543	NO
+TCGA-FB-AAQ6	Chemotherapy	Gemcitabine	Complete Response	92	156	NO
+TCGA-FZ-5919	Chemotherapy	Gemcitabine	Clinical Progressive Disease	73	157	NO
+TCGA-FZ-5922	Chemotherapy	Gemzar	Clinical Progressive Disease	639	800	NO
+TCGA-FZ-5922	Chemotherapy	Tarceva	Clinical Progressive Disease	76	442	NO
+TCGA-FZ-5923	Chemotherapy	Gemzar	Clinical Progressive Disease	42	444	NO
+TCGA-FZ-5924	Chemotherapy	Gemzar	Clinical Progressive Disease	257	362	NO
+TCGA-H6-8124	Chemotherapy	Gemzar		43	141	NO
+TCGA-H6-8124	Chemotherapy	Xeloda	Complete Response	166	205	NO
+TCGA-H8-A6C1	Chemotherapy	Gemcitabine	Complete Response	79	233	NO
+TCGA-H8-A6C1	Chemotherapy	folinic acid		468	NA	YES
+TCGA-H8-A6C1	Chemotherapy	fluorouracil		468	NA	YES
+TCGA-H8-A6C1	Chemotherapy	irinotecan		468	NA	YES
+TCGA-H8-A6C1	Chemotherapy	oxaliplatin		468	NA	YES
+TCGA-HV-A5A6	Chemotherapy	Gemcitabine		1834	1895	NO
+TCGA-HV-A7OP	Chemotherapy	Fluorouracil	Clinical Progressive Disease	39	77	NO
+TCGA-HV-A7OP	Chemotherapy	Gemcitabine		362	404	NO
+TCGA-HV-A7OP	Chemotherapy	Capecitabine		432	NA	YES
+TCGA-HV-A7OP	Chemotherapy	Oxaliplatin		432	NA	YES
+TCGA-HV-AA8V	Chemotherapy	cisplatin	Clinical Progressive Disease	37	149	NO
+TCGA-HV-AA8V	Chemotherapy	gemcitabine	Clinical Progressive Disease	568	780	NO
+TCGA-HV-AA8V	Chemotherapy	5-fu	Clinical Progressive Disease	281	435	NO
+TCGA-HV-AA8X	Chemotherapy	Gemcitabine Injection	Clinical Progressive Disease	45	253	NO
+TCGA-HZ-7289	Chemotherapy		Clinical Progressive Disease	438	NA	NO
+TCGA-HZ-7918	Chemotherapy	Gemcitabine	Complete Response	98	137	NO
+TCGA-HZ-7918	Chemotherapy	Oxaliplatin	Stable Disease	553	666	NO
+TCGA-HZ-7918	Chemotherapy	Irinotecan	Stable Disease	553	666	NO
+TCGA-HZ-7918	Chemotherapy	5-FU	Stable Disease	553	666	NO
+TCGA-HZ-7918	Ancillary	Leucovorin	Stable Disease	553	666	NO
+TCGA-HZ-7918	Chemotherapy	Oxaliplatin	Stable Disease	910	960	NO
+TCGA-HZ-7918	Chemotherapy	Irinotecan	Stable Disease	910	960	NO
+TCGA-HZ-7918	Chemotherapy	5-FU	Stable Disease	910	960	NO
+TCGA-HZ-7918	Ancillary	Leucovorin	Stable Disease	910	960	NO
+TCGA-HZ-7920	Chemotherapy	5-FU	Complete Response	83	118	NO
+TCGA-HZ-7923	Chemotherapy	Gemcitabine	Complete Response	54	194	NO
+TCGA-HZ-7924	Chemotherapy	Gemcitabine	Complete Response	253	522	NO
+TCGA-HZ-8001	Chemotherapy	Xeloda	Complete Response	97	265	NO
+TCGA-HZ-8001	Chemotherapy	Gemcitabine	Complete Response	97	265	NO
+TCGA-HZ-8317	Chemotherapy	Gemcitabine	Clinical Progressive Disease	137	186	NO
+TCGA-HZ-8519	Chemotherapy	Chemo, NOS	Complete Response	73	226	NO
+TCGA-HZ-8637	Chemotherapy	Gemcitabine	Complete Response	76	351	NO
+TCGA-HZ-A49G	Chemotherapy	Gemcitabine	Clinical Progressive Disease	81	235	NO
+TCGA-HZ-A49H	Chemotherapy	Gemcitabine	Complete Response	121	207	NO
+TCGA-HZ-A49I	Chemotherapy	5-FU	Clinical Progressive Disease	51	86	NO
+TCGA-HZ-A4BK	Chemotherapy	Chemo, NOS	Clinical Progressive Disease	136	228	NO
+TCGA-HZ-A77O	Chemotherapy	Gemcitabine	Clinical Progressive Disease	96	120	NO
+TCGA-HZ-A77P	Chemotherapy	Gemcitabine	Complete Response	48	146	NO
+TCGA-HZ-A9TJ	Chemotherapy	Oxaliplatin		65	81	NO
+TCGA-HZ-A9TJ	Chemotherapy	Irinotecan		65	81	NO
+TCGA-HZ-A9TJ	Chemotherapy	5-FU		65	81	NO
+TCGA-HZ-A9TJ	Ancillary	Leucovorin		65	81	NO
+TCGA-HZ-A9TJ	Chemotherapy	Abraxane		81	142	NO
+TCGA-HZ-A9TJ	Chemotherapy	Gemcitabine	Clinical Progressive Disease	81	532	NO
+TCGA-IB-7644	Chemotherapy	Gemcitabine	Clinical Progressive Disease	74	217	NO
+TCGA-IB-7645	Ancillary	5-Fluorouracil	Complete Response	38	178	NO
+TCGA-IB-7645	Chemotherapy	Gemcitabine	Stable Disease	811	1230	NO
+TCGA-IB-7645	Chemotherapy	Oxaliplatin	Clinical Progressive Disease	1309	1377	NO
+TCGA-IB-7645	Chemotherapy	Leucovorin	Complete Response	38	178	NO
+TCGA-IB-7645	Chemotherapy	5-Fluorouracil	Clinical Progressive Disease	1309	1377	NO
+TCGA-IB-7645	Ancillary	Leucovorin	Clinical Progressive Disease	1309	1377	NO
+TCGA-IB-7645	Chemotherapy	Carboplatin	Clinical Progressive Disease	1224	1230	NO
+TCGA-IB-7645	Chemotherapy	Gemzar	Clinical Progressive Disease	1224	1230	NO
+TCGA-IB-7647	Chemotherapy	Gemcitabine	Clinical Progressive Disease	141	537	NO
+TCGA-IB-7651	Chemotherapy	Gemcitabine	Clinical Progressive Disease	124	343	NO
+TCGA-IB-7651	Chemotherapy	Oxaliplatin	Clinical Progressive Disease	581	581	NO
+TCGA-IB-7651	Ancillary	Leucovorin	Clinical Progressive Disease	581	581	NO
+TCGA-IB-7651	Chemotherapy	5-Fluorouracil	Clinical Progressive Disease	581	581	NO
+TCGA-IB-7652	Chemotherapy	Gemcitabine	Complete Response	115	268	NO
+TCGA-IB-7885	Chemotherapy	Gemcitabine	Complete Response	95	279	NO
+TCGA-IB-7888	Chemotherapy	5-FU	Stable Disease	154	329	NO
+TCGA-IB-7888	Chemotherapy	Gemcitabine	Clinical Progressive Disease	448	881	NO
+TCGA-IB-7888	Chemotherapy	Gemcitabine	Stable Disease	154	329	NO
+TCGA-IB-7889	Chemotherapy	Gemcitabine	Clinical Progressive Disease	125	202	NO
+TCGA-IB-7891	Chemotherapy	5-Fluorouracil	Complete Response	70	223	NO
+TCGA-IB-7891	Chemotherapy	5-fluorouracil	Stable Disease	539	539	NO
+TCGA-IB-7891	Chemotherapy	Folinic Acid		564	NA	YES
+TCGA-IB-7891	Chemotherapy	Folinic Acid	Stable Disease	539	539	NO
+TCGA-IB-7891	Chemotherapy	Irinotecan Hydrochloride	Stable Disease	539	539	NO
+TCGA-IB-7891	Chemotherapy	Oxaliplatin	Stable Disease	539	539	NO
+TCGA-IB-7891	Chemotherapy	Gemcitabine	Stable Disease	564	859	NO
+TCGA-IB-8126	Chemotherapy	Gemcitabine	Clinical Progressive Disease	103	413	NO
+TCGA-IB-8127	Chemotherapy	Gemcitabine	Complete Response	60	194	NO
+TCGA-IB-A5SO	Chemotherapy	Gemcitabine	Clinical Progressive Disease	309	309	NO
+TCGA-IB-A5SP	Chemotherapy	Gemcitabine	Clinical Progressive Disease	90	169	NO
+TCGA-IB-A5SS	Chemotherapy	Gemcitabine	Partial Response	52	259	NO
+TCGA-IB-A6UF	Chemotherapy	Gemcitabine	Complete Response	117	271	NO
+TCGA-IB-A6UF	Ancillary	Leucovorin		636	NA	YES
+TCGA-IB-A6UF	Chemotherapy	5-Fluorouracil		636	NA	YES
+TCGA-IB-A6UF	Chemotherapy	Irinotecan		636	NA	YES
+TCGA-IB-A7LX	Chemotherapy	5-Fluorouracil	Clinical Progressive Disease	53	151	NO
+TCGA-IB-A7LX	Ancillary	Leucovorin Calcium	Clinical Progressive Disease	53	151	NO
+TCGA-IB-A7LX	Chemotherapy	Irinotecan Hydrochloride	Clinical Progressive Disease	53	151	NO
+TCGA-IB-A7LX	Chemotherapy	Oxaliplatin	Clinical Progressive Disease	53	151	NO
+TCGA-IB-A7LX	Chemotherapy	Gemcitabine	Clinical Progressive Disease	193	230	NO
+TCGA-IB-AAUO	Chemotherapy	Gemcitabine	Clinical Progressive Disease	91	205	NO
+TCGA-IB-AAUP	Chemotherapy	Gemcitabine		119	NA	YES
+TCGA-IB-AAUQ	Chemotherapy	Fluorouracil	Clinical Progressive Disease	135	169	NO
+TCGA-IB-AAUQ	Chemotherapy	Irinotecan	Clinical Progressive Disease	135	169	NO
+TCGA-IB-AAUQ	Chemotherapy	Oxaliplatin	Clinical Progressive Disease	135	169	NO
+TCGA-IB-AAUS	Chemotherapy	Gemcitabine		96	NA	YES
+TCGA-IB-AAUT	Chemotherapy	Gemcitabine		48	NA	YES
+TCGA-IB-AAUU	Chemotherapy	Gemcitabine		55	NA	YES
+TCGA-IB-AAUV	Chemotherapy	Gemcitabine		89	NA	YES
+TCGA-IB-AAUW	Chemotherapy	Gemcitabine		60	NA	YES
+TCGA-L1-A7W4	Chemotherapy	Gemcitabine	Clinical Progressive Disease	66	116	NO
+TCGA-L1-A7W4	Chemotherapy	Gemcitabine	Clinical Progressive Disease	225	225	NO
+TCGA-LB-A7SX	Chemotherapy	GEMCITABINE		113	177	NO
+TCGA-LB-A7SX	Chemotherapy	ABRAXANE		113	177	NO
+TCGA-LB-A8F3	Chemotherapy	gemzar		88	101	NO
+TCGA-LB-A8F3	Chemotherapy	5FU		126	192	NO
+TCGA-LB-A8F3	Chemotherapy	gemzar	Complete Response	197	225	NO
+TCGA-LB-A9Q5	Chemotherapy	Gemcitabine HCL		64	169	NO
+TCGA-LB-A9Q5	Chemotherapy	5 FU		198	238	NO
+TCGA-LB-A9Q5	Chemotherapy	gemcitabine HCL	Clinical Progressive Disease	310	310	NO
+TCGA-LB-A9Q5	Chemotherapy	Abraxane	Clinical Progressive Disease	303	310	NO
+TCGA-M8-A5N4	Ancillary	Leucovorin calcium		59	203	NO
+TCGA-M8-A5N4	Chemotherapy	Fluorouracil		59	203	NO
+TCGA-OE-A75W	Chemotherapy	Gemzar		87	87	NO
+TCGA-OE-A75W	Chemotherapy	5-FU	Clinical Progressive Disease	118	153	NO
+TCGA-PZ-A5RE	Vaccine			65	104	NO
+TCGA-PZ-A5RE	Chemotherapy	Gemcitabine		79	104	NO
+TCGA-PZ-A5RE	Chemotherapy	5 FU		104	142	NO
+TCGA-Q3-A5QY	Chemotherapy	Gemcitabine	Partial Response	35	92	NO
+TCGA-RB-A7B8	Chemotherapy	Gemzar		39	84	NO
+TCGA-RB-A7B8	Chemotherapy	FU7		115	115	NO
+TCGA-RB-A7B8	Ancillary	leucovorin		115	115	NO
+TCGA-RB-AA9M	Chemotherapy	Gemcitabine	Clinical Progressive Disease	67	218	NO
+TCGA-S4-A8RM	Chemotherapy	Gemzar	Complete Response	103	264	NO
+TCGA-S4-A8RO	Chemotherapy	Xeloda		56	98	NO
+TCGA-S4-A8RO	Chemotherapy	Gemzar		35	155	NO
+TCGA-S4-A8RO	Chemotherapy	Abraxane		309	378	NO
+TCGA-S4-A8RO	Chemotherapy	Gemzar		309	378	NO
+TCGA-S4-A8RO	Chemotherapy	Oxaliplatin		421	485	NO
+TCGA-S4-A8RO	Chemotherapy	fluorouracil		421	485	NO
+TCGA-S4-A8RO	Ancillary	Leucovorin		421	485	NO
+TCGA-S4-A8RP	Chemotherapy	Irinotecan		413	435	NO
+TCGA-S4-A8RP	Chemotherapy	5-FU		413	NA	NO
+TCGA-S4-A8RP	Chemotherapy	Gemcitibine		50	NA	NO
+TCGA-S4-A8RP	Chemotherapy	5-FU		203	242	NO
+TCGA-S4-A8RP	Chemotherapy			408	408	NO
+TCGA-S4-A8RP	Chemotherapy	Oxaliplatin		413	NA	NO
+TCGA-S4-A8RP	Ancillary	Leucovorin		413	NA	NO
+TCGA-US-A774	Chemotherapy	Gemcitabine	Clinical Progressive Disease	116	250	NO
+TCGA-XD-AAUG	Chemotherapy	Gemcitabine	Clinical Progressive Disease	13	109	NO
+TCGA-XD-AAUG	Chemotherapy	Abraxane	Clinical Progressive Disease	13	109	NO
+TCGA-XD-AAUG	Ancillary	leucovorin		130	NA	YES
+TCGA-XD-AAUG	Chemotherapy	Fluorouracil		130	NA	YES
+TCGA-XD-AAUG	Chemotherapy	Irinotecan		130	NA	YES
+TCGA-XD-AAUG	Chemotherapy	Oxaliplatin		130	NA	YES
+TCGA-XD-AAUH	Chemotherapy	Gemcitabine		85	NA	YES
+TCGA-XD-AAUI	Chemotherapy	Gemcitabine	Clinical Progressive Disease	62	181	NO
+TCGA-XD-AAUI	Chemotherapy	Fluorouracil		190	NA	YES
+TCGA-XD-AAUI	Chemotherapy	Oxaliplatin		190	NA	YES
+TCGA-XD-AAUL	Chemotherapy	Gemcitabine		69	NA	YES
+TCGA-YB-A89D	Chemotherapy	Gemcitabine	Complete Response	7	210	NO
+TCGA-YB-A89D	Chemotherapy	5-Fluorouracil‎	Complete Response	87	123	NO
+TCGA-YY-A8LH	Chemotherapy	Gemcitabine	Complete Response	176	218	NO
+TCGA-YY-A8LH	Chemotherapy	Gemcitabine	Partial Response	43	71	NO
+TCGA-YY-A8LH	Chemotherapy	Xeloda	Complete Response	85	135	NO
+TCGA-Z5-AAPL	Chemotherapy	cyclophosphamide	Complete Response	5	21	NO
+TCGA-Z5-AAPL	Chemotherapy	doxorubicin	Complete Response	5	21	NO
+TCGA-Z5-AAPL	Chemotherapy	5-fluorouracil	Complete Response	5	21	NO

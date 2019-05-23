@@ -1,0 +1,169 @@
+bcr_patient_barcode	therapy_types	drug_name	measure_of_response	days_to_drug_therapy_start	days_to_drug_therapy_end	therapy_ongoing
+TCGA-A3-3317	Targeted Molecular therapy	Sorafenib		605	886	NO
+TCGA-A3-3317	Immunotherapy	Interferon Alpha		605	886	NO
+TCGA-A3-3347	Targeted Molecular therapy	Perifosine		1097	NA	NO
+TCGA-A3-3347	Targeted Molecular therapy	Sorafenib		NA	NA	NO
+TCGA-AK-3426	Immunotherapy	Interferon		465	522	NO
+TCGA-AK-3436	Chemotherapy	Sutent		76	NA	YES
+TCGA-AK-3436	Chemotherapy	Sutent		1194	NA	YES
+TCGA-AK-3453	Chemotherapy			NA	NA	
+TCGA-B0-4718	Chemotherapy	Pazopanib	Clinical Progressive Disease	99	1231	NO
+TCGA-B0-4718	Chemotherapy	Bevacizumab	Clinical Progressive Disease	1363	1685	NO
+TCGA-B0-4837	Immunotherapy	Tyrosine kinase inhibitor	Clinical Progressive Disease	1217	NA	NO
+TCGA-B0-4841	Immunotherapy	INF	Clinical Progressive Disease	47	108	NO
+TCGA-B0-4844	Chemotherapy	IL-2	Clinical Progressive Disease	60	NA	NO
+TCGA-B0-4844	Chemotherapy	Thalidomide	Clinical Progressive Disease	60	NA	NO
+TCGA-B0-5094	Chemotherapy	TORISEL	Clinical Progressive Disease	124	228	NO
+TCGA-B0-5107	Chemotherapy	SUTENT	Clinical Progressive Disease	11	NA	NO
+TCGA-B0-5115	Chemotherapy	Pazopanib		197	197	NO
+TCGA-B0-5115	Chemotherapy	Afinitor		501	NA	YES
+TCGA-B0-5694	Chemotherapy	Pazopanib	Clinical Progressive Disease	441	469	NO
+TCGA-B0-5701	Immunotherapy	Interleukin-2	Complete Response	366	727	NO
+TCGA-B0-5712		Zometa	Stable Disease	177	NA	NO
+TCGA-B2-5639	Chemotherapy	Torisel		74	158	NO
+TCGA-B2-5639	Chemotherapy	Votrient		177	NA	YES
+TCGA-B8-4143	Immunotherapy	Interleukin-2		133	388	NO
+TCGA-B8-4153	Chemotherapy	Pazopanib		238	NA	YES
+TCGA-B8-5162	Chemotherapy	Sutent		-58	-28	NO
+TCGA-BP-4161	Targeted Molecular therapy	Sunitinib		2752	NA	
+TCGA-BP-4165	Targeted Molecular therapy	Sunitinib		2594	NA	YES
+TCGA-BP-4169	Immunotherapy	Interferon		36	78	NO
+TCGA-BP-4169	Targeted Molecular therapy	Axitinib		127	253	NO
+TCGA-BP-4329	Immunotherapy	Interferon		190	510	NO
+TCGA-BP-4329	Targeted Molecular therapy	Temsirolimus		204	510	NO
+TCGA-BP-4334	Immunotherapy	Interferon		520	NA	NO
+TCGA-BP-4335	Immunotherapy	Interferon		42	134	NO
+TCGA-BP-4338	Targeted Molecular therapy	Sorafenib		2460	2572	NO
+TCGA-BP-4338	Targeted Molecular therapy	Sunitinib		1765	2450	NO
+TCGA-BP-4338	Chemotherapy	Everolimus		2586	NA	YES
+TCGA-BP-4352	Targeted Molecular therapy	Sunitinib		35	59	NO
+TCGA-BP-4354	Targeted Molecular therapy	Temsirolimus		721	NA	YES
+TCGA-BP-4354	Targeted Molecular therapy	Sunitinib		10	454	NO
+TCGA-BP-4354	Targeted Molecular therapy	Sorafenib		595	NA	NO
+TCGA-BP-4354	Targeted Molecular therapy	Sunitinib		490	525	NO
+TCGA-BP-4354	Targeted Molecular therapy	Sorafenib		583	589	NO
+TCGA-BP-4354	Targeted Molecular therapy	Gefitinib		10	454	NO
+TCGA-BP-4770	Immunotherapy	Interferon		211	NA	NO
+TCGA-BP-4787	Targeted Molecular therapy	Sorafenib		361	388	NO
+TCGA-BP-4787	Chemotherapy	Temsirolimus		412	440	NO
+TCGA-BP-4787	Targeted Molecular therapy	Sunitinib		53	333	NO
+TCGA-BP-4804	Targeted Molecular therapy	Sunitinib		1373	NA	YES
+TCGA-BP-4804	Targeted Molecular therapy	Sunitinib		1289	1359	NO
+TCGA-BP-4974	Targeted Molecular therapy	Sunitinib		56	58	NO
+TCGA-BP-4974	Targeted Molecular therapy	Sunitinib		75	155	NO
+TCGA-BP-4974	Targeted Molecular therapy	Sorafenib		178	NA	NO
+TCGA-BP-4974	Targeted Molecular therapy	Gefitinib		56	59	NO
+TCGA-BP-4985	Targeted Molecular therapy	Sunitinib		307	728	NO
+TCGA-BP-5009	Chemotherapy	Everolimus		609	1023	NO
+TCGA-BP-5009	Targeted Molecular therapy	Pazopanib		1029	NA	NO
+TCGA-BP-5009	Chemotherapy	Sunitinib		338	577	NO
+TCGA-BP-5009	Chemotherapy	Bevacizumab		765	765	NO
+TCGA-BP-5178	Targeted Molecular therapy	Sorafenib		407	772	NO
+TCGA-BP-5189	Targeted Molecular therapy	Temsirolimus		661	773	NO
+TCGA-BP-5189	Chemotherapy	Bevacizumab		794	794	NO
+TCGA-BP-5201	Immunotherapy	Interleukin-2		469	603	NO
+TCGA-CJ-4637	Chemotherapy	Temsirolimus		47	476	NO
+TCGA-CJ-4637	Targeted Molecular therapy	Bortezomib		1476	1742	NO
+TCGA-CJ-4637	Targeted Molecular therapy	Sorafenib		849	861	NO
+TCGA-CJ-4637	Targeted Molecular therapy	Avastin		1868	1883	NO
+TCGA-CJ-4637	Targeted Molecular therapy	nab-rapamycin		1213	1468	NO
+TCGA-CJ-4637	Targeted Molecular therapy	AZD		1868	1888	NO
+TCGA-CJ-4637	Chemotherapy	Sutent		512	816	NO
+TCGA-CJ-4637	Targeted Molecular therapy	Pazopanib		1962	2053	NO
+TCGA-CJ-4637	Chemotherapy	Roferon-A		51	476	NO
+TCGA-CJ-4637	Chemotherapy	Intron A		484	507	NO
+TCGA-CJ-4638	Chemotherapy	GEMICTIABINE		70	160	NO
+TCGA-CJ-4638	Chemotherapy	Avastin		252	281	NO
+TCGA-CJ-4638	Chemotherapy	interleukin-2		192	221	NO
+TCGA-CJ-4638	Chemotherapy	5-fluorouracil		70	252	NO
+TCGA-CJ-4641	Immunotherapy	Oncophage		37	321	NO
+TCGA-CJ-4644	Other, specify in notesvaccine	Oncophage		27	229	NO
+TCGA-CJ-4644	Targeted Molecular therapy	Tarceva		229	316	NO
+TCGA-CJ-4644	Targeted Molecular therapy	Avastin		229	316	NO
+TCGA-CJ-4644	Immunotherapy	Intron A		162	222	NO
+TCGA-CJ-4644	Chemotherapy	Capecitabine		150	222	NO
+TCGA-CJ-4868	Immunotherapy	Proleukin		56	89	NO
+TCGA-CJ-4868	Targeted Molecular therapy	Nexavar		379	534	NO
+TCGA-CJ-4868	Chemotherapy	Gemcitabine		296	365	NO
+TCGA-CJ-4868	Targeted Molecular therapy	Avastin		135	282	NO
+TCGA-CJ-4868	Chemotherapy	Capecitabin		296	365	NO
+TCGA-CJ-4868	Targeted Molecular therapy	Tarceva		114	288	NO
+TCGA-CJ-4869	Targeted Molecular therapySorafenib	Nexavaar		767	854	NO
+TCGA-CJ-4869	Targeted Molecular therapy	Sutent		881	1963	NO
+TCGA-CJ-4871	Immunotherapy	Alpha Interferon		98	NA	YES
+TCGA-CJ-4875	Targeted Molecular therapy	Nexavar		1083	NA	YES
+TCGA-CJ-4881	Targeted Molecular therapy	temsirolimus		1931	NA	YES
+TCGA-CJ-4887	Immunotherapy	Oncophage		34	124	NO
+TCGA-CJ-4888	Targeted Molecular therapy	sutent		576	1456	NO
+TCGA-CJ-4890	Immunotherapy	Interferon		70	211	NO
+TCGA-CJ-4890	Targeted Molecular therapy	Nexavar		1483	1636	NO
+TCGA-CJ-4890	Targeted Molecular therapy	Tipifarnib		263	444	NO
+TCGA-CJ-4890	Targeted Molecular therapy	Sutent		480	1483	NO
+TCGA-CJ-4890	Targeted Molecular therapy	Sorafenib		263	444	NO
+TCGA-CJ-4890	Targeted Molecular therapy	Afinitor		1636	1698	NO
+TCGA-CJ-4894	Immunotherapy	Interferon		188	240	NO
+TCGA-CJ-4895	Targeted Molecular therapy	Tarceva		45	228	NO
+TCGA-CJ-4895	Chemotherapy	Xeloda		255	740	NO
+TCGA-CJ-4895	Targeted Molecular therapy	Avastin		45	559	NO
+TCGA-CJ-4895	Chemotherapy	Gemzar		255	740	NO
+TCGA-CJ-4900	Targeted Molecular therapy	Tarceva		-92	0	NO
+TCGA-CJ-4900	Targeted Molecular therapy	Avastin		-92	0	NO
+TCGA-CJ-4904	Targeted Molecular therapy	Nexavar		295	463	NO
+TCGA-CJ-4913	Targeted Molecular therapy	Sutent		861	1020	NO
+TCGA-CJ-4918	Chemotherapy	Gemcitabine		36	45	NO
+TCGA-CJ-4923	Immunotherapy	proleukin (IL-2)		192	379	NO
+TCGA-CJ-5676	Targeted Molecular therapy	pazopanib		2227	NA	YES
+TCGA-CJ-5676	Other, specify in notesVaccine	oncophage vaccine		69	209	NO
+TCGA-CJ-5677	Chemotherapy	gemcitabine		70	378	NO
+TCGA-CJ-5677	Immunotherapy	interferon-alpha		42	70	NO
+TCGA-CJ-5677	Chemotherapy	Xeloda		42	70	NO
+TCGA-CJ-5678	Other, specify in notes	oncophage vaccine		43	93	NO
+TCGA-CJ-5679	Immunotherapy	interferon-alpha		116	274	NO
+TCGA-CJ-5679	Chemotherapy	gemcitabine		274	344	NO
+TCGA-CJ-5679	Targeted Molecular therapy	avastin		344	547	NO
+TCGA-CJ-5679	Chemotherapy	thalidomide		547	599	NO
+TCGA-CJ-5679	Chemotherapy	Xeloda		274	344	NO
+TCGA-CJ-5680	Immunotherapy	oncophage vaccine		53	186	NO
+TCGA-CJ-5680	Immunotherapy	IL-2		220	247	NO
+TCGA-CJ-5680	Targeted Molecular therapy	avastin		275	616	NO
+TCGA-CJ-5680	Targeted Molecular therapy	Tarceva		466	629	NO
+TCGA-CJ-5681	Immunotherapy	IL-2		105	135	NO
+TCGA-CJ-5681	Targeted Molecular therapy	avastin		235	318	NO
+TCGA-CJ-5681	Targeted Molecular therapy	RAD001		305	365	NO
+TCGA-CJ-5681	Chemotherapy	gemcitabine		165	235	NO
+TCGA-CJ-5682	Immunotherapy	interferon alpha		68	813	NO
+TCGA-CJ-6028	Other, specify in notesvaccine	Oncophage		41	130	NO
+TCGA-CJ-6028	Immunotherapy	Interferon		336	392	NO
+TCGA-CJ-6028	Chemotherapy	xeloda		392	903	NO
+TCGA-CJ-6028	Targeted Molecular therapy	Sorafenib		1033	1625	NO
+TCGA-CJ-6028	Chemotherapy	Gemcitabine		392	903	NO
+TCGA-CJ-6028	Targeted Molecular therapy	Sunitinib		903	1033	NO
+TCGA-CJ-6033	Chemotherapy	Xeloda		32	74	NO
+TCGA-CJ-6033	Targeted Molecular therapy	Avastin		81	144	NO
+TCGA-CJ-6033	Immunotherapy	Interferon		144	172	NO
+TCGA-CJ-6033	Chemotherapy	Gemcitabine		32	74	NO
+TCGA-CJ-6033	Targeted Molecular therapy	Iressa		74	144	NO
+TCGA-CW-5580	Immunotherapy	IFN-Alpha (Intron)		50	57	NO
+TCGA-CW-5585	Targeted Molecular therapy	Sutent (Sunitinib)		2563	NA	
+TCGA-CW-5590	Other, specify in notesSU011248	Sutent (Sunitinib)		229	956	NO
+TCGA-CW-5591	Immunotherapy	IL-2 (high dose)		78	NA	
+TCGA-CW-6097	Other, specify in notesclinical trial	Bay-439006		115	NA	NO
+TCGA-CZ-4857	Other, specify in notesBiological Therapy	IL-2 Therapy (interleukin)		228	247	NO
+TCGA-CZ-4858	Other, specify in notesBiological Therapy	Interleukin 2-high dose		1694	1715	NO
+TCGA-CZ-4860	Targeted Molecular therapy	sorafenib		53	132	NO
+TCGA-CZ-4861	Targeted Molecular therapy	Sorafenib - Nexavar		-43	32	NO
+TCGA-CZ-5454	Targeted Molecular therapy	sutent (sunitinib)		37	324	NO
+TCGA-CZ-5456	Targeted Molecular therapy	Pazopanib		1124	1286	NO
+TCGA-CZ-5460	Other, specify in notesBiological Therapy	interleukin-2		174	298	NO
+TCGA-CZ-5461	Targeted Molecular therapy	sunitinib (sutent)		45	278	NO
+TCGA-CZ-5462	Chemotherapy	sunitinib		15	127	NO
+TCGA-CZ-5464	Targeted Molecular therapy	sunitinib		52	571	NO
+TCGA-CZ-5464	Targeted Molecular therapy	Pazopanib		1407	1730	NO
+TCGA-CZ-5469	Targeted Molecular therapy	sunitinib		223	597	NO
+TCGA-DV-5565	Targeted Molecular therapy	ZD6474		1189	NA	YES
+TCGA-DV-A4VX	Targeted Molecular therapy	Sunitinib	Stable Disease	56	482	NO
+TCGA-DV-A4VX	Targeted Molecular therapy	Sorafenib	Clinical Progressive Disease	482	1503	NO
+TCGA-G6-A5PC	Targeted Molecular therapy	Sutent	Clinical Progressive Disease	62	208	NO
+TCGA-G6-A8L6	Immunotherapy	Avastin		276	NA	YES
+TCGA-G6-A8L6	Chemotherapy	Sutent	Stable Disease	73	211	NO
+TCGA-G6-A8L6	Chemotherapy	Axitnib	Stable Disease	252	272	NO

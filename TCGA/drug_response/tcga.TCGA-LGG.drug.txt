@@ -1,0 +1,696 @@
+bcr_patient_barcode	therapy_types	drug_name	measure_of_response	days_to_drug_therapy_start	days_to_drug_therapy_end	therapy_ongoing
+TCGA-CS-4941	Chemotherapy	Temodar		NA	NA	NO
+TCGA-CS-4942	Chemotherapy	Avastin		1241	1260	NO
+TCGA-CS-4943	Chemotherapy	Temodar		408	NA	YES
+TCGA-CS-5390	Chemotherapy	Temodar		886	NA	
+TCGA-CS-5393	Chemotherapy	Temodar		NA	NA	NO
+TCGA-CS-5395	Chemotherapy	Bevacizumab		411	579	NO
+TCGA-CS-5395	Chemotherapy	Temodar		259	NA	NO
+TCGA-CS-5396	Chemotherapy	Temodar		39	NA	YES
+TCGA-CS-5397	Chemotherapy	Temodar		8	NA	NO
+TCGA-CS-6186	Chemotherapy	Temodar		146	188	NO
+TCGA-CS-6186	Chemotherapy	Avastin		444	512	NO
+TCGA-CS-6188	Chemotherapy	Temodar		71	716	NO
+TCGA-CS-6290	Chemotherapy	Temodar		NA	504	NO
+TCGA-CS-6665	Chemotherapy	Temodar		6	NA	YES
+TCGA-CS-6666	Chemotherapy	Temodar		32	NA	YES
+TCGA-CS-6668	Chemotherapy	Temodar		27	NA	YES
+TCGA-CS-6669	Chemotherapy	Temodar		30	NA	YES
+TCGA-CS-6670	Chemotherapy	Temodar		68	201	NO
+TCGA-CS-6670	Chemotherapy	Vinblastine		-49	-30	NO
+TCGA-CS-6670	Chemotherapy	Avastin		-325	-227	NO
+TCGA-DB-5270	Chemotherapy	BCNU		761	917	NO
+TCGA-DB-5273	Chemotherapy	Temodar		74	302	NO
+TCGA-DB-5273	Chemotherapy	Temodar		17	74	NO
+TCGA-DB-5274	Chemotherapy	Temodar		98	270	NO
+TCGA-DB-5274	Chemotherapy	Temodar		52	98	NO
+TCGA-DB-5275	Chemotherapy	Temodar		72	129	NO
+TCGA-DB-5275	Chemotherapy	Temodar		129	359	NO
+TCGA-DB-5276	Chemotherapy	Temodar		69	283	NO
+TCGA-DB-5276	Chemotherapy	Temodar		12	69	NO
+TCGA-DB-5276	Targeted Molecular therapy	Gleevec		1011	1189	NO
+TCGA-DB-5276	Targeted Molecular therapy	Gleevec		1196	1342	NO
+TCGA-DB-5277	Chemotherapy	Temodar		91	361	NO
+TCGA-DB-5277	Chemotherapy	Temodar		27	61	NO
+TCGA-DB-5277	Chemotherapy	Temozolamide		1117	1239	NO
+TCGA-DB-5281	Chemotherapy	Temodar		95	276	NO
+TCGA-DB-5281	Chemotherapy	Temodar		25	95	NO
+TCGA-DB-A4XB	Chemotherapy	Temodar	Stable Disease	28	57	NO
+TCGA-DB-A4XD	Chemotherapy	Temodar	Complete Response	24	291	NO
+TCGA-DB-A4XF	Chemotherapy	Temodar	Stable Disease	34	264	NO
+TCGA-DB-A4XG	Chemotherapy	Temodar	Stable Disease	1732	2067	NO
+TCGA-DB-A64O	Chemotherapy	Temodar	Stable Disease	461	551	NO
+TCGA-DB-A64P	Chemotherapy	Temodar	Stable Disease	36	430	NO
+TCGA-DB-A64Q	Chemotherapy	Temodar		57	NA	YES
+TCGA-DB-A64V	Chemotherapy	Temodar	Stable Disease	20	330	NO
+TCGA-DB-A64W	Chemotherapy	Temodar	Stable Disease	34	274	NO
+TCGA-DB-A64X	Chemotherapy	Temodar	Stable Disease	53	265	NO
+TCGA-DB-A75K	Chemotherapy	Temozolomide	Complete Response	28	64	NO
+TCGA-DB-A75L	Chemotherapy	Temozolomide		25	NA	YES
+TCGA-DB-A75M	Chemotherapy	CDR0000654697		47	NA	YES
+TCGA-DH-5140	Chemotherapy	Temozolomide		54	98	NO
+TCGA-DH-5140	Targeted Molecular therapy	AT 101		385	NA	NO
+TCGA-DH-5140	Chemotherapy	Temozolomide		136	250	NO
+TCGA-DH-5140	Chemotherapy	BCNU (carmustine)		NA	342	NO
+TCGA-DH-5141	Chemotherapy	Temozolomide		NA	NA	
+TCGA-DH-5141	Chemotherapy	Temozolomide		890	936	NO
+TCGA-DH-5142	Chemotherapy	Temozolomide		89	93	NO
+TCGA-DH-5142	Chemotherapy	Temozolomide		21	52	NO
+TCGA-DH-5142	Chemotherapy	Temozolomide		117	400	NO
+TCGA-DH-5143	Chemotherapy	Temozolomide		123	NA	YES
+TCGA-DH-5143	Chemotherapy	Temozolomide		95	99	NO
+TCGA-DH-5143	Chemotherapy	Temozolomide		25	64	NO
+TCGA-DH-A66B	Chemotherapy	Temozolomide	Stable Disease	25	432	NO
+TCGA-DH-A66D	Chemotherapy	Temozolomide	Stable Disease	31	73	NO
+TCGA-DH-A66G	Chemotherapy	Temodar	Partial Response	41	211	NO
+TCGA-DH-A7UR	Chemotherapy	Temodar	Complete Response	33	1076	NO
+TCGA-DH-A7UT	Chemotherapy	Temodar	Stable Disease	55	97	NO
+TCGA-DH-A7UU	Chemotherapy	Temodar	Stable Disease	41	88	NO
+TCGA-DH-A7UV	Chemotherapy	Temodar	Stable Disease	20	463	NO
+TCGA-DU-5847	Targeted Molecular therapy	Bevacizumab		84	265	NO
+TCGA-DU-5847	Chemotherapy	Temozolomide		84	265	NO
+TCGA-DU-5847	Chemotherapy	Temozolomide		27	89	NO
+TCGA-DU-5849	Chemotherapy	Temozolomide		42	226	NO
+TCGA-DU-5851	Chemotherapy	Temozolomide		51	599	NO
+TCGA-DU-5851	Chemotherapy	Temozolomide		22	66	NO
+TCGA-DU-5852	Chemotherapy	Temozolomide		26	52	NO
+TCGA-DU-5853	Chemotherapy	Temozolomide		28	65	NO
+TCGA-DU-5854	Chemotherapy	Temozolomide		45	90	NO
+TCGA-DU-5854	Chemotherapy	Temozolomide		134	193	NO
+TCGA-DU-5854	Targeted Molecular therapy	Bevacizumab		292	NA	YES
+TCGA-DU-5855	Chemotherapy	Temozolomide		41	70	NO
+TCGA-DU-5855	Chemotherapy	Temozolomide		118	NA	YES
+TCGA-DU-5870	Chemotherapy	Temozolomide		4536	4901	NO
+TCGA-DU-5870	Chemotherapy	Temozolomide		4500	4543	NO
+TCGA-DU-5871	Chemotherapy	Temozolomide		14	57	NO
+TCGA-DU-5871	Chemotherapy	Temozolomide		71	222	NO
+TCGA-DU-5872	Chemotherapy	Temozolomide		34	73	NO
+TCGA-DU-5872	Chemotherapy	Temozolomide		540	NA	YES
+TCGA-DU-5872	Chemotherapy	Temozolomide		83	267	NO
+TCGA-DU-5872	Targeted Molecular therapy	Bevacizumab		328	370	NO
+TCGA-DU-5874	Chemotherapy	Temozolomide		7	160	NO
+TCGA-DU-6392	Chemotherapy	Hydroxyurea		17	78	NO
+TCGA-DU-6392	Chemotherapy	PCV		109	443	NO
+TCGA-DU-6393	Chemotherapy	Carmustine BCNU		97	431	NO
+TCGA-DU-6394	Chemotherapy	PCV		459	459	NO
+TCGA-DU-6394	Chemotherapy	PCV		94	278	NO
+TCGA-DU-6394	Chemotherapy	Hydroxyurea		NA	NA	NO
+TCGA-DU-6395	Chemotherapy	Tamoxifen		1425	NA	NO
+TCGA-DU-6395	Chemotherapy	PCV		870	1266	NO
+TCGA-DU-6395	Chemotherapy	PCV		1266	1386	NO
+TCGA-DU-6396	Targeted Molecular therapy	Isotretinoin		1823	1946	NO
+TCGA-DU-6396	Chemotherapy	Irinotecan		915	1062	NO
+TCGA-DU-6396	Chemotherapy	9 Aminocamptothecin		240	636	NO
+TCGA-DU-6396	Hormone Therapy	Tamoxifen		2127	2250	NO
+TCGA-DU-6396	Chemotherapy	Capecitabine		2250	2250	NO
+TCGA-DU-6396	Other, specify in notesRadiosensitizer	Bromo deoxyuridine		28	59	NO
+TCGA-DU-6396	Chemotherapy	PCV		82	89	NO
+TCGA-DU-6396	Chemotherapy	Temozolomide		1762	2188	NO
+TCGA-DU-6397	Chemotherapy	Temozolomide		884	1219	NO
+TCGA-DU-6401	Chemotherapy	Sorafenib (Bay 43-9006)		2512	2512	NO
+TCGA-DU-6401	Chemotherapy	Procarbazine		2542	2542	NO
+TCGA-DU-6401	Chemotherapy	Temozolomide		1903	2451	NO
+TCGA-DU-6402	Chemotherapy	Temozolomide		117	122	NO
+TCGA-DU-6403	Chemotherapy	BCNU (Carmustine)		104	196	NO
+TCGA-DU-6403	Chemotherapy	Hydroxyurea		43	74	NO
+TCGA-DU-6403	Chemotherapy	Gliadel Wafer		10	10	NO
+TCGA-DU-6404	Chemotherapy	Carboplatin		3227	3884	NO
+TCGA-DU-6404	Targeted Molecular therapy	Bevacizumab		2731	3060	NO
+TCGA-DU-6404	Chemotherapy	Irinotecan		1762	1967	NO
+TCGA-DU-6404	Chemotherapy	Temozolomide		3154	3185	NO
+TCGA-DU-6404	Targeted Molecular therapy	Bevacizumab		3154	3185	NO
+TCGA-DU-6404	Chemotherapy	Irinotecan		2360	2714	NO
+TCGA-DU-6404	Chemotherapy	Temozolomide		171	506	NO
+TCGA-DU-6404	Chemotherapy	Temozolomide		1602	1632	NO
+TCGA-DU-6404	Targeted Molecular therapy	Bevacizumab		3227	3581	NO
+TCGA-DU-6404	Targeted Molecular therapy	Bevacizumab		2360	2714	NO
+TCGA-DU-6404	Targeted Molecular therapy	Bevacizumab		4066	4066	NO
+TCGA-DU-6405	Chemotherapy	Temozolomide		165	499	NO
+TCGA-DU-6405	Chemotherapy	Temozolomide		34	77	NO
+TCGA-DU-6405	Chemotherapy	PS-341 Bortrezomib		530	561	NO
+TCGA-DU-6405	Chemotherapy	Cilengitide		561	561	NO
+TCGA-DU-6406	Chemotherapy	Temozolomide		97	280	NO
+TCGA-DU-6406	Chemotherapy	Temozolomide		38	66	NO
+TCGA-DU-6406	Other, specify in notesretinoid	Isotrectinoin (acccutane)		158	280	NO
+TCGA-DU-6407	Chemotherapy	Temozolomide		2473	2516	NO
+TCGA-DU-6407	Chemotherapy	Temozolomide		2531	2774	NO
+TCGA-DU-6407	Chemotherapy	Temozolomide		2835	2853	NO
+TCGA-DU-6407	Chemotherapy	Afatinib		2836	2853	NO
+TCGA-DU-6408	Chemotherapy	Capecitabine		2608	NA	NO
+TCGA-DU-6408	Chemotherapy	Temozolomide		1175	1226	NO
+TCGA-DU-6408	Other, specify in notes	Celebrex		2608	NA	NO
+TCGA-DU-6408	Chemotherapy	Temozolomide		2608	NA	NO
+TCGA-DU-6410	Chemotherapy	Temozolomide		56	NA	YES
+TCGA-DU-6542	Chemotherapy	Temozolomide		97	NA	YES
+TCGA-DU-6542	Chemotherapy	Temozolomide		56	95	NO
+TCGA-DU-7006	Chemotherapy	Lomustine		90	NA	NO
+TCGA-DU-7006	Chemotherapy	Vincristine		90	NA	NO
+TCGA-DU-7006	Chemotherapy	Procarbazine		90	NA	NO
+TCGA-DU-7008	Chemotherapy	Lomustin		86	239	NO
+TCGA-DU-7008	Chemotherapy	Vincristine		86	239	NO
+TCGA-DU-7008	Chemotherapy	Procarbazine		86	239	NO
+TCGA-DU-7009	Chemotherapy	Temozolomide		3095	3279	NO
+TCGA-DU-7010	Chemotherapy	Temozolomide		70	162	NO
+TCGA-DU-7010	Chemotherapy	Temozolomide		11	70	NO
+TCGA-DU-7013	Chemotherapy	Temozolomide		101	163	NO
+TCGA-DU-7015	Targeted Molecular therapy	Bevacizumab		930	NA	YES
+TCGA-DU-7015	Chemotherapy	Temozolomide		616	884	NO
+TCGA-DU-7015	Chemotherapy	Irinotecan		930	1460	NO
+TCGA-DU-7018	Chemotherapy	Temozolomide		635	697	NO
+TCGA-DU-7018	Chemotherapy	Temozolomide		56	605	NO
+TCGA-DU-7019	Chemotherapy	Temozolomide		101	436	NO
+TCGA-DU-7019	Chemotherapy	Temozolomide		28	71	NO
+TCGA-DU-7292	Chemotherapy	Tomaxifen		176	206	NO
+TCGA-DU-7292	Chemotherapy	Procarbazine		176	206	NO
+TCGA-DU-7298	Chemotherapy	Temozolomide		207	207	NO
+TCGA-DU-7298	Chemotherapy	Temozolomide		41	101	NO
+TCGA-DU-7299	Chemotherapy	Temozolomide		945	1157	NO
+TCGA-DU-7299	Targeted Molecular therapy	Bevacizumab		721	1016	NO
+TCGA-DU-7299	Chemotherapy	Irinotecan		721	945	NO
+TCGA-DU-7299	Chemotherapy	Temozolomide		91	456	NO
+TCGA-DU-7299	Chemotherapy	Temozolomide		28	70	NO
+TCGA-DU-7300	Chemotherapy	Temozolomide		337	368	NO
+TCGA-DU-7300	Chemotherapy	Temozolomide		NA	764	NO
+TCGA-DU-7300	Targeted Molecular therapy	Bevacizumab		1086	NA	NO
+TCGA-DU-7300	Chemotherapy	Irintotecan		1086	NA	NO
+TCGA-DU-7300	Chemotherapy	Temozolomide		3	307	NO
+TCGA-DU-7301	Chemotherapy	Temozolomide		28	66	NO
+TCGA-DU-7301	Chemotherapy	Temozlomide		65	369	NO
+TCGA-DU-7301	Chemotherapy	Irinotecan		379	534	NO
+TCGA-DU-7301	Chemotherapy	Temozolomide		626	643	NO
+TCGA-DU-7301	Targeted Molecular therapy	Bevacizumab		379	629	NO
+TCGA-DU-7302	Targeted Molecular therapy	Bevacizumab		1691	NA	YES
+TCGA-DU-7302	Chemotherapy	Temozolomide		1382	1686	NO
+TCGA-DU-7302	Chemotherapy	Temozolomide		14	530	NO
+TCGA-DU-7304	Targeted Molecular therapy	Bevacizumab		363	623	NO
+TCGA-DU-7304	Chemotherapy	Irinotecan		363	539	NO
+TCGA-DU-7304	Chemotherapy	Temozolomide		97	318	NO
+TCGA-DU-7304	Chemotherapy	Temozolomide		20	69	NO
+TCGA-DU-7306	Chemotherapy	temozolomide		14	59	NO
+TCGA-DU-7306	Chemotherapy	Temozolomide		97	250	NO
+TCGA-DU-7306	Chemotherapy	Temozolomide		1283	NA	YES
+TCGA-DU-7309	Chemotherapy	Temozolomide		41	84	NO
+TCGA-DU-8158	Chemotherapy	Temozolomide		21	66	NO
+TCGA-DU-8161	Chemotherapy	Temozolomide	Stable Disease	39	78	NO
+TCGA-DU-8161	Chemotherapy	Temozolomide	Clinical Progressive Disease	92	92	NO
+TCGA-DU-8161	Chemotherapy	Irinotecan	Stable Disease	134	575	NO
+TCGA-DU-8161	Targeted Molecular therapy	Bevacizumab	Clinical Progressive Disease	162	638	NO
+TCGA-DU-8162	Chemotherapy	Temozolomide	Stable Disease	24	70	NO
+TCGA-DU-8162	Chemotherapy	Temozolomide		108	NA	YES
+TCGA-DU-8163	Chemotherapy	Temozolomide	Stable Disease	35	81	NO
+TCGA-DU-8163	Chemotherapy	Temozolomide		87	NA	YES
+TCGA-DU-8163	Chemotherapy	Temozolomide		525	NA	YES
+TCGA-DU-8164	Chemotherapy	Temozolomide		35	NA	YES
+TCGA-DU-8165	Chemotherapy	Temozolomide	Stable Disease	30	71	NO
+TCGA-DU-8165	Chemotherapy	temozolomide		101	NA	YES
+TCGA-DU-8166	Chemotherapy	Temozolomide	Clinical Progressive Disease	62	143	NO
+TCGA-DU-8166	Chemotherapy	Lomustine	Stable Disease	237	433	NO
+TCGA-DU-8166	Chemotherapy	Procarbazine	Stable Disease	237	433	NO
+TCGA-DU-8168	Chemotherapy	Temozolomide	Stable Disease	25	71	NO
+TCGA-DU-8168	Chemotherapy	Temozolomide		106	NA	YES
+TCGA-DU-A5TP	Chemotherapy	Temozolomide		32	NA	YES
+TCGA-DU-A5TP	Chemotherapy	Temozolomide	Stable Disease	123	493	NO
+TCGA-DU-A5TR	Chemotherapy	Temozolomide		25	NA	YES
+TCGA-DU-A5TS	Chemotherapy	Temodar	Stable Disease	25	415	NO
+TCGA-DU-A5TT	Chemotherapy	Temozolomide		16	NA	YES
+TCGA-DU-A5TU	Chemotherapy	Temozolomide	Stable Disease	627	NA	YES
+TCGA-DU-A5TY	Chemotherapy	Temozolomide	Stable Disease	17	64	NO
+TCGA-DU-A5TY		Temozolomide	Stable Disease	79	NA	YES
+TCGA-DU-A5TY	Chemotherapy	Mibefradil	Clinical Progressive Disease	553	812	NO
+TCGA-DU-A5TY	Chemotherapy	Temozolomide	Clinical Progressive Disease	553	812	NO
+TCGA-DU-A5TY	Chemotherapy	Lomustine	Clinical Progressive Disease	814	855	NO
+TCGA-DU-A5TY	Chemotherapy	Procarbazine	Clinical Progressive Disease	814	855	NO
+TCGA-DU-A5TY	Targeted Molecular therapy	bevacizumab	Clinical Progressive Disease	872	914	NO
+TCGA-DU-A6S6	Chemotherapy	Temozolomide	Stable Disease	25	272	NO
+TCGA-DU-A6S6	Chemotherapy	Temozolomide		2283	NA	YES
+TCGA-DU-A6S6	Chemotherapy	Temozolomide	Stable Disease	2281	2492	NO
+TCGA-DU-A6S7	Chemotherapy	Temozolomide	Stable Disease	23	57	NO
+TCGA-DU-A6S7	Chemotherapy	Temozolomide		129	NA	YES
+TCGA-DU-A6S7	Chemotherapy	Temozolomide	Stable Disease	129	464	NO
+TCGA-DU-A6S8	Chemotherapy	Temozolomide		57	NA	YES
+TCGA-DU-A76K	Chemotherapy	Temozolomide	Clinical Progressive Disease	236	269	NO
+TCGA-DU-A76L	Chemotherapy	Temozolomide	Stable Disease	16	57	NO
+TCGA-DU-A76L	Chemotherapy	Temozolomide	Clinical Progressive Disease	54	406	NO
+TCGA-DU-A76L	Chemotherapy	Procarbazine	Clinical Progressive Disease	588	617	NO
+TCGA-DU-A76L	Targeted Molecular therapy	Cilengtide	Clinical Progressive Disease	651	732	NO
+TCGA-DU-A76O	Chemotherapy	Temozolomide	Stable Disease	49	94	NO
+TCGA-DU-A76O	Chemotherapy	Temozolomide		115	NA	YES
+TCGA-DU-A76R	Chemotherapy	Temozolomide	Clinical Progressive Disease	389	394	NO
+TCGA-DU-A7T8	Chemotherapy	Temozolomide	Stable Disease	147	193	NO
+TCGA-DU-A7T8	Chemotherapy	Temozolomide	Stable Disease	211	407	NO
+TCGA-DU-A7T8	Chemotherapy	Temozolomide	Clinical Progressive Disease	3061	3215	NO
+TCGA-DU-A7T8	Chemotherapy	Temozolomide	Clinical Progressive Disease	3865	3901	NO
+TCGA-DU-A7T8	Chemotherapy	Lomustine (CCNU)	Clinical Progressive Disease	4001	4194	NO
+TCGA-DU-A7T8	Targeted Molecular therapy	bevacizumab	Clinical Progressive Disease	4001	4194	NO
+TCGA-DU-A7TA	Chemotherapy	Temozolomide	Stable Disease	33	70	NO
+TCGA-DU-A7TA	Chemotherapy	Temozolomide	Stable Disease	77	413	NO
+TCGA-DU-A7TB	Chemotherapy	Temozolomide	Clinical Progressive Disease	20	57	NO
+TCGA-DU-A7TB	Chemotherapy	Temozolomide	Stable Disease	88	127	NO
+TCGA-DU-A7TB	Chemotherapy	Temozolomide	Stable Disease	153	518	NO
+TCGA-DU-A7TD	Chemotherapy	Temozolomide	Stable Disease	22	63	NO
+TCGA-DU-A7TD	Immunotherapy	Temozolomide	Clinical Progressive Disease	77	151	NO
+TCGA-DU-A7TG	Chemotherapy	Temozolomide		26	128	NO
+TCGA-DU-A7TI		SU101	Stable Disease	232	567	NO
+TCGA-DU-A7TI		ONYX-015	Stable Disease	840	840	NO
+TCGA-DU-A7TI	Chemotherapy	Temozolomide	Clinical Progressive Disease	932	1085	NO
+TCGA-DU-A7TI	Chemotherapy	cis-retinoic acid	Clinical Progressive Disease	1115	1154	NO
+TCGA-DU-A7TI	Chemotherapy	Carmustine (BCNU)	Clinical Progressive Disease	1115	1154	NO
+TCGA-E1-5302	Chemotherapy	Procarbazine		48	154	NO
+TCGA-E1-5302	Chemotherapy	CPT-11		1322	1434	NO
+TCGA-E1-5302	Hormone Therapy	Tamoxifen		1255	1303	NO
+TCGA-E1-5302	Chemotherapy	Vincristine		48	154	NO
+TCGA-E1-5302	Hormone Therapy	Tamoxifen		294	433	NO
+TCGA-E1-5302	Chemotherapy	CCNU		1255	1303	NO
+TCGA-E1-5302	Chemotherapy	CCNU		48	154	NO
+TCGA-E1-5302	Chemotherapy	Temozolomide		433	643	NO
+TCGA-E1-5302	Chemotherapy	Procarbazine		202	294	NO
+TCGA-E1-5302	Chemotherapy	CCNU		202	294	NO
+TCGA-E1-5302	Other, specify in notesNSAID	Celebrex		1322	1434	NO
+TCGA-E1-5302	Chemotherapy	Temozolomide		1434	1493	NO
+TCGA-E1-5302	Chemotherapy	Vincristine		202	294	NO
+TCGA-E1-5303	Hormone Therapy	Tamoxifen		202	215	NO
+TCGA-E1-5303	Chemotherapy	Temozolomide		218	582	NO
+TCGA-E1-5303	Chemotherapy	CCNU		156	190	NO
+TCGA-E1-5304	Chemotherapy	Temozolomide		95	125	NO
+TCGA-E1-5304	Chemotherapy	Temozolomide		249	312	NO
+TCGA-E1-5304	Chemotherapy	CCNU		312	398	NO
+TCGA-E1-5304	Chemotherapy	Temozolomide		995	1113	NO
+TCGA-E1-5304	Chemotherapy	CPT-11		1128	1166	NO
+TCGA-E1-5304	Chemotherapy	CCNU		160	249	NO
+TCGA-E1-5304	Chemotherapy	VP-16		1167	1198	NO
+TCGA-E1-5304	Chemotherapy	Temozolomide		125	160	NO
+TCGA-E1-5305	Chemotherapy	CCNU		2280	2331	NO
+TCGA-E1-5305	Chemotherapy	VP-16		148	593	NO
+TCGA-E1-5305	Chemotherapy	Topotecan		1861	1994	NO
+TCGA-E1-5305	Chemotherapy	Temozolomide		148	593	NO
+TCGA-E1-5305	Chemotherapy	Hydroyurea		1636	1825	NO
+TCGA-E1-5305	Chemotherapy	Temozolomide		1861	1994	NO
+TCGA-E1-5305	Targeted Molecular therapy	Gleevec		1636	1825	NO
+TCGA-E1-5305	Chemotherapy	CPT-11		1994	2093	NO
+TCGA-E1-5305	Chemotherapy	Cytoxan		2128	2241	NO
+TCGA-E1-5305	Targeted Molecular therapy	Avastin		2128	2241	NO
+TCGA-E1-5307	Chemotherapy	Temodar		229	260	NO
+TCGA-E1-5307	Chemotherapy	Temodar		1462	1599	NO
+TCGA-E1-5307	Chemotherapy	Temodar		466	560	NO
+TCGA-E1-5307	Chemotherapy	CCNU		382	466	NO
+TCGA-E1-5307	Chemotherapy	CCNu		126	215	NO
+TCGA-E1-5307	Chemotherapy	CCNU		313	351	NO
+TCGA-E1-5307	Chemotherapy	Temodar		260	285	NO
+TCGA-E1-5307	Chemotherapy	Temodar		1599	1720	NO
+TCGA-E1-5307	Other, specify in notesAntiongiogenic	Celebrex		560	1453	NO
+TCGA-E1-5311	Chemotherapy	Temozolomide		2615	2799	NO
+TCGA-E1-5311	Other, specify in notesNSAID	Celebrex		3282	3868	NO
+TCGA-E1-5311	Other, specify in notesBrachytherpy	MAGI131-81c6		20	20	NO
+TCGA-E1-5311	Chemotherapy	CCNU		2925	3282	NO
+TCGA-E1-5311	Chemotherapy	VP-16		3996	4084	NO
+TCGA-E1-5311	Chemotherapy	Karerltecin		2825	2848	NO
+TCGA-E1-5311	Chemotherapy	Cloretazine		3868	3996	NO
+TCGA-E1-5311	Hormone Therapy	Tamoxifen		3282	3749	NO
+TCGA-E1-5318	Chemotherapy	CCNU		1655	1904	NO
+TCGA-E1-5318	Chemotherapy	Gliadel Wafers		1043	1231	NO
+TCGA-E1-5318	Chemotherapy	CPT-11		2127	2211	NO
+TCGA-E1-5318	Chemotherapy	CPT-11		2023	2127	NO
+TCGA-E1-5318	Chemotherapy	CCNU		1904	1971	NO
+TCGA-E1-5318	Chemotherapy	Procarbazine		2211	2267	NO
+TCGA-E1-5318	Chemotherapy	CCNU		2268	2335	NO
+TCGA-E1-5318	Chemotherapy	Temazolomide		781	824	NO
+TCGA-E1-5318	Chemotherapy	Cytoxan		1980	2043	NO
+TCGA-E1-5318	Chemotherapy	Temozolomide		824	1026	NO
+TCGA-E1-5318	Chemotherapy	Carboplatin		385	781	NO
+TCGA-E1-5318	Other, specify in notesNSAIDs	Celebrex		1980	2043	NO
+TCGA-E1-5318	Chemotherapy	VP-16		1590	1652	NO
+TCGA-E1-5318	Hormone Therapy	Tamoxiten		2211	2267	NO
+TCGA-E1-5319	Chemotherapy	Temodar		952	1385	NO
+TCGA-E1-5319	Other, specify in notesAntiongigenic	Celebrex		1385	1511	NO
+TCGA-E1-5319	Chemotherapy	Carboplatin		1933	1993	NO
+TCGA-E1-5319	Chemotherapy	Carboplatin		1826	1933	NO
+TCGA-E1-5319	Chemotherapy	CCNU		2322	2364	NO
+TCGA-E1-5319	Chemotherapy	Temodar		2029	2121	NO
+TCGA-E1-5319	Chemotherapy	CCNU		2364	2433	NO
+TCGA-E1-5319	Chemotherapy	VP-16		2433	2587	NO
+TCGA-E1-5319	Chemotherapy	VP-16		2587	2818	NO
+TCGA-E1-5322	Chemotherapy	Gliadel Wafer		1085	1109	NO
+TCGA-E1-A7YD	Chemotherapy	CCNU	Clinical Progressive Disease	111	285	NO
+TCGA-E1-A7YD	Chemotherapy	Temodar		314	NA	YES
+TCGA-E1-A7YE	Chemotherapy	CCNU	Clinical Progressive Disease	81	185	NO
+TCGA-E1-A7YE	Chemotherapy	CCNU	Clinical Progressive Disease	378	468	NO
+TCGA-E1-A7YE	Chemotherapy	Gliadel wafers	Stable Disease	237	237	NO
+TCGA-E1-A7YE		Temodar	Clinical Progressive Disease	482	695	NO
+TCGA-E1-A7YE	Ancillary	Celebrex	Clinical Progressive Disease	469	703	NO
+TCGA-E1-A7YE	Chemotherapy	Temodar	Clinical Progressive Disease	704	731	NO
+TCGA-E1-A7YE	Targeted Molecular therapy	Benzylguanine	Clinical Progressive Disease	704	731	NO
+TCGA-E1-A7YE	Chemotherapy	Karenitecin	Clinical Progressive Disease	715	787	NO
+TCGA-E1-A7YE	Chemotherapy	VP-16	Clinical Progressive Disease	790	845	NO
+TCGA-E1-A7YH	Chemotherapy	Temodar	Stable Disease	45	87	NO
+TCGA-E1-A7YH	Chemotherapy	CCNU	Stable Disease	117	216	NO
+TCGA-E1-A7YH	Chemotherapy	Temodar		222	537	NO
+TCGA-E1-A7YH	Chemotherapy	Temodar	Clinical Progressive Disease	706	752	NO
+TCGA-E1-A7YH	Chemotherapy	Temodar	Clinical Progressive Disease	775	835	NO
+TCGA-E1-A7YH	Chemotherapy	Erlotinib	Stable Disease	867	1223	NO
+TCGA-E1-A7YH		Avastin	Stable Disease	867	1223	NO
+TCGA-E1-A7YH		Avastin	Clinical Progressive Disease	1224	1328	NO
+TCGA-E1-A7YH	Chemotherapy	VP-16	Clinical Progressive Disease	1345	1627	NO
+TCGA-E1-A7YJ	Chemotherapy	Temodar	Stable Disease	39	84	NO
+TCGA-E1-A7YJ	Chemotherapy	CPT-11	Stable Disease	96	144	NO
+TCGA-E1-A7YJ	Immunotherapy	Avastin	Clinical Progressive Disease	96	504	NO
+TCGA-E1-A7YJ	Chemotherapy	Temodar	Clinical Progressive Disease	96	518	NO
+TCGA-E1-A7YJ	Immunotherapy	MR1-1	Clinical Progressive Disease	537	541	NO
+TCGA-E1-A7YK	Chemotherapy	Temodar	Stable Disease	27	68	NO
+TCGA-E1-A7YK	Chemotherapy	Temodar		90	NA	NO
+TCGA-E1-A7YL	Chemotherapy	Temodar	Clinical Progressive Disease	36	78	NO
+TCGA-E1-A7YL	Immunotherapy	Avastin	Clinical Progressive Disease	103	289	NO
+TCGA-E1-A7YL	Chemotherapy	Carboplatin	Clinical Progressive Disease	103	263	NO
+TCGA-E1-A7YL	Chemotherapy	CPT-11	Clinical Progressive Disease	103	249	NO
+TCGA-E1-A7YL	Immunotherapy	Avastin	Clinical Progressive Disease	298	336	NO
+TCGA-E1-A7YL	Chemotherapy	VP-16	Clinical Progressive Disease	298	325	NO
+TCGA-E1-A7YM	Chemotherapy	Temodar	Clinical Progressive Disease	27	75	NO
+TCGA-E1-A7YM	Immunotherapy	Avastin	Stable Disease	90	137	NO
+TCGA-E1-A7YM	Chemotherapy	CPT-11	Stable Disease	90	137	NO
+TCGA-E1-A7YM	Immunotherapy	Avastin	Stable Disease	137	174	NO
+TCGA-E1-A7YM	Chemotherapy	VP-16	Stable Disease	137	164	NO
+TCGA-E1-A7YM	Immunotherapy	Avastin	Clinical Progressive Disease	174	497	NO
+TCGA-E1-A7YM	Immunotherapy	Avastin	Stable Disease	501	593	NO
+TCGA-E1-A7YM	Chemotherapy	Carboplatin	Stable Disease	501	593	NO
+TCGA-E1-A7YN	Chemotherapy	Temodar	Stable Disease	35	90	NO
+TCGA-E1-A7YN	Chemotherapy	Temodar	Clinical Progressive Disease	124	369	NO
+TCGA-E1-A7YN	Immunotherapy	Avastin	Clinical Progressive Disease	429	484	NO
+TCGA-E1-A7YN	Chemotherapy	Temodar	Clinical Progressive Disease	429	484	NO
+TCGA-E1-A7YN	Immunotherapy	Avastin	Clinical Progressive Disease	491	553	NO
+TCGA-E1-A7YN	Chemotherapy	CCNU	Clinical Progressive Disease	506	632	NO
+TCGA-E1-A7YO	Immunotherapy	I131-81C6	Stable Disease	23	23	NO
+TCGA-E1-A7YQ	Chemotherapy	Temodar	Stable Disease	346	396	NO
+TCGA-E1-A7YQ	Chemotherapy	CCNU	Stable Disease	429	512	NO
+TCGA-E1-A7YQ	Chemotherapy	Temodar	Clinical Progressive Disease	532	559	NO
+TCGA-E1-A7YS	Chemotherapy	Temodar	Stable Disease	67	106	NO
+TCGA-E1-A7YS	Chemotherapy	Temodar	Stable Disease	127	365	NO
+TCGA-E1-A7YU	Immunotherapy	I 131 81C6		6	6	NO
+TCGA-E1-A7YV	Chemotherapy	Temodar	Clinical Progressive Disease	38	82	NO
+TCGA-E1-A7YV	Chemotherapy	Temodar	Clinical Progressive Disease	70	156	NO
+TCGA-E1-A7YV	Immunotherapy	Avastin	Clinical Progressive Disease	195	507	NO
+TCGA-E1-A7YV	Immunotherapy	Avastin	Stable Disease	507	674	NO
+TCGA-E1-A7YV	Chemotherapy	Gleevec	Stable Disease	507	674	NO
+TCGA-E1-A7YV	Chemotherapy	Gleevec	Clinical Progressive Disease	678	824	NO
+TCGA-E1-A7YV	Immunotherapy	Avastin	Clinical Progressive Disease	846	887	NO
+TCGA-E1-A7YV	Chemotherapy	Gleevec	Clinical Progressive Disease	832	887	NO
+TCGA-E1-A7YV	Immunotherapy	Avastin	Clinical Progressive Disease	888	948	NO
+TCGA-E1-A7YV	Chemotherapy	CPT-11	Clinical Progressive Disease	888	948	NO
+TCGA-E1-A7YW	Chemotherapy	CCNU	Clinical Progressive Disease	711	978	NO
+TCGA-E1-A7YW	Immunotherapy	Avastin	Stable Disease	999	1025	NO
+TCGA-E1-A7YW	Chemotherapy	CPT-11	Stable Disease	999	1025	NO
+TCGA-E1-A7YW	Chemotherapy	VP-16	Clinical Progressive Disease	1040	1095	NO
+TCGA-E1-A7YW	Chemotherapy	Temodar	Clinical Progressive Disease	418	608	NO
+TCGA-E1-A7YY	Chemotherapy	Temodar	Stable Disease	982	1351	NO
+TCGA-E1-A7YY	Chemotherapy	Temodar	Clinical Progressive Disease	2378	2470	NO
+TCGA-E1-A7YY	Chemotherapy	CCNU	Stable Disease	2465	2590	NO
+TCGA-E1-A7YY	Chemotherapy	Temodar	Clinical Progressive Disease	3501	4152	NO
+TCGA-E1-A7YY	Chemotherapy	VP-16	Clinical Progressive Disease	4152	4207	NO
+TCGA-E1-A7YY	Immunotherapy	Avastin		4289	4418	NO
+TCGA-E1-A7Z2	Chemotherapy	Temodar	Clinical Progressive Disease	102	213	NO
+TCGA-E1-A7Z2	Chemotherapy	Temodar	Clinical Progressive Disease	230	270	NO
+TCGA-E1-A7Z2	Chemotherapy	Temodar	Stable Disease	286	328	NO
+TCGA-E1-A7Z2	Immunotherapy	Avastin	Stable Disease	293	334	NO
+TCGA-E1-A7Z2	Chemotherapy	Temodar	Stable Disease	356	383	NO
+TCGA-E1-A7Z2	Immunotherapy	Avastin	Stable Disease	356	369	NO
+TCGA-E1-A7Z3	Immunotherapy	I131-81C6	Clinical Progressive Disease	1709	1709	NO
+TCGA-E1-A7Z3	Chemotherapy	CCNU	Clinical Progressive Disease	1911	1921	NO
+TCGA-E1-A7Z3	Chemotherapy	Procarbazine	Clinical Progressive Disease	1911	1921	NO
+TCGA-E1-A7Z3	Chemotherapy	Vincristine	Clinical Progressive Disease	1911	1921	NO
+TCGA-E1-A7Z3	Chemotherapy	CPT-11	Clinical Progressive Disease	1995	2072	NO
+TCGA-E1-A7Z4	Chemotherapy	Gliadel	Stable Disease	883	883	NO
+TCGA-E1-A7Z4	Chemotherapy	Temodar	Clinical Progressive Disease	896	952	NO
+TCGA-E1-A7Z4	Chemotherapy	CCNU	Clinical Progressive Disease	974	1100	NO
+TCGA-E1-A7Z4		Thalidomide	Clinical Progressive Disease	1101	1176	NO
+TCGA-E1-A7Z4	Chemotherapy	Cyclophosphamide	Clinical Progressive Disease	1101	1176	NO
+TCGA-E1-A7Z4	Chemotherapy	Karenitecin	Clinical Progressive Disease	1182	1249	NO
+TCGA-E1-A7Z4	Chemotherapy	Temodar	Stable Disease	1266	1834	NO
+TCGA-E1-A7Z4	Hormone Therapy	Tamoxifen	Stable Disease	1266	1834	NO
+TCGA-E1-A7Z4	Immunotherapy	Avastin	Stable Disease	3545	3888	NO
+TCGA-E1-A7Z4	Immunotherapy	Avastin	Clinical Progressive Disease	4081	4124	NO
+TCGA-E1-A7Z4	Chemotherapy	Temodar	Clinical Progressive Disease	4081	4137	NO
+TCGA-E1-A7Z4	Immunotherapy	Avastin	Clinical Progressive Disease	4138	4336	NO
+TCGA-E1-A7Z4	Chemotherapy	Carboplatin	Clinical Progressive Disease	4138	4308	NO
+TCGA-E1-A7Z6	Chemotherapy	Temodar	Stable Disease	356	705	NO
+TCGA-E1-A7Z6	Chemotherapy	Temodar	Clinical Progressive Disease	907	964	NO
+TCGA-E1-A7Z6	Immunotherapy	Avastin	Clinical Progressive Disease	901	966	NO
+TCGA-FG-5962	Chemotherapy	Temodar		112	258	NO
+TCGA-FG-5962	Chemotherapy	Temodar		28	79	NO
+TCGA-FG-5963	Chemotherapy	Temodar		428	471	NO
+TCGA-FG-5963	Chemotherapy	Temodar	Clinical Progressive Disease	517	690	NO
+TCGA-FG-5963	Chemotherapy	Avastin	Clinical Progressive Disease	511	727	NO
+TCGA-FG-5963	Chemotherapy	BCNU	Clinical Progressive Disease	699	700	NO
+TCGA-FG-5965	Chemotherapy	Temodar		790	NA	YES
+TCGA-FG-6688	Chemotherapy	Temodar		159	NA	YES
+TCGA-FG-6688	Chemotherapy	Avastin	Stable Disease	483	NA	YES
+TCGA-FG-6689	Chemotherapy	Temodar	Stable Disease	267	424	NO
+TCGA-FG-6691	Chemotherapy	Temodar		1135	NA	YES
+TCGA-FG-6692	Chemotherapy	Temodar		149	NA	YES
+TCGA-FG-7636	Chemotherapy	Temodar		33	84	NO
+TCGA-FG-7638	Chemotherapy	Temodar		37	78	NO
+TCGA-FG-7638	Chemotherapy	Temodar	Stable Disease	122	336	NO
+TCGA-FG-7638	Chemotherapy	Temodar	Stable Disease	411	595	NO
+TCGA-FG-8181	Chemotherapy	Temodar	Stable Disease	64	105	NO
+TCGA-FG-8185	Chemotherapy	Temodar	Stable Disease	21	70	NO
+TCGA-FG-8185	Chemotherapy	Temodar	Complete Response	97	412	NO
+TCGA-FG-8189	Chemotherapy	Temodar	Stable Disease	105	159	NO
+TCGA-FG-8189	Chemotherapy	Temodar	Stable Disease	190	221	NO
+TCGA-FG-8191	Chemotherapy	Temodar	Stable Disease	31	76	NO
+TCGA-FG-8191	Chemotherapy	Temodar	Stable Disease	122	448	NO
+TCGA-FG-A4MW	Chemotherapy	Temodar	Stable Disease	32	71	NO
+TCGA-FG-A4MW	Chemotherapy	Temodar	Stable Disease	101	105	NO
+TCGA-FG-A4MW		Avastin	Clinical Progressive Disease	231	379	NO
+TCGA-FG-A6J3	Chemotherapy	Temodar	Stable Disease	27	74	NO
+TCGA-FG-A6J3	Chemotherapy	Temodar		116	NA	YES
+TCGA-FG-A70Y	Chemotherapy	Temodar	Stable Disease	515	554	NO
+TCGA-FG-A70Z	Chemotherapy	Temodar		298	328	NO
+TCGA-FG-A710	Chemotherapy	Temodar	Stable Disease	18	218	NO
+TCGA-FG-A711	Chemotherapy	Temodar	Clinical Progressive Disease	350	673	NO
+TCGA-FG-A711	Chemotherapy	Temodar	Clinical Progressive Disease	733	774	NO
+TCGA-FG-A711	Immunotherapy	Avastin		1097	NA	YES
+TCGA-FG-A711	Chemotherapy	CCNU	Clinical Progressive Disease	1155	1195	NO
+TCGA-FG-A711	Chemotherapy	Hydroxyurea	Clinical Progressive Disease	1223	1277	NO
+TCGA-FG-A711	Chemotherapy	Imatinib	Clinical Progressive Disease	1223	1277	NO
+TCGA-FG-A711	Chemotherapy	Carboplatin 5 AUC	Clinical Progressive Disease	1284	1329	NO
+TCGA-FG-A711	Chemotherapy	Etoposide	Clinical Progressive Disease	1284	1329	NO
+TCGA-FG-A87N	Chemotherapy	Temodar		160	NA	YES
+TCGA-FG-A87Q	Chemotherapy	Temodar		48	NA	YES
+TCGA-FN-7833	Chemotherapy	Temozolomide	Complete Response	95	134	NO
+TCGA-HT-7468	Chemotherapy	temodar		35	NA	YES
+TCGA-HT-7469	Chemotherapy	Temodar		42	84	NO
+TCGA-HT-7469	Chemotherapy	Temodar		112	179	NO
+TCGA-HT-7470	Chemotherapy	Temodar		45	94	NO
+TCGA-HT-7475	Chemotherapy	Temodar		393	441	NO
+TCGA-HT-7475	Chemotherapy	Temodar		130	162	NO
+TCGA-HT-7475	Chemotherapy	Temodar		186	218	NO
+TCGA-HT-7476	Chemotherapy	temodar		118	NA	YES
+TCGA-HT-7476	Chemotherapy	temodar		41	80	NO
+TCGA-HT-7477	Chemotherapy	Temodar	Complete Response	24	428	NO
+TCGA-HT-7479	Chemotherapy	Temodar		105	200	NO
+TCGA-HT-7479	Chemotherapy	Temodar		33	74	NO
+TCGA-HT-7480	Targeted Molecular therapy	Avastin		2189	NA	YES
+TCGA-HT-7480	Chemotherapy	Temodar		103	476	NO
+TCGA-HT-7480	Chemotherapy	Temodar		26	75	NO
+TCGA-HT-7482	Chemotherapy	Temodar		577	853	NO
+TCGA-HT-7483	Chemotherapy	Temodar	Complete Response	2861	3287	NO
+TCGA-HT-7601	Chemotherapy	Temodar		25	36	NO
+TCGA-HT-7601	Chemotherapy	Temodar		123	157	NO
+TCGA-HT-7601	Chemotherapy	Temodar		88	92	NO
+TCGA-HT-7604	Chemotherapy	Temodar	Partial Response	NA	2509	NO
+TCGA-HT-7606	Chemotherapy	temodar		21	64	NO
+TCGA-HT-7606	Chemotherapy	temodar		163	470	NO
+TCGA-HT-7606	Chemotherapy	temodar		98	102	NO
+TCGA-HT-7609	Chemotherapy	temodar		111	484	NO
+TCGA-HT-7609	Chemotherapy	Temodar		28	75	NO
+TCGA-HT-7620	Chemotherapy	Temodar		126	NA	NO
+TCGA-HT-7620	Chemotherapy	Irinotecan		285	NA	
+TCGA-HT-7620	Chemotherapy	Temodar		195	199	NO
+TCGA-HT-7620	Chemotherapy	Avastin		285	NA	
+TCGA-HT-7677	Chemotherapy	temodar		98	NA	YES
+TCGA-HT-7677	Chemotherapy	temodar		31	73	NO
+TCGA-HT-7686	Chemotherapy	Temodar		145	239	NO
+TCGA-HT-7686	Chemotherapy	Temodar		26	73	NO
+TCGA-HT-7688	Chemotherapy	Temodar		132	475	NO
+TCGA-HT-7688	Chemotherapy	Temodar		28	59	NO
+TCGA-HT-7688	Chemotherapy	Temodar		101	105	NO
+TCGA-HT-7689	Chemotherapy	Temodar		53	94	NO
+TCGA-HT-7689	Chemotherapy	Temodar		126	334	NO
+TCGA-HT-7693	Chemotherapy	Temodar		102	440	NO
+TCGA-HT-7693	Chemotherapy	Temodar		22	63	NO
+TCGA-HT-7695	Chemotherapy	Temodar		78	110	NO
+TCGA-HT-7855	Chemotherapy	Temodar		131	157	NO
+TCGA-HT-7855	Chemotherapy	Temodar		25	67	NO
+TCGA-HT-7856	Chemotherapy	Temodar		32	71	NO
+TCGA-HT-7874	Chemotherapy	Temodar		42	87	NO
+TCGA-HT-7874	Chemotherapy	Temodar		136	140	NO
+TCGA-HT-7874	Chemotherapy	Temodar		171	549	NO
+TCGA-HT-7879	Chemotherapy	Temodar		28	78	NO
+TCGA-HT-7879	Chemotherapy	Temodar		112	NA	YES
+TCGA-HT-7884	Chemotherapy	Temodar	Stable Disease	44	84	NO
+TCGA-HT-7884	Chemotherapy	Temodar		112	NA	YES
+TCGA-HT-8011	Chemotherapy	Temodar	Stable Disease	14	69	NO
+TCGA-HT-8011	Chemotherapy	temodar	Clinical Progressive Disease	115	242	NO
+TCGA-HT-8013	Chemotherapy	Temodar	Clinical Progressive Disease	1334	1742	NO
+TCGA-HT-8013	Targeted Molecular therapy	Avastin	Clinical Progressive Disease	1610	1693	NO
+TCGA-HT-8113	Chemotherapy	temodar	Partial Response	34	74	NO
+TCGA-HT-8113	Chemotherapy	temodar	Complete Response	159	331	NO
+TCGA-HT-8114	Chemotherapy	Temodar	Complete Response	39	90	NO
+TCGA-HT-8564	Chemotherapy	Temodar	Clinical Progressive Disease	13	135	NO
+TCGA-HT-8564	Targeted Molecular therapy	Avastin	Complete Response	184	NA	
+TCGA-HT-8564	Chemotherapy	CeeNU		184	NA	
+TCGA-HT-A4DV	Chemotherapy	Temodar	Complete Response	42	88	NO
+TCGA-HT-A4DV	Chemotherapy	Temodar	Partial Response	133	291	NO
+TCGA-HT-A5R7	Chemotherapy	Temodar		10	NA	YES
+TCGA-HT-A5RA	Chemotherapy	Temodar	Partial Response	13	235	NO
+TCGA-HT-A5RC	Chemotherapy	Temodar	Clinical Progressive Disease	34	98	NO
+TCGA-HT-A618	Chemotherapy	Temodar		110	NA	YES
+TCGA-HT-A619	Chemotherapy	Temodar	Complete Response	19	443	NO
+TCGA-HT-A61A	Chemotherapy	Temodar		52	NA	YES
+TCGA-HT-A61B	Chemotherapy	Temodar		36	NA	YES
+TCGA-HT-A61C	Chemotherapy	Temodar	Complete Response	27	NA	
+TCGA-HT-A74H	Chemotherapy	Temodar		28	NA	
+TCGA-HT-A74K	Chemotherapy	temodar	Complete Response	35	277	NO
+TCGA-HW-7486	Chemotherapy	Temozolomide		66	216	NO
+TCGA-HW-7487	Chemotherapy	Temozolomide		27	409	NO
+TCGA-HW-7487	Chemotherapy	Lomustine	Clinical Progressive Disease	948	1249	NO
+TCGA-HW-7487	Chemotherapy	Vincristine (sulfate)	Clinical Progressive Disease	960	1295	NO
+TCGA-HW-7487	Chemotherapy	Procarbazine	Clinical Progressive Disease	960	1236	NO
+TCGA-HW-7487	Chemotherapy	Temozolomide	Clinical Progressive Disease	1386	1417	NO
+TCGA-HW-7487	Chemotherapy	Carboplatin		1570	NA	YES
+TCGA-HW-7487	Chemotherapy	Bevacizumab		1570	NA	YES
+TCGA-HW-7491	Chemotherapy	Temozolomide		1011	NA	YES
+TCGA-HW-8319	Chemotherapy	Temozolomide	Stable Disease	23	66	NO
+TCGA-HW-8319	Chemotherapy	Temozolomide		94	NA	YES
+TCGA-HW-8319	Chemotherapy	Temozolomide	Partial Response	1028	1058	NO
+TCGA-HW-8319	Chemotherapy	Bevacizumab	Partial Response	1058	1150	NO
+TCGA-HW-8319	Chemotherapy	Lomustine		1089	1150	NO
+TCGA-HW-8320	Chemotherapy	Temozolomide	Stable Disease	67	108	NO
+TCGA-HW-8320	Chemotherapy	Temozolomide		149	NA	YES
+TCGA-HW-8321	Chemotherapy	Temozolomide	Stable Disease	47	321	NO
+TCGA-HW-8322	Chemotherapy	Temozolomide		433	NA	YES
+TCGA-HW-A5KJ	Chemotherapy	Temozolomide	Clinical Progressive Disease	16	16	NO
+TCGA-HW-A5KJ		Temozolomide	Stable Disease	656	899	NO
+TCGA-HW-A5KK	Chemotherapy	Temozolomide	Clinical Progressive Disease	23	176	NO
+TCGA-HW-A5KK	Chemotherapy	Bevacizumab		207	NA	YES
+TCGA-HW-A5KL	Chemotherapy	Temozolomide	Stable Disease	10	71	NO
+TCGA-HW-A5KL	Chemotherapy	Temozolomide	Stable Disease	102	648	NO
+TCGA-IK-7675	Targeted Molecular therapy	Bevacizumab		NA	510	NO
+TCGA-IK-7675	Chemotherapy	Irinotecan		531	552	NO
+TCGA-IK-8125	Chemotherapy	Temodar		55	99	NO
+TCGA-IK-8125	Chemotherapy	Temodar	Complete Response	111	265	NO
+TCGA-KT-A74X	Chemotherapy	Temozolomide	Stable Disease	40	83	NO
+TCGA-KT-A7W1	Chemotherapy	Temozolomide	Clinical Progressive Disease	20	61	NO
+TCGA-P5-A5EX		Temozolomide	Partial Response	16	243	NO
+TCGA-P5-A5F0	Chemotherapy	Lomustine	Partial Response	89	287	NO
+TCGA-P5-A5F0	Chemotherapy	Vincristine	Partial Response	89	287	NO
+TCGA-P5-A5F0	Chemotherapy	Procarbazine	Partial Response	89	287	NO
+TCGA-P5-A5F2	Chemotherapy	Mustophoran	Partial Response	30	242	NO
+TCGA-P5-A5F2		Avastin	Partial Response	30	242	NO
+TCGA-P5-A5F2		Themozolomide	Partial Response	30	242	NO
+TCGA-P5-A5F4	Chemotherapy	Lomustine	Partial Response	19	231	NO
+TCGA-P5-A5F4	Chemotherapy	Vincristine	Partial Response	19	231	NO
+TCGA-P5-A5F4	Chemotherapy	Procarbazine	Partial Response	19	231	NO
+TCGA-P5-A72Z	Chemotherapy	Temozolomide		270	NA	YES
+TCGA-P5-A733		Temozolomide		97	414	NO
+TCGA-QH-A65R	Chemotherapy	TEMOZOLOMIDE	Stable Disease	32	430	NO
+TCGA-QH-A65V	Chemotherapy	PROCARBAZINE	Stable Disease	147	327	NO
+TCGA-QH-A65V	Chemotherapy	LOMUSTINE	Stable Disease	147	307	NO
+TCGA-QH-A65V	Chemotherapy	VINCRISTINE	Stable Disease	147	307	NO
+TCGA-QH-A65X	Chemotherapy	temozolomide	Stable Disease	139	143	NO
+TCGA-QH-A65X	Chemotherapy	lomustine	Stable Disease	237	365	NO
+TCGA-QH-A65X	Chemotherapy	vincristine	Stable Disease	237	365	NO
+TCGA-QH-A65X	Chemotherapy	Procarbazine	Stable Disease	244	365	NO
+TCGA-QH-A65Z	Chemotherapy	VINCRISTINE	Stable Disease	36	215	NO
+TCGA-QH-A65Z	Chemotherapy	LOMUSTINE	Stable Disease	36	295	NO
+TCGA-QH-A65Z	Chemotherapy	procarbazine	Stable Disease	36	315	NO
+TCGA-QH-A6CS	Chemotherapy	TEMOZOLOMIDE	Stable Disease	45	423	NO
+TCGA-QH-A6CS	Chemotherapy	fotemustine		607	NA	YES
+TCGA-QH-A6CU	Chemotherapy	Temozolomide		399	NA	YES
+TCGA-QH-A6CY	Chemotherapy	Temozolomide	Stable Disease	267	NA	YES
+TCGA-QH-A6X4	Chemotherapy	temozolomide	Clinical Progressive Disease	196	342	NO
+TCGA-QH-A6X8	Chemotherapy	temozolomide	Stable Disease	49	292	NO
+TCGA-QH-A6XC	Chemotherapy	temozolomide	Clinical Progressive Disease	103	390	NO
+TCGA-QH-A6XC	Chemotherapy	lomustine		466	NA	YES
+TCGA-QH-A6XC	Chemotherapy	Procarbazine		466	NA	YES
+TCGA-QH-A6XC	Chemotherapy	Vincristine		466	NA	YES
+TCGA-QH-A870	Chemotherapy	temozolomide		396	NA	YES
+TCGA-S9-A6TS	Chemotherapy	Carmustine	Clinical Progressive Disease	1614	1697	NO
+TCGA-S9-A6TS	Chemotherapy	Temozolamide	Clinical Progressive Disease	1352	1603	NO
+TCGA-S9-A6TS	Targeted Molecular therapy	Bevacizumab	Clinical Progressive Disease	1704	1859	NO
+TCGA-S9-A6TV	Chemotherapy	Temozolamide	Stable Disease	26	68	NO
+TCGA-S9-A6TW	Chemotherapy	Temozolomide	Stable Disease	25	304	NO
+TCGA-S9-A6TX	Chemotherapy	Temozolomide	Complete Response	268	856	NO
+TCGA-S9-A6TY	Chemotherapy	Temozolomide	Stable Disease	5	274	NO
+TCGA-S9-A6U0	Chemotherapy	Temozolomide	Stable Disease	30	64	NO
+TCGA-S9-A6U0	Chemotherapy	Temozolomide	Stable Disease	96	264	NO
+TCGA-S9-A6U0	Targeted Molecular therapy	Bevacizumab		698	NA	YES
+TCGA-S9-A6U0	Chemotherapy	Carmustine	Clinical Progressive Disease	603	NA	NO
+TCGA-S9-A6U0	Chemotherapy	Teniposide	Clinical Progressive Disease	603	NA	NO
+TCGA-S9-A6U1	Chemotherapy	Temozolomide	Complete Response	1	253	NO
+TCGA-S9-A6U8	Targeted Molecular therapy	Bevacizumab		2832	2988	NO
+TCGA-S9-A6U8	Chemotherapy	Temozolomide	Stable Disease	1995	2200	NO
+TCGA-S9-A6U8	Chemotherapy	Carmustin	Clinical Progressive Disease	2720	2762	NO
+TCGA-S9-A6U8	Chemotherapy	Temozolomide	Clinical Progressive Disease	2787	2794	NO
+TCGA-S9-A6WD	Chemotherapy	Temozolomide	Stable Disease	62	322	NO
+TCGA-S9-A6WE	Chemotherapy	Temozolamide		8	NA	NO
+TCGA-S9-A6WG	Chemotherapy	Temozolomide	Stable Disease	382	386	NO
+TCGA-S9-A6WM	Chemotherapy	Temozolomide	Stable Disease	16	64	NO
+TCGA-S9-A6WM	Targeted Molecular therapy	Bevacizumab		524	NA	YES
+TCGA-S9-A6WN	Chemotherapy	Temozolomide	Stable Disease	42	91	NO
+TCGA-S9-A6WN	Targeted Molecular therapy	Bevacizumab	Clinical Progressive Disease	425	805	NO
+TCGA-S9-A6WN	Chemotherapy	Temozolomide		317	321	NO
+TCGA-S9-A6WN	Chemotherapy	Lomustin	Clinical Progressive Disease	679	805	NO
+TCGA-S9-A6WN	Targeted Molecular therapy	Pembrolizumab		846	NA	YES
+TCGA-S9-A6WP	Chemotherapy	Temozolomide		19	NA	YES
+TCGA-S9-A7IX	Chemotherapy	Temozolomide	Clinical Progressive Disease	350	413	NO
+TCGA-S9-A7IX	Chemotherapy	Temozolomide	Clinical Progressive Disease	437	470	NO
+TCGA-S9-A7IX	Targeted Molecular therapy	Bevacizumab	Clinical Progressive Disease	350	413	NO
+TCGA-S9-A7IX	Chemotherapy	Lomustine	Clinical Progressive Disease	589	640	NO
+TCGA-S9-A7IY	Chemotherapy	Lomustine		160	383	NO
+TCGA-S9-A7IY	Chemotherapy	Procarbazine		162	383	NO
+TCGA-S9-A7IY	Chemotherapy	Vincristine		162	383	NO
+TCGA-S9-A7IZ	Chemotherapy	Carmustine	Stable Disease	603	NA	YES
+TCGA-S9-A7IZ	Chemotherapy	Teniposide	Stable Disease	603	NA	YES
+TCGA-S9-A7J0	Chemotherapy	Temozolomide	Stable Disease	59	91	NO
+TCGA-S9-A7J0	Chemotherapy	Temozolomide		126	NA	YES
+TCGA-S9-A7J0	Chemotherapy	Carmustine	Clinical Progressive Disease	399	443	NO
+TCGA-S9-A7J0	Targeted Molecular therapy	Bevacizumab	Clinical Progressive Disease	490	609	NO
+TCGA-S9-A7J0	Chemotherapy	Irinotecan	Clinical Progressive Disease	546	609	NO
+TCGA-S9-A7J2	Chemotherapy	Lomustine		62	NA	YES
+TCGA-S9-A7J2	Chemotherapy	Procarbazine		62	NA	YES
+TCGA-S9-A7J2	Chemotherapy	VINCRISTINE		62	NA	YES
+TCGA-S9-A7J3	Chemotherapy	Lomustine	Stable Disease	2	177	NO
+TCGA-S9-A7J3	Chemotherapy	Procarbazine	Stable Disease	2	177	NO
+TCGA-S9-A7J3	Chemotherapy	Vincristine	Stable Disease	2	177	NO
+TCGA-S9-A7QW	Chemotherapy	Temozolomide	Stable Disease	382	592	NO
+TCGA-S9-A7QX	Chemotherapy	Temozolomide		113	NA	YES
+TCGA-S9-A7QY	Chemotherapy	Temozolomide	Stable Disease	20	372	NO
+TCGA-S9-A7R1	Chemotherapy	Temozolamide	Stable Disease	3801	3835	NO
+TCGA-S9-A7R4	Chemotherapy	Temozolomide	Stable Disease	54	161	NO
+TCGA-S9-A7R7	Chemotherapy	Temozolomide	Stable Disease	144	526	NO
+TCGA-S9-A7R7	Chemotherapy	Temozolamide	Stable Disease	716	1095	NO
+TCGA-S9-A7R7	Chemotherapy	Carmustine	Clinical Progressive Disease	2720	2847	NO
+TCGA-S9-A7R8	Chemotherapy	Temozolamide	Clinical Progressive Disease	771	786	NO
+TCGA-S9-A7R8	Chemotherapy	Nimustine	Clinical Progressive Disease	803	925	NO
+TCGA-S9-A89V	Chemotherapy	Temozolomide	Clinical Progressive Disease	12	46	NO
+TCGA-S9-A89V	Chemotherapy	Temozolomide	Clinical Progressive Disease	80	222	NO
+TCGA-S9-A89Z	Chemotherapy	Temozolomide	Stable Disease	29	308	NO
+TCGA-TM-A7C3	Chemotherapy	Temozolomide		748	NA	YES
+TCGA-TM-A84B	Chemotherapy	Temozolomide	Clinical Progressive Disease	188	338	NO
+TCGA-TM-A84C	Chemotherapy	Temozolomide	Clinical Progressive Disease	297	459	NO
+TCGA-TM-A84J	Chemotherapy	Temozolomide		61	NA	YES
+TCGA-TM-A84J	Chemotherapy	Procarbazine		476	NA	YES
+TCGA-TM-A84L	Chemotherapy	Temozolomide	Clinical Progressive Disease	1066	1185	NO
+TCGA-TM-A84M	Chemotherapy	Procarbazine	Complete Response	138	264	NO
+TCGA-TM-A84M	Chemotherapy	LOMUSTINE (CCNU)	Complete Response	138	264	NO
+TCGA-TM-A84M	Chemotherapy	VINCRISTINE	Complete Response	138	264	NO
+TCGA-VM-A8C8	Chemotherapy	Temozolomide	Stable Disease	1282	1431	NO
+TCGA-VM-A8CA	Chemotherapy	temodar		373	NA	YES
+TCGA-VM-A8CE	Chemotherapy	temodar	Stable Disease	37	349	NO
+TCGA-VM-A8CE	Chemotherapy	Vincristine	Stable Disease	925	986	NO
+TCGA-VM-A8CE	Chemotherapy	Procarbazine		898	NA	YES
+TCGA-VM-A8CE	Chemotherapy	Lomustine		918	NA	YES
+TCGA-VM-A8CF	Chemotherapy	Temodar	Stable Disease	41	88	NO
+TCGA-VV-A829	Chemotherapy	Temodar	Stable Disease	0	792	NO
+TCGA-VV-A86M	Chemotherapy	Temozolomide		122	NA	YES
+TCGA-VW-A7QS	Chemotherapy	Temodar	Partial Response	14	595	NO
+TCGA-VW-A8FI	Chemotherapy	Temozolomide		19	78	NO
+TCGA-WH-A86K	Chemotherapy	Temodar	Stable Disease	39	84	NO

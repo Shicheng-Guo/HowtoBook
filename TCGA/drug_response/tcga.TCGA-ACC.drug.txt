@@ -1,0 +1,19 @@
+bcr_patient_barcode	therapy_types	drug_name	measure_of_response	days_to_drug_therapy_start	days_to_drug_therapy_end	therapy_ongoing
+TCGA-OR-A5JM	Targeted Molecular therapy	sunitinib	Clinical Progressive Disease	378	439	NO
+TCGA-OR-A5JM	Targeted Molecular therapy	ketoconazole	Clinical Progressive Disease	378	439	NO
+TCGA-OR-A5JY	Chemotherapy	xeloda		78	93	NO
+TCGA-OR-A5K2	Chemotherapy	Adriamycin		118	298	NO
+TCGA-OR-A5K2	Chemotherapy	Cisplatin		118	298	NO
+TCGA-OR-A5K2	Chemotherapy	carboplatin		118	299	NO
+TCGA-OR-A5K2	Chemotherapy	etoposide		118	298	NO
+TCGA-OU-A5PI	Chemotherapy	Etoposide	Stable Disease	69	239	NO
+TCGA-OU-A5PI	Chemotherapy	doxorubicin	Stable Disease	69	239	NO
+TCGA-OU-A5PI	Chemotherapy	cisplatin	Stable Disease	55	239	NO
+TCGA-OU-A5PI	Chemotherapy	mitotane	Stable Disease	69	239	NO
+TCGA-OU-A5PI	Chemotherapy	carboplatin	Stable Disease	605	694	NO
+TCGA-OU-A5PI	Chemotherapy	etoposide	Stable Disease	605	694	NO
+TCGA-OU-A5PI	Chemotherapy	doxorubicin	Stable Disease	605	694	NO
+TCGA-OU-A5PI	Chemotherapy	carboplatin	Stable Disease	725	817	NO
+TCGA-OU-A5PI	Chemotherapy	streptozocin	Stable Disease	725	817	NO
+TCGA-OU-A5PI	Immunotherapy	Avastin	Stable Disease	725	878	NO
+TCGA-PK-A5HB	Targeted Molecular therapy	Sorafenib	Clinical Progressive Disease	968	1029	NO

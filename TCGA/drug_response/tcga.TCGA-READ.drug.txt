@@ -1,0 +1,222 @@
+bcr_patient_barcode	therapy_types	drug_name	measure_of_response	days_to_drug_therapy_start	days_to_drug_therapy_end	therapy_ongoing
+TCGA-AF-2687	Chemotherapy	Xeloda		55	97	NO
+TCGA-AF-2687	Chemotherapy	5 FU		133	259	NO
+TCGA-AF-2687	Chemotherapy	5 FU		133	261	NO
+TCGA-AF-2687	Other, specify in notes	Leucovorin		133	259	NO
+TCGA-AF-2687	Chemotherapy	Oxaliplatin		133	259	NO
+TCGA-AF-2689	Chemotherapy	Oxaliplatin		85	267	NO
+TCGA-AF-2689	ChemotherapyOther, specify in notesVelour 10262 Study- Aflibercept/Placebo (4mg/kg) every 2 weeks with Irinotecan/5FU Combination (FOLFIRI)	5FU		316	346	NO
+TCGA-AF-2689	Other, specify in notesOther Ancillary-Velour 10262 Study- Aflibercept/Placebo (4mg/kg) every 2 weeks with Irinotecan/5FU Combination (FOLFIRI)	Leucovorin		316	344	NO
+TCGA-AF-2689	ChemotherapyOther, specify in notesVelour 10262 Study- Aflibercept/Placebo (4mg/kg) every 2 weeks with Irinotecan/5FU Combination (FOLFIRI)	5FU		316	344	NO
+TCGA-AF-2689	Other, specify in notesAncillary	Leucovorin		85	267	NO
+TCGA-AF-2689	Chemotherapy	5FU		85	269	NO
+TCGA-AF-2689	Other, specify in notesVelour 10262 Study- Aflibercept/Placebo (4mg/kg) every 2 weeks with Irinotecan/5FU Combination (FOLFIRI)	Aflibercept/ Placebo Study		316	344	NO
+TCGA-AF-2689	Targeted Molecular therapy	Bevacizumab		85	239	NO
+TCGA-AF-2689	Chemotherapy	5FU		85	267	NO
+TCGA-AF-2689	ChemotherapyOther, specify in notesVelour 10262 Study- Aflibercept/Placebo (4mg/kg) every 2 weeks with Irinotecan/5FU Combination (FOLFIRI)	Irinotecan		316	344	NO
+TCGA-AF-2689	Chemotherapy	Camptosar		379	559	NO
+TCGA-AF-2689	Targeted Molecular therapy	Avastin		462	559	NO
+TCGA-AF-2689	Chemotherapy	FUDR (Floxuridine)		379	559	NO
+TCGA-AF-2689	Other, specify in notesAncillary	Leucovorin		379	559	NO
+TCGA-AF-2692	Chemotherapy	Xeloda		344	384	NO
+TCGA-AF-3400	Chemotherapy	5FU		97	137	NO
+TCGA-AF-3400	Chemotherapy	5FU		185	358	NO
+TCGA-AF-3400	Chemotherapy	5-FU		185	360	NO
+TCGA-AF-3400	Chemotherapy	Oxaliplatin		185	358	NO
+TCGA-AF-3400	Other, specify in notesAncillary	Leucovorin		185	358	NO
+TCGA-AF-3911	Chemotherapy	5FU		145	302	NO
+TCGA-AF-3911	Other, specify in notes	Leucovorin		145	300	NO
+TCGA-AF-3911	Chemotherapy	Oxaliplatin		145	285	NO
+TCGA-AF-3911	Chemotherapy	5FU		145	300	NO
+TCGA-AF-3911	Chemotherapy	5FU		68	106	NO
+TCGA-AF-3913	Chemotherapy	Xeloda		231	313	NO
+TCGA-AF-3913	Chemotherapy	Oxaliplatin		231	313	NO
+TCGA-AF-3914	Chemotherapy	oxaliplatin		133	294	NO
+TCGA-AF-3914	Chemotherapy	5 FU		133	296	NO
+TCGA-AF-3914	Other, specify in notes	Leucovorin		133	294	NO
+TCGA-AF-3914	Chemotherapy	5 FU		133	294	NO
+TCGA-AF-3914	Chemotherapy	5 FU		61	105	NO
+TCGA-AF-3914	Targeted Molecular therapy	Bevacizumab	Clinical Progressive Disease	924	1134	NO
+TCGA-AF-3914	Ancillary	Leucovorin	Stable Disease	924	1022	NO
+TCGA-AF-3914	Chemotherapy	Oxaliplatin	Stable Disease	924	1022	NO
+TCGA-AF-3914	Chemotherapy	Fluorouracil	Stable Disease	924	1022	NO
+TCGA-AF-3914	Chemotherapy	Fluorouracil IV Continuous infusion over 46 hours	Stable Disease	924	1024	NO
+TCGA-AF-4110	Chemotherapy	Oxaliplatin		65	261	NO
+TCGA-AF-4110	Chemotherapy	5FU		65	261	NO
+TCGA-AF-4110	Other, specify in notesLeucovorin	Leucovorin		65	261	NO
+TCGA-AF-4110	Chemotherapy	5FU		65	263	NO
+TCGA-AF-6136	Chemotherapy	Oxaliplatin	Stable Disease	209	385	NO
+TCGA-AF-6136	Ancillary	Leucovorin	Stable Disease	209	454	NO
+TCGA-AF-6136	Chemotherapy	Fluorouracil	Stable Disease	209	454	NO
+TCGA-AF-6136	Chemotherapy	Fluorouracil	Stable Disease	209	453	NO
+TCGA-AF-6136	Chemotherapy	Fluorouracil		117	117	NO
+TCGA-AF-6672	Other, specify in notesAncillary	Leucovorin		43	197	NO
+TCGA-AF-6672	Chemotherapy	Fluorouracil		43	199	NO
+TCGA-AF-6672	Chemotherapy	Oxaliplatin		43	183	NO
+TCGA-AF-6672	Chemotherapy	Fluorouracil		43	197	NO
+TCGA-AF-A56L	Chemotherapy	Oxaliplatin	Complete Response	52	255	NO
+TCGA-AF-A56L	Ancillary	Leucovorin	Complete Response	52	255	NO
+TCGA-AF-A56L	Chemotherapy	5FU	Complete Response	52	255	NO
+TCGA-AF-A56N	Chemotherapy	xeloda	Complete Response	54	95	NO
+TCGA-AF-A56N	Chemotherapy	xeloda	Complete Response	159	347	NO
+TCGA-AG-3584	Chemotherapy	Folinic acid	Clinical Progressive Disease	92	274	NO
+TCGA-AG-3584	Chemotherapy	5-Fluorouracil	Clinical Progressive Disease	92	274	NO
+TCGA-AG-3584	Chemotherapy	Irinotecan	Clinical Progressive Disease	92	274	NO
+TCGA-AG-3584	Chemotherapy	Folinic acid	Clinical Progressive Disease	335	396	NO
+TCGA-AG-3584	Chemotherapy	5-Fluorouracil	Clinical Progressive Disease	335	396	NO
+TCGA-AG-3584	Chemotherapy	Oxaliplatin	Clinical Progressive Disease	335	396	NO
+TCGA-AG-3584	Chemotherapy	Irinotecan	Clinical Progressive Disease	427	580	NO
+TCGA-AG-3591	Chemotherapy		Complete Response	NA	NA	
+TCGA-AG-3593	Chemotherapy	5-Fluorouracil	Complete Response	61	92	NO
+TCGA-AG-3600	Chemotherapy	5-Fluorouracil	Complete Response	31	92	NO
+TCGA-AG-3609	Chemotherapy	Folinic acid	Complete Response	31	212	NO
+TCGA-AG-3609	Chemotherapy	5-Fluorouracil	Complete Response	31	212	NO
+TCGA-AG-3609	Chemotherapy	Oxaliplatin	Complete Response	31	90	NO
+TCGA-AG-3611	Chemotherapy	Folinic acid	Complete Response	850	973	NO
+TCGA-AG-3611	Chemotherapy	5-Fluorouracil	Complete Response	850	973	NO
+TCGA-AG-3612	Chemotherapy	Folinic acid	Complete Response	59	273	NO
+TCGA-AG-3612	Chemotherapy	5-Fluorouracil	Complete Response	59	273	NO
+TCGA-AG-3612	Chemotherapy	Oxaliplatin	Complete Response	59	212	NO
+TCGA-AG-3728	Chemotherapy	Folinic acid	Complete Response	61	61	NO
+TCGA-AG-3728	Chemotherapy	5-Fluorouracil	Complete Response	61	61	NO
+TCGA-AG-3728	Chemotherapy	Oxaliplatin	Complete Response	61	61	NO
+TCGA-AG-3731	Chemotherapy	Folinic acid	Partial Response	92	914	NO
+TCGA-AG-3731	Chemotherapy	5-Fluorouracil	Partial Response	92	914	NO
+TCGA-AG-3731	Chemotherapy	Oxaliplatin	Partial Response	92	184	NO
+TCGA-AG-3731	Chemotherapy	Irinotecan	Partial Response	365	914	NO
+TCGA-AG-3732	Chemotherapy	Capecitabine		1277	1673	NO
+TCGA-AG-3732	Targeted Molecular therapy	Bevacizumab		1277	1673	NO
+TCGA-AG-3885	Chemotherapy		Complete Response	NA	NA	
+TCGA-AG-3885	Ancillary	Zoledronic acid		365	NA	YES
+TCGA-AG-3887	Chemotherapy	Irinotecan		1095	NA	YES
+TCGA-AG-3887	Chemotherapy	Capecitabine		1095	NA	YES
+TCGA-AG-3887	Targeted Molecular therapy	Bevacizumab		1095	NA	
+TCGA-AG-3893	Chemotherapy	Folinic acid	Complete Response	61	245	NO
+TCGA-AG-3893	Chemotherapy	5-Fluorouracil	Complete Response	61	245	NO
+TCGA-AG-3894	Chemotherapy	5-Fluorouracil	Complete Response	61	245	NO
+TCGA-AG-3909	Chemotherapy	Folinic acid	Complete Response	62	243	NO
+TCGA-AG-3909	Chemotherapy	5-Fluorouracil	Complete Response	62	243	NO
+TCGA-AG-3909	Chemotherapy	Oxaliplatin	Complete Response	62	182	NO
+TCGA-AG-3999	Chemotherapy		Clinical Progressive Disease	NA	NA	
+TCGA-AG-4005	Chemotherapy	Folinic acid	Complete Response	61	213	NO
+TCGA-AG-4005	Chemotherapy	5-Fluorouracil	Complete Response	61	213	NO
+TCGA-AG-4005	Chemotherapy	Oxaliplatin	Complete Response	61	213	NO
+TCGA-AG-4008	Chemotherapy	5-Fluorouracil	Complete Response	61	92	NO
+TCGA-AG-4008	Chemotherapy	Folinic acid	Complete Response	61	92	NO
+TCGA-AG-4022	Chemotherapy	5-Fluorouracil	Complete Response	61	153	NO
+TCGA-AG-A00C	Chemotherapy	Folinic acid	Complete Response	92	213	NO
+TCGA-AG-A00C	Chemotherapy	5-Fluorouracil	Complete Response	61	213	NO
+TCGA-AG-A00C	Chemotherapy	Oxaliplatin	Complete Response	92	213	NO
+TCGA-AG-A00H	Chemotherapy	5-Fluorouracil	Complete Response	90	121	NO
+TCGA-AG-A016	Chemotherapy	5-Fluorouracil	Clinical Progressive Disease	31	245	NO
+TCGA-AG-A016	Chemotherapy	Folinic acid	Clinical Progressive Disease	31	61	NO
+TCGA-AG-A016	Targeted Molecular therapy	Bevacizumab	Clinical Progressive Disease	61	245	NO
+TCGA-AG-A01L	Chemotherapy	5-Fluorouracil	Complete Response	61	212	NO
+TCGA-AG-A01N	Chemotherapy	Capecitabine		273	NA	YES
+TCGA-AG-A01N	Chemotherapy	Oxaliplatin	Partial Response	273	457	NO
+TCGA-AG-A01N	Targeted Molecular therapy	Bevacizumab		273	NA	YES
+TCGA-AG-A01W	Chemotherapy	5-Fluorouracil	Complete Response	62	184	NO
+TCGA-AG-A01Y	Chemotherapy	5-Fluorouracil	Complete Response	31	151	NO
+TCGA-AG-A020	Chemotherapy	Folinic acid	Complete Response	31	212	NO
+TCGA-AG-A020	Chemotherapy	5-Fluorouracil	Complete Response	31	212	NO
+TCGA-AG-A020	Chemotherapy	Oxaliplatin	Complete Response	31	212	NO
+TCGA-AG-A02G	Chemotherapy	Folinic acid	Partial Response	28	1096	YES
+TCGA-AG-A02G	Chemotherapy	5-Fluorouracil	Partial Response	28	1096	NO
+TCGA-AG-A02G	Chemotherapy	Irinotecan	Partial Response	28	242	NO
+TCGA-AG-A02G	Targeted Molecular therapy	Bevacizumab	Partial Response	28	242	NO
+TCGA-AG-A02G	Chemotherapy	Oxaliplatin	Partial Response	851	1096	NO
+TCGA-AG-A02N	Chemotherapy	Folinic acid	Complete Response	28	89	NO
+TCGA-AG-A032	Targeted Molecular therapy	Bevacizumab		458	NA	YES
+TCGA-AG-A036	Chemotherapy	5-Fluorouracil	Complete Response	92	215	NO
+TCGA-AH-6544	Chemotherapy	Oxaliplatin	Stable Disease	68	229	NO
+TCGA-AH-6544	Chemotherapy	Avastin	Stable Disease	68	365	NO
+TCGA-AH-6544	Chemotherapy	Xeloda	Stable Disease	243	365	NO
+TCGA-AH-6544	Chemotherapy	5-FU	Stable Disease	68	229	NO
+TCGA-AH-6544	Ancillary	Leucovorin	Stable Disease	68	229	NO
+TCGA-AH-6643	Chemotherapy	Oxaliplatin	Complete Response	41	202	NO
+TCGA-AH-6643	Chemotherapy	5-FU	Complete Response	41	202	NO
+TCGA-AH-6643	Ancillary	Leucovorin	Complete Response	41	202	NO
+TCGA-AH-6903	Chemotherapy	5-FU	Complete Response	70	228	NO
+TCGA-AH-6903	Chemotherapy	Oxaliplatin	Complete Response	70	228	NO
+TCGA-AH-6903	Ancillary	Leucovorin	Complete Response	70	228	NO
+TCGA-BM-6198	Chemotherapy	Xeloda		78	261	NO
+TCGA-CI-6620	Ancillary	Leucovorin	Clinical Progressive Disease	39	160	NO
+TCGA-CI-6620	Chemotherapy	Fluorouracil	Clinical Progressive Disease	39	160	NO
+TCGA-CI-6620	Chemotherapy	Oxaliplatin	Clinical Progressive Disease	39	160	NO
+TCGA-CI-6622	Chemotherapy	Fluorouracil		65	97	NO
+TCGA-CI-6622	Chemotherapy	Leuocvorin		116	269	NO
+TCGA-CI-6622	Chemotherapy	Fluorouracil		116	269	NO
+TCGA-CI-6622	Chemotherapy	Oxaliplatin		116	269	NO
+TCGA-CL-4957	Chemotherapy	Oxaliplatin		42	73	NO
+TCGA-CL-4957	Chemotherapy	Fluorouracil		42	73	NO
+TCGA-CL-4957	Chemotherapy	Leucovorin Calcium		42	73	NO
+TCGA-DC-4745	Chemotherapy	Fluorouracil		62	216	NO
+TCGA-DC-4745	Other, specify in notesAncillary	Leucovorin Calcium		62	216	NO
+TCGA-DC-4745	Chemotherapy	Oxaliplatin		62	132	NO
+TCGA-DC-4745	Other, specify in notesAncillary	Pegfilgrastim		122	204	NO
+TCGA-DC-6154	Chemotherapy	Fluorouracil		91	242	NO
+TCGA-DC-6154	Chemotherapy	Oxaliplatin		91	242	NO
+TCGA-DC-6154	Other, specify in notesAncillary	Leucovorin		91	242	NO
+TCGA-DC-6155	Other, specify in notesAncillary agent	Leucovorin		57	239	NO
+TCGA-DC-6155	Chemotherapy	Oxaliplatin		57	71	NO
+TCGA-DC-6155	Chemotherapy	Fluorouracil		57	239	NO
+TCGA-DC-6156	Chemotherapy	Fluorouracil		92	334	NO
+TCGA-DC-6156	Chemotherapy	Oxaliplatin		87	269	NO
+TCGA-DC-6156	Other, specify in notesAncillary agent	Leucovorin		92	334	NO
+TCGA-DC-6156	Chemotherapy	Irinotecan HCL		365	NA	YES
+TCGA-DC-6156	Immunotherapy	bevacizumab		395	NA	YES
+TCGA-DC-6156	Chemotherapy	Fluorouracil		365	NA	YES
+TCGA-DC-6156	Chemotherapy	Leucovorin		365	NA	YES
+TCGA-DC-6156	Chemotherapy	BEVACIZUmab	Clinical Progressive Disease	395	761	NO
+TCGA-DC-6681	Chemotherapy	fluorouracil		38	136	NO
+TCGA-DC-6681	Other, specify in notesAncillary	Leucovorin Calcium		38	136	NO
+TCGA-DC-6681	Chemotherapy	Fluorouracil		38	136	NO
+TCGA-DC-6681	Chemotherapy	Oxaliplatin		38	136	NO
+TCGA-DC-6683	Chemotherapy	Fluorouracil		50	214	NO
+TCGA-DC-6683	Chemotherapy	Oxaliplatin		50	214	NO
+TCGA-DC-6683	Other, specify in notesAncillary	Leucovorin Calcium		50	214	NO
+TCGA-DY-A0XA	Chemotherapy	Mayo 425-20	Complete Response	47	239	NO
+TCGA-DY-A1DC	Chemotherapy	Capecitabine -xeloda	Partial Response	771	828	NO
+TCGA-DY-A1DE	Chemotherapy	Mayo 425-20	Complete Response	46	78	NO
+TCGA-DY-A1DE	Chemotherapy	Mayo 425-20	Complete Response	291	379	NO
+TCGA-EI-6508	Chemotherapy	oxaliplatinum + 5-FU		76	258	NO
+TCGA-EI-6509	Chemotherapy	FOLFOX		395	NA	YES
+TCGA-EI-6511	Chemotherapy	oxaliplatinum+5-FU		161	182	NO
+TCGA-EI-6512	Chemotherapy	FOLFOX		20	NA	YES
+TCGA-EI-6514	Chemotherapy	5-FU + LEULOV		27	88	NO
+TCGA-EI-6881	Chemotherapy	5 fluorouracil+leucovorin		42	250	NO
+TCGA-EI-6883	Chemotherapy	5fluorouracil+leucovorin		55	111	NO
+TCGA-EI-6884	Chemotherapy	5 fluorouracilum+leucovorin		52	NA	YES
+TCGA-EI-6885	Chemotherapy	oxaliplatinum+5 fluorouracilum		69	308	NO
+TCGA-EI-6917	Chemotherapy	5fluorouracil+oxaciplatina+l-folinian discido		100	145	NO
+TCGA-EI-7002	Chemotherapy	IRINOTECAN+5-fluorouracilim		67	224	NO
+TCGA-EI-7004	Chemotherapy	xeloda		41	188	NO
+TCGA-F5-6571	Chemotherapy	Capecitabine		226	350	NO
+TCGA-F5-6571	Chemotherapy	Mitomycin	Clinical Progressive Disease	770	813	NO
+TCGA-F5-6571	Chemotherapy	5-Fluorouracil	Complete Response	847	952	NO
+TCGA-F5-6571	Ancillary	Leucovorin	Complete Response	847	952	NO
+TCGA-F5-6571	Chemotherapy	Oxaliplatin	Complete Response	847	952	NO
+TCGA-F5-6571	Chemotherapy	Irinotecan	Stable Disease	1065	1157	NO
+TCGA-F5-6571	Ancillary	Leucovorin	Stable Disease	1065	1157	NO
+TCGA-F5-6571	Chemotherapy	5-Fluorouracil	Stable Disease	1065	1157	NO
+TCGA-F5-6571	Targeted Molecular therapy	Bevacizumab		1065	NA	YES
+TCGA-F5-6571	Chemotherapy	Oxaliplatin		1255	NA	YES
+TCGA-F5-6571	Chemotherapy	Gemcitabine		1255	NA	YES
+TCGA-F5-6702	Chemotherapy	5-Fluorouracil	Clinical Progressive Disease	370	641	NO
+TCGA-F5-6702	Chemotherapy	Polyplatillen	Clinical Progressive Disease	370	641	NO
+TCGA-F5-6702	Chemotherapy	Oxaliplatin	Clinical Progressive Disease	340	551	NO
+TCGA-F5-6863	Chemotherapy	Etoposide	Stable Disease	196	251	NO
+TCGA-F5-6863	Chemotherapy	Leucovorin	Stable Disease	196	251	NO
+TCGA-F5-6863	Chemotherapy	5-Fluorouracil	Stable Disease	196	251	NO
+TCGA-F5-6863	Chemotherapy	Xeloda	Clinical Progressive Disease	261	289	NO
+TCGA-F5-6864	Chemotherapy	5-Fluorouracil	Complete Response	17	191	NO
+TCGA-F5-6864	Ancillary	Leucovorin	Complete Response	17	191	NO
+TCGA-G5-6233	Chemotherapy	Fluorouracil		117	270	NO
+TCGA-G5-6233	Chemotherapy	Leucovorin		117	270	NO
+TCGA-G5-6233	Chemotherapy	Oxaliplatin		117	270	NO
+TCGA-G5-6235	Chemotherapy	Oxaliplatin		33	187	NO
+TCGA-G5-6235	Chemotherapy	Fluorouracil		89	187	NO
+TCGA-G5-6235	Chemotherapy	Leucovorin		33	187	NO
+TCGA-G5-6641	Chemotherapy	Oxaliplatin		100	212	NO
+TCGA-G5-6641	Chemotherapy	Fluorouracil		100	254	NO
+TCGA-G5-6641	Chemotherapy	Leucovorin		100	254	NO

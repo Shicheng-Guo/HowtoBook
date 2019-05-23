@@ -1,0 +1,265 @@
+bcr_patient_barcode	therapy_types	drug_name	measure_of_response	days_to_drug_therapy_start	days_to_drug_therapy_end	therapy_ongoing
+TCGA-D3-A1Q1	Chemotherapy	Cyclophosphamide	Clinical Progressive Disease	247	341	NO
+TCGA-D3-A1Q1	Immunotherapy		Clinical Progressive Disease	247	341	NO
+TCGA-D3-A1Q1	Vaccine		Clinical Progressive Disease	247	341	NO
+TCGA-D3-A1Q3	Chemotherapy	Cisplatin	Complete Response	362	362	NO
+TCGA-D3-A1Q6	Immunotherapy	Interferon		111	476	NO
+TCGA-D3-A1Q9	Hormone Therapy	Lupron	Clinical Progressive Disease	356	504	NO
+TCGA-D3-A1Q9	Vaccine	GP-100	Clinical Progressive Disease	356	504	NO
+TCGA-D3-A1QA	Vaccine	recMAGE- A3	Clinical Progressive Disease	1485	1538	NO
+TCGA-D3-A2JC	Immunotherapy	Interferon alfa		54	415	NO
+TCGA-D3-A2JH	Immunotherapy	Interferon		291	321	NO
+TCGA-D3-A2JL	Vaccine	GP100		2552	2911	NO
+TCGA-D3-A2JL	Vaccine	MAGE-3		2552	2911	NO
+TCGA-D3-A2JN	Immunotherapy	Interferon-alfa		92	123	NO
+TCGA-D3-A2JP	Immunotherapy	Interferon Alpha	Partial Response	73	193	NO
+TCGA-D3-A3C1	Immunotherapy	Interferon		NA	NA	NO
+TCGA-D3-A3C7	Immunotherapy	Interferon		123	488	NO
+TCGA-D3-A3CB	Vaccine	MEL-44	Complete Response	2716	3079	NO
+TCGA-D3-A3MV	Immunotherapy	Interleukin-2	Clinical Progressive Disease	572	639	NO
+TCGA-D3-A51E	Chemotherapy	Actinomycin-D	Complete Response	2506	2506	NO
+TCGA-D3-A51E	Chemotherapy	Melphalan	Complete Response	2506	2506	NO
+TCGA-D3-A51G	Chemotherapy	Melphalan	Complete Response	NA	NA	NO
+TCGA-D3-A51G	Chemotherapy	Actinomycin-D	Complete Response	NA	NA	NO
+TCGA-D3-A51G	Vaccine	GP100	Complete Response	NA	NA	NO
+TCGA-D3-A51G	Ancillary	Resiquimod	Complete Response	NA	NA	NO
+TCGA-D3-A51H	Chemotherapy	Cisplatin	Complete Response	894	1045	NO
+TCGA-D3-A51H	Chemotherapy	Vinblastine	Complete Response	894	1045	NO
+TCGA-D3-A51H	Chemotherapy	Dacarbazine	Complete Response	894	1045	NO
+TCGA-D3-A5GT	Immunotherapy	Interferon alpha		110	NA	YES
+TCGA-D3-A8GB	Immunotherapy	Interferon	Complete Response	74	318	NO
+TCGA-D3-A8GK	Vaccine	MEL-44	Complete Response	2060	2425	NO
+TCGA-D3-A8GN	Immunotherapy		Complete Response	1224	1639	NO
+TCGA-D9-A148	Immunotherapy	ipilimumab		4426	4496	NO
+TCGA-DA-A1I1	Immunotherapy	Pembrolizumab		6607	NA	YES
+TCGA-DA-A3F2	Immunotherapy	Ipilimumab	Partial Response	475	772	NO
+TCGA-DA-A3F5	Targeted Molecular therapy	Vemurafenib	Clinical Progressive Disease	6830	6869	NO
+TCGA-DA-A3F5	Immunotherapy	Pembrolizumab	Stable Disease	6660	6814	NO
+TCGA-EB-A24C	Chemotherapy	Dacarbazine		20	203	NO
+TCGA-EB-A24C	Immunotherapy	Laferon		20	203	NO
+TCGA-EB-A24C	Chemotherapy	Carboplatin		20	203	NO
+TCGA-EB-A24C	Chemotherapy	Temozolomide		547	632	NO
+TCGA-EB-A24C	Immunotherapy	Laferon		505	559	NO
+TCGA-EB-A24C	Chemotherapy	Dacarbazine		505	559	NO
+TCGA-EB-A24C	Chemotherapy	Cisplatin		505	517	NO
+TCGA-EB-A24D	Chemotherapy	Cisplatin		38	41	NO
+TCGA-EB-A24D	Chemotherapy	Dacarbazine		38	645	NO
+TCGA-EB-A24D	Chemotherapy	Temodal		567	582	NO
+TCGA-EB-A24D	Immunotherapy	Alferon		525	645	NO
+TCGA-EB-A3XC	Chemotherapy	Dacarbazine	Complete Response	410	558	NO
+TCGA-EB-A3Y6	Chemotherapy	Dacarbazine	Complete Response	51	126	NO
+TCGA-EB-A4OY	Hormone Therapy	Fareston	Complete Response	52	593	NO
+TCGA-EB-A4OY	Chemotherapy	Lomustine	Complete Response	52	593	NO
+TCGA-EB-A550	Hormone Therapy	Tamoxifen	Complete Response	6	264	NO
+TCGA-EB-A553	Chemotherapy	Dacarbazine	Complete Response	51	115	NO
+TCGA-EB-A553	Chemotherapy	Carboplatin	Complete Response	51	115	NO
+TCGA-EB-A57M	Chemotherapy	Cisplatin	Complete Response	23	157	NO
+TCGA-EB-A57M	Chemotherapy	Vinblastine	Complete Response	23	157	NO
+TCGA-EB-A57M	Ancillary	Zofran	Complete Response	23	157	NO
+TCGA-EB-A57M	Ancillary	Dexamethasone	Complete Response	23	157	NO
+TCGA-EB-A57M	Chemotherapy	Dacarbazine	Complete Response	23	157	NO
+TCGA-EB-A57M	Ancillary	Erythropoietin	Complete Response	23	157	NO
+TCGA-EB-A57M	Immunotherapy	Ciclosporin	Complete Response	23	157	NO
+TCGA-EB-A57M	Ancillary	RenAmin	Complete Response	23	157	NO
+TCGA-EB-A5FP	Chemotherapy	Dacarbazine	Clinical Progressive Disease	24	52	NO
+TCGA-EB-A5FP	Chemotherapy	Carboplatin	Clinical Progressive Disease	24	52	NO
+TCGA-EB-A5KH	Chemotherapy	Cisplatin	Complete Response	557	615	NO
+TCGA-EB-A5KH	Chemotherapy	Vinblastine	Complete Response	557	615	NO
+TCGA-EB-A5KH	Chemotherapy	Dacarbazine	Complete Response	557	615	NO
+TCGA-EB-A5KH	Immunotherapy	Leukine	Complete Response	557	615	NO
+TCGA-EB-A5SH	Chemotherapy	Dacarbazine	Complete Response	1091	1125	NO
+TCGA-EB-A5SH	Chemotherapy	Cisplatin	Complete Response	1091	1125	NO
+TCGA-EB-A5SH	Immunotherapy	Interferon alpha	Complete Response	1154	1217	NO
+TCGA-EB-A5UL	Chemotherapy	Dacarbazine	Complete Response	140	280	NO
+TCGA-EB-A5UL	Chemotherapy	Vinblastine	Complete Response	140	280	NO
+TCGA-EB-A5UL	Chemotherapy	Bleomycin	Complete Response	140	280	NO
+TCGA-EB-A6QY	Chemotherapy	Carboplatin	Complete Response	56	192	NO
+TCGA-EB-A6QY	Chemotherapy	Dacarbazine	Complete Response	56	192	NO
+TCGA-EB-A6QY	Immunotherapy	Laferon	Complete Response	210	218	NO
+TCGA-EB-A6QZ	Chemotherapy	Dacarbazine	Partial Response	153	244	NO
+TCGA-EB-A6QZ	Chemotherapy	Vincristine	Partial Response	153	244	NO
+TCGA-EB-A6R0	Chemotherapy	Lomustine	Complete Response	19	321	NO
+TCGA-EB-A85J	Chemotherapy	Dacarbazine	Complete Response	13	92	NO
+TCGA-EB-A85J	Chemotherapy	Vincristine	Complete Response	13	92	NO
+TCGA-EE-A182	Ancillary	PV-10	Clinical Progressive Disease	329	329	NO
+TCGA-EE-A185	Chemotherapy	Dacarbazine	Clinical Progressive Disease	104	126	NO
+TCGA-EE-A29C	Chemotherapy	Paclitaxel		439	620	NO
+TCGA-EE-A29C	Targeted Molecular therapy	GSK Braf Inhibitor	Clinical Progressive Disease	1114	1502	NO
+TCGA-EE-A29C	Immunotherapy	Yervoy	Stable Disease	1500	1623	NO
+TCGA-EE-A29C	Targeted Molecular therapy	Dabrafenib	Clinical Progressive Disease	2262	2413	NO
+TCGA-EE-A29C	Targeted Molecular therapy	Trametinib	Clinical Progressive Disease	2262	2413	NO
+TCGA-EE-A29H	Vaccine			895	NA	YES
+TCGA-EE-A29H	Vaccine		Clinical Progressive Disease	895	1231	NO
+TCGA-EE-A29H	Targeted Molecular therapy	Vemurafenib		1294	NA	YES
+TCGA-EE-A29Q	Chemotherapy	Dacarbazine	Clinical Progressive Disease	1837	1858	NO
+TCGA-EE-A29T	Targeted Molecular therapy	Vemurafenib		11015	NA	YES
+TCGA-EE-A29V	Chemotherapy	Dacarbazine	Clinical Progressive Disease	715	787	NO
+TCGA-EE-A29X	Chemotherapy	Fotemustine		517	517	NO
+TCGA-EE-A2A5	Chemotherapy	Fotemustine		1142	1142	NO
+TCGA-EE-A2GH	Vaccine			4948	NA	YES
+TCGA-EE-A2GH	Vaccine			4948	5753	NO
+TCGA-EE-A2GI	Vaccine			642	NA	YES
+TCGA-EE-A2GI	Vaccine			642	1393	NO
+TCGA-EE-A2GL	Vaccine			1421	NA	YES
+TCGA-EE-A2GL	Vaccine			1421	2093	NO
+TCGA-EE-A2GS	Targeted Molecular therapy	Dabrafenib	Clinical Progressive Disease	1596	1978	NO
+TCGA-EE-A2GS	Immunotherapy	Ipilimumab	Clinical Progressive Disease	1979	2075	NO
+TCGA-EE-A2GS	Targeted Molecular therapy		Clinical Progressive Disease	2127	NA	NO
+TCGA-EE-A2GS	Targeted Molecular therapy		Clinical Progressive Disease	2257	2354	NO
+TCGA-EE-A2GS	Targeted Molecular therapy	Vemurafenib	Clinical Progressive Disease	2372	NA	NO
+TCGA-EE-A2GU	Vaccine			1855	2609	NO
+TCGA-EE-A2M5	Chemotherapy	PNU-159548	Clinical Progressive Disease	559	559	NO
+TCGA-EE-A2M6	Vaccine			992	2763	NO
+TCGA-EE-A2MD	Chemotherapy	Dacarbazine	Clinical Progressive Disease	1377	1408	NO
+TCGA-EE-A2ME	Vaccine	Cancer Vax	Clinical Progressive Disease	2296	2933	NO
+TCGA-EE-A2MG	Vaccine	Cancer Vax	Clinical Progressive Disease	1837	2585	NO
+TCGA-EE-A2MG	Chemotherapy	Dacarbazine		2764	2932	NO
+TCGA-EE-A2MH	Vaccine		Clinical Progressive Disease	356	429	NO
+TCGA-EE-A2ML	Chemotherapy	Dacarbazine	Clinical Progressive Disease	5973	6156	NO
+TCGA-EE-A2ML	Chemotherapy	Fotemustine	Clinical Progressive Disease	6279	6339	NO
+TCGA-EE-A2ML	Immunotherapy	MORAb-004	Clinical Progressive Disease	6355	6440	NO
+TCGA-EE-A2MM	Vaccine	VMCL	Clinical Progressive Disease	3636	4328	NO
+TCGA-EE-A2MM	Vaccine	autologous vaccine	Clinical Progressive Disease	4412	4618	NO
+TCGA-EE-A2MN	Chemotherapy	Dacabarzine	Clinical Progressive Disease	1290	1338	NO
+TCGA-EE-A2MQ	Chemotherapy	Dacarbazine	Clinical Progressive Disease	1176	1207	NO
+TCGA-EE-A3AA	Vaccine			44	NA	NO
+TCGA-EE-A3AD	Targeted Molecular therapy	BRAF inhibitor	Clinical Progressive Disease	632	NA	NO
+TCGA-EE-A3AE	Vaccine	Mage A3		804	1574	NO
+TCGA-EE-A3AF	Chemotherapy	Fotemustine	Clinical Progressive Disease	384	404	NO
+TCGA-EE-A3AG	Targeted Molecular therapy		Clinical Progressive Disease	741	NA	NO
+TCGA-EE-A3AH	Chemotherapy	PI88	Clinical Progressive Disease	3977	4104	NO
+TCGA-EE-A3JB	Chemotherapy	Alkeran		24	24	NO
+TCGA-EE-A3JI	Chemotherapy	Dacarbazine	Clinical Progressive Disease	4529	4571	NO
+TCGA-EE-A3JI	Immunotherapy	Ipilimumab	Clinical Progressive Disease	4608	NA	NO
+TCGA-ER-A195	Immunotherapy	interferon		562	911	NO
+TCGA-ER-A198	Chemotherapy	Dacarbazine		426	517	NO
+TCGA-ER-A19E	Chemotherapy	Carboplatin		230	257	NO
+TCGA-ER-A19E	Chemotherapy	Paclitaxel		230	257	NO
+TCGA-ER-A19G	Chemotherapy	GM-CSF		4740	5013	NO
+TCGA-ER-A19H	Chemotherapy	Patrin		NA	3716	NO
+TCGA-ER-A19H	Chemotherapy	DTIC	Clinical Progressive Disease	3627	3716	NO
+TCGA-ER-A19J	Chemotherapy	Dacarbazine		119	119	NO
+TCGA-ER-A19K	Chemotherapy	Temozolomide		NA	388	NO
+TCGA-ER-A19M	Immunotherapy	Interferon	Clinical Progressive Disease	1019	1093	NO
+TCGA-ER-A19N	Immunotherapy	Interferon		55	NA	NO
+TCGA-ER-A19O	Immunotherapy	Interferon		154	NA	NO
+TCGA-ER-A19Q	Chemotherapy	Dacarbazine		1394	1428	NO
+TCGA-ER-A19Q	Immunotherapy	IL-18		1274	1337	NO
+TCGA-ER-A1A1	Immunotherapy	Interferon		84	418	NO
+TCGA-ER-A2NC	Chemotherapy			1278	NA	NO
+TCGA-ER-A2NF	Immunotherapy	IL-2		471	502	NO
+TCGA-ER-A2NF	Chemotherapy	Aflibercept		471	NA	YES
+TCGA-ER-A2NF	Immunotherapy	Ipilimumab		120	136	NO
+TCGA-ER-A2NG	Chemotherapy	VEMURAFENIB		889	NA	YES
+TCGA-ER-A2NG	Immunotherapy	Ipilimumab		578	609	NO
+TCGA-ER-A2NG	Immunotherapy	IL-2		705	766	NO
+TCGA-ER-A3EV	Vaccine		Clinical Progressive Disease	366	366	NO
+TCGA-FR-A2OS	Chemotherapy	Temodar		311	368	NO
+TCGA-FR-A3YN	Immunotherapy	Ipilimumab	Complete Response	2324	2387	NO
+TCGA-FR-A3YO	Immunotherapy	Ipilimumab	Stable Disease	NA	NA	NO
+TCGA-FR-A44A	Immunotherapy	Interferon	Complete Response	2769	3134	NO
+TCGA-FR-A69P	Immunotherapy	Ipilimumab		107	NA	YES
+TCGA-FR-A728	Chemotherapy	Dabrafenib	Partial Response	100	119	NO
+TCGA-FR-A728	Chemotherapy	Trametinib	Partial Response	100	119	NO
+TCGA-FR-A729	Immunotherapy	Sylatron		6253	NA	YES
+TCGA-FR-A7U8	Immunotherapy	Interferon	Partial Response	89	208	NO
+TCGA-FR-A7U9	Vaccine	Talimogene Laherparepvec (T-VEC)	Partial Response	115	178	NO
+TCGA-FR-A7U9	Immunotherapy	Ipilimumab		151	NA	YES
+TCGA-FR-A8YC	Chemotherapy	2B3-101	Clinical Progressive Disease	1020	1020	NO
+TCGA-FR-A8YD	Immunotherapy	Ipilimumab	Stable Disease	812	880	NO
+TCGA-FS-A1ZE	Chemotherapy	DTIC	Clinical Progressive Disease	651	761	NO
+TCGA-FS-A1ZE	Chemotherapy	Paclitaxel	Clinical Progressive Disease	762	853	NO
+TCGA-FS-A1ZE	Targeted Molecular therapy	Angiocal	Clinical Progressive Disease	896	1034	NO
+TCGA-FS-A1ZE	Chemotherapy	Carboplatin_Paclitaxel	Clinical Progressive Disease	1188	1249	NO
+TCGA-FS-A1ZE	Chemotherapy	Carboplatin Paclitaxel	Clinical Progressive Disease	1188	1249	NO
+TCGA-FS-A1ZS	Immunotherapy	interferon alpha	Stable Disease	2566	2790	NO
+TCGA-FS-A1ZT	Immunotherapy	interferon alpha	Stable Disease	398	1053	NO
+TCGA-FS-A1ZW	Immunotherapy	interferon alpha	Stable Disease	700	1005	NO
+TCGA-FS-A4F0	Chemotherapy	Treosulfan	Clinical Progressive Disease	1543	1603	NO
+TCGA-FS-A4F0	Immunotherapy	Interferon alpha	Stable Disease	82	568	NO
+TCGA-FS-A4F0	Chemotherapy	DTIC	Clinical Progressive Disease	1359	1521	NO
+TCGA-FS-A4F0	Chemotherapy	Gemcitabine	Clinical Progressive Disease	1543	1603	NO
+TCGA-FS-A4F9	Chemotherapy	Temodal		1035	NA	YES
+TCGA-FW-A3R5	Immunotherapy	Interferon	Complete Response	714	993	NO
+TCGA-FW-A3TV	Immunotherapy	Interferon	Clinical Progressive Disease	33	58	NO
+TCGA-FW-A3TV	Immunotherapy	Interferon		151	NA	YES
+TCGA-GF-A3OT	Chemotherapy	Carboplatin	Clinical Progressive Disease	95	216	NO
+TCGA-GF-A3OT	Chemotherapy	Taxol	Clinical Progressive Disease	95	216	NO
+TCGA-GF-A3OT	Chemotherapy	Avastin	Clinical Progressive Disease	95	216	NO
+TCGA-GF-A3OT	Immunotherapy	Yervoy	Clinical Progressive Disease	249	249	NO
+TCGA-GN-A264	Immunotherapy	Interferon alfa-2b		2752	3111	NO
+TCGA-GN-A267	Chemotherapy	Temodar		1520	1530	NO
+TCGA-GN-A26D	Other, specify in notesIsolated Limb Perfusion (ILP)			757	757	NO
+TCGA-GN-A4U3	Immunotherapy	Interleukin-2	Complete Response	2299	2574	NO
+TCGA-GN-A4U4	Chemotherapy	Axitinib	Partial Response	245	647	NO
+TCGA-GN-A4U4	Immunotherapy	Ipilimumab	Partial Response	637	707	NO
+TCGA-GN-A4U5	Immunotherapy	Interferon	Complete Response	211	435	NO
+TCGA-GN-A4U7	Chemotherapy	vemurafenib		190	NA	YES
+TCGA-GN-A4U8	Immunotherapy	Sylatron		1186	NA	YES
+TCGA-GN-A4U9	Immunotherapy	Ipilimumab	Partial Response	165	249	NO
+TCGA-GN-A4U9	Chemotherapy	melphalan	Complete Response	60	60	NO
+TCGA-GN-A4U9	Immunotherapy	Imiquimod		384	NA	YES
+TCGA-GN-A4U9	Chemotherapy	Axitinib	Clinical Progressive Disease	523	579	NO
+TCGA-GN-A8LK	Chemotherapy	Ipilimumab	Clinical Progressive Disease	1248	1269	NO
+TCGA-GN-A8LK	Chemotherapy	Carboplatin	Clinical Progressive Disease	1493	1513	NO
+TCGA-GN-A8LK	Chemotherapy	Dacarbazine	Clinical Progressive Disease	1407	1428	NO
+TCGA-GN-A8LN	Immunotherapy	ipilimumab	Partial Response	464	464	NO
+TCGA-GN-A8LN		carboplatin		603	NA	YES
+TCGA-GN-A8LN	Chemotherapy	paclitaxel		603	NA	YES
+TCGA-GN-A8LN	Immunotherapy	Pembrolizumab		772	NA	YES
+TCGA-GN-A9SD	Chemotherapy	actinomycin d	Clinical Progressive Disease	1268	1268	NO
+TCGA-GN-A9SD	Chemotherapy	melphalan	Clinical Progressive Disease	1366	1366	NO
+TCGA-GN-A9SD	Chemotherapy	vemurafenib	Clinical Progressive Disease	1519	1687	NO
+TCGA-GN-A9SD	Chemotherapy	melphalan	Clinical Progressive Disease	1268	1268	NO
+TCGA-HR-A2OH	Immunotherapy	Interferon	Complete Response	108	471	NO
+TCGA-HR-A2OH	Chemotherapy	Dacarbazine	Clinical Progressive Disease	1729	1753	NO
+TCGA-HR-A2OH	Immunotherapy	Interleukin - 2	Clinical Progressive Disease	1830	1848	NO
+TCGA-QB-AA9O	Immunotherapy	ipilimumab	Clinical Progressive Disease	171	234	NO
+TCGA-W3-A824	Immunotherapy		Clinical Progressive Disease	1491	2710	NO
+TCGA-W3-A825	Chemotherapy	Cisplatin	Partial Response	1644	1767	NO
+TCGA-W3-A825	Chemotherapy	Vinblastine	Partial Response	1644	1767	NO
+TCGA-W3-A825	Chemotherapy	Dacarbazine	Partial Response	1644	1767	NO
+TCGA-W3-A825	Chemotherapy	Tamoxifen	Partial Response	1644	1767	NO
+TCGA-W3-A825	Immunotherapy	Interleukin-2	Partial Response	1644	1767	NO
+TCGA-W3-A825	Immunotherapy	Interferon-α2	Partial Response	1644	1767	NO
+TCGA-W3-A828	Immunotherapy			1887	2283	NO
+TCGA-W3-AA1O	Chemotherapy	Carmustine	Clinical Progressive Disease	61	92	NO
+TCGA-W3-AA1O	Hormone Therapy	tamoxifen	Clinical Progressive Disease	61	92	NO
+TCGA-W3-AA1O	Chemotherapy	Cisplatin	Clinical Progressive Disease	61	92	NO
+TCGA-W3-AA1O	Chemotherapy	Dacarbazine	Clinical Progressive Disease	61	92	NO
+TCGA-W3-AA1Q	Hormone Therapy	Tamoxifen	Clinical Progressive Disease	1735	NA	NO
+TCGA-W3-AA1Q	Targeted Molecular therapy	Herceptin	Clinical Progressive Disease	1735	NA	NO
+TCGA-W3-AA1Q	Immunotherapy	Interferon	Clinical Progressive Disease	1492	NA	NO
+TCGA-W3-AA1Q	Immunotherapy		Clinical Progressive Disease	1735	NA	NO
+TCGA-W3-AA1Q	Chemotherapy	Gemcitabine	Clinical Progressive Disease	1735	NA	NO
+TCGA-W3-AA1Q	Vaccine		Clinical Progressive Disease	913	NA	NO
+TCGA-W3-AA1R	Immunotherapy		Clinical Progressive Disease	792	2192	NO
+TCGA-W3-AA1R	Vaccine		Clinical Progressive Disease	1006	2863	NO
+TCGA-W3-AA1R	Immunotherapy		Clinical Progressive Disease	2526	3349	NO
+TCGA-W3-AA1R	Immunotherapy	IL2	Clinical Progressive Disease	3105	NA	NO
+TCGA-W3-AA1V	Immunotherapy		Clinical Progressive Disease	1005	1280	NO
+TCGA-W3-AA1W	Immunotherapy	Interferon	Clinical Progressive Disease	335	761	NO
+TCGA-W3-AA1W	Immunotherapy		Clinical Progressive Disease	1065	1765	NO
+TCGA-W3-AA21	Chemotherapy	Taxol	Clinical Progressive Disease	3075	NA	NO
+TCGA-W3-AA21	Chemotherapy	Temodar	Clinical Progressive Disease	3075	NA	NO
+TCGA-W3-AA21	Immunotherapy			1065	2100	NO
+TCGA-WE-A8K5	Chemotherapy	ipilimumab	Clinical Progressive Disease	1823	1860	NO
+TCGA-WE-A8K6	Chemotherapy	Vemurafenib		294	NA	YES
+TCGA-WE-A8ZM	Immunotherapy	Diphencyprone		2946	NA	YES
+TCGA-WE-A8ZN	Chemotherapy	nivolumab	Clinical Progressive Disease	1533	1618	NO
+TCGA-WE-A8ZQ	Chemotherapy	vemurafenib		1818	NA	YES
+TCGA-WE-A8ZQ	Targeted Molecular therapy	Dabrafenib		1853	NA	YES
+TCGA-WE-A8ZR	Chemotherapy	vemurafenib	Clinical Progressive Disease	137	261	NO
+TCGA-WE-AAA0	Immunotherapy	ipilimumab	Clinical Progressive Disease	856	917	NO
+TCGA-WE-AAA0	Immunotherapy	pembrolizumab		1166	NA	YES
+TCGA-WE-AAA4	Chemotherapy	melphalan	Complete Response	360	360	NO
+TCGA-WE-AAA4	Chemotherapy	vemurafenib		517	527	NO
+TCGA-WE-AAA4	Chemotherapy	Dabrafenib		535	NA	YES
+TCGA-WE-AAA4	Immunotherapy	ipilimumab		739	NA	YES
+TCGA-XV-A9W5	Immunotherapy	interferon		264	NA	YES
+TCGA-XV-AB01	Immunotherapy	interferon		63	NA	YES
+TCGA-YG-AA3O	Immunotherapy	Yervoy		1081	NA	YES
+TCGA-YG-AA3O	Immunotherapy	Interferon	Partial Response	977	1006	NO
+TCGA-YG-AA3P	Immunotherapy	Yervoy		385	NA	YES
+TCGA-Z2-A8RT	Targeted Molecular therapy			722	NA	YES
+TCGA-Z2-AA3V	Targeted Molecular therapy			228	NA	YES

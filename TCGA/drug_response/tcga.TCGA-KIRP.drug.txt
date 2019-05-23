@@ -1,0 +1,48 @@
+bcr_patient_barcode	therapy_types	drug_name	measure_of_response	days_to_drug_therapy_start	days_to_drug_therapy_end	therapy_ongoing
+TCGA-2Z-A9J3	Chemotherapy	sunitinib	Clinical Progressive Disease	83	295	NO
+TCGA-2Z-A9J3	Chemotherapy	Naxavar		829	1058	NO
+TCGA-2Z-A9J3	Chemotherapy	sunitinib		1058	1765	NO
+TCGA-4A-A93X	Chemotherapy	Sutent		63	NA	YES
+TCGA-A4-7287	Chemotherapy	Cisplatin	Clinical Progressive Disease	254	282	NO
+TCGA-A4-7287	Chemotherapy	Gemcitabine	Clinical Progressive Disease	254	436	NO
+TCGA-A4-7287	Chemotherapy	Carboplatin	Clinical Progressive Disease	290	436	NO
+TCGA-A4-A57E	Chemotherapy	Afinitor	Clinical Progressive Disease	39	NA	NO
+TCGA-AL-3466	Immunotherapy	Interferon		33	138	NO
+TCGA-AL-A5DJ	Targeted Molecular therapy	Temsirolimus	Clinical Progressive Disease	355	475	NO
+TCGA-B9-4114		Votrient	Stable Disease	722	755	NO
+TCGA-B9-4114		Sunitinib		779	NA	YES
+TCGA-BQ-5877	Chemotherapy	17-AAG		71	123	NO
+TCGA-BQ-5878	Targeted Molecular therapy	Sorafenib		1086	NA	YES
+TCGA-BQ-5879	Targeted Molecular therapy	Sunitinib		192	430	NO
+TCGA-BQ-5879	Chemotherapy	Bevacizumab		192	430	NO
+TCGA-BQ-5879	Targeted Molecular therapy	Sunitinib		472	493	NO
+TCGA-BQ-5879	Targeted Molecular therapy	Sorafenib		508	591	NO
+TCGA-BQ-5879	Chemotherapy	Temsirolimus		472	493	NO
+TCGA-BQ-5879	Chemotherapy	Temsirolimus		612	NA	NO
+TCGA-BQ-5889	Targeted Molecular therapy	Sunitinib		175	241	NO
+TCGA-BQ-5889	Targeted Molecular therapy	Sorafenib		258	329	NO
+TCGA-BQ-5889	Chemotherapy	Temsirolimus		42	169	NO
+TCGA-BQ-5893	Chemotherapy	Everolimus		35	183	NO
+TCGA-BQ-7048	Targeted Molecular therapy	Sunitinib		2042	2146	NO
+TCGA-BQ-7048	Chemotherapy	Temsirolimus		2146	2398	NO
+TCGA-BQ-7048	Other, specify in notesVaccine	PSMA DNA Vaccine		495	915	NO
+TCGA-BQ-7048	Targeted Molecular therapy	Sunitinib		1880	2042	NO
+TCGA-BQ-7056	Chemotherapy	Temsirolimus		638	730	NO
+TCGA-BQ-7056	Targeted Molecular therapy	Sunitinib		759	NA	
+TCGA-BQ-7058	Chemotherapy	Temsirolimus		302	302	NO
+TCGA-BQ-7058	Targeted Molecular therapy	Sorafenib		216	295	NO
+TCGA-BQ-7058	Targeted Molecular therapy	Sorafenib		203	216	NO
+TCGA-G7-6789	Immunotherapy	intron a		60	74	NO
+TCGA-G7-6793	Chemotherapy	sutent		260	287	NO
+TCGA-G7-6793	Chemotherapy	temsirolimus		57	258	NO
+TCGA-G7-7501	Chemotherapy	sutent	Clinical Progressive Disease	110	506	NO
+TCGA-G7-A8LD	Targeted Molecular therapy	Afinitor	Stable Disease	424	446	NO
+TCGA-G7-A8LD	Targeted Molecular therapy	Sutent	Clinical Progressive Disease	340	417	NO
+TCGA-GL-7966	Chemotherapy	Sunitinib		96	96	NO
+TCGA-IA-A83W	Chemotherapy	Rituxan	Complete Response	496	601	NO
+TCGA-IA-A83W	Chemotherapy	Vincristine	Complete Response	496	601	NO
+TCGA-IA-A83W	Chemotherapy	Adriamycin	Complete Response	496	601	NO
+TCGA-IA-A83W	Chemotherapy	Cytoxan	Complete Response	496	601	NO
+TCGA-MH-A855	Chemotherapy	carboplatin	Partial Response	86	205	NO
+TCGA-MH-A855	Chemotherapy	alimta	Partial Response	86	205	NO
+TCGA-SX-A7SM	Targeted Molecular therapy	pazopanib	Partial Response	66	362	NO

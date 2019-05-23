@@ -1,0 +1,478 @@
+	bcr_patient_barcode	therapy_types	drug_name	measure_of_response	days_to_drug_therapy_start	days_to_drug_therapy_end	therapy_ongoing
+1	TCGA-2E-A9G8	Chemotherapy	Taxol	Complete Response	488	580	NO
+3	TCGA-2E-A9G8	Chemotherapy	Carboplatin	Complete Response	488	610	NO
+5	TCGA-5B-A90C	Chemotherapy	Carboplatin		682	883	NO
+6	TCGA-5B-A90C	Chemotherapy	Paclitaxel		682	883	NO
+7	TCGA-5S-A9Q8	Chemotherapy	Carboplatin	Complete Response	33	138	NO
+8	TCGA-5S-A9Q8	Chemotherapy	Docetaxel	Complete Response	33	138	NO
+9	TCGA-A5-A0G3	Chemotherapy	Carboplatin		487	596	NO
+10	TCGA-A5-A0G3	Chemotherapy	Taxotere		487	596	NO
+11	TCGA-A5-A0GA	Chemotherapy	Taxol		67	172	NO
+12	TCGA-A5-A0GA	Chemotherapy	Doxil		300	402	NO
+13	TCGA-A5-A0GA	Chemotherapy	Carboplatin		67	172	NO
+14	TCGA-A5-A0GJ	Chemotherapy	Carboplatin		49	112	NO
+15	TCGA-A5-A0GJ	Chemotherapy	Taxol		49	112	NO
+16	TCGA-A5-A0R6	Chemotherapy	Taxol		82	183	NO
+17	TCGA-A5-A0VQ	Chemotherapy	Carboplatin		68	89	NO
+18	TCGA-A5-A0VQ	Chemotherapy	Taxol		68	89	NO
+19	TCGA-A5-A1OG	Chemotherapy	Taxol		48	152	NO
+20	TCGA-A5-A1OG	Chemotherapy	Carboplatin		48	48	NO
+21	TCGA-A5-A1OG	Chemotherapy	Carboplatin		69	152	NO
+22	TCGA-A5-A1OH	Chemotherapy	Carboplatin	Complete Response	251	321	NO
+23	TCGA-A5-A1OK	Chemotherapy	Taxol		63	170	NO
+25	TCGA-A5-A1OK	Chemotherapy	Carboplatin		63	170	NO
+27	TCGA-A5-A2K2	Chemotherapy	Carboplatin		138	138	NO
+28	TCGA-A5-A2K2	Chemotherapy	Taxol		54	180	NO
+29	TCGA-A5-A2K2	Chemotherapy	Carboplatin		54	180	NO
+30	TCGA-A5-A2K3	Chemotherapy	Carboplatin		58	161	NO
+31	TCGA-A5-A2K3	Chemotherapy	Taxol		58	161	NO
+32	TCGA-A5-A2K4	Chemotherapy	Taxol		611	821	NO
+33	TCGA-A5-A2K4	Chemotherapy	Carboplatin		23	153	NO
+34	TCGA-A5-A2K4	Chemotherapy	Carboplatin		555	561	NO
+35	TCGA-A5-A2K4	Chemotherapy	Taxol		23	153	NO
+36	TCGA-A5-A2K4	Chemotherapy	Doxil		555	561	NO
+37	TCGA-A5-A2K7	Chemotherapy	Taxol		94	94	NO
+38	TCGA-A5-A2K7	Chemotherapy	Carboplatin		94	94	NO
+39	TCGA-A5-A3LO	Chemotherapy	Carboplatin		71	113	NO
+40	TCGA-A5-A3LO	Chemotherapy	Taxol		71	113	NO
+41	TCGA-A5-A3LP	Chemotherapy	Carboplatin	Complete Response	106	166	NO
+42	TCGA-A5-A7WK	Chemotherapy	Carboplatin	Complete Response	84	205	NO
+43	TCGA-A5-A7WK	Chemotherapy	Doxil	Clinical Progressive Disease	357	443	NO
+44	TCGA-A5-A7WK	Chemotherapy	Paclitaxol		506	NA	YES
+45	TCGA-A5-AB3J	Chemotherapy	Carboplatin	Complete Response	63	112	NO
+47	TCGA-A5-AB3J	Chemotherapy	Paclitaxel	Complete Response	63	111	NO
+49	TCGA-AJ-A23M	Chemotherapy		Stable Disease	92	NA	NO
+50	TCGA-AJ-A23N	Chemotherapy	Carboplatin	Clinical Progressive Disease	89	NA	NO
+51	TCGA-AJ-A23N	Chemotherapy	Taxol	Clinical Progressive Disease	89	NA	NO
+52	TCGA-AJ-A2QK	Chemotherapy	Carboplatin		643	NA	YES
+53	TCGA-AJ-A2QK	Chemotherapy	Taxol		653	NA	YES
+54	TCGA-AJ-A2QL	Chemotherapy	Cisplatin	Complete Response	110	NA	NO
+55	TCGA-AJ-A2QL	Chemotherapy	Adriamycin	Complete Response	110	NA	NO
+56	TCGA-AJ-A2QL	Chemotherapy	Paclitaxel	Complete Response	110	NA	NO
+57	TCGA-AJ-A2QM	Chemotherapy	Carboplatin	Complete Response	46	NA	NO
+59	TCGA-AJ-A2QM	Chemotherapy	Taxol	Complete Response	46	NA	NO
+61	TCGA-AJ-A3BD	Chemotherapy	Carboplatin	Complete Response	37	125	NO
+62	TCGA-AJ-A3BD	Chemotherapy	Taxol	Complete Response	37	125	NO
+63	TCGA-AJ-A3BF	Chemotherapy	Taxol	Complete Response	75	251	NO
+64	TCGA-AJ-A3BF	Chemotherapy	Carboplatin	Complete Response	75	251	NO
+65	TCGA-AJ-A3BG	Chemotherapy	Carboplatin	Complete Response	67	247	NO
+67	TCGA-AJ-A3BG	Chemotherapy	Taxotere	Complete Response	67	247	NO
+69	TCGA-AJ-A3BG	Chemotherapy	Carboplatin		550	NA	YES
+71	TCGA-AJ-A3BG	Chemotherapy	Taxol		550	NA	YES
+73	TCGA-AJ-A3BI	Chemotherapy	Paclitaxel	Complete Response	399	NA	NO
+74	TCGA-AJ-A3BI	Chemotherapy	Carboplatin	Complete Response	399	NA	NO
+75	TCGA-AJ-A3EK	Chemotherapy	Carboplatin	Complete Response	126	166	NO
+76	TCGA-AJ-A3EK	Chemotherapy	Taxol	Complete Response	126	166	NO
+77	TCGA-AJ-A3I9	Chemotherapy	Carboplatin	Clinical Progressive Disease	379	456	NO
+78	TCGA-AJ-A3I9	Chemotherapy	Taxol	Clinical Progressive Disease	379	456	NO
+79	TCGA-AJ-A3NF	Chemotherapy	Chemo, NOS	Complete Response	192	253	NO
+80	TCGA-AJ-A3NH	Chemotherapy	Carboplatin	Complete Response	1	NA	NO
+82	TCGA-AJ-A3NH	Chemotherapy	Taxol	Complete Response	1	NA	NO
+84	TCGA-AJ-A3OJ	Chemotherapy	Carboplatin	Complete Response	81	230	NO
+85	TCGA-AJ-A3OJ	Chemotherapy	Taxol	Complete Response	81	230	NO
+86	TCGA-AJ-A3OK	Chemotherapy	Carboplatin	Complete Response	71	134	NO
+87	TCGA-AJ-A3OK	Chemotherapy	Adriamycin	Complete Response	71	134	NO
+88	TCGA-AJ-A3OK	Chemotherapy	Taxotere	Complete Response	71	71	NO
+89	TCGA-AJ-A3OL	Chemotherapy	Carboplatin	Complete Response	96	186	NO
+90	TCGA-AJ-A3OL	Chemotherapy	Taxol	Complete Response	96	186	NO
+91	TCGA-AJ-A3QS	Chemotherapy	Cisplatin	Complete Response	114	174	NO
+92	TCGA-AJ-A3QS	Chemotherapy	Carboplatin	Complete Response	NA	238	NO
+93	TCGA-AJ-A3QS	Chemotherapy	Taxol	Complete Response	NA	238	NO
+94	TCGA-AJ-A4ZG	Chemotherapy	Cisplatin	Complete Response	43	155	NO
+95	TCGA-AJ-A4ZG	Chemotherapy	Adriamycin	Complete Response	43	155	NO
+96	TCGA-AJ-A4ZG	Chemotherapy	Paclitaxel	Complete Response	43	155	NO
+97	TCGA-AP-A052	Chemotherapy	Carboplatin		406	462	NO
+98	TCGA-AP-A052	Chemotherapy	Carboplatin		70	187	NO
+99	TCGA-AP-A052	Chemotherapy	Gemcitabine		406	469	NO
+100	TCGA-AP-A052	Chemotherapy	Paclitaxel		70	187	NO
+101	TCGA-AP-A054	Chemotherapy	Carboplatin		64	169	NO
+102	TCGA-AP-A054	Chemotherapy	Paclitaxel		64	169	NO
+103	TCGA-AP-A05A	Hormone Therapy	Anastrozole		94	NA	NO
+104	TCGA-AP-A05D	Chemotherapy	Cisplatin		100	127	NO
+106	TCGA-AP-A05D	Chemotherapy	Carboplatin		194	259	NO
+108	TCGA-AP-A05D	Chemotherapy	Paclitaxel		194	259	NO
+110	TCGA-AP-A05H	Chemotherapy	Carboplatin		65	175	NO
+111	TCGA-AP-A05H	Chemotherapy	Paclitaxel		65	175	NO
+112	TCGA-AP-A05J	Chemotherapy	Carboplatin		84	189	NO
+113	TCGA-AP-A05J	Chemotherapy	Paclitaxel		84	189	NO
+114	TCGA-AP-A05O	Chemotherapy	Paclitaxel		118	146	NO
+115	TCGA-AP-A05O	Chemotherapy	Carboplatin		97	146	NO
+116	TCGA-AP-A0LH	Chemotherapy	PACLITAXEL		82	197	NO
+117	TCGA-AP-A0LH	Chemotherapy	IXABEPILONE		324	446	NO
+118	TCGA-AP-A0LH	Chemotherapy	CARBOPLATIN		82	197	NO
+119	TCGA-AP-A0LH	Chemotherapy	GEMCITABINE		327	446	NO
+120	TCGA-AP-A0LI	Chemotherapy	PACLITAXEL		185	300	NO
+121	TCGA-AP-A0LI	Chemotherapy	CARBOPLATIN		185	300	NO
+122	TCGA-AP-A0LL	Hormone Therapy	TAMOXIFEN		829	1133	NO
+123	TCGA-AP-A0LL	Hormone Therapy	MEGACE		829	1133	NO
+124	TCGA-AP-A0LM	Chemotherapy	Cisplatin		117	145	NO
+125	TCGA-AP-A0LP	Hormone Therapy	MEGACE		57	391	NO
+126	TCGA-AP-A1DP	Chemotherapy	Paclitaxel		903	987	NO
+127	TCGA-AP-A1DP	Chemotherapy	Carboplatin		903	987	NO
+128	TCGA-AP-A1DQ	Chemotherapy	Carboplatin		150	150	NO
+129	TCGA-AP-A1DQ	Hormone Therapy	Anastrozole		924	NA	YES
+130	TCGA-AP-A1DR	Chemotherapy	Paclitaxel		186	249	NO
+131	TCGA-AP-A1DR	Chemotherapy	Carboplatin		186	249	NO
+132	TCGA-AP-A1DR	Chemotherapy	Cisplatin		116	144	NO
+133	TCGA-AP-A1E0	Chemotherapy	Paclitaxel		75	183	NO
+134	TCGA-AP-A1E0	Chemotherapy	Carboplatin		75	183	NO
+135	TCGA-AP-A1E3	Chemotherapy	Doxorubicin		96	320	NO
+136	TCGA-AP-A1E3	Chemotherapy	Paclitaxel		97	321	NO
+137	TCGA-AP-A1E4	Hormone Therapy	Zometa		186	344	NO
+138	TCGA-AP-A1E4	Chemotherapy	Carboplatin		204	309	NO
+139	TCGA-AP-A1E4	Chemotherapy	Paclitaxel		204	309	NO
+140	TCGA-AP-A3K1	Chemotherapy	Carboplatin	Stable Disease	74	94	NO
+141	TCGA-AP-A3K1	Chemotherapy	Paclitaxel	Stable Disease	74	94	NO
+142	TCGA-AP-A3K1	Chemotherapy	Paclitaxel	Clinical Progressive Disease	144	186	NO
+143	TCGA-AP-A3K1	Chemotherapy	Liposomal doxorubicin	Clinical Progressive Disease	218	267	NO
+144	TCGA-AP-A3K1	Chemotherapy	Carboplatin	Clinical Progressive Disease	218	267	NO
+145	TCGA-AP-A5FX	Chemotherapy	Carboplatin	Complete Response	84	190	NO
+146	TCGA-AP-A5FX	Chemotherapy	Paclitaxel	Complete Response	84	190	NO
+147	TCGA-AX-A05S	Chemotherapy	Carboplatin & Paclitaxel		NA	NA	NO
+148	TCGA-AX-A05Z	Chemotherapy	Adriamycin		61	104	NO
+149	TCGA-AX-A05Z	Chemotherapy	Carboplatin		152	152	NO
+150	TCGA-AX-A05Z	Chemotherapy	cisplatin		61	104	YES
+151	TCGA-AX-A05Z	Chemotherapy	taxol		61	104	YES
+152	TCGA-AX-A05Z	Chemotherapy	neulasta		61	104	YES
+153	TCGA-AX-A05Z	Chemotherapy	paclitaxel		152	152	YES
+154	TCGA-AX-A060	Chemotherapy	Cisplatin		NA	NA	NO
+155	TCGA-AX-A06D	Targeted Molecular therapy	VEGF-TRAP		293	293	NO
+157	TCGA-AX-A06D	Chemotherapy	Carboplatin & Paclitaxel		53	NA	NO
+159	TCGA-AX-A06F	Chemotherapy	Carboplatin		76	175	NO
+160	TCGA-AX-A06F	Chemotherapy	Paclitaxel		76	175	NO
+161	TCGA-AX-A06H	Chemotherapy	Paclitaxel		64	190	NO
+162	TCGA-AX-A06H	Chemotherapy	Carboplatin		64	190	NO
+163	TCGA-AX-A06J	Chemotherapy	Carboplatin & Paclitaxel		107	149	NO
+164	TCGA-AX-A0IS	Chemotherapy	Doxorubicin		583	NA	NO
+165	TCGA-AX-A0IS		Gemzar		NA	NA	NO
+166	TCGA-AX-A0IS	Other, specify in notesInvestigational New Drug	Tivozanib		1065	NA	
+167	TCGA-AX-A0IS	Chemotherapy	Paclitaxel		NA	NA	NO
+168	TCGA-AX-A0IS	ChemotherapyTargeted Molecular therapy	Brivanib		513	NA	NO
+169	TCGA-AX-A0IS	Chemotherapy	carboplatin		13	NA	NO
+170	TCGA-AX-A0IU	Chemotherapy	Carboplatin		64	NA	NO
+171	TCGA-AX-A0IU	Chemotherapy	paclitaxel		64	NA	NO
+172	TCGA-AX-A0IW	Chemotherapy	Carboplatin & Paclitaxel		NA	NA	NO
+173	TCGA-AX-A1C5	Chemotherapy	Carboplatin		NA	NA	
+174	TCGA-AX-A1C5	Chemotherapy	paclitaxel		NA	NA	NO
+175	TCGA-AX-A1C7	Chemotherapy	Topotecan		434	NA	
+176	TCGA-AX-A1C7	Chemotherapy	Carboplatin		NA	NA	NO
+177	TCGA-AX-A1C7	Chemotherapy	paclitaxel		NA	NA	NO
+178	TCGA-AX-A1C8	Chemotherapy	Carboplatin		NA	NA	NO
+179	TCGA-AX-A1C8	Chemotherapy	paclitaxel		NA	NA	NO
+180	TCGA-AX-A1CA	Chemotherapy	Taxotere		NA	NA	NO
+181	TCGA-AX-A1CA	Chemotherapy	Carboplatin		114	274	NO
+182	TCGA-AX-A1CA	Chemotherapy	paclitaxel		114	274	NO
+183	TCGA-AX-A1CA	Chemotherapy	carboplatin		NA	NA	NO
+184	TCGA-AX-A1CC	Chemotherapy	Carboplatin		210	267	NO
+185	TCGA-AX-A1CC	Chemotherapy	paclitaxel		210	267	NO
+186	TCGA-AX-A1CE	Chemotherapy	Paclitaxel		NA	NA	NO
+187	TCGA-AX-A1CE	Chemotherapy	Carboplatin		NA	NA	NO
+188	TCGA-AX-A1CF	Hormone Therapy	Tamoxifen & Megace		1037	NA	NO
+189	TCGA-AX-A1CF	Chemotherapy	Paclitaxel		2052	NA	
+190	TCGA-AX-A1CF	Chemotherapy	Adriamycin		1799	NA	NO
+191	TCGA-AX-A1CK	Hormone Therapy	Megace		NA	NA	
+192	TCGA-AX-A1CN	Chemotherapy	Carboplatin		NA	NA	NO
+193	TCGA-AX-A1CN	Chemotherapy	paclitaxel		NA	NA	NO
+194	TCGA-AX-A1CR	Chemotherapy	Carboplatin		92	208	NO
+196	TCGA-AX-A1CR		Doxil		376	463	NO
+198	TCGA-AX-A1CR	Chemotherapy	paclitaxel		92	207	NO
+200	TCGA-AX-A2H5	Chemotherapy	Carboplatin	Complete Response	87	NA	NO
+201	TCGA-AX-A2H5	Chemotherapy	Paclitaxel	Complete Response	87	NA	NO
+202	TCGA-AX-A2HC	Chemotherapy	Paclitaxel	Complete Response	121	NA	NO
+203	TCGA-AX-A2HC	Chemotherapy	Adriamycin		974	NA	NO
+204	TCGA-AX-A2HF	Chemotherapy	Carboplatin	Complete Response	35	NA	NO
+206	TCGA-AX-A2HF	Chemotherapy	Paclitaxel	Complete Response	35	NA	NO
+208	TCGA-AX-A2IO		Carboplatin, Taxol		84	107	NO
+209	TCGA-AX-A3FX		Carboplatin/Paclitaxel/Bevacizumab		939	NA	NO
+210	TCGA-AX-A3FX		Doxil & Carboplatin		1255	1336	NO
+211	TCGA-AX-A3G9	Chemotherapy	Carboplatin and Paclitaxel		125	NA	NO
+212	TCGA-AX-A3GB	Chemotherapy	Carboplatin and Paclitaxel		41	NA	NO
+213	TCGA-B5-A0JN	Chemotherapy	Paclitaxel		48	153	NO
+215	TCGA-B5-A0JN	Chemotherapy	Carboplatin		48	153	NO
+217	TCGA-B5-A0JT	Hormone Therapy	Megace		45	221	NO
+218	TCGA-B5-A0JY	Chemotherapy	Doxorubicin		105	205	NO
+219	TCGA-B5-A0JY	Chemotherapy	Taxol		105	205	NO
+220	TCGA-B5-A0JY	Chemotherapy	Cisplatin		105	205	NO
+221	TCGA-B5-A0JZ	Chemotherapy	Carboplatin		157	325	NO
+222	TCGA-B5-A0JZ	Chemotherapy	Paclitaxel		157	325	NO
+223	TCGA-B5-A0K2	Hormone Therapy	Megace		55	431	NO
+224	TCGA-B5-A0K3	Chemotherapy	Carboplatin		301	392	NO
+225	TCGA-B5-A0K3	Chemotherapy	Doxorubicin HCl Liposomal		546	602	NO
+226	TCGA-B5-A0K3	Chemotherapy	Carboplatin		630	726	NO
+227	TCGA-B5-A0K3	Chemotherapy	Topotecan HCl		756	798	NO
+228	TCGA-B5-A0K3	Chemotherapy	Paclitaxel		301	392	NO
+229	TCGA-B5-A0K4	Chemotherapy	Carboplatin		62	165	NO
+230	TCGA-B5-A0K4	Chemotherapy	Paclitaxel		62	165	NO
+231	TCGA-B5-A0K8	Chemotherapy	Carboplatin		74	200	NO
+232	TCGA-B5-A0K8	Chemotherapy	Paclitaxel		74	200	NO
+233	TCGA-B5-A0KB	Chemotherapy	Paclitaxel		62	104	NO
+235	TCGA-B5-A0KB	Chemotherapy	Carboplatin		62	104	NO
+237	TCGA-B5-A0KB	Chemotherapy	carboplatin		699	NA	YES
+239	TCGA-B5-A0KB	Chemotherapy	Paclitaxel		699	NA	YES
+241	TCGA-B5-A11F	Hormone Therapy	Megace		1749	3411	NO
+242	TCGA-B5-A11H	Hormone Therapy	Megace		33	904	NO
+243	TCGA-B5-A11I	Hormone Therapy	Megace		714	NA	YES
+244	TCGA-B5-A11I	Hormone Therapy	Tamoxifen		742	NA	YES
+245	TCGA-B5-A11I	Chemotherapy	Paclitaxel		63	112	NO
+246	TCGA-B5-A11I	Chemotherapy	Carboplatin		63	256	NO
+247	TCGA-B5-A11Q	Hormone Therapy	Megace		118	529	NO
+248	TCGA-B5-A11R	Chemotherapy	Paclitaxel		116	214	NO
+249	TCGA-B5-A11R	Chemotherapy	Carboplatin		116	214	NO
+250	TCGA-B5-A11X	Targeted Molecular therapy	Temsirolimus		86	258	NO
+251	TCGA-B5-A11X	Chemotherapy	Paclitaxel		65	176	NO
+252	TCGA-B5-A11X	Chemotherapy	Carboplatin		65	176	NO
+253	TCGA-B5-A11X	Chemotherapy	Doxorubicin		412	NA	YES
+254	TCGA-B5-A1MS	Chemotherapy	Paclitaxel		2419	2566	NO
+255	TCGA-B5-A1MS	Chemotherapy	Carboplatin		2419	2566	NO
+256	TCGA-B5-A1MS	Targeted Molecular therapy	Bevacizumab		2419	2566	NO
+257	TCGA-B5-A1MS	Chemotherapy	Ixabepilone		2825	2830	NO
+258	TCGA-B5-A1MS	Chemotherapy	Gemcitabine	Clinical Progressive Disease	2916	2985	NO
+259	TCGA-B5-A1MS	Chemotherapy	Topotecan	Clinical Progressive Disease	3041	3090	NO
+260	TCGA-B5-A1MU	Hormone Therapy	Tamoxifen		1399	1550	NO
+261	TCGA-B5-A1MX	Hormone Therapy	Megace		83	NA	YES
+262	TCGA-B5-A1MY	Chemotherapy	Carboplatin		106	218	NO
+263	TCGA-B5-A1MY	Chemotherapy	Paclitaxel		106	218	NO
+264	TCGA-B5-A1N2	Chemotherapy	Paclitaxel		85	239	NO
+265	TCGA-B5-A1N2	Chemotherapy	Carboplatin		85	239	NO
+266	TCGA-B5-A3FD	Chemotherapy	Carboplatin		561	677	NO
+267	TCGA-B5-A3FD	Chemotherapy	Paclitaxel		561	677	NO
+268	TCGA-B5-A3FD	Targeted Molecular therapy	Bevacizumab		561	NA	YES
+269	TCGA-B5-A3S1	Chemotherapy	Paclitaxel		51	NA	YES
+270	TCGA-B5-A3S1	Chemotherapy	Carboplatin		51	NA	YES
+271	TCGA-B5-A5OC		Cisplatin		111	111	NO
+272	TCGA-B5-A5OD	Chemotherapy	Carboplatin		63	241	NO
+273	TCGA-B5-A5OD	Chemotherapy	Paclitaxel		63	241	NO
+274	TCGA-B5-A5OE		Carboplatin		69	196	NO
+275	TCGA-B5-A5OE		Ixabepilone		100	196	NO
+276	TCGA-B5-A5OE		Bevacizumab		69	NA	YES
+277	TCGA-BG-A0M4	Chemotherapy	CARBOPLATIN		95	170	NO
+278	TCGA-BG-A0M4	Chemotherapy	TAXOL		95	170	NO
+279	TCGA-BG-A0M6	Chemotherapy	PACLITAXEL		45	167	NO
+281	TCGA-BG-A0M6	Chemotherapy	CARBOPLATIN		45	167	NO
+283	TCGA-BG-A0M7	Chemotherapy	CISPLATIN		132	132	NO
+284	TCGA-BG-A0M7	Chemotherapy	TAXOTERE		70	111	NO
+285	TCGA-BG-A0M7	Chemotherapy	CARBOPLATIN		65	155	NO
+286	TCGA-BG-A0M7	Chemotherapy	TAXOL		65	65	NO
+287	TCGA-BG-A0MS	Chemotherapy	CARBOPLATIN		48	153	NO
+289	TCGA-BG-A0MS	Chemotherapy	PACLITAXEL		48	153	NO
+291	TCGA-BG-A0MU	Hormone Therapy	MEGACE		232	NA	YES
+292	TCGA-BG-A0VT	Chemotherapy	Carboplatin	Complete Response	79	208	NO
+294	TCGA-BG-A0VT	Chemotherapy	Taxol	Complete Response	79	208	NO
+296	TCGA-BG-A0VZ	Chemotherapy	Cisplatin	Complete Response	103	175	NO
+297	TCGA-BG-A0VZ	Chemotherapy	Taxol	Complete Response	114	145	NO
+298	TCGA-BG-A0VZ	Chemotherapy	Adriamycin	Complete Response	103	165	NO
+299	TCGA-BG-A2AE	Chemotherapy	Carboplatin	Complete Response	99	209	NO
+300	TCGA-BG-A2AE	Chemotherapy	Taxol	Complete Response	99	120	NO
+301	TCGA-BG-A2AE	Chemotherapy	Abraxane	Complete Response	120	209	NO
+302	TCGA-BG-A2L7	Chemotherapy	Carboplatin	Complete Response	85	189	NO
+303	TCGA-BG-A3PP	Chemotherapy	Taxol	Complete Response	74	186	NO
+304	TCGA-BG-A3PP	Chemotherapy	Carboplatin	Complete Response	74	186	NO
+305	TCGA-BK-A0CA	Chemotherapy	Taxotere		93	247	NO
+306	TCGA-BK-A0CA	Chemotherapy	Carboplatin		93	247	NO
+307	TCGA-BK-A0CB	Chemotherapy	Carboplatin		37	160	NO
+308	TCGA-BK-A0CB	Chemotherapy	Taxotere		37	160	NO
+309	TCGA-BK-A0CC	Chemotherapy	Taxol		59	289	NO
+310	TCGA-BK-A0CC	Chemotherapy	Carboplatin		59	289	NO
+311	TCGA-BK-A26L	Chemotherapy	Carboplatin		70	252	NO
+312	TCGA-BK-A26L	Chemotherapy	Taxol		70	252	NO
+313	TCGA-BS-A0T9	Hormone Therapy	fulvestrant		950	979	NO
+314	TCGA-BS-A0T9	Chemotherapy	cisplatin		1072	1243	NO
+315	TCGA-BS-A0T9	Chemotherapy	carboplatin		1309	1379	NO
+316	TCGA-BS-A0T9	Chemotherapy	taxol		1309	1379	NO
+317	TCGA-BS-A0T9	Chemotherapy	adriamycin		18	166	NO
+318	TCGA-BS-A0T9	Chemotherapy	gemzar		1163	1250	NO
+319	TCGA-BS-A0T9	Chemotherapy	taxol		18	166	NO
+320	TCGA-BS-A0T9	Chemotherapy	cisplatin		18	166	NO
+321	TCGA-BS-A0T9	Chemotherapy	gemcitabine		1072	1243	NO
+322	TCGA-BS-A0T9	Chemotherapy	avastin		1309	1379	NO
+323	TCGA-BS-A0T9	Chemotherapy	cisplatin		1156	1243	NO
+324	TCGA-BS-A0TA	Chemotherapy	Taxol		29	134	NO
+325	TCGA-BS-A0TA	Chemotherapy	Carboplatin		29	134	NO
+326	TCGA-BS-A0TA	Chemotherapy	Cisplatin		455	554	
+327	TCGA-BS-A0TA	Chemotherapy	Adriamycin		455	561	NO
+328	TCGA-BS-A0TE	Chemotherapy	Adriamycin		28	75	NO
+329	TCGA-BS-A0TE	Chemotherapy	Taxol		93	121	NO
+330	TCGA-BS-A0TE	Chemotherapy	Taxol		28	75	NO
+331	TCGA-BS-A0TE	Chemotherapy	carboplatin		93	121	NO
+332	TCGA-BS-A0TE	Chemotherapy	Topotecan		104	135	NO
+333	TCGA-BS-A0U8	Chemotherapy	doxorubicin		105	210	NO
+334	TCGA-BS-A0U8	Chemotherapy	cisplatin		105	210	NO
+335	TCGA-BS-A0UM	Chemotherapy	Adriamycin		1530	1658	NO
+336	TCGA-BS-A0UM	Chemotherapy	Carboplatin		1890	2050	NO
+337	TCGA-BS-A0UM	Chemotherapy	cisplatin		1530	1658	NO
+338	TCGA-BS-A0UM	Chemotherapy	Taxol		1890	2050	NO
+339	TCGA-BS-A0UM	Chemotherapy	Taxol		1552	1659	NO
+340	TCGA-D1-A0ZP	Chemotherapy	Paclitaxel		26	134	NO
+341	TCGA-D1-A0ZP	Chemotherapy	Doxorubicin		818	861	NO
+342	TCGA-D1-A0ZP	Chemotherapy	Paclitaxel		818	861	YES
+343	TCGA-D1-A0ZP	Chemotherapy	Carboplatin		26	134	NO
+344	TCGA-D1-A0ZU	Chemotherapy	Carboplatin		32	146	NO
+345	TCGA-D1-A0ZU	Chemotherapy	Paclitaxel		32	146	NO
+346	TCGA-D1-A0ZZ	Chemotherapy	Paclitaxel		61	104	NO
+347	TCGA-D1-A0ZZ	Chemotherapy	Carboplatin		61	104	NO
+348	TCGA-D1-A15V	Chemotherapy	Taxol		42	126	NO
+349	TCGA-D1-A15V	Chemotherapy	Carboplatin		42	132	NO
+350	TCGA-D1-A15W	Chemotherapy	Taxol		70	112	NO
+351	TCGA-D1-A15W	Chemotherapy	Carboplatin		70	112	NO
+352	TCGA-D1-A163	Chemotherapy	Carboplatin		351	498	NO
+353	TCGA-D1-A163	Chemotherapy	Taxol		343	498	NO
+354	TCGA-D1-A169	Chemotherapy	Carboplatin		31	142	NO
+355	TCGA-D1-A169	Chemotherapy	Carboplatin		533	554	NO
+356	TCGA-D1-A169	Chemotherapy	Taxol		31	142	NO
+357	TCGA-D1-A169	Chemotherapy	Taxol		533	1135	NO
+358	TCGA-D1-A16D	Chemotherapy	Taxol		62	232	NO
+359	TCGA-D1-A16D	Chemotherapy	Carboplatin		62	232	NO
+360	TCGA-D1-A16G	Chemotherapy	Doxorubicin		794	822	NO
+361	TCGA-D1-A16G	Chemotherapy	Taxol		67	67	NO
+362	TCGA-D1-A16G	Chemotherapy	Taxol		91	185	NO
+363	TCGA-D1-A16G	Chemotherapy	Taxol		651	756	NO
+364	TCGA-D1-A16G	Chemotherapy	Carboplatin		67	67	NO
+365	TCGA-D1-A16G	Chemotherapy	Carboplatin		91	185	NO
+366	TCGA-D1-A16G	Chemotherapy	Carboplatin		651	756	NO
+367	TCGA-D1-A16J	Chemotherapy	Carboplatin		89	195	NO
+368	TCGA-D1-A16J	Chemotherapy	Taxol		89	195	NO
+369	TCGA-D1-A16N	Chemotherapy	Carboplatin		49	49	NO
+370	TCGA-D1-A16N	Chemotherapy	Taxol		49	49	NO
+371	TCGA-D1-A175	Chemotherapy	Paclitaxel		74	123	NO
+372	TCGA-D1-A175	Chemotherapy	Carboplatin		74	123	NO
+373	TCGA-D1-A179	Chemotherapy	Paclitaxel		55	160	NO
+374	TCGA-D1-A179	Chemotherapy	Carboplatin		55	160	NO
+375	TCGA-D1-A17D	Chemotherapy	Carboplatin		77	133	NO
+376	TCGA-D1-A17D	Chemotherapy	Paclitaxel		77	133	NO
+377	TCGA-D1-A17U	Chemotherapy	Carboplatin		167	287	NO
+378	TCGA-D1-A17U	Chemotherapy	Paclitaxel		167	287	NO
+379	TCGA-D1-A1NU	Chemotherapy	Carboplatin		51	98	NO
+380	TCGA-D1-A1NU	Chemotherapy	Taxol		51	98	NO
+381	TCGA-D1-A1NX	Chemotherapy	Carboplatin		56	159	NO
+382	TCGA-D1-A1NX	Chemotherapy	Taxol		56	159	NO
+383	TCGA-D1-A1NY	Chemotherapy	Carboplatin		37	143	NO
+384	TCGA-D1-A1NY	Chemotherapy	Paclitaxel		37	143	NO
+385	TCGA-D1-A3DA	Chemotherapy	Carboplatin	Complete Response	50	197	NO
+386	TCGA-D1-A3DA	Chemotherapy	Paclitaxel	Complete Response	56	197	NO
+387	TCGA-D1-A3JQ	Chemotherapy	Cisplatin	Complete Response	67	173	NO
+388	TCGA-D1-A3JQ	Chemotherapy	Doxorubicin	Complete Response	67	173	NO
+389	TCGA-D1-A3JQ	Chemotherapy	Paclitaxel	Complete Response	68	174	NO
+390	TCGA-DF-A2KY	Chemotherapy	Carboplatin		79	79	NO
+391	TCGA-DF-A2KY	Chemotherapy	Taxol		79	79	NO
+392	TCGA-DF-A2L0	Chemotherapy	Paclitaxel		98	201	NO
+393	TCGA-DF-A2L0	Chemotherapy	Carboplatin		98	201	NO
+394	TCGA-DF-A2L0		Clinical Trial-Study Agent		565	607	NO
+395	TCGA-DI-A1BU	Chemotherapy	Paclitaxel		131	250	NO
+396	TCGA-DI-A1BU	Chemotherapy	Carboplatin		131	250	NO
+397	TCGA-DI-A1NN	Chemotherapy	Carboplatin		44	147	NO
+398	TCGA-DI-A1NN	Chemotherapy	Paclitaxel		44	147	NO
+399	TCGA-DI-A1NN	Chemotherapy	AZD6244		1045	1121	NO
+400	TCGA-DI-A2QY	Chemotherapy	Paclitaxel	Complete Response	92	239	NO
+401	TCGA-E6-A1LZ	Chemotherapy	carboplatin		57	162	NO
+402	TCGA-E6-A1LZ	Chemotherapy	taxol		57	162	NO
+403	TCGA-E6-A1M0	Chemotherapy	carboplatin		43	148	NO
+404	TCGA-E6-A1M0	Chemotherapy	taxol		43	148	NO
+405	TCGA-E6-A8L9	Chemotherapy	Paclitaxel	Complete Response	75	173	NO
+407	TCGA-E6-A8L9	Chemotherapy	Carboplatin	Complete Response	68	173	NO
+409	TCGA-EC-A1QX	Chemotherapy	Cyclophosphamide		61	220	NO
+410	TCGA-EC-A1QX	Chemotherapy	Doxorubicin		61	220	NO
+411	TCGA-EC-A1QX	Chemotherapy	Cisplatin		61	220	NO
+412	TCGA-EC-A24G	Chemotherapy	Doxorubicin		47	257	NO
+413	TCGA-EC-A24G	Chemotherapy	Carboplatin		47	257	NO
+414	TCGA-EC-A24G	Chemotherapy	Cyclophosphamide		47	257	NO
+417	TCGA-EO-A1Y5	Chemotherapy	Carboplatin	Complete Response	NA	NA	
+418	TCGA-EO-A1Y5	Chemotherapy	Taxol	Complete Response	NA	NA	
+419	TCGA-EO-A1Y7	Chemotherapy	PORTEC3-radiation alone	Stable Disease	911	1031	NO
+420	TCGA-EO-A22X	Chemotherapy	Carboplatin	Complete Response	NA	205	NO
+421	TCGA-EO-A22X	Chemotherapy	Taxol	Complete Response	NA	205	NO
+422	TCGA-EO-A2CG	Chemotherapy	Carboplatin	Complete Response	114	243	NO
+423	TCGA-EO-A2CG	Chemotherapy	Taxol	Complete Response	114	243	NO
+424	TCGA-EO-A2CH	Chemotherapy	Carboplatin	Clinical Progressive Disease	98	276	NO
+425	TCGA-EO-A2CH	Chemotherapy	taxol	Clinical Progressive Disease	98	190	NO
+426	TCGA-EO-A2CH	Chemotherapy	Doxorubicin	Clinical Progressive Disease	312	402	NO
+427	TCGA-EO-A3AV	Chemotherapy	Carboplatin	Complete Response	96	216	NO
+428	TCGA-EO-A3AV	Chemotherapy	taxol	Complete Response	96	216	NO
+429	TCGA-EO-A3B1	Chemotherapy	Carboplatin	Complete Response	64	247	NO
+430	TCGA-EO-A3B1	Chemotherapy	carboplatin	Complete Response	63	234	NO
+431	TCGA-EO-A3B1	Chemotherapy	Taxol	Complete Response	63	234	NO
+432	TCGA-EO-A3KU		Carboplatin	Complete Response	72	265	NO
+433	TCGA-EO-A3KU		Taxol	Complete Response	63	NA	NO
+434	TCGA-EO-A3KU		Carboplatin	Complete Response	2	276	NO
+435	TCGA-EO-A3KW				NA	NA	NO
+436	TCGA-EY-A1GM	Chemotherapy	Carboplatin		55	103	NO
+437	TCGA-EY-A1GM	Chemotherapy	Taxol		55	103	NO
+438	TCGA-EY-A1GO	Chemotherapy	Carboplatin		25	250	NO
+439	TCGA-EY-A1GO	Chemotherapy	Taxol		25	250	NO
+440	TCGA-EY-A1GO	Chemotherapy	Doxorubicin		552	NA	YES
+441	TCGA-EY-A1GQ	Chemotherapy	Taxol		377	503	NO
+443	TCGA-EY-A1GQ	Chemotherapy	Carboplatin		377	503	NO
+445	TCGA-EY-A1GS	Hormone Therapy	Megace		193	NA	YES
+446	TCGA-EY-A1GS	Chemotherapy	Taxol		39	95	NO
+447	TCGA-EY-A1GS	Chemotherapy	Carboplatin		39	95	NO
+448	TCGA-EY-A1GT	Chemotherapy	Carboplatin		NA	207	NO
+449	TCGA-EY-A1GT	Chemotherapy	Taxol		NA	207	NO
+450	TCGA-EY-A1GV	Chemotherapy	Carboplatin		48	237	NO
+451	TCGA-EY-A1GV	Chemotherapy	Taxol		48	237	NO
+452	TCGA-EY-A1GW	Chemotherapy	Taxol		225	288	NO
+453	TCGA-EY-A1GW	Chemotherapy	Carboplatin		40	162	NO
+454	TCGA-EY-A1GW	Chemotherapy	Taxol		40	162	NO
+455	TCGA-EY-A1H0	Chemotherapy	Taxol		91	315	NO
+456	TCGA-EY-A1H0	Chemotherapy	Carboplatin		91	315	NO
+457	TCGA-EY-A1H0	Chemotherapy	Taxol		462	NA	YES
+458	TCGA-EY-A214	Chemotherapy	Carboplatin		96	277	NO
+460	TCGA-EY-A214	Chemotherapy	Taxol		96	277	NO
+462	TCGA-EY-A2OM	Chemotherapy	Taxol		123	169	NO
+463	TCGA-EY-A2OM	Chemotherapy	Carboplatin		123	169	NO
+464	TCGA-EY-A2ON	Chemotherapy	Taxol	Clinical Progressive Disease	63	236	NO
+465	TCGA-EY-A2ON	Chemotherapy	Carboplatin	Clinical Progressive Disease	63	236	NO
+466	TCGA-EY-A2ON	Chemotherapy	Taxol	Clinical Progressive Disease	254	352	NO
+467	TCGA-EY-A2ON	Chemotherapy	Doxil		373	NA	YES
+468	TCGA-EY-A2OO	Chemotherapy	Taxol		54	165	NO
+469	TCGA-EY-A2OO	Chemotherapy	Carboplatin		54	165	NO
+470	TCGA-EY-A3L3	Chemotherapy	Taxol	Complete Response	119	231	NO
+471	TCGA-EY-A3L3	Chemotherapy	Carboplatin	Complete Response	119	231	NO
+472	TCGA-EY-A3QX	Chemotherapy	Taxol	Complete Response	66	187	NO
+473	TCGA-EY-A3QX	Chemotherapy	Carboplatin	Complete Response	66	187	NO
+474	TCGA-EY-A4KR	Chemotherapy	Carboplatin	Clinical Progressive Disease	46	179	NO
+475	TCGA-EY-A4KR	Chemotherapy	Taxol	Clinical Progressive Disease	46	179	NO
+476	TCGA-EY-A54A	Chemotherapy	Carboplatin	Complete Response	49	259	NO
+477	TCGA-EY-A54A	Chemotherapy	Taxol	Complete Response	49	259	NO
+478	TCGA-FI-A2CY	Chemotherapy	Carboplatinum	Complete Response	51	171	NO
+479	TCGA-FI-A2CY	Chemotherapy	Paclitaxel		51	80	NO
+480	TCGA-FI-A2CY	Chemotherapy	taxotere	Complete Response	101	171	NO
+481	TCGA-FI-A2D2	Chemotherapy	carboplatinum	Complete Response	87	191	NO
+482	TCGA-FI-A2D2	Chemotherapy	paclitaxel	Complete Response	87	191	NO
+483	TCGA-FI-A2D4	Chemotherapy	carboplatinum	Partial Response	47	167	NO
+484	TCGA-FI-A2D4	Chemotherapy	paclitaxel	Partial Response	47	167	NO
+485	TCGA-FI-A2D5	Chemotherapy	Carboplatinum	Clinical Progressive Disease	133	245	NO
+487	TCGA-FI-A2D5	Chemotherapy	Paclitaxel	Clinical Progressive Disease	133	245	NO
+489	TCGA-FI-A2EU	Chemotherapy	Carboplatinum	Complete Response	44	166	NO
+490	TCGA-FI-A2EU	Chemotherapy	Paclitaxel	Complete Response	44	1971	NO
+491	TCGA-FI-A2EW	Chemotherapy	Carboplatinum	Complete Response	69	179	NO
+492	TCGA-FI-A2EW	Chemotherapy	Paclitaxel	Complete Response	69	179	NO
+493	TCGA-FI-A2EW	Chemotherapy	Carboplatinum	Clinical Progressive Disease	1194	1273	NO
+494	TCGA-FI-A2EW	Chemotherapy	Paclitaxel	Clinical Progressive Disease	1194	1273	NO
+495	TCGA-FI-A2EW	Chemotherapy	Doxil	Clinical Progressive Disease	1326	1369	NO
+496	TCGA-FI-A2EW	Chemotherapy	Topotecan	Clinical Progressive Disease	1369	1431	NO
+497	TCGA-FI-A2EX	Chemotherapy	Carboplatinum	Complete Response	38	150	NO
+498	TCGA-FI-A2EX	Chemotherapy	Paclitaxel	Complete Response	38	150	NO
+499	TCGA-FI-A2EX	Chemotherapy	doxil	Partial Response	213	274	NO
+500	TCGA-FI-A2EY	Chemotherapy	Carboplatinum	Complete Response	27	172	NO
+501	TCGA-FI-A2EY	Chemotherapy	Paclitaxel	Complete Response	27	172	NO
+502	TCGA-FI-A2F8	Chemotherapy	cisplatin	Complete Response	36	141	NO
+503	TCGA-FI-A2F8	Chemotherapy	paclitaxel	Complete Response	36	141	NO
+504	TCGA-FI-A2F8	Chemotherapy	doxorubicin	Complete Response	36	141	NO
+505	TCGA-JU-AAVI	Chemotherapy	Cisplatin	Partial Response	82	109	NO
+506	TCGA-JU-AAVI	Chemotherapy	Carboplatin	Complete Response	159	229	NO
+507	TCGA-JU-AAVI	Chemotherapy	Paclitaxel	Complete Response	159	229	NO
+508	TCGA-K6-A3WQ	Chemotherapy	Carboplatin		75	167	NO
+509	TCGA-K6-A3WQ	Chemotherapy	Taxol		75	167	NO
+510	TCGA-K6-A3WQ	Chemotherapy	Doxil		384	NA	YES
+511	TCGA-K6-A3WQ	Chemotherapy	Doxil	Clinical Progressive Disease	351	NA	NO
+512	TCGA-KJ-A3U4	Hormone Therapy	letrozole femara		1033	NA	YES
+514	TCGA-PG-A7D5	Chemotherapy	Carboplatin/Paclitaxel	Complete Response	60	192	NO
+515	TCGA-QF-A5YS	Chemotherapy	CARBOPLATIN	Complete Response	109	158	NO
+516	TCGA-QF-A5YS	Chemotherapy	Paclitaxel	Complete Response	109	158	NO
+517	TCGA-QF-A5YT	Chemotherapy	Cisplatin	Complete Response	158	200	NO
+518	TCGA-QS-A5YQ	Chemotherapy	cisplatin	Complete Response	65	93	NO
+519	TCGA-QS-A5YQ	Chemotherapy	Carboplatin	Complete Response	128	198	NO
+520	TCGA-QS-A5YQ	Chemotherapy	Paclitaxel	Complete Response	128	198	NO
+521	TCGA-QS-A744	Chemotherapy	CARBOPLATIN		143	220	NO
+522	TCGA-QS-A744	Chemotherapy	PACLITAXEL		143	NA	YES
+523	TCGA-QS-A8F1	Chemotherapy	Carboplatin	Clinical Progressive Disease	62	62	NO
+524	TCGA-QS-A8F1	Chemotherapy	Paclitaxel	Clinical Progressive Disease	62	62	NO

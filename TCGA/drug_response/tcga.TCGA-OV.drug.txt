@@ -1,0 +1,2458 @@
+bcr_patient_barcode	therapy_types	drug_name	measure_of_response	days_to_drug_therapy_start	days_to_drug_therapy_end	therapy_ongoing
+TCGA-04-1331	Chemotherapy	Taxol		36	169	NO
+TCGA-04-1331	Targeted Molecular therapy	Velcade		481	498	NO
+TCGA-04-1331	Chemotherapy	Carboplatin		36	169	NO
+TCGA-04-1332	Chemotherapy	Topotecan/Carboplatin		28	179	NO
+TCGA-04-1332	Chemotherapy	Cisplatin		1094	1155	NO
+TCGA-04-1332	Chemotherapy	Carboplatin		971	1063	NO
+TCGA-04-1332	Chemotherapy	Gemcitabine		NA	NA	NO
+TCGA-04-1332	Chemotherapy	Taxotere		1094	1155	NO
+TCGA-04-1332	Chemotherapy	Doxil		NA	NA	NO
+TCGA-04-1332	Chemotherapy	Taxotere		971	1063	NO
+TCGA-04-1332	Chemotherapy	Taxol/Carboplatin		28	179	NO
+TCGA-04-1332	Chemotherapy	Doxil		1155	1216	NO
+TCGA-04-1332	Chemotherapy	Paclitaxel		424	606	NO
+TCGA-04-1332	Chemotherapy	Carboplatin		424	606	NO
+TCGA-04-1336	Chemotherapy	Taxotere		50	144	NO
+TCGA-04-1336	Chemotherapy	Taxotere		179	542	NO
+TCGA-04-1336	Chemotherapy	Carboplatin		50	144	NO
+TCGA-04-1338	Chemotherapy	Carboplatin		0	201	NO
+TCGA-04-1338	Chemotherapy	Gemcitabine		597	627	NO
+TCGA-04-1338	Chemotherapy	Tamoxifen		627	NA	YES
+TCGA-04-1338	Chemotherapy	Taxol		0	201	NO
+TCGA-04-1338	Chemotherapy	Docetaxel		415	510	NO
+TCGA-04-1342	Chemotherapy	Doxorubicin		170	478	NO
+TCGA-04-1342	Chemotherapy	Topotecan		170	478	NO
+TCGA-04-1342	Chemotherapy	Taxol		170	478	NO
+TCGA-04-1342	Chemotherapy	Taxotere		170	478	NO
+TCGA-04-1342	Chemotherapy	Carboplatin		32	142	NO
+TCGA-04-1343	Chemotherapy	Topotecan		323	354	NO
+TCGA-04-1343	Chemotherapy	Paclitaxel		50	170	NO
+TCGA-04-1343	Chemotherapy	Gemcitabine		50	170	NO
+TCGA-04-1343	Chemotherapy	Carboplatin		170	262	NO
+TCGA-04-1343	Chemotherapy	Topotecan		262	323	NO
+TCGA-04-1343	Chemotherapy	Taxotere		170	262	NO
+TCGA-04-1343	Chemotherapy	Carboplatin		50	170	NO
+TCGA-04-1343	Chemotherapy	Navelbine		262	323	NO
+TCGA-04-1347	Chemotherapy	Taxol		19	173	NO
+TCGA-04-1347	Chemotherapy	Carboplatin		19	173	NO
+TCGA-04-1347	Chemotherapy	Taxotere		19	173	NO
+TCGA-04-1348	Chemotherapy	Topotecan		884	976	NO
+TCGA-04-1348	Chemotherapy	Taxol		2	184	NO
+TCGA-04-1348	Chemotherapy	Cisplatin/Gemzar		1006	1157	NO
+TCGA-04-1348	Chemotherapy	Doxil		672	853	NO
+TCGA-04-1348	Chemotherapy	Doxil		1279	1432	NO
+TCGA-04-1348	Chemotherapy	Taxotere		1218	1249	NO
+TCGA-04-1348	Chemotherapy	Carboplatin		2	184	NO
+TCGA-04-1348	Chemotherapy	Gemzar		1006	1157	NO
+TCGA-04-1349	Chemotherapy	Cisplatin		1	373	NO
+TCGA-04-1349	Targeted Molecular therapy	Avastin		NA	NA	NO
+TCGA-04-1349	Chemotherapy	Paclitaxel		1	373	NO
+TCGA-04-1349	Chemotherapy	Cisplatin		436	653	NO
+TCGA-04-1349	Chemotherapy	Paclitaxel		436	653	NO
+TCGA-04-1349	Chemotherapy	Cytoxan		436	653	NO
+TCGA-04-1349	Chemotherapy	Doxil		436	653	NO
+TCGA-04-1350	Targeted Molecular therapy	Tamoxifen		1580	NA	NO
+TCGA-04-1350	Chemotherapy	Gemcitibine		720	NA	NO
+TCGA-04-1350	Chemotherapy	Cisplatin		363	NA	NO
+TCGA-04-1350	Targeted Molecular therapy	Fuluestrant		1726	NA	NO
+TCGA-04-1350	Chemotherapy	Gemcitibine		1389	NA	NO
+TCGA-04-1350	Targeted Molecular therapy	Aromasin		1622	NA	NO
+TCGA-04-1350	Chemotherapy	Taxol		216	NA	NO
+TCGA-04-1350	Chemotherapy	Carboplatin		216	NA	NO
+TCGA-04-1350	Targeted Molecular therapy	Faslodex		1726	NA	NO
+TCGA-04-1350	Chemotherapy	Cisplatin		1389	NA	NO
+TCGA-04-1350	Immunotherapy	Avastin		1389	NA	NO
+TCGA-04-1351	Chemotherapy			NA	NA	
+TCGA-04-1356	Chemotherapy	Taxol		161	312	NO
+TCGA-04-1356	Chemotherapy	Carboplatin		161	312	NO
+TCGA-04-1361	Chemotherapy	Taxol		53	844	NO
+TCGA-04-1361	Immunotherapy	Avastin		936	989	NO
+TCGA-04-1361	Chemotherapy	Carboplatin		53	844	NO
+TCGA-04-1361	Chemotherapy	Doxil		936	989	NO
+TCGA-04-1362	Chemotherapy	Carboplatin		7	172	NO
+TCGA-04-1362	Chemotherapy	Carboplatin		658	NA	NO
+TCGA-04-1362	Chemotherapy	Taxol		7	172	NO
+TCGA-04-1362	Chemotherapy	Doxil		658	NA	NO
+TCGA-04-1362	Chemotherapy	Topotecan		658	NA	NO
+TCGA-04-1362	Chemotherapy	Gemcitibine		7	172	NO
+TCGA-04-1364	Chemotherapy	Doxil		35	188	NO
+TCGA-04-1364	Chemotherapy	Avastin		615	827	NO
+TCGA-04-1364	Chemotherapy	Cisplatin		401	462	NO
+TCGA-04-1364	Chemotherapy	Docetaxel		919	949	NO
+TCGA-04-1364	Chemotherapy	5F4 Leucovorin		615	827	NO
+TCGA-04-1364	Chemotherapy	RBBX 01		857	857	NO
+TCGA-04-1364	Chemotherapy	Etoposide		462	584	NO
+TCGA-04-1364	Chemotherapy	Hexalen		341	370	NO
+TCGA-04-1364	Chemotherapy	Gemcitabine		401	462	NO
+TCGA-04-1364	Chemotherapy	Navelbine		279	310	NO
+TCGA-04-1364	Chemotherapy	Paclitaxel		35	188	NO
+TCGA-04-1364	Chemotherapy	Carboplatin		919	949	NO
+TCGA-04-1364	Chemotherapy	Carboplatin		35	188	NO
+TCGA-04-1364	Chemotherapy	Topotecan		279	310	NO
+TCGA-04-1365	Chemotherapy	Carboplatin		21	189	NO
+TCGA-04-1365	Chemotherapy	Carboplatin		947	947	NO
+TCGA-04-1365	Chemotherapy	Gemcitabine		21	189	NO
+TCGA-04-1367	Chemotherapy	Carboplatin		24	199	NO
+TCGA-04-1367	Chemotherapy	Taxol		24	199	NO
+TCGA-04-1369	Chemotherapy	Paclitaxel		175	238	NO
+TCGA-04-1369	Chemotherapy	BA4 43 9006		392	445	NO
+TCGA-04-1369	Chemotherapy	Gemcitabine		56	154	NO
+TCGA-04-1369	Chemotherapy	Carboplatin		56	238	NO
+TCGA-04-1370	Chemotherapy	Paclitaxel		8	200	NO
+TCGA-04-1370	Chemotherapy	Carboplatin		8	200	NO
+TCGA-04-1371	Chemotherapy	Taxol		7	199	NO
+TCGA-04-1371	Chemotherapy	Gemcitibine		7	199	NO
+TCGA-04-1371	Chemotherapy	Carboplatin		7	199	NO
+TCGA-04-1514	Chemotherapy	Cisplatin		34	126	NO
+TCGA-04-1514	Chemotherapy	Taxotere		126	185	NO
+TCGA-04-1514	Chemotherapy	Navelbine		1525	1587	NO
+TCGA-04-1514	Chemotherapy	Carboplatin		126	185	NO
+TCGA-04-1514	Chemotherapy	Taxotere		1221	1342	NO
+TCGA-04-1514	Chemotherapy	Doxil		1434	1495	NO
+TCGA-04-1514	Chemotherapy	Avastin		1464	1587	NO
+TCGA-04-1514	Chemotherapy	Topotecan		1525	1587	NO
+TCGA-04-1514	Chemotherapy	Cisplatin		1615	1676	NO
+TCGA-04-1514	Chemotherapy	Paclitaxel		34	126	NO
+TCGA-04-1514	Chemotherapy	Gemcitabine		1615	1676	NO
+TCGA-04-1514	Chemotherapy	Patupilone		1372	1434	NO
+TCGA-04-1514	Chemotherapy	Paclitaxel		34	185	NO
+TCGA-04-1514	Chemotherapy	Carboplatin		1221	1342	NO
+TCGA-04-1516	Chemotherapy	Carboplatin		37	157	NO
+TCGA-04-1516	Chemotherapy	Taxol		56	157	NO
+TCGA-04-1516	Chemotherapy	Taxotere		37	NA	NO
+TCGA-04-1517	Chemotherapy	Taxotere		35	144	NO
+TCGA-04-1517	Chemotherapy	Carboplatin		35	144	NO
+TCGA-04-1517	Chemotherapy	Gemzar		352	421	NO
+TCGA-04-1517	Chemotherapy	Doxil		352	421	NO
+TCGA-04-1525	Targeted Molecular therapy	Irolfluvin		436	464	NO
+TCGA-04-1525	Chemotherapy	Carboplatin		16	184	NO
+TCGA-04-1525	Chemotherapy	Taxotere		16	184	NO
+TCGA-04-1530	Chemotherapy	Taxol		43	153	NO
+TCGA-04-1530	Chemotherapy	Taxol		382	550	NO
+TCGA-04-1530	Chemotherapy	Cisplatin		43	153	NO
+TCGA-04-1530	Chemotherapy	Carboplatin		382	550	NO
+TCGA-04-1536	Chemotherapy	Carboplatin		36	232	NO
+TCGA-04-1536	Chemotherapy	Doxil		518	NA	NO
+TCGA-04-1536	Chemotherapy	Carboplatin		518	NA	NO
+TCGA-04-1536	Chemotherapy	Doxil		36	232	NO
+TCGA-04-1536	Chemotherapy	Taxotere		518	NA	NO
+TCGA-04-1536	Chemotherapy	Taxol		36	232	NO
+TCGA-04-1542	Chemotherapy	Paclitaxel		2	167	NO
+TCGA-04-1542	Chemotherapy	Gemcitabine		1564	1781	NO
+TCGA-04-1542	Chemotherapy	Carbplatin		2	167	NO
+TCGA-04-1542	Chemotherapy	Paclitaxel		1322	1487	NO
+TCGA-04-1542	Chemotherapy	Gemcitabine		2328	2512	NO
+TCGA-04-1542	Chemotherapy	Carboplatin		1051	1294	NO
+TCGA-04-1542	Chemotherapy	Avastin		2115	2176	NO
+TCGA-04-1542	Chemotherapy	Carboplatin		2207	2268	NO
+TCGA-04-1542	Chemotherapy	Gemcitabine		2	167	NO
+TCGA-04-1542	Chemotherapy	Docetaxel		2115	2176	NO
+TCGA-04-1542	Chemotherapy	Cisplatin		1564	1781	NO
+TCGA-04-1542	Chemotherapy	Avastin		1993	2106	NO
+TCGA-04-1542	Chemotherapy	Avastin		2328	2512	NO
+TCGA-04-1542	Chemotherapy	Doxorubicin		2268	2328	NO
+TCGA-04-1542	Chemotherapy	Paclitaxel		1051	1294	NO
+TCGA-04-1542	Chemotherapy	Doxil		1501	1529	NO
+TCGA-04-1638	Chemotherapy	Carboplatin		346	NA	NO
+TCGA-04-1638	Chemotherapy	Taxol		346	NA	NO
+TCGA-04-1638	Chemotherapy	Carboplatin		17	193	NO
+TCGA-04-1638	Chemotherapy	Doxil		346	NA	NO
+TCGA-04-1638	Chemotherapy	Taxol		17	193	NO
+TCGA-04-1638	Chemotherapy	Gemcitibine		17	193	NO
+TCGA-04-1644	Chemotherapy	Paclitaxel		113	221	NO
+TCGA-04-1644	Chemotherapy	Navelbine		661	NA	NO
+TCGA-04-1644	Chemotherapy	Gemcitabine		17	120	NO
+TCGA-04-1644	Chemotherapy	Carboplatin		17	221	NO
+TCGA-04-1644	Chemotherapy	Topotecan		661	NA	NO
+TCGA-04-1646	Chemotherapy	Gemcitibine		18	239	NO
+TCGA-04-1646	Chemotherapy	Topotecan		522	NA	NO
+TCGA-04-1646	Chemotherapy	Taxol		18	239	NO
+TCGA-04-1646	Chemotherapy	Doxil		522	NA	NO
+TCGA-04-1646	Chemotherapy	Carboplatin		18	239	NO
+TCGA-04-1648	Chemotherapy	Carboplatin		3	149	NO
+TCGA-04-1648	Chemotherapy	Doxil		247	NA	NO
+TCGA-04-1648	Chemotherapy	Gemcitibine		3	149	NO
+TCGA-04-1648	Immunotherapy	Avastin		247	NA	NO
+TCGA-04-1648	Chemotherapy	Taxotere		247	NA	NO
+TCGA-04-1648	Chemotherapy	Taxol		3	149	NO
+TCGA-04-1648	Chemotherapy	Topotecan		247	NA	NO
+TCGA-04-1649	Chemotherapy	Taxotere		1704	NA	NO
+TCGA-04-1649	Chemotherapy	Carboplatin		1704	NA	NO
+TCGA-04-1651	Chemotherapy	Taxol		24	150	NO
+TCGA-04-1651	Chemotherapy	Cisplatin		638	NA	NO
+TCGA-04-1651	Chemotherapy	Carboplatin		24	150	NO
+TCGA-04-1651	Chemotherapy	Gemcitibine		24	150	NO
+TCGA-04-1651	Chemotherapy	Gemcitibine		994	NA	NO
+TCGA-04-1652	Chemotherapy	Carboplatin		60	199	NO
+TCGA-04-1652	Chemotherapy	Paciltaxel		60	199	NO
+TCGA-04-1652	Chemotherapy	Docetaxel		894	955	NO
+TCGA-04-1652	Chemotherapy	Gemicitabine		60	199	NO
+TCGA-04-1654	Chemotherapy	Carboplatin		877	NA	NO
+TCGA-04-1654	Chemotherapy	Cisplatin		31	52	NO
+TCGA-04-1654	Chemotherapy	Taxol		877	NA	NO
+TCGA-04-1654	Chemotherapy	Taxol		31	52	NO
+TCGA-04-1655	Chemotherapy	Taxol		34	139	NO
+TCGA-04-1655	Chemotherapy	Carboplatin		839	NA	NO
+TCGA-04-1655	Chemotherapy	Taxol		184	NA	NO
+TCGA-04-1655	Chemotherapy	Cisplatin		34	139	NO
+TCGA-09-0364	Chemotherapy	Carboplatinum		31	188	NO
+TCGA-09-0364	Chemotherapy	taxol		31	188	NO
+TCGA-09-0365	Chemotherapy	carboplatin		46	70	NO
+TCGA-09-0365	Chemotherapy	taxol		15	70	NO
+TCGA-09-0366	Chemotherapy	taxol		5	113	NO
+TCGA-09-0366	Chemotherapy	Carbo		5	113	NO
+TCGA-09-0366	Chemotherapy	topotecan		225	288	NO
+TCGA-09-0367	Chemotherapy	taxol		9	92	NO
+TCGA-09-0367	Chemotherapy	Carbo		9	92	NO
+TCGA-09-0367	Chemotherapy	gemcitabine		153	NA	NO
+TCGA-09-0369	Chemotherapy	gemcitabine		99	99	NO
+TCGA-09-0369	Chemotherapy	Carbo		99	99	NO
+TCGA-09-0369	Chemotherapy	Carbo		8	74	NO
+TCGA-09-0369	Chemotherapy	taxol		8	74	NO
+TCGA-09-0369	Chemotherapy	Taxotere		78	78	NO
+TCGA-09-0369	Chemotherapy	doxil		298	298	NO
+TCGA-09-0369	Chemotherapy	topotecan		310	446	NO
+TCGA-09-1659	Chemotherapy	Taxol		16	137	NO
+TCGA-09-1659	Chemotherapy	Cisplatin		16	137	NO
+TCGA-09-1659	Chemotherapy	Taxol		37	137	NO
+TCGA-09-1659	Chemotherapy	Hexamethylmelamine		176	176	NO
+TCGA-09-1661	Chemotherapy	Taxol		58	165	NO
+TCGA-09-1661	Chemotherapy	Gemcitabine		758	766	NO
+TCGA-09-1661	Chemotherapy	Taxol		828	940	NO
+TCGA-09-1661	Chemotherapy	Carboplatin		58	165	NO
+TCGA-09-1661	Chemotherapy	Carboplatin		641	709	NO
+TCGA-09-1661	Chemotherapy	Taxotere		1017	1052	NO
+TCGA-09-1661	Chemotherapy	Doxil		213	332	NO
+TCGA-09-1661	Hormone Therapy	Tamoxifen		498	641	NO
+TCGA-09-1662	Chemotherapy	Topotecan		2457	2461	NO
+TCGA-09-1662	Chemotherapy	Doxil		2073	2399	NO
+TCGA-09-1662	Chemotherapy	Carboplatin		1128	1233	NO
+TCGA-09-1662	Chemotherapy	Taxotere		1947	1968	NO
+TCGA-09-1662	Chemotherapy	Toptecan		2482	2602	NO
+TCGA-09-1662	Chemotherapy	Taxotere		1128	1233	NO
+TCGA-09-1662	Chemotherapy	Carboplatin		1947	1968	NO
+TCGA-09-1662	Chemotherapy	Taxotere		1590	1732	NO
+TCGA-09-1662	Chemotherapy	Topotecan		2623	2650	NO
+TCGA-09-1662	Chemotherapy	Gemzar		2530	2537	NO
+TCGA-09-1662	Chemotherapy	Carboplatin		15	15	NO
+TCGA-09-1662	Chemotherapy	Carboplatin		1590	1732	NO
+TCGA-09-1662	Chemotherapy	Gemzar		32	141	NO
+TCGA-09-1662	Chemotherapy	Toptecan		2608	2623	NO
+TCGA-09-1662	Chemotherapy	Gemzar		2684	2697	NO
+TCGA-09-1662	Targeted Molecular therapy	Avastin		2566	2650	NO
+TCGA-09-1662	Hormone Therapy	Armidex		1926	NA	NO
+TCGA-09-1662	Targeted Molecular therapy	Avastin		2503	2517	NO
+TCGA-09-1662	Chemotherapy	Topotecan		2426	2650	NO
+TCGA-09-1662	Chemotherapy	Taxol		15	15	NO
+TCGA-09-1662	Chemotherapy	Cisplatin		2684	2697	NO
+TCGA-09-1662	Chemotherapy	Taxotere		1989	2052	NO
+TCGA-09-1662	Chemotherapy	Cisplatin		32	141	NO
+TCGA-09-1664	Chemotherapy	Taxotere		15	139	NO
+TCGA-09-1664	Chemotherapy	Carboplatin		15	139	NO
+TCGA-09-1665	Chemotherapy	Taxol		33	208	NO
+TCGA-09-1665	Hormone Therapy	Tamoxifen		400	483	NO
+TCGA-09-1665	Chemotherapy	Carboplatin		917	1022	NO
+TCGA-09-1665	Chemotherapy	Carboplatin		33	208	NO
+TCGA-09-1666	Chemotherapy	Taxol		27	73	NO
+TCGA-09-1666	Chemotherapy	Carboplatin		NA	NA	NO
+TCGA-09-1666	Chemotherapy	Carboplatin		616	708	NO
+TCGA-09-1666	Hormone Therapy	Femara		1604	1757	NO
+TCGA-09-1666	Chemotherapy	Carboplatin		27	73	NO
+TCGA-09-1666	Immunotherapy	Oca Rex Oregovomab		256	480	NO
+TCGA-09-1666	Chemotherapy	Carboplatin		101	173	NO
+TCGA-09-1666	Chemotherapy	Taxotere		NA	NA	NO
+TCGA-09-1666	Chemotherapy	Doxil		1507	1598	NO
+TCGA-09-1666	Chemotherapy	Taxotere		101	173	NO
+TCGA-09-1666	Chemotherapy	Gemcitabine		616	708	NO
+TCGA-09-1667	Chemotherapy	Carboplatin		559	685	NO
+TCGA-09-1667	Chemotherapy	Taxol		7	118	NO
+TCGA-09-1667	Chemotherapy	Carboplatin		1135	1135	NO
+TCGA-09-1667	Chemotherapy	Doxil		820	1875	
+TCGA-09-1667	Chemotherapy	Carboplatin		7	118	NO
+TCGA-09-1668	Chemotherapy	Taxotere		31	135	NO
+TCGA-09-1668	Chemotherapy	Taxotere		151	320	NO
+TCGA-09-1668	Chemotherapy	Carboplatin		31	135	NO
+TCGA-09-1669	Chemotherapy	Taxol		27	132	NO
+TCGA-09-1669	Chemotherapy	Carboplatin		27	132	NO
+TCGA-09-1670	Chemotherapy	Taxol		NA	NA	NO
+TCGA-09-1670	Chemotherapy	Taxol		74	179	NO
+TCGA-09-1670	Chemotherapy	Carboplatin		74	179	NO
+TCGA-09-1672	Chemotherapy	Taxol		30	NA	NO
+TCGA-09-1672	Chemotherapy	Carboplatin		30	NA	NO
+TCGA-09-1673	Chemotherapy	Carboplatin		25	NA	
+TCGA-09-1673	Chemotherapy	Taxol or Taxotere		25	NA	NO
+TCGA-09-1674	Chemotherapy	Carboplatin		41	145	NO
+TCGA-09-1674	Chemotherapy	Taxol		41	145	NO
+TCGA-09-1675	Chemotherapy	Carboplatin		75	187	NO
+TCGA-09-1675	Chemotherapy	Taxol		75	187	NO
+TCGA-09-1675	Chemotherapy	Carboplatin		54	68	NO
+TCGA-09-1675	Chemotherapy	Taxol		54	68	NO
+TCGA-09-2044	Chemotherapy	Carboplatin		32	151	NO
+TCGA-09-2044	Chemotherapy	Taxol		32	151	NO
+TCGA-09-2045	Chemotherapy	Cisplatinum		121	239	NO
+TCGA-09-2045	Chemotherapy	Taxol		11	11	NO
+TCGA-09-2045	Chemotherapy	Taxotere		678	808	NO
+TCGA-09-2045	Chemotherapy	Cisplatinum		64	94	NO
+TCGA-09-2045	Chemotherapy	Taxol		64	94	NO
+TCGA-09-2045	Chemotherapy	Etoposide		875	895	NO
+TCGA-09-2045	Chemotherapy	Carboplatin		11	11	NO
+TCGA-09-2045	Chemotherapy	Taxol		121	239	NO
+TCGA-09-2045	Chemotherapy	Gemcitibine		933	939	NO
+TCGA-09-2045	Chemotherapy	Toptecan		678	808	NO
+TCGA-09-2045	Chemotherapy	Carboplatinum		933	939	NO
+TCGA-09-2048	Chemotherapy			60	NA	NO
+TCGA-09-2049	Chemotherapy	Taxol		995	995	NO
+TCGA-09-2049	Chemotherapy	Carboplatin		42	172	NO
+TCGA-09-2049	Chemotherapy	Taxol		962	981	NO
+TCGA-09-2049	Chemotherapy	Carboplatin		962	981	NO
+TCGA-09-2049	Chemotherapy	Cisplatin		1410	1431	NO
+TCGA-09-2049	Chemotherapy	Taxotere		1779	1964	NO
+TCGA-09-2049	Chemotherapy	Carboplatin		995	995	NO
+TCGA-09-2049	Chemotherapy	Gemcitibane		1410	1431	NO
+TCGA-09-2049	Chemotherapy	Taxol		42	172	NO
+TCGA-09-2049	Chemotherapy	Topotecan		1017	1110	NO
+TCGA-09-2049	Chemotherapy	Gemcitibine		1712	1768	NO
+TCGA-09-2050	Chemotherapy	Taxotere		47	110	NO
+TCGA-09-2050	Chemotherapy	Taxol		5	25	NO
+TCGA-09-2050	Chemotherapy	Carboplatin		5	25	NO
+TCGA-09-2050	Chemotherapy	Carboplatin		47	110	NO
+TCGA-09-2051	Chemotherapy	Taxol		947	1024	NO
+TCGA-09-2051	Chemotherapy	Carboplatin		8	155	NO
+TCGA-09-2051	Chemotherapy	Carboplatin		947	1024	NO
+TCGA-09-2051	Chemotherapy	Taxol		8	155	NO
+TCGA-09-2051	Chemotherapy	Ovarex Study		191	NA	NO
+TCGA-09-2051	Chemotherapy	Taxol		913	941	NO
+TCGA-09-2051	Chemotherapy	Gemzar		1586	1698	NO
+TCGA-09-2051	Chemotherapy	Cisplatin		913	941	NO
+TCGA-09-2051	Chemotherapy	Carboplatin		1586	1698	NO
+TCGA-09-2053	Chemotherapy	Carboplatin		34	138	NO
+TCGA-09-2053	Chemotherapy	Taxol		34	138	NO
+TCGA-09-2054	Chemotherapy	Carboplatin		37	161	NO
+TCGA-09-2054	Chemotherapy	Doxil		244	300	NO
+TCGA-09-2054	Chemotherapy	Gemzar		428	513	NO
+TCGA-09-2054	Chemotherapy	Taxol		37	161	NO
+TCGA-09-2054	Chemotherapy	Topotecan		329	421	NO
+TCGA-09-2055	Chemotherapy	Taxol		5	189	NO
+TCGA-09-2055	Chemotherapy	Carboplatin		5	189	NO
+TCGA-09-2056	Chemotherapy	Taxol		25	147	NO
+TCGA-09-2056	Chemotherapy	Carboplatin		25	147	NO
+TCGA-10-0925	Chemotherapy	Carboplatin		1308	1447	NO
+TCGA-10-0925	Chemotherapy	Carboplatin		156	293	NO
+TCGA-10-0925	Chemotherapy	Carboplatin		20	125	NO
+TCGA-10-0925	Chemotherapy	Taxol		1454	1496	NO
+TCGA-10-0925	Chemotherapy	Carboplatin		593	1028	NO
+TCGA-10-0925	Chemotherapy	Doxil		1517	1630	NO
+TCGA-10-0925	Chemotherapy	Taxol		20	125	NO
+TCGA-10-0925	Hormone Therapy	Tamoxifen		321	593	NO
+TCGA-10-0926	Chemotherapy	Doxil		290	729	NO
+TCGA-10-0926	Chemotherapy	Taxol		8	143	NO
+TCGA-10-0926	Chemotherapy	Carboplatin		8	143	NO
+TCGA-10-0926	Immunotherapy	Interleukin-12		232	NA	
+TCGA-10-0927	Chemotherapy	Arimidex		1601	1686	
+TCGA-10-0927	Hormone Therapy	Tamoxifen		1336	1640	NO
+TCGA-10-0927	Chemotherapy	Doxil		1938	2302	NO
+TCGA-10-0927	Chemotherapy	Carboplatin		1017	1301	NO
+TCGA-10-0927	Chemotherapy	Taxol		9	121	
+TCGA-10-0927	Chemotherapy	Carboplatin		9	121	NO
+TCGA-10-0927	Chemotherapy	Taxol		1686	1910	
+TCGA-10-0927	Chemotherapy	Gemcitabine		2330	2463	NO
+TCGA-10-0930	Chemotherapy	Carboplatin		8	124	NO
+TCGA-10-0930	Hormone Therapy	Tamoxifen		NA	NA	NO
+TCGA-10-0930	Chemotherapy	Carbo		694	736	
+TCGA-10-0930	Chemotherapy	Taxol		8	124	NO
+TCGA-10-0930	Chemotherapy	Doxil		782	838	NO
+TCGA-10-0930	Chemotherapy	Taxol		694	736	NO
+TCGA-10-0931	Chemotherapy	Carboplatin		386	509	NO
+TCGA-10-0931	Chemotherapy	Herceptin		19	124	
+TCGA-10-0931	Chemotherapy	Carboplatin		19	124	
+TCGA-10-0931	Targeted Molecular therapy	Irressa		792	848	
+TCGA-10-0931	Chemotherapy	Carboplatin		538	666	NO
+TCGA-10-0931	Chemotherapy	Taxotere		538	666	
+TCGA-10-0931	Hormone Therapy	Tamoxifen		335	383	NO
+TCGA-10-0931	Chemotherapy	Taxol		386	509	NO
+TCGA-10-0931	Chemotherapy	Doxil		876	932	NO
+TCGA-10-0931	Chemotherapy	Taxotere		538	666	NO
+TCGA-10-0931	Chemotherapy	Taxol		19	124	
+TCGA-10-0931	Chemotherapy	Topotecan		792	848	NO
+TCGA-10-0933	Chemotherapy	Carboplatin		20	132	NO
+TCGA-10-0933	Chemotherapy	Taxol		20	132	NO
+TCGA-10-0934	Chemotherapy	Taxol		40	56	NO
+TCGA-10-0934	Chemotherapy	Carboplatin		40	56	NO
+TCGA-10-0935	Chemotherapy	Taxol		34	34	NO
+TCGA-10-0935	Chemotherapy	Carboplatin		34	34	NO
+TCGA-10-0936	Chemotherapy	Gemcitabine		939	1007	NO
+TCGA-10-0936	Chemotherapy	Taxol		20	62	NO
+TCGA-10-0936	Chemotherapy	Doxil		678	800	NO
+TCGA-10-0936	Chemotherapy	Taxol		89	194	NO
+TCGA-10-0936	Chemotherapy	Carboplatin		621	678	NO
+TCGA-10-0936	Chemotherapy	Carboplatin		89	194	NO
+TCGA-10-0936	Hormone Therapy	Letrozole		237	615	NO
+TCGA-10-0936	Chemotherapy	Taxotere		810	936	NO
+TCGA-10-0937	Chemotherapy	Carboplatin		33	146	NO
+TCGA-10-0937	Chemotherapy	Gemcitabine		NA	451	NO
+TCGA-10-0937	Chemotherapy	Taxol		33	146	NO
+TCGA-10-0937	Chemotherapy	Topotecan		346	NA	NO
+TCGA-10-0937	Chemotherapy	Doxil		244	296	NO
+TCGA-10-0938	Hormone Therapy	Lupron		30	153	NO
+TCGA-10-0938	Hormone Therapy	Letrozole		30	148	NO
+TCGA-10-0938	Chemotherapy	Taxotere		41	188	NO
+TCGA-10-0938	Chemotherapy	Carboplatin		41	188	NO
+TCGA-13-0714	Chemotherapy	Gemcitabine		12	NA	NO
+TCGA-13-0714	Chemotherapy	Carboplatin		12	NA	NO
+TCGA-13-0714	Chemotherapy	Paclitaxel		12	NA	NO
+TCGA-13-0717	Chemotherapy	Carboplatin		9	182	NO
+TCGA-13-0717	Chemotherapy	Paclitaxel		9	182	NO
+TCGA-13-0720	Chemotherapy	Carboplatin		7	180	NO
+TCGA-13-0720	Chemotherapy	Paclitaxel		7	180	NO
+TCGA-13-0720	Chemotherapy	Paclitaxel		239	292	NO
+TCGA-13-0723	Chemotherapy	Carboplatin		28	200	
+TCGA-13-0723	Chemotherapy	Paclitaxel		28	200	
+TCGA-13-0724	Chemotherapy	Carboplatin		75	75	
+TCGA-13-0725	Chemotherapy	Cisplatin		190	215	
+TCGA-13-0725	Chemotherapy	Paclitaxel		15	131	
+TCGA-13-0725	Chemotherapy	Carboplatin		15	131	
+TCGA-13-0726	Chemotherapy	Paclitaxel		29	169	
+TCGA-13-0726	Chemotherapy	Carboplatin		29	169	
+TCGA-13-0727	Chemotherapy	Carboplatin		9	120	
+TCGA-13-0727	Chemotherapy	Paclitaxel		9	120	
+TCGA-13-0727	Hormone Therapy	Femara		230	267	
+TCGA-13-0751	Chemotherapy	Carboplatin		7	126	
+TCGA-13-0751	Chemotherapy	Cisplatin		195	266	
+TCGA-13-0751	Chemotherapy	Gemcitabine		195	266	
+TCGA-13-0751	Chemotherapy	Paclitaxel		7	126	
+TCGA-13-0755	Chemotherapy	Carboplatin		19	41	
+TCGA-13-0757	Chemotherapy	Paclitaxel		36	153	NO
+TCGA-13-0757	Chemotherapy	Carboplatin		36	154	NO
+TCGA-13-0757	Chemotherapy	Cisplatin		211	267	NO
+TCGA-13-0758	Chemotherapy	Carboplatin		14	161	NO
+TCGA-13-0758	Chemotherapy	Paclitaxel		14	161	NO
+TCGA-13-0761	Chemotherapy	Docetaxel		53	221	NO
+TCGA-13-0761	Chemotherapy	Carboplatin		53	221	NO
+TCGA-13-0762	Chemotherapy	Cisplatin		28	141	NO
+TCGA-13-0762	Chemotherapy	Paclitaxel		28	141	NO
+TCGA-13-0764	Targeted Molecular therapy	Bevacizumab		76	160	NO
+TCGA-13-0764	Chemotherapy	Carboplatin		55	160	NO
+TCGA-13-0764	Chemotherapy	Paclitaxel		55	160	NO
+TCGA-13-0765	Chemotherapy	Paclitaxel		50	163	NO
+TCGA-13-0765	Hormone Therapy	Tamoxifen		589	654	NO
+TCGA-13-0765	Targeted Molecular therapy	Bevacizumab		176	519	NO
+TCGA-13-0765	Targeted Molecular therapy	Bevacizumab		71	155	NO
+TCGA-13-0765	Chemotherapy	Cisplatin		50	163	NO
+TCGA-13-0766	Chemotherapy	Carboplatin		NA	NA	NO
+TCGA-13-0766	Chemotherapy	Cisplatin		NA	182	NO
+TCGA-13-0766	Chemotherapy	Paclitaxel		NA	182	NO
+TCGA-13-0768	Chemotherapy	Paclitaxel		78	148	NO
+TCGA-13-0768	Chemotherapy	Cisplatin		78	148	NO
+TCGA-13-0768	Chemotherapy	Carboplatin		36	57	NO
+TCGA-13-0768	Chemotherapy	Paclitaxel		36	57	NO
+TCGA-13-0791	Chemotherapy	Paclitaxel		36	141	
+TCGA-13-0791	Chemotherapy	Carboplatin		36	141	
+TCGA-13-0791	Chemotherapy	Paclitaxel		213	281	
+TCGA-13-0791	Chemotherapy	Gemcitabine		654	780	NO
+TCGA-13-0791	Chemotherapy	Carboplatin		794	829	NO
+TCGA-13-0791	Chemotherapy	Liposomal Doxorubicin		302	449	NO
+TCGA-13-0791	Chemotherapy	Topotecan		479	640	NO
+TCGA-13-0792	Chemotherapy	Cisplatin		34	160	
+TCGA-13-0792	Chemotherapy	Paclitaxel		34	160	
+TCGA-13-0793	Immunotherapy	Abagovomab or Placebo		200	362	
+TCGA-13-0793	Chemotherapy	Paclitaxel		47	159	NO
+TCGA-13-0793	Chemotherapy	Carboplatin		47	159	
+TCGA-13-0794	Chemotherapy	Docetaxel		26	132	NO
+TCGA-13-0794	Chemotherapy	Carboplatin		26	132	NO
+TCGA-13-0795	Chemotherapy	Carboplatin		101	205	NO
+TCGA-13-0795	Chemotherapy	Paclitaxel		101	205	NO
+TCGA-13-0797	Chemotherapy	Carboplatin		42	146	NO
+TCGA-13-0797	Chemotherapy	Paclitaxel		42	146	NO
+TCGA-13-0799	Chemotherapy	Paclitaxel		36	146	NO
+TCGA-13-0799	Chemotherapy	Cisplatin		36	146	NO
+TCGA-13-0800	Chemotherapy	Cisplatin		30	142	NO
+TCGA-13-0800	Chemotherapy	Paclitaxel		30	142	NO
+TCGA-13-0801	Chemotherapy	Paclitaxel		32	144	NO
+TCGA-13-0801	Chemotherapy	Cisplatin		32	144	NO
+TCGA-13-0802	Chemotherapy	Carboplatin		62	188	NO
+TCGA-13-0802	Chemotherapy	Paclitaxel		62	188	NO
+TCGA-13-0803	Chemotherapy	Paclitaxel		NA	147	NO
+TCGA-13-0803	Chemotherapy	Carboplatin		NA	147	NO
+TCGA-13-0804	Chemotherapy	Carboplatin		26	161	NO
+TCGA-13-0804	Targeted Molecular therapy	90Y-HU3S193		270	270	NO
+TCGA-13-0804	Chemotherapy	Paclitaxel		26	161	NO
+TCGA-13-0805	Chemotherapy	Carboplatin		17	151	NO
+TCGA-13-0805	Chemotherapy	Paclitaxel		17	151	NO
+TCGA-13-0807	Chemotherapy	Carboplatin		NA	NA	NO
+TCGA-13-0807	Chemotherapy	Paclitaxel		NA	NA	
+TCGA-13-0883	Chemotherapy	Carbobplatin		31	143	NO
+TCGA-13-0883	Chemotherapy	Cisplatin		227	350	NO
+TCGA-13-0883	Chemotherapy	Paclitaxel		31	143	NO
+TCGA-13-0884	Chemotherapy	Paciltaxel		55	191	NO
+TCGA-13-0884	Chemotherapy	Gemicitabine		55	191	NO
+TCGA-13-0884	Chemotherapy	Cisplatin		240	307	NO
+TCGA-13-0884	Chemotherapy	Carboplatin		55	191	NO
+TCGA-13-0884	Chemotherapy	Paciltaxel		240	307	NO
+TCGA-13-0885	Chemotherapy	Cisplatin		NA	208	NO
+TCGA-13-0885	Chemotherapy	Paclitaxel		6	110	NO
+TCGA-13-0885	Chemotherapy	Carboplatin		6	110	NO
+TCGA-13-0886	Chemotherapy	Carboplatin		12	132	NO
+TCGA-13-0886	Chemotherapy	Paclitaxel		12	132	NO
+TCGA-13-0886	Chemotherapy	Cisplatin		221	263	NO
+TCGA-13-0887	Chemotherapy	Carboplatin		7	114	NO
+TCGA-13-0887	Chemotherapy	Cisplatin		184	268	NO
+TCGA-13-0887	Chemotherapy	Paclitaxel		7	114	NO
+TCGA-13-0888	Chemotherapy	Carboplatin		54	232	NO
+TCGA-13-0888	Hormone Therapy	Femara		253	NA	YES
+TCGA-13-0888	Chemotherapy	Paclitaxel		54	232	NO
+TCGA-13-0889	Chemotherapy	Paclitaxel		54	159	NO
+TCGA-13-0889	Chemotherapy	Carboplatin		54	159	NO
+TCGA-13-0890	Chemotherapy	Paclitaxel		15	235	NO
+TCGA-13-0890	Chemotherapy	Carboplatin		15	235	NO
+TCGA-13-0891	Chemotherapy	Carboplatin		71	183	NO
+TCGA-13-0891	Chemotherapy	Paclitaxel		71	183	NO
+TCGA-13-0893	Chemotherapy	Paciltaxel		80	284	NO
+TCGA-13-0893	Chemotherapy	Carboplatin		80	284	NO
+TCGA-13-0893	Hormone Therapy	Femara		340	566	NO
+TCGA-13-0894	Chemotherapy	Carboplatin		47	216	NO
+TCGA-13-0894	Chemotherapy	Paciltaxel		47	216	NO
+TCGA-13-0894	Chemotherapy	Cisplatin		307	330	NO
+TCGA-13-0897	Chemotherapy	Paclitaxel		35	140	NO
+TCGA-13-0897	Chemotherapy	Carboplatin		35	140	NO
+TCGA-13-0899	Chemotherapy	Paclitaxel		16	126	NO
+TCGA-13-0899	Chemotherapy	Carboplatin		16	126	NO
+TCGA-13-0900	Chemotherapy	Carboplatin		38	162	NO
+TCGA-13-0900	Chemotherapy	Paciltaxal		38	162	NO
+TCGA-13-0901	Targeted Molecular therapy	Cetuximab		44	88	NO
+TCGA-13-0901	Chemotherapy	Paciltaxel		44	165	NO
+TCGA-13-0901	Chemotherapy	Cisplatin		44	165	NO
+TCGA-13-0903	Chemotherapy	Paclitaxel		22	127	NO
+TCGA-13-0903	Chemotherapy	Carboplatin		22	127	NO
+TCGA-13-0903	Targeted Molecular therapy	Cetuximab		169	335	NO
+TCGA-13-0903	Targeted Molecular therapy	Cetuximab		22	141	NO
+TCGA-13-0904	Chemotherapy	Carboplatin		63	84	NO
+TCGA-13-0904	Chemotherapy	Paclitaxel		63	84	NO
+TCGA-13-0904	Chemotherapy	Docetaxel		105	251	NO
+TCGA-13-0904	Chemotherapy	Carboplatin		105	251	
+TCGA-13-0905	Chemotherapy	Cisplatin		153	223	NO
+TCGA-13-0905	Chemotherapy	Paciltaxel		20	125	NO
+TCGA-13-0905	Chemotherapy	Carboplatin		20	125	NO
+TCGA-13-0906	Chemotherapy	Paclitaxel		35	147	
+TCGA-13-0906	Chemotherapy	Cisplatin		35	147	
+TCGA-13-0908	Chemotherapy	Paciltaxel		24	135	NO
+TCGA-13-0908	Chemotherapy	Carboplatin		24	135	NO
+TCGA-13-0908	Chemotherapy	Cisplatin		198	244	NO
+TCGA-13-0910	Chemotherapy	Cisplatin		238	289	
+TCGA-13-0910	Chemotherapy	Carboplatin		70	175	
+TCGA-13-0910	Chemotherapy	Paclitaxel		70	175	
+TCGA-13-0911	Chemotherapy	Carboplatin		49	189	NO
+TCGA-13-0911	Chemotherapy	paclitaxel		49	189	NO
+TCGA-13-0912	Chemotherapy	Paclitaxel		35	147	
+TCGA-13-0912	Chemotherapy	Cisplatin		35	147	
+TCGA-13-0913	Chemotherapy	Paclitaxel		35	161	
+TCGA-13-0913	Chemotherapy	Paclitaxel		35	161	NO
+TCGA-13-0913	Chemotherapy	Cisplatin		35	161	
+TCGA-13-0913	Chemotherapy	Carboplatin		962	1071	NO
+TCGA-13-0913	Chemotherapy	Paclitaxel		962	1071	NO
+TCGA-13-0916	Chemotherapy	Paclitaxel		35	161	
+TCGA-13-0916	Chemotherapy	Cisplatin		35	161	
+TCGA-13-0916	Targeted Molecular therapy	Bevacizumab		70	182	
+TCGA-13-0919	Chemotherapy	Carboplatin		42	160	
+TCGA-13-0919	Chemotherapy	Paclitaxel		42	160	
+TCGA-13-0920	Chemotherapy	Carboplatin		NA	151	
+TCGA-13-0921	Chemotherapy	Cisplatin		35	140	
+TCGA-13-0921	Chemotherapy	Paclitaxel		35	140	
+TCGA-13-0923	Chemotherapy	Cisplatin		39	151	NO
+TCGA-13-0923	Chemotherapy	Paclitaxel		39	151	NO
+TCGA-13-0924	Targeted Molecular therapy	Bevacizumab or Placebo		60	143	
+TCGA-13-0924	Chemotherapy	Paclitaxel		38	143	
+TCGA-13-0924	Chemotherapy	Carboplatin		38	143	
+TCGA-13-0924	Targeted Molecular therapy	Bevacizumab or placebo		164	213	
+TCGA-13-1403	Chemotherapy	Cisplatin		27	142	NO
+TCGA-13-1403	Chemotherapy	Paclitaxel		27	142	NO
+TCGA-13-1404	Chemotherapy	Cisplatin		232	274	NO
+TCGA-13-1404	Chemotherapy	Carboplatin		50	156	NO
+TCGA-13-1404	Chemotherapy	Paclitaxel		50	156	NO
+TCGA-13-1405	Chemotherapy	Carboplatin		23	147	NO
+TCGA-13-1405	Chemotherapy	Paclitaxel		23	147	NO
+TCGA-13-1407	Chemotherapy	Carboplatin		42	184	NO
+TCGA-13-1407	Chemotherapy	Paclitaxel		42	184	NO
+TCGA-13-1408	Chemotherapy	Paclitaxel		8	91	NO
+TCGA-13-1408	Chemotherapy	Carboplatin		8	91	NO
+TCGA-13-1408	Chemotherapy	Paclitaxel		152	201	NO
+TCGA-13-1408	Chemotherapy	Cisplatin		152	201	NO
+TCGA-13-1409	Chemotherapy	Carboplatin		94	NA	YES
+TCGA-13-1409	Chemotherapy	Paclitaxel		94	NA	YES
+TCGA-13-1410	Chemotherapy	Paclitaxel		103	125	NO
+TCGA-13-1410	Chemotherapy	Carboplatin		39	83	NO
+TCGA-13-1410	Chemotherapy	Paclitaxel		39	83	NO
+TCGA-13-1410	Chemotherapy	Cisplatin		103	125	NO
+TCGA-13-1411	Chemotherapy	Carboplatin		8	128	NO
+TCGA-13-1411	Chemotherapy	Paclitaxel		8	128	NO
+TCGA-13-1412	Chemotherapy	Paclitaxel		37	121	NO
+TCGA-13-1412	Chemotherapy	Carboplatin		37	121	NO
+TCGA-13-1412	Chemotherapy	Paclitaxel		156	205	NO
+TCGA-13-1412	Chemotherapy	Cisplatin		156	205	NO
+TCGA-13-1477	Chemotherapy	Carboplatin		57	206	NO
+TCGA-13-1477	Chemotherapy	Paciltaxel		57	206	NO
+TCGA-13-1481	Chemotherapy	Cisplatin		198	242	NO
+TCGA-13-1481	Chemotherapy	Paciltaxel		11	131	NO
+TCGA-13-1481	Chemotherapy	Carboplatin		11	131	NO
+TCGA-13-1482	Chemotherapy	Paciltaxel		33	152	NO
+TCGA-13-1482	Chemotherapy	Carboplatin		33	152	NO
+TCGA-13-1483	Chemotherapy	Cisplatin		219	239	NO
+TCGA-13-1483	Chemotherapy	Carboplatin		35	176	NO
+TCGA-13-1483	Chemotherapy	Paciltaxel		35	176	NO
+TCGA-13-1484	Chemotherapy	Carboplatin		86	191	NO
+TCGA-13-1484	Chemotherapy	Paclitaxel		86	191	NO
+TCGA-13-1485	Chemotherapy	Carboplatin		45	149	NO
+TCGA-13-1485	Chemotherapy	Paciltaxel		45	149	NO
+TCGA-13-1487	Chemotherapy	Carboplatin		17	129	NO
+TCGA-13-1487	Chemotherapy	Cisplatin		208	208	NO
+TCGA-13-1487	Chemotherapy	Paciltaxel		257	412	NO
+TCGA-13-1487	Chemotherapy	Docetaxel		17	129	NO
+TCGA-13-1488	Chemotherapy	Paciltaxel		8	165	NO
+TCGA-13-1488	Chemotherapy	Carboplatin		8	165	NO
+TCGA-13-1489	Chemotherapy	Paclitaxel		41	181	NO
+TCGA-13-1489	Chemotherapy	Cisplatin		272	272	NO
+TCGA-13-1489	Chemotherapy	Carboplatin		41	181	NO
+TCGA-13-1489	Chemotherapy	Paclitaxel		867	868	NO
+TCGA-13-1489	Chemotherapy	Carboplatin		NA	1012	NO
+TCGA-13-1489	Chemotherapy	Taxotere		NA	1012	NO
+TCGA-13-1489	Chemotherapy	Carboplatin		867	868	NO
+TCGA-13-1491	Chemotherapy	Paciltaxel		42	154	NO
+TCGA-13-1491	Chemotherapy	Carboplatin		42	154	NO
+TCGA-13-1491	Chemotherapy	Paciltaxel		245	401	NO
+TCGA-13-1492	Chemotherapy	Carboplatin		48	247	NO
+TCGA-13-1492	Chemotherapy	Paclitaxel		48	247	NO
+TCGA-13-1494	Chemotherapy	Paclitaxel		NA	182	NO
+TCGA-13-1494	Chemotherapy	Carboplatin		NA	182	NO
+TCGA-13-1495	Chemotherapy	Paclitaxel		21	140	NO
+TCGA-13-1495	Targeted Molecular therapy	Cetuximab		21	119	NO
+TCGA-13-1495	Chemotherapy	Paclitaxel		231	548	NO
+TCGA-13-1495	Chemotherapy	Carboplatin		21	140	NO
+TCGA-13-1495	Targeted Molecular therapy	Cetuximab		147	224	NO
+TCGA-13-1496	Chemotherapy	Carboplatin		33	33	NO
+TCGA-13-1496	Chemotherapy	Paclitaxel		33	33	NO
+TCGA-13-1497	Chemotherapy	Cisplatin		185	185	NO
+TCGA-13-1497	Chemotherapy	Paclitaxel		22	127	NO
+TCGA-13-1497	Chemotherapy	Carboplatin		22	127	NO
+TCGA-13-1497	Targeted Molecular therapy	Cetuximab		22	71	NO
+TCGA-13-1498	Chemotherapy	Paclitaxel		7	216	NO
+TCGA-13-1498	Chemotherapy	Carboplatin		7	216	NO
+TCGA-13-1498	Hormone Therapy	Femara		250	632	NO
+TCGA-13-1499	Chemotherapy	Paclitaxel		76	97	NO
+TCGA-13-1499	Chemotherapy	Cisplatin		118	187	NO
+TCGA-13-1499	Chemotherapy	Carboplatin		76	97	NO
+TCGA-13-1499	Chemotherapy	Paclitaxel		118	187	NO
+TCGA-13-1500	Chemotherapy	Paclitaxel		NA	136	NO
+TCGA-13-1500	Chemotherapy	Cisplatin		197	225	NO
+TCGA-13-1500	Chemotherapy	Carboplatin		NA	136	
+TCGA-13-1501	Chemotherapy	Paclitaxel		78	183	NO
+TCGA-13-1501	Chemotherapy	Carboplatin		78	183	NO
+TCGA-13-1504	Chemotherapy	Paclitaxel		NA	283	NO
+TCGA-13-1504	Chemotherapy	Carboplatin		NA	283	NO
+TCGA-13-1505	Chemotherapy	Cisplatin		27	167	NO
+TCGA-13-1505	Chemotherapy	Paclitaxel		27	167	NO
+TCGA-13-1506	Chemotherapy	Gemcitabine		79	80	NO
+TCGA-13-1506	Chemotherapy	Cisplatin		79	80	NO
+TCGA-13-1506	Chemotherapy	Docetaxel		50	51	NO
+TCGA-13-1506	Chemotherapy	Cisplatin		50	51	NO
+TCGA-13-1506	Chemotherapy	Gemcitabine		99	197	NO
+TCGA-13-1506	Chemotherapy	Carboplatin		99	197	NO
+TCGA-13-1507	Chemotherapy	Paclitaxel		54	166	NO
+TCGA-13-1507	Chemotherapy	Cisplatin		54	166	NO
+TCGA-13-1509	Chemotherapy	Paclitaxel		21	127	NO
+TCGA-13-1509	Chemotherapy	Carboplatin		21	127	NO
+TCGA-13-1510	Chemotherapy	Paclitaxel		62	174	NO
+TCGA-13-1510	Chemotherapy	Carboplatin		62	174	NO
+TCGA-13-1511	Chemotherapy	Carboplatin		21	46	NO
+TCGA-13-1511	Chemotherapy	Gemcitabine		67	186	NO
+TCGA-13-1511	Chemotherapy	Carboplatin		67	186	NO
+TCGA-13-1512	Chemotherapy	Paclitaxel		73	94	NO
+TCGA-13-1512	Chemotherapy	Carboplatin		73	94	NO
+TCGA-13-1817	Chemotherapy	Cisplatin		210	318	NO
+TCGA-13-1817	Chemotherapy	Carboplatin		7	122	NO
+TCGA-13-1817	Chemotherapy	Paclitaxel		7	122	NO
+TCGA-13-1817	Chemotherapy	Liposomal Doxorubicin		706	902	NO
+TCGA-13-1817	Chemotherapy	Carboplatin		552	594	NO
+TCGA-13-1817	Chemotherapy	Paclitaxel		552	594	NO
+TCGA-13-1819	Chemotherapy	Carboplatin		37	149	NO
+TCGA-13-1819	Chemotherapy	Paclitaxel		37	149	NO
+TCGA-13-1819	Chemotherapy	Carboplatin		539	646	NO
+TCGA-13-1819	Chemotherapy	Paclitaxel		518	518	NO
+TCGA-13-1819	Chemotherapy	Paclitaxel		539	646	NO
+TCGA-13-2057	Chemotherapy	Paclitaxel		51	159	NO
+TCGA-13-2057	Chemotherapy	Carboplatin		51	159	NO
+TCGA-13-2059	Chemotherapy	Paclitaxel		46	158	NO
+TCGA-13-2059	Chemotherapy	Cisplatin		46	158	NO
+TCGA-13-2060	Chemotherapy	Cisplatin		31	143	NO
+TCGA-13-2060	Chemotherapy	Paclitaxel		31	143	NO
+TCGA-13-2061	Chemotherapy	Carboplatin		126	133	NO
+TCGA-13-2061	Chemotherapy	Paclitaxel		126	133	NO
+TCGA-13-2061	Chemotherapy	Carboplatin		147	168	NO
+TCGA-13-2061	Chemotherapy	Paclitaxel		63	112	NO
+TCGA-13-2061	Chemotherapy	Cisplatin		63	112	NO
+TCGA-13-2061	Chemotherapy	Paclitaxel		147	168	NO
+TCGA-13-2065	Chemotherapy	Carboplatin		16	68	NO
+TCGA-13-2065	Chemotherapy	Carboplatin		89	141	NO
+TCGA-13-2065	Chemotherapy	Paclitaxel		89	141	NO
+TCGA-13-2066	Chemotherapy	Carboplatin		61	169	NO
+TCGA-13-2066	Chemotherapy	Paclitaxel		61	169	NO
+TCGA-13-2071	Chemotherapy	Carboplatin		41	146	
+TCGA-13-2071	Chemotherapy	Paclitaxel		41	146	NO
+TCGA-13-A5FT	Chemotherapy	Cisplatin	Complete Response	49	111	NO
+TCGA-13-A5FT	Chemotherapy	Paclitaxel	Complete Response	48	117	NO
+TCGA-13-A5FU	Chemotherapy	Carboplatin	Partial Response	35	182	NO
+TCGA-13-A5FU	Chemotherapy	Paclitaxel	Partial Response	35	182	NO
+TCGA-20-0987	Chemotherapy	Taxol		91	NA	
+TCGA-20-0987	Chemotherapy	Topotecan		427	442	
+TCGA-20-0987	Chemotherapy	Carboplatin		91	NA	
+TCGA-20-0990	Chemotherapy	Carboplatin		1034	1174	
+TCGA-20-0990	Chemotherapy	Liposomal Doxorubican		1034	1174	
+TCGA-20-0990	Chemotherapy	Carboplatin		116	236	
+TCGA-20-0990	Chemotherapy	Paclitaxil		116	236	
+TCGA-20-0990	Chemotherapy	Gemcitabine		901	999	
+TCGA-20-0991	Chemotherapy	Carboplatin		71	NA	
+TCGA-20-0996	Chemotherapy	Topotecan		443	590	
+TCGA-20-0996	Chemotherapy	Carboplatin		168	224	
+TCGA-20-0996	Chemotherapy	Liposomal Doxorubicin		616	1078	
+TCGA-20-0996	Chemotherapy	Etoposide		1106	NA	
+TCGA-20-0996	Chemotherapy	Taxol		168	224	
+TCGA-20-1682	Chemotherapy	Taxol		40	145	NO
+TCGA-20-1682	Chemotherapy	Carboplatin		40	145	NO
+TCGA-20-1683	Chemotherapy	Carboplatin		17	135	NO
+TCGA-20-1683	Chemotherapy	Taxol		17	135	NO
+TCGA-20-1683	Hormone Therapy	Tamoxifen		618	NA	YES
+TCGA-20-1684	Chemotherapy	Bevacizumab		42	120	NO
+TCGA-20-1684	Chemotherapy	Taxol		42	120	NO
+TCGA-20-1684	Chemotherapy	Carboplatin		42	120	NO
+TCGA-20-1685	Chemotherapy	Carboplatin		39	144	NO
+TCGA-20-1685	Chemotherapy	Bevacizumab		39	144	NO
+TCGA-20-1685	Chemotherapy	Taxol		39	144	NO
+TCGA-20-1686	Chemotherapy	Taxol		26	131	NO
+TCGA-20-1686	Chemotherapy	Carboplatin		26	131	NO
+TCGA-20-1687	Chemotherapy	Taxol		42	172	NO
+TCGA-20-1687	Chemotherapy	Carboplatin		42	172	NO
+TCGA-23-1021	Chemotherapy	Gemcitabine		526	693	NO
+TCGA-23-1021	Chemotherapy	Paclitaxel		14	119	NO
+TCGA-23-1021	Chemotherapy	Topotecan		722	861	NO
+TCGA-23-1021	Chemotherapy	Carboplatin		14	119	NO
+TCGA-23-1021	Chemotherapy	Vinorelbine		1352	1380	NO
+TCGA-23-1021	Chemotherapy	Doxorubicin		1408	1408	NO
+TCGA-23-1021	Chemotherapy	Paclitaxel		1226	1331	NO
+TCGA-23-1022	Chemotherapy	Paclitaxel		29	162	NO
+TCGA-23-1022	Chemotherapy	Cisplatin		614	741	NO
+TCGA-23-1022	Chemotherapy	Gemcitabine		1378	1378	NO
+TCGA-23-1022	Chemotherapy	Carboplatin		1056	1252	NO
+TCGA-23-1022	Chemotherapy	Topotecan		762	818	NO
+TCGA-23-1022	Chemotherapy	Cyclophosphamide		1274	1357	NO
+TCGA-23-1022	Chemotherapy	Carboplatin		29	162	NO
+TCGA-23-1022	Chemotherapy	Gemcitabine		614	741	NO
+TCGA-23-1022	Chemotherapy	Docetaxel		853	937	NO
+TCGA-23-1023	Chemotherapy	Cisplatin		1582	1603	NO
+TCGA-23-1023	Chemotherapy	Carboplatin		1386	1407	NO
+TCGA-23-1023	Chemotherapy	Cisplatin		1427	1455	NO
+TCGA-23-1023	Chemotherapy	Doxil		1272	1364	NO
+TCGA-23-1023	Chemotherapy	Carboplatin		29	120	NO
+TCGA-23-1023	Chemotherapy	Cisplatin		557	609	NO
+TCGA-23-1023	Chemotherapy	Gemcitabine		539	560	NO
+TCGA-23-1023	Chemotherapy	Ovarex/Placebo		155	468	NO
+TCGA-23-1023	Chemotherapy	Topotecan		1616	1665	NO
+TCGA-23-1023	Chemotherapy	Paclitaxel		29	120	NO
+TCGA-23-1023	Chemotherapy	Cisplatin		509	509	NO
+TCGA-23-1023	Chemotherapy	Gemcitabine		557	609	NO
+TCGA-23-1023	Chemotherapy	Gemcitabine		509	509	NO
+TCGA-23-1023	Chemotherapy	Carboplatin		539	560	NO
+TCGA-23-1024	Chemotherapy	Cisplatin		13	304	NO
+TCGA-23-1024	Chemotherapy	Paclitaxel		13	304	NO
+TCGA-23-1024	Chemotherapy	Paclitaxel		224	529	NO
+TCGA-23-1024	Chemotherapy	Carboplatin		13	304	NO
+TCGA-23-1026	Chemotherapy	Gemcitabine		866	936	NO
+TCGA-23-1026	Chemotherapy	Carboplatin		7	108	NO
+TCGA-23-1026	Chemotherapy	Paclitaxel		7	108	NO
+TCGA-23-1026	Chemotherapy	Cisplatin		866	936	NO
+TCGA-23-1027	Chemotherapy	Gemcitabine		769	867	NO
+TCGA-23-1027	Chemotherapy	Docetaxel		166	250	NO
+TCGA-23-1027	Chemotherapy	Carboplatin		26	129	NO
+TCGA-23-1027	Chemotherapy	Cisplatin		166	250	NO
+TCGA-23-1027	Chemotherapy	Paclitaxel		769	867	NO
+TCGA-23-1027	Chemotherapy	Paclitaxel		26	129	NO
+TCGA-23-1028	Chemotherapy	Doxorubicin		173	229	NO
+TCGA-23-1028	Chemotherapy	Docetaxel		749	859	NO
+TCGA-23-1028	Chemotherapy	Carboplatin		749	859	NO
+TCGA-23-1028	Chemotherapy	Doxorubicin		1112	1335	NO
+TCGA-23-1028	Chemotherapy	Cisplatin		1468	1489	NO
+TCGA-23-1028	Chemotherapy	Gemcitabine		1461	1461	NO
+TCGA-23-1028	Chemotherapy	Carboplatin		26	110	NO
+TCGA-23-1028	Chemotherapy	Gemcitabine		1468	1489	NO
+TCGA-23-1028	Chemotherapy	Carboplatin		1461	1461	NO
+TCGA-23-1028	Chemotherapy	Topotecan		908	1006	NO
+TCGA-23-1028	Chemotherapy	Topotecan		1140	1153	NO
+TCGA-23-1028	Chemotherapy	Paclitaxel		26	110	NO
+TCGA-23-1028	Chemotherapy	Carboplatin		1363	1461	NO
+TCGA-23-1029	Chemotherapy	Paciltaxel		30	78	NO
+TCGA-23-1029	Chemotherapy	Cisplatin		30	78	NO
+TCGA-23-1030	Chemotherapy	Doxil		622	767	NO
+TCGA-23-1030	Chemotherapy	Xyotax		243	438	NO
+TCGA-23-1030	Chemotherapy	Paclitaxel		62	165	NO
+TCGA-23-1030	Chemotherapy	Carboplatin		62	165	NO
+TCGA-23-1031	Chemotherapy	Gemcitabine		341	446	NO
+TCGA-23-1031	Chemotherapy	Xeloda		460	477	NO
+TCGA-23-1031	Chemotherapy	Paclitaxel		26	166	NO
+TCGA-23-1031	Chemotherapy	Docetaxel		460	485	NO
+TCGA-23-1031	Chemotherapy	Doxorubicin		265	321	NO
+TCGA-23-1031	Chemotherapy	Cisplatin		341	446	NO
+TCGA-23-1031	Chemotherapy	Topotecan		541	555	NO
+TCGA-23-1031	Chemotherapy	Carboplatin		26	166	NO
+TCGA-23-1110	Chemotherapy	Xeloda		333	375	NO
+TCGA-23-1110	Chemotherapy	Carboplatin		6	110	NO
+TCGA-23-1110	Immunotherapy	Ovarex/IND		179	235	NO
+TCGA-23-1110	Chemotherapy	Paclitaxel		6	110	NO
+TCGA-23-1111	Chemotherapy	Investigal drug Avastin		45	129	NO
+TCGA-23-1111	Chemotherapy	Carboplatin		24	129	NO
+TCGA-23-1111	Chemotherapy	Taxol		24	129	NO
+TCGA-23-1113	Chemotherapy	Carboplatin		27	74	NO
+TCGA-23-1113	Chemotherapy	Cisplatin		102	187	NO
+TCGA-23-1113	Chemotherapy	Docetaxel		253	873	NO
+TCGA-23-1113	Chemotherapy	Paclitaxel		27	74	NO
+TCGA-23-1113	Chemotherapy	Gemcitabine		102	187	NO
+TCGA-23-1113	Chemotherapy	Doxorubicin		225	253	NO
+TCGA-23-1114	Chemotherapy	Carboplatin		865	907	NO
+TCGA-23-1114	Chemotherapy	Topotecan		1985	2026	NO
+TCGA-23-1114	Chemotherapy	Doxil		1741	1918	NO
+TCGA-23-1114	Chemotherapy	Paclitaxel		663	747	NO
+TCGA-23-1114	Chemotherapy	Paclitaxel		43	182	NO
+TCGA-23-1114	Chemotherapy	Carboplatin		1357	1425	NO
+TCGA-23-1114	Chemotherapy	Carboplatin		43	182	NO
+TCGA-23-1114	Chemotherapy	Gemzar		1324	1350	NO
+TCGA-23-1114	Chemotherapy	Carboplatin		663	747	NO
+TCGA-23-1114	Chemotherapy	Docetaxel		1159	1222	NO
+TCGA-23-1114	Chemotherapy	Gemzar		1348	1425	NO
+TCGA-23-1114	Chemotherapy	Cisplatin		1324	1350	NO
+TCGA-23-1116	Chemotherapy	Paclitaxel		19	187	
+TCGA-23-1116	Chemotherapy	Carboplatin		19	187	
+TCGA-23-1116	Chemotherapy	Carboplatin		306	418	NO
+TCGA-23-1116	Chemotherapy	Gemzar		306	418	NO
+TCGA-23-1117	Chemotherapy	Cisplatin		781	863	NO
+TCGA-23-1117	Chemotherapy	Cyclophosphamide		712	757	NO
+TCGA-23-1117	Chemotherapy	Gemcitabine		951	993	NO
+TCGA-23-1117	Chemotherapy	Topotecan		459	624	NO
+TCGA-23-1117	Chemotherapy	Docetaxel		890	928	NO
+TCGA-23-1117	Chemotherapy	Carboplatin		22	294	NO
+TCGA-23-1117	Immunotherapy	Herceptin		890	928	NO
+TCGA-23-1118	Chemotherapy	Carboplatin		56	196	NO
+TCGA-23-1119	Chemotherapy	Carboplatin		3389	3494	NO
+TCGA-23-1119	Chemotherapy	Carboplatin		18	125	NO
+TCGA-23-1120	Chemotherapy	Paclitaxel		63	146	
+TCGA-23-1120	Chemotherapy	Cisplatin		63	146	
+TCGA-23-1121	Chemotherapy	Taxol		31	194	NO
+TCGA-23-1121	Chemotherapy	Avastin		53	152	NO
+TCGA-23-1121	Chemotherapy	Carboplatin		31	194	NO
+TCGA-23-1122	Chemotherapy	Ifosfamide		921	1031	NO
+TCGA-23-1122	Chemotherapy	Cisplatin		1054	1089	NO
+TCGA-23-1122	Chemotherapy	Gemcitabine		501	686	NO
+TCGA-23-1122	Chemotherapy	Carboplatin		27	244	NO
+TCGA-23-1122	Chemotherapy	Gemzar		707	754	NO
+TCGA-23-1122	Chemotherapy	Gemcitabine		775	859	NO
+TCGA-23-1123	Chemotherapy	Paclitaxel		7	250	NO
+TCGA-23-1123	Chemotherapy	Topotecan		812	894	NO
+TCGA-23-1123	Chemotherapy	Doxorubicin		452	599	NO
+TCGA-23-1123	Chemotherapy	Carboplatin		7	250	NO
+TCGA-23-1124	Chemotherapy	Gemcitabine		676	872	NO
+TCGA-23-1124	Chemotherapy	Doxorubicin		1363	1510	NO
+TCGA-23-1124	Chemotherapy	Paclitaxel		1070	1286	NO
+TCGA-23-1124	Chemotherapy	Topotecan		1538	1566	NO
+TCGA-23-1124	Chemotherapy	Carboplatin		19	197	NO
+TCGA-23-1124	Chemotherapy	Vinorelbine		1307	1342	NO
+TCGA-23-1809	Chemotherapy	Paclitaxel		24	107	NO
+TCGA-23-1809	Chemotherapy	Carboplatin		24	107	NO
+TCGA-23-2072	Chemotherapy	Doxil		571	571	NO
+TCGA-23-2072	Chemotherapy	Taxol		26	151	NO
+TCGA-23-2072	Chemotherapy	Gemzar		579	620	NO
+TCGA-23-2072	Chemotherapy	Carboplatin		26	151	NO
+TCGA-23-2077	Chemotherapy	Taxol		22	155	NO
+TCGA-23-2077	Chemotherapy	Carboplatin		22	155	NO
+TCGA-23-2077	Chemotherapy	Carboplatin		1653	1758	NO
+TCGA-23-2077	Chemotherapy	Carboplatin		1622	1622	NO
+TCGA-23-2077	Chemotherapy	Taxotere		1653	1758	NO
+TCGA-23-2077	Chemotherapy	Taxol		1622	1622	NO
+TCGA-23-2078	Chemotherapy	Carboplatin		35	149	NO
+TCGA-23-2078	Chemotherapy	Taxol		35	149	NO
+TCGA-23-2079	Chemotherapy	Doxil		296	489	NO
+TCGA-23-2079	Chemotherapy	Paclitaxel		4	125	NO
+TCGA-23-2079	Chemotherapy	Carboplatin		2102	2147	NO
+TCGA-23-2079	Chemotherapy	Carboplatin		4	125	NO
+TCGA-23-2081	Chemotherapy	Avastin		NA	NA	NO
+TCGA-23-2081	Chemotherapy	Gemzar		1790	1948	NO
+TCGA-23-2081	Chemotherapy	AMG 706		2070	2173	NO
+TCGA-23-2081	Chemotherapy	Cisplatin		1790	1948	NO
+TCGA-23-2081	Chemotherapy	Paclitaxel		16	173	NO
+TCGA-23-2081	Chemotherapy	Doxil		331	418	NO
+TCGA-23-2081	Chemotherapy	Cisplatin		988	1154	NO
+TCGA-23-2081	Chemotherapy	Carboplatin		939	960	NO
+TCGA-23-2081	Chemotherapy	Gemzar		988	1154	NO
+TCGA-23-2081	Chemotherapy	Carboplatin		16	173	NO
+TCGA-23-2081	Chemotherapy	Paclitaxel		NA	NA	NO
+TCGA-23-2081	Chemotherapy	Taxotere		939	960	NO
+TCGA-23-2084	Chemotherapy	Cisplatin		1425	1425	NO
+TCGA-23-2084	Chemotherapy	Taxotere		1261	1302	NO
+TCGA-23-2084	Chemotherapy	Etoposide (VP16)		1457	1485	NO
+TCGA-23-2084	Chemotherapy	Gemzar		631	701	NO
+TCGA-23-2084	Chemotherapy	Carboplatin		1381	1401	NO
+TCGA-23-2084	Chemotherapy	Cisplatin		631	701	NO
+TCGA-23-2084	Chemotherapy	Doxil		1183	1240	NO
+TCGA-23-2084	Chemotherapy	Carboplatin		6	155	NO
+TCGA-23-2084	Chemotherapy	Topotecan		1324	1359	NO
+TCGA-23-2084	Chemotherapy	Ifosfamide		1425	1425	NO
+TCGA-23-2084	Chemotherapy	Paclitaxel		6	155	NO
+TCGA-23-2084	Immunotherapy	Rhumab/Ind		1127	1169	NO
+TCGA-23-2084	Chemotherapy	Ifosfamide		1381	1401	NO
+TCGA-23-2643	Chemotherapy	Taxol		24	24	NO
+TCGA-23-2643	Chemotherapy	Carboplatin		24	24	NO
+TCGA-23-2643	Chemotherapy	Cisplatin		45	129	NO
+TCGA-23-2643	Chemotherapy	Taxol		45	129	NO
+TCGA-24-0966	Chemotherapy	carboplatin		21	120	
+TCGA-24-0966	Chemotherapy	paclitaxel		21	120	
+TCGA-24-0966	Targeted Molecular therapy	Avastin/bevacizumab/placebo		71	120	
+TCGA-24-0968	Chemotherapy	Topotecan		NA	NA	NO
+TCGA-24-0968	Chemotherapy	Carboplatin		35	119	NO
+TCGA-24-0968	Chemotherapy	Cisplatin		NA	NA	NO
+TCGA-24-0968	Chemotherapy	Gemzar		NA	NA	NO
+TCGA-24-0968	Chemotherapy	Cytoxan		NA	NA	NO
+TCGA-24-0968	Chemotherapy	Paclitaxel		35	119	NO
+TCGA-24-0968	Chemotherapy	Navelbine		NA	NA	NO
+TCGA-24-0968	Chemotherapy	Doxil		NA	NA	NO
+TCGA-24-0970	Chemotherapy	Doxil		25	314	
+TCGA-24-0970	Chemotherapy	Carboplatin		25	314	
+TCGA-24-0970	Chemotherapy	Taxol		25	314	NO
+TCGA-24-0975	Chemotherapy	Doxil		22	NA	NO
+TCGA-24-0975	Chemotherapy	Topotecan		NA	611	NO
+TCGA-24-0975	Chemotherapy	Paclitaxel		22	NA	NO
+TCGA-24-0975	Chemotherapy	Navelbine		NA	611	NO
+TCGA-24-0975	Chemotherapy	Carboplatin		22	NA	NO
+TCGA-24-0975	Chemotherapy	Gemcitabine		22	NA	NO
+TCGA-24-0979	Chemotherapy	Taxol		15	187	NO
+TCGA-24-0979	Chemotherapy	Carboplatin		15	187	NO
+TCGA-24-0980	Chemotherapy	paclitaxel		77	178	
+TCGA-24-0980	Chemotherapy	carboplatin		77	178	
+TCGA-24-0982	Chemotherapy	Gemzar		341	474	NO
+TCGA-24-0982	Chemotherapy	Paclitaxel		13	125	NO
+TCGA-24-0982	Chemotherapy	Carboplatin		13	125	NO
+TCGA-24-0982	Chemotherapy	Doxil		341	474	NO
+TCGA-24-0982	Chemotherapy	Navelbine		251	321	NO
+TCGA-24-0982	Chemotherapy	Topotecan		251	321	NO
+TCGA-24-0982	Chemotherapy	Taxol		488	615	NO
+TCGA-24-0982	Chemotherapy	Carboplatin		488	615	NO
+TCGA-24-1103	Chemotherapy	Topotecan		694	910	NO
+TCGA-24-1103	Chemotherapy	Navelbine		694	910	NO
+TCGA-24-1103	Chemotherapy	Taxotere		1016	1127	NO
+TCGA-24-1103	Chemotherapy	Taxol		19	127	NO
+TCGA-24-1103	Chemotherapy	Carboplatin		19	127	NO
+TCGA-24-1103	Chemotherapy	Carboplatin		1016	1127	NO
+TCGA-24-1103	Chemotherapy	Carboplatin		1625	NA	NO
+TCGA-24-1103	Chemotherapy	Taxotere		1625	NA	NO
+TCGA-24-1104	Chemotherapy	Doxil		1526	1589	NO
+TCGA-24-1104	Chemotherapy	Cisplatin		30	175	NO
+TCGA-24-1104	Chemotherapy	Paclitaxel		30	175	NO
+TCGA-24-1104	Chemotherapy	Carboplatin		30	175	NO
+TCGA-24-1104	Chemotherapy	Taxol		1001	1113	NO
+TCGA-24-1104	Chemotherapy	Carboplatin		1001	1113	NO
+TCGA-24-1104	Chemotherapy	Taxol		1858	1876	NO
+TCGA-24-1105	Chemotherapy	Topotecan		724	860	NO
+TCGA-24-1105	Chemotherapy	Doxil		1004	1116	NO
+TCGA-24-1105	Chemotherapy	Cisplatin		1368	1375	NO
+TCGA-24-1105	Chemotherapy	Cytoxan		1228	1298	NO
+TCGA-24-1105	Targeted Molecular therapy	Avastin		1228	1298	NO
+TCGA-24-1105	Chemotherapy	Carboplatin		25	178	NO
+TCGA-24-1105	Chemotherapy	Navelbine		724	860	NO
+TCGA-24-1105	Chemotherapy	Taxol		25	178	NO
+TCGA-24-1105	Chemotherapy	Gemzar		1004	1116	NO
+TCGA-24-1105	Chemotherapy	Taxol		1313	1340	NO
+TCGA-24-1105	Chemotherapy	Gemzar		1368	1375	NO
+TCGA-24-1105	Chemotherapy	Carboplatin		1130	1200	NO
+TCGA-24-1105	Chemotherapy	Taxol		486	584	NO
+TCGA-24-1105	Chemotherapy	Carboplatin		486	584	NO
+TCGA-24-1413	Chemotherapy	Paclitaxel		34	145	
+TCGA-24-1413	Chemotherapy	Carboplatin		34	145	
+TCGA-24-1416	Chemotherapy	Cisplatin		16	170	NO
+TCGA-24-1416	Chemotherapy	Carboplatin		16	170	NO
+TCGA-24-1416	Chemotherapy	Taxol		16	170	NO
+TCGA-24-1416	Chemotherapy	Taxotere		16	170	NO
+TCGA-24-1417	Chemotherapy	Taxol		25	156	NO
+TCGA-24-1417	Chemotherapy	Carboplatin		25	156	NO
+TCGA-24-1418	Chemotherapy	Carboplatin		23	161	NO
+TCGA-24-1418	Chemotherapy	Taxol		23	161	NO
+TCGA-24-1418	Targeted Molecular therapy	Bevacizamab/Placebo		43	231	NO
+TCGA-24-1419	Chemotherapy	Pacitaxel		197	NA	YES
+TCGA-24-1419	Chemotherapy	Carboplatin		17	121	NO
+TCGA-24-1419	Chemotherapy	Docetaxel		17	131	NO
+TCGA-24-1423	Chemotherapy	Paclitaxel		21	151	NO
+TCGA-24-1423	Chemotherapy	Doxorubicin		21	151	NO
+TCGA-24-1423	Chemotherapy	Cisplatin		21	151	NO
+TCGA-24-1424	Chemotherapy	Carboplatin		8	120	NO
+TCGA-24-1424	Chemotherapy	Paclitaxel		8	120	NO
+TCGA-24-1424	Chemotherapy	Docetaxel		8	120	NO
+TCGA-24-1425	Chemotherapy	Taxotere		27	145	NO
+TCGA-24-1425	Chemotherapy	Carboplatin		27	145	NO
+TCGA-24-1425	Chemotherapy	Taxol		27	145	NO
+TCGA-24-1426	Chemotherapy	Cisplatin		-8	142	NO
+TCGA-24-1426	Chemotherapy	Taxoterecin		-8	142	NO
+TCGA-24-1426	Chemotherapy	Taxol		-8	142	NO
+TCGA-24-1427	Chemotherapy	Carboplatin		14	147	NO
+TCGA-24-1427	Chemotherapy	Paclitaxel		14	147	NO
+TCGA-24-1428	Chemotherapy	Cisplatin		46	130	NO
+TCGA-24-1428	Chemotherapy	Paclitaxel		46	130	NO
+TCGA-24-1428	Chemotherapy	Docetaxel		46	130	NO
+TCGA-24-1428	Chemotherapy	Carbplatin		466	508	NO
+TCGA-24-1430	Chemotherapy	Doxil		804	841	NO
+TCGA-24-1430	Chemotherapy	Taxol		22	106	NO
+TCGA-24-1430	Chemotherapy	Doxil		568	624	NO
+TCGA-24-1430	Chemotherapy	Carboplatin		652	769	NO
+TCGA-24-1430	Chemotherapy	Topotecan		463	547	NO
+TCGA-24-1430	Chemotherapy	Amitostine		22	106	NO
+TCGA-24-1430	Chemotherapy	Taxol		652	769	NO
+TCGA-24-1430	Chemotherapy	Gomzar		804	841	NO
+TCGA-24-1430	Chemotherapy	Cisplatin		22	106	NO
+TCGA-24-1431	Chemotherapy	Carboplatin		42	147	NO
+TCGA-24-1431	Chemotherapy	Taxol		42	147	NO
+TCGA-24-1431	Chemotherapy	Topotecan		262	308	NO
+TCGA-24-1431	Chemotherapy	Taxotere		NA	NA	NO
+TCGA-24-1431	Chemotherapy	Doxil		329	NA	NO
+TCGA-24-1434	Chemotherapy	Taxol		496	535	NO
+TCGA-24-1434	Chemotherapy	Taxol		45	228	NO
+TCGA-24-1434	Chemotherapy	Doxil		343	371	NO
+TCGA-24-1434	Chemotherapy	Gemzet		45	228	NO
+TCGA-24-1434	Chemotherapy	Carboplatin		45	228	NO
+TCGA-24-1434	Chemotherapy	Topotecan		281	314	NO
+TCGA-24-1434	Chemotherapy	Etoposide		395	426	NO
+TCGA-24-1435	Chemotherapy	Taxol		1058	1126	NO
+TCGA-24-1435	Chemotherapy	Carboplatin		814	912	NO
+TCGA-24-1435	Chemotherapy	Gemar		1140	1189	NO
+TCGA-24-1435	Chemotherapy	Doxil		944	1028	NO
+TCGA-24-1435	Chemotherapy	Cisplatin		1140	1189	NO
+TCGA-24-1435	Chemotherapy	Topotecan		511	771	NO
+TCGA-24-1435	Chemotherapy	Carboplatin		27	149	NO
+TCGA-24-1435	Chemotherapy	Topotecan		1259	1266	NO
+TCGA-24-1435	Chemotherapy	Taxol		27	149	NO
+TCGA-24-1436	Chemotherapy	Taxol		24	135	NO
+TCGA-24-1436	Chemotherapy	Carboplatin		24	135	NO
+TCGA-24-1436	Chemotherapy	Topotecan		157	223	NO
+TCGA-24-1463	Chemotherapy	Taxol		976	1084	NO
+TCGA-24-1463	Chemotherapy	Topotecan		1270	1383	NO
+TCGA-24-1463	Chemotherapy	Doxil		1465	1558	NO
+TCGA-24-1463	Chemotherapy	Cisplatin		1742	1791	NO
+TCGA-24-1463	Chemotherapy	Taxol		1600	1733	NO
+TCGA-24-1463	Chemotherapy	Taxol		18	123	NO
+TCGA-24-1463	Chemotherapy	Carboplatin		18	123	NO
+TCGA-24-1463	Chemotherapy	Carboplatin		976	1084	NO
+TCGA-24-1463	Chemotherapy	Navelbine		1270	1383	NO
+TCGA-24-1463	Chemotherapy	Cisplatin		976	1084	NO
+TCGA-24-1463	Chemotherapy	Gemcitabine		1465	1558	NO
+TCGA-24-1464	Chemotherapy	Taxol		28	163	NO
+TCGA-24-1464	Chemotherapy	Carboplatin		28	163	NO
+TCGA-24-1464	Chemotherapy	Toptecan		342	343	NO
+TCGA-24-1466	Chemotherapy	Carboplatin		483	680	NO
+TCGA-24-1466	Chemotherapy	Topetecan		1081	1216	NO
+TCGA-24-1466	Chemotherapy	Carboplatin		880	1020	NO
+TCGA-24-1466	Chemotherapy	Taxol		12	145	NO
+TCGA-24-1466	Hormone Therapy	Tamoxifen		670	852	NO
+TCGA-24-1466	Chemotherapy	Carboplatin		12	145	NO
+TCGA-24-1466	Chemotherapy	Taxol		483	680	NO
+TCGA-24-1466	Hormone Therapy	Tamoxifen		1227	NA	
+TCGA-24-1466	Chemotherapy	Taxol		880	1020	NO
+TCGA-24-1467	Chemotherapy	Taxol		1277	1391	YES
+TCGA-24-1467	Chemotherapy	Cisplatin		1804	1909	YES
+TCGA-24-1467	Targeted Molecular therapy	Bevacizumab		2819	2889	NO
+TCGA-24-1467	Chemotherapy	Doxetaxel		2561	2737	YES
+TCGA-24-1467	Chemotherapy	Doxil		2476	2531	YES
+TCGA-24-1467	Chemotherapy	Carboplatin		6	110	YES
+TCGA-24-1467	Hormone Therapy	Tamoxifen		2363	2458	YES
+TCGA-24-1467	Chemotherapy	Doxil		2989	3059	YES
+TCGA-24-1467	Hormone Therapy	Tamoxifen		2758	NA	YES
+TCGA-24-1467	Chemotherapy	Cisplatin		1277	1391	YES
+TCGA-24-1467	Chemotherapy	Cisplatin		2561	2737	YES
+TCGA-24-1467	Targeted Molecular therapy	Bevacizumab		2989	3059	NO
+TCGA-24-1467	Chemotherapy	Topotecan		2170	2296	YES
+TCGA-24-1467	Chemotherapy	Carboplatin		1277	1391	YES
+TCGA-24-1467	Chemotherapy	Navelbine		2170	2296	YES
+TCGA-24-1467	Chemotherapy	Cytoxen		2819	2889	YES
+TCGA-24-1467	Chemotherapy	Topotecan		3073	3101	YES
+TCGA-24-1467	Chemotherapy	Taxol		6	110	NO
+TCGA-24-1467	Chemotherapy	Taxol		1804	1909	YES
+TCGA-24-1469	Chemotherapy	Taxol		NA	135	NO
+TCGA-24-1469	Chemotherapy	Carboplatin		NA	135	NO
+TCGA-24-1470	Chemotherapy	Docetaxel		17	83	NO
+TCGA-24-1470	Chemotherapy	Cisplatin		17	83	NO
+TCGA-24-1470	Chemotherapy	Paclitaxel		17	83	NO
+TCGA-24-1471	Chemotherapy			NA	NA	
+TCGA-24-1471	Targeted Molecular therapy	GOG 218		NA	NA	
+TCGA-24-1474	Chemotherapy	Gemzar		454	635	NO
+TCGA-24-1474	Chemotherapy	Taxol		18	123	NO
+TCGA-24-1474	Chemotherapy	Topotecan		350	431	NO
+TCGA-24-1474	Chemotherapy	Carboplatin		18	123	NO
+TCGA-24-1474	Chemotherapy	Doxil		454	635	NO
+TCGA-24-1544	Chemotherapy	Carboplatin		777	799	NO
+TCGA-24-1544	Chemotherapy	Taxol		18	203	NO
+TCGA-24-1544	Chemotherapy	Topotecan		18	203	NO
+TCGA-24-1544	Chemotherapy	Doxil		243	470	NO
+TCGA-24-1544	Chemotherapy	Carboplatin		18	203	NO
+TCGA-24-1544	Chemotherapy	Taxol		533	638	NO
+TCGA-24-1545	Chemotherapy	Taxol		14	285	NO
+TCGA-24-1545	Chemotherapy	Taxol		1056	1169	NO
+TCGA-24-1545	Chemotherapy	Carboplatin		1056	1169	NO
+TCGA-24-1545	Chemotherapy	Topotecan		867	951	NO
+TCGA-24-1545	Chemotherapy	Carboplatin		14	285	NO
+TCGA-24-1545	Chemotherapy	Doxil		973	1028	NO
+TCGA-24-1545	Chemotherapy	Navelbine		1203	1238	NO
+TCGA-24-1546	Chemotherapy	Carboplatin		NA	NA	
+TCGA-24-1546	Chemotherapy	Taxol		NA	NA	
+TCGA-24-1548	Chemotherapy	Carboplatin		6	123	NO
+TCGA-24-1548	Chemotherapy	Navelbine		351	443	NO
+TCGA-24-1548	Chemotherapy	Doxil		272	327	NO
+TCGA-24-1548	Chemotherapy	Topotecan		221	242	NO
+TCGA-24-1548	Chemotherapy	Gemcitabine		351	443	NO
+TCGA-24-1548	Chemotherapy	Taxol		6	123	NO
+TCGA-24-1548	Chemotherapy	Cisplatin		221	242	NO
+TCGA-24-1548	Chemotherapy	Taxol		475	488	NO
+TCGA-24-1549	Chemotherapy	Carboplatin		NA	NA	NO
+TCGA-24-1549	Chemotherapy	Toptecan		NA	NA	NO
+TCGA-24-1549	Chemotherapy	VP16		NA	NA	NO
+TCGA-24-1549	Chemotherapy	Taxol		NA	NA	NO
+TCGA-24-1549	Chemotherapy	Gemzan		NA	NA	NO
+TCGA-24-1549	Chemotherapy	Taxotere		1518	NA	NO
+TCGA-24-1549	Chemotherapy	Doxil		NA	NA	NO
+TCGA-24-1549	Chemotherapy	Cisplatin		NA	NA	NO
+TCGA-24-1549	Chemotherapy	Xeloda		NA	NA	NO
+TCGA-24-1550	Chemotherapy	Topotecan		902	965	NO
+TCGA-24-1550	Chemotherapy	Carboplatin		986	1107	NO
+TCGA-24-1550	Chemotherapy	Taxol		8	174	NO
+TCGA-24-1550	Chemotherapy	Carboplatin		1164	1211	NO
+TCGA-24-1550	Chemotherapy	Cisplatin		8	174	NO
+TCGA-24-1550	Chemotherapy	Taxol		1164	1211	NO
+TCGA-24-1550	Chemotherapy	Doxil		1233	1233	NO
+TCGA-24-1551	Chemotherapy	Topotecan		790	790	NO
+TCGA-24-1551	Chemotherapy	Carboplatin		842	975	NO
+TCGA-24-1551	Chemotherapy	Doxil		1549	1549	NO
+TCGA-24-1551	Chemotherapy	Carboplatin		10	135	NO
+TCGA-24-1551	Chemotherapy	Doxil		1227	1254	NO
+TCGA-24-1551	Chemotherapy	Taxol		10	135	NO
+TCGA-24-1551	Chemotherapy	Taxol		1289	1437	NO
+TCGA-24-1552	Chemotherapy	Taxol		53	265	NO
+TCGA-24-1552	Chemotherapy	Carboplatin		1044	1170	NO
+TCGA-24-1552	Chemotherapy	Doxil		728	851	NO
+TCGA-24-1552	Chemotherapy	Amitostine		876	1030	NO
+TCGA-24-1552	Chemotherapy	Topotecan		479	587	NO
+TCGA-24-1552	Chemotherapy	Taxol		876	1030	NO
+TCGA-24-1552	Chemotherapy	Carboplatin		53	265	NO
+TCGA-24-1553	Hormone Therapy	Tamoxifen		1243	1293	NO
+TCGA-24-1553	Chemotherapy	Taxol		17	154	NO
+TCGA-24-1553	Chemotherapy	Taxol		566	735	NO
+TCGA-24-1553	Chemotherapy	Carboplatin		1309	1623	NO
+TCGA-24-1553	Chemotherapy	Gemzar		944	1224	NO
+TCGA-24-1553	Chemotherapy	Xeloda		1659	1691	NO
+TCGA-24-1553	Chemotherapy	Carboplatin		566	735	NO
+TCGA-24-1553	Chemotherapy	Doxil		944	1224	NO
+TCGA-24-1553	Chemotherapy	Topotecan		864	1283	NO
+TCGA-24-1553	Chemotherapy	Taxol		1309	1623	NO
+TCGA-24-1553	Chemotherapy	Carboplatin		17	154	NO
+TCGA-24-1553	Chemotherapy	Doxil		1735	1735	NO
+TCGA-24-1555	Chemotherapy	Topotecan		1563	1928	NO
+TCGA-24-1555	Chemotherapy	Carboplatin		1959	2050	NO
+TCGA-24-1555	Chemotherapy	Doxil		2506	2628	NO
+TCGA-24-1555	Chemotherapy	Carboplatin		2262	2415	NO
+TCGA-24-1555	Chemotherapy	Taxol		2635	NA	NO
+TCGA-24-1555	Chemotherapy	Carboplatin		NA	NA	NO
+TCGA-24-1555	Chemotherapy	Taxol		2262	2415	NO
+TCGA-24-1555	Chemotherapy	Taxol		NA	NA	NO
+TCGA-24-1555	Chemotherapy	Carboplatin		2635	NA	NO
+TCGA-24-1555	Chemotherapy	Taxol		1959	2050	NO
+TCGA-24-1555	Chemotherapy	Gemzar		2506	2628	NO
+TCGA-24-1556	Chemotherapy	Cytoxan		NA	NA	
+TCGA-24-1556	Chemotherapy	Cisplatin		NA	NA	
+TCGA-24-1556	Chemotherapy	Carboplatin		NA	NA	
+TCGA-24-1556	Chemotherapy	Carboplatin		1724	1832	NO
+TCGA-24-1556	Chemotherapy	Taxol		NA	NA	
+TCGA-24-1556	Chemotherapy	Taxotere		1724	1832	NO
+TCGA-24-1556	Chemotherapy	Toptecan		539	628	NO
+TCGA-24-1557	Chemotherapy	Topotecan		300	347	NO
+TCGA-24-1557	Chemotherapy	Taxotere		1027	1069	NO
+TCGA-24-1557	Chemotherapy	Doxil		368	445	NO
+TCGA-24-1557	Chemotherapy	Taxol		644	727	NO
+TCGA-24-1557	Chemotherapy	Carboplatin		462	623	NO
+TCGA-24-1557	Chemotherapy	Cisplatin		875	1008	NO
+TCGA-24-1557	Chemotherapy	Topotecan		27	281	NO
+TCGA-24-1557	Chemotherapy	Gemzar		368	445	NO
+TCGA-24-1557	Chemotherapy	Gemzar		875	1008	NO
+TCGA-24-1557	Chemotherapy	Taxol		1090	1154	NO
+TCGA-24-1557	Hormone Therapy			765	873	NO
+TCGA-24-1557	Chemotherapy	Carboplatin		27	281	NO
+TCGA-24-1557	Chemotherapy	Taxol		27	281	NO
+TCGA-24-1557	Chemotherapy	Taxol		462	623	NO
+TCGA-24-1557	Chemotherapy	Topotecan		754	798	NO
+TCGA-24-1557	Chemotherapy	Carboplatin		1090	1154	NO
+TCGA-24-1558	Chemotherapy	Carboplatin		37	247	NO
+TCGA-24-1558	Chemotherapy	Taxotere		316	382	NO
+TCGA-24-1558	Chemotherapy	Gemcitabine		515	588	NO
+TCGA-24-1558	Chemotherapy	Gemcitabine		316	382	NO
+TCGA-24-1558	Chemotherapy	Topotecan		37	247	NO
+TCGA-24-1558	Chemotherapy	Taxol		37	247	NO
+TCGA-24-1558	Chemotherapy	Doxil		403	487	NO
+TCGA-24-1560	Chemotherapy	Topotecan		398	481	NO
+TCGA-24-1560	Chemotherapy	Carboplatin		509	614	NO
+TCGA-24-1560	Chemotherapy	Carboplatin		757	901	NO
+TCGA-24-1560	Chemotherapy	Gemzar		635	726	NO
+TCGA-24-1560	Chemotherapy	Carboplatin		15	117	NO
+TCGA-24-1560	Chemotherapy	Taxol		509	614	NO
+TCGA-24-1560	Chemotherapy	Carboplatin		1216	1258	NO
+TCGA-24-1560	Chemotherapy	Amitostin		509	614	NO
+TCGA-24-1560	Chemotherapy	Etopside		757	901	NO
+TCGA-24-1560	Chemotherapy	Taxol		15	117	NO
+TCGA-24-1560	Chemotherapy	Doxil		635	726	NO
+TCGA-24-1560	Chemotherapy	Xeloda		931	1015	NO
+TCGA-24-1560	Chemotherapy	Taxol		1043	1189	NO
+TCGA-24-1562	Chemotherapy	Taxol		848	NA	NO
+TCGA-24-1562	Chemotherapy	Taxol		NA	1157	NO
+TCGA-24-1562	Chemotherapy	Carboplatin		848	NA	
+TCGA-24-1562	Chemotherapy	Carboplatin		677	NA	NO
+TCGA-24-1562	Chemotherapy	Doxil		531	642	NO
+TCGA-24-1562	Chemotherapy	Taxol		677	NA	NO
+TCGA-24-1562	Chemotherapy	Taxol		21	152	NO
+TCGA-24-1562	Chemotherapy	Cisplatin		21	152	NO
+TCGA-24-1562	Chemotherapy	Topotecan		257	405	NO
+TCGA-24-1563	Chemotherapy	Taxol		728	805	NO
+TCGA-24-1563	Chemotherapy	Carboplatin		889	1061	NO
+TCGA-24-1563	Hormone Therapy	Tamoxifen		1087	1182	NO
+TCGA-24-1563	Chemotherapy	Topotecan		1183	1239	NO
+TCGA-24-1563	Chemotherapy	Taxol		22	144	NO
+TCGA-24-1563	Chemotherapy	Carboplatin		1402	1402	NO
+TCGA-24-1563	Chemotherapy	Topotecan		408	676	NO
+TCGA-24-1563	Chemotherapy	Doxil		812	868	NO
+TCGA-24-1563	Chemotherapy	Gemzar		812	868	NO
+TCGA-24-1563	Chemotherapy	Carboplatin		22	144	NO
+TCGA-24-1564	Chemotherapy	Cisplatin		8	116	NO
+TCGA-24-1564	Chemotherapy	Taxol		499	568	NO
+TCGA-24-1564	Chemotherapy	Taxol		8	116	NO
+TCGA-24-1564	Chemotherapy	Amitostine		248	295	NO
+TCGA-24-1564	Chemotherapy	VP16		589	624	NO
+TCGA-24-1564	Chemotherapy	Doxil		435	463	NO
+TCGA-24-1564	Chemotherapy	Gezmar		589	624	NO
+TCGA-24-1564	Chemotherapy	Taxol		248	295	NO
+TCGA-24-1564	Chemotherapy	Carboplatin		248	295	NO
+TCGA-24-1564	Hormone Therapy	Tamoxifen		736	NA	NO
+TCGA-24-1564	Chemotherapy	Topotecan		333	406	NO
+TCGA-24-1565	Chemotherapy	Taxol		39	123	NO
+TCGA-24-1565	Chemotherapy	Topotecan		178	NA	NO
+TCGA-24-1565	Chemotherapy	Cisplatin		39	123	NO
+TCGA-24-1567	Chemotherapy	Carboplatin		41	153	NO
+TCGA-24-1567	Chemotherapy	Topecan		NA	NA	
+TCGA-24-1567	Chemotherapy	Taxol		41	153	NO
+TCGA-24-1603	Chemotherapy	Taxol		1107	1181	NO
+TCGA-24-1603	Chemotherapy	Topotecan		2568	2629	NO
+TCGA-24-1603	Chemotherapy	Carboplatin		1356	1516	NO
+TCGA-24-1603	Chemotherapy	Taxol		2022	2203	NO
+TCGA-24-1603	Chemotherapy	Carboplatin		2234	2448	NO
+TCGA-24-1603	Chemotherapy	Carboplatin		1107	1181	NO
+TCGA-24-1603	Chemotherapy	Gemzar		1899	1991	NO
+TCGA-24-1603	Chemotherapy	Taxol		1356	1516	NO
+TCGA-24-1603	Chemotherapy	Carboplatin		NA	NA	
+TCGA-24-1603	Chemotherapy	Taxol		NA	NA	
+TCGA-24-1603	Chemotherapy	Doxil		1899	1991	NO
+TCGA-24-1603	Chemotherapy	Taxotere		2629	2629	NO
+TCGA-24-1603	Chemotherapy	Topotecan		NA	1853	NO
+TCGA-24-1604	Chemotherapy	Taxol		NA	NA	NO
+TCGA-24-1604	Chemotherapy			NA	NA	
+TCGA-24-1604	Chemotherapy	Carboplatin		NA	NA	
+TCGA-24-1604	Chemotherapy	Doxil		NA	NA	NO
+TCGA-24-1614	Chemotherapy	Carboplatin		1010	1133	NO
+TCGA-24-1614	Chemotherapy	Taxol		22	188	NO
+TCGA-24-1614	Chemotherapy	Navelbine		644	888	NO
+TCGA-24-1614	Chemotherapy	Taxol		1010	1133	NO
+TCGA-24-1614	Chemotherapy	Doxil		1284	1443	NO
+TCGA-24-1614	Chemotherapy	Carboplatin		22	188	NO
+TCGA-24-1614	Chemotherapy	Topotecan		644	888	NO
+TCGA-24-1616	Chemotherapy	Carboplatin		NA	NA	NO
+TCGA-24-1616	Chemotherapy	Cisplatin		NA	NA	NO
+TCGA-24-1616	Chemotherapy	Carboplatin		18	165	NO
+TCGA-24-1616	Chemotherapy	Taxol		18	165	NO
+TCGA-24-1616	Chemotherapy	Doxil		NA	NA	NO
+TCGA-24-1616	Chemotherapy	Gemzar		NA	NA	NO
+TCGA-24-1616	Chemotherapy	Topotecan		NA	NA	NO
+TCGA-24-1616	Chemotherapy	Taxol		NA	NA	NO
+TCGA-24-1842	Targeted Molecular therapy	Bevacizumiab/ versus Placebo		43	253	NO
+TCGA-24-1842	Chemotherapy	Carboplatin		24	253	NO
+TCGA-24-1842	Chemotherapy	Paclitaxel		24	253	NO
+TCGA-24-1843	Chemotherapy	Taxol		20	134	NO
+TCGA-24-1843	Chemotherapy	Taxotere		20	134	NO
+TCGA-24-1843	Chemotherapy	Carboplatin		20	134	NO
+TCGA-24-1844	Chemotherapy	Paclitaxel		24	134	NO
+TCGA-24-1844	Chemotherapy	Carboplatin		24	134	NO
+TCGA-24-1844	Chemotherapy	Docetaxel		24	134	NO
+TCGA-24-1845	Chemotherapy	Doxetaxel		72	123	NO
+TCGA-24-1845	Chemotherapy	Carboplatin		72	123	NO
+TCGA-24-1845	Chemotherapy	Pacliatxel		72	123	NO
+TCGA-24-1845	Chemotherapy	Cisplatin		72	123	NO
+TCGA-24-1846	Chemotherapy	Carboplatin		43	175	NO
+TCGA-24-1846	Chemotherapy	Paclitaxel		43	175	NO
+TCGA-24-1847	Chemotherapy	Taxotere		28	143	NO
+TCGA-24-1847	Chemotherapy	Taxol		28	143	NO
+TCGA-24-1847	Chemotherapy	Ciplastin		28	143	NO
+TCGA-24-1849	Chemotherapy	Docetaxel		36	141	NO
+TCGA-24-1849	Chemotherapy	Carboplatin		36	141	NO
+TCGA-24-1850	Chemotherapy	Carboplatin		34	138	NO
+TCGA-24-1850	Chemotherapy	Taxotere		34	138	NO
+TCGA-24-1852	Chemotherapy	Doxil		NA	1709	NO
+TCGA-24-1852	Chemotherapy	Carboplatin		6	128	NO
+TCGA-24-1852	Chemotherapy	Topotecan		1010	1040	NO
+TCGA-24-1852	Chemotherapy	Taxol		1071	1255	NO
+TCGA-24-1852	Chemotherapy	Carboplatin		1071	1255	NO
+TCGA-24-1852	Chemotherapy	Taxotere		1497	1558	NO
+TCGA-24-1852	Chemotherapy	Taxol		6	128	NO
+TCGA-24-1852	Chemotherapy	Gemzar		NA	1709	NO
+TCGA-24-1920	Chemotherapy	Cisplatin		24	144	NO
+TCGA-24-1920	Chemotherapy	Carboplatin		24	144	NO
+TCGA-24-1920	Chemotherapy	Taxotere		24	144	NO
+TCGA-24-1920	Chemotherapy	Taxol		24	144	NO
+TCGA-24-1923	Chemotherapy	carboplatin		35	233	NO
+TCGA-24-1923	Chemotherapy	Topotecan		383	NA	NO
+TCGA-24-1923	Chemotherapy	Taxol		35	233	NO
+TCGA-24-1923	Chemotherapy	Doxil		35	233	NO
+TCGA-24-1923	Chemotherapy	GOG182		NA	NA	
+TCGA-24-1924	Chemotherapy	Topotecan		553	583	NO
+TCGA-24-1924	Chemotherapy	Gemzar		597	681	NO
+TCGA-24-1924	Chemotherapy	Carboplatin		21	161	NO
+TCGA-24-1924	Chemotherapy	Cisplatin		597	681	NO
+TCGA-24-1924	Chemotherapy	Taxol		21	161	NO
+TCGA-24-1924	Chemotherapy	Hexalen		706	743	NO
+TCGA-24-1924	Chemotherapy	Doxil		329	525	NO
+TCGA-24-1924	Chemotherapy	Navelbine		553	583	NO
+TCGA-24-1927	Chemotherapy	Gaminocamptothecin		293	328	NO
+TCGA-24-1927	Chemotherapy	Taxol		15	132	NO
+TCGA-24-1927	Chemotherapy	Aminopterin		372	435	NO
+TCGA-24-1927	Chemotherapy	Carboplatin		15	132	NO
+TCGA-24-1927	Targeted Molecular therapy	SCH 58500		15	132	NO
+TCGA-24-1928	Chemotherapy	Taxotere		156	226	NO
+TCGA-24-1928	Chemotherapy	Etoposide		327	NA	NO
+TCGA-24-1928	Chemotherapy	Taxol		14	126	NO
+TCGA-24-1928	Chemotherapy	Doxil		254	282	NO
+TCGA-24-1928	Chemotherapy	Cisplatin		14	126	NO
+TCGA-24-1930	Chemotherapy	Ovarex/placebo		547	631	NO
+TCGA-24-1930	Chemotherapy	Amitostin		14	274	NO
+TCGA-24-1930	Chemotherapy	Gemcitabine		1422	1475	NO
+TCGA-24-1930	Chemotherapy	Carboplatin		1112	1112	NO
+TCGA-24-1930	Chemotherapy	Carboplatin		1135	1275	NO
+TCGA-24-1930	Chemotherapy	Carboplatin		14	274	NO
+TCGA-24-1930	Chemotherapy	Cisplatin		14	274	NO
+TCGA-24-1930	Chemotherapy	Taxol		1112	1112	NO
+TCGA-24-1930	Chemotherapy	Cisplatin		2164	2325	NO
+TCGA-24-1930	Chemotherapy	Doxil		1331	1389	NO
+TCGA-24-1930	Chemotherapy	Topotecan		2052	2144	NO
+TCGA-24-1930	Chemotherapy	Topotecan		726	1083	NO
+TCGA-24-1930	Chemotherapy	Gemzar		2164	2325	NO
+TCGA-24-1930	Chemotherapy	Taxol		14	274	NO
+TCGA-24-1930	Chemotherapy	Navelbine		2052	2144	NO
+TCGA-24-1930	Chemotherapy	Hexamethymelamine		1492	1684	NO
+TCGA-24-2020	Chemotherapy	Doxil		1905	2085	NO
+TCGA-24-2020	Chemotherapy	Taxol		745	940	NO
+TCGA-24-2020	Chemotherapy	Topotecan		1381	1555	NO
+TCGA-24-2020	Chemotherapy	Taxol		2235	2298	NO
+TCGA-24-2020	Chemotherapy	Carboplatin		745	940	NO
+TCGA-24-2020	Chemotherapy	Taxol		274	414	NO
+TCGA-24-2020	Chemotherapy	Carboplatin		274	414	NO
+TCGA-24-2020	Chemotherapy	Carboplatin		2593	2757	NO
+TCGA-24-2020	Chemotherapy	Cisplatin		44	176	NO
+TCGA-24-2023	Chemotherapy	Taxol		6	214	NO
+TCGA-24-2023	Chemotherapy	Cytoxan		273	502	NO
+TCGA-24-2023	Chemotherapy	Taxol		1126	1245	NO
+TCGA-24-2023	Chemotherapy	Cisplatin		273	502	NO
+TCGA-24-2023	Chemotherapy	Carboplatin		6	214	NO
+TCGA-24-2023	Chemotherapy	Carboplatin		1126	1245	NO
+TCGA-24-2024	Chemotherapy	Carboplatin		10	120	NO
+TCGA-24-2024	Chemotherapy	Taxol		456	568	NO
+TCGA-24-2024	Chemotherapy	Carboplatin		456	568	NO
+TCGA-24-2024	Chemotherapy	Taxol		10	120	NO
+TCGA-24-2026	Chemotherapy	Taxol		23	NA	NO
+TCGA-24-2026	Chemotherapy	Cisplatin		23	NA	NO
+TCGA-24-2027	Chemotherapy	Carboplatin		624	784	NO
+TCGA-24-2027	Chemotherapy	Gemzar		2577	2591	NO
+TCGA-24-2027	Chemotherapy	Topotecan		1614	1985	NO
+TCGA-24-2027	Chemotherapy	Taxol		2048	2216	NO
+TCGA-24-2027	Chemotherapy	Taxol		6	258	NO
+TCGA-24-2027	Chemotherapy	Taxol		624	784	NO
+TCGA-24-2027	Chemotherapy	Cisplatin		2577	2591	NO
+TCGA-24-2027	Chemotherapy	Taxol		3168	3273	NO
+TCGA-24-2027	Chemotherapy	Taxol		2759	2951	NO
+TCGA-24-2027	Chemotherapy	Cisplatin		624	784	NO
+TCGA-24-2027	Chemotherapy	Carboplatin		6	258	NO
+TCGA-24-2027	Chemotherapy	Navelbine		2602	2745	NO
+TCGA-24-2027	Chemotherapy	Doxil		2400	2540	NO
+TCGA-24-2027	Chemotherapy	Topotecan		2982	3154	NO
+TCGA-24-2029	Chemotherapy	Carboplatin		8	218	NO
+TCGA-24-2029	Chemotherapy	Taxol		8	218	NO
+TCGA-24-2030	Chemotherapy	Taxol		657	790	NO
+TCGA-24-2030	Chemotherapy	Taxol		13	127	NO
+TCGA-24-2030	Chemotherapy	Carboplatin		657	790	NO
+TCGA-24-2030	Chemotherapy	Doxil		972	972	NO
+TCGA-24-2030	Chemotherapy	Topotecan		864	972	NO
+TCGA-24-2030	Chemotherapy	Carboplatin		13	127	NO
+TCGA-24-2030	Chemotherapy	Carboplatin		972	972	NO
+TCGA-24-2030	Chemotherapy	Taxol		972	972	NO
+TCGA-24-2033	Chemotherapy	Taxol		38	232	NO
+TCGA-24-2033	Chemotherapy	Hexalen		471	NA	NO
+TCGA-24-2033	Chemotherapy	Topotecan		358	400	NO
+TCGA-24-2033	Chemotherapy	Carboplatin 6th		38	232	NO
+TCGA-24-2035	Chemotherapy	Taxol		NA	NA	NO
+TCGA-24-2035	Chemotherapy	Ifostamide		688	NA	NO
+TCGA-24-2035	Chemotherapy	PSC833		NA	NA	NO
+TCGA-24-2035	Chemotherapy	Cisplatin		NA	NA	NO
+TCGA-24-2035	Chemotherapy	Topotecan		343	679	NO
+TCGA-24-2035	Chemotherapy	VP16		688	NA	NO
+TCGA-24-2036	Chemotherapy	Taxol		NA	153	NO
+TCGA-24-2036	Chemotherapy	Taxol		1156	NA	NO
+TCGA-24-2036	Chemotherapy	Taxol		1855	NA	NO
+TCGA-24-2036	Chemotherapy	Carboplatin		NA	153	NO
+TCGA-24-2036	Chemotherapy	Cisplatin		592	638	NO
+TCGA-24-2036	Hormone Therapy	Tamoxifen		1064	NA	NO
+TCGA-24-2036	Chemotherapy	Mitomycin C		1454	NA	NO
+TCGA-24-2036	Chemotherapy	Doxil		1430	NA	NO
+TCGA-24-2036	Chemotherapy	Topotecan		592	638	NO
+TCGA-24-2036	Chemotherapy	Carboplatin		1156	NA	NO
+TCGA-24-2038	Chemotherapy	Carboplatin		1268	1352	NO
+TCGA-24-2038	Chemotherapy	Taxol		1268	1352	NO
+TCGA-24-2038	Chemotherapy	Topotecan		1212	1254	NO
+TCGA-24-2254	Chemotherapy	Gemzar		984	1112	NO
+TCGA-24-2254	Chemotherapy	Carboplatin		615	718	NO
+TCGA-24-2254	Chemotherapy	Doxil		17	165	NO
+TCGA-24-2254	Chemotherapy	Taxol		17	165	NO
+TCGA-24-2254	Chemotherapy	Carboplatin		17	165	NO
+TCGA-24-2254	Chemotherapy	Taxotere		615	718	NO
+TCGA-24-2254	Chemotherapy	Carboplatin		984	1112	NO
+TCGA-24-2260	Chemotherapy	Cisplatin		24	135	NO
+TCGA-24-2260	Chemotherapy	Cytoxan		682	849	NO
+TCGA-24-2260	Chemotherapy	Chlorambucil		1011	1081	NO
+TCGA-24-2260	Chemotherapy	Hexalen		876	1009	NO
+TCGA-24-2260	Chemotherapy	Taxol		24	135	NO
+TCGA-24-2260	Chemotherapy	Carboplatin		682	849	NO
+TCGA-24-2267	Chemotherapy	Carboplatin		580	793	NO
+TCGA-24-2267	Chemotherapy	Carboplatin #1		1172	1332	NO
+TCGA-24-2267	Chemotherapy	Cisplatin #2-7		1172	1332	NO
+TCGA-24-2267	Chemotherapy	Taxol		580	793	NO
+TCGA-24-2267	Chemotherapy	Navelbine		983	997	NO
+TCGA-24-2267	Chemotherapy	Topotecan		1011	1011	NO
+TCGA-24-2267	Chemotherapy	Cytoxan		6	219	NO
+TCGA-24-2267	Chemotherapy	Taxol		1172	1332	NO
+TCGA-24-2267	Chemotherapy	Hexalen		827	946	NO
+TCGA-24-2267	Chemotherapy	carboplatin		6	219	NO
+TCGA-24-2267	Chemotherapy	Gemzar		1347	1381	NO
+TCGA-24-2271	Chemotherapy			NA	NA	NO
+TCGA-24-2280	Chemotherapy	Taxol		17	178	NO
+TCGA-24-2280	Chemotherapy	Doxil		538	766	NO
+TCGA-24-2280	Targeted Molecular therapy	Avastin		906	1025	NO
+TCGA-24-2280	Chemotherapy	Carboplatin		906	1025	NO
+TCGA-24-2280	Chemotherapy	Carboplatin		17	178	NO
+TCGA-24-2280	Chemotherapy	Doxil		17	178	NO
+TCGA-24-2280	Chemotherapy	Taxotere		906	1025	NO
+TCGA-24-2281	Chemotherapy	Carboplatin		NA	NA	
+TCGA-24-2281	Chemotherapy	Taxol		NA	NA	NO
+TCGA-24-2288	Chemotherapy	Taxol		21	21	NO
+TCGA-24-2288	Chemotherapy	Carboplatin		21	21	NO
+TCGA-24-2289	Chemotherapy	Taxol		4	183	NO
+TCGA-24-2289	Chemotherapy	Cisplatin		4	183	NO
+TCGA-24-2289	Chemotherapy	Taxotere		598	708	NO
+TCGA-24-2290	Chemotherapy	Taxol		7	119	NO
+TCGA-24-2290	Hormone Therapy	Tamoxifen		1005	1055	NO
+TCGA-24-2290	Chemotherapy	Taxol		578	599	NO
+TCGA-24-2290	Chemotherapy	Cisplatin		663	705	NO
+TCGA-24-2290	Chemotherapy	Carboplatin		7	119	NO
+TCGA-24-2290	Chemotherapy	Carboplatin		349	412	NO
+TCGA-24-2290	Chemotherapy	Taxol		663	705	NO
+TCGA-24-2290	Chemotherapy			NA	NA	
+TCGA-24-2290	Chemotherapy	Gemzar		607	614	NO
+TCGA-24-2290	Chemotherapy	Topotecan		727	823	NO
+TCGA-24-2290	Chemotherapy	Vamydex		855	939	NO
+TCGA-24-2290	Chemotherapy	Taxol		349	412	NO
+TCGA-24-2290	Chemotherapy	Topotecan		439	550	NO
+TCGA-24-2293	Chemotherapy	Carboplatin		NA	NA	NO
+TCGA-24-2293	Chemotherapy	Taxol		NA	NA	NO
+TCGA-24-2293	Chemotherapy	Etoposide		NA	NA	NO
+TCGA-24-2293	Chemotherapy	Melphalan		NA	NA	NO
+TCGA-24-2295	Chemotherapy	Taxol		6	133	NO
+TCGA-24-2295	Chemotherapy	Carboplatin		6	133	NO
+TCGA-24-2295	Chemotherapy	Carboplatin		NA	868	NO
+TCGA-24-2295	Chemotherapy	Taxotere		NA	NA	
+TCGA-24-2295	Chemotherapy	VP 16		895	NA	
+TCGA-24-2297	Chemotherapy	Cytoxan		19	153	NO
+TCGA-24-2297	Chemotherapy	Carboplatin		19	153	NO
+TCGA-24-2298	Chemotherapy	Doxil		1454	1568	NO
+TCGA-24-2298	Chemotherapy	Carboplatin		474	726	NO
+TCGA-24-2298	Chemotherapy	Taxol		474	NA	NO
+TCGA-24-2298	Chemotherapy	Cytoxan		12	218	NO
+TCGA-24-2298	Chemotherapy	Carboplatin		986	1328	NO
+TCGA-24-2298	Chemotherapy	Carboplatin		12	218	NO
+TCGA-24-2298	Chemotherapy	Topotecan		762	817	NO
+TCGA-24-2298	Chemotherapy	Navelbine		986	1328	NO
+TCGA-25-1313	Chemotherapy	Taxol		29	151	NO
+TCGA-25-1313	Chemotherapy	Carbo		29	151	NO
+TCGA-25-1313	Chemotherapy	Topotecan		394	547	NO
+TCGA-25-1314	Chemotherapy	Carbo		31	NA	NO
+TCGA-25-1314	Chemotherapy	Topotecan		274	425	NO
+TCGA-25-1314	Chemotherapy	Cisplatinum		31	NA	NO
+TCGA-25-1314	Chemotherapy	Taxol		31	NA	NO
+TCGA-25-1315	Chemotherapy	Taxol		153	334	NO
+TCGA-25-1315	Chemotherapy	Cisplatin		30	153	NO
+TCGA-25-1315	Chemotherapy	Carbo		153	334	NO
+TCGA-25-1315	Chemotherapy	Taxol		143	334	
+TCGA-25-1315	Chemotherapy	Taxol		30	153	NO
+TCGA-25-1316	Chemotherapy	Carbo		61	214	NO
+TCGA-25-1316	Chemotherapy	Taxol		61	214	NO
+TCGA-25-1316	Chemotherapy	Topotecan		276	406	NO
+TCGA-25-1317	Chemotherapy	Carboplatin		0	31	NO
+TCGA-25-1317	Chemotherapy	Taxol		0	31	NO
+TCGA-25-1318	Chemotherapy	Taxol		30	122	NO
+TCGA-25-1318	Chemotherapy	Carbo		30	122	NO
+TCGA-25-1318	Chemotherapy	Topetecan		212	273	NO
+TCGA-25-1319	Chemotherapy	Taxol		61	NA	
+TCGA-25-1319	Chemotherapy	Carbo		61	NA	
+TCGA-25-1320	Chemotherapy	Carbo		28	181	
+TCGA-25-1320	Chemotherapy	Taxol		28	181	NO
+TCGA-25-1320	Chemotherapy	Topotecan		28	181	
+TCGA-25-1320	Chemotherapy	Doxil		424	607	NO
+TCGA-25-1321	Chemotherapy	Gemzar		28	181	NO
+TCGA-25-1321	Chemotherapy	Topotecan		454	498	NO
+TCGA-25-1321	Chemotherapy	Carbo		28	181	NO
+TCGA-25-1321	Chemotherapy	Taxol		28	181	NO
+TCGA-25-1322	Chemotherapy	Carbo		30	91	
+TCGA-25-1322	Chemotherapy	Taxol		30	91	NO
+TCGA-25-1323	Chemotherapy	Doxil		365	365	
+TCGA-25-1323	Chemotherapy	Carbo		30	122	NO
+TCGA-25-1323	Chemotherapy	Taxol		30	122	NO
+TCGA-25-1324	Chemotherapy	Taxol		NA	NA	
+TCGA-25-1324	Chemotherapy	Carbo		NA	NA	
+TCGA-25-1326	Chemotherapy	Taxol		31	153	
+TCGA-25-1326	Chemotherapy	Carbo		31	153	
+TCGA-25-1326	Chemotherapy	Doxil		396	518	
+TCGA-25-1326	Chemotherapy	Topetecan		31	153	NO
+TCGA-25-1328	Chemotherapy	Topotecan		275	395	NO
+TCGA-25-1328	Chemotherapy	Taxol		30	214	NO
+TCGA-25-1328	Chemotherapy	Cytoxan		275	395	NO
+TCGA-25-1328	Chemotherapy	Carbo		30	214	NO
+TCGA-25-1328	Chemotherapy	Carbo		275	395	
+TCGA-25-1623	Chemotherapy	Taxol		16	138	NO
+TCGA-25-1623	Chemotherapy	Carboplatin		16	138	NO
+TCGA-25-1623	Chemotherapy	A202171 Protocol		NA	NA	NO
+TCGA-25-1625	Chemotherapy	Carboplatin		NA	NA	NO
+TCGA-25-1625	Chemotherapy	Taxol		NA	NA	NO
+TCGA-25-1626	Chemotherapy	Doxil		319	319	NO
+TCGA-25-1626	Chemotherapy	Carboplatin		21	208	NO
+TCGA-25-1626	Chemotherapy	Taxol		21	208	NO
+TCGA-25-1626	Chemotherapy	Gemzar		21	208	NO
+TCGA-25-1628	Chemotherapy	Carboplatin		35	182	NO
+TCGA-25-1628	Chemotherapy	Gemcitabine		299	350	NO
+TCGA-25-1628	Chemotherapy	Taxol		35	182	NO
+TCGA-25-1630	Chemotherapy	Taxol		33	NA	NO
+TCGA-25-1630	Chemotherapy	Carboplatin		33	NA	NO
+TCGA-25-1632	Chemotherapy	Carboplatin		82	200	NO
+TCGA-25-1632	Chemotherapy	Carboplatin		566	719	NO
+TCGA-25-1632	Chemotherapy	Taxol		566	719	NO
+TCGA-25-1632	Chemotherapy	Doxil		82	200	NO
+TCGA-25-1632	Chemotherapy	Taxol		82	200	NO
+TCGA-25-1633	Chemotherapy	Taxol		26	184	NO
+TCGA-25-1633	Chemotherapy	Carboplatin		617	740	NO
+TCGA-25-1633	Chemotherapy	Taxol		617	740	NO
+TCGA-25-1633	Chemotherapy	Gemzar		26	184	NO
+TCGA-25-1633	Chemotherapy	Carboplatin		26	184	NO
+TCGA-25-1634	Chemotherapy	Taxol		29	206	NO
+TCGA-25-1634	Chemotherapy	Carboplatin		29	206	NO
+TCGA-25-1634	Chemotherapy	Toptecan		29	206	NO
+TCGA-25-1634	Hormone Therapy	Tamoxifen		380	843	NO
+TCGA-25-1635	Chemotherapy	Gemzar		24	233	NO
+TCGA-25-1635	Chemotherapy	Taxol		24	233	NO
+TCGA-25-1635	Chemotherapy	Taxol		614	741	NO
+TCGA-25-1635	Chemotherapy	Carboplatin		24	233	NO
+TCGA-25-1635	Chemotherapy	Carboplatin		614	741	NO
+TCGA-25-1870	Chemotherapy	Carboplatin		31	NA	NO
+TCGA-25-1870	Chemotherapy	Carboplatin		151	NA	NO
+TCGA-25-1870	Chemotherapy	Cytoxan		151	NA	NO
+TCGA-25-1870	Chemotherapy	Cytoxan		31	NA	NO
+TCGA-25-1871	Chemotherapy	Cisplatin		47	NA	NO
+TCGA-25-1871	Chemotherapy	Carboplatin		47	NA	NO
+TCGA-25-1871	Chemotherapy	Taxol		233	NA	NO
+TCGA-25-1877	Chemotherapy	Cytoxan		31	NA	NO
+TCGA-25-1877	Chemotherapy	Taxol		NA	NA	NO
+TCGA-25-1877	Chemotherapy	Carboplatin		31	NA	NO
+TCGA-25-1878	Chemotherapy	Cytoxan		61	NA	NO
+TCGA-25-1878	Chemotherapy	Cisplatin		61	NA	NO
+TCGA-25-1878	Chemotherapy	Cisplatin		976	NA	NO
+TCGA-25-1878	Chemotherapy	Taxol		976	NA	NO
+TCGA-25-2042	Chemotherapy	Carboplatin		184	NA	NO
+TCGA-25-2042	Chemotherapy	Doxil		184	NA	NO
+TCGA-25-2042	Chemotherapy	Topotecan		184	NA	NO
+TCGA-25-2042	Chemotherapy	Taxol		184	NA	NO
+TCGA-25-2042	Chemotherapy	Gemzar		184	NA	NO
+TCGA-25-2042	Chemotherapy	Carboplatin		0	123	NO
+TCGA-25-2042	Chemotherapy	Taxol		0	123	NO
+TCGA-25-2391	Chemotherapy	Taxol		31	153	
+TCGA-25-2391	Chemotherapy	Carboplatin		31	153	NO
+TCGA-25-2391	Chemotherapy	Taxotere		31	153	NO
+TCGA-25-2393	Chemotherapy	Taxol		31	123	NO
+TCGA-25-2393	Chemotherapy	Carboplatin		31	123	NO
+TCGA-25-2393	Chemotherapy	Doxil		305	517	NO
+TCGA-25-2398	Chemotherapy	Taxol		608	638	NO
+TCGA-25-2398	Chemotherapy	Taxol		31	151	NO
+TCGA-25-2398	Chemotherapy	Carboplatin		603	638	NO
+TCGA-25-2398	Chemotherapy	Carboplatin		31	151	NO
+TCGA-25-2399	Chemotherapy	Taxol		61	182	NO
+TCGA-25-2399	Chemotherapy	Carboplatin		61	182	NO
+TCGA-25-2399	Chemotherapy	Doxil		NA	NA	NO
+TCGA-25-2400	Chemotherapy	Carboplatin		61	182	NO
+TCGA-25-2400	Chemotherapy	Carboplatin		577	669	NO
+TCGA-25-2400	Chemotherapy	Taxol		61	182	NO
+TCGA-25-2400	Chemotherapy	Taxol		577	669	NO
+TCGA-25-2404	Chemotherapy	Taxol		0	122	NO
+TCGA-25-2404	Chemotherapy	Carboplatin		184	306	NO
+TCGA-25-2404	Chemotherapy	Taxol		184	306	NO
+TCGA-25-2404	Chemotherapy	Carboplatin		0	122	NO
+TCGA-25-2408	Chemotherapy	Taxol		61	NA	NO
+TCGA-25-2408	Chemotherapy	Carboplatin		61	NA	NO
+TCGA-25-2409	Chemotherapy	Carboplatin		31	182	NO
+TCGA-25-2409	Hormone Therapy	Tamoxifen		NA	NA	NO
+TCGA-25-2409	Chemotherapy	Taxotere		31	182	NO
+TCGA-29-1688	Chemotherapy	Cisplatin		NA	NA	NO
+TCGA-29-1688	Chemotherapy	Cytoxan		NA	NA	NO
+TCGA-29-1688	Chemotherapy	Taxotere		1719	NA	NO
+TCGA-29-1688	Chemotherapy	Carboplatin		NA	2395	NO
+TCGA-29-1688	Chemotherapy	Cytoxan		NA	2395	NO
+TCGA-29-1688	Chemotherapy	Etoposide		197	NA	NO
+TCGA-29-1688	Chemotherapy	Paclitaxel		1900	NA	NO
+TCGA-29-1688	Chemotherapy	Oral Etoposide		NA	NA	NO
+TCGA-29-1688	Chemotherapy	Carboplatin		743	NA	NO
+TCGA-29-1688	Chemotherapy	Hexalen		NA	NA	NO
+TCGA-29-1688	Chemotherapy	Cytoxan		743	NA	NO
+TCGA-29-1688	Chemotherapy	Topotecan		NA	NA	NO
+TCGA-29-1688	Chemotherapy	Carboplatin		1900	NA	NO
+TCGA-29-1688	Chemotherapy	Cisplatin		197	NA	NO
+TCGA-29-1688	Chemotherapy	Etoposide		NA	NA	NO
+TCGA-29-1690	Chemotherapy	Paclitaxel		91	NA	NO
+TCGA-29-1690	Chemotherapy	Carboplatin		8	NA	NO
+TCGA-29-1690	Chemotherapy	Cisplatin		91	NA	NO
+TCGA-29-1690	Chemotherapy	Cytoxan		8	NA	NO
+TCGA-29-1691	Chemotherapy	Paclitaxel		NA	137	NO
+TCGA-29-1691	Chemotherapy	Cisplatin		NA	137	NO
+TCGA-29-1691	Chemotherapy	Cytoxan		1233	1353	NO
+TCGA-29-1691	Chemotherapy	Paclitaxel		654	868	NO
+TCGA-29-1691	Chemotherapy	Doxil		988	NA	NO
+TCGA-29-1691	Chemotherapy	Carboplatin		1233	1353	NO
+TCGA-29-1691	Chemotherapy	Carboplatin		654	868	NO
+TCGA-29-1691	Hormone Therapy	Megace (oral)		988	NA	NO
+TCGA-29-1691	Chemotherapy	Topotecan		868	NA	NO
+TCGA-29-1692	Chemotherapy	Cisplatin		5	NA	NO
+TCGA-29-1692	Chemotherapy	Carboplatin		2120	2247	NO
+TCGA-29-1692	Chemotherapy	Paclitaxel		544	NA	NO
+TCGA-29-1692	Chemotherapy	Cisplatin		2616	2785	NO
+TCGA-29-1692	Chemotherapy	Cytoxan		2278	2521	NO
+TCGA-29-1692	Chemotherapy	Doxil		1548	NA	NO
+TCGA-29-1692	Chemotherapy	Paclitaxel		2556	2577	NO
+TCGA-29-1692	Chemotherapy	Topotecan		NA	694	NO
+TCGA-29-1692	Chemotherapy	Gemcitabine		2616	2785	NO
+TCGA-29-1692	Hormone Therapy	Tamoxifen		1793	2125	NO
+TCGA-29-1692	Chemotherapy	Taxol		5	NA	NO
+TCGA-29-1692	Chemotherapy	Taxotere		2120	2247	NO
+TCGA-29-1692	Chemotherapy	Carboplatin		544	NA	NO
+TCGA-29-1693	Chemotherapy	Paclitaxel		19	191	NO
+TCGA-29-1693	Chemotherapy	Carboplatin		19	191	NO
+TCGA-29-1693	Chemotherapy	Xyotax		1069	1157	NO
+TCGA-29-1693	Chemotherapy	Doxil		1780	1892	NO
+TCGA-29-1693	Chemotherapy	Paclitaxel		2627	2669	NO
+TCGA-29-1693	Chemotherapy	Cytoxan		3124	NA	YES
+TCGA-29-1693	Chemotherapy	Carboplatin		2027	2058	NO
+TCGA-29-1693	Chemotherapy	Paclitaxel		717	814	NO
+TCGA-29-1693	Targeted Molecular therapy	Bevacizumab		1668	1724	NO
+TCGA-29-1693	Chemotherapy	Paclitaxel		2788	3018	NO
+TCGA-29-1693	Targeted Molecular therapy	Bevacizumab		3124	NA	YES
+TCGA-29-1693	Chemotherapy	Gemzar		1668	1724	NO
+TCGA-29-1693	Chemotherapy	Carboplatin		717	814	NO
+TCGA-29-1693	Chemotherapy	Paclitaxel		2232	2239	NO
+TCGA-29-1693	Chemotherapy	Carboplatin		1300	NA	NO
+TCGA-29-1694	Chemotherapy	Gemcitabine		969	1071	NO
+TCGA-29-1694	Chemotherapy	Carboplatin		43	161	NO
+TCGA-29-1694	Chemotherapy	Doxorubicin HCL Liposomal		750	928	NO
+TCGA-29-1694	Chemotherapy	Cisplatin		1057	1071	NO
+TCGA-29-1694	Chemotherapy	CT2103 Taxane Analog		658	719	NO
+TCGA-29-1694	Chemotherapy	Paclitaxel		43	161	NO
+TCGA-29-1694	Hormone Therapy	Tamoxifen		339	658	NO
+TCGA-29-1694	Chemotherapy	Cisplatin		241	485	NO
+TCGA-29-1694	Chemotherapy	Topotecan		1101	1108	NO
+TCGA-29-1696	Chemotherapy	Paclitaxel		17	171	NO
+TCGA-29-1696	Chemotherapy	Carboplatin		17	171	NO
+TCGA-29-1696	Chemotherapy	Carboplatin		598	791	NO
+TCGA-29-1696	Chemotherapy	Cyclophosphamide		948	997	NO
+TCGA-29-1696	Chemotherapy	Gemcitabine		507	573	NO
+TCGA-29-1696	Targeted Molecular therapy	Bevacizumab		633	997	NO
+TCGA-29-1696	Chemotherapy	Paclitaxel		864	934	NO
+TCGA-29-1696	Chemotherapy	Doxorubicin HCL		357	479	NO
+TCGA-29-1697	Chemotherapy	Gemcitabine		28	91	NO
+TCGA-29-1697	Chemotherapy	Carboplatin		28	182	NO
+TCGA-29-1697	Chemotherapy	Paclitaxel		111	182	NO
+TCGA-29-1697	Chemotherapy	Carboplatin		878	899	NO
+TCGA-29-1697	Chemotherapy	Topotecan HCL		927	934	NO
+TCGA-29-1697	Chemotherapy	Carboplatin		552	664	NO
+TCGA-29-1697	Chemotherapy	Docetaxel		510	535	NO
+TCGA-29-1697	Targeted Molecular therapy	Bevacizumab		927	927	NO
+TCGA-29-1697	Chemotherapy	Doxorubicin		780	843	NO
+TCGA-29-1698	Chemotherapy	Carboplatin		8	237	NO
+TCGA-29-1698	Chemotherapy	Paclitaxel		8	237	NO
+TCGA-29-1698	Chemotherapy	Paclitaxel		1811	1972	NO
+TCGA-29-1698	Hormone Therapy	Tamoxifen		328	1419	NO
+TCGA-29-1698	Chemotherapy	Doxil		1615	1783	NO
+TCGA-29-1698	Chemotherapy	Gemcitabine HCL		1321	1566	NO
+TCGA-29-1698	Chemotherapy	Docetaxel		741	853	NO
+TCGA-29-1698	Chemotherapy	Carboplatin		1321	1349	NO
+TCGA-29-1698	Targeted Molecular therapy	Avastin (Bevacizumab)		1524	1580	NO
+TCGA-29-1698	Chemotherapy	Carboplatin		741	909	NO
+TCGA-29-1698	Chemotherapy	Toptecan		1580	1587	NO
+TCGA-29-1698	Chemotherapy	Docetaxel		1986	2028	NO
+TCGA-29-1698	Chemotherapy	Carboplatin		2051	2245	YES
+TCGA-29-1701	Chemotherapy	Carboplatin		31	160	NO
+TCGA-29-1701	Chemotherapy	Paclitaxel		31	160	NO
+TCGA-29-1701	Chemotherapy	Doxil		318	381	NO
+TCGA-29-1701	Chemotherapy	Carboplatin		409	472	NO
+TCGA-29-1702	Chemotherapy	Carboplatin		NA	199	NO
+TCGA-29-1702	Chemotherapy	Paclitaxel		NA	NA	NO
+TCGA-29-1702	Chemotherapy	Doxil		376	NA	NO
+TCGA-29-1702	Chemotherapy	Topotecan		466	NA	NO
+TCGA-29-1703	Chemotherapy	Paclitaxel		16	163	NO
+TCGA-29-1703	Chemotherapy	Carboplatin		16	163	NO
+TCGA-29-1703	Chemotherapy	Doxorubicin HCL Liposomal -Doxil		1317	1457	NO
+TCGA-29-1703	Chemotherapy	Paclitaxel		1746	1753	NO
+TCGA-29-1703	Targeted Molecular therapy	Bevacizumab		743	946	NO
+TCGA-29-1703	Chemotherapy	Docetaxel		478	651	NO
+TCGA-29-1703	Chemotherapy	Carboplatin		1720	1720	NO
+TCGA-29-1703	Chemotherapy	Gemcitabine		1577	1667	NO
+TCGA-29-1703	Chemotherapy	Cytoxan		743	946	NO
+TCGA-29-1703	Hormone Therapy	Tamoxifen		337	470	NO
+TCGA-29-1703	Targeted Molecular therapy	Amgen 706		1030	1314	NO
+TCGA-29-1703	Chemotherapy	Carboplatin		478	651	NO
+TCGA-29-1704	Chemotherapy	Taxotere		1566	1587	YES
+TCGA-29-1704	Chemotherapy	carboplatin		21	169	NO
+TCGA-29-1704	Chemotherapy	Carboplatin		642	775	NO
+TCGA-29-1704	Chemotherapy	Paclitaxel		21	169	NO
+TCGA-29-1704	Chemotherapy	Doxil		1188	1300	NO
+TCGA-29-1704	Chemotherapy	Paclitaxel		642	775	NO
+TCGA-29-1704	Targeted Molecular therapy	Bevacizumab		1566	1587	YES
+TCGA-29-1705	Chemotherapy	Docetaxel		76	118	NO
+TCGA-29-1705	Chemotherapy	Carboplatin		13	167	NO
+TCGA-29-1705	Chemotherapy	paclitaxel		13	55	NO
+TCGA-29-1705	Chemotherapy	Carboplatin		524	524	NO
+TCGA-29-1705	Chemotherapy	Gemcitabine		287	356	NO
+TCGA-29-1705	Targeted Molecular therapy	Bevacizumab		287	356	NO
+TCGA-29-1705	Chemotherapy	Doxorubicin HCL		416	489	NO
+TCGA-29-1707	Chemotherapy	Carboplatin		24	143	NO
+TCGA-29-1707	Chemotherapy	Paclitaxel		24	143	NO
+TCGA-29-1707	Chemotherapy	Carboplatin		1277	1375	NO
+TCGA-29-1707	Chemotherapy	Doxorubicin		1277	1326	NO
+TCGA-29-1710	Chemotherapy	Paclitaxel		88	150	NO
+TCGA-29-1710	Chemotherapy	Carboplatin		88	150	NO
+TCGA-29-1710	Chemotherapy	Docetaxel		31	52	NO
+TCGA-29-1710	Chemotherapy	Oxaliplatin		31	52	NO
+TCGA-29-1710	Targeted Molecular therapy	Bevacizumab		31	52	NO
+TCGA-29-1710	Chemotherapy	Paclitaxel		682	766	NO
+TCGA-29-1710	Chemotherapy	Topotecan		780	853	NO
+TCGA-29-1710	Targeted Molecular therapy	CEP 11981		619	653	NO
+TCGA-29-1710	Chemotherapy	Carboplatin		556	580	NO
+TCGA-29-1710	Chemotherapy	Doxorubincin HCL		322	437	NO
+TCGA-29-1710	Chemotherapy	Gemcitabine HCL		468	542	NO
+TCGA-29-1711	Targeted Molecular therapy	Bevacizumab		30	234	NO
+TCGA-29-1711	Chemotherapy	Oxaliplatin		30	136	NO
+TCGA-29-1711	Chemotherapy	Docetaxel		30	136	NO
+TCGA-29-1761	Chemotherapy	Carboplatin		49	202	NO
+TCGA-29-1761	Chemotherapy	Paclitaxel		NA	202	NO
+TCGA-29-1762	Chemotherapy	Topotecan HCL		2439	2488	NO
+TCGA-29-1762	Chemotherapy	Docetaxel		2509	2555	NO
+TCGA-29-1762	Chemotherapy	Doxorubicin HCI Liiposomal		2167	2229	NO
+TCGA-29-1762	Chemotherapy	Paclitaxel		7	140	NO
+TCGA-29-1762	Chemotherapy	Carboplatin		1387	1513	NO
+TCGA-29-1762	Chemotherapy	Carboplatin		2255	2418	NO
+TCGA-29-1762	Chemotherapy	Carboplatin		7	140	NO
+TCGA-29-1763	Chemotherapy	Carboplatin		15	100	NO
+TCGA-29-1763	Chemotherapy	Paclitaxel		15	100	NO
+TCGA-29-1763	Chemotherapy	Carboplatin		2189	2252	YES
+TCGA-29-1763	Chemotherapy	Carboplatin		450	579	NO
+TCGA-29-1763	Chemotherapy	Paclitaxel		1727	1839	NO
+TCGA-29-1763	Chemotherapy	Doxil		2049	2126	NO
+TCGA-29-1763	Targeted Molecular therapy	Bevacizumab		2049	2161	NO
+TCGA-29-1763	Chemotherapy	Paclitaxel		1346	1376	NO
+TCGA-29-1763	Chemotherapy	Carboplatin		1346	1367	NO
+TCGA-29-1763	Chemotherapy	Gemcitabine HCL		1283	1325	NO
+TCGA-29-1764	Chemotherapy	Carboplatin		15	167	NO
+TCGA-29-1764	Chemotherapy	Gemcitabine		15	87	NO
+TCGA-29-1764	Chemotherapy	Paclitaxel		111	167	NO
+TCGA-29-1764	Chemotherapy	Topotecan HCL		1816	1973	NO
+TCGA-29-1764	Chemotherapy	Doxil		1366	1515	NO
+TCGA-29-1764	Targeted Molecular therapy	Bevacizumab		1816	1973	NO
+TCGA-29-1764	Chemotherapy	Carboplatin		822	968	NO
+TCGA-29-1764	Chemotherapy	Doxil		1785	1785	NO
+TCGA-29-1764	Chemotherapy	Carboplatin		1301	1343	NO
+TCGA-29-1764	Chemotherapy	Docetaxel		797	818	NO
+TCGA-29-1766	Chemotherapy	Gemcitabine		39	196	NO
+TCGA-29-1766	Chemotherapy	Carboplatin		98	189	NO
+TCGA-29-1766	Chemotherapy	Topotecan		1084	1112	NO
+TCGA-29-1766	Chemotherapy	Carboplatin		685	727	NO
+TCGA-29-1766	Chemotherapy	Doxil		825	909	NO
+TCGA-29-1766	Chemotherapy	Paclitaxel		224	406	NO
+TCGA-29-1768	Chemotherapy	Paciltaxel		19	124	NO
+TCGA-29-1768	Chemotherapy	Doxorubicin		827	915	NO
+TCGA-29-1768	Targeted Molecular therapy	Bevacizumab or placebo		40	252	NO
+TCGA-29-1768	Chemotherapy	Carboplatin		19	103	NO
+TCGA-29-1768	Chemotherapy	Gemcitabine		551	719	NO
+TCGA-29-1768	Chemotherapy	Carboplatin		551	719	NO
+TCGA-29-1769	Chemotherapy	Paciltaxel		42	150	NO
+TCGA-29-1769	Chemotherapy	Carboplatin		20	20	NO
+TCGA-29-1769	Chemotherapy	Cisplatin		42	150	NO
+TCGA-29-1769	Chemotherapy	Paciltaxel		20	20	NO
+TCGA-29-1769	Immunotherapy	Abagovomab vs Placebo		206	NA	YES
+TCGA-29-1770	Chemotherapy	Docetaxel		87	136	NO
+TCGA-29-1770	Chemotherapy	Taxotere		741	762	NO
+TCGA-29-1770	Chemotherapy	Carboplatin		87	136	NO
+TCGA-29-1770	Chemotherapy	Carboplatin		384	546	NO
+TCGA-29-1770	Chemotherapy	Paciltaxel		19	68	NO
+TCGA-29-1770	Chemotherapy	Gemcitabine		384	546	NO
+TCGA-29-1770	Targeted Molecular therapy	Avastin		741	762	NO
+TCGA-29-1770	Chemotherapy	Carboplatin		19	68	NO
+TCGA-29-1771	Chemotherapy	Carboplatin		27	140	NO
+TCGA-29-1771	Targeted Molecular therapy	Bevacizumab		602	728	NO
+TCGA-29-1771	Chemotherapy	Pacilatxel		602	728	NO
+TCGA-29-1771	Chemotherapy	Carboplatin		602	728	NO
+TCGA-29-1771	Immunotherapy	Abagovomag vs Placebo		189	595	NO
+TCGA-29-1771	Chemotherapy	Paciltaxel		27	140	NO
+TCGA-29-1774	Chemotherapy	Carboplatin		14	14	NO
+TCGA-29-1774	Chemotherapy	Gemcitabine		86	86	NO
+TCGA-29-1774	Chemotherapy	Gemcitabine		247	380	NO
+TCGA-29-1774	Chemotherapy	Carboplatin		37	37	NO
+TCGA-29-1774	Chemotherapy	Carboplatin		65	133	NO
+TCGA-29-1775	Chemotherapy	Paclitaxel		29	166	NO
+TCGA-29-1775	Chemotherapy	Carboplatin		29	166	NO
+TCGA-29-1775	Chemotherapy	Bevacizumab vs Placebo		114	320	NO
+TCGA-29-1775	Chemotherapy	Cisplatin		355	432	NO
+TCGA-29-1775	Chemotherapy	Doxil		576	604	YES
+TCGA-29-1775	Chemotherapy	Paclitaxel		355	355	NO
+TCGA-29-1775	Chemotherapy	Gemcitabine HCL		397	467	NO
+TCGA-29-1775	Chemotherapy	Taxotere		377	377	NO
+TCGA-29-1775	Hormone Therapy	Tamoxifen		530	576	
+TCGA-29-1776	Chemotherapy	Carboplatin		32	154	NO
+TCGA-29-1776	Targeted Molecular therapy	Bevacizumab		522	592	YES
+TCGA-29-1776	Chemotherapy	Docetaxel		522	592	YES
+TCGA-29-1776	Chemotherapy	Paclitaxel		32	154	NO
+TCGA-29-1777	Chemotherapy	Doxorubicin HCL		346	346	NO
+TCGA-29-1777	Chemotherapy	Carboplatin		87	303	NO
+TCGA-29-1777	Chemotherapy	Carboplatin		325	325	NO
+TCGA-29-1778	Chemotherapy	Paclitaxel		17	80	NO
+TCGA-29-1778	Chemotherapy	Docetaxel		101	125	NO
+TCGA-29-1778	Chemotherapy	Carboplatin		17	80	NO
+TCGA-29-1778	Chemotherapy	Carboplatin		101	125	NO
+TCGA-29-1781	Chemotherapy	Carboplatin		52	255	NO
+TCGA-29-1781	Chemotherapy	Paclitaxel		52	255	NO
+TCGA-29-1783	Chemotherapy	Carboplatin		30	156	NO
+TCGA-29-1783	Targeted Molecular therapy	Bevacizumab		52	430	NO
+TCGA-29-1783	Chemotherapy	Paclitaxel		30	156	NO
+TCGA-29-1784	Chemotherapy	Paclitaxel; Albumin-Bount		59	59	NO
+TCGA-29-1784	Chemotherapy	Paclitaxel		17	17	NO
+TCGA-29-1784	Chemotherapy	Gemcitabine HCI		23	24	NO
+TCGA-29-1784	Chemotherapy	Carboplatin		17	136	NO
+TCGA-29-1785	Chemotherapy	Carboplatin		51	73	NO
+TCGA-29-1785	Chemotherapy	Carboplatin		496	496	NO
+TCGA-29-1785	Chemotherapy	Paciltaxel		94	156	NO
+TCGA-29-1785	Chemotherapy	Docetaxel		521	612	NO
+TCGA-29-1785	Chemotherapy	Carboplatin		521	612	NO
+TCGA-29-1785	Chemotherapy	Carboplatin		94	156	NO
+TCGA-29-1785	Chemotherapy	Paciltaxel		496	496	NO
+TCGA-29-2414	Chemotherapy	Cisplatin		3	131	NO
+TCGA-29-2414	Chemotherapy	Paclitaxel		3	131	NO
+TCGA-29-2414	Chemotherapy	Carboplatin		2042	2151	NO
+TCGA-29-2414	Chemotherapy	Doxil		2256	2287	NO
+TCGA-29-2414	Chemotherapy	Topotecan		2315	2424	NO
+TCGA-29-2414	Chemotherapy	Carboplatin		996	1171	NO
+TCGA-29-2414	Chemotherapy	Paclitaxel		996	1171	NO
+TCGA-29-2425	Chemotherapy	Carboplatin		1584	1696	NO
+TCGA-29-2425	Chemotherapy	Carboplatin		10	202	NO
+TCGA-29-2425	Chemotherapy	Gemzar		10	97	NO
+TCGA-29-2425	Targeted Molecular therapy	Bevacizumab		1584	1696	NO
+TCGA-29-2425	Chemotherapy	Paclitaxel		1584	1696	NO
+TCGA-29-2425	Chemotherapy	Paclitaxel		119	202	NO
+TCGA-29-2427	Chemotherapy	Paclitaxel		7	49	NO
+TCGA-29-2427	Chemotherapy	Carboplatin		1584	1690	NO
+TCGA-29-2427	Chemotherapy	Carboplatin		7	49	NO
+TCGA-29-2427	Chemotherapy	Abraxane		1816	1900	NO
+TCGA-29-2427	Chemotherapy	Cyclophosphamide		73	157	NO
+TCGA-29-2427	Chemotherapy	Cisplatin		73	157	NO
+TCGA-29-2428	Chemotherapy	Carboplatin		18	141	NO
+TCGA-29-2428	Chemotherapy	Paclitaxel		18	141	NO
+TCGA-29-2429	Chemotherapy	Paclitaxel		NA	NA	
+TCGA-29-2429	Chemotherapy	Carboplatin		NA	NA	
+TCGA-29-2431	Chemotherapy	Docetaxel		33	138	NO
+TCGA-29-2431	Targeted Molecular therapy	Bevacizumab		33	390	NO
+TCGA-29-2431	Chemotherapy	Oxaliplatin		33	138	NO
+TCGA-29-2431	Chemotherapy	Paclitaxel		977	1145	NO
+TCGA-29-2431	Chemotherapy	Carboplatin		977	1145	NO
+TCGA-29-2432	Chemotherapy	Paclitaxel		14	157	NO
+TCGA-29-2432	Chemotherapy	Carboplatin		14	157	NO
+TCGA-29-2432	Targeted Molecular therapy	Bevacizumab		38	157	NO
+TCGA-29-2433	Chemotherapy	Docetaxel		94	137	NO
+TCGA-29-2433	Chemotherapy	Paclitaxel		14	14	NO
+TCGA-29-2433	Chemotherapy	Carboplatin		42	67	NO
+TCGA-29-2433	Chemotherapy	Paclitaxel		42	67	NO
+TCGA-29-2433	Chemotherapy	Cisplatinum		14	14	NO
+TCGA-29-2433	Chemotherapy	Carboplatin		94	137	NO
+TCGA-29-2434	Chemotherapy	Paclitaxel		35	140	NO
+TCGA-29-2434	Chemotherapy	Cisplatin		28	134	NO
+TCGA-29-2434	Chemotherapy	Paclitaxel		28	134	NO
+TCGA-29-2435	Chemotherapy	Carboplatin		30	NA	NO
+TCGA-29-2435	Chemotherapy	Paclitaxel		30	NA	NO
+TCGA-29-2436	Chemotherapy	Paclitaxel		17	191	NO
+TCGA-29-2436	Chemotherapy	Carboplatin		17	191	NO
+TCGA-29-A5NZ		Paclitaxel	Complete Response	25	151	NO
+TCGA-29-A5NZ		Carboplatin	Partial Response	396	543	NO
+TCGA-29-A5NZ		Doxil	Partial Response	396	543	NO
+TCGA-29-A5NZ		paclitaxel		893	NA	YES
+TCGA-29-A5NZ		Carboplatin	Complete Response	25	151	NO
+TCGA-29-A5NZ		Gemzar	Clinical Progressive Disease	686	817	NO
+TCGA-30-1714	Chemotherapy	Carboplatin		555	700	NO
+TCGA-30-1714	Chemotherapy	Taxol		555	700	NO
+TCGA-30-1714	Chemotherapy	Topotecan		424	521	NO
+TCGA-30-1714	Chemotherapy	Taxotere		906	955	NO
+TCGA-30-1714	Chemotherapy	Carboplatin		15	123	NO
+TCGA-30-1714	Chemotherapy	VP 16		973	990	NO
+TCGA-30-1714	Chemotherapy	Taxol		15	123	NO
+TCGA-30-1714	Chemotherapy	Carboplatin		1002	1075	NO
+TCGA-30-1714	Chemotherapy	Gemcitabine		906	955	NO
+TCGA-30-1714	Chemotherapy	Doxil		314	417	NO
+TCGA-30-1714	Chemotherapy	Taxol		1002	1081	NO
+TCGA-30-1714	Hormone Therapy	Armidex		246	283	NO
+TCGA-30-1718	Chemotherapy	Taxol		206	492	NO
+TCGA-30-1718	Chemotherapy	Hexalin		NA	NA	NO
+TCGA-30-1718	Chemotherapy	Carboplatin		31	178	NO
+TCGA-30-1718	Hormone Therapy	Tamoxifen		865	896	NO
+TCGA-30-1718	Chemotherapy	Carboplatin		NA	NA	NO
+TCGA-30-1718	Chemotherapy	Taxol		NA	NA	NO
+TCGA-30-1853	Chemotherapy	Carboplatin		669	778	NO
+TCGA-30-1853	Chemotherapy	Carboplatin		42	126	NO
+TCGA-30-1853	Chemotherapy	Taxol		669	778	NO
+TCGA-30-1853	Chemotherapy	Doxil		950	1011	NO
+TCGA-30-1853	Chemotherapy	Taxol		42	126	NO
+TCGA-30-1853	Chemotherapy	Trabectedin		886	932	NO
+TCGA-30-1856	Chemotherapy	Carboplatin		17	195	NO
+TCGA-30-1856	Chemotherapy	Adriamycin		17	195	NO
+TCGA-30-1856	Chemotherapy	Doxil		339	462	NO
+TCGA-30-1856	Chemotherapy	Paclitaxel		17	195	NO
+TCGA-30-1856	Chemotherapy	Navelbine		339	462	NO
+TCGA-30-1856	Chemotherapy	Gemcitabine		17	195	NO
+TCGA-30-1856	Chemotherapy	Taxotere		272	300	NO
+TCGA-30-1856	Chemotherapy	Topotecan		17	195	NO
+TCGA-30-1856	Chemotherapy	CPT 11		339	462	NO
+TCGA-30-1856	Hormone Therapy	Tamoxifen		230	NA	NO
+TCGA-30-1859	Chemotherapy	Taxol		1214	1376	NO
+TCGA-30-1859	Chemotherapy	Trabectedin		369	593	NO
+TCGA-30-1859	Chemotherapy	Doxil		1162	1197	NO
+TCGA-30-1859	Chemotherapy	Carboplatin		31	199	NO
+TCGA-30-1859	Chemotherapy	Cytoxan		1334	1379	NO
+TCGA-30-1859	Chemotherapy	Gemcitabine		31	199	NO
+TCGA-30-1859	Chemotherapy	Topotecan		31	199	NO
+TCGA-30-1859	Chemotherapy	Taxol		31	199	NO
+TCGA-30-1859	Chemotherapy	Adriamycin		31	199	NO
+TCGA-30-1859	Chemotherapy	Carboplatin		982	1103	NO
+TCGA-30-1859	Hormone Therapy	Armidex		1135	1166	NO
+TCGA-30-1859	Immunotherapy	Sargramostin		1104	1131	NO
+TCGA-30-1860	Chemotherapy	Carboplatin		744	915	NO
+TCGA-30-1860	Chemotherapy	Taxol		994	1069	NO
+TCGA-30-1860	Chemotherapy	Topotecan		915	957	NO
+TCGA-30-1860	Chemotherapy	Doxil		413	561	NO
+TCGA-30-1860	Chemotherapy	Taxol		22	207	NO
+TCGA-30-1860	Chemotherapy	Navelbine		1191	1246	NO
+TCGA-30-1860	Chemotherapy	Gemcitabine		744	915	NO
+TCGA-30-1860	Chemotherapy	Carboplatin		22	207	NO
+TCGA-30-1860	Targeted Molecular therapy	Avastin		1191	1246	NO
+TCGA-30-1866	Chemotherapy	Taxol		NA	NA	NO
+TCGA-30-1866	Chemotherapy	Carboplatin		NA	NA	NO
+TCGA-30-1866	Chemotherapy	Topotecan		NA	NA	NO
+TCGA-30-1866	Chemotherapy	Doxil		265	NA	NO
+TCGA-30-1866	Chemotherapy	Gemcitabine		NA	NA	NO
+TCGA-30-1866	Chemotherapy	Carboplatin		19	126	NO
+TCGA-30-1866	Chemotherapy	Taxol		19	126	NO
+TCGA-30-1869	Chemotherapy	Taxol		1398	1489	NO
+TCGA-30-1869	Chemotherapy	Gemcitabine		22	179	NO
+TCGA-30-1869	Chemotherapy	Carboplatin		22	179	NO
+TCGA-30-1869	Chemotherapy	Carboplatin		767	943	NO
+TCGA-30-1869	Chemotherapy	SNS 595		1279	1331	NO
+TCGA-30-1869	Chemotherapy	Doxil		1184	1211	NO
+TCGA-30-1869	Chemotherapy	Carbplatin		1398	1489	NO
+TCGA-30-1869	Chemotherapy	Taxol		22	179	NO
+TCGA-30-1869	Chemotherapy	Topotecan		1510	1534	NO
+TCGA-30-1869	Chemotherapy	Alimta		767	943	NO
+TCGA-30-1869	Targeted Molecular therapy	Avastin		1132	1175	NO
+TCGA-30-1880	Chemotherapy	CBP501		1642	1656	NO
+TCGA-30-1880	Chemotherapy	Carboplatin		46	152	NO
+TCGA-30-1880	Chemotherapy	Taxol		718	823	NO
+TCGA-30-1880	Chemotherapy	Carboplatin		718	823	NO
+TCGA-30-1880	Chemotherapy	Navelbine		1660	1722	NO
+TCGA-30-1880	Chemotherapy	Carboplatin		1400	1610	NO
+TCGA-30-1880	Chemotherapy	Taxol		1400	1610	NO
+TCGA-30-1880	Chemotherapy	Taxol		46	152	NO
+TCGA-30-1880	Chemotherapy	Gemcitabine		1106	1228	NO
+TCGA-30-1880	Chemotherapy	Doxil		357	497	NO
+TCGA-30-1880	Targeted Molecular therapy	Avastin		1660	1722	NO
+TCGA-30-1887	Chemotherapy	Gemcitabine		328	433	NO
+TCGA-30-1887	Chemotherapy	Taxol		27	134	NO
+TCGA-30-1887	Chemotherapy	Taxol		503	671	NO
+TCGA-30-1887	Chemotherapy	Topotecan		454	482	NO
+TCGA-30-1887	Chemotherapy	Carboplatin		27	134	NO
+TCGA-30-1891	Chemotherapy	Taxol		15	141	NO
+TCGA-30-1891	Chemotherapy	Gemcitabine		460	526	NO
+TCGA-30-1891	Chemotherapy	Carboplatin		460	526	NO
+TCGA-30-1891	Chemotherapy	Doxil		189	330	NO
+TCGA-30-1891	Chemotherapy	Cisplatin		554	638	NO
+TCGA-30-1891	Chemotherapy	Topotecan		701	890	NO
+TCGA-30-1891	Chemotherapy	Carboplatin		15	141	NO
+TCGA-30-1891	Chemotherapy	Cytoxan		358	386	NO
+TCGA-30-1891	Chemotherapy	Navelbine		855	890	NO
+TCGA-30-1891	Chemotherapy	Gemcitabine		400	453	NO
+TCGA-30-1891	Chemotherapy	Taxol		666	694	NO
+TCGA-30-1891	Targeted Molecular therapy	Avastin		358	386	NO
+TCGA-30-1892	Chemotherapy	Carboplatin		10	132	NO
+TCGA-30-1892	Chemotherapy	Cytoxin		1113	1197	NO
+TCGA-30-1892	Chemotherapy	Altima		862	NA	NO
+TCGA-30-1892	Chemotherapy	Doxil		253	419	NO
+TCGA-30-1892	Chemotherapy	Carboplatin		601	754	NO
+TCGA-30-1892	Chemotherapy	Taxol		1197	1258	NO
+TCGA-30-1892	Chemotherapy	Topotecan		NA	NA	NO
+TCGA-30-1892	Chemotherapy	Carboplatin		1265	1384	NO
+TCGA-30-1892	Chemotherapy	Taxol		10	132	NO
+TCGA-30-1892	Chemotherapy	Gemcitabine		428	573	NO
+TCGA-30-1892	Chemotherapy	Catumaxumab		1428	1449	NO
+TCGA-30-1892	Immunotherapy	Avastin		1134	1197	NO
+TCGA-31-1944	Chemotherapy	Megace		944	1099	NO
+TCGA-31-1944	Chemotherapy	Carboplatin		7	126	NO
+TCGA-31-1944	Chemotherapy	Cisplatin		153	223	NO
+TCGA-31-1944	Chemotherapy	AZD 2281		1032	NA	YES
+TCGA-31-1944	Chemotherapy	Paciltaxel		721	841	NO
+TCGA-31-1944	Chemotherapy	Paciltaxel		7	126	NO
+TCGA-31-1944	Chemotherapy	Carboplatin		721	841	NO
+TCGA-31-1944	Hormone Therapy	Tamoxifen		479	944	NO
+TCGA-31-1944	Chemotherapy	Paciltaxel		153	223	NO
+TCGA-31-1946	Chemotherapy	Gemcitabine		64	148	NO
+TCGA-31-1946	Chemotherapy	Paciltaxel		22	43	NO
+TCGA-31-1946	Chemotherapy	Carboplatin		687	743	NO
+TCGA-31-1946	Chemotherapy	Liosomal Docorubicin		687	743	NO
+TCGA-31-1946	Chemotherapy	Carboplatin		22	43	NO
+TCGA-31-1946	Chemotherapy	Carboplatin		64	148	NO
+TCGA-31-1946	Chemotherapy	Carboplatin		771	828	NO
+TCGA-31-1950	Chemotherapy	Paciltaxel		431	571	NO
+TCGA-31-1950	Chemotherapy	Carboplatin		33	144	NO
+TCGA-31-1951	Chemotherapy	Liposomal Doxorubicin		328	482	NO
+TCGA-31-1951	Chemotherapy	Paclitaxel		41	146	NO
+TCGA-31-1951	Chemotherapy	Carboplatin		328	482	NO
+TCGA-31-1951	Chemotherapy	Carboplatin		41	146	NO
+TCGA-31-1953	Chemotherapy	Paciltaxel		23	65	NO
+TCGA-31-1953	Chemotherapy	Paciltaxle		100	NA	YES
+TCGA-31-1953	Chemotherapy	Carboplatin		100	NA	YES
+TCGA-31-1953	Chemotherapy	Carboplatin		23	65	NO
+TCGA-31-1955	Chemotherapy	Paciltaxel		42	147	NO
+TCGA-31-1955	Chemotherapy	Paciltaxle		1189	NA	YES
+TCGA-31-1955	Chemotherapy	Carboplatin		1189	NA	YES
+TCGA-31-1955	Chemotherapy	Carboplatin		42	147	NO
+TCGA-31-1956	Chemotherapy	Carboplatin		34	188	NO
+TCGA-31-1956	Chemotherapy	Paclitaxel		34	188	NO
+TCGA-31-1959	Chemotherapy	Carboplatin		26	NA	YES
+TCGA-31-1959	Chemotherapy	Paciltaxel		26	NA	YES
+TCGA-36-1568	Chemotherapy	Liposomal Doxorubicin		624	737	NO
+TCGA-36-1568	Chemotherapy	Paclitaxel		10	123	NO
+TCGA-36-1568	Chemotherapy	Carboplatin		10	123	NO
+TCGA-36-1570	Chemotherapy	Carboplatin		23	133	NO
+TCGA-36-1570	Chemotherapy	Gemcitabine		432	432	NO
+TCGA-36-1570	Chemotherapy	Paclitaxel		23	133	NO
+TCGA-36-1571	Chemotherapy	Paclitaxel		32	173	NO
+TCGA-36-1571	Chemotherapy	Carboplatin		384	531	NO
+TCGA-36-1571	Chemotherapy	Carboplatin		32	173	NO
+TCGA-36-1571	Chemotherapy	Gemcitabine		384	531	NO
+TCGA-36-1574	Chemotherapy	Carboplatin		15	204	NO
+TCGA-36-1574	Chemotherapy	Paclitaxel		15	204	NO
+TCGA-36-1576	Chemotherapy	Paclitaxel		12	222	NO
+TCGA-36-1576	Chemotherapy	Carboplatin		12	222	NO
+TCGA-36-1577	Chemotherapy	Carboplatin		28	84	NO
+TCGA-36-1577	Chemotherapy	Paclitaxel		28	84	NO
+TCGA-36-1578	Chemotherapy	Liposomal Doxorubicin		321	345	NO
+TCGA-36-1578	Chemotherapy	Carboplatin		15	212	NO
+TCGA-36-1578	Chemotherapy	Paclitaxel		15	212	NO
+TCGA-36-1580	Chemotherapy	Carboplatin		18	348	NO
+TCGA-36-1580	Chemotherapy	Liposomal Doxorubicin		454	553	NO
+TCGA-36-1581	Chemotherapy	Carboplatin		29	141	NO
+TCGA-36-1581	Chemotherapy	Paclitaxel		29	141	NO
+TCGA-36-2529	Chemotherapy	Carboplatin		17	136	NO
+TCGA-36-2529	Chemotherapy	Paclitaxel		1026	NA	YES
+TCGA-36-2529	Chemotherapy	Paclitaxel		17	136	NO
+TCGA-36-2529	Chemotherapy	Liposomal Doxorubicin		962	990	NO
+TCGA-36-2529	Chemotherapy	Carboplatin		830	925	NO
+TCGA-36-2529	Chemotherapy	Paclitaxel		591	738	NO
+TCGA-36-2529	Chemotherapy	Carboplatin		591	738	NO
+TCGA-36-2530	Chemotherapy	Carboplatin		21	135	NO
+TCGA-36-2530	Chemotherapy	Paclitaxel		21	135	NO
+TCGA-36-2530	Chemotherapy	Paclitaxel		639	763	NO
+TCGA-36-2530	Chemotherapy	Carboplatin		639	763	NO
+TCGA-36-2530	Targeted Molecular therapy	Cediranib Placebo		639	982	NO
+TCGA-36-2532	Chemotherapy	Carboplatin		27	140	NO
+TCGA-36-2532	Chemotherapy	Paclitaxel		27	140	NO
+TCGA-36-2534	Chemotherapy	Carboplatin		27	154	NO
+TCGA-36-2534	Chemotherapy	Docetaxel		27	154	NO
+TCGA-36-2534	Chemotherapy	Carboplatin		544	685	NO
+TCGA-36-2537	Chemotherapy	Paclitaxel		20	125	NO
+TCGA-36-2537	Chemotherapy	Carboplatin		20	125	NO
+TCGA-36-2537	Chemotherapy	Carboplatin		474	614	NO
+TCGA-36-2537	Chemotherapy	Liposomal Doxorubicin		474	614	NO
+TCGA-36-2537	Chemotherapy	Gemcitabine		721	763	NO
+TCGA-36-2538	Chemotherapy	Pacitaxel		72	212	NO
+TCGA-36-2538	Chemotherapy	Carboplatin		542	682	NO
+TCGA-36-2538	Chemotherapy	Liposomal Doxorubicin		542	682	NO
+TCGA-36-2538	Chemotherapy	Carboplatin		72	212	NO
+TCGA-36-2540	Chemotherapy	Carboplatin		46	185	NO
+TCGA-36-2540	Chemotherapy	Paclitaxel		726	NA	YES
+TCGA-36-2540	Chemotherapy	Paclitaxel		46	185	NO
+TCGA-36-2540	Chemotherapy	Carboplatin		726	NA	YES
+TCGA-36-2542	Chemotherapy	Carboplatin		25	152	NO
+TCGA-36-2542	Chemotherapy	Paclitaxel		25	159	NO
+TCGA-36-2544	Chemotherapy	Paclitaxel		23	128	NO
+TCGA-36-2544	Chemotherapy	Carboplatin		23	128	NO
+TCGA-36-2544	Chemotherapy	Carboplatin		343	343	NO
+TCGA-36-2544	Chemotherapy	Paclitaxel		343	343	NO
+TCGA-36-2545	Chemotherapy	Carboplatin		19	145	NO
+TCGA-36-2545	Chemotherapy	Paclitaxel		19	152	NO
+TCGA-36-2547	Chemotherapy	Carboplatin		42	NA	
+TCGA-36-2547	Chemotherapy	Pacliltaxel		42	NA	
+TCGA-36-2548	Chemotherapy	Paclitaxel		58	267	NO
+TCGA-36-2548	Chemotherapy	Carboplatin		58	267	NO
+TCGA-36-2549	Chemotherapy	Carboplatin		41	181	NO
+TCGA-36-2549	Chemotherapy	Paclitaxel		41	181	NO
+TCGA-36-2551	Chemotherapy	Carboplatin		346	NA	YES
+TCGA-36-2551	Chemotherapy	Paclitaxel		38	163	NO
+TCGA-36-2551	Chemotherapy	Liposomal Doxorubicin		346	NA	YES
+TCGA-36-2551	Chemotherapy	Carboplatin		16	198	NO
+TCGA-36-2552	Chemotherapy	Paclitaxel		15	121	NO
+TCGA-36-2552	Chemotherapy	Carboplatin		15	121	NO
+TCGA-3P-A9WA	Chemotherapy	Taxol	Complete Response	92	212	NO
+TCGA-3P-A9WA	Chemotherapy	Paraplatin	Complete Response	92	212	NO
+TCGA-42-2582	Chemotherapy	Taxol		232	NA	YES
+TCGA-42-2582	Chemotherapy	Taxol		36	36	NO
+TCGA-42-2582	Chemotherapy	Taxotere		57	184	NO
+TCGA-42-2582	Chemotherapy	Cisplatin		37	185	NO
+TCGA-42-2582	Chemotherapy	Taxol		232	560	NO
+TCGA-42-2582	Chemotherapy	Cisplatin		640	682	NO
+TCGA-42-2582	Chemotherapy	Topotecan	Stable Disease	800	955	NO
+TCGA-42-2587	Chemotherapy	Taxol		150	NA	YES
+TCGA-42-2587	Chemotherapy	Carboplatin		150	NA	YES
+TCGA-42-2587	Chemotherapy	Carboplatin		17	94	NO
+TCGA-42-2587	Chemotherapy	Taxol		17	94	NO
+TCGA-42-2587	Chemotherapy	Clinical Trial		326	605	NO
+TCGA-42-2587	Chemotherapy	Carboplatin		276	276	NO
+TCGA-42-2587	Chemotherapy	Taxol		283	290	NO
+TCGA-42-2588	Chemotherapy	Carboplatin		161	258	NO
+TCGA-42-2588	Chemotherapy	Taxol		161	258	NO
+TCGA-42-2588	Chemotherapy	Carboplatin		22	90	NO
+TCGA-42-2588	Chemotherapy	Taxol		48	104	NO
+TCGA-42-2588	Chemotherapy	Gemcitabine		735	819	NO
+TCGA-42-2588	Chemotherapy	Cisplatin		427	427	NO
+TCGA-42-2588	Chemotherapy	Gemcitabine		427	602	NO
+TCGA-42-2588	Chemotherapy	Doxil		315	399	NO
+TCGA-42-2588	Chemotherapy	Carboplatin		455	595	NO
+TCGA-42-2588	Targeted Molecular therapy	Avastin		343	399	NO
+TCGA-42-2588	Hormone Therapy	Megestrol Acetate		687	784	NO
+TCGA-42-2588	Chemotherapy	Carboplatin		744	819	NO
+TCGA-42-2588	Hormone Therapy	Femara		687	784	NO
+TCGA-42-2589	Chemotherapy	Taxol		21	132	NO
+TCGA-42-2589	Chemotherapy	Cisplatin		63	126	NO
+TCGA-42-2589	Chemotherapy	Carboplatin		21	41	NO
+TCGA-42-2589	Chemotherapy	Carboplatin		377	504	NO
+TCGA-42-2589	Chemotherapy	Gemcitabine		377	644	NO
+TCGA-42-2590	Chemotherapy	Gemcitabine		31	NA	YES
+TCGA-42-2590	Chemotherapy	Carboplatin		38	NA	YES
+TCGA-42-2590	Chemotherapy	Taxotere		249	269	NO
+TCGA-42-2591	Chemotherapy	Taxol		23	204	NO
+TCGA-42-2591	Chemotherapy	Carboplatin		23	204	NO
+TCGA-42-2591	Chemotherapy	Taxol		253	561	NO
+TCGA-57-1582	Chemotherapy	Topotecan		505	597	NO
+TCGA-57-1582	Chemotherapy	Carboplatin		597	718	NO
+TCGA-57-1582	Chemotherapy	Gemzar		597	718	NO
+TCGA-57-1582	Chemotherapy	Taxotere		17	170	NO
+TCGA-57-1582	Chemotherapy	Carboplatin		17	170	NO
+TCGA-57-1582	Chemotherapy	Doxil		444	505	NO
+TCGA-57-1582	Chemotherapy	Patupilone		260	NA	NO
+TCGA-57-1583	Chemotherapy	Carboplatin		37	NA	YES
+TCGA-57-1583	Chemotherapy	Taxol		37	NA	NO
+TCGA-57-1584	Chemotherapy	Taxol		573	NA	YES
+TCGA-57-1584	Chemotherapy	Carboplatin		573	NA	YES
+TCGA-57-1585	Chemotherapy	Taxol		18	53	NO
+TCGA-57-1585	Chemotherapy	Carboplatin		18	53	NO
+TCGA-57-1586	Chemotherapy	Taxol		49	163	NO
+TCGA-57-1586	Chemotherapy	Gemzar		259	NA	NO
+TCGA-57-1586	Chemotherapy	Topotecan		433	542	NO
+TCGA-57-1586	Chemotherapy	Taxol		553	NA	NO
+TCGA-57-1586	Chemotherapy	Doxil		323	406	NO
+TCGA-57-1586	Chemotherapy	Cisplatin		259	NA	NO
+TCGA-57-1586	Chemotherapy	Carboplatin		553	NA	NO
+TCGA-57-1586	Chemotherapy	Carboplatin		49	163	NO
+TCGA-57-1993	Chemotherapy	Carboplatin		62	NA	NO
+TCGA-57-1993	Chemotherapy	Taxol		62	NA	NO
+TCGA-59-2354	Chemotherapy			NA	NA	
+TCGA-59-2354	Chemotherapy	Carboplatin		NA	NA	
+TCGA-59-2355	Chemotherapy	Carboplatin		NA	NA	
+TCGA-59-2355	Chemotherapy	Taxol		NA	NA	
+TCGA-59-2363	Chemotherapy	carbopaltin		NA	NA	
+TCGA-59-2363	Chemotherapy	Taxol		NA	NA	
+TCGA-59-2372	Chemotherapy	Carboplatin		NA	NA	
+TCGA-59-2372	Chemotherapy	Taxol		NA	NA	
+TCGA-5X-AA5U	Chemotherapy	Taxotere	Complete Response	66	178	NO
+TCGA-5X-AA5U	Chemotherapy	Cisplatin	Complete Response	63	178	NO
+TCGA-5X-AA5U	Chemotherapy	Carboplatin	Complete Response	63	178	NO
+TCGA-61-1721	Chemotherapy	Oxaliplatin		193	317	NO
+TCGA-61-1721	Chemotherapy	Taxotere		193	317	NO
+TCGA-61-1721	Chemotherapy	Carboplatin		2	338	NO
+TCGA-61-1721	Chemotherapy	Taxol		2	338	NO
+TCGA-61-1722	Chemotherapy	Cytoxan		19	19	NO
+TCGA-61-1722	Chemotherapy	Vincristine		19	19	NO
+TCGA-61-1722	Chemotherapy	Mitoxantrone		19	19	NO
+TCGA-61-1722	Hormone Therapy	Decodron		19	19	NO
+TCGA-61-1724	Chemotherapy	Carboplatin		NA	NA	NO
+TCGA-61-1724	Chemotherapy	Taxotere		514	NA	NO
+TCGA-61-1724	Chemotherapy	Cisplatin		287	NA	NO
+TCGA-61-1724	Chemotherapy	Gemcitabine		NA	NA	NO
+TCGA-61-1724	Chemotherapy	Doxil		368	NA	NO
+TCGA-61-1724	Chemotherapy	Gemzar		608	NA	NO
+TCGA-61-1725	Chemotherapy	Taxol		45	158	NO
+TCGA-61-1725	Chemotherapy	Cisplatin		45	158	NO
+TCGA-61-1725	Chemotherapy	Avastin		908	NA	YES
+TCGA-61-1725	Chemotherapy	Carboplatin		908	NA	YES
+TCGA-61-1725	Chemotherapy	Gamzar		908	NA	YES
+TCGA-61-1725	Chemotherapy	Taxol		235	577	NO
+TCGA-61-1727	Chemotherapy	Taxotere		62	153	NO
+TCGA-61-1727	Chemotherapy	Carboplatin		62	153	NO
+TCGA-61-1728	Chemotherapy	Carboplatin		43	204	NO
+TCGA-61-1728	Chemotherapy	SNS 595		246	848	NO
+TCGA-61-1728	Chemotherapy	Taxol		43	204	NO
+TCGA-61-1733	Chemotherapy	Doxil		231	372	NO
+TCGA-61-1733	Chemotherapy	Taxotere		484	625	NO
+TCGA-61-1733	Chemotherapy	Taxol		484	625	NO
+TCGA-61-1733	Chemotherapy	Carboplatin		22	127	NO
+TCGA-61-1733	Chemotherapy	Cisplatin		484	625	NO
+TCGA-61-1733	Chemotherapy	Docetaxel		22	127	NO
+TCGA-61-1734	Chemotherapy	Taxol		46	158	NO
+TCGA-61-1734	Chemotherapy	Carboplatin		46	158	NO
+TCGA-61-1736	Chemotherapy	Carboplatin		34	138	NO
+TCGA-61-1736	Chemotherapy	Taxol		34	138	NO
+TCGA-61-1736	Chemotherapy	Doxil		946	NA	NO
+TCGA-61-1736	Chemotherapy	Gemzar		NA	NA	
+TCGA-61-1736	Chemotherapy	Cisplatin		NA	NA	NO
+TCGA-61-1737	Chemotherapy	Taxotere		43	106	NO
+TCGA-61-1737	Chemotherapy	Taxotere		127	176	NO
+TCGA-61-1737	Hormone Therapy	Tamoxifen		582	NA	YES
+TCGA-61-1737	Chemotherapy	Paclitaxel		127	176	NO
+TCGA-61-1737	Chemotherapy	Carboplatin		43	106	NO
+TCGA-61-1737	Chemotherapy	Cisplatin		127	176	NO
+TCGA-61-1738	Chemotherapy	Doxil		287	338	NO
+TCGA-61-1738	Chemotherapy	Gemzar		709	843	NO
+TCGA-61-1738	Chemotherapy	Toptecan		422	658	NO
+TCGA-61-1738	Chemotherapy	Cisplatin		198	276	NO
+TCGA-61-1738	Chemotherapy	Taxol		21	135	NO
+TCGA-61-1738	Chemotherapy	Carboplatin		21	135	NO
+TCGA-61-1740	Hormone Therapy	Tamoxifen		23	74	NO
+TCGA-61-1741	Chemotherapy	Taxol		12	180	NO
+TCGA-61-1741	Hormone Therapy	Tamoxifen		NA	NA	NO
+TCGA-61-1741	Chemotherapy	Carboplatin		522	605	NO
+TCGA-61-1741	Chemotherapy	Carboplatin		12	180	NO
+TCGA-61-1741	Chemotherapy	Taxol		522	605	NO
+TCGA-61-1743	Chemotherapy	Carboplatin		40	172	NO
+TCGA-61-1743	Chemotherapy	Taxol		40	172	NO
+TCGA-61-1895	Chemotherapy	Carboplatin		44	156	NO
+TCGA-61-1895	Chemotherapy	Taxotere		44	156	NO
+TCGA-61-1899	Chemotherapy	Taxol		52	159	NO
+TCGA-61-1899	Chemotherapy	Carbplatin		52	159	NO
+TCGA-61-1900	Chemotherapy	Taxol		35	76	NO
+TCGA-61-1900	Chemotherapy	Cisplatin		35	76	NO
+TCGA-61-1901	Chemotherapy	Carboplatin		28	294	NO
+TCGA-61-1901	Chemotherapy	Taxotere		28	294	NO
+TCGA-61-1903	Chemotherapy	Taxol		32	147	NO
+TCGA-61-1903	Chemotherapy	Cisplatin		32	147	NO
+TCGA-61-1904	Chemotherapy	Taxotere		42	161	NO
+TCGA-61-1904	Chemotherapy	Cisplatin		42	161	NO
+TCGA-61-1906	Chemotherapy	Carboplatin		489	1038	NO
+TCGA-61-1906	Chemotherapy	Carboplatin		27	153	NO
+TCGA-61-1906	Chemotherapy	Taxol		27	153	NO
+TCGA-61-1906	Chemotherapy	Taxol		489	1038	NO
+TCGA-61-1906	Chemotherapy	Topotecan		279	321	NO
+TCGA-61-1906	Chemotherapy	Gemzar		400	484	NO
+TCGA-61-1906	Chemotherapy	Doxil		335	391	NO
+TCGA-61-1906	Chemotherapy	Avastin		400	484	NO
+TCGA-61-1907	Chemotherapy	Oxaliplatin		37	163	NO
+TCGA-61-1907	Chemotherapy	Carboplatin		774	927	NO
+TCGA-61-1907	Chemotherapy	Docetaxel		37	163	NO
+TCGA-61-1907	Chemotherapy	Avastin		37	357	NO
+TCGA-61-1910	Chemotherapy	Carboplatin		56	161	NO
+TCGA-61-1910	Chemotherapy	Taxol		56	161	NO
+TCGA-61-1911	Chemotherapy	Carboplatin		34	144	NO
+TCGA-61-1911	Chemotherapy	Carboplatin		893	998	NO
+TCGA-61-1911	Chemotherapy	Carboplatin		1306	1432	NO
+TCGA-61-1911	Chemotherapy	Gemzar		1306	1432	NO
+TCGA-61-1911	Chemotherapy	Gemzar		893	998	NO
+TCGA-61-1911	Chemotherapy	Avastin		1306	1432	NO
+TCGA-61-1911	Chemotherapy	Taxol		34	144	NO
+TCGA-61-1913	Chemotherapy	Docetaxel		21	127	NO
+TCGA-61-1913	Chemotherapy	Carboplatin		21	127	NO
+TCGA-61-1914	Chemotherapy	Carboplatin		22	193	NO
+TCGA-61-1914	Hormone Therapy	Tamoxifen		1155	1673	NO
+TCGA-61-1914	Chemotherapy	Taxol		22	193	NO
+TCGA-61-1914	Chemotherapy	Carboplatin		1753	1871	NO
+TCGA-61-1914	Chemotherapy	Taxol		1753	1871	NO
+TCGA-61-1915	Chemotherapy	Carboplatin		25	143	NO
+TCGA-61-1915	Chemotherapy	Taxol		25	143	NO
+TCGA-61-1916	Chemotherapy	Carboplatin		37	NA	NO
+TCGA-61-1916	Chemotherapy	Taxol		142	NA	NO
+TCGA-61-1916	Chemotherapy	Topotecan		37	NA	NO
+TCGA-61-1916	Chemotherapy	Carboplatin		142	NA	NO
+TCGA-61-1917	Chemotherapy	Taxol		19	NA	
+TCGA-61-1917	Chemotherapy	Gemzar		19	NA	
+TCGA-61-1917	Chemotherapy	Carboplatin		19	NA	
+TCGA-61-1918	Chemotherapy	Gemcitibine		9	146	NO
+TCGA-61-1918	Chemotherapy	Taxol		9	146	NO
+TCGA-61-1918	Chemotherapy	Carboplatin		9	146	YES
+TCGA-61-1995	Chemotherapy	Taxol		67	132	NO
+TCGA-61-1995	Chemotherapy	Cisplatin		67	132	NO
+TCGA-61-1998	Chemotherapy	Cisplatin		10	77	NO
+TCGA-61-1998	Chemotherapy	Carboplatin		52	NA	YES
+TCGA-61-1998	Chemotherapy	Taxol		52	NA	YES
+TCGA-61-2000	Chemotherapy	Taxol		525	588	NO
+TCGA-61-2000	Chemotherapy	Taxol		28	231	NO
+TCGA-61-2000	Chemotherapy	CCDP		28	231	NO
+TCGA-61-2000	Chemotherapy	Oxaliplatin		420	491	NO
+TCGA-61-2000	Chemotherapy	Docetaxel		420	491	NO
+TCGA-61-2000	Chemotherapy	Carboplatin		28	231	NO
+TCGA-61-2000	Chemotherapy	Avastin		525	588	NO
+TCGA-61-2002	Chemotherapy	Paclitaxel		24	129	NO
+TCGA-61-2002	Chemotherapy	Doxorubicin		157	563	NO
+TCGA-61-2002	Chemotherapy	Avastin		400	558	NO
+TCGA-61-2002	Chemotherapy	Carboplatin		24	129	NO
+TCGA-61-2003	Chemotherapy	Carboplatin		122	NA	NO
+TCGA-61-2003	Chemotherapy	Carboplatin		52	121	NO
+TCGA-61-2003	Chemotherapy	Gemcitabine		122	NA	NO
+TCGA-61-2003	Chemotherapy	Taxol		52	121	NO
+TCGA-61-2008	Chemotherapy	Taxol		861	979	NO
+TCGA-61-2008	Chemotherapy	Taxotere		29	149	NO
+TCGA-61-2008	Chemotherapy	Cisplatin		861	979	NO
+TCGA-61-2008	Chemotherapy	Carboplatin		29	149	NO
+TCGA-61-2009	Chemotherapy	Carboplatin		41	83	NO
+TCGA-61-2009	Chemotherapy	Taxol		120	295	NO
+TCGA-61-2009	Hormone Therapy	Tamoxifen		658	NA	NO
+TCGA-61-2009	Chemotherapy	Cisplatin		120	295	NO
+TCGA-61-2009	Chemotherapy	Taxol		41	83	NO
+TCGA-61-2009	Chemotherapy	Docetaxel		839	1003	NO
+TCGA-61-2009	Chemotherapy	Doxil		1100	1126	NO
+TCGA-61-2009	Chemotherapy	Oxaliplatin		839	1003	NO
+TCGA-61-2012	Chemotherapy	Carboplatin		29	NA	NO
+TCGA-61-2012	Chemotherapy	Taxol		29	NA	NO
+TCGA-61-2017	Chemotherapy	Taxol		1053	1186	NO
+TCGA-61-2017	Chemotherapy	Carboplatin		34	NA	NO
+TCGA-61-2017	Chemotherapy	Taxol		34	NA	NO
+TCGA-61-2017	Chemotherapy	Cisplatin		1053	1186	NO
+TCGA-61-2018	Chemotherapy	Carboplatin		61	139	NO
+TCGA-61-2018	Chemotherapy	Taxol		18	60	NO
+TCGA-61-2018	Chemotherapy	Taxotere		61	139	NO
+TCGA-61-2018	Chemotherapy	Carboplatin		18	60	NO
+TCGA-61-2087	Chemotherapy	Taxol		29	NA	NO
+TCGA-61-2087	Chemotherapy	Cisplatin		1	NA	NO
+TCGA-61-2087	Chemotherapy	Carboplatin		29	NA	NO
+TCGA-61-2088	Chemotherapy	Taxotere		34	145	NO
+TCGA-61-2088	Chemotherapy	Carboplatin		34	145	NO
+TCGA-61-2092	Chemotherapy	Carboplatin		41	160	NO
+TCGA-61-2092	Chemotherapy	Taxol		41	160	NO
+TCGA-61-2094	Chemotherapy	Carboplatin		24	166	NO
+TCGA-61-2094	Chemotherapy	Taxol		24	166	NO
+TCGA-61-2095	Chemotherapy	Doxil		783	1188	NO
+TCGA-61-2095	Chemotherapy	Oxaliplatin		1360	1389	NO
+TCGA-61-2095	Chemotherapy	Gemzar		1474	NA	NO
+TCGA-61-2095	Immunotherapy	Ovarex MA6 B43.13		210	447	NO
+TCGA-61-2095	Chemotherapy	Taxol		59	602	NO
+TCGA-61-2095	Chemotherapy	Carboplatin		59	602	NO
+TCGA-61-2095	Chemotherapy	Topotecan		1193	1264	NO
+TCGA-61-2096	Chemotherapy	Taxol		29	79	NO
+TCGA-61-2096	Chemotherapy	Gemcitabine		1191	1372	NO
+TCGA-61-2096	Chemotherapy	Carboplatin		916	988	NO
+TCGA-61-2096	Chemotherapy	Avastin		1723	2010	NO
+TCGA-61-2096	Chemotherapy	Taxol		1059	1156	NO
+TCGA-61-2096	Chemotherapy	Taxol		474	544	NO
+TCGA-61-2096	Chemotherapy	Carboplatin		29	79	NO
+TCGA-61-2096	Chemotherapy	Carboplatin		1191	1372	NO
+TCGA-61-2096	Chemotherapy	Carboplatin		474	544	NO
+TCGA-61-2096	Chemotherapy	Topotecan		1723	2010	NO
+TCGA-61-2096	Chemotherapy	Cyclophosphamide		NA	642	NO
+TCGA-61-2096	Chemotherapy	Topotecan		NA	642	NO
+TCGA-61-2096	Chemotherapy	Melphalon		NA	642	NO
+TCGA-61-2097	Chemotherapy	Carboplatin		48	167	NO
+TCGA-61-2097	Immunotherapy	Interferon gamma		48	NA	
+TCGA-61-2097	Chemotherapy	Taxol		48	167	NO
+TCGA-61-2098	Chemotherapy	Taxol		14	145	NO
+TCGA-61-2098	Chemotherapy	Carboplatin		14	145	NO
+TCGA-61-2101	Chemotherapy	Taxol		2	117	NO
+TCGA-61-2101	Chemotherapy	Taxol		152	221	NO
+TCGA-61-2101	Chemotherapy	Doxil		1103	NA	NO
+TCGA-61-2101	Chemotherapy	VP 16		1251	NA	NO
+TCGA-61-2101	Chemotherapy	Doxil		1220	NA	NO
+TCGA-61-2101	Chemotherapy	Hexalen		1159	NA	NO
+TCGA-61-2101	Chemotherapy	Cisplatin		2	117	NO
+TCGA-61-2101	Chemotherapy	Gemcitabine		733	NA	NO
+TCGA-61-2101	Chemotherapy	Gemzar		1190	NA	NO
+TCGA-61-2101	Chemotherapy	Carboplatin		152	221	NO
+TCGA-61-2101	Immunotherapy	IL 12		1129	NA	NO
+TCGA-61-2101	Chemotherapy	Hexalin		733	NA	NO
+TCGA-61-2102	Chemotherapy	Taxol		14	NA	NO
+TCGA-61-2102	Chemotherapy	Carboplatin		14	NA	NO
+TCGA-61-2104	Chemotherapy	Cisplatin		1680	1681	NO
+TCGA-61-2104	Chemotherapy	Taxol		1197	NA	NO
+TCGA-61-2104	Chemotherapy	Carboplatin		1197	NA	NO
+TCGA-61-2104	Chemotherapy	Taxol		6	NA	NO
+TCGA-61-2104	Chemotherapy	Taxane		1838	2338	NO
+TCGA-61-2104	Chemotherapy	Carboplatin		6	NA	NO
+TCGA-61-2109	Chemotherapy	Taxol		14	253	NO
+TCGA-61-2109	Chemotherapy	Carboplatin		14	253	NO
+TCGA-61-2109	Chemotherapy	Cisplatin		486	601	NO
+TCGA-61-2109	Chemotherapy	Gemzar		486	601	NO
+TCGA-61-2110	Chemotherapy	Topotecan		661	770	NO
+TCGA-61-2110	Chemotherapy	Carboplatin		20	161	NO
+TCGA-61-2110	Chemotherapy	Taxol		20	161	NO
+TCGA-61-2110	Chemotherapy	Gemzar		1089	1239	NO
+TCGA-61-2110	Hormone Therapy	Tamoxifen		459	1354	NO
+TCGA-61-2110	Chemotherapy	Carbplatin		774	930	NO
+TCGA-61-2110	Chemotherapy	Doxil		979	1089	NO
+TCGA-61-2110	Immunotherapy	IL 2		244	356	NO
+TCGA-61-2111	Chemotherapy	Cytoxan		3808	NA	NO
+TCGA-61-2111	Chemotherapy	Carboplatin		29	133	NO
+TCGA-61-2111	Hormone Therapy	Megace		NA	NA	NO
+TCGA-61-2111	Chemotherapy	Cytoxan		3079	3165	NO
+TCGA-61-2111	Chemotherapy	Taxol		29	133	NO
+TCGA-61-2111	Chemotherapy	Taxol		2268	2373	NO
+TCGA-61-2111	Chemotherapy	Carboplatin		2268	2373	NO
+TCGA-61-2111	Chemotherapy	Cisplatin		3079	3165	NO
+TCGA-61-2111	Chemotherapy	Avastin		3808	NA	NO
+TCGA-61-2111	Hormone Therapy	Provera		NA	NA	NO
+TCGA-61-2113	Chemotherapy	Taxol		49	143	NO
+TCGA-61-2113	Chemotherapy	Doxil		336	392	NO
+TCGA-61-2113	Chemotherapy	Carboplatin		49	143	NO
+TCGA-61-2610	Chemotherapy	Toptecan		439	530	NO
+TCGA-61-2610	Chemotherapy	Carboplatin		29	357	NO
+TCGA-61-2610	Chemotherapy	Taxol		29	357	NO
+TCGA-61-2610	Chemotherapy	Doxil		591	1130	NO
+TCGA-61-2611	Chemotherapy	Doxorubicin HCI Lipsome		402	402	NO
+TCGA-61-2611	Chemotherapy	Carboplatin		66	316	NO
+TCGA-61-2611	Chemotherapy	Taxol		66	316	NO
+TCGA-61-2612	Chemotherapy	Carboplatin		20	151	NO
+TCGA-61-2612	Chemotherapy	Taxol		20	151	NO
+TCGA-61-2613	Chemotherapy	Taxol		384	489	NO
+TCGA-61-2613	Chemotherapy	Carboplatin		86	NA	NO
+TCGA-61-2613	Chemotherapy	Carboplatin		384	489	NO
+TCGA-OY-A56P	Chemotherapy	Taxotere	Complete Response	26	160	NO
+TCGA-OY-A56P	Chemotherapy	Carboplatin	Complete Response	26	160	NO
+TCGA-OY-A56Q	Chemotherapy	Taxol	Complete Response	23	128	NO
+TCGA-OY-A56Q	Chemotherapy	Carboplatin	Complete Response	23	128	NO
+TCGA-VG-A8LO	Chemotherapy	paclitaxel		8	8	NO
+TCGA-VG-A8LO	Chemotherapy	Carboplatin		8	8	NO
+TCGA-WR-A838	Chemotherapy	Carboplatin	Clinical Progressive Disease	30	92	NO
+TCGA-WR-A838	Chemotherapy	Taxol	Clinical Progressive Disease	30	92	NO

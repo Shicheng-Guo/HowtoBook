@@ -1,0 +1,5 @@
+bcr_patient_barcode	therapy_types	drug_name	measure_of_response	days_to_drug_therapy_start	days_to_drug_therapy_end	therapy_ongoing
+TCGA-V4-A9EM	Chemotherapy	fotemustine	NA	24	187	NO
+TCGA-V4-A9ET	Chemotherapy	fotemustine	NA	21	174	NO
+TCGA-V4-A9F1	Chemotherapy	fotemustine	NA	22	147	NO
+TCGA-V4-A9F3	Chemotherapy	fotemustine	NA	27	175	NO

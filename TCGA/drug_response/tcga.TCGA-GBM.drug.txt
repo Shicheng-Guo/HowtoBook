@@ -1,0 +1,1458 @@
+bcr_patient_barcode	therapy_types	drug_name	measure_of_response	days_to_drug_therapy_start	days_to_drug_therapy_end	therapy_ongoing
+TCGA-02-0001	Chemotherapy	CRA		92	278	NO
+TCGA-02-0001	Chemotherapy	Celebrex		92	278	NO
+TCGA-02-0001	Chemotherapy	Cis Retinoic Acid		NA	NA	
+TCGA-02-0001	Chemotherapy	Celebrex		NA	NA	
+TCGA-02-0003	Chemotherapy	Tamoxifen		49	94	NO
+TCGA-02-0004	Chemotherapy	Temozolomide		44	153	NO
+TCGA-02-0006	Chemotherapy	Temozolomide		88	148	
+TCGA-02-0006	Chemotherapy	Temozolomide		NA	NA	
+TCGA-02-0006	Chemotherapy	CIS Retinoic Acid		NA	NA	
+TCGA-02-0007	Chemotherapy	Temozolomide		33	338	NO
+TCGA-02-0010	Chemotherapy	Temozolomide		509	569	
+TCGA-02-0010	Chemotherapy	Thalidomide		NA	NA	
+TCGA-02-0010	Chemotherapy	CPT 11		NA	NA	
+TCGA-02-0011	Chemotherapy	Temozolomide		20	145	NO
+TCGA-02-0011	Chemotherapy	Carboplatin		NA	NA	
+TCGA-02-0011	Chemotherapy	Iressa		NA	NA	
+TCGA-02-0014	Chemotherapy	Anti necplatens		2349	NA	NO
+TCGA-02-0014	Chemotherapy	Temozolomide		NA	NA	
+TCGA-02-0015	Chemotherapy	Gliadel Wafer		0	NA	NO
+TCGA-02-0015	Chemotherapy	AE 788		NA	NA	
+TCGA-02-0016	Chemotherapy	Temozolomide		84	1041	NO
+TCGA-02-0021	Chemotherapy	Temozolomide		72	191	NO
+TCGA-02-0021	Chemotherapy	Celebrex		NA	NA	
+TCGA-02-0021	Chemotherapy	6 Thiguanine		NA	NA	
+TCGA-02-0021	Chemotherapy	Xeloda		NA	NA	
+TCGA-02-0021	Chemotherapy	CCNU		NA	NA	
+TCGA-02-0023	Chemotherapy	Temozolomide		-9	34	NO
+TCGA-02-0023	Chemotherapy	Temozolomide		NA	NA	
+TCGA-02-0024	Chemotherapy	Temozolomide		152	701	
+TCGA-02-0025	Chemotherapy	Temozolomide		118	656	NO
+TCGA-02-0025	Chemotherapy	Temozolomide		NA	NA	
+TCGA-02-0025	Chemotherapy	Sarasar		NA	NA	
+TCGA-02-0026	Chemotherapy	Temozolomide		92	418	NO
+TCGA-02-0026	Chemotherapy	Gleevec		NA	NA	
+TCGA-02-0026	Chemotherapy	Hydroxyurea		NA	NA	
+TCGA-02-0027	Chemotherapy	Temozolomide		27	256	
+TCGA-02-0027	Chemotherapy	CCNU		NA	NA	
+TCGA-02-0027	Chemotherapy	Celebrex		NA	NA	
+TCGA-02-0027	Chemotherapy	Xeloda		NA	NA	
+TCGA-02-0027	Chemotherapy	6 Thiguanine		NA	NA	
+TCGA-02-0028	Chemotherapy	Temozolomide		1939	2304	
+TCGA-02-0028	Chemotherapy	Celebrex		NA	NA	
+TCGA-02-0028	Chemotherapy	Xeloda		NA	NA	
+TCGA-02-0028	Chemotherapy	Temozolomide		NA	NA	
+TCGA-02-0034	Chemotherapy	Temozolomide		89	159	NO
+TCGA-02-0038	Chemotherapy	Tanceva		113	174	NO
+TCGA-02-0043	Chemotherapy	CCNU		297	359	NO
+TCGA-02-0043	Chemotherapy	Xeloda		NA	NA	
+TCGA-02-0043	Chemotherapy	6 Thiguanine		NA	NA	
+TCGA-02-0043	Chemotherapy	Celebrex		NA	NA	
+TCGA-02-0043	Chemotherapy	CCNU		NA	NA	
+TCGA-02-0052	Chemotherapy	Temozolomide		34	204	NO
+TCGA-02-0054	Chemotherapy	Temozolomide		28	73	NO
+TCGA-02-0054	Chemotherapy	Celebrex		NA	NA	
+TCGA-02-0054	Chemotherapy	CCNU		NA	NA	
+TCGA-02-0054	Chemotherapy	6 Thiguanine		NA	NA	
+TCGA-02-0054	Chemotherapy	Xeloda		NA	NA	
+TCGA-02-0055	Chemotherapy	Temozolomide		-112	0	NO
+TCGA-02-0057	Chemotherapy	Gliadel Wafer		1	NA	NO
+TCGA-02-0057	Chemotherapy	Temozolomide		NA	NA	
+TCGA-02-0058	Chemotherapy	Temozomide		21	143	NO
+TCGA-02-0060	Chemotherapy	Temozolomide		15	182	NO
+TCGA-02-0064	Chemotherapy	Temozolomide		23	358	NO
+TCGA-02-0064	Chemotherapy	Bevacizumab		NA	NA	
+TCGA-02-0064	Chemotherapy	CPT 11		NA	NA	
+TCGA-02-0068	Chemotherapy	Temozolomide		14	179	NO
+TCGA-02-0068	Chemotherapy	CPT 11		NA	NA	
+TCGA-02-0068	Chemotherapy	Bevacizumab		NA	NA	
+TCGA-02-0069	Chemotherapy	Temozolomide		15	945	NO
+TCGA-02-0070	Chemotherapy	Temozolomide		10	57	NO
+TCGA-02-0074	Chemotherapy	Temozolomide		13	154	NO
+TCGA-02-0075	Chemotherapy	Temozolomide		16	36	NO
+TCGA-02-0080	Chemotherapy	Temozolomide		352	443	NO
+TCGA-02-0080	Chemotherapy	CIS Retinoic Acid		NA	NA	
+TCGA-02-0083	Chemotherapy	Temozolomide		69	404	
+TCGA-02-0085	Chemotherapy	Temozolomide		740	786	NO
+TCGA-02-0086	Chemotherapy	Temozolomide		13	85	
+TCGA-02-0086	Chemotherapy	6 Thiguanine		NA	NA	
+TCGA-02-0086	Chemotherapy	Celebrex		NA	NA	
+TCGA-02-0086	Chemotherapy	Xeloda		NA	NA	
+TCGA-02-0086	Chemotherapy	CCNU		NA	NA	
+TCGA-02-0089	Chemotherapy	Temozolomide		68	282	NO
+TCGA-02-0099	Chemotherapy	Temozolomide		-260	-124	NO
+TCGA-02-0099	Chemotherapy	Temozolomide		NA	NA	
+TCGA-02-0102	Chemotherapy	CCNU		158	402	NO
+TCGA-02-0102	Chemotherapy	Procarbizine		158	402	NO
+TCGA-02-0102	Chemotherapy	Vincristine		158	402	NO
+TCGA-02-0104	Chemotherapy	Temozolomide		1536	1786	NO
+TCGA-02-0106	Chemotherapy	Temozolomide		15	176	NO
+TCGA-02-0106	Chemotherapy	IL 13		NA	NA	
+TCGA-02-0107	Chemotherapy	Temozolomide		100	130	
+TCGA-02-0111	Chemotherapy	Temozolomide		28	74	NO
+TCGA-02-0113	Chemotherapy	Temozolomide		1930	2628	
+TCGA-02-0114	Chemotherapy	Procarbazine		75	197	NO
+TCGA-02-0114	Chemotherapy	CCNU		75	197	NO
+TCGA-02-0114	Chemotherapy	Vincristine		84	197	NO
+TCGA-02-0114	Chemotherapy	Carboplatin		NA	NA	
+TCGA-02-0114	Chemotherapy	Tarceva		NA	NA	
+TCGA-02-0115	Chemotherapy	Temozolomide		27	107	NO
+TCGA-02-0115	Chemotherapy	Bevacizumab		NA	NA	
+TCGA-02-0116	Chemotherapy	Temozolomide		53	388	NO
+TCGA-02-0116	Chemotherapy	Hydoxyurea		NA	NA	
+TCGA-02-0116	Chemotherapy	Gleevec		NA	NA	
+TCGA-02-0289	Chemotherapy	Procarbazine		93	182	NO
+TCGA-02-0289	Chemotherapy	Vincristine		93	182	NO
+TCGA-02-0289	Chemotherapy	CCNU		93	182	NO
+TCGA-02-0290	Chemotherapy	Vincristine		NA	NA	
+TCGA-02-0290	Chemotherapy	Procarbazine		NA	NA	
+TCGA-02-0290	Chemotherapy	CCNU		NA	NA	
+TCGA-02-0317	Chemotherapy	anti neopastons		23	176	
+TCGA-02-0325	Chemotherapy	Procarbazine		84	115	
+TCGA-02-0325	Chemotherapy	Vincristine		84	115	
+TCGA-02-0325	Chemotherapy	CCNU		84	115	
+TCGA-02-0325	Chemotherapy	CIS Retinoic Acid		NA	NA	
+TCGA-02-0330	Chemotherapy	CCNU		107	137	
+TCGA-02-0330	Chemotherapy	Procarbazine		107	137	
+TCGA-02-0330	Chemotherapy	Vincristine		107	137	
+TCGA-02-0330	Chemotherapy	Carboplatin		NA	NA	
+TCGA-02-0330	Chemotherapy	VP-16		NA	NA	
+TCGA-02-0332	Chemotherapy	CCNU		99	230	
+TCGA-02-0332	Chemotherapy	procarbazine		99	230	
+TCGA-02-0332	Chemotherapy	Vincristine		99	230	
+TCGA-02-0337	Chemotherapy	CCNU		185	434	NO
+TCGA-02-0337	Chemotherapy	Vincristine		185	428	NO
+TCGA-02-0337	Chemotherapy	Procarbazine		185	428	NO
+TCGA-02-0432	Chemotherapy	CCNU		105	329	NO
+TCGA-02-0440	Chemotherapy	Cis-retinoic acid		269	288	NO
+TCGA-02-2466	Chemotherapy	Temodar		72	102	NO
+TCGA-02-2466	Chemotherapy	Temodar		28	71	NO
+TCGA-02-2470	Chemotherapy	Temodar		100	183	NO
+TCGA-02-2470	Chemotherapy	Temodar		57	99	NO
+TCGA-02-2483	Chemotherapy	Temodar		53	94	NO
+TCGA-02-2483	Chemotherapy	Temodar		95	466	NO
+TCGA-02-2485	Chemotherapy	Temodar		51	92	NO
+TCGA-02-2485	Chemotherapy	Temodar		93	186	NO
+TCGA-02-2486	Chemotherapy	Accutane		130	230	NO
+TCGA-02-2486	Chemotherapy	Temodar		24	66	NO
+TCGA-02-2486	Chemotherapy	Temodar		67	440	NO
+TCGA-06-0119	Chemotherapy	Temozolomide		53	58	NO
+TCGA-06-0124	Chemotherapy	temozolomide		NA	NA	NO
+TCGA-06-0125	Chemotherapy	Thalidomide		1032	1352	NO
+TCGA-06-0125	Chemotherapy	Temozolomide		28	452	NO
+TCGA-06-0125	Chemotherapy	CPT 11		880	941	NO
+TCGA-06-0127	Chemotherapy	Temozolomide		21	64	NO
+TCGA-06-0128	Chemotherapy	Suramin		26	176	NO
+TCGA-06-0128	Hormone Therapy	Tamoxifen		601	649	NO
+TCGA-06-0128	Chemotherapy	Temozolomide		422	450	NO
+TCGA-06-0128	Chemotherapy	BCNU		481	511	NO
+TCGA-06-0128	Chemotherapy	MGI 114		207	391	NO
+TCGA-06-0129	Chemotherapy	Temozolomide		14	120	NO
+TCGA-06-0129	Immunotherapy	IL-13PE		183	238	NO
+TCGA-06-0130	Chemotherapy	Temozolomide		74	280	NO
+TCGA-06-0133	Chemotherapy	EMD		14	53	NO
+TCGA-06-0133	Chemotherapy	CPT 11		79	430	NO
+TCGA-06-0133	Chemotherapy	Temozolomide		14	53	NO
+TCGA-06-0133	Chemotherapy	Avastin		79	430	NO
+TCGA-06-0137	Chemotherapy	Gliadel Wafer		637	637	NO
+TCGA-06-0139	Chemotherapy	CPT11		203	278	NO
+TCGA-06-0139	Targeted Molecular therapy	Avastin		203	278	NO
+TCGA-06-0141	Chemotherapy	CAI NABIT 9712		19	144	NO
+TCGA-06-0141	Chemotherapy	Procarbazine		235	270	NO
+TCGA-06-0141	Chemotherapy	Temozolomide		155	217	NO
+TCGA-06-0145	Chemotherapy	Pyrazinamide		24	50	NO
+TCGA-06-0146	Chemotherapy	Cisplatin		16	315	NO
+TCGA-06-0146	Chemotherapy	Carmustine (BCNU)		16	315	NO
+TCGA-06-0147	Chemotherapy	Gliadel Wafer		0	0	NO
+TCGA-06-0147	Chemotherapy	Carmustine (BCNU)		64	64	NO
+TCGA-06-0147	Chemotherapy	Temozolomide		156	399	NO
+TCGA-06-0147	Chemotherapy	Tamoxifen		94	125	NO
+TCGA-06-0150	Chemotherapy	Taxol		NA	NA	NO
+TCGA-06-0150	Chemotherapy	Carmustine		335	NA	NO
+TCGA-06-0150	Chemotherapy	Procarbazine		495	NA	NO
+TCGA-06-0151	Chemotherapy	Carmustine		NA	134	NO
+TCGA-06-0151	Chemotherapy	Gliadel Wafers		179	179	NO
+TCGA-06-0151	Chemotherapy	Temozolomide		1330	1381	NO
+TCGA-06-0152	Chemotherapy	Procarbazine		293	293	NO
+TCGA-06-0152	Chemotherapy	Tamoxifen		293	293	NO
+TCGA-06-0152	Chemotherapy	Carmustine		263	293	NO
+TCGA-06-0152	Chemotherapy	Paclitaxel		NA	NA	NO
+TCGA-06-0154	Chemotherapy	Carmustine		160	191	NO
+TCGA-06-0154	Chemotherapy	Gliadel wafer		235	235	NO
+TCGA-06-0154	Chemotherapy	Procarbazine		373	NA	NO
+TCGA-06-0154	Chemotherapy	CI 980		12	89	NO
+TCGA-06-0155	Chemotherapy	BCNU		144	236	NO
+TCGA-06-0155	Targeted Molecular therapy	CI980		9	52	NO
+TCGA-06-0155	Chemotherapy	Gliadel Wafer		257	257	NO
+TCGA-06-0155	Chemotherapy	Carmustine		175	205	NO
+TCGA-06-0156	Chemotherapy	Tamoxifen		48	140	NO
+TCGA-06-0158	Chemotherapy	Carmustin		99	160	NO
+TCGA-06-0159	Chemotherapy	Carmustine		70	162	NO
+TCGA-06-0160	Chemotherapy	CI-980		33	63	NO
+TCGA-06-0160	Chemotherapy	Carmustine		190	242	NO
+TCGA-06-0160	Chemotherapy	Temozolomide		277	277	NO
+TCGA-06-0162	Chemotherapy	CAI (NABTT 9712)		13	74	NO
+TCGA-06-0165		Oxaliplatin		31	31	NO
+TCGA-06-0165	Chemotherapy	Temozolomide		122	153	NO
+TCGA-06-0165	Targeted Molecular therapy	Accutane		122	153	NO
+TCGA-06-0165	Targeted Molecular therapy	Gleevec		184	214	NO
+TCGA-06-0166	Chemotherapy	Oxaliplatin		14	60	NO
+TCGA-06-0167	Chemotherapy	Temozolomide		24	68	NO
+TCGA-06-0167	Chemotherapy	Temozolomide		77	197	NO
+TCGA-06-0167	Chemotherapy	PS341		258	289	NO
+TCGA-06-0168	Chemotherapy	Temozolomide		28	76	NO
+TCGA-06-0168	Chemotherapy	Temozolomide		136	458	NO
+TCGA-06-0168	Chemotherapy	Carmustine		488	519	NO
+TCGA-06-0169	Chemotherapy	Temozolomide		29	78	NO
+TCGA-06-0171	Chemotherapy	Carmustine (BCNU)		231	273	NO
+TCGA-06-0171	Chemotherapy	Temozolomide		81	175	NO
+TCGA-06-0174	Chemotherapy	Tipfarnib (R115777)		3	33	NO
+TCGA-06-0175	Chemotherapy	Tipifarnib (R115777)		15	22	NO
+TCGA-06-0176	Chemotherapy	Temozolomide		127	584	NO
+TCGA-06-0176	Chemotherapy	Temozolomide		50	93	NO
+TCGA-06-0178	Targeted Molecular therapy	Bevcizumab		2572	2614	NO
+TCGA-06-0178	Chemotherapy	MEDT 575		2530	NA	NO
+TCGA-06-0178	Chemotherapy	Temozolomide		51	95	NO
+TCGA-06-0178	Chemotherapy	Temozolomide		113	751	NO
+TCGA-06-0184	Chemotherapy	Temozolomide		93	670	NO
+TCGA-06-0184	Chemotherapy	Temozolomide		1311	1646	NO
+TCGA-06-0184	Chemotherapy	Temozolomide		23	72	NO
+TCGA-06-0185	Targeted Molecular therapy	Arsenic Trioxide (ATO)		19	56	NO
+TCGA-06-0185	Targeted Molecular therapy	Bevacizumab		1664	NA	YES
+TCGA-06-0185	Chemotherapy	Lomustine		2259	NA	YES
+TCGA-06-0185	Chemotherapy	Temozolomide		98	249	NO
+TCGA-06-0185	Targeted Molecular therapy	Bevacizumab		739	1397	NO
+TCGA-06-0185	Chemotherapy	Irinotecan		739	1397	NO
+TCGA-06-0185	Chemotherapy	Temozolomide		1986	2228	NO
+TCGA-06-0185	Chemotherapy	XL184		1502	1636	NO
+TCGA-06-0188	Chemotherapy	Temozolomide		1244	1337	NO
+TCGA-06-0188	Chemotherapy	Temozolomide		88	300	NO
+TCGA-06-0188	Chemotherapy	Sorafenib		334	949	NO
+TCGA-06-0188	Chemotherapy	Etoposide		1342	1342	NO
+TCGA-06-0188	Chemotherapy	Erlotinib		334	949	NO
+TCGA-06-0188	Targeted Molecular therapy	Bevacizumab		965	1342	NO
+TCGA-06-0188	Chemotherapy	Temozolomide		27	68	NO
+TCGA-06-0188	Chemotherapy	Irinotecan		965	1230	NO
+TCGA-06-0192	Chemotherapy	Temozolomide		96	462	NO
+TCGA-06-0192	Chemotherapy	Irinotecan		816	907	NO
+TCGA-06-0192	Chemotherapy	Lomustine		725	767	NO
+TCGA-06-0192	Chemotherapy	Temozolomide		18	60	NO
+TCGA-06-0192	Targeted Molecular therapy	Bevacizumab		816	1153	NO
+TCGA-06-0192	Chemotherapy	Temozolomide		919	980	NO
+TCGA-06-0192	Targeted Molecular therapy	Cediranib/Placebo		725	808	NO
+TCGA-06-0195	Chemotherapy	Carboplatin		169	200	NO
+TCGA-06-0195	Chemotherapy	VP 16 (Etoposide)		169	200	NO
+TCGA-06-0195	Chemotherapy	Vincristine		95	169	NO
+TCGA-06-0195	Chemotherapy	Procarbazine		95	169	NO
+TCGA-06-0195	Chemotherapy	Lomustine		95	169	NO
+TCGA-06-0197	Chemotherapy	Taxol		26	79	NO
+TCGA-06-0206	Chemotherapy	Carmustine (BCNU)		138	138	NO
+TCGA-06-0208	Chemotherapy	Carmustine (BCNU)		39	98	NO
+TCGA-06-0208	Chemotherapy	Cisplatin		39	98	NO
+TCGA-06-0211	Chemotherapy	CI-980		25	44	NO
+TCGA-06-0211	Chemotherapy	Gliadel wafer		221	221	NO
+TCGA-06-0211	Chemotherapy	Carmustine		149	210	NO
+TCGA-06-0214	Chemotherapy	Carmustine (BCNU)		119	331	NO
+TCGA-06-0214	Chemotherapy	Tamoxifen		331	453	NO
+TCGA-06-0214	Chemotherapy	CI-980		18	52	NO
+TCGA-06-0216	Chemotherapy	Temozolomide		250	463	NO
+TCGA-06-0216	Chemotherapy	CI 980		36	97	NO
+TCGA-06-0216	Chemotherapy	Carmustine		586	586	NO
+TCGA-06-0221	Chemotherapy	Gliadel Wafer		280	280	NO
+TCGA-06-0221	Chemotherapy	Temozolomide		318	471	NO
+TCGA-06-0221	Chemotherapy	Carmustine (BCNU)		502	532	NO
+TCGA-06-0221	Chemotherapy	Reinoid/CIS retinoic acid		379	471	NO
+TCGA-06-0221	Chemotherapy	06-BG		502	532	NO
+TCGA-06-0221	Chemotherapy	CAI (NABTT 97212)		14	259	NO
+TCGA-06-0221	Chemotherapy	06-BG (NABTT 0803)		280	285	NO
+TCGA-06-0221	Chemotherapy	Vatalanib (PTK787)		471	502	NO
+TCGA-06-0240	Chemotherapy	Temozolomide		34	65	NO
+TCGA-06-0240	Chemotherapy	Temozolomide		36	320	NO
+TCGA-06-0240	Chemotherapy	Cilengitide		36	320	NO
+TCGA-06-0240	Chemotherapy	Irinotecan		337	407	NO
+TCGA-06-0240	Targeted Molecular therapy	Bevacizumab		337	589	NO
+TCGA-06-0240	Chemotherapy	Temozolomide		435	511	NO
+TCGA-06-0240	Chemotherapy	Carboplatin		547	589	NO
+TCGA-06-0241	Chemotherapy	Temozolomide		15	81	NO
+TCGA-06-0241	Chemotherapy	Irinotecan		477	728	NO
+TCGA-06-0241	Targeted Molecular therapy	Bevacizumab		203	799	NO
+TCGA-06-0241	Targeted Molecular therapy	Bevacizumab		1043	1435	NO
+TCGA-06-0241	Targeted Molecular therapy	Cilengitide		84	192	NO
+TCGA-06-0241	Chemotherapy	Temozolomide		84	192	NO
+TCGA-06-0241	Targeted Molecular therapy	Cilengitide		15	81	NO
+TCGA-06-0241	Chemotherapy	Temozolomide		1324	1383	NO
+TCGA-06-0394	Chemotherapy	Vincristine		97	128	NO
+TCGA-06-0394	Chemotherapy	6 Thioguanine		97	128	NO
+TCGA-06-0394	Chemotherapy	Carmustine		158	281	NO
+TCGA-06-0394	Chemotherapy	Estramustine		97	128	NO
+TCGA-06-0397	Chemotherapy	Vincristine		126	176	NO
+TCGA-06-0397	Chemotherapy	Procarbazine		126	176	NO
+TCGA-06-0397	Chemotherapy	Lomustine		126	176	NO
+TCGA-06-0409	Chemotherapy	Procarbazine		1294	1628	NO
+TCGA-06-0409	Chemotherapy	Tamoxifen		1294	1779	NO
+TCGA-06-0409	Chemotherapy	Lomustine		168	348	NO
+TCGA-06-0409	Chemotherapy	Vincristine		168	348	NO
+TCGA-06-0409	Chemotherapy	Gliadel Wafer		1267	1267	NO
+TCGA-06-0409	Chemotherapy	Procarbazine		168	348	NO
+TCGA-06-0409	Chemotherapy	9 immunoamino camptnetecin		379	471	NO
+TCGA-06-0409	Chemotherapy	Hyroxyurea		75	149	NO
+TCGA-06-0409	Chemotherapy	Irinotecan		1845	2114	NO
+TCGA-06-0412	Chemotherapy	Carmustine		137	258	NO
+TCGA-06-0412	Chemotherapy	Taxol		NA	NA	NO
+TCGA-06-0412	Chemotherapy	9AC 9 Aminocamplotecian		106	137	NO
+TCGA-06-0414	Chemotherapy	Cisplatain		5	370	
+TCGA-06-0414	Chemotherapy	BCNU		5	370	
+TCGA-06-0644	Chemotherapy	Temozolomide		288	319	NO
+TCGA-06-0644	Chemotherapy	Irinotecan		106	263	NO
+TCGA-06-0644	Targeted Molecular therapy	Bevacizumab		96	333	NO
+TCGA-06-0644	Chemotherapy	Temozolomide		23	65	NO
+TCGA-06-0650	Chemotherapy	Temozolomide		96	355	NO
+TCGA-06-0650	Chemotherapy	Erlotinib		495	513	NO
+TCGA-06-0650	Chemotherapy	Temozolomide		586	678	NO
+TCGA-06-0650	Chemotherapy	AZD		389	431	NO
+TCGA-06-0650	Chemotherapy	Irinotecan		516	560	NO
+TCGA-06-0650	Chemotherapy	Temozolomide		26	67	NO
+TCGA-06-0650	Chemotherapy	Lomustine		389	389	NO
+TCGA-06-0650	Targeted Molecular therapy	Bevacizumab		516	658	NO
+TCGA-06-0686	Chemotherapy	Temozolomide		29	66	NO
+TCGA-06-0686	Targeted Molecular therapy	A4QN		25	66	NO
+TCGA-06-0686	Chemotherapy	Erlotinib (Tarceva)		309	370	NO
+TCGA-06-0686	Targeted Molecular therapy	A4QN		25	60	NO
+TCGA-06-0686	Targeted Molecular therapy	AT 101		175	279	NO
+TCGA-06-0686	Targeted Molecular therapy	Bevacizumab		412	412	NO
+TCGA-06-0686	Chemotherapy	Temozolomide		95	127	NO
+TCGA-06-0686	Chemotherapy	Irintotecan		384	412	NO
+TCGA-06-0743	Chemotherapy	Temozolomode		122	178	NO
+TCGA-06-0743	Chemotherapy	Irinotecan		203	704	NO
+TCGA-06-0743	Chemotherapy	Temozolomide		55	94	NO
+TCGA-06-0743	Targeted Molecular therapy	Bevacizumab		203	704	NO
+TCGA-06-0743	Targeted Molecular therapy	Cilengitide		55	178	NO
+TCGA-06-0744	Chemotherapy	Temozolomide		81	111	NO
+TCGA-06-0744	Chemotherapy	Temozolomide		111	477	NO
+TCGA-06-0875	Chemotherapy	Temozolomide		NA	NA	
+TCGA-06-0875	Chemotherapy	Temozolomide		89	454	NO
+TCGA-06-0876	Chemotherapy	Temozolomide		98	271	
+TCGA-06-0876	Chemotherapy	Temozolomide		17	60	NO
+TCGA-06-0876	Chemotherapy	Temozolomide		112	416	NO
+TCGA-06-0876	Targeted Molecular therapy	Bevacizumab		462	1146	NO
+TCGA-06-0876	Chemotherapy	Irintocean		462	560	NO
+TCGA-06-0878	Chemotherapy	Irinotecan		78	NA	YES
+TCGA-06-0878	Chemotherapy	Avastin		78	NA	YES
+TCGA-06-0878	Chemotherapy	Temodar		6	53	
+TCGA-06-0879	Chemotherapy	Temozolomide		67	NA	YES
+TCGA-06-0879	Targeted Molecular therapy	dcVax		84	NA	YES
+TCGA-06-0879	Chemotherapy	Temozolomide		19	60	NO
+TCGA-06-0879	Chemotherapy	Temozolomide		117	435	NO
+TCGA-06-0879	Targeted Molecular therapy	dc Vax (Dendritic Cell Vaccine)		84	580	NO
+TCGA-06-0879	Chemotherapy	Temozolomide		718	960	NO
+TCGA-06-0879	Targeted Molecular therapy	Dendritic Cell Vaccine (dcvax)		708	942	NO
+TCGA-06-0879	Targeted Molecular therapy	Cedicanib		998	1025	NO
+TCGA-06-0879	Targeted Molecular therapy	Cilengitide		998	1025	NO
+TCGA-06-0879	Chemotherapy	Lomustine CCNU		1029	1029	NO
+TCGA-06-0879	Targeted Molecular therapy	Bevacizumab		1029	1205	NO
+TCGA-06-0879	Chemotherapy	Carboplatin		1085	1085	NO
+TCGA-06-0881	Chemotherapy	Temodar		72	133	
+TCGA-06-0881	Chemotherapy	Avastin		150	NA	YES
+TCGA-06-0881	Chemotherapy	Irinotecan		150	NA	YES
+TCGA-06-0882	Chemotherapy	Temozolomide		160	NA	YES
+TCGA-06-0882	Chemotherapy	Temozolomide		17	60	NO
+TCGA-06-0882	Chemotherapy	Temozolomide		113	205	NO
+TCGA-06-0882	Chemotherapy	Temozolomide		236	403	NO
+TCGA-06-0882	Targeted Molecular therapy	Bevacizumab		236	403	NO
+TCGA-06-0882	Chemotherapy	Irinotecan		447	487	NO
+TCGA-06-0882	Targeted Molecular therapy	Bevacizumab		447	502	NO
+TCGA-06-0882	Chemotherapy	Carboplatin		502	502	NO
+TCGA-06-0939	Targeted Molecular therapy	Bevacizumab		378	665	NO
+TCGA-06-0939	Chemotherapy	Irinotecan		378	609	NO
+TCGA-06-1084	Chemotherapy	Temozolomide		89	209	NO
+TCGA-06-1084	Targeted Molecular therapy	Avastin		242	323	NO
+TCGA-06-1084	Chemotherapy	Temozolomide		301	331	NO
+TCGA-06-1084	Targeted Molecular therapy	Bevacizumab		242	323	NO
+TCGA-06-1084	Chemotherapy	Irinotecan		246	288	NO
+TCGA-06-1084	Chemotherapy	Doxil		445	546	NO
+TCGA-06-1086	Chemotherapy	Temozolomide		73	194	NO
+TCGA-06-1087	Chemotherapy	Temodar		18	75	NO
+TCGA-06-1800	Chemotherapy	Temodar		94	275	NO
+TCGA-06-1801	Chemotherapy	Temodar		80	231	NO
+TCGA-06-1801	Chemotherapy	Irinotecan		238	323	NO
+TCGA-06-1801	Targeted Molecular therapy	Bevacizumab		238	323	NO
+TCGA-06-1802	Chemotherapy	Irinotecan		97	380	NO
+TCGA-06-1802	Chemotherapy	Temozolomide		429	429	NO
+TCGA-06-1802	Chemotherapy	Bevacizumab		97	436	NO
+TCGA-06-1805	Chemotherapy	Temodar		44	NA	YES
+TCGA-06-1805	Chemotherapy	Temozolomode		35	76	NO
+TCGA-06-1805	Chemotherapy	Temozolomode		105	433	NO
+TCGA-06-1806	Chemotherapy	Temozolomide	Stable Disease	26	64	NO
+TCGA-06-1806	Chemotherapy	Temozolomide	Clinical Progressive Disease	81	256	NO
+TCGA-06-1806	Chemotherapy	ABT-888	Clinical Progressive Disease	81	256	NO
+TCGA-06-1806	Chemotherapy	Cabozantinib	Clinical Progressive Disease	293	455	NO
+TCGA-06-2559	Chemotherapy	Temodar		28	49	NO
+TCGA-06-2561	Chemotherapy	Temodar		21	63	NO
+TCGA-06-2561	Chemotherapy	XL 184		119	148	NO
+TCGA-06-2561	Chemotherapy	Avastin		171	NA	YES
+TCGA-06-2561	Chemotherapy	irinotecan		171	NA	YES
+TCGA-06-2561	Chemotherapy	Temozlomide		348	471	NO
+TCGA-06-2561	Chemotherapy	Irinotecan		171	325	NO
+TCGA-06-2561	Chemotherapy	Carboplatin		478	492	NO
+TCGA-06-2561	Targeted Molecular therapy	Bevacizumab		171	492	NO
+TCGA-06-2562	Chemotherapy	Temodar		26	37	NO
+TCGA-06-2563	Chemotherapy	Temodar		27	57	NO
+TCGA-06-2563	Targeted Molecular therapy	Bevacizumab		934	NA	YES
+TCGA-06-2563	Targeted Molecular therapy	R04929097		885	931	NO
+TCGA-06-2564	Chemotherapy	Temodar		NA	NA	
+TCGA-06-2565	Chemotherapy	Avastin		193	NA	YES
+TCGA-06-2565	Chemotherapy	Temodar		90	151	NO
+TCGA-06-2565	Chemotherapy	Temodar		16	63	NO
+TCGA-06-2565	Chemotherapy	XL 184		123	151	NO
+TCGA-06-2565	Targeted Molecular therapy	Bevacizumab		193	406	NO
+TCGA-06-2565	Chemotherapy	Carboplatin		319	350	NO
+TCGA-06-2565	Chemotherapy	Temozolomide		363	455	NO
+TCGA-06-2566	Chemotherapy	Temodar		30	69	NO
+TCGA-06-2566	Chemotherapy	Temodar		95	100	NO
+TCGA-06-2567	Chemotherapy	Temodar		NA	NA	
+TCGA-06-2570	Chemotherapy	Temodar		19	61	NO
+TCGA-06-2570	Chemotherapy	Temodar		80	402	NO
+TCGA-06-5408	Chemotherapy	BS1-201		95	154	NO
+TCGA-06-5408	Chemotherapy	Temozolomide		95	154	NO
+TCGA-06-5408	Targeted Molecular therapy	Avastin		154	337	NO
+TCGA-06-5411	Targeted Molecular therapy	Avastin		213	235	NO
+TCGA-06-5411	Chemotherapy	Temozolomide		96	218	NO
+TCGA-06-5412	Chemotherapy	Temozolomide		71	71	NO
+TCGA-06-5412	Chemotherapy	ABTC 0603 Hydroxychloroquine		14	23	NO
+TCGA-06-5413	Chemotherapy	Temozolomide		87	179	NO
+TCGA-06-5413	Targeted Molecular therapy	Avastin		261	NA	YES
+TCGA-06-5414	Chemotherapy	Hydrochoroquine		41	124	NO
+TCGA-06-5414	Chemotherapy	Temozolomide		41	112	NO
+TCGA-06-5415	Chemotherapy	Temozolomide		86	NA	YES
+TCGA-06-5416	Chemotherapy	Temozolomide		99	NA	YES
+TCGA-06-5417	Chemotherapy	Temodar		71	NA	YES
+TCGA-06-5858	Chemotherapy	Carboplatin		196	NA	YES
+TCGA-06-5858	Targeted Molecular therapy	Bevacizumab		196	NA	YES
+TCGA-06-5858	Chemotherapy	Temozolomide		25	68	NO
+TCGA-06-5858	Chemotherapy	ABT-888 Parp Inhibitor		88	88	NO
+TCGA-06-5859	Chemotherapy	Temozolomide		70	NA	YES
+TCGA-06-5859	Chemotherapy	Temozolomide		13	42	NO
+TCGA-06-6388	Chemotherapy	Temozolomide		21	63	NO
+TCGA-06-6388	Chemotherapy	Temozolomide		79	79	NO
+TCGA-06-6388	Targeted Molecular therapy	Bevacizumab		120	120	NO
+TCGA-06-6388	Chemotherapy	Temozolomide		120	NA	YES
+TCGA-06-6389	Chemotherapy	Temozolomide		32	73	NO
+TCGA-06-6389	Chemotherapy	Temozolomide		70	NA	YES
+TCGA-06-6390	Chemotherapy	Temozolomide		22	69	NO
+TCGA-06-6390	Chemotherapy	Temozolomide		96	96	NO
+TCGA-06-6695	Chemotherapy	Temozolomide		68	127	NO
+TCGA-06-6695	Chemotherapy	Temozolomide		11	56	NO
+TCGA-06-6697	Chemotherapy	Temozolomide		232	275	NO
+TCGA-06-6697	Targeted Molecular therapy	Bevacozimab		359	NA	YES
+TCGA-06-6697	Chemotherapy	Temozolomide		277	308	NO
+TCGA-06-6697	Chemotherapy	Temozolomide		308	338	NO
+TCGA-06-6698	Chemotherapy	Temozolomide		NA	NA	YES
+TCGA-06-6698	Chemotherapy	Temozolomide		NA	NA	NO
+TCGA-06-6699	Chemotherapy	Temozolomide		31	NA	YES
+TCGA-06-6700	Chemotherapy	Temozolomide		100	NA	YES
+TCGA-06-6700	Chemotherapy	Temozolomide		27	60	NO
+TCGA-06-6700	Targeted Molecular therapy	Vandetanib		22	77	NO
+TCGA-06-6701	Chemotherapy	Temozolomide		20	63	NO
+TCGA-06-A5U0	Chemotherapy	Temodar	Clinical Progressive Disease	31	74	NO
+TCGA-06-A5U0	Chemotherapy	Lomustine		122	NA	YES
+TCGA-06-A5U0	Chemotherapy	Procarbazine		129	NA	YES
+TCGA-06-A6S1	Chemotherapy	Temozolomide	Clinical Progressive Disease	8	45	NO
+TCGA-06-A7TK	Chemotherapy	Temozolomide	Stable Disease	34	76	NO
+TCGA-06-A7TK	Chemotherapy	Temozolomide		113	NA	YES
+TCGA-06-A7TK	Chemotherapy	Lomustine	Clinical Progressive Disease	342	419	NO
+TCGA-06-A7TK	Chemotherapy	Procarbazine	Clinical Progressive Disease	342	420	NO
+TCGA-06-A7TL	Chemotherapy	Temozolomide	Stable Disease	25	71	NO
+TCGA-06-A7TL		Plexxikon PLX3397	Stable Disease	25	NA	YES
+TCGA-06-A7TL		Temozolomide	Stable Disease	103	NA	YES
+TCGA-06-A7TL	Chemotherapy	Lomustine		209	NA	YES
+TCGA-06-A7TL	Chemotherapy	Procarbazine		209	NA	YES
+TCGA-08-0244	Targeted Molecular therapy	Thalidomide		34	483	NO
+TCGA-08-0244	Chemotherapy	Temodor		34	75	
+TCGA-08-0245	Chemotherapy	BCNU		875	933	
+TCGA-08-0245	Chemotherapy	Temodar		560	843	
+TCGA-08-0245	Hormone Therapy			878	933	
+TCGA-08-0245	Chemotherapy	BCNU		933	1065	
+TCGA-08-0246	Chemotherapy	Temodor		35	103	
+TCGA-08-0344	Chemotherapy	BCNU		2577	2850	NO
+TCGA-08-0346	Chemotherapy	Hydroxyurea		20	68	
+TCGA-08-0347	Chemotherapy	Procarbazine		422	465	
+TCGA-08-0347	Chemotherapy	Carboplatin		486	605	
+TCGA-08-0347	Chemotherapy	BCNU		69	419	
+TCGA-08-0347	Chemotherapy	Hydroxurea		10	54	
+TCGA-08-0348	Targeted Molecular therapy	Tamoxifen		215	287	NO
+TCGA-08-0348	Chemotherapy	VP-16		215	287	NO
+TCGA-08-0348	Chemotherapy	Temodor		28	204	NO
+TCGA-08-0348	Targeted Molecular therapy	Thalidomide		28	136	
+TCGA-08-0349	Targeted Molecular therapy	Thalidomide		38	93	NO
+TCGA-08-0349	Chemotherapy	Temodar		38	93	NO
+TCGA-08-0349	Chemotherapy	BCNU		105	183	
+TCGA-08-0349	Chemotherapy	Fenretinide		231	259	
+TCGA-08-0350	Chemotherapy	Temodor		446	629	NO
+TCGA-08-0350	Targeted Molecular therapy	Tarceva		678	838	NO
+TCGA-08-0351	Targeted Molecular therapy	Thalidomide		72	581	NO
+TCGA-08-0351	Chemotherapy	Temodor		72	NA	NO
+TCGA-08-0351	Chemotherapy	Temodor		1594	NA	NO
+TCGA-08-0351	Targeted Molecular therapy	Thalidomide		1594	NA	NO
+TCGA-08-0353	Chemotherapy	Temodar		112	174	NO
+TCGA-08-0353	Chemotherapy	Temodar		6	76	NO
+TCGA-08-0354	Chemotherapy	Temador		261	320	NO
+TCGA-08-0354	Targeted Molecular therapy	Tarceva		261	320	NO
+TCGA-08-0354	Chemotherapy	BCNU		345	390	NO
+TCGA-08-0354	Chemotherapy	Poly LCLC		28	253	NO
+TCGA-08-0354	Chemotherapy	cis retinoic acid		345	393	NO
+TCGA-08-0355	Chemotherapy	Carboplatin		582	582	
+TCGA-08-0355	Targeted Molecular therapy	Thalomid		531	572	
+TCGA-08-0355	Targeted Molecular therapy	Enzastaurin		638	671	
+TCGA-08-0355	Chemotherapy	Temodor		25	68	
+TCGA-08-0355	Chemotherapy	Temodor		88	498	NO
+TCGA-08-0355	Chemotherapy	BCNU		531	531	
+TCGA-08-0355	Targeted Molecular therapy	Tamoxifen		573	607	
+TCGA-08-0356	Chemotherapy	Temodar		101	447	NO
+TCGA-08-0356	Chemotherapy	Temodar		42	82	NO
+TCGA-08-0357	Chemotherapy	Hyrdroxyurea		689	733	NO
+TCGA-08-0357	Targeted Molecular therapy	Rapamycin		736	860	NO
+TCGA-08-0357	Chemotherapy	CCNU		736	860	NO
+TCGA-08-0357	Targeted Molecular therapy	Thalidomide		93	136	NO
+TCGA-08-0357	Targeted Molecular therapy	Gleevac		689	733	NO
+TCGA-08-0357	Chemotherapy	Temodar		93	136	NO
+TCGA-08-0357	Immunotherapy	Interferon Alpha		736	860	NO
+TCGA-08-0357	Immunotherapy	IL-13 Pseudomonas exotoxin		184	188	NO
+TCGA-08-0357	Chemotherapy	Temodar		29	71	NO
+TCGA-08-0357	Targeted Molecular therapy	Cytoxan		1097	1112	YES
+TCGA-08-0357	Chemotherapy	VP-16		875	985	NO
+TCGA-08-0357	Targeted Molecular therapy	Sorafenib		1007	1084	NO
+TCGA-08-0357	Targeted Molecular therapy	Irinotecan		471	688	YES
+TCGA-08-0357	Targeted Molecular therapy	Tarveca		1007	1084	
+TCGA-08-0357	Targeted Molecular therapy	Avastin		471	688	NO
+TCGA-08-0358	Chemotherapy	CCNU		491	548	
+TCGA-08-0358	Immunotherapy	IL-13 with Pseudomonas Exotoxin		288	293	
+TCGA-08-0358	Chemotherapy	Temodor		91	264	
+TCGA-08-0358	Immunotherapy	HSPPC-96 Vaccine		341	467	
+TCGA-08-0358	Chemotherapy	Temodor		33	75	
+TCGA-08-0358	Targeted Molecular therapy	Tarceva		33	75	
+TCGA-08-0358	Targeted Molecular therapy	Tarceva		91	264	
+TCGA-08-0360	Immunotherapy	IL-13 with Pseudomonas exotoxin		130	134	NO
+TCGA-08-0380	Targeted Molecular therapy			275	330	
+TCGA-08-0380	Chemotherapy	VP16		293	330	NO
+TCGA-08-0380	Chemotherapy	BCNU		161	193	
+TCGA-08-0380	Chemotherapy	Temodar		216	274	
+TCGA-08-0380	Targeted Molecular therapy	Marimastat		NA	NA	YES
+TCGA-08-0386	Targeted Molecular therapy	Tarceva		94	106	NO
+TCGA-08-0386	Chemotherapy	Temodar		29	76	NO
+TCGA-08-0386	Targeted Molecular therapy	Tarceva		29	76	NO
+TCGA-08-0386	Chemotherapy	Temodar		95	427	NO
+TCGA-08-0386	Immunotherapy	HSPPC-96 Vaccine		113	125	NO
+TCGA-08-0389	Chemotherapy	Temodor		39	NA	
+TCGA-08-0389	Targeted Molecular therapy	EMD		39	NA	
+TCGA-08-0390	Chemotherapy	Temodar		105	132	
+TCGA-08-0390	Chemotherapy	Temodar		28	69	
+TCGA-08-0390	Immunotherapy	Tarceva		28	69	
+TCGA-08-0390	Immunotherapy	Tarceva		105	132	
+TCGA-08-0510	Targeted Molecular therapy	Thalidomide		41	64	NO
+TCGA-08-0510	Chemotherapy	Temodor		35	90	NO
+TCGA-08-0511	Chemotherapy	CCNU		NA	NA	
+TCGA-08-0517	Chemotherapy	Accutane		NA	1754	NO
+TCGA-08-0517	Chemotherapy	Procarbazine/CCNU/Vincristine		1086	1359	NO
+TCGA-08-0520	Chemotherapy	Temodor		175	NA	
+TCGA-08-0521	Chemotherapy	Temodar		99	126	NO
+TCGA-08-0521	Chemotherapy	Temodar		27	63	NO
+TCGA-08-0522	Immunotherapy	IL-13-PE38QQR Cytoxin		268	271	NO
+TCGA-08-0522	Chemotherapy	Temodar		22	65	NO
+TCGA-08-0522	Chemotherapy	Carboplatin		517	555	NO
+TCGA-08-0522	Chemotherapy	Temodar		72	225	NO
+TCGA-08-0522	Targeted Molecular therapy	LY317615		423	511	NO
+TCGA-08-0524	Chemotherapy	CCNU		195	199	
+TCGA-08-0524	Targeted Molecular therapy	Thalidomide		195	NA	
+TCGA-08-0524	Targeted Molecular therapy	SCH63666		73	123	NO
+TCGA-08-0524	Targeted Molecular therapy	Gleevec		138	189	
+TCGA-08-0524	Chemotherapy	Temodar		24	52	
+TCGA-08-0525	Chemotherapy	Temodar		37	341	
+TCGA-08-0525	Targeted Molecular therapy	OS1-774		370	402	
+TCGA-08-0525	Chemotherapy	Temodar		6	39	
+TCGA-08-0529	Chemotherapy	Temodar		41	84	NO
+TCGA-08-0529	Immunotherapy	IL-13 Pseudomonas exotoxin		349	353	NO
+TCGA-08-0529	Chemotherapy	Temodar		106	328	NO
+TCGA-08-0531	Chemotherapy	Temodar		27	69	NO
+TCGA-08-0531	Chemotherapy	Temodar		102	198	NO
+TCGA-12-0615	Targeted Molecular therapy	Avastin		195	278	NO
+TCGA-12-0615	Chemotherapy	Temodar		NA	NA	NO
+TCGA-12-0615	Targeted Molecular therapy	Avastin		278	383	NO
+TCGA-12-0615	Chemotherapy	Temodar		102	172	NO
+TCGA-12-0615	Chemotherapy	CPT-11		195	278	NO
+TCGA-12-0615	Chemotherapy	Gliadel wafers		28	28	NO
+TCGA-12-0616	Chemotherapy	Hydroxyurea		407	433	NO
+TCGA-12-0616	Targeted Molecular therapy	Rad001		407	433	NO
+TCGA-12-0616	Chemotherapy	CPT-11		260	348	NO
+TCGA-12-0616	Targeted Molecular therapy	Gleevac		407	433	NO
+TCGA-12-0616	Targeted Molecular therapy	Avastin		260	348	NO
+TCGA-12-0616	Chemotherapy	Temozolamide		29	75	NO
+TCGA-12-0616	Chemotherapy	Temozolomide		362	407	NO
+TCGA-12-0616	Chemotherapy	Temozolamide		106	259	NO
+TCGA-12-0618	Chemotherapy	Gliadel wafers		0	0	
+TCGA-12-0618	Chemotherapy	Temodar		9	65	
+TCGA-12-0619	Chemotherapy	CCNU		163	203	NO
+TCGA-12-0619	Chemotherapy	VP-16		291	350	NO
+TCGA-12-0619	Chemotherapy	Gliadel Wafers		0	0	NO
+TCGA-12-0619	Chemotherapy	Temozolamide		21	84	NO
+TCGA-12-0619	Chemotherapy	Temozolamide		228	291	NO
+TCGA-12-0619	Chemotherapy	VP-16		443	571	NO
+TCGA-12-0619	Chemotherapy	CCNU		84	129	NO
+TCGA-12-0620	Chemotherapy	CCNU		92	191	NO
+TCGA-12-0620	Chemotherapy	Temodar		21	68	NO
+TCGA-12-0653	Chemotherapy	Gliadel Wafers		0	0	NO
+TCGA-12-0653	Chemotherapy	Temozolomide		14	110	NO
+TCGA-12-0653	Chemotherapy	CCNU		110	155	NO
+TCGA-12-0653	Chemotherapy	CCNU		155	210	NO
+TCGA-12-0653	Chemotherapy	Temozolomide		210	267	NO
+TCGA-12-0653	Targeted Molecular therapy	O6B6		281	283	NO
+TCGA-12-0654	Targeted Molecular therapy	MAb I-131		44	216	NO
+TCGA-12-0654	Targeted Molecular therapy	mu81c6		44	216	NO
+TCGA-12-0656	Chemotherapy	Temodar		1488	1758	NO
+TCGA-12-0656	Chemotherapy	VP-16		1873	1899	NO
+TCGA-12-0656	Chemotherapy	CCNU		1758	1817	NO
+TCGA-12-0656	Chemotherapy	CCNU		204	254	NO
+TCGA-12-0656	Targeted Molecular therapy	MAb I-131		22	22	NO
+TCGA-12-0656	Chemotherapy	CCNU		1817	1873	NO
+TCGA-12-0656	Chemotherapy	CCNU		135	204	NO
+TCGA-12-0656	Chemotherapy	VP-16		301	443	NO
+TCGA-12-0656	Targeted Molecular therapy	mu81c6		22	22	NO
+TCGA-12-0662	Chemotherapy	Gliadel Wafers		876	876	
+TCGA-12-0662	Chemotherapy	Cytoxan		1041	1070	
+TCGA-12-0662	Hormone Therapy	Tamoxifen		473	600	
+TCGA-12-0662	Chemotherapy	VP-16		224	278	
+TCGA-12-0662	Chemotherapy	VP-16		1041	1070	
+TCGA-12-0662	Chemotherapy	CCNU		120	221	
+TCGA-12-0662	Chemotherapy	CCNU		340	417	
+TCGA-12-0662	Chemotherapy	VP-16		417	473	
+TCGA-12-0662	Hormone Therapy	Tamoxiten		278	334	
+TCGA-12-0662	Chemotherapy	Temodar		600	604	
+TCGA-12-0662	Chemotherapy	CPT-11		889	1028	
+TCGA-12-0662	Chemotherapy	Temodar		627	844	
+TCGA-12-0662	Targeted Molecular therapy	06GB		1133	1135	
+TCGA-12-0662	Chemotherapy	Temodar		1133	1137	
+TCGA-12-0662	Immunotherapy	Celbrex		1113	1161	
+TCGA-12-0662	Immunotherapy	Thalidomide		1073	1090	
+TCGA-12-0670	Chemotherapy	Temozolomide		148	183	NO
+TCGA-12-0670	Chemotherapy	CPT-11		329	378	NO
+TCGA-12-0670	Targeted Molecular therapy	MAB I131		43	77	NO
+TCGA-12-0670	Chemotherapy	CPT-11		407	448	NO
+TCGA-12-0670	Chemotherapy	CCNU		578	601	NO
+TCGA-12-0670	Chemotherapy	CCNU		211	288	NO
+TCGA-12-0670	Chemotherapy	Temozolomide		448	516	NO
+TCGA-12-0670	Immunotherapy	Celebrex		722	770	NO
+TCGA-12-0670	Immunotherapy	Celebrex		327	378	NO
+TCGA-12-0670	Immunotherapy	Celebrex		407	448	NO
+TCGA-12-0670	Hormone Therapy	Tamoxifen		516	576	NO
+TCGA-12-0670	Immunotherapy	Celebrex		516	576	NO
+TCGA-12-0670	Hormone Therapy	Tamoxifen		578	601	NO
+TCGA-12-0670	Immunotherapy	Celebrex		448	516	NO
+TCGA-12-0670	Targeted Molecular therapy	ch81c6		43	77	NO
+TCGA-12-0670	Chemotherapy	CCNU		516	576	NO
+TCGA-12-0670	Immunotherapy	Celebrex		578	601	NO
+TCGA-12-0670	Immunotherapy	Celebrex		601	722	NO
+TCGA-12-0670	Chemotherapy	Temozolomide		183	203	NO
+TCGA-12-0670	Hormone Therapy	Tamoxifen		448	516	NO
+TCGA-12-0670	Hormone Therapy	Tamoxifen		601	722	NO
+TCGA-12-0688	Chemotherapy	CCNU		96	179	NO
+TCGA-12-0688	Chemotherapy	CPT-11		605	649	NO
+TCGA-12-0688	Chemotherapy	Temozolamide		501	597	NO
+TCGA-12-0688	Chemotherapy	VP-16		215	238	NO
+TCGA-12-0688	Chemotherapy	VP-16		649	734	NO
+TCGA-12-0688	Hormone Therapy	Tamoxiten		238	353	
+TCGA-12-0688	Chemotherapy	VP-16		238	353	
+TCGA-12-0691	Chemotherapy	Temodar		117	159	NO
+TCGA-12-0691	Chemotherapy	Temodar		159	186	NO
+TCGA-12-0692	Chemotherapy	Temozolomide		14	45	NO
+TCGA-12-0703	Chemotherapy	CPT-11		215	302	NO
+TCGA-12-0703	Targeted Molecular therapy	MAb I-131		13	125	NO
+TCGA-12-0703	Chemotherapy	Carmustine		322	530	NO
+TCGA-12-0703	Targeted Molecular therapy	mu81c6		13	125	NO
+TCGA-12-0703	Chemotherapy	Topecan		322	530	NO
+TCGA-12-0769	Chemotherapy	cpt-11		250	341	NO
+TCGA-12-0769	Chemotherapy	Temodar		192	250	NO
+TCGA-12-0769	Chemotherapy	CCNU		91	192	NO
+TCGA-12-0769	Chemotherapy	Temodar		33	78	NO
+TCGA-12-0772	Chemotherapy	Temozolamide		1112	1174	NO
+TCGA-12-0772	Targeted Molecular therapy	Tarceva		1468	1526	NO
+TCGA-12-0772	Targeted Molecular therapy	ARIAD AP23573		621	670	NO
+TCGA-12-0772	Chemotherapy	VP-16		120	489	NO
+TCGA-12-0772	Chemotherapy	CPT-11		670	951	NO
+TCGA-12-0772	Chemotherapy	CCNU		1224	1265	NO
+TCGA-12-0772	Chemotherapy	Cytoxan		1307	1468	
+TCGA-12-0772	Chemotherapy	CCNU		951	1112	NO
+TCGA-12-0772	Chemotherapy	Temozolamide		79	120	NO
+TCGA-12-0772	Targeted Molecular therapy	Avastin		1468	1526	
+TCGA-12-0772	Targeted Molecular therapy	Sirolimus		1468	1526	
+TCGA-12-0772	Targeted Molecular therapy	Avastin		1529	1616	
+TCGA-12-0772	Targeted Molecular therapy	Avastin		1307	1468	
+TCGA-12-0772	Chemotherapy	VP-16		1529	1616	
+TCGA-12-0773	Chemotherapy	Temozolomide		1141	1274	
+TCGA-12-0773	Chemotherapy	CCNU		516	607	NO
+TCGA-12-0773	Chemotherapy	CCNU		235	326	NO
+TCGA-12-0773	Chemotherapy	CCNU		892	1015	NO
+TCGA-12-0773	Chemotherapy	VP-16		1015	1036	NO
+TCGA-12-0773	Hormone Therapy	Tamoxifen		607	725	NO
+TCGA-12-0773	Chemotherapy	Temozolomide		1062	1141	NO
+TCGA-12-0773	Chemotherapy	Temozolamide		1274	1311	NO
+TCGA-12-0773	Chemotherapy	Temozolamide		431	516	NO
+TCGA-12-0773	Chemotherapy	CPT-11		326	431	NO
+TCGA-12-0773	Chemotherapy	Temozolamide		773	875	NO
+TCGA-12-0773	Targeted Molecular therapy	MAb I-131		55	56	NO
+TCGA-12-0773	Chemotherapy	Temozolamide		150	245	NO
+TCGA-12-0773	Targeted Molecular therapy	MU81C6		55	56	
+TCGA-12-0773	Targeted Molecular therapy	Avastin		1141	1274	
+TCGA-12-0773	Targeted Molecular therapy	mu81c6		55	56	NO
+TCGA-12-0775	Chemotherapy	CCNU		117	158	
+TCGA-12-0775	Chemotherapy	Temodar		37	94	
+TCGA-12-0776	Chemotherapy	CCNU		82	127	NO
+TCGA-12-0776	Chemotherapy	Temodar		33	74	NO
+TCGA-12-0776	Chemotherapy	CPT-11		140	275	
+TCGA-12-0776	Targeted Molecular therapy	Avastin		140	275	NO
+TCGA-12-0778	Chemotherapy	Temozolamide		22	68	NO
+TCGA-12-0778	Chemotherapy	Temozolamide		89	147	NO
+TCGA-12-0778	Chemotherapy	CCNU		147	232	NO
+TCGA-12-0778	Targeted Molecular therapy	Avastin		250	329	NO
+TCGA-12-0778	Targeted Molecular therapy	Tarceva		355	385	
+TCGA-12-0778	Chemotherapy	Temozolomide		329	352	NO
+TCGA-12-0778	Targeted Molecular therapy	Rapamcyin		355	385	NO
+TCGA-12-0778	Chemotherapy	VP-16		250	329	NO
+TCGA-12-0778	Chemotherapy	VP-16		329	352	
+TCGA-12-0778	Targeted Molecular therapy	Rapamycin		355	385	NO
+TCGA-12-0780	Chemotherapy	CPT-11		101	350	NO
+TCGA-12-0780	Targeted Molecular therapy	Avastin		360	388	NO
+TCGA-12-0780	Targeted Molecular therapy	Tarceva		393	434	NO
+TCGA-12-0780	Chemotherapy	VP-16		360	388	NO
+TCGA-12-0780	Chemotherapy	Temodar		21	77	NO
+TCGA-12-0780	Targeted Molecular therapy	Avastin		111	350	NO
+TCGA-12-0780	Targeted Molecular therapy	Rapamycin		393	434	
+TCGA-12-0818	Chemotherapy	VP-16		75	136	NO
+TCGA-12-0818	Targeted Molecular therapy	MAB I-131		26	47	NO
+TCGA-12-0818	Chemotherapy	CCNU		255	296	NO
+TCGA-12-0818	Targeted Molecular therapy	81c6		26	47	NO
+TCGA-12-0818	Chemotherapy	CCNU		136	1643	NO
+TCGA-12-0818	Chemotherapy	VP-16		213	255	NO
+TCGA-12-0819	Chemotherapy	Procarbazine		505	624	NO
+TCGA-12-0819	Chemotherapy	BCNU		258	376	NO
+TCGA-12-0819	Chemotherapy	Carboplatin		NA	NA	NO
+TCGA-12-0819	Chemotherapy	Topotecan		442	495	NO
+TCGA-12-0819	Targeted Molecular therapy	mu81c6		6	180	NO
+TCGA-12-0819	Chemotherapy	BCNU		376	442	NO
+TCGA-12-0819	Targeted Molecular therapy	MAB I 131		6	180	NO
+TCGA-12-0820	Targeted Molecular therapy	06-BG		-1	0	NO
+TCGA-12-0820	Chemotherapy	CPT-11		363	433	NO
+TCGA-12-0820	Targeted Molecular therapy	06-BG		300	341	NO
+TCGA-12-0820	Chemotherapy	BCNU		300	341	NO
+TCGA-12-0820	Chemotherapy	VP-16		502	543	NO
+TCGA-12-0820	Chemotherapy	CPT-11		342	363	NO
+TCGA-12-0820	Chemotherapy	Temozolomide		216	272	NO
+TCGA-12-0820	Chemotherapy	CPT-11		433	502	NO
+TCGA-12-0820	Hormone Therapy	Tamoxifen		502	543	NO
+TCGA-12-0821	Chemotherapy	CCNU		123	165	NO
+TCGA-12-0821	Chemotherapy	VP-16		203	259	NO
+TCGA-12-0821	Chemotherapy	CPT-11		271	296	NO
+TCGA-12-0822	Chemotherapy	BCNU		126	175	NO
+TCGA-12-0822	Targeted Molecular therapy	SCH6636		625	652	NO
+TCGA-12-0822	Targeted Molecular therapy	SCH66336		625	625	NO
+TCGA-12-0822	Chemotherapy	Temozolomide		281	583	NO
+TCGA-12-0822	Targeted Molecular therapy	O6BG		190	281	NO
+TCGA-12-0822	Chemotherapy	BCNU		190	281	NO
+TCGA-12-0822	Chemotherapy	VP-16		588	624	NO
+TCGA-12-0822	Chemotherapy	CPT-11		126	175	NO
+TCGA-12-0827	Chemotherapy	Temozolomide		350	390	NO
+TCGA-12-0827	Chemotherapy	Temozolomide		258	350	NO
+TCGA-12-0827	Targeted Molecular therapy	81C6		34	76	NO
+TCGA-12-0827	Chemotherapy	CCNU		181	258	NO
+TCGA-12-0827	Chemotherapy	CPT-11		390	434	NO
+TCGA-12-0827	Targeted Molecular therapy	MABI131		34	76	NO
+TCGA-12-0827	Chemotherapy	CCNU		137	181	NO
+TCGA-12-0827	Chemotherapy	Temozolomide		466	615	NO
+TCGA-12-0827	Hormone Therapy	Tamoxifen		615	746	NO
+TCGA-12-0828	Chemotherapy	Temozolomide		28	152	NO
+TCGA-12-0829	Chemotherapy	Temador		474	571	NO
+TCGA-12-0829	Targeted Molecular therapy	Avastin		474	571	NO
+TCGA-12-0829	Chemotherapy	Temador		16	64	NO
+TCGA-12-0829	Chemotherapy	CPT-11		572	599	NO
+TCGA-12-0829	Targeted Molecular therapy	Avastin		572	599	NO
+TCGA-12-0829	Chemotherapy	Temador		95	473	NO
+TCGA-12-0829	Immunotherapy	ATTAC		115	473	NO
+TCGA-12-1088	Chemotherapy	CCNU		3735	3779	NO
+TCGA-12-1088	Chemotherapy	CCNU		3779	3821	NO
+TCGA-12-1089	Chemotherapy	CCNU		105	147	NO
+TCGA-12-1090	Chemotherapy	Thalidomide		126	191	
+TCGA-12-1090	Chemotherapy	Gliadel Waters		46	46	
+TCGA-12-1090	Chemotherapy	Cyclophosphamide		126	191	
+TCGA-12-1091	Chemotherapy	CCNG		288	330	
+TCGA-12-1091	Chemotherapy	Temodor		521	691	
+TCGA-12-1091	Chemotherapy	VP-16		358	453	
+TCGA-12-1091	Chemotherapy	Temodor		453	484	
+TCGA-12-1091	Chemotherapy	VP-16		819	926	
+TCGA-12-1091	Chemotherapy	Temodor		484	521	
+TCGA-12-1091	Hormone Therapy	Tamoxiten		521	691	
+TCGA-12-1091	Chemotherapy	Temodor		143	169	
+TCGA-12-1091	Chemotherapy	CCNG		229	287	
+TCGA-12-1091	Hormone Therapy	Tamoxifen		453	484	
+TCGA-12-1091	Chemotherapy	Temodor		179	206	
+TCGA-12-1091	Hormone Therapy	Tamoxifen		484	521	
+TCGA-12-1091	Chemotherapy	Temodor		331	358	
+TCGA-12-1091	Hormone Therapy	Tamoxifen		358	453	
+TCGA-12-1092	Chemotherapy	CPT 11		368	460	NO
+TCGA-12-1092	Targeted Molecular therapy	Tarceva		460	551	NO
+TCGA-12-1092	Targeted Molecular therapy	Avastin		119	204	NO
+TCGA-12-1092	Chemotherapy	Temodar		232	367	NO
+TCGA-12-1092	Chemotherapy	Temodar		46	96	NO
+TCGA-12-1092	Chemotherapy	Temodar		551	637	NO
+TCGA-12-1092	Chemotherapy	Temodar		205	232	NO
+TCGA-12-1092	Targeted Molecular therapy	Rapamycin		460	551	NO
+TCGA-12-1092	Chemotherapy	Temodar		119	204	NO
+TCGA-12-1093	Chemotherapy	Panzem		339	364	
+TCGA-12-1093	Immunotherapy	ATTAC		126	317	
+TCGA-12-1093	Chemotherapy	Temodor		105	317	
+TCGA-12-1093	Chemotherapy	Temozolamide		339	364	
+TCGA-12-1093	Chemotherapy	Temodor		38	79	
+TCGA-12-1094	Chemotherapy	Temodor		141	213	NO
+TCGA-12-1094	Chemotherapy	Temodor		18	67	
+TCGA-12-1094	Targeted Molecular therapy	Avastin		286	336	NO
+TCGA-12-1094	Chemotherapy	Temodor		286	336	NO
+TCGA-12-1094	Chemotherapy	CCNG		231	269	NO
+TCGA-12-1094	Immunotherapy	ACT PEP3 KLH		104	215	NO
+TCGA-12-1095	Chemotherapy	VP 16		404	412	NO
+TCGA-12-1095	Chemotherapy	CPT 11		112	286	NO
+TCGA-12-1095	Targeted Molecular therapy	Avastin		291	370	NO
+TCGA-12-1095	Targeted Molecular therapy	Avastin		404	412	NO
+TCGA-12-1095	Chemotherapy	Temodar		34	82	NO
+TCGA-12-1095	Targeted Molecular therapy	Avastin		95	286	NO
+TCGA-12-1096	Targeted Molecular therapy	Avastin		202	277	NO
+TCGA-12-1096	Chemotherapy	Temodor		63	101	
+TCGA-12-1096	Chemotherapy	Temodor		130	201	YES
+TCGA-12-1096	Chemotherapy	CPT-11		202	277	NO
+TCGA-12-1097	Chemotherapy	Temodar		49	96	NO
+TCGA-12-1097	Targeted Molecular therapy	AMG 102		177	343	NO
+TCGA-12-1097	Chemotherapy	VP 16		351	385	NO
+TCGA-12-1097	Chemotherapy	Temodar		351	385	NO
+TCGA-12-1097	Chemotherapy	Temodar		110	166	NO
+TCGA-12-1098	Chemotherapy	Temodar		35	74	NO
+TCGA-12-1099	Targeted Molecular therapy	Avastin		62	104	NO
+TCGA-12-1099	Chemotherapy	Temodor		61	101	NO
+TCGA-12-1597	Chemotherapy	Temozolomide		313	348	NO
+TCGA-12-1597	Chemotherapy	Temozolomide		64	88	NO
+TCGA-12-1597	Chemotherapy	Temozolomide		355	427	NO
+TCGA-12-1597	Chemotherapy	CPT 11		181	308	NO
+TCGA-12-1597	Chemotherapy	Gliadel Wafer		0	0	NO
+TCGA-12-1597	Chemotherapy	CCNU		123	545	NO
+TCGA-12-1598	Chemotherapy	Temodar		160	287	NO
+TCGA-12-1598	Chemotherapy	Temodar		33	82	NO
+TCGA-12-1599	Targeted Molecular therapy	Avastin		621	671	NO
+TCGA-12-1599	Targeted Molecular therapy	Sirolimus		406	433	NO
+TCGA-12-1599	Chemotherapy	Hydroxyurea		461	492	NO
+TCGA-12-1599	Chemotherapy	Hydroxyurea		160	391	NO
+TCGA-12-1599	Targeted Molecular therapy	Gleevac		160	391	NO
+TCGA-12-1599	Chemotherapy	Cytoxan		675	727	NO
+TCGA-12-1599	Targeted Molecular therapy	Erlotinib		406	433	NO
+TCGA-12-1599	Targeted Molecular therapy	Gleevac		96	127	NO
+TCGA-12-1599	Targeted Molecular therapy	Avastin		438	602	NO
+TCGA-12-1599	Chemotherapy	CPT 11		621	671	NO
+TCGA-12-1599	Chemotherapy	Temodar		24	59	NO
+TCGA-12-1599	Targeted Molecular therapy	Avastin		675	727	NO
+TCGA-12-1600	Chemotherapy	Temodar		43	84	NO
+TCGA-12-1600	Chemotherapy	Temodar		106	218	NO
+TCGA-12-1602	Chemotherapy	Temodor		86	140	NO
+TCGA-12-1602	Chemotherapy	Temodor		17	57	NO
+TCGA-12-3644	Chemotherapy	Temodar		72	119	NO
+TCGA-12-3644	Targeted Molecular therapy	Avastin		1583	1611	NO
+TCGA-12-3644	Targeted Molecular therapy	Avastin		1639	1722	NO
+TCGA-12-3644	Chemotherapy	Temodar		1142	1180	NO
+TCGA-12-3644	Targeted Molecular therapy	Accutane		1611	1639	NO
+TCGA-12-3644	Chemotherapy	Hydroxyuerea		1583	1611	NO
+TCGA-12-3644	Targeted Molecular therapy	Rapamycin		1583	1611	NO
+TCGA-12-3644	Targeted Molecular therapy	06BG		1150	1154	NO
+TCGA-12-3644	Chemotherapy	CCNU		134	179	NO
+TCGA-12-3644	Chemotherapy	CPT 11		1194	1583	NO
+TCGA-12-3644	Chemotherapy	Temodar		1639	1722	NO
+TCGA-12-3644	Targeted Molecular therapy	Acctuane		1639	1722	NO
+TCGA-12-3644	Targeted Molecular therapy	Rapamycin		891	1030	NO
+TCGA-12-3644	Targeted Molecular therapy	Tarceva		1611	1639	NO
+TCGA-12-3644	Targeted Molecular therapy	Avastin		1765	1806	NO
+TCGA-12-3644	Targeted Molecular therapy	Avastin		1611	1639	NO
+TCGA-12-3644	Chemotherapy	Temodar		1030	1142	NO
+TCGA-12-3644	Targeted Molecular therapy	Avastin		1194	1583	NO
+TCGA-12-3644	Targeted Molecular therapy	Tarceva		1583	1611	NO
+TCGA-12-3644	Chemotherapy	Temodar		861	891	NO
+TCGA-12-3644	Chemotherapy	CPT 11		1639	1722	NO
+TCGA-12-3644	Chemotherapy	Gliadel Wafer		37	37	NO
+TCGA-12-3644	Chemotherapy	Hydroxyurea		1611	1639	NO
+TCGA-12-3644	Targeted Molecular therapy	Tarceva		891	1030	NO
+TCGA-12-3644	Targeted Molecular therapy	Rapamycin		1611	1639	NO
+TCGA-12-3644	Chemotherapy	Temodar		179	486	NO
+TCGA-12-3644	Targeted Molecular therapy	Chloroquine		1639	1722	NO
+TCGA-12-3646	Chemotherapy	Temodar		1063	1315	NO
+TCGA-12-3646	Chemotherapy	CCNU		405	488	NO
+TCGA-12-3646	Chemotherapy	Temodar		24	66	NO
+TCGA-12-3646	Chemotherapy	CPT 11		248	334	NO
+TCGA-12-3646	Targeted Molecular therapy	Avastin		248	334	NO
+TCGA-12-3646	Chemotherapy	CCNU		151	234	NO
+TCGA-12-3646	Chemotherapy	Temodar		334	403	NO
+TCGA-12-3646	Chemotherapy	Temodar		90	151	NO
+TCGA-12-3648	Chemotherapy	Temodar		738	784	NO
+TCGA-12-3648	Chemotherapy	Temodar		126	452	NO
+TCGA-12-3648	Chemotherapy	CPT 11		508	731	NO
+TCGA-12-3648	Chemotherapy	Vp 16		738	784	NO
+TCGA-12-3648	Targeted Molecular therapy	Avastin		738	784	NO
+TCGA-12-3648	Chemotherapy	Temodar		14	67	NO
+TCGA-12-3648	Targeted Molecular therapy	Avastin		508	731	NO
+TCGA-12-3648	Immunotherapy	PEP3 KLH		83	452	NO
+TCGA-12-3649	Chemotherapy	Temodar		186	240	NO
+TCGA-12-3649	Targeted Molecular therapy	Avastin		186	240	NO
+TCGA-12-3649	Immunotherapy	ATTAC		240	350	NO
+TCGA-12-3649	Targeted Molecular therapy	Avastin		240	347	NO
+TCGA-12-3649	Immunotherapy	ATTAC		186	245	NO
+TCGA-12-3649	Targeted Molecular therapy	Avastin		NA	NA	NO
+TCGA-12-3649	Chemotherapy	Temodar		NA	NA	NO
+TCGA-12-3649	Chemotherapy	Temodar		240	350	NO
+TCGA-12-3650	Chemotherapy	Temodar		26	72	NO
+TCGA-12-3650	Chemotherapy	Temodar		91	148	NO
+TCGA-12-3650	Targeted Molecular therapy	Avastin		239	307	NO
+TCGA-12-3650	Targeted Molecular therapy	Avastin		91	148	NO
+TCGA-12-3650	Chemotherapy	Temodar		152	239	NO
+TCGA-12-3650	Targeted Molecular therapy	Avastin		26	72	NO
+TCGA-12-3650	Targeted Molecular therapy	Tarceva		239	307	NO
+TCGA-12-3650	Targeted Molecular therapy	Avastin		148	239	NO
+TCGA-12-3650	Targeted Molecular therapy	Avastin		307	333	NO
+TCGA-12-3650	Chemotherapy	CPT 11		91	148	NO
+TCGA-12-3650	Chemotherapy	CPT 11		152	239	NO
+TCGA-12-3650	Chemotherapy	VP 16		307	333	NO
+TCGA-12-3651	Chemotherapy	Temodar		186	212	NO
+TCGA-12-3651	Targeted Molecular therapy	Avastin		43	85	NO
+TCGA-12-3651	Chemotherapy	Temodar		221	358	NO
+TCGA-12-3651	Chemotherapy	CPT 11		221	358	NO
+TCGA-12-3651	Chemotherapy	Temodar		43	85	NO
+TCGA-12-3651	Targeted Molecular therapy	Avastin		221	358	NO
+TCGA-12-3652	Chemotherapy	Temodar		228	288	NO
+TCGA-12-3652	Chemotherapy	Temodar		21	67	NO
+TCGA-12-3652	Chemotherapy	VP 16		291	358	NO
+TCGA-12-3652	Targeted Molecular therapy	Hydroxurea		750	792	NO
+TCGA-12-3652	Chemotherapy	CCNU		91	133	NO
+TCGA-12-3652	Targeted Molecular therapy	Gleevac		750	792	NO
+TCGA-12-3652	Targeted Molecular therapy	Hydroxurea		585	750	NO
+TCGA-12-3652	Chemotherapy	VP 16		469	571	NO
+TCGA-12-3652	Targeted Molecular therapy	Gleevac		585	750	NO
+TCGA-12-3652	Chemotherapy	CCNU		161	203	NO
+TCGA-12-3653	Chemotherapy	Temodar		46	87	NO
+TCGA-12-3653	Chemotherapy	Temodar		128	224	NO
+TCGA-12-3653	Targeted Molecular therapy	Avastin		316	371	NO
+TCGA-12-3653	Targeted Molecular therapy	Angiocept		287	315	NO
+TCGA-12-3653	Immunotherapy	Daclizumab		128	224	NO
+TCGA-12-3653	Chemotherapy	VP 16		316	371	NO
+TCGA-12-5295	Chemotherapy	Temozolomide		29	71	NO
+TCGA-12-5295	Targeted Molecular therapy	Avastin		277	323	NO
+TCGA-12-5295	Targeted Molecular therapy	Avastin		88	277	NO
+TCGA-12-5295	Chemotherapy	CPT 11		88	277	NO
+TCGA-12-5299	Targeted Molecular therapy	Avastin		45	73	NO
+TCGA-12-5299	Chemotherapy	Temozolomide		45	80	NO
+TCGA-12-5301	Chemotherapy	Temozolomide		24	59	NO
+TCGA-14-0736	Chemotherapy	Gliadel		207	NA	NO
+TCGA-14-0736	Hormone Therapy	Dexamethasone		0	NA	NO
+TCGA-14-0736	Chemotherapy	Temador		371	376	NO
+TCGA-14-0736	Hormone Therapy	Dexamethasone		128	NA	NO
+TCGA-14-0740	Hormone Therapy	Dexamethasone		0	NA	NO
+TCGA-14-0781	Hormone Therapy	Dexamethasone		0	NA	NO
+TCGA-14-0783	Chemotherapy	Carboxy amido triazole		32	147	NO
+TCGA-14-0783	Hormone Therapy	Dexamethasone		-1	NA	NO
+TCGA-14-0786	Chemotherapy	CPT 11		182	210	NO
+TCGA-14-0786	Chemotherapy	Carmustine		567	570	NO
+TCGA-14-0786	Chemotherapy	Etoposide		659	NA	
+TCGA-14-0786	Chemotherapy	Carboplatin		659	NA	
+TCGA-14-0786	Chemotherapy	Temodar		526	567	NO
+TCGA-14-0786	Chemotherapy	Cisplatin		140	142	NO
+TCGA-14-0786	Hormone Therapy	Dexamethasone		127	NA	
+TCGA-14-0786	Chemotherapy	Streptozocin		567	570	NO
+TCGA-14-0786	Chemotherapy	Thalidomide		574	651	NO
+TCGA-14-0786	Chemotherapy	Carmustine		140	142	NO
+TCGA-14-0786	Chemotherapy	Procarbazine		308	357	NO
+TCGA-14-0786	Chemotherapy	6-Mercaptopurine		567	570	NO
+TCGA-14-0786	Hormone Therapy	Dexamethasone		0	NA	NO
+TCGA-14-0787	Hormone Therapy	Dexmethasone		15	41	
+TCGA-14-0787	Targeted Molecular therapy			NA	NA	NO
+TCGA-14-0789	Chemotherapy	Gliadel Wafer (BCNU)		118	NA	NO
+TCGA-14-0789	Chemotherapy	Temodar		44	75	
+TCGA-14-0789	Hormone Therapy	Dexamethasone		119	224	NO
+TCGA-14-0789	Hormone Therapy	Dexamethazone		0	118	NO
+TCGA-14-0790	Chemotherapy	Gliadel BCNU		0	NA	NO
+TCGA-14-0790	Chemotherapy	Temodar		15	410	NO
+TCGA-14-0790	Hormone Therapy	Dexamethasone		0	NA	NO
+TCGA-14-0812	Hormone Therapy	Dexamethasone		0	NA	NO
+TCGA-14-0812	Chemotherapy	Gliadel Wafers		0	NA	NO
+TCGA-14-0813	Hormone Therapy	Dexamethasone		0	41	NO
+TCGA-14-0817	Hormone Therapy	Dexamethasone		0	15	NO
+TCGA-14-0862	Hormone Therapy	Dexamethasone		0	NA	NO
+TCGA-14-0865	Hormone Therapy	Dexamethasone		0	NA	NO
+TCGA-14-0865	Chemotherapy	Temodar		46	167	NO
+TCGA-14-0865	Hormone Therapy	Dexamethasone		205	NA	NO
+TCGA-14-0866	Hormone Therapy	Dexamethasone		0	NA	
+TCGA-14-0866	Chemotherapy	Temodar		21	325	NO
+TCGA-14-0867	Hormone Therapy	Dexamethasone		0	15	NO
+TCGA-14-0871	Hormone Therapy	Dexamethasone		0	281	NO
+TCGA-14-1034	Hormone Therapy	Dexamethasone		282	NA	NO
+TCGA-14-1034	Chemotherapy	Gliadel		448	NA	NO
+TCGA-14-1034	Hormone Therapy	Dexamethasone		8	NA	NO
+TCGA-14-1037	Chemotherapy	Oxaliplatin		25	95	NO
+TCGA-14-1037	Hormone Therapy	Dexamethasone		326	NA	NO
+TCGA-14-1037	Targeted Molecular therapy	PS 341		346	433	NO
+TCGA-14-1037	Chemotherapy	Temodar		439	538	NO
+TCGA-14-1037	Hormone Therapy	Dexamethasome		0	NA	NO
+TCGA-14-1043	Hormone Therapy	Dexamethasone		0	NA	NO
+TCGA-14-1395	Chemotherapy	Oxaliplatin		14	28	NO
+TCGA-14-1395	Hormone Therapy	Dexamethasone		0	41	NO
+TCGA-14-1396	Hormone Therapy	Dexamethasone		NA	NA	NO
+TCGA-14-1401	Hormone Therapy	Dexamethsone		NA	NA	NO
+TCGA-14-1402	Targeted Molecular therapy	Avastin		659	832	NO
+TCGA-14-1402	Chemotherapy	Carboplatin		659	832	NO
+TCGA-14-1402	Chemotherapy	Temodar		344	529	NO
+TCGA-14-1402	Hormone Therapy	Dexamethasone		316	NA	NO
+TCGA-14-1402	Hormone Therapy	Prednisone		316	NA	NO
+TCGA-14-1402	Targeted Molecular therapy	Sovatenib		619	633	NO
+TCGA-14-1402	Chemotherapy	Arsenic Trioxide		57	66	NO
+TCGA-14-1402	Hormone Therapy	Dexamethasone		333	NA	NO
+TCGA-14-1450	Chemotherapy	Temodar		127	961	NO
+TCGA-14-1450	Chemotherapy	Temodar		22	65	NO
+TCGA-14-1450	Targeted Molecular therapy	Avastin		1024	1233	NO
+TCGA-14-1450	Hormone Therapy	Dexamethasone		0	NA	NO
+TCGA-14-1450	Hormone Therapy	Dexamethasone		826	NA	NO
+TCGA-14-1451	Chemotherapy	Etoposide		411	480	NO
+TCGA-14-1451	Chemotherapy	Gliadel		153	NA	NO
+TCGA-14-1451	Targeted Molecular therapy	Erlotinib		382	504	NO
+TCGA-14-1451	Chemotherapy	Temodar		59	101	NO
+TCGA-14-1451	Hormone Therapy	Dexamethasone		0	NA	NO
+TCGA-14-1451	Chemotherapy	BCNU		501	566	NO
+TCGA-14-1451	Hormone Therapy	Dexamethasone		19	NA	NO
+TCGA-14-1451	Chemotherapy	Oxaliplatin		20	34	NO
+TCGA-14-1451	Chemotherapy	Vincristin		411	480	NO
+TCGA-14-1451	Chemotherapy	Cisplatin		411	480	NO
+TCGA-14-1452	Chemotherapy	Temador		26	185	NO
+TCGA-14-1452	Hormone Therapy	Dexamethasone		172	216	NO
+TCGA-14-1452	Hormone Therapy	Dexamethasone		NA	NA	NO
+TCGA-14-1452	Chemotherapy	Gliadel		0	NA	NO
+TCGA-14-1453	Hormone Therapy	Dexamethasone		NA	NA	NO
+TCGA-14-1454	Chemotherapy	Gliadel		0	NA	NO
+TCGA-14-1454	Hormone Therapy	Dexamethasone		291	NA	NO
+TCGA-14-1454	Chemotherapy	Hydroxyurea		309	900	NO
+TCGA-14-1454	Hormone Therapy	Dexamethasone		0	NA	NO
+TCGA-14-1454	Chemotherapy	Temodar		29	235	NO
+TCGA-14-1454	Chemotherapy	Gleevac		309	900	NO
+TCGA-14-1455	Hormone Therapy	Dexamethasone		17	28	NO
+TCGA-14-1455	Chemotherapy	Gliadel wafer		17	NA	NO
+TCGA-14-1456	Hormone Therapy	Dexamthasone		98	NA	NO
+TCGA-14-1456	Targeted Molecular therapy	Tarceva		102	549	NO
+TCGA-14-1456	Chemotherapy	Arsenic Tnoxide		25	70	NO
+TCGA-14-1456	Hormone Therapy	Dexamethasone		0	NA	NO
+TCGA-14-1456	Targeted Molecular therapy	Avastin		1129	1246	YES
+TCGA-14-1456	Targeted Molecular therapy	Avastin		102	1128	NO
+TCGA-14-1458	Chemotherapy	Temodar		83	146	NO
+TCGA-14-1458	Hormone Therapy	Dexamethasone		81	NA	NO
+TCGA-14-1458	Targeted Molecular therapy	Avastin		89	162	NO
+TCGA-14-1458	Chemotherapy	Temodar		19	61	NO
+TCGA-14-1458	Hormone Therapy	Dexaethasone		0	NA	NO
+TCGA-14-1459	Chemotherapy	Temodar		22	NA	NO
+TCGA-14-1459	Hormone Therapy	Dexamethasone		NA	NA	NO
+TCGA-14-1794	Hormone Therapy	Dexamethasone		0	NA	NO
+TCGA-14-1795	Chemotherapy	Gliadel Wafer		0	NA	NO
+TCGA-14-1795	Hormone Therapy	Dexamethasone		0	60	NO
+TCGA-14-1821	Hormone Therapy	Dexamethasone		0	NA	NO
+TCGA-14-1821	Chemotherapy	Temodar		40	69	NO
+TCGA-14-1821	Hormone Therapy	Dexamethasone		331	NA	NO
+TCGA-14-1823	Chemotherapy	Gliadel Wafers		0	NA	NO
+TCGA-14-1823	Hormone Therapy	Dexamethasone		0	NA	NO
+TCGA-14-1823	Chemotherapy	Temodar		20	450	NO
+TCGA-14-1823	Targeted Molecular therapy	Avastin		378	478	NO
+TCGA-14-1823	Hormone Therapy	Dexamethasone		140	NA	NO
+TCGA-14-1825	Hormone Therapy	Dexamethasone		0	NA	NO
+TCGA-14-1825	Hormone Therapy	Dexamethasone		82	NA	NO
+TCGA-14-1827	Hormone Therapy	Dexamethasone		0	NA	NO
+TCGA-14-1827	Chemotherapy	Cisplatin		42	46	NO
+TCGA-14-1827	Chemotherapy	BCNU		42	46	NO
+TCGA-14-1829	Hormone Therapy	Dexamethasone		0	NA	NO
+TCGA-14-1829	Chemotherapy	Temodar		8	NA	YES
+TCGA-14-2554	Hormone Therapy	Dexamethasone		0	NA	NO
+TCGA-14-2555	Hormone Therapy	Dexamethasone		0	NA	NO
+TCGA-14-2555	Chemotherapy	Temodar		34	242	NO
+TCGA-14-3476	Hormone Therapy	Dexamethasone		0	NA	NO
+TCGA-14-3477	Targeted Molecular therapy	Avastin		56	70	NO
+TCGA-14-3477	Chemotherapy	Temodar		35	67	NO
+TCGA-14-3477	Hormone Therapy	Dexamethasone		0	NA	
+TCGA-14-4157	Hormone Therapy	Dexamethasone		NA	NA	NO
+TCGA-14-4157	Chemotherapy	Temodar		19	67	NO
+TCGA-14-4157	Chemotherapy	Temodar		96	NA	YES
+TCGA-15-0742	Chemotherapy	Temozolomide		28	59	NO
+TCGA-15-0742	Targeted Molecular therapy	SAHA		259	300	NO
+TCGA-15-1444	Chemotherapy	BCNU		38	72	NO
+TCGA-15-1444	Chemotherapy	CPT-11		38	72	NO
+TCGA-15-1446	Chemotherapy	Temodar		68	280	NO
+TCGA-15-1447	Chemotherapy	CPT-11		9	130	NO
+TCGA-15-1447	Chemotherapy	Temodar		9	130	NO
+TCGA-15-1447	Chemotherapy	BCNU		9	130	NO
+TCGA-15-1449	Chemotherapy	Temodar		32	74	NO
+TCGA-19-0955	Chemotherapy	Temozolomide		31	277	NO
+TCGA-19-0957	Chemotherapy	Irinotecan		538	552	NO
+TCGA-19-0957	Chemotherapy	Avastin		566	580	NO
+TCGA-19-0957	Chemotherapy	Avastin		594	608	NO
+TCGA-19-0957	Chemotherapy	Irinotecan		594	608	NO
+TCGA-19-0957	Chemotherapy	Temozolomide		120	273	NO
+TCGA-19-0957	Chemotherapy	Temozolomide		35	81	NO
+TCGA-19-0957	Chemotherapy	Avastin		538	552	NO
+TCGA-19-0957	Chemotherapy	Temozolomide		368	372	NO
+TCGA-19-0960	Chemotherapy	Temodar		42	NA	
+TCGA-19-0963	Chemotherapy	Temodar		34	84	NO
+TCGA-19-0963	Chemotherapy	Temodar		129	270	NO
+TCGA-19-0964	Chemotherapy	Temodar		39	82	NO
+TCGA-19-1385	Chemotherapy	Temozolomide		16	57	NO
+TCGA-19-1385	Chemotherapy	Temozolomide		89	93	NO
+TCGA-19-1386	Chemotherapy	Temozolomide		21	62	NO
+TCGA-19-1386	Chemotherapy	Tarceva		216	229	NO
+TCGA-19-1386	Chemotherapy	Tarceva		230	236	NO
+TCGA-19-1386	Chemotherapy	Temozolomide		142	234	NO
+TCGA-19-1386	Chemotherapy	Temozolomide		89	93	NO
+TCGA-19-1387	Chemotherapy	Temozolomide		19	58	NO
+TCGA-19-1388	Chemotherapy	Temozolomide		21	63	NO
+TCGA-19-1388	Chemotherapy	Temozolomide		97	250	NO
+TCGA-19-1388	Chemotherapy	Avastin		363	377	NO
+TCGA-19-1388	Chemotherapy	Temozolomide		269	328	NO
+TCGA-19-1389	Chemotherapy	Temozolomide		10	20	NO
+TCGA-19-1389	Chemotherapy	Temozolomide		26	41	NO
+TCGA-19-1389	Chemotherapy	Temozolomide		48	67	NO
+TCGA-19-1787	Chemotherapy	Avastin		312	347	NO
+TCGA-19-1787	Chemotherapy	Temodar		112	264	NO
+TCGA-19-1787	Chemotherapy	Temodar		42	85	NO
+TCGA-19-1788	Chemotherapy	Temozolomide		50	95	NO
+TCGA-19-1789	Chemotherapy	Temozolomide		26	32	NO
+TCGA-19-1790	Chemotherapy	Temozolomide		25	66	NO
+TCGA-19-2619	Chemotherapy	Temozolomide		57	85	NO
+TCGA-19-2619	Chemotherapy	Temozolomide		113	117	NO
+TCGA-19-2619	Chemotherapy	Avastin		153	295	NO
+TCGA-19-2620	Chemotherapy	Temozolomide		33	51	NO
+TCGA-19-2623	Chemotherapy	Temodar		110	114	NO
+TCGA-19-2623	Chemotherapy	Temodar		105	NA	YES
+TCGA-19-2623	Chemotherapy	Temodar		25	53	NO
+TCGA-19-2629	Chemotherapy	Avastin		148	198	NO
+TCGA-19-2629	Chemotherapy	Temodar		10	69	NO
+TCGA-19-2629	Chemotherapy	Temodar		104	135	NO
+TCGA-19-4065	Chemotherapy	Temozolomide		123	128	NO
+TCGA-19-4065	Chemotherapy	Temozolomide		78	89	NO
+TCGA-19-4065	Chemotherapy	Temozolomide		39	70	NO
+TCGA-19-4065	Chemotherapy	Temozolomide		166	170	NO
+TCGA-19-4068	Chemotherapy	Temodar		83	109	NO
+TCGA-19-4068	Chemotherapy	Temodar		60	75	NO
+TCGA-19-5950	Chemotherapy	Temodar		134	249	NO
+TCGA-19-5950	Chemotherapy	Temodar		27	70	NO
+TCGA-19-5950	Chemotherapy	Temodar		106	110	NO
+TCGA-19-5950	Chemotherapy	GDC-0449	Clinical Progressive Disease	287	343	NO
+TCGA-19-5951	Chemotherapy	Temodar		50	94	NO
+TCGA-19-5954	Chemotherapy	Temodar		32	75	NO
+TCGA-19-5954	Chemotherapy	Temodar		103	107	NO
+TCGA-19-5956	Chemotherapy	Temodar		51	70	NO
+TCGA-19-5956	Chemotherapy	Avastin	Stable Disease	51	70	NO
+TCGA-19-5956	Chemotherapy	Temodar	Stable Disease	202	604	NO
+TCGA-19-5958	Chemotherapydaily for 42 days	Temodar		34	80	NO
+TCGA-19-5958	Chemotherapy	Avastin		56	265	YES
+TCGA-19-5958	Chemotherapy	Temodar		111	248	NO
+TCGA-19-5959	Chemotherapy	Temodar		73	88	NO
+TCGA-19-5959	Chemotherapy	Temodar	Clinical Progressive Disease	131	290	NO
+TCGA-19-5959	Chemotherapy	Avastin	Clinical Progressive Disease	360	388	NO
+TCGA-19-5960	Chemotherapy	Temodar		30	71	NO
+TCGA-19-5960	Chemotherapy	Avastin	Stable Disease	55	165	NO
+TCGA-19-5960	Chemotherapy	Temodar	Stable Disease	123	155	NO
+TCGA-19-A60I	Chemotherapy	Temodar	Stable Disease	72	114	NO
+TCGA-19-A60I	Chemotherapy	Temodar		154	NA	YES
+TCGA-19-A6J5	Chemotherapy	Temodar	Stable Disease	34	76	NO
+TCGA-19-A6J5	Chemotherapy	Temodar	Stable Disease	111	658	NO
+TCGA-19-A6J5	Chemotherapy	Avastin		812	NA	YES
+TCGA-19-A6J5	Chemotherapy	Lomustine		847	NA	YES
+TCGA-26-1438	Chemotherapy	Temozolomide		31	73	NO
+TCGA-26-1438	Chemotherapy	Temozolomide		104	206	NO
+TCGA-26-1438	Targeted Molecular therapy	Recentin Placebo AXDX2171		221	264	NO
+TCGA-26-1438	Chemotherapy	Lomustine		221	221	NO
+TCGA-26-1439	Chemotherapy	Temodar		31	81	NO
+TCGA-26-1440	Chemotherapy	Temozolomide		108	NA	NO
+TCGA-26-1440	Chemotherapy	Temozolomide		30	78	NO
+TCGA-26-1442	Chemotherapy	Motexafin Gadolinium		27	66	NO
+TCGA-26-1442	Chemotherapy	Temodar		94	872	NO
+TCGA-26-1442	Chemotherapy	Temodar		27	66	NO
+TCGA-26-1443	Chemotherapy	Temozolomide		111	195	NO
+TCGA-26-1443	Chemotherapy	Temozolomide		32	79	NO
+TCGA-26-1799	Chemotherapy	Temodar		101	148	NO
+TCGA-26-5132	Chemotherapy	Temozolomide		40	83	NO
+TCGA-26-5132	Chemotherapy	Temozolomide		205	205	NO
+TCGA-26-5133	Chemotherapy	Temozolomide		116	120	NO
+TCGA-26-5133	Chemotherapy	Temozolamide		25	68	NO
+TCGA-26-5133	Chemotherapy	Temozolomide		144	351	NO
+TCGA-26-6173	Chemotherapy	Cilengitide		24	NA	YES
+TCGA-26-6173	Chemotherapy	Temozolomide		101	105	NO
+TCGA-26-6173	Chemotherapy	Temozolomide		129	245	NO
+TCGA-26-6173	Chemotherapy	Temozolomide		31	70	NO
+TCGA-26-6174	Chemotherapy	Temozolomide		29	66	NO
+TCGA-26-A7UX	Chemotherapy	Temodar		35	235	NO
+TCGA-26-A7UX	Chemotherapy	Lomustine	Stable Disease	511	NA	YES
+TCGA-26-A7UX	Targeted Molecular therapy	Avastin	Stable Disease	511	NA	YES
+TCGA-27-1830	Hormone Therapy	Dexamethasone		-1	70	NO
+TCGA-27-1830	Chemotherapy	Cisplatin		8	86	NO
+TCGA-27-1830	Chemotherapy	Temozolomide		8	86	NO
+TCGA-27-1831	Hormone Therapy	Dexamethasone		-8	505	NO
+TCGA-27-1831	Chemotherapy	Temozolomide		6	103	NO
+TCGA-27-1831	Chemotherapy	Cisplatin		4	98	NO
+TCGA-27-1831	Hormone Therapy	Oxcarbazepine		-8	505	NO
+TCGA-27-1832	Chemotherapy	Temozolomide		207	207	NO
+TCGA-27-1832	Hormone Therapy	Dexamethasone		0	300	NO
+TCGA-27-1832	Chemotherapy	Temozolomide		23	207	NO
+TCGA-27-1833	Chemotherapy	Fotemustine		171	359	NO
+TCGA-27-1833	Chemotherapy	Cisplatin		171	596	NO
+TCGA-27-1833	Hormone Therapy	Dexamethasone		-6	737	NO
+TCGA-27-1833	Chemotherapy	Procarbazine		171	725	NO
+TCGA-27-1833	Chemotherapy	Temozolomide		171	596	NO
+TCGA-27-1834	Hormone Therapy	Dexamethasone		-5	1233	NO
+TCGA-27-1834	Chemotherapy	Procarbazine		352	540	NO
+TCGA-27-1834	Chemotherapy	Cisplatin		15	168	NO
+TCGA-27-1834	Chemotherapy	Fotemustine		352	540	NO
+TCGA-27-1834	Chemotherapy	Temozolomoide		15	168	NO
+TCGA-27-1834	Chemotherapy	Temozolomide		352	662	YES
+TCGA-27-1835	Chemotherapy	PC2		206	462	NO
+TCGA-27-1835	Hormone Therapy	Levetiracetam		-7	648	NO
+TCGA-27-1835	Chemotherapy	BCNU		270	270	NO
+TCGA-27-1835	Chemotherapy	Cisplatin		2	3	NO
+TCGA-27-1835	Chemotherapy	Temozolomide		4	158	NO
+TCGA-27-1835	Hormone Therapy	Dexamethasone		-7	648	NO
+TCGA-27-1835	Chemotherapy	FT		208	208	NO
+TCGA-27-1836	Hormone Therapy	Dexamethasone		-7	914	NO
+TCGA-27-1836	Chemotherapy	Fotemustine		247	399	NO
+TCGA-27-1836	Chemotherapy	Bevacizumab		655	760	NO
+TCGA-27-1836	Hormone Therapy	Valproic Acid		-7	914	NO
+TCGA-27-1836	Chemotherapy	Temozolomide		472	562	NO
+TCGA-27-1836	Chemotherapy	PCB		245	399	NO
+TCGA-27-1836	Chemotherapy	Irinotecan		655	760	NO
+TCGA-27-1836	Chemotherapy	Temozolomide		48	90	NO
+TCGA-27-1836	Chemotherapy	Temozolomide		120	181	NO
+TCGA-27-1837	Chemotherapy	Temozolomide		1	153	NO
+TCGA-27-1837	Chemotherapy	Doxorubicin		35	106	NO
+TCGA-27-1837	Hormone Therapy	Dexamethasone		-6	427	NO
+TCGA-27-1837	Chemotherapy	CDDP		-1	148	NO
+TCGA-27-1838	Chemotherapy	Temozolomide		3	7	NO
+TCGA-27-1838	Hormone Therapy	Dexamethasone		-11	350	NO
+TCGA-27-1838	Hormone Therapy	Oxcarbazepine		-11	350	NO
+TCGA-27-1838	Chemotherapy	Cisplatin		1	2	NO
+TCGA-27-2518	Chemotherapy	Temozolomide		22	182	NO
+TCGA-27-2518	Hormone Therapy	Dexamethasone		55	753	NO
+TCGA-27-2518	Chemotherapy	Fotemustine		627	700	NO
+TCGA-27-2518	Chemotherapy	PC2		627	700	NO
+TCGA-27-2518	Hormone Therapy	Levenracetam		55	753	NO
+TCGA-27-2518	Chemotherapy	Cisplatin		20	107	NO
+TCGA-27-2519	Chemotherapy	Fotemustine		302	NA	YES
+TCGA-27-2519	Chemotherapy	Temozolomide		133	259	NO
+TCGA-27-2519	Hormone Therapy	Levetiracetam		-10	NA	YES
+TCGA-27-2519	Hormone Therapy	Dexamethasone		-10	NA	YES
+TCGA-27-2519	Chemotherapy	Temozolomide		49	95	NO
+TCGA-27-2521	Chemotherapy	Temozolomide		104	NA	YES
+TCGA-27-2521	Hormone Therapy	Levetiracetam		-15	NA	YES
+TCGA-27-2521	Hormone Therapy	Dexamethasone		-15	NA	YES
+TCGA-27-2523	Chemotherapy	Cisplatin		10	59	NO
+TCGA-27-2523	Chemotherapy	Erlotinib		97	386	NO
+TCGA-27-2523	Hormone Therapy	Phenytoin Sodium		-6	489	NO
+TCGA-27-2523	Chemotherapy	Temozolomide		60	380	NO
+TCGA-27-2523	Hormone Therapy	Dexamethasone		-6	489	NO
+TCGA-27-2523	Chemotherapy	Lumustine		11	11	NO
+TCGA-27-2524	Hormone Therapy	Oxcarbazepine		-6	231	NO
+TCGA-27-2524	Chemotherapy	Temozolomide		58	119	NO
+TCGA-27-2524	Hormone Therapy	Dexamethasone		-6	231	NO
+TCGA-27-2524	Chemotherapy	Gliadel Wafer		-6	-6	NO
+TCGA-27-2526	Hormone Therapy	Dexamethasone		-6	87	NO
+TCGA-27-2527	Hormone Therapy	Dexamethasone		-7	438	NO
+TCGA-27-2527	Hormone Therapy	Valproic acid		-7	438	NO
+TCGA-27-2528	Chemotherapy	Temozolomide		0	161	NO
+TCGA-27-2528	Chemotherapy	Cisplatin		-2	150	NO
+TCGA-27-2528	Hormone Therapy	Dexamethasone		-12	480	NO
+TCGA-27-2528	Hormone Therapy	Levetiracetam		-12	480	NO
+TCGA-27-2528	Chemotherapy	Temozolomide		445	465	NO
+TCGA-28-1745	Chemotherapy	Temozolomide		14	180	NO
+TCGA-28-1747	Chemotherapy	Temodar		25	36	NO
+TCGA-28-1749	Chemotherapy	Temozolomide		19	159	NO
+TCGA-28-1750	Chemotherapy	Temozolomide		10	116	NO
+TCGA-28-1751	Immunotherapy	Dendriticcell Vaccine		114	142	NO
+TCGA-28-1751	Chemotherapy	Temozolomide		14	208	NO
+TCGA-28-1752	Chemotherapy	Temozolomide		11	272	NO
+TCGA-28-1752	Immunotherapy	Dendriticcell Vaccine		105	132	NO
+TCGA-28-1755	Chemotherapy	Temodar		15	NA	NO
+TCGA-28-1756	Chemotherapy	Temodar		21	69	NO
+TCGA-28-1760	Chemotherapy	Tarceva		250	NA	
+TCGA-28-1760	Chemotherapy	Temodar		NA	NA	
+TCGA-28-1760	Chemotherapy	Avastin		105	NA	
+TCGA-28-2506	Immunotherapy	Tumor Vaccine		107	135	NO
+TCGA-28-2506	Chemotherapy	Temodar		27	72	NO
+TCGA-28-2506	Targeted Molecular therapy	BIBW 2992		177	NA	YES
+TCGA-28-2509	Chemotherapy	Temodar		33	NA	YES
+TCGA-28-2509	Targeted Molecular therapy	Cilenaitide		26	NA	YES
+TCGA-28-2512	Chemotherapy	Etoposide		NA	NA	
+TCGA-28-2512	Chemotherapy	Avastin		NA	NA	
+TCGA-28-2513	Targeted Molecular therapy	Avastin		44	NA	YES
+TCGA-28-2513	Chemotherapy	Temodar		28	57	NO
+TCGA-28-2513	Chemotherapy	Temodar		44	NA	YES
+TCGA-28-2514	Chemotherapy	Temozolomide		29	NA	YES
+TCGA-28-5204	Chemotherapy	Temodar		9	448	NO
+TCGA-28-5207	Chemotherapy	Temodar		NA	NA	
+TCGA-28-5207	Chemotherapy			NA	NA	
+TCGA-28-5208	Chemotherapy	Temodar		11	49	NO
+TCGA-28-5208	Chemotherapy	Avastin		287	435	NO
+TCGA-28-5208	Chemotherapy	Temodar		149	285	NO
+TCGA-28-5208	Chemotherapy	CPT11		287	435	NO
+TCGA-28-5209	Chemotherapy	Temodar		NA	NA	
+TCGA-28-5211	Chemotherapy	Temodar		-1	57	NO
+TCGA-28-5211	Chemotherapy	Avastin		239	307	NO
+TCGA-28-5211	Chemotherapy	CPT11		239	307	NO
+TCGA-28-5213	Chemotherapy	Temodar		11	NA	YES
+TCGA-28-5213	Chemotherapy	Temodar		9	50	NO
+TCGA-28-5214	Chemotherapy	Temodar		20	NA	YES
+TCGA-28-5214	Chemotherapy	CPT 11		262	NA	YES
+TCGA-28-5214	Chemotherapy	Avastin		262	NA	YES
+TCGA-28-5214	Chemotherapy	Temodar		20	62	NO
+TCGA-28-5215	Chemotherapy	Temodar		NA	NA	
+TCGA-28-5215	Chemotherapy	Avastin		NA	NA	
+TCGA-28-5215	Chemotherapy			NA	NA	
+TCGA-28-5216	Chemotherapy	Temodar		29	70	NO
+TCGA-28-5216		Temodar		29	70	NO
+TCGA-28-5218	Chemotherapy	Temodar		68	NA	NO
+TCGA-28-5219	Chemotherapy	Temodar		NA	NA	
+TCGA-28-5220	Chemotherapy	Temodar		NA	NA	
+TCGA-28-5220		Temodar		138	NA	NO
+TCGA-28-6450	Chemotherapy	Temozolomide		25	41	NO
+TCGA-28-6450	Chemotherapy	Temoxolomide		25	41	NO
+TCGA-32-1970	Chemotherapy	Temodar		28	67	NO
+TCGA-32-1970	Chemotherapy	Temodar		NA	NA	
+TCGA-32-1973	Chemotherapy	Temodar		99	417	NO
+TCGA-32-1973	Chemotherapy	Avastin		549	631	NO
+TCGA-32-1973	Chemotherapy	Irinotecan		549	631	NO
+TCGA-32-1973	Chemotherapy	Temodar		521	542	NO
+TCGA-32-1973	Chemotherapy	Temodar		22	64	NO
+TCGA-32-1973	Chemotherapy	BIBW2992		521	542	NO
+TCGA-32-1973	Chemotherapy	Metexafin Gadolinium		23	32	NO
+TCGA-32-1982	Chemotherapy	Gliadel Wafer		NA	NA	
+TCGA-32-1986	Chemotherapy	Temodar		126	139	NO
+TCGA-32-1987	Chemotherapy	Temodar		26	67	NO
+TCGA-32-1987	Chemotherapy	Temodar		130	134	NO
+TCGA-32-1987	Chemotherapy	Gliadle Wafer		68	68	NO
+TCGA-32-1987	Chemotherapy	Avastin		222	NA	NO
+TCGA-32-1991	Chemotherapy	Gliadel wafer		0	0	NO
+TCGA-32-1991	Chemotherapy	Temodar		94	98	NO
+TCGA-32-1991	Chemotherapy	Temodar		124	341	NO
+TCGA-32-1991	Chemotherapy	Temodar		22	65	NO
+TCGA-32-1991	Chemotherapy	Motexafin Gadolinium		23	65	NO
+TCGA-32-2491	Chemotherapy	Temodar		117	122	NO
+TCGA-32-2491	Chemotherapy	Temodar		18	59	NO
+TCGA-32-2494	Chemotherapy	Temodar		90	94	NO
+TCGA-32-2494	Chemotherapy	Temodar		488	550	NO
+TCGA-32-2494	Chemotherapy	Temodar		20	62	NO
+TCGA-32-2494	Chemotherapy	Temodar		120	403	NO
+TCGA-32-2494	Targeted Molecular therapy	Avastin		488	550	NO
+TCGA-32-2494	Targeted Molecular therapy	Avastin		620	620	NO
+TCGA-32-2494	Chemotherapy	Temodar		620	632	NO
+TCGA-32-2495	Chemotherapy	Temodar		278	429	NO
+TCGA-32-2495	Chemotherapy	Temodar		34	75	NO
+TCGA-32-2495	Chemotherapy	Gliadel Wafer		252	252	NO
+TCGA-32-2495	Chemotherapy	Temodar		103	107	NO
+TCGA-32-2495	Chemotherapy	Temodar		131	192	NO
+TCGA-32-2615	Chemotherapy	Gliadel Wafers		285	285	NO
+TCGA-32-2615	Targeted Molecular therapy	Bevacizumab Avastin		301	NA	YES
+TCGA-32-2615	Chemotherapy	Temodar		96	100	NO
+TCGA-32-2615	Chemotherapy	Gliadel Wafer		0	0	NO
+TCGA-32-2615	Chemotherapy	Metronomic Temodar		161	273	NO
+TCGA-32-2615	Targeted Molecular therapy	Avastin		301	NA	YES
+TCGA-32-2615	Chemotherapy	Temodar		26	65	NO
+TCGA-32-2615	Chemotherapy	Gliadel Wafer		285	285	NO
+TCGA-32-2616	Chemotherapy	Temodar		129	161	NO
+TCGA-32-2616	Chemotherapy	Temodar		29	71	NO
+TCGA-32-2616	Targeted Molecular therapy	Motexatin Gadoinium		30	51	NO
+TCGA-32-2616	Chemotherapy	Temodar		101	105	NO
+TCGA-32-2634	Chemotherapy	Gliadel Wafer		0	0	NO
+TCGA-32-2634	Chemotherapy	Temodar		17	59	YES
+TCGA-32-2634	Chemotherapy	Temodar		108	NA	YES
+TCGA-32-2638	Targeted Molecular therapy	Bevacizumab or placebo RTOG 0825		49	133	NO
+TCGA-32-2638	Chemotherapy	Temozolomide		26	68	NO
+TCGA-32-2638	Chemotherapy	Temozolomide		110	114	NO
+TCGA-32-4208	Chemotherapy	Temodar		146	150	NO
+TCGA-32-4208	Chemotherapy	Temodar		41	84	NO
+TCGA-32-4208	Chemotherapy	Temodar		174	NA	YES
+TCGA-32-4209	Chemotherapy	Temodar		41	85	NO
+TCGA-32-4209	Targeted Molecular therapy	Avastin		503	553	NO
+TCGA-32-4209	Chemotherapy	CCNU		503	532	NO
+TCGA-32-4211	Chemotherapy	Temodar		127	131	NO
+TCGA-32-4211	Chemotherapy	Temodar		93	97	NO
+TCGA-32-4211	Chemotherapy	Temodar		24	65	NO
+TCGA-32-4213	Chemotherapy	Temodar		130	135	NO
+TCGA-32-4213	Chemotherapy	Temodar		24	107	NO
+TCGA-32-4213	Chemotherapy	Temodar		155	289	NO
+TCGA-32-4213	Targeted Molecular therapy	Avastin		561	NA	YES
+TCGA-32-4719	Chemotherapy	Temodar		31	70	NO
+TCGA-32-4719	Chemotherapy	Temodar		88	245	NO
+TCGA-32-5222	Chemotherapy	Temodar		33	77	NO
+TCGA-41-2571	Chemotherapy	Temodar		22	25	NO
+TCGA-41-2572	Chemotherapy	Bevacizumab		133	351	NO
+TCGA-41-2572	Targeted Molecular therapy	Temodar		34	76	NO
+TCGA-41-2573	Chemotherapy	Temodar		100	142	NO
+TCGA-41-2573	Targeted Molecular therapy	Avastin		171	NA	YES
+TCGA-41-2573	Targeted Molecular therapy	BSI-201		127	142	NO
+TCGA-41-2573	Chemotherapy	Temodar		29	71	NO
+TCGA-41-2575	Chemotherapy	Temodar		95	145	NO
+TCGA-41-2575	Targeted Molecular therapy	Avastin		166	166	NO
+TCGA-41-3393	Chemotherapy	Temodar		51	95	NO
+TCGA-41-3915	Chemotherapy	Temodar		115	NA	YES
+TCGA-41-3915	Chemotherapy	Temodar		27	71	NO
+TCGA-41-3915	Chemotherapy	temodar		202	289	NO
+TCGA-41-5651	Chemotherapy	Gliadel wafer carmustine		231	NA	NO
+TCGA-41-5651	Chemotherapy	Temozolomide		105	195	NO
+TCGA-41-5651	Chemotherapy	Temozolomide		31	77	NO
+TCGA-41-5651	Targeted Molecular therapy	Avastin		345	NA	YES
+TCGA-41-5651	Targeted Molecular therapy	Avastin		359	387	NO
+TCGA-41-6646	Chemotherapy	Temozolomide		112	196	NO
+TCGA-41-6646	Chemotherapy	Temozolomide		40	81	NO
+TCGA-4W-AA9S	Chemotherapy	Temozolomide	Complete Response	56	105	NO
+TCGA-4W-AA9T	Chemotherapy	Temozolomide		36	NA	YES
+TCGA-74-6573	Chemotherapy	Temozolomide		24	66	NO
+TCGA-74-6575	Targeted Molecular therapy	Avastin		498	NA	YES
+TCGA-74-6575	Targeted Molecular therapy	Avastin		152	498	NO
+TCGA-74-6575	Chemotherapy	Temozolomide		36	73	NO
+TCGA-74-6575	Chemotherapy	Temozolomide		96	131	NO
+TCGA-74-6577	Chemotherapy	Temozolomide		55	99	NO
+TCGA-74-6577	Targeted Molecular therapy	Avastin		132	NA	YES
+TCGA-74-6578	Chemotherapy	Temozolomide		98	103	NO
+TCGA-74-6578	Targeted Molecular therapy	Avastin		222	NA	YES
+TCGA-74-6578	Chemotherapy	Temozolomide		38	80	NO
+TCGA-74-6581	Chemotherapy	Temozolomide		94	NA	YES
+TCGA-74-6581	Chemotherapy	Temozolomide		26	74	NO
+TCGA-74-6584	Targeted Molecular therapy	Avastin		98	NA	YES
+TCGA-74-6584	Chemotherapy	Temozolomide		99	NA	YES
+TCGA-74-6584	Chemotherapy	Temozolomide		21	65	NO
+TCGA-76-4925	Chemotherapy	Temodar		NA	145	NO
+TCGA-76-4926	Chemotherapy	Temodar		83	115	NO
+TCGA-76-4928	Chemotherapy	Temodar		NA	70	NO
+TCGA-76-4931	Chemotherapy	Temodar		NA	NA	
+TCGA-76-4932	Chemotherapy	Temodar (escalation)		NA	NA	
+TCGA-76-4935	Chemotherapy	Temodar		176	NA	YES
+TCGA-76-4935	Chemotherapy	Avastin		11	NA	YES
+TCGA-76-6191	Chemotherapy	Avastin		269	423	NO
+TCGA-76-6191	Chemotherapy	Temodar		24	423	NO
+TCGA-76-6192	Chemotherapy	Temodar		NA	75	NO
+TCGA-76-6193	Chemotherapy	Temodar		9	NA	NO
+TCGA-76-6280	Chemotherapy	Temodar		27	NA	NO
+TCGA-76-6282	Chemotherapy	Avastin		320	374	NO
+TCGA-76-6282	Chemotherapy	Temodar		24	213	NO
+TCGA-76-6285	Chemotherapy	Temodar		NA	NA	NO
+TCGA-76-6286	Chemotherapy	Avastin		510	580	NO
+TCGA-76-6286	Chemotherapy	Temodar		102	NA	NO
+TCGA-76-6656	Chemotherapy	Temodar		11	NA	NO
+TCGA-76-6657	Chemotherapy	Temodar		NA	NA	NO
+TCGA-76-6661	Chemotherapy	Temodar		48	115	NO
+TCGA-76-6662	Chemotherapy	Carmustine		254	NA	YES
+TCGA-76-6662	Chemotherapy	Temodar		88	227	NO
+TCGA-76-6663	Chemotherapy	Temodar		44	NA	YES
+TCGA-76-6663	Immunotherapy	ICT-107		93	175	NO
+TCGA-76-6664	Chemotherapy	Avastin		43	223	NO
+TCGA-76-6664	Chemotherapy	Temodar		6	NA	YES
+TCGA-81-5911	Chemotherapy	Temodar		104	108	NO
+TCGA-81-5911	Chemotherapy	Temodar		21	69	NO
+TCGA-81-5911	Chemotherapy	Temodar		130	260	NO
+TCGA-87-5896	Chemotherapy	Temodar	Complete Response	14	642	NO

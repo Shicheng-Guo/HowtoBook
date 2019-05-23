@@ -1,0 +1,17 @@
+bcr_patient_barcode	therapy_types	drug_name	measure_of_response	days_to_drug_therapy_start	days_to_drug_therapy_end	therapy_ongoing
+TCGA-4V-A9QQ	Chemotherapy	ETOPOSIDE	Complete Response	261	369	NO
+TCGA-4V-A9QQ	Chemotherapy	CISPLATINUM	Complete Response	261	369	NO
+TCGA-4X-A9FA	Immunotherapy	azaTHIOprine		2	NA	YES
+TCGA-4X-A9FD	Immunotherapy	azaTHIOprine		92	NA	YES
+TCGA-5U-AB0D	Chemotherapy	cisplatin	Partial Response	15	201	NO
+TCGA-5U-AB0D		etoposide	Partial Response	15	201	NO
+TCGA-X7-A8M5	Chemotherapy	Carboplatin		NA	NA	
+TCGA-X7-A8M5	Chemotherapy	Taxol		NA	NA	
+TCGA-X7-A8M5	Chemotherapy	Cisplatin		NA	NA	
+TCGA-X7-A8M6	Chemotherapy	Pemetrexed	Clinical Progressive Disease	4100	4213	NO
+TCGA-X7-A8M6	Chemotherapy	cisplatin	Clinical Progressive Disease	NA	2000	NO
+TCGA-X7-A8M6	Chemotherapy	doxorubicin	Clinical Progressive Disease	NA	2000	NO
+TCGA-X7-A8M6	Chemotherapy	cyclophosphamide	Clinical Progressive Disease	NA	2000	NO
+TCGA-XM-AAZ1	Chemotherapy	Cisplatin	Stable Disease	13	55	NO
+TCGA-XU-A933	Chemotherapy	Cisplatin		137	218	NO
+TCGA-XU-A933	Chemotherapy	Etoposide		137	221	NO
