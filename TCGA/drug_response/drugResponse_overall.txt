@@ -1,0 +1,110 @@
+TCGA-ACC.drug.txt:"2"	Clinical Progressive Disease	3
+TCGA-ACC.drug.txt:"3"	Stable Disease	10
+TCGA-BLCA.drug.txt:"2"	Clinical Progressive Disease	87
+TCGA-BLCA.drug.txt:"3"	Complete Response	85
+TCGA-BLCA.drug.txt:"4"	Partial Response	47
+TCGA-BLCA.drug.txt:"5"	Stable Disease	29
+TCGA-BRCA.drug.txt:"2"	Clinical Progressive Disease	55
+TCGA-BRCA.drug.txt:"3"	Complete Response	542
+TCGA-BRCA.drug.txt:"4"	Partial Response	12
+TCGA-BRCA.drug.txt:"5"	Stable Disease	36
+TCGA-CESC.drug.txt:"2"	Clinical Progressive Disease	22
+TCGA-CESC.drug.txt:"3"	Complete Response	75
+TCGA-CESC.drug.txt:"4"	Partial Response	8
+TCGA-CESC.drug.txt:"5"	Stable Disease	9
+TCGA-CHOL.drug.txt:"2"	Clinical Progressive Disease	4
+TCGA-CHOL.drug.txt:"3"	Complete Response	2
+TCGA-CHOL.drug.txt:"4"	Partial Response	3
+TCGA-CHOL.drug.txt:"5"	Stable Disease	3
+TCGA-COAD.drug.txt:"2"	Clinical Progressive Disease	80
+TCGA-COAD.drug.txt:"3"	Complete Response	126
+TCGA-COAD.drug.txt:"4"	Partial Response	33
+TCGA-COAD.drug.txt:"5"	Stable Disease	15
+TCGA-ESCA.drug.txt:"2"	Clinical Progressive Disease	17
+TCGA-ESCA.drug.txt:"3"	Complete Response	50
+TCGA-ESCA.drug.txt:"4"	Partial Response	6
+TCGA-ESCA.drug.txt:"5"	Stable Disease	2
+TCGA-GBM.drug.txt:"2"	Clinical Progressive Disease	10
+TCGA-GBM.drug.txt:"3"	Complete Response	2
+TCGA-GBM.drug.txt:"4"	Stable Disease	14
+TCGA-HNSC.drug.txt:"2"	Clinical Progressive Disease	39
+TCGA-HNSC.drug.txt:"3"	Complete Response	103
+TCGA-HNSC.drug.txt:"4"	Partial Response	6
+TCGA-HNSC.drug.txt:"5"	Stable Disease	9
+TCGA-KICH.drug.txt:"2"	Clinical Progressive Disease	3
+TCGA-KICH.drug.txt:"3"	Partial Response	2
+TCGA-KIRC.drug.txt:"2"	Clinical Progressive Disease	11
+TCGA-KIRC.drug.txt:"3"	Complete Response	1
+TCGA-KIRC.drug.txt:"4"	Stable Disease	4
+TCGA-KIRP.drug.txt:"2"	Clinical Progressive Disease	8
+TCGA-KIRP.drug.txt:"3"	Complete Response	4
+TCGA-KIRP.drug.txt:"4"	Partial Response	3
+TCGA-KIRP.drug.txt:"5"	Stable Disease	2
+TCGA-LGG.drug.txt:"2"	Clinical Progressive Disease	133
+TCGA-LGG.drug.txt:"3"	Complete Response	20
+TCGA-LGG.drug.txt:"4"	Partial Response	18
+TCGA-LGG.drug.txt:"5"	Stable Disease	143
+TCGA-LIHC.drug.txt:"2"	Clinical Progressive Disease	26
+TCGA-LIHC.drug.txt:"3"	Complete Response	2
+TCGA-LIHC.drug.txt:"4"	Partial Response	5
+TCGA-LIHC.drug.txt:"5"	Stable Disease	6
+TCGA-LUAD.drug.txt:"2"	Clinical Progressive Disease	68
+TCGA-LUAD.drug.txt:"3"	Complete Response	129
+TCGA-LUAD.drug.txt:"4"	Partial Response	19
+TCGA-LUAD.drug.txt:"5"	Stable Disease	32
+TCGA-LUSC.drug.txt:"2"	Clinical Progressive Disease	44
+TCGA-LUSC.drug.txt:"3"	Complete Response	96
+TCGA-LUSC.drug.txt:"4"	Partial Response	3
+TCGA-LUSC.drug.txt:"5"	Stable Disease	6
+TCGA-MESO.drug.txt:"2"	Clinical Progressive Disease	40
+TCGA-MESO.drug.txt:"3"	Complete Response	8
+TCGA-MESO.drug.txt:"4"	Partial Response	21
+TCGA-MESO.drug.txt:"5"	Stable Disease	27
+TCGA-OV.drug.txt:"2"	Clinical Progressive Disease	3
+TCGA-OV.drug.txt:"3"	Complete Response	13
+TCGA-OV.drug.txt:"4"	Partial Response	4
+TCGA-OV.drug.txt:"5"	Stable Disease	1
+TCGA-PAAD.drug.txt:"2"	Clinical Progressive Disease	72
+TCGA-PAAD.drug.txt:"3"	Complete Response	45
+TCGA-PAAD.drug.txt:"4"	Partial Response	6
+TCGA-PAAD.drug.txt:"5"	Stable Disease	25
+TCGA-PCPG.drug.txt:"2"	Clinical Progressive Disease	7
+TCGA-PCPG.drug.txt:"3"	Partial Response	1
+TCGA-PRAD.drug.txt:"2"	Clinical Progressive Disease	10
+TCGA-PRAD.drug.txt:"3"	Complete Response	35
+TCGA-PRAD.drug.txt:"4"	Partial Response	11
+TCGA-PRAD.drug.txt:"5"	Stable Disease	6
+TCGA-READ.drug.txt:"2"	Clinical Progressive Disease	21
+TCGA-READ.drug.txt:"3"	Complete Response	58
+TCGA-READ.drug.txt:"4"	Partial Response	11
+TCGA-READ.drug.txt:"5"	Stable Disease	19
+TCGA-SARC.drug.txt:"2"	Clinical Progressive Disease	98
+TCGA-SARC.drug.txt:"3"	Complete Response	37
+TCGA-SARC.drug.txt:"4"	Partial Response	17
+TCGA-SARC.drug.txt:"5"	Stable Disease	13
+TCGA-SKCM.drug.txt:"2"	Clinical Progressive Disease	93
+TCGA-SKCM.drug.txt:"3"	Complete Response	53
+TCGA-SKCM.drug.txt:"4"	Partial Response	19
+TCGA-SKCM.drug.txt:"5"	Stable Disease	8
+TCGA-STAD.drug.txt:"2"	Clinical Progressive Disease	90
+TCGA-STAD.drug.txt:"3"	Complete Response	198
+TCGA-STAD.drug.txt:"4"	Partial Response	10
+TCGA-STAD.drug.txt:"5"	Stable Disease	40
+TCGA-TGCT.drug.txt:"2"	Clinical Progressive Disease	3
+TCGA-TGCT.drug.txt:"3"	Complete Response	123
+TCGA-TGCT.drug.txt:"4"	Partial Response	36
+TCGA-TGCT.drug.txt:"5"	Stable Disease	1
+TCGA-THCA.drug.txt:"2"	Complete Response	11
+TCGA-THCA.drug.txt:"3"	Stable Disease	1
+TCGA-THYM.drug.txt:"2"	Clinical Progressive Disease	4
+TCGA-THYM.drug.txt:"3"	Complete Response	2
+TCGA-THYM.drug.txt:"4"	Partial Response	2
+TCGA-THYM.drug.txt:"5"	Stable Disease	1
+TCGA-UCEC.drug.txt:"2"	Clinical Progressive Disease	27
+TCGA-UCEC.drug.txt:"3"	Complete Response	110
+TCGA-UCEC.drug.txt:"4"	Partial Response	4
+TCGA-UCEC.drug.txt:"5"	Stable Disease	4
+TCGA-UCS.drug.txt:"2"	Clinical Progressive Disease	20
+TCGA-UCS.drug.txt:"3"	Complete Response	49
+TCGA-UCS.drug.txt:"4"	Partial Response	9
+TCGA-UCS.drug.txt:"5"	Stable Disease	9
