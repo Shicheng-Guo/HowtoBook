@@ -1,4 +1,1 @@
-
-install.packages("easyPubMed")
-
-library("easyPubMed")
+MD Anderson and Emory Event to US Research
