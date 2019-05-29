@@ -1,6 +1,10 @@
 library("TCGAbiolinks")
+# 1) receive pid from TCGAbiolinks
 pid<-TCGAbiolinks:::getGDCprojects()$project_id
 pid<-pid[grep("TCGA",pid)]
+# 1) receive pid from github
+pid<-read.table("https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/TCGA/drug_response/Pid.drugResponse.txt",head=F,sep="\t")
+pid<-as.character(pid[,1])
 
 drug2csv<-function(clinical.drug){
   bcr_patient_barcode<-clinical.drug$bcr_patient_barcode
