@@ -1430,8 +1430,8 @@ TCGA-24-2260	Chemotherapy	Hexalen		876	1009	NO
 TCGA-24-2260	Chemotherapy	Taxol		24	135	NO
 TCGA-24-2260	Chemotherapy	Carboplatin		682	849	NO
 TCGA-24-2267	Chemotherapy	Carboplatin		580	793	NO
-TCGA-24-2267	Chemotherapy	Carboplatin #1		1172	1332	NO
-TCGA-24-2267	Chemotherapy	Cisplatin #2-7		1172	1332	NO
+TCGA-24-2267	Chemotherapy	Carboplatin 1172	1332	NO
+TCGA-24-2267	Chemotherapy	Cisplatin 1172	1332	NO
 TCGA-24-2267	Chemotherapy	Taxol		580	793	NO
 TCGA-24-2267	Chemotherapy	Navelbine		983	997	NO
 TCGA-24-2267	Chemotherapy	Topotecan		1011	1011	NO
