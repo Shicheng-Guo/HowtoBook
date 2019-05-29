@@ -7,4 +7,4 @@ Part2= '] }},"format":"TSV","fields":"file_id,file_name,cases.submitter_id,cases
 Part3= paste0("\"",manifest_length, "\"", "}")
 Sentence= paste(Part1,id,Part2,Part3, collapse=" ")
 write.table(Sentence,"Payload.txt",quote=F,col.names=F,row.names=F)
-system("curl --request POST --header \"Content-Type: application/json\" --data @Payload.txt \"https://api.gdc.cancer.gov/files\" > file_metadata.txt")
+system("curl --request POST --header \"Content-Type: application/json\" --data @Payload.txt \"https://api.gdc.cancer.gov/files\" > barcode.txt")
