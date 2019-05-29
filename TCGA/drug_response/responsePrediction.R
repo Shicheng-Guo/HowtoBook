@@ -21,11 +21,23 @@ colnames(rnaseq)<-id2phen4(colnames(rnaseq))
 newphen<-phen[unlist(lapply(colnames(rnaseq),function(x) match(x,phen$ID)[1])),]
 sort(table(newphen$bcr_patient_barcode))
 table(newphen$measure_of_response)
-levels(newphen$measure_of_response)<-c(0,1,0,0)
-input<-data.frame(phen=newphen$measure_of_response,t(rnaseq))
-input[1:10,1:10]
+levels(newphen$measure_of_response)<-c(0,1,1,0)
+newinput<-data.frame(phen=newphen$measure_of_response,t(rnaseq))
 
-SD<-unlist(apply(input[,2:ncol(input)],2,function(x) sd(x)))
+SD<-unlist(apply(newinput[,2:ncol(newinput)],2,function(x) sd(x)))
+
+input1<-newinput[,c(1,order(SD,decreasing = T)[1:1000])]
+input2<-newinput[,c(1,order(SD,decreasing = T)[1000:2000])]
+input3<-newinput[,c(1,order(SD,decreasing = T)[2000:3000])]
+
+RF1 <- randomForest(as.factor(phen) ~ ., data=input1, importance=TRUE,proximity=T)
+RF2 <- randomForest(as.factor(phen) ~ ., data=input2, importance=TRUE,proximity=T)
+RF3 <- randomForest(as.factor(phen) ~ ., data=input3, importance=TRUE,proximity=T)
+
+newphen<-phen[unlist(lapply(colnames(rnaseq),function(x) match(x,phen$ID)[1])),]
+rlt<-newphen[match(names(RF1$predicted),newphen$ID),]
+rlt$pred<-RF1$predicted
+table(rlt$measure_of_response,rlt$pred)
 
 set.seed(49)
 cv.error <- NULL
@@ -39,7 +51,7 @@ for(i in 1:k){
   train.cv <- input[index,]
   test.cv <- input[-index,]
   
-  RF <- randomForest(as.factor(phen) ~ ., data=train.cv, importance=TRUE,proximity=F)
+  RF <- randomForest(as.factor(phen) ~ ., data=train.cv, importance=TRUE,proximity=T)
   imp<-RF$importance
   head(imp)
   imp<-imp[order(imp[,4],decreasing = T),]
@@ -51,10 +63,10 @@ for(i in 1:k){
   n <- colnames(train.cv)
   f <- as.formula(paste("phen ~", paste(n[!n %in% "phen"], collapse = " + ")))
   
-  nn <- neuralnet(f,data=train.cv,hidden=c(3),act.fct = "logistic",linear.output = FALSE)
+  nn <- neuralnet(f,data=train.cv,hidden=c(10,6,3),act.fct = "logistic",linear.output = T)
   #plot(nn,lwd=0.85,cex=1)
   pr.nn <- neuralnet::compute(nn,test.cv)
-  trainRlt<-data.frame(phen=train.cv[,1],pred=unlist(nn$net.result))
+  trainRlt<-data.frame(phen=train.cv[,1],pred=unlist(nn$net.result[[1]][,1]))
   testRlt<-data.frame(phen=test.cv[,1],pred=unlist(pr.nn$net.result))
   rownames(trainRlt)=row.names(train.cv)
   rownames(testRlt)=row.names(test.cv)
@@ -71,3 +83,8 @@ pred2 <- predRisk(model.glm2)
 par(mfrow=c(2,2),cex.lab=1.5,cex.axis=1.5)
 plotROC(data=data1,cOutcome=1,predrisk=cbind(pred1))
 plotROC(data=data2,cOutcome=1,predrisk=cbind(pred2))
+
+
+xx<-data.frame(p=nn$net.result[[1]][,1],r=input[match(names(nn$net.result[[1]][,1]),rownames(input)),1])
+
+
