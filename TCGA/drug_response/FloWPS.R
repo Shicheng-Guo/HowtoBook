@@ -1,3 +1,6 @@
+
+DRG<-read.table("https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/TCGA/drug_response/FloWPS.txt")
+
 ENSG<-unlist(lapply(colnames(train.cv),function(x) unlist(strsplit(x,"[.]"))[1]))
 ENSG2Symbol(ENSG)
 library("readxl")
@@ -16,3 +19,6 @@ for(i in 1:10){
 }
 
 write.table(unique(rg),file="drugResponseGene.txt",quote=F,row.names = F)
+
+
+
