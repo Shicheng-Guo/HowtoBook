@@ -3,8 +3,8 @@ library("arm")
 library("plyr") 
 library("PredictABEL")
 library("neuralnet")
-
 setwd("/home/guosa/hpc/project/TCGA")
+source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/GscTools.R")
 
 phen<-read.table("https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/TCGA/drug_response/pancancer.chemotherapy.response.txt",head=T,sep="\t")
 barcode<-read.table("/home/guosa/hpc/project/TCGA/pancancer/FPKM/barcode.txt",head=T,sep="\t")
@@ -15,30 +15,43 @@ ncn<-barcode[match(unlist(lapply(colnames(rnaseqdata),function(x) unlist(strspli
 ncol<-match("cases.0.samples.0.submitter_id",colnames(ncn))
 colnames(rnaseqdata)<-ncn[,ncol]
 phen$ID<-paste(phen$bcr_patient_barcode,"-01",sep="")
-
 rnaseq<-rnaseqdata[,na.omit(match(unique(phen$ID),id2phen4(colnames(rnaseqdata))))]
+rnaseq<-rnaseq[which(unlist(apply(rnaseq,1,function(x) sd(x)>0))),]
 colnames(rnaseq)<-id2phen4(colnames(rnaseq))
 newphen<-phen[unlist(lapply(colnames(rnaseq),function(x) match(x,phen$ID)[1])),]
 sort(table(newphen$bcr_patient_barcode))
-table(newphen$measure_of_response)
 levels(newphen$measure_of_response)<-c(0,1,1,0)
 newinput<-data.frame(phen=newphen$measure_of_response,t(rnaseq))
 
-SD<-unlist(apply(newinput[,2:ncol(newinput)],2,function(x) sd(x)))
+######################################################################################
+P=apply(newinput[,2:ncol(newinput)],2,function(x) summary(glm(as.factor(newinput[,1])~x,family=binomial))$coefficients[2,4])
+pQQ(P, nlabs =length(P), conf = 0.95, mark = F) 
+newinput<-newinput[,c(1,which(P<8.5*10^-7)+1)]
+save(newinput,file="Pancancer.DrugResponse.V5292.N1462.RData")
+load("Pancancer.DrugResponse.V5292.N1462.RData")
+######################################################################################
+library("SIS")
+x=data.matrix(newinput[,2:ncol(newinput)])
+y=as.numeric(newinput[,1])-1
+sisrlt<-SIS(x,y,family = c( "binomial"),penalty = c("lasso"))
+newx<-x[,sisrlt$ix]
+input<-data.frame(phen=y,newx)
 
-input1<-newinput[,c(1,order(SD,decreasing = T)[1:1000])]
-input2<-newinput[,c(1,order(SD,decreasing = T)[1000:2000])]
-input3<-newinput[,c(1,order(SD,decreasing = T)[2000:3000])]
+ENSG<-unlist(lapply(colnames(newx),function(x) unlist(strsplit(x,"[.]"))[1]))
+ENSG2Symbol(ENSG)
+RF <- randomForest(as.factor(phen) ~ ., data=input,mtry=10,importance=TRUE,proximity=T)
 
-RF1 <- randomForest(as.factor(phen) ~ ., data=input1, importance=TRUE,proximity=T)
-RF2 <- randomForest(as.factor(phen) ~ ., data=input2, importance=TRUE,proximity=T)
-RF3 <- randomForest(as.factor(phen) ~ ., data=input3, importance=TRUE,proximity=T)
+fit<-bayesglm(phen~.,data=input,family=binomial(),na.action=na.omit)
+pred <- predRisk(fit)
+plotROC(data=input,cOutcome=1,predrisk=cbind(pred))
 
-newphen<-phen[unlist(lapply(colnames(rnaseq),function(x) match(x,phen$ID)[1])),]
-rlt<-newphen[match(names(RF1$predicted),newphen$ID),]
-rlt$pred<-RF1$predicted
-table(rlt$measure_of_response,rlt$pred)
-
+pdf("ROC.pdf")
+par(cex.lab=1.5,cex.axis=1.5)
+plotROC(data=input,cOutcome=1,predrisk=cbind(pred))
+dev.off()
+######################################################################################
+library("neuralnet")
+input<-newinput
 set.seed(49)
 cv.error <- NULL
 k <- 10
@@ -64,7 +77,6 @@ for(i in 1:k){
   f <- as.formula(paste("phen ~", paste(n[!n %in% "phen"], collapse = " + ")))
   
   nn <- neuralnet(f,data=train.cv,hidden=c(10,6,3),act.fct = "logistic",linear.output = T)
-  #plot(nn,lwd=0.85,cex=1)
   pr.nn <- neuralnet::compute(nn,test.cv)
   trainRlt<-data.frame(phen=train.cv[,1],pred=unlist(nn$net.result[[1]][,1]))
   testRlt<-data.frame(phen=test.cv[,1],pred=unlist(pr.nn$net.result))
@@ -73,6 +85,7 @@ for(i in 1:k){
   rlt1<-rbind(rlt1,trainRlt)  
   rlt2<-rbind(rlt2,testRlt)
   pbar$step()
+  print(i)
 }
 data1<-na.omit(data.frame(rlt1))
 data2<-na.omit(data.frame(rlt2))
@@ -83,8 +96,7 @@ pred2 <- predRisk(model.glm2)
 par(mfrow=c(2,2),cex.lab=1.5,cex.axis=1.5)
 plotROC(data=data1,cOutcome=1,predrisk=cbind(pred1))
 plotROC(data=data2,cOutcome=1,predrisk=cbind(pred2))
+######################################################################################
 
-
-xx<-data.frame(p=nn$net.result[[1]][,1],r=input[match(names(nn$net.result[[1]][,1]),rownames(input)),1])
 
 
