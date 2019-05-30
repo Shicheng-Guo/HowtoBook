@@ -1,3 +1,7 @@
+library("randomForest")
+library("arm")
+library("plyr") 
+library("PredictABEL")
 library("neuralnet")
 input<-newinput
 set.seed(49)
@@ -19,8 +23,9 @@ for(i in 1:k){
   imp<-RF$importance
   head(imp)
   imp<-imp[order(imp[,4],decreasing = T),]
+  write.table(imp,file=paste("RandomForest.VIP.",i,".txt",sep=""),sep="\t",quote=F,row.names = T,col.names = NA)
   topvar<-match(rownames(imp)[1:30],colnames(input))
-  
+
   train.cv <- input[index,c(1,topvar)]
   test.cv <- input[-index,c(1,topvar)]
   
