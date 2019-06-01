@@ -1,0 +1,16 @@
+```
+library("scholar")
+ids <- c("BixB4TsAAAAJ")
+compare_scholar_careers(ids,career = TRUE)
+get_citation_history(ids)
+network<-get_coauthors(ids,n_coauthors = 5, n_deep = 2)
+plot_coauthors(network, size_labels = 5)
+get_complete_authors(id, pubid)
+get_num_articles(ids)
+get_num_distinct_journals(ids)
+get_num_top_journals(ids)
+get_oldest_article(ids)
+get_profile(ids)
+get_publications(ids, cstart = 0, pagesize = 100, flush = FALSE)
+predict_h_index(ids)
+```
