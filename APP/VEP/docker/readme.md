@@ -1,3 +1,4 @@
+Ubuntu 18.04
 ```
 sudo apt-get update
 sudo apt-get remove docker docker-engine docker.io
