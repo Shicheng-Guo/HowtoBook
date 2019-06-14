@@ -10,6 +10,10 @@
 
    https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/APP/beagle5.0/Step3.beaglephasing.sh
 
-4. Post-imputation filiter (DR2>0.7)
+4. Post-imputation filiter (DR2>0.6)
 
    https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/APP/beagle5.0/Step4.postfiltering.sh
+   
+5. Loss-of-function variants + deleterious SNPs
+
+
