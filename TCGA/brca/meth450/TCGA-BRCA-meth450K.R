@@ -36,6 +36,12 @@ RawNARemove<-function(data,missratio=0.3){
   output
 }
 
+cpg2symbol<-function(cpg){
+  map<-read.table("https://raw.githubusercontent.com/Shicheng-Guo/AnnotationDatabase/master/hg19/GPL13534_450K_hg19_V3.bed")
+  symbol<-map[match(cpg,map[,4]),5]
+  return(symbol)
+}
+
 tsneplot<-function(mydata,phen,plot="tsne.plot.pdf"){
   library("tsne")
   data=data.frame(phen,mydata)
@@ -75,20 +81,26 @@ head(phen)
 ##################################################################################################### 
 ####################### Step 3: Select BUR CpG probes ############################################### 
 ##################################################################################################### 
+library("SIS")
+library("arm")
+library("randomForest")
 system("wget https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/TCGA/Pancancer_mh450/Normal.PBMC.GEO.HM450K.Beta.RData")
 load("Normal.PBMC.GEO.HM450K.Beta.RData")
 system("wc -l ~/hpc/db/hg19/GPL13534_450K_hg19_PBMC_BUR.bed")
 BUR<-read.table("~/hpc/db/hg19/GPL13534_450K_hg19_PBMC_BUR.bed")
 input<-input[rownames(input) %in% BUR$V4,]
-tsneplot(t(input),bin,plot="TCGA.BRCA.BUR.TSNE.pdf")
+PDMR<-read.table("TCGA-Pancancer-MH450.Meta.diff.txt",head=T,row.names=1,sep="\t")
+DMR<-subset(PDMR,beta>0.1 & pval<10^-5)
+DMG<-na.omit(cpg2symbol(rownames(DMR)))
+N<-length(unique(DMG))
+input<-input[rownames(input)%in%rownames(DMR),]
+input<-data.frame(t(na.omit(t(input))))
 
-library("SIS")
-levels(phen$bin)<-c(0,1)
-input<-data.frame(phen=phen$measure_of_response,t(input))
+phen$bin[phen$bin==11]<-0
+input<-data.frame(phen=phen$bin,t(input))
 set.seed(49)
 cv.error <- NULL
 k <- 10
-pbar <- create_progress_bar('text')
 rlt1<-c()
 rlt2<-c()
 for(i in 1:k){
@@ -96,13 +108,13 @@ for(i in 1:k){
   train.cv <- input[index,]
   test.cv <- input[-index,]
   P=apply(train.cv[,2:ncol(train.cv)],2,function(x) summary(bayesglm(as.factor(train.cv[,1])~x,family=binomial))$coefficients[2,4])
-  train.cv<-train.cv[,c(1,match(names(P[head(order(P),n=6000)]),colnames(train.cv)))]
-  test.cv<-test.cv[,c(1,match(names(P[head(order(P),n=6000)]),colnames(test.cv)))]
+  train.cv<-train.cv[,c(1,match(names(P[head(order(P),n=1000)]),colnames(train.cv)))]
+  test.cv<-test.cv[,c(1,match(names(P[head(order(P),n=1000)]),colnames(test.cv)))]
   meth<-list()
   meth$train.cv=train.cv
   meth$test.cv=test.cv
   print(paste(ncol(train.cv),"variables passed P-value threshold and enrolled in SIS model"))
-  RF <- randomForest(as.factor(phen) ~ ., data=train.cv, importance=TRUE,proximity=T)
+  RF <- randomForest(phen ~ ., data=train.cv, importance=TRUE,proximity=T)
   imp<-RF$importance
   imp<-imp[order(imp[,4],decreasing = T),]
   head(imp)
@@ -134,10 +146,6 @@ plotROC(data=data2,cOutcome=1,predrisk=cbind(pred2))
 
 
 
-
-
-
-
-
+tsneplot(t(input),bin,plot="TCGA.BRCA.BUR.TSNE.pdf")
 
 
