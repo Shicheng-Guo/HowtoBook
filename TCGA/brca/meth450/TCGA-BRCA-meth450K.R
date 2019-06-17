@@ -17,6 +17,8 @@ id2bin<-function(filename){
   as.numeric(lapply(strsplit(filename,"-"),function(x) x[4]))
 }
 
+filename=colnames(input)
+
 id2pid<-function(filename){
   library("stringr")
   filename<-as.array(str_extract(filename,"edu_...."))
@@ -84,6 +86,7 @@ head(phen)
 library("SIS")
 library("arm")
 library("randomForest")
+map<-read.table("https://raw.githubusercontent.com/Shicheng-Guo/AnnotationDatabase/master/hg19/GPL13534_450K_hg19_V3.bed")
 system("wget https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/TCGA/Pancancer_mh450/Normal.PBMC.GEO.HM450K.Beta.RData")
 load("Normal.PBMC.GEO.HM450K.Beta.RData")
 system("wc -l ~/hpc/db/hg19/GPL13534_450K_hg19_PBMC_BUR.bed")
@@ -94,10 +97,36 @@ DMR<-subset(PDMR,beta>0.1 & pval<10^-5)
 DMG<-na.omit(cpg2symbol(rownames(DMR)))
 N<-length(unique(DMG))
 input<-input[rownames(input)%in%rownames(DMR),]
+bin<-id2bin(colnames(input))
+input<-data.frame(phen=bin,t(input))
 input<-data.frame(t(na.omit(t(input))))
+input$phen[input$phen==11]<-0
+save(input,file="TCGA-BRCA-BUR-PAN-BRCA-Beta.RData")
 
-phen$bin[phen$bin==11]<-0
-input<-data.frame(phen=phen$bin,t(input))
+P=apply(input[,2:ncol(input)],2,function(x) summary(bayesglm(as.factor(input[,1])~x,family=binomial))$coefficients[2,4])
+newinput<-input[,c(1,match(names(P[head(order(P),n=2000)]),colnames(input)))]
+RF <- randomForest(as.factor(phen) ~ ., data=newinput, importance=TRUE,proximity=T)
+imp<-RF$importance
+imp<-imp[order(imp[,4],decreasing = T),]
+imp<-imp[1:500,]
+newimp<-data.frame(imp,Symbol=cpg2symbol(row.names(imp)))
+newimp<-na.omit(newimp)
+RLT<-data.frame(newimp,map[match(rownames(newimp),map[,4]),])
+START=RLT$V2-150
+END=RLT$V3+150
+CHR=RLT$V1
+RLT<-data.frame(CHR,START,END,RLT)
+write.table(RLT,file="RF.BRCA.BUR.PAN.Top200VIP.txt",sep="\t",quote=F,col.names = NA,row.names = T)
+##################################################################################################### 
+####################### Step 4: Tumor Suppressor GENES ############################################### 
+##################################################################################################### 
+TSGTARGET<-newimp[newimp$Symbol %in% TSG[,2],]
+GENE<-cpg2symbol(row.names(imp[1:500,]))
+TSG<-read.table("https://raw.githubusercontent.com/Shicheng-Guo/AnnotationDatabase/master/TSGene2.0.txt",head=T,sep="\t")
+GENE[GENE%in%TSG[,2]]
+##################################################################################################### 
+####################### Step 5: Tumor Suppressor GENES ############################################### 
+##################################################################################################### 
 set.seed(49)
 cv.error <- NULL
 k <- 10
@@ -108,13 +137,13 @@ for(i in 1:k){
   train.cv <- input[index,]
   test.cv <- input[-index,]
   P=apply(train.cv[,2:ncol(train.cv)],2,function(x) summary(bayesglm(as.factor(train.cv[,1])~x,family=binomial))$coefficients[2,4])
-  train.cv<-train.cv[,c(1,match(names(P[head(order(P),n=1000)]),colnames(train.cv)))]
-  test.cv<-test.cv[,c(1,match(names(P[head(order(P),n=1000)]),colnames(test.cv)))]
+  train.cv<-train.cv[,c(1,match(names(P[head(order(P),n=200)]),colnames(train.cv)))]
+  test.cv<-test.cv[,c(1,match(names(P[head(order(P),n=200)]),colnames(test.cv)))]
   meth<-list()
   meth$train.cv=train.cv
   meth$test.cv=test.cv
   print(paste(ncol(train.cv),"variables passed P-value threshold and enrolled in SIS model"))
-  RF <- randomForest(phen ~ ., data=train.cv, importance=TRUE,proximity=T)
+  RF <- randomForest(as.factor(phen) ~ ., data=train.cv, importance=TRUE,proximity=T)
   imp<-RF$importance
   imp<-imp[order(imp[,4],decreasing = T),]
   head(imp)
@@ -143,9 +172,9 @@ pred2 <- predRisk(model.glm2)
 par(mfrow=c(2,2),cex.lab=1.5,cex.axis=1.5)
 plotROC(data=data1,cOutcome=1,predrisk=cbind(pred1))
 plotROC(data=data2,cOutcome=1,predrisk=cbind(pred2))
-
-
-
-tsneplot(t(input),bin,plot="TCGA.BRCA.BUR.TSNE.pdf")
+##################################################################################################### 
+####################### Step 6: TSNE to show subtype ############################################### 
+##################################################################################################### 
+tsneplot(input[,match(rownames(RLT),colnames(input)),2:ncol(input)],input[,1],plot="TCGA.BRCA.BUR.TSNE.TopVariable.pdf")
 
 
