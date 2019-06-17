@@ -64,11 +64,25 @@ phen4<-id2phen4(colnames(methdata))
 phen3<-id2phen3(colnames(methdata))
 bin<-id2bin(colnames(methdata))
 pid<-id2pid(colnames(methdata))
+
+N<-c()
+iid<-unique(pid)
+iid<-iid[-14]
+for(i in iid){
+  print(i)
+  input<-methdata[,which(pid==i)]
+  bin<-id2bin(colnames(input))
+  input<-input[,c(which(bin==1),which(bin==11))]
+  print(dim(input))
+  bin<-id2bin(colnames(input))
+  N<-rbind(N,table(bin))
+}
+rownames(N)<-iid
 ##################################################################################################### 
 ####################### Step 2: Select Cancer Type ################################################## 
-##################################################################################################### 
+#####################################################################################################
 pid<-id2pid(colnames(methdata))
-input<-methdata[,which(pid=="BRCA")]
+input<-methdata[,which(pid=="LUAD")]
 phen4<-id2phen4(colnames(input))
 phen3<-id2phen3(colnames(input))
 bin<-id2bin(colnames(input))
@@ -92,7 +106,7 @@ load("Normal.PBMC.GEO.HM450K.Beta.RData")
 system("wc -l ~/hpc/db/hg19/GPL13534_450K_hg19_PBMC_BUR.bed")
 BUR<-read.table("~/hpc/db/hg19/GPL13534_450K_hg19_PBMC_BUR.bed")
 input<-input[rownames(input) %in% BUR$V4,]
-PDMR<-read.table("TCGA-Pancancer-MH450.Meta.diff.txt",head=T,row.names=1,sep="\t")
+PDMR<-read.table("~/hpc/methylation/Pancancer/TCGA-Pancancer-MH450.Meta.diff.txt",head=T,row.names=1,sep="\t")
 DMR<-subset(PDMR,beta>0.1 & pval<10^-5)
 DMG<-na.omit(cpg2symbol(rownames(DMR)))
 N<-length(unique(DMG))
@@ -116,7 +130,7 @@ START=RLT$V2-150
 END=RLT$V3+150
 CHR=RLT$V1
 RLT<-data.frame(CHR,START,END,RLT)
-write.table(RLT,file="RF.BRCA.BUR.PAN.Top200VIP.txt",sep="\t",quote=F,col.names = NA,row.names = T)
+write.table(RLT,file="RF.LUAD.BUR.PAN.Top200VIP.txt",sep="\t",quote=F,col.names = NA,row.names = T)
 ##################################################################################################### 
 ####################### Step 4: Tumor Suppressor GENES ############################################### 
 ##################################################################################################### 
