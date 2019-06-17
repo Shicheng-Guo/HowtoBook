@@ -58,12 +58,12 @@ RawZeroRemove<-function(data,missratio=0.5){
   output
 }
 
-setwd("//mcrfnas2/bigdata/Genetic/Projects/shg047/methylation/Pancancer/RNA-seq")
-
+setwd("~/hpc/methylation/Pancancer/RNA-seq")
 load("rnaseqdata.pancancer.RData")
 
-phen1=read.table("/home/guosa/hpc/methylation/TCGA-clinical-11093.tsv",header = T,sep="\t")
-phen2=read.table("/home/guosa/hpc/methylation/Pancancer/RNA-seq/File_metadata2.txt",header = T,sep="\t")
+phen1=read.table("~/hpc/methylation/TCGA-clinical-11093.tsv",header = T,sep="\t")
+phen2=read.table("~/hpc/methylation/Pancancer/RNA-seq/File_metadata2.txt",header = T,sep="\t")
+                    
 phen<-data.frame(phen2,phen1[match(phen2$cases.0.case_id,phen1$case_id),])
 phen$file_name=gsub(".gz","",phen$file_name)
 head(phen1)
