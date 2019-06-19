@@ -1,4 +1,4 @@
-Step 1. annotation SNPs with annovar (dbnsfp35c)
+Step 1. annotation SNPs with annovar (dbnsfp35c,hg19)
 ```
 mkdir annovar
 mkdir temp
