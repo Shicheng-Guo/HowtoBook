@@ -4,7 +4,7 @@
 
 
 
-*Download dbSNP152
+* Download dbSNP152
 ```
 wget https://ftp.ncbi.nih.gov/snp/redesign/latest_release/VCF/GCF_000001405.25.bgz -O ~/hpc/db/hg19/dbSNP152.hg19.vcf.bgz
 gunzip dbSNP152.hg19.vcf.bgz
