@@ -1,11 +1,11 @@
-Step 1. annotation SNPs with annovar (dbnsfp35c,hg19)
+Step 1. annotation SNPs with annovar (dbnsfp35c,hg19, set ppn=8)
 ```
 mkdir annovar
 mkdir temp
 for i in {1..22} 
 do
 echo \#PBS -N $i  > chr$i.job
-echo \#PBS -l nodes=1:ppn=1 >> chr$i.job
+echo \#PBS -l nodes=1:ppn=8 >> chr$i.job
 echo \#PBS -M Guo.shicheng\@marshfieldresearch.org >> chr$i.job
 echo \#PBS -m abe  >> chr$i.job
 echo \#PBS -o $(pwd)/temp/ >>chr$i.job
