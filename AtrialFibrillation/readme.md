@@ -1,1 +1,1 @@
-
+[A cross-package Bioconductor workflow for analysing methylation array data](https://www.bioconductor.org/packages/devel/workflows/vignettes/methylationArrayAnalysis/inst/doc/methylationArrayAnalysis.html)
