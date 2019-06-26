@@ -29,7 +29,7 @@ while(i<(nrow(data)-100)){
 write.table(rlt,file=paste("Long_CpG_Gain.GAP",GAP,"hg19.txt",sep="."),sep="\t",col.names = F,row.names = F)
 }
 ````
-extract 1000G VCF by CpG-SNP with bcftools view -T
+extract 1000G VCF by CpG-SNP with `bcftools view -T`
 
 ```
 cd /gpfs/home/guosa/hpc/db/hg19/beagle/cgSNP/vcf
