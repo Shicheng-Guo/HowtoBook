@@ -29,3 +29,22 @@ while(i<(nrow(data)-100)){
 write.table(rlt,file=paste("Long_CpG_Gain.GAP",GAP,"hg19.txt",sep="."),sep="\t",col.names = F,row.names = F)
 }
 ````
+extract 1000G VCF by CpG-SNP with bcftools view -T
+
+```
+cd /gpfs/home/guosa/hpc/db/hg19/beagle/cgSNP/vcf
+mkdir temp
+for i in {1..23}
+do
+echo \#PBS -N $i  > $i.job
+echo \#PBS -l nodes=1:ppn=1 >> $i.job
+echo \#PBS -M Guo.shicheng\@marshfieldresearch.org >> $i.job
+echo \#PBS -m abe  >> $i.job
+echo \#PBS -o $(pwd)/temp/ >>$i.job
+echo \#PBS -e $(pwd)/temp/ >>$i.job
+echo cd $(pwd) >> $i.job
+echo mkdir ./temp/chr$i >> $i.job
+echo bbcftools view -T ../chr$i.cpgSNP.bin.bed ../../chr$i.1kg.phase3.v5a.vcf.gz -Oz -o chr$i.cpgSNP.vcf.gz >>$i.job
+qsub $i.job
+done
+```
