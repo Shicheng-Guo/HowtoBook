@@ -9,6 +9,7 @@ cpgSNPisland.hg19.binarySNP.bed
 In order to obtain the summary for different GAP to LOSS or GAIN island. (contious K loss or gain in common CpG-SNPs)
 ```
 setwd("//mcrfnas2/bigdata/Genetic/Projects/shg047/db/hg19/beagle/cgSNP")
+setwd("/home/guosa/hpc/db/hg19/beagle/cgSNP")
 head(data)
 for(GAP in seq(5,20,1)){
 rlt<-c()
