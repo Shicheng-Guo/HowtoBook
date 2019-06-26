@@ -4,4 +4,4 @@
 
 Methods:
 
-reference=GRCh37.p13
+* reference=GRCh37.p13
