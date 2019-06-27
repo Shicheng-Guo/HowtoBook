@@ -1,5 +1,5 @@
 ```
-1. region should be okay
-2. low expression in cancer
-3. low expression have worse prognosis
+1. Region should be okay
+2. Low expression in breast cancer
+3. Low expression have worse prognosis
 ```
