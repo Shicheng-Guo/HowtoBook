@@ -1,4 +1,4 @@
-To identify two group genes:
+High-throughput screening to identify DNA methylation related oncogene and tumor-suppressor genes
 
 A) tumor suppressor genes
 1. hypermethylated in cancer
