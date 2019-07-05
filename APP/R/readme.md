@@ -1,3 +1,4 @@
+```
 sudo apt-get install xorg 
 sudo apt-get install libx11-dev 
 sudo apt-get install libglu1-mesa-dev 
@@ -21,8 +22,7 @@ library("devtools")
 install_github("genome/sciClone")
 install.packages("rgl")
 
-
 install.packages("remotes")
 remotes::install_github("JoshuaTian/EpiCluster")
-
+```
 
