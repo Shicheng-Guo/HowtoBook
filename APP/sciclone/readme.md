@@ -1,13 +1,16 @@
+Install sciClone in R-3.6.0 in Windows
 ```
-setwd("D:\\LungBrain")
-list.files()
-source("http://bioconductor.org/biocLite.R")
-biocLite("IRanges")
-install.packages("devtools")
-library(devtools)
+BiocManager::install("devtools")
+BiocManager::install("IRanges")
+BiocManager::install("digest")
+BiocManager::install("IRanges")
+install.packages("https://cran.rstudio.com/bin/windows/contrib/3.6/processx_3.3.1.zip", repos = NULL)
+install.packages("https://cran.rstudio.com/bin/windows/contrib/3.6/callr_3.2.0.zip", repos = NULL)
+
+library('processx')
+library("callr")
+library("devtools")
+library("IRanges")
 install_github("genome/bmm")
 install_github("genome/sciClone")
-install.packages("processx")
-install.packages("callr")
-install.packages("processx_3.4.0.tar.gz")
 ```
