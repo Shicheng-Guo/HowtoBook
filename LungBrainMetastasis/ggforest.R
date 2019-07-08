@@ -1,0 +1,5 @@
+data<-read.xlsx("Result.xlsx",sheet=1,rowNames=T)
+model <- coxph( Surv(OS,status) ~ .,data =data)
+ggforest(model,data=data)
+fit<-summary(model)
+ggforest(model,data=data)
