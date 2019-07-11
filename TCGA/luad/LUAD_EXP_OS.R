@@ -1,0 +1,15 @@
+load("~/hpc/methylation/TCGA-LUAD-RNAseq-FPKM-UQ.Symbol.DEG.RData")
+DMG<-rlt
+AOS<-read.table("~/hpc/methylation/TCGA_LUAD_FPKM-UQ.DGE_OS_HR_PanDiff.All.txt",head=T,sep="\t")
+SOS<-read.table("~/hpc/methylation/TCGA_LUAD_FPKM-UQ.DGE_OS_HR_PanDiff.All.txt",head=T,sep="\t")
+bedR<-read.table("~/hpc/methylation/Pancancer/RF.LUAD.BUR.PAN.Top4000VIP.txt",head=T)
+ProteinAtlas<-read.table("https://raw.githubusercontent.com/Shicheng-Guo/ProteinAtlas/master/Pathology.OS.tsv",sep="\t",head=T)
+ProteinAtlas<-subset(ProteinAtlas,Cancer=="lung cancer" & prognostic...favourable<0.01)
+OO1<-data.frame(bedR,DMG[match(bedR$Symbol,rownames(DMG)),])
+OO2<-subset(OO1,Estimate<0 & Pr...t..<10^-2)
+OO3<-data.frame(OO2,SOS[match(OO2$Symbol,SOS$Symbol),])
+OO4<-subset(OO3,Estimate.1<0 & Pr...t...1<10^-8)
+dim(OO4)
+length(unique(OO4$Symbol))
+write.table(OO4,file="../../Wu_LUAD.target.txt",sep="\t",quote=F,col.names=NA,row.names=T)
+
