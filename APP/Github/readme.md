@@ -12,3 +12,8 @@ git commit -m "some_message"
 git remote add origin https://github.com/user_name/Mytest.git
 git push origin master
 ```
+2. How to Configure Git’s settings (for the root user)
+```
+git config --global user.name "Shicheng Guo"
+git config --global user.email "Shicheng.Guo@hotmail.com"
+```
