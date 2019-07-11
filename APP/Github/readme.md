@@ -10,7 +10,7 @@ gedit README
 git add .
 git commit -m "some_message"
 git remote add origin https://github.com/user_name/Mytest.git
-git push origin master
+git push 
 ```
 
 2. How to avoid input username and passwd for `git push`
