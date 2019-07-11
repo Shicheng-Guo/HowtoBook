@@ -15,4 +15,7 @@ git push
 
 2. How to avoid input username and passwd for `git push`
 ```
+cd ~
+ssh-keygen -t rsa 
 ```
+3. Copy the key to your github [setting page: https://github.com/settings/keys](https://github.com/settings/keys)
