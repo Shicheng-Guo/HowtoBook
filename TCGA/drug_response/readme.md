@@ -1,4 +1,8 @@
 ```
+# CHG1
+
+cd /home/guosa/hpc/project/TCGA
+
 library("TCGAbiolinks")
 
 pid<-read.table("https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/TCGA/drug_response/Pid.drugResponse.txt",head=F,sep="\t")
