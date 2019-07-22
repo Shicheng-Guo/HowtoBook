@@ -16,7 +16,9 @@ idat<-read.table(file,sep="\t",head=T)
 drugResponse<-rbind(drugResponse,idat)
 print(file)
 }
-head()
+write.table(drugResponse,file="therapy.txt",sep="\t",col.names=NA,row.names=T,quote=F)
+write.table(unique(x$bcr_patient_barcode),file="drug.patient.id.txt",col.names=F,row.names=F,sep="\t",quote=F)
+
 
 drugResponse$drug_name<-tolower(drugResponse$drug_name)
 drugResponse<-subset(drugResponse,therapy_types=="Chemotherapy" & measure_of_response!="")
