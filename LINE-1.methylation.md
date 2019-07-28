@@ -1,5 +1,3 @@
-Hi All,
-
 Usually, we will apply the methylation level of Line-1 to indicate the globe DNA methylation level, however, since Line-1 is kind of repeat sequence, How to design a universal primer to duplicate all the Line-1 sequence in human genome? 
 
 Line-1 Methylation Primer Set-2019
