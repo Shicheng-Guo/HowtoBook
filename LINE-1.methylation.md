@@ -6,8 +6,8 @@ Line-1 Methylation Primer Set-2019
 
 BSP primer for LINE-1 in [Cell Death & Disease, 2019, PMID: 30578410][1]
 
-       F, 5′-AGTAGGGYGAGGTATTGTTTTATTTG-3′
-       R, 5′-AAACTACTATACTAACAATCAACARAATTCC-3′
+    F, 5′-AGTAGGGYGAGGTATTGTTTTATTTG-3′
+    R, 5′-AAACTACTATACTAACAATCAACARAATTCC-3′
 
  Line-1 Methylation Primer Set-1
 
