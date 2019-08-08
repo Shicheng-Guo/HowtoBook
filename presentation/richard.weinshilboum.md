@@ -1,3 +1,5 @@
+Richard Weinshilboum
+
 Pharmacogenomics to Pharmaco-omics
 
 Dasburg professor of cancer genomcis research
