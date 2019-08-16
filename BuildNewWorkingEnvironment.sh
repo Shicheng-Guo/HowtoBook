@@ -9,9 +9,7 @@ conda install numpy
 conda install pip
 conda install -c bioconda cutadapt
 
-
 # build C tools
-
 1. samtools
 2. bedtools
 3. vcftools
@@ -28,6 +26,5 @@ conda install -c bioconda cutadapt
 14. fs
 15. tabix
 16. annovar
-
-
+17. 
 
