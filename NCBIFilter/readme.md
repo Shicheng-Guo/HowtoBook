@@ -8,7 +8,7 @@ Note: the IF is based on 2019
 
 4. [IF30](IF30.txt) represents all the journals whose impact factor > 30. Now copy the contents to custom filter and save as IF30
 
-5. same to IF20, IF10, IF5 and IF3.  IF20 represents journals whose impact factor >20 and <30
+5. same to IF20, IF10, IF5 and IF3.  IF20 represents journals : 20 < impact factor  <30
 
 
 
