@@ -1,1 +1,1 @@
-NB: the IF is based on 2019
+Note: the IF is based on 2019
