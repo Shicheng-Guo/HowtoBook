@@ -1,3 +1,362 @@
+
+
+scp /home/nu_guos/.ssh/id_rsa.pub 
+
+/home/biostaff/.ssh
+
+scp -P 37122 biostaff@ada.zettadom.com:/home/biostaff/COSCE129LIN64.bin ./
+ssh -p 37122 biostaff@ada.zettadom.com
+
+
+cat /home/nu_guos/.ssh/id_rsa.pub | ssh -p 37122 biostaff@ada.zettadom.com 'cat >> .ssh/authorized_keys'
+cat /home/nu_guos/.ssh/id_rsa.pub | ssh -p 37122 biostaff@ada.zettadom.com 'chmod 700 ~/.ssh'
+
+alias ada="ssh -p 37122 biostaff@ada.zettadom.com"
+alias host="ssh -p 8809 guosa@localhost"
+
+
+condor_q -hold
+ssh-keygen -t rsa
+ssh shg047@23.99.137.107 'mkdir -p .ssh'
+cat /home/nu_guos/.ssh/id_rsa.pub | ssh shg047@23.99.137.107 'cat >> .ssh/authorized_keys'
+cat /home/nu_guos/.ssh/id_rsa.pub | ssh shg047@23.99.137.107 'chmod 700 ~/.ssh'
+
+cat /home/nu_guos/.ssh/id_rsa.pub | ssh shg047@23.99.137.107 'cat >> .ssh/authorized_keys2'
+cat /home/nu_guos/.ssh/id_rsa.pub | ssh shg047@23.99.137.107 'chmod 700 ~/.ssh/authorized_keys2'
+ssh shg047@23.99.137.107
+alias chtc="ssh nu_guos@submit-3.chtc.wisc.edu"
+
+plink --bfile he2019 --assoc --count --maf 0.05 --allow-no-sex --1
+
+plink<-read.table("plink.assoc",head=T)
+ManhattanPlot<-function(mylimma){
+library(qqman)
+res <- mylimma
+SNP=res$SNP
+CHR=res$CHR
+if(length(grep("X",CHR))>0){
+  CHR<-sapply(CHR,function(x) gsub(pattern = "X",replacement = "23",x))
+  CHR<-sapply(CHR,function(x) gsub(pattern = "Y",replacement = "24",x))
+}
+CHR<-as.numeric(CHR)
+BP=res$BP
+P=res$P
+manhattaninput=na.omit(data.frame(SNP,CHR,BP,P))
+genomewideline=0.05/nrow(manhattaninput)
+pdf("assoc.manhattan.pdf")
+manhattan(manhattaninput,col = c("blue4", "orange3"),ylim = c(0,30),genomewideline=F,lwd=2, suggestiveline=F)
+dev.off()
+}
+ManhattanPlot(plink)
+plink$logP<--log(plink$P,10)
+
+sigplink<-subset(plink, logP>10)
+
+plink --bfile he2019 --logistic --covar plink.eigenvec --covar-number 1-6 --allow-no-sex --1
+ManhattanPlot<-function(mylimma){
+library(qqman)
+res <- mylimma
+SNP=res$SNP
+CHR=res$CHR
+if(length(grep("X",CHR))>0){
+  CHR<-sapply(CHR,function(x) gsub(pattern = "X",replacement = "23",x))
+  CHR<-sapply(CHR,function(x) gsub(pattern = "Y",replacement = "24",x))
+}
+CHR<-as.numeric(CHR)
+BP=res$BP
+P=res$P
+manhattaninput=na.omit(data.frame(SNP,CHR,BP,P))
+genomewideline=0.05/nrow(manhattaninput)
+head(manhattaninput)
+dim(manhattaninput)
+pdf("manhattan.pdf")
+manhattan(manhattaninput,col = c("blue4", "orange3"),ylim = c(0,20),genomewideline=-log10(genomewideline),lwd=2, suggestiveline=F)
+dev.off()
+}
+plink<-read.table("plink.assoc.logistic",head=T)
+mylimma<-subset(plink,TEST=="ADD")
+ManhattanPlot(plink)
+/home/guosa/hpc/rheumatology/RA/he2019/sigplink.bed
+
+for i in {1..26}
+do
+plink --bfile he2019 --chr $i --recode vcf --out ./vcf/he2009.chr$i
+done
+
+cd /gpfs/home/guosa/hpc/rheumatology/RA/he2019/vcf
+mkdir temp
+for i in {1..24}
+do
+echo \#PBS -N $i  > $i.job
+echo \#PBS -l nodes=1:ppn=1 >> $i.job
+echo \#PBS -M Guo.shicheng\@marshfieldresearch.org >> $i.job
+echo \#PBS -m abe  >> $i.job
+echo \#PBS -o $(pwd)/temp/ >>$i.job
+echo \#PBS -e $(pwd)/temp/ >>$i.job
+echo cd $(pwd) >> $i.job
+echo bcftools view he2009.chr$i.vcf -Oz -o he2009.chr$i.vcf.gz >>$i.job
+echo tabix -f -p vcf he2009.chr$i.vcf.gz >> $i.job
+qsub $i.job
+done
+
+cd /gpfs/home/guosa/hpc/rheumatology/RA/he2019/impute
+mkdir temp
+for i in {1..22}
+do
+echo \#PBS -N $i  > $i.job
+echo \#PBS -l nodes=1:ppn=1 >> $i.job
+echo \#PBS -M Guo.shicheng\@marshfieldresearch.org >> $i.job
+echo \#PBS -m abe  >> $i.job
+echo \#PBS -o $(pwd)/temp/ >>$i.job
+echo \#PBS -e $(pwd)/temp/ >>$i.job
+echo cd $(pwd) >> $i.job
+echo wget https://imputationserver.sph.umich.edu/share/results/f3bd4c751822ad5b595f84ddce8633dd/chr_$i.zip  >>$i.job
+qsub $i.job
+done
+
+wget https://imputationserver.sph.umich.edu/share/results/f3bd4c751822ad5b595f84ddce8633dd/chr_1.zip
+wget https://imputationserver.sph.umich.edu/share/results/4a40083b89985685aa7497410b76de2e/chr_10.zip
+wget https://imputationserver.sph.umich.edu/share/results/bed7f5623a79df56011c415de914bea8/chr_11.zip
+wget https://imputationserver.sph.umich.edu/share/results/578ff3fa346da5c04804abdb0eb93900/chr_12.zip
+wget https://imputationserver.sph.umich.edu/share/results/1ad44aa0169dacd18d2328a4d08cd9f5/chr_13.zip
+wget https://imputationserver.sph.umich.edu/share/results/1182c8c1af253aa56b9b5b9002a2575a/chr_14.zip
+wget https://imputationserver.sph.umich.edu/share/results/86825c0065032220e8d74c811396debe/chr_15.zip
+wget https://imputationserver.sph.umich.edu/share/results/fb068bed6ec28f6c19c08c1f62ac508c/chr_16.zip
+wget https://imputationserver.sph.umich.edu/share/results/f1d226ea4115c6c5c05f84bb6a7fedb8/chr_17.zip
+wget https://imputationserver.sph.umich.edu/share/results/54bdee5c147c31f77b2ce393eb1be295/chr_18.zip
+wget https://imputationserver.sph.umich.edu/share/results/220100a69422665935a46cd3733112b0/chr_19.zip
+wget https://imputationserver.sph.umich.edu/share/results/2c20372088ebc27233341ab964641baa/chr_20.zip
+wget https://imputationserver.sph.umich.edu/share/results/bfca52b60d40dbe2965464e9b93dcb1c/chr_21.zip
+wget https://imputationserver.sph.umich.edu/share/results/beabe65757681d5f4e5f5cb068a4e58b/chr_22.zip
+wget https://imputationserver.sph.umich.edu/share/results/4593e713bc69c4072b380bc7a4c037a9/chr_3.zip
+wget https://imputationserver.sph.umich.edu/share/results/e42511c91c695d1153ac5a48c32231e2/chr_4.zip
+wget https://imputationserver.sph.umich.edu/share/results/26565945d9d95c950f0db8c9afb11f3c/chr_5.zip
+wget https://imputationserver.sph.umich.edu/share/results/c5c56e404c061669b4e26d0bdefdbd49/chr_6.zip
+wget https://imputationserver.sph.umich.edu/share/results/8f6da5b2dda3e67f3933170ae23b10bd/chr_7.zip
+wget https://imputationserver.sph.umich.edu/share/results/39678907b07f5517f6af388ff1d962a1/chr_8.zip
+wget https://imputationserver.sph.umich.edu/share/results/3c6ed7d7031cf5e28ef9b0cf9b6d3992/chr_9.zip
+
+for i in {1..22}
+do
+unzip -P gK?9sQr5bTtJZR chr_$i.zip 
+done
+
+for i in {1..22}
+do
+unzip -P ci7PvDMsT8zqsA chr_$i.zip 
+done
+
+
+cd /gpfs/home/guosa/hpc/rheumatology/SLE/BCR/vdj
+mkdir temp
+for i in $(cat fq.txt)
+do
+echo \#PBS -N $i  > $i.job
+echo \#PBS -l nodes=1:ppn=1 >> $i.job
+echo \#PBS -M Guo.shicheng\@marshfieldresearch.org >> $i.job
+echo \#PBS -m abe  >> $i.job
+echo \#PBS -o $(pwd)/temp/ >>$i.job
+echo \#PBS -e $(pwd)/temp/ >>$i.job
+echo cd $(pwd) >> $i.job
+echo mixcr align -f -s hsa -p rna-seq $i\_R1.fq $i\_R2.fq $i.vdjca -r $i  >>$i.job
+echo mixcr assemble -f --write-alignments $i.vdjca $i.clna >>$i.job
+echo mixcr assembleContigs -f $i.clna $i.clns >>$i.job
+echo mixcr exportClones -f $i.clns $i.txt >>$i.job
+qsub $i.job
+done
+
+cd /gpfs/home/guosa/hpc/rheumatology/SLE/BCR/vdj
+mkdir temp
+for i in $(cat fq.txt)
+do
+echo \#PBS -N $i  > $i.job
+echo \#PBS -l nodes=1:ppn=1 >> $i.job
+echo \#PBS -M Guo.shicheng\@marshfieldresearch.org >> $i.job
+echo \#PBS -m abe  >> $i.job
+echo \#PBS -o $(pwd)/temp/ >>$i.job
+echo \#PBS -e $(pwd)/temp/ >>$i.job
+echo cd $(pwd) >> $i.job
+echo bbmerge.sh in1=$i\_R1.fq in2=$i\_R2.fq out=../imgt/$i.fq outu1=../imgt/$i.u1map outu2=../imgt/$i.u2map >>$i.job
+qsub $i.job
+done
+
+for i in `ls *.fq`
+do
+sed -n '1~4s/^@/>/p;2~4p' $i > $i.fasta
+echo $i
+done
+
+
+for i in `ls *.fasta`
+do
+seqtk sample -s seed=110 $i 150000 > $i.imgt
+echo $i
+done
+
+for i in $(cat fq.txt)
+do
+sed -e 's/\s,\+/\t/g' -e 's/,\+\s/\t/g' $i.txt | sed -e 's/;,\+/;/g' > $i.sed
+done
+
+vdjtools Convert -S mixcr -m vdjtools.m.txt  metadata.txt
+vdjtools CalcSegmentUsage -m metadata.txt vdjtools
+
+
+
+sed -e 's/\s,+/\t/g' -e 's/,+\s/\t/g' 16S1710LF01.txt | sed -e 's/;,+/;/g' >16S1710LF01.txt.sed.txt
+sed -e 's/\s,\+/\t/g' -e 's/,\+\s/\t/g' 16S1710LF01.txt | sed -e 's/;,\+/;/g' > 16S1710LF01.txt.sed.txt
+
+
+vdjtools Convert -S mixcr 16S1710LF01.txt.sed.txt  16S1710LF01.vdjtools
+
+
+
+
+
+
+
+bbmerge.sh in1=<read1> in2=<read2> out=<merged reads> outu1=<unmerged1> outu2=<unmerged2>
+
+
+ouggnehcihs
+
+https://shicheng-guo.github.io/assets/images/Bewerbungsfoto.jpg
+https://shicheng-guo.github.io/assets/images/my_story.png
+https://shicheng-guo.github.io/machine_learning/2017/dashboard_screenshot.png
+https://shicheng-guo.github.io/
+https://raw.githubusercontent.com/ShirinG/ShirinG.github.io/master/assets/images/logo.png
+avatar: https://raw.githubusercontent.com/ShirinG/ShirinG.github.io/master/assets/images/logo.png
+https://shiring.github.io/assets/images/doublehelix.png
+https://shicheng-guo.github.io/
+
+for i in `ls *extendedFrags.fastq`
+do
+sed -n '1~4s/^@/>/p;2~4p'  $i > $i.fa
+done
+
+
+cp 1st/* vdj/
+cp 2nd/* vdj/
+gunzip *.gz 
+http://ccb.jhu.edu/software/hisat2/dl/hisat2-2.1.0-source.zip
+unzip hisat2-2.1.0-source.zip
+cd /gpfs/home/guosa/hpc/tools/hisat2-2.1.0
+make
+
+
+setwd("//mcrfnas2/bigdata/Genetic/Projects/shg047/methylation/chol/16B1212A-2")
+data= read_excel("methylation.xlsx",sheet = 2)
+data= as.data.frame(data)
+rowname<-apply(data.frame(data$Target,as.character(data$GenomePosition)),1,function(x) gsub(" ","",paste(x[1],x[2],sep="")))
+data[1:12,1:12]
+methdata<-data.matrix(data[,c(12:180)])
+rownames(methdata)<-rowname
+genesymbol= unlist(lapply(data$Target, function(x) strsplit(as.character(x),"_")[[1]][1]))
+head(rownames(methdata))
+head(colnames(methdata))
+
+cat 180205LSJ32.fq.extendedFrags.fastq | paste - - - - | sed 's/^@/>/g'| cut -f1-2 | tr '\t' '\n' > $i.fa
+
+
+# 2019-07-03
+cd ~/hpc/tools
+git clone https://github.com/carjed/helmsman.git
+cd helmsman
+pip install virtualenv --user
+ 
+mv S001B_Tumor2-Normal_mem.merged.HighConf.snpEff_ann.hg19_multianno.vcf   001B_Normal-Tumor2_mem.merged.HighConf.snpEff.vcf
+mv S001D_Tumor2_mem.merged.HighConf.snpEff_ann.hg19_multianno.vcf  001D_Normal-Tumor2_mem.merged.HighConf.snpEff.vcf
+mv S001L_Tumor2-Normal_mem.merged.HighConf.snpEff_ann.hg19_multianno.vcf 001L_Normal-Tumor2_mem.merged.HighConf.snpEff.vcf
+mv S001N_Tumor2_mem.merged.HighConf.snpEff_ann.hg19_multianno.vcf 001N_Normal-Tumor2_mem.merged.HighConf.snpEff.vcf
+
+mv S001B_Tumor1-Normal_mem.merged.HighConf.snpEff_ann.hg19_multianno.vcf    001B_Normal-Tumor1_mem.merged.HighConf.snpEff.vcf
+mv S001D_Tumor1_mem.merged.HighConf.snpEff_ann.hg19_multianno.vcf  001D_Normal-Tumor1_mem.merged.HighConf.snpEff.vcf
+mv S001L_Tumor1-Normal_mem.merged.HighConf.snpEff_ann.hg19_multianno.vcf 001L_Normal-Tumor1_mem.merged.HighConf.snpEff.vcf
+mv S001N_Tumor1_mem.merged.HighConf.snpEff_ann.hg19_multianno.vcf 001N_Normal-Tumor1_mem.merged.HighConf.snpEff.vcf
+
+ls -l *Tumor2*.vcf | wc -l
+ls -l *Tumor1*.vcf | wc -l
+
+cd /home/guosa/hpc/project/LungBrainMetastasis
+awk '{print $1,$2,$4,$5}' OFS="\t" *Normal-Tumor1_mem*.bed  | sort -u > Normal-Tumor1.uni.hg19.bed
+awk '{print $1,$2,$4,$5}' OFS="\t" *Normal-Tumor2_mem*.bed  | sort -u > Normal-Tumor2.uni.hg19.bed
+
+
+## step 1.1 check sample names and remove or keeps samples of interest. 
+rm Tumor1_VarD.txt
+cd /home/guosa/hpc/project/LungBrainMetastasis/vcf
+for i in A B C E F G H I J K L M O
+do
+bcftools query -l 001$i\_Normal-Tumor1_mem.merged.HighConf.snpEff.vcf | grep Tumor1 | grep VarD >> Tumor1_VarD.txt
+done
+
+rm Tumor2_VarD.txt
+cd /home/guosa/hpc/project/LungBrainMetastasis/vcf
+for i in A B C E F G H I J K L M O
+do
+bcftools query -l 001$i\_Normal-Tumor2_mem.merged.HighConf.snpEff.vcf | grep Tumor2 | grep VarD >> Tumor2_VarD.txt
+done
+
+## Step 2. copy raw vcf to new folder to keep raw data safe
+cd /home/guosa/hpc/project/LungBrainMetastasis/vcf
+for i in A B C E F G H I J K L M O
+do
+cp 001$i\_Normal-Tumor1_mem.merged.HighConf.snpEff.vcf $i.T1.vcf
+done
+
+cd /home/guosa/hpc/project/LungBrainMetastasis/vcf
+for i in A B C E F G H I J K L M O
+do
+cp 001$i\_Normal-Tumor2_mem.merged.HighConf.snpEff.vcf $i.T2.vcf
+done
+
+## step 3. 
+for i in A B C E F G H I J K L M O
+do
+echo $i
+bcftools view --force-samples -S Tumor1_VarD.txt $i.T1.vcf | bcftools annotate -x ID,^INFO/AN,INFO/DP,FORMAT -I +'%CHROM:%POS' | bcftools sort -Ov -o $i.T1.sort.vcf
+perl -p -i -e 's/\.\/\./0\/1/g' $i.T1.sort.vcf
+bgzip -f $i.T1.sort.vcf
+tabix -f -p vcf $i.T1.sort.vcf.gz
+done
+ls *.T1.sort.vcf.gz > T1.txt
+bcftools merge -l T1.txt -Ov | bcftools annotate -a ~/hpc/db/hg19/refGene.hg19.VCF.sort.bed.gz -c CHROM,FROM,TO,GENE -h <(echo '##INFO=<ID=GENE,Number=1,Type=String,Description="Gene name">') > T1.vcf
+
+
+cd /home/guosa/hpc/project/LungBrainMetastasis/vcf
+for i in A B C E F G H I J K L M O
+do
+echo $i
+bcftools view --force-samples -S Tumor2_VarD.txt $i.T2.vcf | bcftools annotate -x ID,^INFO/AN,INFO/DP,FORMAT -I +'%CHROM:%POS' | bcftools sort -Ov -o $i.T2.sort.vcf
+perl -p -i -e 's/\.\/\./0\/1/g' $i.T2.sort.vcf
+bgzip -f $i.T2.sort.vcf
+tabix -f -p vcf $i.T2.sort.vcf.gz
+done
+ls *.T2.sort.vcf.gz > T2.txt
+bcftools merge -l T2.txt -Ov | bcftools annotate -a ~/hpc/db/hg19/refGene.hg19.VCF.sort.bed.gz -c CHROM,FROM,TO,GENE -h <(echo '##INFO=<ID=GENE,Number=1,Type=String,Description="Gene name">') > T2.vcf
+
+touch -m T*.vcf
+
+## step 4. Rename chrosome and re-annoate VCF with ANNOVAR
+
+rm rename-chrs.txt
+for i in {1..24} X Y
+do
+echo -e chr$i'\t'$i >> rename-chrs.txt 
+done 
+
+bcftools annotate --rename-chrs rename-chrs.txt T1.vcf -Ov -o T1.chr.vcf
+bcftools annotate --rename-chrs rename-chrs.txt T2.vcf -Ov -o T2.chr.vcf
+bcftools annotate -a ~/hpc/db/hg19/refGene.hg19.VCF.sort.bed.gz -c CHROM,FROM,TO,GENE -h <(echo '##INFO=<ID=GENE,Number=1,Type=String,Description="Gene name">') T1.chr.vcf 
+bcftools annotate -a ~/hpc/db/hg19/refGene.hg19.VCF.sort.bed.gz -c CHROM,FROM,TO,GENE -h <(echo '##INFO=<ID=GENE,Number=1,Type=String,Description="Gene name">') T2.chr.vcf 
+
+table_annovar.pl -vcfinput T1.chr.vcf ~/hpc/tools/annovar/humandb/ --thread 4 -buildver hg19 -out T1 -remove -protocol refGene,dbnsfp33a -operation gx,f -nastring . -otherinfo -polish -xref ~/hpc/tools/annovar/humandb/gene_fullxref.txt
+table_annovar.pl -vcfinput T2.chr.vcf ~/hpc/tools/annovar/humandb/ --thread 4 -buildver hg19 -out T2 -remove -protocol refGene,dbnsfp33a -operation gx,f -nastring . -otherinfo -polish -xref ~/hpc/tools/annovar/humandb/gene_fullxref.txt
+ 
+## step 4. apply maftools do analysis. 
+
+
+
 # 2019-06-26
 cd  /gpfs/home/guosa/hpc/db/hg19/beagle
 /gpfs/home/guosa/hpc/db/hg19/cpgSNP.hg19.bed
@@ -16920,3 +17279,1608 @@ wget -m --ftp-user=plamethy --ftp-password='de$*d@s3' ftp://137.189.133.62/
 
 
 
+089596
+chr10:101089668-101089771       TTTTTT  1       101089746,101089759,101089761,101089765,101089769,101089771
+chr10:101089816-101089850       TTTTT   2       101089816,101089820,101089824,101089829,101089850
+chr10:101089870-101089906       TTTT    1       101089870,101089886,101089895,101089906
+chr10:101089870-101089906       T       1       101089906
+chr10:101089870-101089906       TTT     1       101089870,101089886,101089895
+chr10:101089928-101089935       TTT     2       101089928,101089932,101089935
+chr10:101089949-101089965       TTTTT   2       101089949,101089951,101089954,101089956,101089965
+chr10:101190105-101190169       TTTT    1       101190105,101190120,101190141,101190169
+chr10:101190105-101190169       TTTTT   2       101190105,101190120,101190141,101190157,101190169
+chr10:101190297-101190505       TTT     1       101190297,101190310,101190324
+chr10:101190297-101190505       TTTTTTTTTTTTTTTT        1       101190297,101190310,101190324,101190420,101190423,101190429,101190435,101190437,101190451,101190456,101190458,101190475,101190477,101190489,101190502,101190505
+chr10:101190297-101190505       TTTTTTTTTTTTT   2       101190420,101190423,101190429,101190435,101190437,101190451,101190456,101190458,101190475,101190477,101190489,101190502,101190505
+chr10:101190297-101190505       TTT     1       101190384,101190389,101190420
+chr10:101190297-101190505       TTTT    1       101190360,101190384,101190389,101190420
+chr10:101190297-101190505       TTTTTTTTTTT     1       101190420,101190423,101190429,101190435,101190437,101190451,101190456,101190458,101190475,101190477,101190489
+chr10:101190527-101190864       TTTTTTTTTTTTTTT 1       101190595,101190604,101190610,101190619,101190635,101190646,101190674,101190691,101190695,101190699,101190702,101190727,101190734,101190751,101190763
+chr10:101190527-101190864       TTTTTTTTTT      1       101190527,101190558,101190565,101190595,101190604,101190610,101190619,101190635,101190646,101190674
+chr10:101190527-101190864       TTTTT   1       101190776,101190798,101190801,101190815,101190827
+chr10:101190527-101190864       TT      1       101190841,101190864
+chr10:101190527-101190864       TTT     4       101190527,101190558,101190565
+
+
+RRBS-7P23.hapInfo.txt
+ls RRBS-7P23*
+less RRBS-7P23.sorted.clipped_CpG.bedGraph
+
+grep 540439 RRBS-7P23.hapInfo.txt | grep chr1
+grep 101190298 RRBS-7P23.sorted.clipped_CpG.bedGraph
+grep 101190120 RRBS-7P23.sorted.clipped_CpG.bedGraph
+grep 101190120 RRBS-7P23.sorted.clipped_CpG.bedGraph
+
+
+
+less -S RRBS-7P23.hapInfo.txt
+
+less 
+
+samtools tview RRBS-7P23.sorted.clipped.bam /home/shg047/oasis/db/hg19/hg19.fa -p chr10:100027957
+samtools tview PC-P-5 /home/shg047/oasis/db/hg19/hg19.fa -p chr1:17092527-17092562
+samtools tview PC-P-5 /home/shg047/oasis/db/hg19/hg19.fa -p 
+samtools tview ../bam/PC-P-5.sorted.clipped.bam /home/shg047/oasis/db/hg19/hg19.fa -p chr1:876056-876066
+samtools tview ../bam/PC-P-5.sorted.clipped.bam /home/shg047/oasis/db/hg19/hg19.fa -p chr1:935977-936090
+samtools tview ../bam/PC-P-5.sorted.clipped.bam /home/shg047/oasis/db/hg19/hg19.fa -p chr1:876056-876066
+samtools tview ../bam/PC-P-5.sorted.clipped.bam /home/shg047/oasis/db/hg19/hg19.fa -p chr1:876056-876066
+
+
+
+
+
+samtools tview RRBS-7P23.sorted.clipped.bam /home/shg047/oasis/db/hg19/hg19.fa -p chr1:850885
+
+
+chr1    850885
+
+chr10:100027957-100027992
+
+/home/shg047/oasis/monod/bam/RRBS1/MF_PileOMeth/6-P-9.sorted.clipped_CpG.bedGraph
+wc -l 6-P-9_CpG.bedGraph
+
+cd oasis/monod/bam/RRBS1/bam/
+
+chr1:10524-10526
+samtools tview 6-P-9.sorted.clipped.bam /home/shg047/oasis/db/hg19/hg19.fa -p chr1:10524
+samtools tview 6-P-9.sorted.clipped.bam /home/shg047/oasis/db/hg19/hg19.fa -p chr1:724245
+
+chr1:724245
+
+
+wc -l ../../../wig/6-P-9_CpG.bedGraph
+1178863
+
+head ../../../bedGraph/6-P-9_CpG.bedGraph
+
+head 6-P-9_CpG.bedGraph
+1394266 6-P-9.sorted.clipped_CpG.bedGraph
+
+
+
+
+
+http://smithlab.usc.edu/methbase/data/Hon-Human-2012/Human_HCC1954/tracks_hg19/Human_HCC1954.meth.bw
+# 2016-05-27
+Install BioPerl Without Root Privileges in Ubuntu/Linxu
+https://www.biostars.org/p/193668/
+
+< How To Install BioPerl Without Root Privileges in Ubuntu/Linxu>
+
+# Install certain nessary library
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(local::lib)'
+
+# Download latest bioperl
+git clone https://github.com/bioperl/bioperl-live.git
+cd bioperl-live
+perl Build.PL
+./Build test 
+
+# biuld test wrong?? then test them one by on, such as 
+./Build test --test_files t/LocalDB/Taxonomy/sqlite.t --verbose
+./Build test --test_files t/Root/RootIO.t --verbose
+
+# install the failed library according bulid test result
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(DBI)'
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(DBD::SQLite)'
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(LWP::UserAgent)'
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(LWP::UserAgent)'
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(Bio::Phylo)'
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(Bio::DB::Sam)'
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(Graph::Directed)'
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(XML::Twig)'
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(Bio::Ext::Align)'
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(XML::Parser::PerlSAX)'
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(XML::Simple)'
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(HTML::TableExtract)'
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(IO::Scalar)'
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(XML::SAX)'
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(Bio::SeqIO::staden::read)'
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(XML::Parser::PerlSAX)'
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(Bio::SeqIO::staden::read)'
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(XML::LibXML)'
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(Convert::Binary::C)'
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(XML::SAX::Writer)'
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(XML::Writer)'
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(Bio::SeqIO::staden::read)'
+
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(Bio::DB::Sam)'
+
+Bio::DB::Sam
+perl -MCPAN -Mlocal::lib -e 'CPAN::install(Bio::DB::Sam)'
+
+# test again
+./Build test 
+## Test bioperl installation (you should get a version number)
+perl -MBio::Root::Version -le 'print $Bio::Root::Version::VERSION'
+
+
+
+wget http://sourceforge.net/projects/samtools/files/samtools/0.1.18/samtools-0.1.18.tar.bz2
+tar xjf samtools-0.1.18.tar.bz2 && cd samtools-0.1.18
+make CFLAGS=-fPIC
+export SAMTOOLS=`pwd`
+cpanm Bio::DB::Sam
+
+
+
+
+# 2016-05-26
+
+cd /home/shg047/oasis/SALK/bam
+# only call SNP
+samtools mpileup --skip-indels -d 250 -m 1 -E --BCF --output-tags DP,DV,DP4,SP -f <reference genome.fa> -o <output.bcf> <list of input bam files>
+bcftools index  <output.bcf> <indexed.bcf>
+bcftools call --skip-variants indels --multiallelic-caller --variants-only  -O v <output.bcf> -o <output.vcf>
+# only call Indel
+samtools mpileup -d 250 -m 1 -E --BCF --output-tags DP,DV,DP4,SP -f <reference genome.fa> -o <output.bcf> <list of input bam files>
+bcftools index  <output.bcf> <indexed.bcf>
+bcftools call --skip-variants snps --multiallelic-caller --variants-only  -O v <output.bcf> -o <output.vcf>
+# call indel and SNP
+samtools mpileup -d 250 -m 1 -E --BCF --output-tags DP,DV,DP4,SP -f <reference genome.fa> -o <output.bcf> <list of input bam files>
+bcftools index  <output.bcf> <indexed.bcf>
+bcftools call --multiallelic-caller --variants-only  -O v <output.bcf> -o <output.vcf>
+
+samtools mpileup -d 250 -m 1 -E --BCF --output-tags DP,AD,ADF,SP -f /home/shg047/oasis/db/hg19/hg19.fa -o STL001RV-01.chr6.sorted.clipped.bcf  STL001RV-01.chr6.sorted.clipped.bam
+bcftools index  STL001RV-01.chr6.sorted.clipped.bcf  
+bcftools call --skip-variants indels --multiallelic-caller --variants-only  -O v <output.bcf> -o <output.vcf>
+
+bcftools call --multiallelic-caller --variants-only  -O v STL001RV-01.chr6.sorted.clipped.bcf  -o STL001RV-01.chr6.sorted.clipped.vcf
+bcftools call --skip-variants snps --multiallelic-caller --variants-only  -O v STL001RV-01.chr6.sorted.clipped.bcf  -o STL001RV-01.chr6.sorted.clipped.vcf
+
+cd  /oasis/tscc/scratch/ddiep/Working/160428_RapidRun
+You must learn the pipeline for the methylation calling
+
+rm * chrLambdaNEB.methylFreq
+
+cd /home/shg047/oasis/monod/hapinfo
+R CMD BATCH trim.R
+
+/home/shg047/oasis/monod/HMHPlasma/Excl/excl.txt
+742746b3f183
+xse251<-unique(xse)
+match(xse251,xse)
+
+Writing reviews of academic papers: https://github.com/jtleek/reviews
+A guide to reading scientific papers: GitHub - jtleek/readingpapers: 
+Good Habit for Bioinformatics Analyst or Scientist: https://www.biostars.org/p/190366/
+Lab notebook for bioinformatics/data analysis work: https://www.biostars.org/p/191984/
+The Most Common Stupid Mistakes In Bioinformatics: https://www.biostars.org/p/7126/#191667
+
+cp ../Bladder.hapInfo.txt ./ 
+cp ../Brain.hapInfo.txt ./ 
+cp ../Colon.hapInfo.txt ./ 
+cp ../Esophagus.hapInfo.txt ./ 
+cp ../Intestine.hapInfo.txt ./ 
+cp ../Kidney.hapInfo.txt ./ 
+cp ../Liver.hapInfo.txt ./ 
+cp ../Lung.hapInfo.txt ./ 
+cp ../Pancreas.hapInfo.txt ./ 
+cp ../Stomach.hapInfo.txt ./ 
+cp ../NC-P.hapInfo.txt ./ 
+cp ../WB.hapInfo.txt ./ 
+
+
+#!/usr/bin/perl
+use CWD;
+my $dir=getcwd;
+my @file=glob("NC-P*hapInfo.txt");
+foreach my $file(@file){
+my ($sam,undef)=split/\./,$file;
+open OUT,">$file.job";
+print OUT "#!/bin/csh\n";
+print OUT "#PBS -n $file\n";
+print OUT "#PBS -q hotel\n";
+print OUT "#PBS -l nodes=1:ppn=1\n";
+print OUT "#PBS -l walltime=1:00:00\n";
+print OUT "#PBS -V\n";
+print OUT "#PBS -M shicheng.guo\@gmail.com \n";
+print OUT "#PBS -m abe\n";
+print OUT "#PBS -A k4zhang-group\n";
+print OUT "cd $dir\n";
+print OUT "perl HMHInPlasmaTest.pl $file excl.txt $sam.HMH\n";
+}
+
+system("wget https://cran.r-project.org/src/contrib/gdata_2.17.0.tar.gz")
+system("wget https://cran.r-project.org/src/contrib/caTools_1.17.1.tar.gz")
+
+Step 1. Download Roadmap Data
+cd /home/shg047/oasis/Roadmap
+wget ftp://ftp.bcgsc.ca/public/mbilenky/112epigenomes/5mC/SBS_Removed_E027_E064_Fixed_E012/EG.mnemonics.name.xls
+wget ftp://ftp.bcgsc.ca/public/mbilenky/112epigenomes/5mC/SBS_Removed_E027_E064_Fixed_E012/FractionalMethylation.tar.gz
+wget ftp://ftp.bcgsc.ca/public/mbilenky/112epigenomes/5mC/SBS_Removed_E027_E064_Fixed_E012/FractionalMethylation.tar.gz.md5sum
+wget ftp://ftp.bcgsc.ca/public/mbilenky/112epigenomes/5mC/SBS_Removed_E027_E064_Fixed_E012/header
+wget ftp://ftp.bcgsc.ca/public/mbilenky/112epigenomes/5mC/SBS_Removed_E027_E064_Fixed_E012/ReadCoverage.tar.gz
+wget ftp://ftp.bcgsc.ca/public/mbilenky/112epigenomes/5mC/SBS_Removed_E027_E064_Fixed_E012/ReadCoverage.tar.gz.md5sum
+
+Step 1. Repalce -1 to space, so that perl could calculate the mean and SD based on that table
+for i in {1..22} "X" "Y" "M"
+do
+perl -p -i -e "s/-1/ /g" chr$i.fm &
+done
+
+Step 2. Calculate the Regionss mean methylation level and Summary SD
+
+perl MethSearchRoadmap.pl target.txt ESCA-space.fm.rlt.txt 23 2 &
+perl MethSearchRoadMapByLoc.pl target.txt Target-Full-Tissue-space.fm.rlt.txt 2 &
+
+wget http://egg2.wustl.edu/roadmap/data/byDataType/dnamethylation/DMRs/WGBS_DMRs_v2.tsv.gz
+
+for i in {1..5}
+do
+echo "perl /home/shg047/oasis/monod/HMHPlasma/HMHInPlasmaTest.pl 6-P-1.hapInfo.txt 6-T-1.hapInfo.txt excl.txt 6-P-1.HMH" | qsub -q hotel
+echo "perl /home/shg047/oasis/monod/HMHPlasma/HMHInPlasmaTest.pl 7-P-1.hapInfo.txt 7-T-1.hapInfo.txt excl.txt 7-P-1.HMH" | qsub -q hotel
+echo "perl /home/shg047/oasis/monod/HMHPlasma/HMHInPlasmaTest.pl PC-P-1.hapInfo.txt PC-T-1.hapInfo.txt excl.txt PC-P-1.HMH" | qsub -q hotel
+done
+
+ #!/bin/csh
+ #PBS -N test
+ #PBS -q pdafm
+ #PBS -l nodes=1:ppn=1
+ #PBS -l walltime=14:00:00
+ #PBS -o test
+ #PBS -e test
+ #PBS -V
+ #PBS -M shihcheng.guo@gmail.com
+ #PBS -m abe
+ #PBS -A k4zhang-group
+ 
+perl /home/shg047/oasis/monod/HMHPlasma/HMHInPlasmaTest.pl 6-P-1.hapInfo.txt 6-T-1.hapInfo.txt excl.txt 6-P-1.HMH
+perl ./HMHInPlasmaTest.pl 7-P-1.hapInfo.txt 7-T-1.hapInfo.txt excl.txt 7-P-1.HMH
+perl ./HMHInPlasmaTest.pl PC-P-1.hapInfo.txt PC-T-1.hapInfo.txt excl.txt PC-P-1.HMH
+perl ./HMHInPlasmaTest.pl 6-P-2.hapInfo.txt 6-T-2.hapInfo.txt excl.txt 6-P-2.HMH
+perl ./HMHInPlasmaTest.pl 7-P-2.hapInfo.txt 7-T-2.hapInfo.txt excl.txt 7-P-2.HMH
+perl ./HMHInPlasmaTest.pl PC-P-2.hapInfo.txt PC-T-2.hapInfo.txt excl.txt PC-P-2.HMH
+perl ./HMHInPlasmaTest.pl 6-P-3.hapInfo.txt 6-T-3.hapInfo.txt excl.txt 6-P-3.HMH
+perl ./HMHInPlasmaTest.pl 7-P-3.hapInfo.txt 7-T-3.hapInfo.txt excl.txt 7-P-3.HMH
+perl ./HMHInPlasmaTest.pl PC-P-3.hapInfo.txt PC-T-3.hapInfo.txt excl.txt PC-P-3.HMH
+perl ./HMHInPlasmaTest.pl 6-P-4.hapInfo.txt 6-T-4.hapInfo.txt excl.txt 6-P-4.HMH
+perl ./HMHInPlasmaTest.pl 7-P-4.hapInfo.txt 7-T-4.hapInfo.txt excl.txt 7-P-4.HMH
+perl ./HMHInPlasmaTest.pl PC-P-4.hapInfo.txt PC-T-4.hapInfo.txt excl.txt PC-P-4.HMH
+perl ./HMHInPlasmaTest.pl 6-P-5.hapInfo.txt 6-T-5.hapInfo.txt excl.txt 6-P-5.HMH
+perl ./HMHInPlasmaTest.pl 7-P-5.hapInfo.txt 7-T-5.hapInfo.txt excl.txt 7-P-5.HMH
+perl ./HMHInPlasmaTest.pl PC-P-5.hapInfo.txt PC-T-5.hapInfo.txt excl.txt PC-P-5.HMH
+
+
+#!/bin/csh
+ #PBS -N test
+ #PBS -q pdafm
+ #PBS -l nodes=1:ppn=1
+ #PBS -l walltime=14:00:00
+ #PBS -o test
+ #PBS -e test
+ #PBS -V
+ #PBS -M shihcheng.guo@gmail.com
+ #PBS -m abe
+ #PBS -A k4zhang-group
+ cd /home/shg047/oasis/monod/Batch3Plasma/hapinfo
+ perl ~/bin/hapinfo2mf.pl ./ > batch3AMF.txt
+ perl ~/bin/hapinfo2mhl.pl  Hapinfo_File_list > batch3MHL.txt
+
+qsub NC-P-43.*job
+qsub CRC-P-3.*job
+qsub CRC-P-10.*job
+qsub NC-P-47.*job
+
+
+
+cd  /oasis/tscc/scratch/ddiep/Plasma_10ngRRBS/BAMfiles
+perl ~/bin/samInfoPrep4Bam2Hapinfo.pl > /home/shg047/oasis/monod/Batch3Plasma/saminfo.txt
+cd /home/shg047/oasis/monod/Batch3Plasma/
+cp *bam *bai /home/shg047/oasis/monod/Batch3Plasma/bam
+
+perl ~/bin/bam2hapInfo2PBS.pl ../saminfo.txt submit bisreadMapper /home/shg047/oasis/db/hg19/hg19.chrom.sizes /home/shg047/oasis/db/hg19/HsGenome19.CpG.positions.txt
+
+
+7-P-1.hapInfo.txt
+a='80981116-80981175'
+
+grep $a 6-P-1.hapInfo.txt
+grep $a 6-T-1.hapInfo.txt
+grep $a NC-P.hapInfo.txt
+
+
+
+cp ../hapinfo/6-P-1.hapInfo.txt ./
+cp ../hapinfo/6-P-2.hapInfo.txt ./
+cp ../hapinfo/6-P-3.hapInfo.txt ./
+cp ../hapinfo/6-P-4.hapInfo.txt ./
+cp ../hapinfo/6-P-5.hapInfo.txt ./
+cp ../hapinfo/7-P-1.hapInfo.txt ./
+cp ../hapinfo/7-P-2.hapInfo.txt ./
+cp ../hapinfo/7-P-3.hapInfo.txt ./
+cp ../hapinfo/7-P-4.hapInfo.txt ./
+cp ../hapinfo/7-P-5.hapInfo.txt ./
+cp ../hapinfo/PC-P-1.hapInfo.txt ./
+cp ../hapinfo/PC-P-2.hapInfo.txt ./
+cp ../hapinfo/PC-P-3.hapInfo.txt ./
+cp ../hapinfo/PC-P-4.hapInfo.txt ./
+cp ../hapinfo/PC-P-5.hapInfo.txt ./
+
+perl report_cancerHM.pbs 6-T-1.hapInfo.txt 6-T-1.hapInfo.txt NC-P.hapInfo.txt 6-T-1
+perl report_cancerHM.pbs 6-T-2.hapInfo.txt 6-T-1.hapInfo.txt NC-P.hapInfo.txt 6-T-1
+perl report_cancerHM.pbs 6-T-3.hapInfo.txt 6-T-1.hapInfo.txt NC-P.hapInfo.txt 6-T-1
+perl report_cancerHM.pbs 6-T-1.hapInfo.txt 6-T-1.hapInfo.txt NC-P.hapInfo.txt 6-T-1
+perl report_cancerHM.pbs 6-T-1.hapInfo.txt 6-T-1.hapInfo.txt NC-P.hapInfo.txt 6-T-1
+perl report_cancerHM.pbs 6-T-1.hapInfo.txt 6-T-1.hapInfo.txt NC-P.hapInfo.txt 6-T-1
+perl report_cancerHM.pbs 6-T-1.hapInfo.txt 6-T-1.hapInfo.txt NC-P.hapInfo.txt 6-T-1
+perl report_cancerHM.pbs 6-T-1.hapInfo.txt 6-T-1.hapInfo.txt NC-P.hapInfo.txt 6-T-1
+perl report_cancerHM.pbs 6-T-1.hapInfo.txt 6-T-1.hapInfo.txt NC-P.hapInfo.txt 6-T-1
+perl report_cancerHM.pbs 6-T-1.hapInfo.txt 6-T-1.hapInfo.txt NC-P.hapInfo.txt 6-T-1
+perl report_cancerHM.pbs 6-T-1.hapInfo.txt 6-T-1.hapInfo.txt NC-P.hapInfo.txt 6-T-1
+perl report_cancerHM.pbs 6-T-1.hapInfo.txt 6-T-1.hapInfo.txt NC-P.hapInfo.txt 6-T-1
+perl report_cancerHM.pbs 6-T-1.hapInfo.txt 6-T-1.hapInfo.txt NC-P.hapInfo.txt 6-T-1
+perl report_cancerHM.pbs 6-T-1.hapInfo.txt 6-T-1.hapInfo.txt NC-P.hapInfo.txt 6-T-1
+perl report_cancerHM.pbs 6-T-1.hapInfo.txt 6-T-1.hapInfo.txt NC-P.hapInfo.txt 6-T-1
+
+
+report.CanHMH.pl
+
+/home/shg047/bak/plink/china
+
+cd /oasis/tscc/scratch/shg047/monod/hapinfo
+head -n 2000 6-P-1.hapInfo.txt > /oasis/tscc/scratch/shg047/monod/test/6-P-1.hapInfo.txt
+head -n 2000 6-P-1.hapInfo.txt > /oasis/tscc/scratch/shg047/monod/test/6-T-1.hapInfo.txt
+
+cat NC-P-*.hapInfo.txt >> /oasis/tscc/scratch/shg047/monod/test/NC-P.hapInfo.txt
+cd /oasis/tscc/scratch/shg047/monod/test/
+
+
+wig2bed  --zero-indexed  < wgEncodeBroadHistoneGm12878H3k4me1StdSig.wig  > wgEncodeBroadHistoneGm12878H3k4me1StdSig.bed
+bedtools cluster -d 50 -i wgEncodeBroadHistoneGm12878H3k4me1StdSig.wig > wgEncodeBroadHistoneGm12878H3k4me1StdSig.bed.bed &
+./PileOMeth extract -r chr1:723205-725116 --minDepth 1 /home/shg047/oasis/db/hg19/hg19.fa /home/shg047/oasis/monod/bam/RRBS1/bam/PC-T-7.sorted.clipped.bam -o /home/shg047/oasis/monod/bam/RRBS1/MF_PileOMeth/PC-T-7.sorted.clipped
+./PileOMethG extract -r chr1:723205-725116 --minDepth 1 /home/shg047/oasis/db/hg19/hg19.fa /home/shg047/oasis/monod/bam/RRBS1/bam/PC-T-7.sorted.clipped.bam -o /home/shg047/oasis/monod/bam/RRBS1/MF_PileOMeth/PC-T-7.sorted.clipped
+
+SIEMENS
+awk '{if ($0 ~ /^>/) { print $0; } else { printf("%s%c%s\n", substr($0, 1, 9), "X", substr($0, 11, length($0) - 10))}}' in.fa > out.fa
+  
+/home/shg047/oasis/db/mm9/chr10.fa
+samtools tview Indx01.merged.bam.sorted.bam /home/shg047/oasis/db/mm9/chr10.fa 
+
+chr10:100222302-100223142
+
+
+samtools bedcov  /home/k4zhang/my_oasis_tscc/MONOD/All_WGBS_pooled/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.bed  /home/shg047/oasis/monod/bam/RRBS2/RRBS2/RRBS-6P16.sorted.clipped.bam 
+
+
+grep chr10:10003965-10004290 B6ES.hapInfo_fixed.txt
+
+grep chr10:100222148-100223142 2A4F1_miPS.hapInfo_fixed.txt
+
+samtools tview 
+
+chr10:100222148-100223142
+
+#!/bin/csh
+ #PBS -N test
+ #PBS -q pdafm
+ #PBS -l nodes=1:ppn=1
+ #PBS -l walltime=14:00:00
+ #PBS -o test
+ #PBS -e test
+ #PBS -V
+ #PBS -M shihcheng.guo@gmail.com
+ #PBS -m abe
+ #PBS -A k4zhang-group
+ cd /oasis/tscc/scratch/shg047/monod/test
+ perl report_cancerHM.pl ../hapinfo/6-P-1.hapInfo.txt ../hapinfo/6-T-1.hapInfo.txt ../hapinfo/NC-P-1.hapInfo.txt
+ 
+ 
+ cd /home/shg047/bak/plink/phase  
+ phase -f0 -F0.1 -p0.7 -c test.inp test.out
+
+
+ cd /oasis/tscc/scratch/zhl002/hapinfo
+ perl ~/bin/hapinfo2mhl.pl Hapinfo_File_List.txt > ~/MHL.output.12april.txt
+
+ cd /oasis/tscc/scratch/zhl002/hapinfo
+
+ grep chr10:100017509-100017813 B6ES.hapInfo_fixed.txt
+ 
+
+2016-04-11
+
+grep chr19:58220626-58220668 /home/shg047/oasis/monod/hapinfo/7-T-2*hapInfo.txt
+grep chr19:58220626-58220668 /home/shg047/oasis/monod/hapinfo/7-T-3*hapInfo.txt
+grep chr19:58220626-58220668 /home/shg047/oasis/monod/hapinfo/7-P-9*hapInfo.txt
+grep chr19:58220626-58220668 /home/shg047/oasis/monod/hapinfo/7-T-1*hapInfo.txt
+grep chr19:58220626-58220668 /home/shg047/oasis/DennisLo2015/hapinfo/CTR118*hapInfo.txt
+grep chr19:58220626-58220668 /home/shg047/oasis/monod/hapinfo/STL003SG-01*hapInfo.txt
+
+7-T-1
+torrow:
+
+1) transfer 6 column file to 4 column file
+2) try to upload to UCSC
+3, try to find what happend to the plasma data?? any thing wrong? and check the row data
+
+
+
+ #!/usr/bin/perl
+ foreach my $file (glob("*bw")){
+ my ($name,undef)=split /\_/,$file;
+ print "track type=bigWig name=\"$name\" description=\"$file\" bigDataUrl\=ftp\:\/\/ucsd002\:ucsd002\@132.239.189.199\/wig\/$file\n";
+ }
+
+
+# Visulization of MONOD dataset
+awk '!/track/ {print $1,$2,$3,$4}' 7-P-1_CpG.bedGraph | sort -k1,1 -k2,2n - > 7-P-1_CpG.bedGraph.Sort.V4
+bedGraphToBigWig 7-P-1_CpG.bedGraph.Sort.V4 hg19.chrom.sizes 7-P-1.bw
+curl -T 7-P-1.bw ftp://132.239.189.199 --user ucsd002:ucsd002
+
+
+for i in `ls *bedGraph`
+do
+awk '!/track/ {print $1,$2,$3,$4}' $i | sort -k1,1 -k2,2n - > $i.S4
+done
+
+for i in `ls *.SortV4`
+do
+bedGraphToBigWig $i hg19.chrom.sizes $i.bw
+done
+
+for i in `ls *bw`
+do
+curl -T $i ftp://132.239.189.199 --user ucsd002:ucsd002
+done
+
+
+foreach my $file (glob("*bw")){
+my ($name,undef)=split /\_/,$file;
+print "track type=bigWig name=\"$name\" description=\"file\" bigDataUrl=ftp://ucsd002:ucsd002@132.239.189.199/wig/"
+}
+
+# utilities tools
+bedtools sort -header -i 7-P-1_CpG.bedGraph > 7-P-1_CpG.bedGraph.sort
+curl -T 7-P-1.bw ftp://132.239.189.199 --user ucsd002:ucsd002
+find mydir -type f -exec curl -u xxx:psw --ftp-create-dirs -T {} ftp://192.168.1.158/public/demon_test/{} \;
+track type=bigWig name="My" description="Lab" bigDataUrl=ftp://ucsd002:ucsd002@132.239.189.199/wig/7-P-1.bw
+scp 7-P-1.bw shicheng@meangenemachine.dynamic.ucsd.edu:
+@132.239.189.199/wig/7-P-1.bw
+
+ftp 132.239.189.199
+132.239.189.199/home/ucsd002/wig
+samtools tview /home/shg047/oasis/monod/bam/RRBS1/bam/6-P-5.sorted.clipped.bam /home/shg047/oasis/db/hg19/meth/bismark/hg19.fa -p chr17:75283831-75283978
+chr17:75283831-75283978 6-P-5.hapInfo.txt
+chr17:75283978
+
+setwd("/oasis/tscc/scratch/shg047/monod/mhl")
+load("MONOD-Apr6.MHL.RData")
+x1<-grep("chr19:58220439-58220459",rownames(data))
+x2<-grep("chr19:58220481-58220515",rownames(data))
+x3<-grep("chr19:58220626-58220668",rownames(data))
+data[x1,]
+data[x2,]
+data[x3,]
+
+[File:Pancreatic.cancer.plasma.vs.normal.plasma.significant.txt]
+[[File:Lung.cancer.plasma.vs.normal.plasma.significant.txt]]
+[[File:Colon.cancer.plasma.vs.normal.plasma.significant.txt]]
+
+[[File:13E8.tm-colon.png]]
+[[File:146E.tm-lung.png]]
+[[File:1508.tm-pancreatic.png]]
+
+SRX381713_normal_lung
+
+less -S monod.mhl.List1.march30.txt
+
+chr10:100027918-100027944
+
+# 1
+grep chr10:101302427-101302727 ../hapinfo/6-P-1.hapInfo.txt
+grep chr10:100227698-100227747 ../hapinfo/SRX381713_normal_lung.
+chr10:100095550-100096429
+1E12P20_miPS 0.555555
+
+/home/shg047/oasis/db/mm9/chr10.fa
+samtools tview /home/shg047/oasis/db/mm9/chr10.fa
+
+samtools bedcov  /home/k4zhang/my_oasis_tscc/MONOD/All_WGBS_pooled/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.bed  /home/shg047/oasis/monod/bam/RRBS2/RRBS2/RRBS-6P16.sorted.clipped.bam 
+
+echo "samtools bedcov /home/k4zhang/my_oasis_tscc/MONOD/All_WGBS_pooled/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.bed /oasis/tscc/scratch/ddiep/Plasma_RRBS_151208/BAMfiles/RRBS-6P17.sorted.clipped.bam" | qsub -q glean -N test
+How to install Perl package
+perl -MCPAN -e "install Getopt::Long"
+perl -MCPAN -e "use Getopt::Long"
+
+perl GeneSearch.pl -i pancreatic.ncbi.txt -g GeneSymbolList.txt
+/home/shg047/perl5/perlbrew/Getopt-Long-2.48/lib/Getopt/Long.pm
+ 
+bedtools intersect -wao -a colon.cancer.plasma.vs.normal.plasma.significant.txt -b hg19_refGene.bed > colon.cancer.sig.mhl.sorted.Annotated.txt
+awk '{print $1}' most.signficant.66.colon.cancer.plasma.vs.normal.plasma.significant.txt > most.signficant.66.colon.cancer.plasma.vs.normal.plasma.significant.bed
+perl -p -i -e "s/[:-]/\t/g" most.signficant.66.colon.cancer.plasma.vs.normal.plasma.significant.bed 
+bedtools intersect -wao -a most.signficant.66.colon.cancer.plasma.vs.normal.plasma.significant.bed -b hg19_refGene.bed > most.signficant.66.colon.cancer.plasma.vs.normal.plasma.significant.bed.txt.Annotated.txt
+awk '{print $8}' most.signficant.66.colon.cancer.plasma.vs.normal.plasma.significant.bed.txt.Annotated.txt > most.signficant.Colon.Gene.list.txt
+
+[[758D.tm.png|400px]]
+[[1170.tm-lung-cancer-plasma.png|400px]]
+[[3D4E.tm.-pancreatic-cancer-plasma.png|400px]]
+
+chr10:123-456
+samtools tview 
+/home/shg047/oasis/DennisLo2015/sortbam/BMT1.read1_val_1.fq.gz_bismark_bt2_pe.sort.PileOMeth.MF.txt
+
+file="lung.cancer.plasma.vs.normal.plasma.significant.txt"
+awk '{print $1}' $file > $file.bed
+perl -p -i -e "s/[:-]/\t/g" $file.bed
+bedtools intersect -wao -a $file.bed -b hg19_refGene.bed > $file.Annotated.txt
+awk '{print $8}' $file.Annotated.txt | sort -u > $file.Gene.list.txt
+
+d1<-read.table("xx.lung.target.txt",sep="\t")
+d2<-read.table("lung.cancer.plasma.vs.normal.plasma.significant.txt.Gene.list.txt",sep="\t")
+d2[na.omit(match(d1[,1],d2[,1])),]
+
+file="pancreatic.cancer.plasma.vs.normal.plasma.significant.txt"
+awk 'NR !=1 {print $1}' $file > $file.bed
+perl -p -i -e "s/[:-]/\t/g" $file.bed
+bedtools intersect -wao -a $file.bed -b hg19_refGene.bed > $file.Annotated.txt
+awk '{print $8}' $file.Annotated.txt | sort -u > $file.Gene.list.txt
+
+cd /home/shg047/oasis/DennisLo2015/mhl
+awk '{print $1}' dennis.hapinfo2mhl.march28.txt > Dennis.bed
+perl -p -i -e "s/[:-]/\t/g" Dennis.bed
+/home/shg047/oasis/DennisLo2015/mhl/Dennis.bed
+
+bedtools intersect -wb 
+
+#!/usr/bin/perl
+use Cwd;
+use strict;
+my $file="/home/shg047/oasis/DennisLo2015/mhl/Dennis.bed";
+open F,$file;
+while(<F>){
+chomp;
+system("PileOMeth extract -p 5 -q 10 --minDepth 1 -r $_ /home/shg047/oasis/db/hg19/hg19.fa BMT1.read1_val_1.fq.gz_bismark_bt2_pe.sort.bam -o Tmp");
+my $amf=qx/grep -v track Tmp_CpG.bedGraph | awk '{cov+=$5+\$6;nC+=\$5}END{print nC\/cov}'/;
+print "$_\t$amf";
+}
+
+less -S ../mhl/dennis.hapinfo2mhl.march28.txt
+PileOMeth extract -p 5 -q 10 --minDepth 1 -r chr10:120967293-120967420 /home/shg047/oasis/db/hg19/hg19.fa BMT1.read1_val_1.fq.gz_bismark_bt2_pe.sort.bam -o Tmp2
+grep -v track Tmp_CpG.bedGraph | awk '{cov+=$5+$6;nC+=$5}END{print nC/cov}' 
+
+PileOMeth extract -p 5 -q 10 --minDepth 1 -r chr10:100069336-100069468 /home/shg047/oasis/db/hg19/hg19.fa BMT1.read1_val_1.fq.gz_bismark_bt2_pe.sort.bam -o Tmp
+grep -v track Tmp_CpG.bedGraph | awk '{cov+=$5+$6;nC+=$5}END{print nC/cov}' 
+
+
+chr10:3480-6970
+chr10:12345-12347
+
+PileOMeth extract -r chr10:123-456 genome.fa alignments.bam
+PileOMeth extract -l a.txt genome.fa alignments.bam  >  c.txt
+
+
+cd /home/shg047/oasis/monod/bam/RRBS1
+perl PileOMethPBS.pl
+cd /home/shg047/oasis/monod/bam/RRBS2
+perl PileOMethPBS.pl
+
+PileOMeth extract --minDepth 10 /home/shg047/oasis/db/hg19/hg19.fa /home/shg047/oasis/monod/bam/RRBS1/bam/PC-T-7.sorted.clipped.bam -o /home/shg047/oasis/monod/bam/RRBS1/MF_PileOMeth/PC-T-7.sorted.clipped
+PileOMeth extract --counts -p 5 -q 10 /home/shg047/oasis/db/hg19/hg19.fa /home/shg047/oasis/monod/bam/RRBS1/bam/PC-T-7.sorted.clipped.bam -o /home/shg047/oasis/monod/bam/RRBS1/MF_PileOMeth/PC-T-7.sorted.clipped
+
+
+wget http://hgdownload.soe.ucsc.edu/goldenPath/hg38/chromosomes/chr1.fa.gz
+gunzip chr.fa.gz
+samtools view -bh RRBS-6P27.sorted.clipped.bam chr1:723205-726280 > Hanne.test.bam
+samtools sort -o Hanne.test.sort.bam Hanne.test.bam
+samtools index Hanne.test.sort.bam
+PileOMeth extract -r chr1:723205-725116  chr1.fa  RRBS-6P27.sorted.clipped.bam  -o y1.ouput.txt
+PileOMeth extract -r chr1:725240-726280  chr1.fa  Hanne.test.sort.bam  -o y2.ouput.txt
+PileOMeth extract -l interval.input.txt chr1.fa  Hanne.test.sort.bam  -o y1y2.ouput.txt
+
+
+
+grep -v track PileOMeth.output | awk '{cov+=$5+$6;nC+=$5}END{print nC/cov}'
+
+samtools tview /home/shg047/oasis/monod/bam/RRBS1/bam/NC-P-12.sorted.clipped.bam /home/shg047/oasis/db/hg19/meth/bismark/hg19.fa -p chr1:725240-725280
+
+NC-P-12.sorqted.clipped_CpG.bedGraph
+
+chr1    725240  725241  0       0       35
+chr1    725241  725242  100     1       0
+chr1    725255  725256  0       0       36
+chr1    725256  725257  100     1       0
+chr1    725269  725270  0       0       45
+chr1    725270  725271  100     1       0
+chr1    725274  725275  4       2       47
+chr1    725275  725276  100     1       0
+chr1    725279  725280  5       1       16
+
+Rscript --vanilla ~/bin/matrixPlot.R -i "monond-colon-plasma.txt" -o "monond-colon-plasma"
+bed="/home/k4zhang/my_oasis_tscc/MONOD/All_WGBS_pooled/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.bed"
+fa="RRBS-6P11 /home/shg047/oasis/db/hg19/hg19.fa"
+PileOMeth extract --fraction -q 10 -p 5 -l $bed -o  RRBS-6P11 $fa RRBS-6P11.sorted.clipped.bam  
+PileOMeth extract -l /home/k4zhang/my_oasis_tscc/MONOD/All_WGBS_pooled/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.bed  RRBS-6P11 /home/shg047/oasis/db/hg19/hg19.fa RRBS-7P30.sorted.clipped.bam
+PileOMeth extract -l /home/k4zhang/my_oasis_tscc/MONOD/All_WGBS_pooled/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.bed /home/shg047/oasis/db/hg19/hg19.fa RRBS-7P30.sorted.clipped.bam
+
+ 
+head /home/k4zhang/my_oasis_tscc/MONOD/All_WGBS_pooled/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.bed > xx.bed
+
+
+
+PileOMeth extract /home/shg047/oasis/db/hg19/hg19.fa RRBS-7P30.sorted.clipped.bam
+
+
+cp /home/shg047/oasis/Tumor-WGBS/HCT116-SRX669642/mergeHapinfo/* ~/oasis/monod/hapinfo
+cp /home/shg047/oasis/Tumor-WGBS/HCC-SRX332736/mergeHapinfo/* ~/oasis/monod/hapinfo
+cd ~/oasis/monod/hapinfo
+
+
+perl ~/bin/samInfoPrep4Bam2Hapinfo.pl  .sorted.clipped.bam > ../Saminfo4bam2hapinfo.txt
+perl ~/bin/bam2hapInfo2PBS.pl ../Saminfo4bam2hapinfo.txt submit nonbismark
+
+
+
+ #!/bin/csh
+ #PBS -N test
+ #PBS -q pdafm
+ #PBS -l nodes=1:ppn=1
+ #PBS -l walltime=4:00:00
+ #PBS -o hapinfo2mhl.o
+ #PBS -e hapinfo2mhl.e
+ #PBS -V
+ #PBS -M shihcheng.guo@gmail.com
+ #PBS -m abe
+ #PBS -A k4zhang-group
+ cd /home/shg047/oasis/SALK/mergeHapinfo
+ perl ~/bin/hapinfo2mhl.pl Salk.HapinfoList > Salk.hapinfo2mhl.march29.txt
+ Rscript --vanilla ~/bin/matrixPlot.R -i "Salk.hapinfo2mhl.march28.txt" -o "Salk.hapinfo2mhl.march28"
+ perl ~/bin/hapinfo2mf.pl ./ > Salk.hapinfo2mf.march28.txt
+ Rscript --vanilla ~/bin/matrixPlot.R -i "Salk.hapinfo2mf.march28.txt" -o "Salk.hapinfo2mf.march28"
+ 
+  Rscript --vanilla ~/bin/matrixPlot.R -i "monod.mhl.List1.march29.txt" -o "monod.mhl.List1.march29"
+
+ 
+
+ 
+ 
+head -n 50 /home/shg047/oasis/AgeBlood/hapinfo/WB-centenarian.hapInfo.txt
+head -n 50 /home/shg047/oasis/monod/hapinfo/WB-centenarian.hapInfo.txt
+
+#!/usr/bin/perl
+use strict;
+use Cwd;
+
+my $dir1="/home/shg047/oasis/Estellar2016/mergeHapinfo/";
+chdir $dir1;
+my @hap1=glob("$dir1/*lung*hapInfo.txt");
+my @hap2=glob("$dir1/*colon*hapInfo.txt");
+
+my $dir2="/home/shg047/oasis/DennisLo2015/hapinfo"
+chdir $dir2;
+my @hap3=glob("CTR*hapInfo.txt");
+my @hap4=glob("Pregnancy*hapInfo.txt");
+
+my $dir3="/home/shg047/oasis/monod/hapinfo";
+chdir $dir3;
+my @hap5=glob("*hapInfo.txt");
+
+my @file=(@hap1,@hap2,@hap3,@hap4,@hap5);
+foreach my $file(@file){
+print "$file\n";
+}
+
+ 
+ Rscript --vanilla ~/bin/matrixPlot.R -i "Estellar2016.hapinfo2mhl.march28.txt" -o "Estellar2016.hapinfo2mhl.march28"
+
+ 
+
+
+
+LC	/home/shg047/oasis/Estellar2016/mergeHapinfo/SRX381719_squamous_cell_tumor_lung.hapInfo.txt
+LC	/home/shg047/oasis/Estellar2016/mergeHapinfo/SRX381722_small_cell_tumor_lung.hapInfo.txt
+LC	/home/shg047/oasis/Estellar2016/mergeHapinfo/SRX381716_adenocarcinoma_lung.hapInfo.txt
+LN	/home/shg047/oasis/Estellar2016/mergeHapinfo/SRX381713_normal_lung.hapInfo.txt
+NC	/home/shg047/oasis/Estellar2016/mergeHapinfo/SRX381553_normal_colon.hapInfo.txt
+CC	/home/shg047/oasis/Estellar2016/mergeHapinfo/SRX381569_tumor_colon.hapInfo.txt
+CC	/home/shg047/oasis/Estellar2016/mergeHapinfo/SRX381585_metastasis_colon.hapInfo.txt
+
+
+/home/shg047/oasis/Estellar2016/mergeHapinfo/
+/home/shg047/oasis/Estellar2016/mergeHapinfo/
+/home/shg047/oasis/Estellar2016/mergeHapinfo/
+/home/shg047/oasis/Estellar2016/mergeHapinfo/
+/home/shg047/oasis/Estellar2016/mergeHapinfo/
+/home/shg047/oasis/Estellar2016/mergeHapinfo/
+/home/shg047/oasis/Estellar2016/mergeHapinfo/
+
+
+
+cp /oasis/tscc/scratch/ddiep/Ziller_BAMfiles/Colon_Tumor_Primary* ./
+
+#!/bin/csh
+#PBS -l nodes=1:ppn=1
+#PBS -l walltime=12:00:00
+#PBS -o wget.log
+#PBS -e wget.err
+#PBS -M diep.hue.dinh@gmail.com
+#PBS -m abe
+cd /home/ddiep/dinh_working/Tumor_WGBS
+#colon tumor primary tissue
+wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR949/SRR949210/SRR949210.sra
+wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR949/SRR949211/SRR949211.sra
+wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR949/SRR949212/SRR949212.sra
+#hct116
+wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByRun/sra/SRR/SRR153/SRR1536575/SRR1536575.sra
+
+GSE46644	GSM1204465	SRX332736	Colon primary tumor
+GSE60106	GSM1465024	SRX669642	HCT116
+
+GSE16256
+GSE17312
+GSE31971
+GSE30340
+
+
+Ziller et al paper.CD14 CD56 CD19
+
+#!/bin/csh
+#PBS -l nodes=1:ppn=1
+#PBS -q hotel
+#PBS -l walltime=12:00:00
+#PBS -o wget.log
+#PBS -e wget.err
+#PBS -M shihcheng.guo@gmail.com
+#PBS -m abe
+# Colon_Tumor_Primary:HCC-SRX332736
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR949/SRR949210/SRR949210_1.fastq.gz &
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR949/SRR949210/SRR949210_2.fastq.gz &
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR949/SRR949211/SRR949211_1.fastq.gz &
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR949/SRR949211/SRR949211_2.fastq.gz &
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR949/SRR949212/SRR949212_1.fastq.gz &
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR949/SRR949212/SRR949212_2.fastq.gz &
+
+# HCT116-SRX669642
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR153/005/SRR1536575/SRR1536575_1.fastq.gz &
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR153/005/SRR1536575/SRR1536575_2.fastq.gz &
+
+cp /home/shg047/oasis/SALK/mergeHapinfo/STL*.txt ./
+wc -l STL003AO-01.hapInfo.txt
+
+# 2016-03-28
+ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1279nnn/GSM1279516/GSM1279516_CpGcontext.Brain_W.txt.gz
+ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1279nnn/GSM1279517/GSM1279517_CpGcontext.Breast.txt.gz
+ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1279nnn/GSM1279518/GSM1279518_CpGcontext.CD19.txt.gz
+ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1279nnn/GSM1279519/GSM1279519_CpGcontext.Colon.txt.gz
+ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1279nnn/GSM1279520/GSM1279520_CpGcontext.Colon_M.txt.gz
+ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1279nnn/GSM1279521/GSM1279521_CpGcontext.Colon_P.txt.gz
+ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1279nnn/GSM1279522/GSM1279522_CpGcontext.H1437.txt.gz
+ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1279nnn/GSM1279523/GSM1279523_CpGcontext.H157.txt.gz
+ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1279nnn/GSM1279524/GSM1279524_CpGcontext.H1672.txt.gz
+ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1279nnn/GSM1279527/GSM1279527_CpGcontext.Lung.txt.gz
+ftp://ftp.ncbi.nlm.nih.gov/pub/geo/DATA/supplementary/samples/GSM1279nnn/GSM1279532/GSM1279532_CpGcontext.U87MG.txt.gz
+
+
+gzip -frtv9 *
+
+/home/shg047/oasis/Estellar2016/mergeBam
+
+
+GSE52271
+
+
+library("GEOquery")
+GEOSet <- getGEO("GSE56851")
+data <- as.data.frame(exprs(GEOSet[[1]]))
+phen <- pData(phenoData(GEOSet[[1]]))
+
+ #!/bin/csh
+ #PBS -N test
+ #PBS -q pdafm
+ #PBS -l nodes=1:ppn=1
+ #PBS -l walltime=4:00:00
+ #PBS -o hapinfo2mhl.o
+ #PBS -e hapinfo2mhl.e
+ #PBS -V
+ #PBS -M shihcheng.guo@gmail.com
+ #PBS -m abe
+ #PBS -A k4zhang-group
+ cd /home/shg047/oasis/monod/mhl
+ Rscript --vanilla ~/bin/matrixPlot.R -i "monod.mhl.march29-List1.txt" -o "monod.mhl.march29-List1"
+ cd /home/shg047/oasis/Estellar2016/hapinfo
+ perl ~/bin/hapinfo2mhl.pl ./ > Estellar2016.hapinfo2mhl.march28.txt
+ Rscript --vanilla ~/bin/matrixPlot.R -i "Estellar2016.hapinfo2mhl.march28.txt" -o "Estellar2016.hapinfo2mhl.march28"
+ perl ~/bin/hapinfo2mf.pl ./ > Estellar2016.hapinfo2mf.march28.txt
+ Rscript --vanilla ~/bin/matrixPlot.R -i "Estellar2016.hapinfo2mf.march28.txt" -o "Estellar2016.hapinfo2mf.march28"
+
+ 
+  
+ cd /home/shg047/oasis/monod/mhl
+ perl ~/bin/hapinfo2mhl.pl hapinfo2mhl.sampleList > monod.mhl.march29.txt
+ 
+ vim hapinfo2mhl-march29.job
+ 
+ 
+ cd /home/shg047/oasis/Estellar2016/hapinfo
+ perl ~/bin/hapinfo2mhl.pl ./ > Estellar2016.hapinfo2mhl.march28.txt
+ Rscript --vanilla ~/bin/matrixPlot.R -i "Estellar2016.hapinfo2mhl.march28.txt" -o "Estellar2016.hapinfo2mhl.march28"
+ perl ~/bin/hapinfo2mf.pl ./ > Estellar2016.hapinfo2mf.march28.txt
+ Rscript --vanilla ~/bin/matrixPlot.R -i "Estellar2016.hapinfo2mf.march28.txt" -o "Estellar2016.hapinfo2mf.march28"
+
+ 
+ 
+ 
+cd /home/shg047/oasis/monod/hapinfo/hapinfo
+cd /home/shg047/oasis/monod/hapinfo/WGBS
+
+
+
+
+
+[[File:66F0.tm-mhl-dennislo.png]]
+[[File:6681.tm.png]]
+
+wc -l dennis.hapinfo2mf.march28.txt
+wc -l dennis.hapinfo2mhl.march28.txt
+
+ d1<-read.table("dennis.hapinfo2mf.march28.txt",head=T,row.names=1)
+ d2<-read.table("dennis.hapinfo2mhl.march28.txt",head=T,row.names=1)
+ library("ggplot2")
+ library(RColorBrewer)
+ require(KernSmooth)
+ pdf("comp-1.smoothscatter.relationship.pdf")
+ par(mfrow=c(5,5),mar=c(1,1,1,1))
+ for(i in 1:25){
+ g = 11
+ n=length(d1[,i])
+ my.cols <- rev(brewer.pal(g, "RdYlBu"))
+ smoothScatter(d1[,i], d2[,i], nrpoints=0.05*n, colramp=colorRampPalette(my.cols), pch=19, cex=.3, col = "green1",xlab="",ylab="")
+ }
+ dev.off()
+ pdf("comp-2.smoothscatter.relationship.pdf")
+ par(mfrow=c(2,2),mar=c(2,2,2,2))
+ hist(d1[,1],breaks=10,main="MF",col="blue")
+ hist(d2[,1],breaks=10,main="MHL",col="blue")
+ plot(density(d1[,1],na.rm=T),main="MF",col="blue",lwd=2)
+ plot(density(d2[,1],na.rm=T),main="MHL",col="blue",lwd=2)
+ dev.off()
+
+
+
+
+# 2016-03-27
+vim ~/bin/samInfoPrep4Bam2Hapinfo.pl 
+Data<-cbind(GSE53045NormalPBMC,GSE35069NormalPBMC)
+cd /home/shg047/oasis/DennisLo2015/sortbam
+perl ~/bin/samInfoPrep4Bam2Hapinfo.pl ./ > ../Saminfo4bam2hapinfo.txt
+perl ~/bin/bam2hapInfo2PBS.pl ../Saminfo4bam2hapinfo.txt submit bismark
+
+vim ~/bin/samInfoPrep4Bam2Hapinfo.pl
+cd /oasis/tscc/scratch/ddiep/Plasma_RRBS_151208/BAMfiles
+perl ~/bin/samInfoPrep4Bam2Hapinfo.pl ./ > /home/shg047/oasis/monod/hapinfo/phase2/Saminfo4bam2hapinfo.txt
+less -S /home/shg047/oasis/monod/hapinfo/phase2/Saminfo4bam2hapinfo.txt
+
+cd /home/shg047/oasis/monod/hapinfo/phase2/
+perl ~/bin/bam2hapInfo2PBS.pl Saminfo4bam2hapinfo.txt submit nonbismark
+
+vim ~/bin/bam2hapInfo2PBS.pl
+
+
+
+# 2016-03-26
+
+
+mkdir test2
+samtools view -h /home/shg047/oasis/DennisLo2015/sortbam/T21.1.read1_val_1.fq.gz_bismark_bt2_pe.sort.bam chr10:31891611-31891781 > x.sam
+samtools view -bh x.sam > x.bam
+samtools sort -o x.sort.bam x.bam
+samtools index x.sort.bam
+
+samtools tview x.sort.bam /home/shg047/oasis/db/hg19/meth/bismark/hg19.fa -p chr10:31891611-31891781
+/home/shg047/bin/mergedBam2hapInfo.pl /home/k4zhang/my_oasis_tscc/MONOD/All_WGBS_pooled/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.bed /oasis/tscc/scratch/shg047/DennisLo2015/sortbam/test2x.sort.bam bismark > ../hapinfo/x.sort.bam.hapInfo.txt
+
+samtools sort -n -o x.nsort.bam x.bam 
+bismark_methylation_extractor --bedGraph --zero_based --comprehensive --cutoff 1  --mbias_off --paired-end x.nsort.bam
+
+PileOMeth extract -q 10 -p 5 --mergeContext ~/oasis/db/hg19/hg19.fa x.sort.bam 
+
+
+/home/shg047/bin/mergedBam2hapInfo.pl /home/k4zhang/my_oasis_tscc/MONOD/All_WGBS_pooled/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.bed /home/shg047/oasis/DennisLo2015/bam/test/test.bam bismark > test.read1.hapInfo.txt
+1, Duplicated fragments/reads removing(BS-Seq suitable. RRBS not suitable)
+2, Low sequencing quality reads removing (Phred >= 5)
+3, Low mapping quality reads removing (MAPQ >= 10)
+
+cd /home/shg047/software/IGV_2.3.68
+
+samtools view -h T21.1.read1_val_1.fq.gz_bismark_bt2_pe.bam | head -n 30001 > x.sam
+
+cd /home/shg047/oasis/DennisLo2015/bam/test
+bismark_methylation_extractor --bedGraph --zero_based --comprehensive --cutoff 1  --mbias_off --paired-end test.bam
+
+samtools sort -o test.sort.bam test.bam 
+samtools index test.sort.bam
+PileOMeth extract --fraction --mergeContext ~/oasis/db/hg19/hg19.fa test.sort.bam 
+
+head test.sort_CpG.bedGraph
+head test.bedGraph.gz.bismark.zero.cov
+
+bedtools sort -i test.sort_CpG.bedGraph > test.sort_CpG.sort.bedGraph
+bedtools sort -i test.bedGraph.gz.bismark.zero.cov > test.sort.bedGraph.gz.bismark.zero.cov
+
+wc -l test.sort_CpG.sort.bedGraph
+wc -l test.sort.bedGraph.gz.bismark.zero.cov
+
+head test.sort_CpG.sort.bedGraph
+head test.sort.bedGraph.gz.bismark.zero.cov
+
+bedtools intersect -wo -a test.sort_CpG.sort.bedGraph -b test.sort.bedGraph.gz.bismark.zero.cov > merge.bed
+
+data<-read.table("merge.bed")
+pdf("comp.smoothscatter.relationship.pdf")
+par(mfrow=c(3,3))
+for(i in 1:1){
+g = 11
+n=length(data[,i])
+my.cols <- rev(brewer.pal(g, "RdYlBu"))
+smoothScatter(data[,4], data[,10], nrpoints=0.05*n, colramp=colorRampPalette(my.cols), pch=19, cex=.3, col = "green1",xlab="Methylation frequency",ylab="MHL")
+}
+dev.off()
+
+ chr1:121485049-121485051
+ 
+ 
+ samtools tview test.sort.bam /home/shg047/oasis/db/hg19/meth/bismark/hg19.fa -p chr1:121485049-121485051
+
+
+
+Indx16_S12.sorted.clipped.bam  chr10:102443911-102443400
+
+
+#!/usr/bin/perl
+
+my $a="0400";
+my $a2=0400;
+my $b=16;
+my $c=$a-$b;
+my $c2=$a2-$b;
+my $d=0x1a;
+
+if($a){
+	print "$a\t$b\t$c\t$a2\t$c2\t$d\n";
+}
+
+
+
+# 2016-03-24
+1, transfer file to new hard-disk:  cp -r /oasis/* /media/NAS2_volume1/shg047
+2, fastx_trimmer -Q33 -f 8 -l 43 -i Temp/P608-Tumor.file1.fastq -o Temp/P608-Tumor.file1.trimmed.fastq
+
+qsub -q hotel SRR1035882_1_val_1.fq.gz.job
+qsub -q hotel SRR1035895_1_val_1.fq.gz.job
+
+/media/LTS_60T/Dinh
+
+find /tmp -type f -size +50000k -delete
+
+
+
+20G     ./bam
+1.0K    ./biomarker
+9.3G    ./tcga
+166G    ./db
+33G     ./meth450
+1.9G    ./GEO
+630G    ./Estellar2016
+2.0G    ./mice
+398M    ./wbc
+911K    ./alice
+733M    ./blue
+25M     ./haib
+2.9G    ./reprogramming
+55M     ./ssc
+438M    ./bak
+422G    ./monod
+44G     ./song2
+1015M   ./twin
+1.3T    ./
+
+rm ../bam/*bam &
+
+
+
+# 2016-03-23
+cd 
+
+BMT2.read1_val_1.fq.gz_bismark_bt2_pe.bam.bam2mf.err
+CTR101_trimmed.fq.gz_bismark_bt2.bam.bam2mf.err
+CTR103_trimmed.fq.gz_bismark_bt2.bam.bam2mf.err
+CTR104_trimmed.fq.gz_bismark_bt2.bam.bam2mf.err
+CTR85_trimmed.fq.gz_bismark_bt2.bam.bam2mf.err
+HOT240_trimmed.fq.gz_bismark_bt2.bam.bam2mf.err
+
+
+bedtools sort -i CTR150_trimmed.fq.gz_bismark_bt2.bedGraph.gz.bismark.zero.cov > CTR150_trimmed.fq.gz_bismark_bt2.bedGraph.gz.bismark.zero.cov.sort
+bedtools sort -i CTR150_trimmed.fq.gz_bismark_bt2.sort.bedGraph.gz.bismark.zero.cov 
+awk 'NR>8695750 && NR<8695760' CTR150_trimmed.fq.gz_bismark_bt2.bedGraph.gz.bismark.zero.cov > xx.bed
+4898107
+awk '{print $1,$2,$3}' OFS="\t" CTR150_trimmed.fq.gz_bismark_bt2.bedGraph.gz.bismark.zero.cov > yy.bed
+bedtools sort -i yy.bed > yy.sort.bed
+awk '{a[$1];}' xx1.bed | head
+bedtools sort -i CTR150_trimmed.fq.gz_bismark_bt2.bedGraph.gz.bismark.zero.cov > xx.bed
+awk '{print FILENAME, NR, FNR, $0}' file1 file2
+
+
+
+
+
+awk 'NR<4898107' CTR150_trimmed.fq.gz_bismark_bt2.bedGraph.gz.bismark.zero.cov > xx1.bed &
+awk 'NR>=4898107' CTR150_trimmed.fq.gz_bismark_bt2.bedGraph.gz.bismark.zero.cov > xx2.bed &
+bedtools sort -i xx1.bed > x1.sort.bed &
+bedtools sort -i xx2.bed > x2.sort.bed &
+bedtools sort -i CTR150_trimmed.fq.gz_bismark_bt2.bedGraph.gz.bismark.zero.cov > x3.sort.bed 
+
+awk 'NR<8695756' CTR150_trimmed.fq.gz_bismark_bt2.bedGraph.gz.bismark.zero.cov > xx1.bed 
+bedtools sort -i xx1.bed > x1.sort.bed 
+bedtools sort -i CTR150_trimmed.fq.gz_bismark_bt2.bedGraph.gz.bismark.zero.cov > x3.sort.bed 
+
+
+
+awk 'NR<4898107' CTR150_trimmed.fq.gz_bismark_bt2.bedGraph.gz.bismark.zero.cov > xx1.bed &
+awk 'NR>4898107' CTR150_trimmed.fq.gz_bismark_bt2.bedGraph.gz.bismark.zero.cov > xx2.bed &
+
+data<-read.table("CTR150_trimmed.fq.gz_bismark_bt2.bedGraph.gz.bismark.zero.cov")
+
+
+9898107
+wc -l CTR150_trimmed.fq.gz_bismark_bt2.sort.bedGraph.gz.bismark.zero.cov 
+
+
+
+BMT2.read1_val_1.fq.gz_bismark_bt2_pe.bam.bam2mf.err
+CTR101_trimmed.fq.gz_bismark_bt2.bam.bam2mf.err
+CTR103_trimmed.fq.gz_bismark_bt2.bam.bam2mf.err
+CTR104_trimmed.fq.gz_bismark_bt2.bam.bam2mf.err
+CTR85_trimmed.fq.gz_bismark_bt2.bam.bam2mf.err
+HOT240_trimmed.fq.gz_bismark_bt2.bam.bam2mf.err
+Pregnancy.1.read1_val_1.fq.gz_bismark_bt2_pe.bam.bam2mf.err
+T21.2.read1_val_1.fq.gz_bismark_bt2_pe.bam.bam2mf.err
+
+
+
+# 2016-03-22
+samtools view -bh ../../sortbam/Pregnancy.7.read1_val_1.fq.gz_bismark_bt2_pe.sort.bam chr10:2000000-2030000 -o Pregnancy.7.bam
+samtools view -bh ../../bam/Pregnancy.7.read1_val_1.fq.gz_bismark_bt2_pe.bam | head -n 3000 > Pregnancy.7.bismark.bam
+bismark_methylation_extractor --bedGraph --zero_based --comprehensive Pregnancy.7.csort.bam
+bismark_methylation_extractor --bedGraph --zero_based --comprehensive Pregnancy.7.nsort.bam
+bismark_methylation_extractor --bedGraph --zero_based --comprehensive Pregnancy.7.bismark.bam
+
+
+T21.5.read1_val_1.fq.gz_bismark_bt2_pe.sort.bam
+
+HWI-ST1049:8:1101:1199:2048#0/1
+
+#!/bin/csh
+ #PBS -N test
+ #PBS -q pdafm
+ #PBS -l nodes=1:ppn=1
+ #PBS -l walltime=14:00:00
+ #PBS -o test.o
+ #PBS -e test.e
+ #PBS -V
+ #PBS -M shihcheng.guo@gmail.com
+ #PBS -m abe
+ #PBS -A k4zhang-group
+ cd /home/shg047/oasis/DennisLo2015/hapinfo
+ perl ~/bin/hapinfo2mhl.pl ./ > dennis.hapinfo2mhl.march28.txt
+ Rscript --vanilla ~/bin/matrixPlot.R -i "dennis.hapinfo2mhl.march28.txt" -o "dennis.hapinfo2mhl.march28"
+ perl ~/bin/hapinfo2mf.pl ./ > dennis.hapinfo2mf.march28.txt
+ Rscript --vanilla ~/bin/matrixPlot.R -i "dennis.hapinfo2mf.march28.txt" -o "dennis.hapinfo2mf.march28"
+
+ 
+ cd /home/shg047/oasis/monod/hapinfo/hapinfo
+ perl ~/bin/hapinfo2mhl.pl ./ > RRBS.Plasma.Phase2.MHL.txt
+ Rscript --vanilla ~/bin/matrixPlot.R -i "RRBS.Plasma.Phase2.MHL.txt" -o "RRBS-Plamsa-Phase2"
+
+ 
+ 
+ cd /home/shg047/oasis/DennisLo2015/bam/test
+ perl ~/bin/bam2hapInfo2PBS.pl test.sam submit bismark > T21.1.read1_val_1.fq.gz_bismark_bt2_pe.mhl
+
+ 
+ perl ~/bin/hapinfo2mhl.pl ./ submit bismark > T21.1.read1_val_1.fq.gz_bismark_bt2_pe.mhl
+ 
+ 
+ 
+ cd /home/shg047/oasis/DennisLo2015/hapinfo
+ perl ~/bin/hapinfo2mf.pl ./ > ../dennis.hapinfo2mf.march24.txt
+ 
+ perl ~/bin/hapinfo2mhl.pl ./ > ../dennis.mhl.march24.txt
+
+ cd /home/shg047/oasis/DennisLo2015/bam/test
+bismark_methylation_extractor --bedGraph --zero_based --comprehensive CTR98.bam
+
+
+# 2016-03-22
+cd /home/shg047/oasis/DennisLo2015/bam
+qsub -q hotel Pregnancy.4.read1_val_1.fq.gz_bismark_bt2_pe.bamsort.job
+qsub -q hotel Pregnancy.6.read1_val_1.fq.gz_bismark_bt2_pe.bamsort.job
+qsub -q hotel Pregnancy.7.read1_val_1.fq.gz_bismark_bt2_pe.bamsort.job
+qsub -q hotel T21.1.read1_val_1.fq.gz_bismark_bt2_pe.bamsort.job
+qsub -q hotel T21.2.read1_val_1.fq.gz_bismark_bt2_pe.bamsort.job
+qsub -q hotel T21.3.read1_val_1.fq.gz_bismark_bt2_pe.bamsort.job
+qsub -q hotel T21.4.read1_val_1.fq.gz_bismark_bt2_pe.bamsort.job
+
+/home/shg047/oasis/AgeBlood/mhl/WB.mhl.march22.txt
+
+ls -lart *bam2sortbam*err
+ls -lart *bam2sortbam*err | wc -l 
+
+cd /home/shg047/oasis/Holger2016/fastq_trim/
+qsub -q hotel SRR1035734_1_val_1.fq.gz.job 
+qsub -q hotel SRR1035723_1_val_1.fq.gz.job
+qsub -q hotel SRR1035725_1_val_1.fq.gz.job
+qsub -q hotel SRR1035741_1_val_1.fq.gz.job
+qsub -q hotel SRR1035738_1_val_1.fq.gz.job
+qsub -q hotel SRR1035740_1_val_1.fq.gz.job
+
+cd /home/shg047/oasis/Holger2016/fastq_trim/
+qsub -q hotel SRR1035856_1_val_1.fq.gz.job
+qsub -q hotel SRR1035829_1_val_1.fq.gz.job
+qsub -q hotel SRR1035727_1_val_1.fq.gz.job
+qsub -q hotel SRR1035855_1_val_1.fq.gz.job
+qsub -q hotel SRR1035799_1_val_1.fq.gz.job
+
+cd /home/shg047/oasis/Holger2016/fastq_trim/
+qsub -q hotel SRR1035726_1_val_1.fq.gz.job
+qsub -q hotel SRR1035739_1_val_1.fq.gz.job
+qsub -q hotel SRR1035735_1_val_1.fq.gz.job
+qsub -q hotel SRR1035736_1_val_1.fq.gz.job
+qsub -q hotel SRR1035798_1_val_1.fq.gz.job
+qsub -q hotel SRR1035804_1_val_1.fq.gz.job
+qsub -q hotel SRR1035827_1_val_1.fq.gz.job
+qsub -q hotel SRR1035800_1_val_1.fq.gz.job
+
+# 2016-03-21
+echo "bsrate -c ~/oasis/db/hg19/hg19.fa -o xx.bsrate xx.rdup" | qsub -q glean
+/oasis/tscc/scratch/ddiep/BAMfiles
+Rscript --vanilla ~/bin/matrixPlot.R -i "Estellar2016.mhl.march19.txt" -o "Esterllar2016"
+PileOMeth extract -l  ~/oasis/db/hg19/hg19.fa
+
+
+
+
+
+/home/shg047/oasis/DennisLo2015/mr
+
+LC_ALL=C sort -k 1,1 -k 2,2n -k 3,3n -k 6,6 -o xx.sort xx.mr
+duplicate-remover -S xx_stat.txt -o xx.rdup xx.sort
+bsrate -c hg19 -o xx.bsrate xx.rup
+grep ˆchrM xx.mr > xx.mr.chrM
+bsrate -N -c chrM.fa -o xx.chrM.bsrate xx.mr.chrM
+methcounts -n -c hg19 -o xx.meth xx.mr
+
+LC_ALL=C sort -k 1,1 -k 3,3n -k 2,2n -k 6,6 -o xx.sort.end xx.mr
+
+
+for clinical research. clear data would be very important.
+for research the machnism should be great
+ 
+# 2016-03-18
+rmapbs -c hg19 -o ../methBam/ SRR949193_1.fastq.gz SRR949193_2.fastq.gz
+perl -lane 'print "chr@F[7]\t@F[8]\t@F[8]\t@F[3]\t@F[4]\t@F[6]\t@F[10]\t@F[-3]\t@F[-2]\t@F[-1]" if ! /chrNA/' TCGA.Meth450.esca.ChAMP.DMS.txt  > DMS.bed
+grep -v chrNA DMS.bed > DMS2.bed
+bedtools intersect -wo -a weimarch20.txt -b DMS2.bed > batch3.region.txt
+ 
+bzip2 -d filename.bz2
+This is cutadapt 1.9.1 with Python 2.6.6
+Command line parameters: -f fastq -e 0.1 -q 20 -O 1 -a AGATCGGAAGAGC SRR949197_1.fastq.gz
+Trimming 1 adapter with at most 10.0% errors in single-end mode ...
+gzip: SRR949197_1.fastq.gz: unexpected end of file
+cutadapt: error: In read named 'SRR949197.215195112 D1JR8ACXX130107:2:2203:10919:71639 length=99': length of quality sequence (17) and length of read (99) do not match
+Cutadapt terminated with exit signal: '256'.
+Terminating Trim Galore run, please check error message(s) to get an idea what went wrong...
+
+wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX%2FSRX332%2FSRX332731/SRR949196/SRR949196.sra
+wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX%2FSRX332%2FSRX332731/SRR949197/SRR949197.sra
+wget -r ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/SRA096/SRA096879/SRX332731/ 
+
+#!/usr/bin/env Rscript
+library("optparse")
+ 
+option_list = list(
+  make_option(c("-f", "--file"), type="character", default=NULL, 
+              help="dataset file name", metavar="character"),
+	make_option(c("-o", "--out"), type="character", default="out.txt", 
+              help="output file name [default= %default]", metavar="character")
+); 
+ 
+opt_parser = OptionParser(option_list=option_list);
+opt = parse_args(opt_parser);
+
+if (is.null(opt$file)){
+  print_help(opt_parser)
+  stop("At least one argument must be supplied (input file).\n", call.=FALSE)
+}
+
+df = read.table(opt$file, header=TRUE)
+num_vars = which(sapply(df, class)=="numeric")
+df_out = df[ ,num_vars]
+write.table(df_out, file=opt$out, row.names=FALSE)
+
+Rscript --vanilla yasrs.R
+
+wget https://cran.r-project.org/src/contrib/getopt_1.20.0.tar.gz
+wget https://cran.rstudio.com/src/contrib/optparse_1.3.2.tar.gz
+install.packages("getopt_1.20.0.tar.gz")
+install.packages("optparse_1.3.2.tar.gz")
+
+
+ #!/bin/csh
+ #PBS -N test
+ #PBS -q pdafm
+ #PBS -l nodes=1:ppn=1
+ #PBS -l walltime=14:00:00
+ #PBS -o test
+ #PBS -e test
+ #PBS -V
+ #PBS -M shihcheng.guo@gmail.com
+ #PBS -m abe
+ #PBS -A k4zhang-group
+ # cd /home/shg047/oasis/monod/hapinfo
+ # perl ~/bin/hapinfo2mhl.pl ./ > ../../mhl.txt
+ # wget -r ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/SRA096/SRA096879/SRX332731/
+ cd /home/shg047/oasis/Estellar2016/mergeHapinfo
+ perl ~/bin/hapinfo2mf.pl ./ > Estellar2016.mf.march21.txt
+ 
+ cd /home/shg047/oasis/DennisLo2015/mr
+ bsrate -c ~/oasis/db/hg19/hg19.fa -o xx.bsrate xx.rup
+
+ 
+ 
+ Rscript --vanilla ~/bin/matrixPlot.R -i "Estellar2016.mhl.march19.txt" -o "Esterllar2016"
+
+ cd /home/shg047/oasis/Ziller2013/fastq
+ wget ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/SRA096/SRA096879/SRX332731/SRR949196_1.fastq.bz2 &
+ wget ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/SRA096/SRA096879/SRX332731/SRR949196_2.fastq.bz2 &
+ wget ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/SRA096/SRA096879/SRX332731/SRR949197_1.fastq.bz2 &
+ wget ftp://ftp.ddbj.nig.ac.jp/ddbj_database/dra/fastq/SRA096/SRA096879/SRX332731/SRR949197_2.fastq.bz2 &
+
+ 
+
+ perl ~/bin/hapinfo2mhl.pl ./ > ../MHL.OUTPUT.txt
+
+
+/media/LTS_60T/Dinh/WGBS_LTS33/Hg19/Estellar_Bellvitge/BAMfiles
+
+RRBS-phase2： /oasis/tscc/scratch/ddiep/Plasma_RRBS_151208/BAMfiles
+
+
+ln -s /oasis/tscc/scratch/ddiep/Plasma_RRBS_151208/BAMfiles/ bam
+
+
+
+
+cpg_list="/media/Ext12T/DD_Ext12T/BisRef/bisHg19_plusLambda_BWA/hg19_lambda.cpg.positions.txt"
+samtools mpileup -BA -f /home/shg047/oasis/db/hg19/hg19.fa $bam_file > $pileup_file
+/home/dinh/scripts/BisReadMapper/src/extractMethyl.pl $cpg_list 33 < $pileup_file > $methylFreq_file
+
+
+
+# 2016-03-17
+ln -s /home/k4zhang/my_oasis_tscc/MONOD/whole_blood_WGBS/BAMfiles  bam
+ln -s /home/k4zhang/my_oasis_tscc/MONOD/Ecker_Tissue_WGBS/BAMfiles bam
+
+
+/oasis/tscc/scratch/ddiep/Working
+
+
+SRR949193.fastq.download.job
+-rw------- 1 shg047 k4zhang-group 455 Mar 17 10:56 SRR949194.fastq.download.job
+-rw------- 1 shg047 k4zhang-group 455 Mar 17 10:56 SRR949195.fastq.download.job
+-rw------- 1 shg047 k4zhang-group 455 Mar 17 10:56 SRR949196.fastq.download.job
+-rw------- 1 shg047 k4zhang-group 455 Mar 17 10:56 SRR949197.fastq.download.job
+-rw------- 1 shg047 k4zhang-group 537 Mar 17 10:56 SRR949198.fastq.download.job
+-rw------- 1 shg047 k4zhang-group 455 Mar 17 10:56 SRR949199.fastq.download.job
+-rw------- 1 shg047 k4zhang-group 455 Mar 17 10:56 SRR949200.fastq.download.job
+-rw------- 1 shg047 k4zhang-group 455 Mar 17 10:56 SRR949201.fastq.download.job
+-rw------- 1 shg047 k4zhang-group 455 Mar 17 10:56 SRR949202.fastq.download.job
+
+SRR949193 SRR949202
+
+for i in `seq 194 202`
+do 
+qsub SRR949$i\fastq.download.job
+done
+
+
+
+
+
+
+When performing an alignment one must discriminate between different types of bisulfite-treated DNA libraries. In the first, termed directional libraries, adapters are attached to the DNA fragments such that only the original
+top or bottom strands will be sequenced. Alternatively, all four DNA strands that arise through bisulfite treatment and subsequent
+PCR amplification can be sequenced with the same frequency in nondirectional libraries.
+
+
+# 2016-03-16
+-rw-r--r-- 1 shg047 k4zhang-group          62 Jan 19 12:22 Lymphoma.run3.bam
+-rw-r--r-- 1 shg047 k4zhang-group          62 Jan 15 21:56 Lymphoma.run4.bam
+-rw-r--r-- 1 shg047 k4zhang-group          62 Feb 10 09:51 Pregnancy.11.bam
+
+
+qdel 4537516.tscc-mgr.local  shg047      hotel    Lymphoma.run3.re    --      1     16    --   72:00:00 Q       --
+qdel 4537527.tscc-mgr.local  shg047      hotel    Lymphoma.run4.re    --      1     16    --   72:00:00 Q       --
+qdel 4537636.tscc-mgr.local  shg047      hotel    Pregnancy.11.rea    --      1     16    --   72:00:00 Q       --
+
+chr10:100027918-100027944	TTTT	1	100,027,918,100,027,000,000,000,000,000,000,000
+chr10:100027918-100027944	TTTC	1	100,027,918,100,027,000,000,000,000,000,000,000
+chr10:100027918-100027944	TTCT	1	100,027,918,100,027,000,000,000,000,000,000,000
+chr10:100027918-100027944	TCTT	1	100,027,918,100,027,000,000,000,000,000,000,000
+chr10:100027918-100027944	CTTT	1	100,027,918,100,027,000,000,000,000,000,000,000
+chr10:100027918-100027944	TTCC	1	100,027,918,100,027,000,000,000,000,000,000,000
+chr10:100027918-100027944	TCTC	1	100,027,918,100,027,000,000,000,000,000,000,000
+chr10:100027918-100027944	CTTC	1	100,027,918,100,027,000,000,000,000,000,000,000
+chr10:100027918-100027944	TCCT	1	100,027,918,100,027,000,000,000,000,000,000,000
+chr10:100027918-100027944	CTCT	1	100,027,918,100,027,000,000,000,000,000,000,000
+chr10:100027918-100027944	CCTT	1	100,027,918,100,027,000,000,000,000,000,000,000
+chr10:100027918-100027944	TCCC	1	100,027,918,100,027,000,000,000,000,000,000,000
+chr10:100027918-100027944	CTCC	1	100,027,918,100,027,000,000,000,000,000,000,000
+chr10:100027918-100027944	TCCC	1	100,027,918,100,027,000,000,000,000,000,000,000
+chr10:100027918-100027944	CCCT	1	100,027,918,100,027,000,000,000,000,000,000,000
+chr10:100027918-100027944	CCCC	1	100,027,918,100,027,000,000,000,000,000,000,000
+
+~
+
+
+
+qsub Pregnancy.11.read1.fq.gz.job
+qsub Lymphoma.run3.read1.fq.gz.job
+qsub Lymphoma.run4.read1.fq.gz.job
+
+-rw-r--r-- 1 shg047 k4zhang-group	   62 Jan 19 12:22 Lymphoma.run3.read1_val_1.fq.gz_bismark_bt2_pe.bam
+-rw-r--r-- 1 shg047 k4zhang-group	   62 Jan 15 21:56 Lymphoma.run4.read1_val_1.fq.gz_bismark_bt2_pe.bam
+-rw-r--r-- 1 shg047 k4zhang-group	   62 Feb 10 09:51 Pregnancy.11.read1_val_1.fq.gz_bismark_bt2_pe.bam
+
+
+
+bedtools intersect -wo -a znf154.bed -b WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.bed
+chr19   58220404	 58220671	 chr19   58220439	 58220459	 chr19:58218498-58222001,B040,4  20
+chr19   58220404	 58220671	 chr19   58220481	 58220515	 chr19:58218498-58222001,B042,5  34
+chr19   58220404	 58220671	 chr19   58220626	 58220668	 chr19:58218498-58222001,B047,4  42
+
+
+#!/usr/bin/perl
+use strict;
+use Cwd;
+my $bam_dir=shift @ARGV;
+my $bed_dir="/home/k4zhang/my_oasis_tscc/MONOD/All_WGBS_pooled/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.bed";
+
+chdir $bam_dir;
+my @file=glob("*.bam");
+foreach my $file(@file){
+my ($sample,undef)=split /\./,$file;
+print "$sample\t$bam_dir$file\t$bed_dir\n";
+}
+
+
+# 2016-03-14
+/home/shg047/monod/predict/phase2
+# submit 5 each time. 
+qsub SRR949198fastq.download.job
+qsub SRR949199fastq.download.job
+qsub SRR949200fastq.download.job
+qsub SRR949201fastq.download.job
+qsub SRR949202fastq.download.job
+
+qsub SRR949203fastq.download.job
+qsub SRR949204fastq.download.job
+qsub SRR949205fastq.download.job
+qsub SRR949206fastq.download.job
+qsub SRR949207fastq.download.job
+
+qsub SRR949208fastq.download.job
+qsub SRR949209fastq.download.job
+qsub SRR949210fastq.download.job
+qsub SRR949211fastq.download.job
+qsub SRR949212fastq.download.job
+
+qsub SRR949213fastq.download.job
+qsub SRR949214fastq.download.job
+qsub SRR949215fastq.download.job
+
+
+# creat bisulfite treated human reference: hg19
+cp hg19.fa hg19.c2t.fa
+perl -p -i -e 's/CG/M/ig' hg19.c2t.fa
+perl -p -i -e 's/C/T/ig' hg19.c2t.fa
+perl -p -i -e 's/M/CG/ig' hg19.c2t.fa
+
+cd /media/Ext12T/DD_Ext12T/RRBS_MONOD/Bam_Merged/ 
+samtools tview  /media/Ext12T/DD_Ext12T/RRBS_MONOD/Bam_Merged/6-P-1.merged.bam /home/shg047/annotation/hg19.c2t.fa -p chr10:100027865
+ 
+
+chr10:101089382-101089519
+
+
+
+Sept 2014: these batch of libraries were generated with the dRRBS protocol (MSP I & Taq I digestion)
+Bam folder: /media/Ext12T/DD_Ext12T/RRBS_MONOD/140917_dRRBS/BAMfiles
+Mapple_bin_hapInfo folder:
+Mld_block_hapInfo folder: /home/kunzhang/CpgMIP/MONOD/Data/140917_dRRBS/mld_block_stringent_hapInfo
+
+
+cd /home/kunzhang/CpgMIP/MONOD/Data/140917_dRRBS/mld_block_stringent_hapInfo
+head NC-P-23.mld_blocks_r2-0.5.hapInfo.txt
+
+cd /media/Ext12T/DD_Ext12T/RRBS_MONOD/140917_dRRBS/BAMfiles
+
+# index: http://genome-tech.ucsd.edu/LabNotes/index.php/Dinh/Dinh_2014/NOTES/2014-9-22 
+samtools tview Indx16_S12.sorted.clipped.bam /home/shg047/annotation/hg19.c2t.fa -p chr10:102440557-102440826
+samtools view Indx16_S12.sorted.clipped.bam  chr10:102443911-102443400
+
+
+# /home/shg047/oasis/DennisLo2015/bam
+cd /home/shg047/oasis/DennisLo2015/fastq/
+qsub Lymphoma.run2.read1.fq.gz.job
+qsub CTR147.fq.gz.job
+
+cd /home/shg047/oasis/Ziller2013/fastq
+qsub SRR949197*job
+qsub SRR949196*job
+qsub
+qsub
+
+
+
+
+# 2016-03-14
+File:199.tm.png
+File:DF.tm.png
+
+scp /home/shg047/oasis/haib/mhl
+cp /home/shg047/monod/hapinfo/STL*.hapInfo.txt ./
+
+setwd("")
+/home/shg047/monod/mixHap/hapinfo/mMHL.whole.txt
+
+
+# 2016-03-11
+http://genome-tech.ucsd.edu/LabNotes/index.php/Kun:LabNotes/MONOD/2015-7-6
+cd /home/shg047/oasis/monod/mixHap
+cut -f 1 colon.data.plsma-hypoall.txt > colon.hypermhl.plasma.txt
+cut -f 1 lung.data.plsma.hypoall.txt > lung.hypermhl.plasma.txt
+cut -f 1 pancreatic.data.plsma.hypoall.txt > pancreatic.hypermhl.plasma.txt
+
+File:Colon.hypermhl.plasma.txt
+File:Lung.hypermhl.plasma.txt
+File:Pancreatic.hypermhl.plasma.txt
+
+# 2016-03-10
+cd /home/kunzhang/CpgMIP/MONOD/Data/1407-combined_RRBS/mld_blocks_stringent_hapInfo
+grep 8054556 7-P-2.mld_blocks_r2-0.5.hapInfo.txt
+chr17:8054556-8054584   CCCCC   1	8054556,8054568,8054579,8054581,8054584
+
+cd /home/shg047/monod/hapinfo
+grep 8054556 7-P-14.hapInfo.txt
+chr17:8054556-8054584   CCCCC   1	8054556,8054568,8054579,8054581,8054584
+
+grep 8054556 7-P-22.hapInfo.txt
+chr17:8054556-8054579   CCC     1	8054556,8054568,8054579
+
+grep 95947328 7-P-11.hapInfo.txt
+chr9:95947328-95947356  CCCCC   2	95947328,95947337,95947340,95947345,95947356
+chr9:95947328-95947356  TTTTT   1	95947328,95947337,95947340,95947345,95947356
+
+grep 100204208 PC-T-2.hapInfo.txt
+chr14:100204208-100204257	CCT     1	100204208,100204221,100204232
+
+grep 100204208 PC-P-2.hapInfo.txt
+chr14:100204208-100204257	CT      1	100204250,100204257
+
+
+
+
+
+cd /home/shg047/monod/methyblock/HM450K
+bedtools intersect -wa -u -a mhb450bed.bed -b ~/oasis/db/hg19/CpGI.hg19.bed | wc -l   # 1551
+bedtools intersect -wa -u -a mhb450bed.bed -b mhbbed.bed > mhb450GWBS.bed	      # 1258
+bedtools intersect -wa -u -a mhb450GWBS.bed -b ~/oasis/db/hg19/CpGI.hg19.bed | wc -l  # 1045
+
+cd /home/shg047/monod/methyblock/encode_rrbs_bed
+bedtools intersect -wa -u -a encode.rrbs.mhb.txt -b ~/oasis/db/hg19/CpGI.hg19.bed | wc -l   # 1551
+bedtools intersect -wa -u -a encode.rrbs.mhb.txt -b /home/shg047/monod/methyblock/HM450K/mhbbed.bed | wc -l    # 8920  
+bedtools intersect -wa -u -a encode.rrbs.mhb.txt -b /home/shg047/monod/methyblock/HM450K/mhbbed.bed > RRBS_GWBS.bed  
+bedtools intersect -wa -u -a RRBS_GWBS.bed -b ~/oasis/db/hg19/CpGI.hg19.bed | wc -l  # 7968
+
+cd /home/shg047/monod/methyblock/HM450K
+bedtools intersect -wa -u -a mhbbed.bed -b ~/oasis/db/hg19/CpGI.hg19.bed | wc -l   # 79704
+bedtools intersect -wa -u -a mhbbed.bed -b ~/oasis/db/hg19/CpG.Shore.hg19.bed  | wc -l  # 26103
+bedtools intersect -wa -u -a mhbbed.bed -b ~/oasis/db/hg19/CpG. | wc -l   # 3246
+bedtools intersect -wa -v -a mhbbed.bed -b ~/oasis/db/hg19/CpGI.hg19.bed | wc -l   # 3246
+
+# 2016-03-09
+/home/shg047/oasis/monod/hapinfo/WGBS
+
+
+
+CRC-T-E001 /home/shg047/oasis/Estellar2016/mergeHapinfo/SRX381569_tumor_colon.hapInfo.txt /home/shg047/monod/heatmap
+LC-T-E001 /home/shg047/oasis/Estellar2016/mergeHapinfo/SRX381716_adenocarcinoma_lung.hapInfo.txt /home/shg047/monod/heatmap
+LC-T-E001 /home/shg047/oasis/Estellar2016/mergeHapinfo/SRX381719_squamous_cell_tumor_lung.hapInfo.txt /home/shg047/monod/heatmap
+LC-T-E001 /home/shg047/oasis/Estellar2016/mergeHapinfo/SRX381722_small_cell_tumor_lung.hapInfo.txt /home/shg047/monod/heatmap
+
+2289
+
+CRC-T-E001 /home/shg047/oasis/Estellar2016/mergeHapinfo/SRX381569_tumor_colon.hapInfo.txt
+LC-T-E001 /home/shg047/oasis/Estellar2016/mergeHapinfo/SRX381716_adenocarcinoma_lung.hapInfo.txt
+LC-T-E001 /home/shg047/oasis/Estellar2016/mergeHapinfo/SRX381719_squamous_cell_tumor_lung.hapInfo.txt
+LC-T-E001 /home/shg047/oasis/Estellar2016/mergeHapinfo/SRX381722_small_cell_tumor_lung.hapInfo.txt
+
+cp /home/shg047/oasis/Estellar2016/mergeHapinfo/SRX381569_tumor_colon.hapInfo.txt ./
+cp /home/shg047/oasis/Estellar2016/mergeHapinfo/SRX381716_adenocarcinoma_lung.hapInfo.txt ./
+cp /home/shg047/oasis/Estellar2016/mergeHapinfo/SRX381719_squamous_cell_tumor_lung.hapInfo.txt ./
+cp /home/shg047/oasis/Estellar2016/mergeHapinfo/SRX381722_small_cell_tumor_lung.hapInfo.txt ./
+
+scp Heatmap.MHL.txt shg047@genome-miner.ucsd.edu:/home/shg047/monod/heatmap/
+SRX381569-tumor-colon	CCT
+SRX381716-adenocarcinoma-lung	LC
+SRX381719-squamous-cell-tumor-lung	LC
+SRX381722-small-cell-tumor-lung	LC
+
+
+
+
+
+# 2016-03-05
+mv  *mhl.in.plsma.bed /media/LTS_33T/SG_LTS33T/monod/mixHap/
+source("http://bioconductor.org/biocLite.R")
+biocLite("DMRcate")
+sudo apt-get install iotop
+sudo iotop
+sudo scp shg047@tscc-login.sdsc.edu:/home/shg047/oasis/monod/hapinfo/SRA/* /home/ucsd002/monod/hapinfo
+
+#!/usr/bin/perl
+use strict;
+my @file=glob("6-*.hapInfo.txt");
+my $i;
+foreach my $file(@file){
+	$i++;
+	my ($cancer,$type,$id)=split /[.-]/g,$file;
+	my $id = sprintf("%03d",$i);
+	print "$zero_num\n";
+	# system("cp $file CRC.$type.$id");
+	print "$id\t$i\n";
+}
+
+
+# 2016-03-05
+cd /home/shg047/monod/mixHap/mhl
+N37-Lung	 Lung
+STL001LG-01     Lung
+STL002LG-01     Lung
+STL002PA-01     Pancreas
+N37-Pancreas    Pancreas
+STL003PA-01     Pancreas
+N37-Colon	Colon
+STL001SG-01     Colon
+STL003SG-01     Colon
+
+
+scp shg047@genome-miner.edu:/home/shg047/monod/rrbs_kun/*hapInfo.txt ./
+cd /home/shg047/oasis/monod/mhb/hapinfo
+cp Colon_primary_tumor.all_chrs.hapInfo.txt HCT116.all_chrs.hapInfo.txt  /home/shg047/oasis/monod/hapinfo/WGBS
+cd  /home/shg047/oasis/monod/hapinfo/WGBS 
+cd /home/shg047/oasis/monod/haplo/wbc/mergeHapinfo
+mv *hapInfo.txt /home/shg047/oasis/monod/haplo/Merge
+cd /home/shg047/oasis/monod/haplo/n37/mergeHapinfo
+cd /home/shg047/oasis/monod/haplo/salk/mergeHapinfo
+cd /home/shg047/oa
