@@ -1,6 +1,7 @@
 ```
 cd /gpfs/home/guosa/run/bedmethyl
 
+
 for i in `ls *.bed`
 do
 echo \#PBS -N $i  > $i.job
