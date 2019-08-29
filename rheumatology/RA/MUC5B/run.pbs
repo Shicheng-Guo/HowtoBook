@@ -15,3 +15,11 @@ qsub $i.job
 done
 
 
+for i in {1..22}
+do
+tabix -p vcf chr$i.dose.vcf.gz &
+done
+
+
+
+
