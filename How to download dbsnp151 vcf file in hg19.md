@@ -10,4 +10,10 @@ mv All_20180423.vcf.gz All_20180423.hg19.vcf.gz
 
 mv All_20180423.vcf.gz.tbi All_20180423.hg19.vcf.gz.tbi
 
+/gpfs/home/guosa/hpc/db/hg19/dbSNP152.hg19.vcf.bgz
+
+/gpfs/home/guosa/hpc/db/hg19/dbSNP152.hg19.vcf
+
+
+
 scp nu_guos@submit-1.chtc.wisc.edu:/home/nu_guos/All_2018* ./
