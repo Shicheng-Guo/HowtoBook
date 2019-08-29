@@ -10,6 +10,8 @@ echo \#PBS -o $(pwd)/temp/ >>$i.job
 echo \#PBS -e $(pwd)/temp/ >>$i.job
 echo cd $(pwd) >> $i.job
 echo tabix -f -p vcf chr$i.phased.vcf.gz >> $i.job
+echo bcftools view chr$i.phased.vcf.gz -R MUC.hg19.bed -Ov -o MUC.chr$i.vcf
 qsub $i.job
 done
+
 
