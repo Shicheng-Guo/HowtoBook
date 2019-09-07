@@ -7,4 +7,4 @@
 * FastQC
 * Trim Galore
 * cutadapt
-*
+* Picard V2.18
