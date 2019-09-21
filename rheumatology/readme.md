@@ -7,7 +7,7 @@
 
 miRNA (hg38) mature region (seed) download from ftp://mirbase.org/pub/mirbase/CURRENT/genomes/hsa.gff3
 
-241 miRNA-SNP (commonSNP150) were identified in the seed region of 2883 miRNA records.
+[241](miRNA-seed-SNP-241.txt) miRNA-SNP (commonSNP150) were identified in the seed region of 2883 miRNA records.
 
 9 miRNA, 17 miRNA-SNPs and 19 RA-GWAS-SNP were collected in the study.
 
