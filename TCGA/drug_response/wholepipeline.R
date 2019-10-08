@@ -1,10 +1,11 @@
+# CGH1
+install.packages("caret")
 library("randomForest")
 library("arm")
 library("plyr") 
 library("PredictABEL")
 library("neuralnet")
 library("caret")
-install.packages("caret")
 
 setwd("/home/guosa/hpc/project/TCGA")
 source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/GscTools.R")
