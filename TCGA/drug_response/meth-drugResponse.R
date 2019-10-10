@@ -21,6 +21,10 @@ phen$ID4<-paste(phen$bcr_patient_barcode,"-01",sep="")
 
 input<-input[,colnames(input) %in% phen$ID4]
 input<-input[,match(unique(colnames(input)),colnames(input))]
+
+rx<-findCorrelation(input, cutoff = 0.9, verbose = FALSE, names = FALSE,exact = ncol(x) < 100)
+
+
 phen<-phen[na.omit(unlist(lapply(colnames(input),function(x) match(x,phen$ID)[1]))),]
 dim(input)
 dim(phen)
@@ -28,7 +32,12 @@ dim(phen)
 sort(table(phen$bcr_patient_barcode))
 levels(phen$measure_of_response)
 levels(phen$measure_of_response)<-c(0,1,1,0)
+                                 
 input<-data.frame(phen=phen$measure_of_response,t(input))
+
+# limit mRNA and methylation dataset to a smaller one
+                                 
+     
 # input<-input[,unlist(apply(input,2,function(x) sd(x)>0))]
 # library("SIS")
 # x=data.matrix(input[,2:ncol(input)])
