@@ -95,5 +95,4 @@ colnames(newinput)<-input[,1]
 pdf("mRNA.heatmap.randomForest.pdf")
 HeatMap(newinput)
 dev.off()
-          
-save.image("RNAseq-N2.RF.heatmap.RData")
+save.image("miRNAseq-N2.RF.heatmap.RData")
