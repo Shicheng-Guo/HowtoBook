@@ -1,15 +1,19 @@
 ######################################################################################
 #########  mRNA-seq based deep-learning for drug-response prediction #################
 ######################################################################################
+install.packages("caret")
+
 library("randomForest")
 library("arm")
 library("plyr") 
 library("PredictABEL")
 library("neuralnet")
+library("caret")
+
+setwd("/home/guosa/hpc/project/TCGA")
 source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/GscTools.R")
 
-setwd("/home/guosa/hpc/project/TCGA/pancancer/FPKM")
-
+setwd("~/hpc/project/TCGA/pancancer/FPKM")
 file=list.files(pattern="*FPKM-UQ.txt$",recursive = TRUE)
 manifest2barcode("gdc_manifest.pancancer.FPKM.2019-05-29.txt")
 barcode<-read.table("barcode.txt",sep="\t",head=T)
@@ -20,6 +24,7 @@ for(i in 1:length(file)){
   print(paste(i,"in",length(file),file[i],sep=" "))
   rownames(data)<-tmp[,1]
 }
+
 barcode$file_name<-gsub(".gz","",barcode$file_name)
 colnames(data)<-id2phen4(barcode[match(unlist(lapply(file,function(x) unlist(strsplit(x,"[/]"))[2])),barcode$file_name),]$cases.0.samples.0.submitter_id)
 data<-data[,grep("TCGA",colnames(data))]
@@ -34,9 +39,9 @@ input<-input[,unlist(apply(input,2,function(x) sd(x)>0))]
 index <- sample(1:nrow(input),round(0.9*nrow(input)))
 train.cv <- input[index,]
 test.cv <- input[-index,]
-
 mRNA<-data[,grep("-01",colnames(data))]
-setwd("//mcrfnas2/bigdata/Genetic/Projects/shg047/project/TCGA/pancancer/FPKM")
+
+setwd("~/hpc/project/TCGA/pancancer/FPKM")
 load("Pancancer.DrugResponse.V5292.N1462.RData")
 input<-newinput
 set.seed(49)
