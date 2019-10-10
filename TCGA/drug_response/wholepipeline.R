@@ -313,18 +313,15 @@ levels(phen$measure_of_response)<-c(0,1,1,0)
 
 input<-data.frame(phen=phen$measure_of_response,t(input))
 # input<-input[,unlist(apply(input,2,function(x) sd(x)>0))]
-
-library("SIS")
-x=data.matrix(input[,2:ncol(input)])
-y=as.numeric(input[,1])-1
-sisrlt<-SIS(x,y,family = c( "binomial"),penalty = c("lasso"))
-newx<-x[,sisrlt$ix]
-
-cpgs<-colnames(input)[sisrlt$ix]
-ncpgs<-data.frame(cpgs,cpg2symbol(cpgs))
-pdr<-read.table("https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/TCGA/drug_response/hsa01524.kegg.txt")
-
-write.table(ncpgs,file="pancancer.drugresponse.SIS.variables.txt",quote=F,row.names = F,col.names = F)
+# library("SIS")
+# x=data.matrix(input[,2:ncol(input)])
+# y=as.numeric(input[,1])-1
+# sisrlt<-SIS(x,y,family = c( "binomial"),penalty = c("lasso"))
+# newx<-x[,sisrlt$ix]
+# cpgs<-colnames(input)[sisrlt$ix]
+# ncpgs<-data.frame(cpgs,cpg2symbol(cpgs))
+# pdr<-read.table("https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/TCGA/drug_response/hsa01524.kegg.txt")
+# write.table(ncpgs,file="pancancer.drugresponse.SIS.variables.txt",quote=F,row.names = F,col.names = F)
 
 set.seed(49)
 cv.error <- NULL
