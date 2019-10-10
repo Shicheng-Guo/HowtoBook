@@ -1,8 +1,8 @@
-load("//mcrfnas2/bigdata/Genetic/Projects/shg047/project/TCGA/pancancer/FPKM/mRNA.t3000.mxnet.RData")
+load("~/hpc/project/TCGA/pancancer/FPKM/mRNA.t3000.mxnet.RData")
 mRNA<-rbind(mRNA$train.cv,mRNA$test.cv)
-load("//mcrfnas2/bigdata/Genetic/Projects/shg047/project/TCGA/pancancer/meth450/meth.t6000.mxnet.RData")
+load("~/hpc/project/TCGA/pancancer/meth450/meth.t6000.mxnet.RData")
 meth<-rbind(meth$train.cv,meth$test.cv)
-load("//mcrfnas2/bigdata/Genetic/Projects/shg047/project/TCGA/pancancer/miRNA/pancancer.miRNA.drugResponse.RData")
+load("~/hpc/project/TCGA/pancancer/miRNA/pancancer.miRNA.drugResponse.RData")
 
 triple<-names(which(sort(table(c(rownames(miRNA),rownames(meth),rownames(mRNA))))==3))
 
