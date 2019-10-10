@@ -96,3 +96,11 @@ pred2 <- predRisk(model.glm2)
 par(mfrow=c(2,2),cex.lab=1.5,cex.axis=1.5)
 plotROC(data=data1,cOutcome=1,predrisk=cbind(pred1))
 plotROC(data=data2,cOutcome=1,predrisk=cbind(pred2))
+          
+pdf("mRNA.drugresponse.pdf")
+par(mfrow=c(2,2),cex.lab=1.5,cex.axis=1.5)
+plotROC(data=data1,cOutcome=1,predrisk=cbind(pred1))
+plotROC(data=data2,cOutcome=1,predrisk=cbind(pred2))
+dev.off()
+
+
