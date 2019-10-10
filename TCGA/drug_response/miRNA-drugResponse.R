@@ -90,9 +90,10 @@ plotROC(data=data1,cOutcome=1,predrisk=cbind(pred1))
 plotROC(data=data2,cOutcome=1,predrisk=cbind(pred2))
           
 source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/HeatMap.R")
-newinput<-t(input[,match(rownames(imp)[1:50],colnames(input))])
+newinput<-t(log(input[,match(rownames(imp)[1:50],colnames(input))]+1,2))
 colnames(newinput)<-input[,1]
-pdf("heatmap.randomForest.pdf")
+pdf("mRNA.heatmap.randomForest.pdf")
 HeatMap(newinput)
 dev.off()
+          
 save.image("RNAseq-N2.RF.heatmap.RData")
