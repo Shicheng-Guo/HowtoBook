@@ -23,7 +23,6 @@ input<-input[,colnames(input) %in% phen$ID4]
 input<-input[,match(unique(colnames(input)),colnames(input))]
 rx<-findCorrelation(t(input), cutoff = 0.8, names = F,exact = ncol(t(input)) < 100)
 input<-input[-rx,]
-
 phen<-phen[na.omit(unlist(lapply(colnames(input),function(x) match(x,phen$ID)[1]))),]
 dim(input)
 dim(phen)
@@ -36,7 +35,6 @@ input<-data.frame(phen=phen$measure_of_response,t(input))
 
 # limit mRNA and methylation dataset to a smaller one
                                  
-     
 # input<-input[,unlist(apply(input,2,function(x) sd(x)>0))]
 # library("SIS")
 # x=data.matrix(input[,2:ncol(input)])
