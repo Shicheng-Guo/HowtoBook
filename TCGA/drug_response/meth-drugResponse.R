@@ -123,7 +123,6 @@ newinput<-t(log(input[,match(rownames(imp)[1:50],colnames(input))]+1,2))
 colnames(newinput)<-input[,1]
 newinput[1:5,1:5]
 source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/HeatMap.R")
-pdf("mRNA.heatmap.randomForest.n2.pdf")
+pdf("meth.heatmap.randomForest.n2.pdf")
 HeatMap(newinput)
 dev.off()
-
