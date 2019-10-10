@@ -44,6 +44,7 @@ mRNA<-data[,grep("-01",colnames(data))]
 setwd("~/hpc/project/TCGA/pancancer/FPKM")
 load("Pancancer.DrugResponse.V5292.N1462.RData")
 input<-newinput
+
 set.seed(49)
 cv.error <- NULL
 k <- 10
@@ -55,7 +56,7 @@ for(i in 1:k){
   test.cv <- input[-index,]
   
   P=apply(input[,2:ncol(input)],2,function(x) summary(glm(as.factor(input[,1])~x,family=binomial))$coefficients[2,4])
-
+  
   train.cv<-train.cv[,c(1,match(names(P[head(order(P),n=5200)]),colnames(train.cv)))]
   test.cv<-test.cv[,c(1,match(names(P[head(order(P),n=5200)]),colnames(test.cv)))]
   
@@ -70,7 +71,7 @@ for(i in 1:k){
   imp<-imp[order(imp[,4],decreasing = T),]
   write.table(imp,file=paste("RandomForest.VIP.",i,".txt",sep=""),sep="\t",quote=F,row.names = T,col.names = NA)
   topvar<-match(rownames(imp)[1:30],colnames(input))
-
+  
   train.cv <- input[index,c(1,topvar)]
   test.cv <- input[-index,c(1,topvar)]
   
@@ -87,20 +88,40 @@ for(i in 1:k){
   rlt2<-rbind(rlt2,testRlt)
   print(i)
 }
+
 data1<-na.omit(data.frame(rlt1))
 data2<-na.omit(data.frame(rlt2))
 model.glm1 <- bayesglm(phen~.,data=rlt1,family=binomial(),na.action=na.omit)
 model.glm2 <- bayesglm(phen~.,data=rlt2,family=binomial(),na.action=na.omit)
 pred1 <- predRisk(model.glm1)
 pred2 <- predRisk(model.glm2)
+
 par(mfrow=c(2,2),cex.lab=1.5,cex.axis=1.5)
 plotROC(data=data1,cOutcome=1,predrisk=cbind(pred1))
 plotROC(data=data2,cOutcome=1,predrisk=cbind(pred2))
-          
+
+### ROC 
 pdf("mRNA.drugresponse.pdf")
 par(mfrow=c(2,2),cex.lab=1.5,cex.axis=1.5)
 plotROC(data=data1,cOutcome=1,predrisk=cbind(pred1))
 plotROC(data=data2,cOutcome=1,predrisk=cbind(pred2))
 dev.off()
 
+### heatmap
+source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/HeatMap.R")
+setwd("~/hpc/project/TCGA/pancancer/FPKM")
+load("Pancancer.DrugResponse.V5292.N1462.RData")
+input<-newinput
+RF <- randomForest(as.factor(phen) ~ ., data=input, importance=TRUE,proximity=T)
+imp<-RF$importance
+head(imp)
+imp<-imp[order(imp[,4],decreasing = T),]
 
+newinput<-t(log(input[,match(rownames(imp)[1:50],colnames(input))]+1,2))
+colnames(newinput)<-input[,1]
+newinput[1:5,1:5]
+source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/HeatMap.R")
+pdf("mRNA.heatmap.randomForest.n2.pdf")
+HeatMap(newinput)
+dev.off()
+save.image("miRNAseq-N2.RF.heatmap.RData")
