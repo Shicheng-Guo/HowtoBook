@@ -78,7 +78,7 @@ for(i in 1:k){
   n <- colnames(train.cv)
   f <- as.formula(paste("phen ~", paste(n[!n %in% "phen"], collapse = " + ")))
   
-  nn <- neuralnet(f,data=train.cv,hidden=c(10,3),act.fct = "logistic",linear.output = T)
+  nn <- neuralnet(f,data=train.cv,stepmax=5*10^5,hidden=c(5,3),act.fct = "logistic",linear.output = F,threshold = 0.1)
   pr.nn <- neuralnet::compute(nn,test.cv)
   trainRlt<-data.frame(phen=train.cv[,1],pred=unlist(nn$net.result[[1]][,1]))
   testRlt<-data.frame(phen=test.cv[,1],pred=unlist(pr.nn$net.result[,1]))
