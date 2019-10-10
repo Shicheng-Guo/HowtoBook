@@ -74,7 +74,7 @@ for(i in 1:k){
   imp<-imp[order(imp[,4],decreasing = T),]
   head(imp)
   # write.table(imp,file=paste("RandomForest.VIP.Meth.",i,".txt",sep=""),sep="\t",quote=F,row.names = T,col.names = NA)
-  topvar<-match(rownames(imp)[1:30],colnames(input))
+  topvar<-match(rownames(imp)[1:60],colnames(input))
   
   train.cv <- input[index,c(1,topvar)]
   test.cv <- input[-index,c(1,topvar)]
