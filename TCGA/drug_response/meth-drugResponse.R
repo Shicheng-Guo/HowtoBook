@@ -9,29 +9,10 @@ library("neuralnet")
 setwd("/home/guosa/hpc/project/TCGA")
 source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/GscTools.R")
 source("https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/TCGA/bin/id2phen4.R")
-
-setwd("/mnt/bigdata/Genetic/Projects/shg047/project/TCGA/pancancer/meth450")
-file=list.files(pattern="*mirnas.quantification.txt$",recursive = TRUE)
-manifest2barcode("gdc_manifest.pancancer.miRNA.2019-05-29.txt")
-barcode<-read.table("barcode.txt",sep="\t",head=T)
-data<-c()
-for(i in 1:length(file)){
-  tmp<-read.table(file[i],head=T,sep="\t",as.is=F)  
-  data<-cbind(data,tmp[,3])
-  print(paste(i,"in",length(file),file[i],sep=" "))
-  rownames(data)<-tmp[,1]
-}
-
-colnames(data)<-barcode[match(unlist(lapply(file,function(x) unlist(strsplit(x,"[/]"))[2])),barcode$file_name),ncol(barcode)]
-data<-data[,grep("TCGA",colnames(data))]
-colnames(data)<-id2phen4(colnames(data))
-data<-data[,match(unique(colnames(data)),colnames(data))]
-miRNA<-data
-save(miRNA,file="TCGA-Pancancer.miRNAseq.RData")
-
-                                            
+                                         
 system("cp ~/hpc/methylation/Pancancer/methdata.pancancer.nomissing.RData ./")
 load("methdata.pancancer.nomissing.RData")
+
 colnames(input)<-id2phen4(colnames(input))
 input<-input[,grep("-01",colnames(input))]
 
@@ -47,7 +28,6 @@ dim(phen)
 sort(table(phen$bcr_patient_barcode))
 levels(phen$measure_of_response)
 levels(phen$measure_of_response)<-c(0,1,1,0)
-
 input<-data.frame(phen=phen$measure_of_response,t(input))
 # input<-input[,unlist(apply(input,2,function(x) sd(x)>0))]
 # library("SIS")
@@ -67,6 +47,7 @@ pbar <- create_progress_bar('text')
 rlt1<-c()
 rlt2<-c()
 for(i in 1:k){
+  print(i)
   index <- sample(1:nrow(input),round(0.9*nrow(input)))
   train.cv <- input[index,]
   test.cv <- input[-index,]
@@ -103,7 +84,6 @@ for(i in 1:k){
   rownames(testRlt)=row.names(test.cv)
   rlt1<-rbind(rlt1,trainRlt)  
   rlt2<-rbind(rlt2,testRlt)
-  print(i)
 }
 data1<-na.omit(data.frame(rlt1))
 data2<-na.omit(data.frame(rlt2))
