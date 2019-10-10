@@ -6,6 +6,7 @@ library("arm")
 library("plyr") 
 library("PredictABEL")
 library("neuralnet")
+library("")
 setwd("/home/guosa/hpc/project/TCGA")
 source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/GscTools.R")
 source("https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/TCGA/bin/id2phen4.R")
@@ -18,19 +19,17 @@ input<-input[,grep("-01",colnames(input))]
 
 phen<-read.table("https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/TCGA/drug_response/pancancer.chemotherapy.response.txt",head=T,sep="\t")
 phen$ID4<-paste(phen$bcr_patient_barcode,"-01",sep="")
-
 input<-input[,colnames(input) %in% phen$ID4]
 input<-input[,match(unique(colnames(input)),colnames(input))]
-
-rx<-findCorrelation(input, cutoff = 0.9, verbose = FALSE, names = FALSE,exact = ncol(x) < 100)
-
+rx<-findCorrelation(t(input), cutoff = 0.8, names = F,exact = ncol(t(input)) < 100)
+input<-input[-rx,]
 
 phen<-phen[na.omit(unlist(lapply(colnames(input),function(x) match(x,phen$ID)[1]))),]
 dim(input)
 dim(phen)
 
 sort(table(phen$bcr_patient_barcode))
-levels(phen$measure_of_response)
+table(levels(phen$measure_of_response))
 levels(phen$measure_of_response)<-c(0,1,1,0)
                                  
 input<-data.frame(phen=phen$measure_of_response,t(input))
@@ -61,10 +60,11 @@ for(i in 1:k){
   train.cv <- input[index,]
   test.cv <- input[-index,]
   
-  P=apply(train.cv[,2:ncol(train.cv)],2,function(x) summary(bayesglm(as.factor(train.cv[,1])~x,family=binomial))$coefficients[2,4])
+  # P=apply(train.cv[,2:ncol(train.cv)],2,function(x) summary(bayesglm(as.factor(train.cv[,1])~x,family=binomial))$coefficients[2,4])
+  P=apply(train.cv[,2:ncol(train.cv)],2,function(x) summary(glm(as.factor(train.cv[,1])~x,family=binomial))$coefficients[2,4])
 
-  train.cv<-train.cv[,c(1,match(names(P[head(order(P),n=6000)]),colnames(train.cv)))]
-  test.cv<-test.cv[,c(1,match(names(P[head(order(P),n=6000)]),colnames(test.cv)))]
+  train.cv<-train.cv[,c(1,match(names(P[head(order(P),n=1000)]),colnames(train.cv)))]
+  test.cv<-test.cv[,c(1,match(names(P[head(order(P),n=1000)]),colnames(test.cv)))]
   
   meth<-list()
   meth$train.cv=train.cv
@@ -76,7 +76,7 @@ for(i in 1:k){
   imp<-RF$importance
   imp<-imp[order(imp[,4],decreasing = T),]
   head(imp)
-  write.table(imp,file=paste("RandomForest.VIP.Meth.",i,".txt",sep=""),sep="\t",quote=F,row.names = T,col.names = NA)
+  # write.table(imp,file=paste("RandomForest.VIP.Meth.",i,".txt",sep=""),sep="\t",quote=F,row.names = T,col.names = NA)
   topvar<-match(rownames(imp)[1:30],colnames(input))
   
   train.cv <- input[index,c(1,topvar)]
