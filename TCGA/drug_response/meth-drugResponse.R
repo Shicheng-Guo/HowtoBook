@@ -101,3 +101,29 @@ pred2 <- predRisk(model.glm2)
 par(mfrow=c(2,2),cex.lab=1.5,cex.axis=1.5)
 plotROC(data=data1,cOutcome=1,predrisk=cbind(pred1))
 plotROC(data=data2,cOutcome=1,predrisk=cbind(pred2))
+          
+### ROC 
+pdf("mRNA.drugresponse.pdf")
+par(mfrow=c(2,2),cex.lab=1.5,cex.axis=1.5)
+plotROC(data=data1,cOutcome=1,predrisk=cbind(pred1))
+plotROC(data=data2,cOutcome=1,predrisk=cbind(pred2))
+dev.off()
+
+### heatmap
+source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/HeatMap.R")
+setwd("~/hpc/project/TCGA/pancancer/FPKM")
+load("Pancancer.DrugResponse.V5292.N1462.RData")
+input<-newinput
+RF <- randomForest(as.factor(phen) ~ ., data=input, importance=TRUE,proximity=T)
+imp<-RF$importance
+head(imp)
+imp<-imp[order(imp[,4],decreasing = T),]
+
+newinput<-t(log(input[,match(rownames(imp)[1:50],colnames(input))]+1,2))
+colnames(newinput)<-input[,1]
+newinput[1:5,1:5]
+source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/HeatMap.R")
+pdf("mRNA.heatmap.randomForest.n2.pdf")
+HeatMap(newinput)
+dev.off()
+
