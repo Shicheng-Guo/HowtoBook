@@ -197,7 +197,7 @@ dim(miRNA)
 dim(phen)
 
 sort(table(phen$bcr_patient_barcode))
-levels(phen$measure_of_response)
+table(levels(phen$measure_of_response))
 levels(phen$measure_of_response)<-c(0,1,1,0)
 
 input<-data.frame(phen=phen$measure_of_response,t(miRNA))
@@ -208,8 +208,6 @@ save(miRNA,file="pancancer.miRNA.drugResponse.RData")
 set.seed(49)
 cv.error <- NULL
 k <- 10
-pbar <- create_progress_bar('text')
-pbar$init(k)
 rlt1<-c()
 rlt2<-c()
 for(i in 1:k){
@@ -241,7 +239,6 @@ for(i in 1:k){
   rownames(testRlt)=row.names(test.cv)
   rlt1<-rbind(rlt1,trainRlt)  
   rlt2<-rbind(rlt2,testRlt)
-  # pbar$step()
   print(i)
 }
 data1<-na.omit(data.frame(rlt1))
@@ -253,6 +250,16 @@ pred2 <- predRisk(model.glm2)
 par(mfrow=c(2,2),cex.lab=1.5,cex.axis=1.5)
 plotROC(data=data1,cOutcome=1,predrisk=cbind(pred1))
 plotROC(data=data2,cOutcome=1,predrisk=cbind(pred2))
+          
+source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/HeatMap.R")
+newinput<-t(input[,match(rownames(imp)[1:50],colnames(input))])
+colnames(newinput)<-input[,1]
+pdf("heatmap.randomForest.pdf")
+HeatMap(newinput)
+dev.off()
+save.image("RNAseq-N2.RF.heatmap.RData")
+
+
 
 ######################################################################################
 ######## DNA methylation based deep-learning for drug-response prediction ###########
@@ -262,12 +269,11 @@ library("arm")
 library("plyr") 
 library("PredictABEL")
 library("neuralnet")
+setwd("/home/guosa/hpc/project/TCGA")
 source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/GscTools.R")
-
-system("cp ~/hpc/methylation/Pancancer/methdata.pancancer.nomissing.RData ./")
+source("https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/TCGA/bin/id2phen4.R")
 
 setwd("/mnt/bigdata/Genetic/Projects/shg047/project/TCGA/pancancer/meth450")
-
 file=list.files(pattern="*mirnas.quantification.txt$",recursive = TRUE)
 manifest2barcode("gdc_manifest.pancancer.miRNA.2019-05-29.txt")
 barcode<-read.table("barcode.txt",sep="\t",head=T)
@@ -286,6 +292,8 @@ data<-data[,match(unique(colnames(data)),colnames(data))]
 miRNA<-data
 save(miRNA,file="TCGA-Pancancer.miRNAseq.RData")
 
+                                            
+system("cp ~/hpc/methylation/Pancancer/methdata.pancancer.nomissing.RData ./")
 load("methdata.pancancer.nomissing.RData")
 colnames(input)<-id2phen4(colnames(input))
 input<-input[,grep("-01",colnames(input))]
