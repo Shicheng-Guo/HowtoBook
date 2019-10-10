@@ -67,7 +67,6 @@ for(i in 1:k){
   meth<-list()
   meth$train.cv=train.cv
   meth$test.cv=test.cv
-  save(meth,file="meth.t6000.mxnet.RData")
   
   print(paste(ncol(train.cv),"variables passed P-value threshold and enrolled in SIS model"))
   RF <- randomForest(as.factor(phen) ~ ., data=train.cv, importance=TRUE,proximity=T)
@@ -79,19 +78,22 @@ for(i in 1:k){
   
   train.cv <- input[index,c(1,topvar)]
   test.cv <- input[-index,c(1,topvar)]
-  
+  print(dim(train.cv))
+          
   n <- colnames(train.cv)
   f <- as.formula(paste("phen ~", paste(n[!n %in% "phen"], collapse = " + ")))
   
-  nn <- neuralnet(f,data=train.cv,hidden=c(5,3),act.fct = "logistic",linear.output = F,threshold = 0.1)
+  nn <- neuralnet(f,data=train.cv,stepmax=5*10^5,hidden=c(5,3),act.fct = "logistic",linear.output = F,threshold = 0.1)
   pr.nn <- neuralnet::compute(nn,test.cv)
   trainRlt<-data.frame(phen=train.cv[,1],pred=unlist(nn$net.result[[1]][,1]))
   testRlt<-data.frame(phen=test.cv[,1],pred=unlist(pr.nn$net.result[,1]))
   rownames(trainRlt)=row.names(train.cv)
   rownames(testRlt)=row.names(test.cv)
+  print(head(rownames(testRlt)))
   rlt1<-rbind(rlt1,trainRlt)  
   rlt2<-rbind(rlt2,testRlt)
 }
+          
 data1<-na.omit(data.frame(rlt1))
 data2<-na.omit(data.frame(rlt2))
 model.glm1 <- bayesglm(phen~.,data=rlt1,family=binomial(),na.action=na.omit)
