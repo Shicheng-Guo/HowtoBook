@@ -12,7 +12,8 @@ library("caret")
 
 setwd("/home/guosa/hpc/project/TCGA")
 source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/GscTools.R")
-
+source("https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/TCGA/bin/id2phen4.R")
+ 
 setwd("~/hpc/project/TCGA/pancancer/FPKM")
 file=list.files(pattern="*FPKM-UQ.txt$",recursive = TRUE)
 manifest2barcode("gdc_manifest.pancancer.FPKM.2019-05-29.txt")
@@ -35,6 +36,10 @@ phen<-id2bin(colnames(data))
 data<-data[,which(phen==1 | phen==11)]
 phen<-id2bin(colnames(data))
 input=data.frame(phen=phen,t(data))
+mRNA<-input
+save(mRNA,file="~/hpc/project/TCGA/pancancer/FPKM/TCGA-Pancancer.mRNAseq.trim.RData")
+save(mRNA,file="~/hpc/project/TCGA/TCGA-Pancancer.mRNAseq.trim.RData")
+                                                     
 input<-input[,unlist(apply(input,2,function(x) sd(x)>0))]
 index <- sample(1:nrow(input),round(0.9*nrow(input)))
 train.cv <- input[index,]
