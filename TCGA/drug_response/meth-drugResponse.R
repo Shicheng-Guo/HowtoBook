@@ -6,7 +6,8 @@ library("arm")
 library("plyr") 
 library("PredictABEL")
 library("neuralnet")
-library("")
+
+setwd("~/hpc/project/TCGA/pancancer/meth450")
 setwd("/home/guosa/hpc/project/TCGA")
 source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/GscTools.R")
 source("https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/TCGA/bin/id2phen4.R")
@@ -28,9 +29,8 @@ dim(input)
 dim(phen)
 
 sort(table(phen$bcr_patient_barcode))
-table(levels(phen$measure_of_response))
+table(phen$measure_of_response)
 levels(phen$measure_of_response)<-c(0,1,1,0)
-                                 
 input<-data.frame(phen=phen$measure_of_response,t(input))
 
 # limit mRNA and methylation dataset to a smaller one
@@ -48,21 +48,20 @@ input<-data.frame(phen=phen$measure_of_response,t(input))
 
 set.seed(49)
 cv.error <- NULL
-k <- 10
-pbar <- create_progress_bar('text')
+k <- 2
 rlt1<-c()
 rlt2<-c()
 for(i in 1:k){
   print(i)
-  index <- sample(1:nrow(input),round(0.9*nrow(input)))
+  index <- sample(1:nrow(input),round(0.5*nrow(input)))
   train.cv <- input[index,]
   test.cv <- input[-index,]
   
   # P=apply(train.cv[,2:ncol(train.cv)],2,function(x) summary(bayesglm(as.factor(train.cv[,1])~x,family=binomial))$coefficients[2,4])
   P=apply(train.cv[,2:ncol(train.cv)],2,function(x) summary(glm(as.factor(train.cv[,1])~x,family=binomial))$coefficients[2,4])
 
-  train.cv<-train.cv[,c(1,match(names(P[head(order(P),n=1000)]),colnames(train.cv)))]
-  test.cv<-test.cv[,c(1,match(names(P[head(order(P),n=1000)]),colnames(test.cv)))]
+  train.cv<-train.cv[,c(1,match(names(P[head(order(P),n=2000)]),colnames(train.cv)))]
+  test.cv<-test.cv[,c(1,match(names(P[head(order(P),n=2000)]),colnames(test.cv)))]
   
   meth<-list()
   meth$train.cv=train.cv
@@ -74,7 +73,7 @@ for(i in 1:k){
   imp<-imp[order(imp[,4],decreasing = T),]
   head(imp)
   # write.table(imp,file=paste("RandomForest.VIP.Meth.",i,".txt",sep=""),sep="\t",quote=F,row.names = T,col.names = NA)
-  topvar<-match(rownames(imp)[1:60],colnames(input))
+  topvar<-match(rownames(imp)[1:300],colnames(input))
   
   train.cv <- input[index,c(1,topvar)]
   test.cv <- input[-index,c(1,topvar)]
@@ -105,7 +104,7 @@ plotROC(data=data1,cOutcome=1,predrisk=cbind(pred1))
 plotROC(data=data2,cOutcome=1,predrisk=cbind(pred2))
           
 ### ROC 
-pdf("mRNA.drugresponse.pdf")
+pdf("meth.ROC.drugresponse.pdf")
 par(mfrow=c(2,2),cex.lab=1.5,cex.axis=1.5)
 plotROC(data=data1,cOutcome=1,predrisk=cbind(pred1))
 plotROC(data=data2,cOutcome=1,predrisk=cbind(pred2))
@@ -113,18 +112,20 @@ dev.off()
 
 ### heatmap
 source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/HeatMap.R")
-setwd("~/hpc/project/TCGA/pancancer/FPKM")
-load("Pancancer.DrugResponse.V5292.N1462.RData")
-input<-newinput
+setwd("~/hpc/project/TCGA/pancancer/meth450")
+P=apply(input[,2:ncol(input)],2,function(x) summary(glm(as.factor(input[,1])~x,family=binomial))$coefficients[2,4])   
+input<-input[,c(1,match(names(P[head(order(P),n=4000)]),colnames(input)))]
 RF <- randomForest(as.factor(phen) ~ ., data=input, importance=TRUE,proximity=T)
 imp<-RF$importance
 head(imp)
 imp<-imp[order(imp[,4],decreasing = T),]
-
-newinput<-t(log(input[,match(rownames(imp)[1:50],colnames(input))]+1,2))
+topvar<-match(rownames(imp)[1:2000],colnames(input))
+newinput <- t(input[,topvar])
 colnames(newinput)<-input[,1]
 newinput[1:5,1:5]
 source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/HeatMap.R")
 pdf("meth.heatmap.randomForest.n2.pdf")
 HeatMap(newinput)
 dev.off()
+        
+        
