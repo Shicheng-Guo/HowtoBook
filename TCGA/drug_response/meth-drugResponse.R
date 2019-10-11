@@ -57,15 +57,10 @@ for(i in 1:k){
   train.cv <- input[index,]
   test.cv <- input[-index,]
   
-  # P=apply(train.cv[,2:ncol(train.cv)],2,function(x) summary(bayesglm(as.factor(train.cv[,1])~x,family=binomial))$coefficients[2,4])
   P=apply(train.cv[,2:ncol(train.cv)],2,function(x) summary(glm(as.factor(train.cv[,1])~x,family=binomial))$coefficients[2,4])
 
   train.cv<-train.cv[,c(1,match(names(P[head(order(P),n=sum(P<0.05/length(P)))]),colnames(train.cv)))]
   test.cv<-test.cv[,c(1,match(names(P[head(order(P),n=sum(P<0.05/length(P)))]),colnames(test.cv)))]
-  
-  meth<-list()
-  meth$train.cv=train.cv
-  meth$test.cv=test.cv
   
   print(paste(ncol(train.cv),"variables passed P-value threshold and enrolled in SIS model"))
   RF <- randomForest(as.factor(phen) ~ ., data=train.cv, importance=TRUE,proximity=T)
@@ -73,11 +68,12 @@ for(i in 1:k){
   imp<-imp[order(imp[,4],decreasing = T),]
   head(imp)
   write.table(imp,file=paste("RandomForest.VIP.Meth.",i,".txt",sep=""),sep="\t",quote=F,row.names = T,col.names = NA)
-  topvar<-match(rownames(imp)[1:min(nrow(input),nrow(imp))],colnames(input))
+  topvar<-match(rownames(imp)[1:min(nrow(input)/2,nrow(imp)/2)],colnames(input))
   
   train.cv <- input[index,c(1,topvar)]
+  print(train.cv[1:5,1:5])
   test.cv <- input[-index,c(1,topvar)]
-  print(dim(train.cv))
+  print(test.cv[1:5,1:5])
           
   n <- colnames(train.cv)
   f <- as.formula(paste("phen ~", paste(n[!n %in% "phen"], collapse = " + ")))
