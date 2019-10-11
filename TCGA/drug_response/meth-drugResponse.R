@@ -60,8 +60,8 @@ for(i in 1:k){
   # P=apply(train.cv[,2:ncol(train.cv)],2,function(x) summary(bayesglm(as.factor(train.cv[,1])~x,family=binomial))$coefficients[2,4])
   P=apply(train.cv[,2:ncol(train.cv)],2,function(x) summary(glm(as.factor(train.cv[,1])~x,family=binomial))$coefficients[2,4])
 
-  train.cv<-train.cv[,c(1,match(names(P[head(order(P),n=2000)]),colnames(train.cv)))]
-  test.cv<-test.cv[,c(1,match(names(P[head(order(P),n=2000)]),colnames(test.cv)))]
+  train.cv<-train.cv[,c(1,match(names(P[head(order(P),n=sum(P<0.05/length(P)))]),colnames(train.cv)))]
+  test.cv<-test.cv[,c(1,match(names(P[head(order(P),n=sum(P<0.05/length(P)))]),colnames(test.cv)))]
   
   meth<-list()
   meth$train.cv=train.cv
@@ -72,8 +72,8 @@ for(i in 1:k){
   imp<-RF$importance
   imp<-imp[order(imp[,4],decreasing = T),]
   head(imp)
-  # write.table(imp,file=paste("RandomForest.VIP.Meth.",i,".txt",sep=""),sep="\t",quote=F,row.names = T,col.names = NA)
-  topvar<-match(rownames(imp)[1:300],colnames(input))
+  write.table(imp,file=paste("RandomForest.VIP.Meth.",i,".txt",sep=""),sep="\t",quote=F,row.names = T,col.names = NA)
+  topvar<-match(rownames(imp)[1:min(nrow(input),nrow(imp))],colnames(input))
   
   train.cv <- input[index,c(1,topvar)]
   test.cv <- input[-index,c(1,topvar)]
@@ -82,7 +82,7 @@ for(i in 1:k){
   n <- colnames(train.cv)
   f <- as.formula(paste("phen ~", paste(n[!n %in% "phen"], collapse = " + ")))
   
-  nn <- neuralnet(f,data=train.cv,stepmax=5*10^5,hidden=c(5,3),act.fct = "logistic",linear.output = F,threshold = 0.1)
+  nn <- neuralnet(f,data=train.cv,stepmax=5*10^5,hidden=c(10,3),act.fct = "logistic",linear.output = F,threshold = 0.1)
   pr.nn <- neuralnet::compute(nn,test.cv)
   trainRlt<-data.frame(phen=train.cv[,1],pred=unlist(nn$net.result[[1]][,1]))
   testRlt<-data.frame(phen=test.cv[,1],pred=unlist(pr.nn$net.result[,1]))
@@ -113,8 +113,11 @@ dev.off()
 ### heatmap
 source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/HeatMap.R")
 setwd("~/hpc/project/TCGA/pancancer/meth450")
-P=apply(input[,2:ncol(input)],2,function(x) summary(glm(as.factor(input[,1])~x,family=binomial))$coefficients[2,4])   
-input<-input[,c(1,match(names(P[head(order(P),n=4000)]),colnames(input)))]
+P=apply(input[,2:ncol(input)],2,function(x) summary(glm(as.factor(input[,1])~x,family=binomial))$coefficients[2,4])
+save(input,file="input.RData")
+load(file="input.RData")
+input<-input[,c(1,match(names(P[head(order(P),n=20000)]),colnames(input)))]
+        
 RF <- randomForest(as.factor(phen) ~ ., data=input, importance=TRUE,proximity=T)
 imp<-RF$importance
 head(imp)
