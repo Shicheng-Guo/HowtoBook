@@ -1,6 +1,6 @@
-load("~/hpc/project/TCGA/pancancer/FPKM/mRNA.t3000.mxnet.RData")
-mRNA<-rbind(mRNA$train.cv,mRNA$test.cv)
-load("~/hpc/project/TCGA/pancancer/meth450/meth.t6000.mxnet.RData")
+load("~/hpc/project/TCGA/pancancer/FPKM/Pancancer.DrugResponse.V5292.N1462.RData")
+mRNA<-newinput
+load("~/hpc/project/TCGA/pancancer/meth450/methdata.pancancer.nomissing.RData")
 meth<-rbind(meth$train.cv,meth$test.cv)
 load("~/hpc/project/TCGA/pancancer/miRNA/pancancer.miRNA.drugResponse.RData")
 
@@ -10,12 +10,11 @@ miRNA<-miRNA[match(triple,rownames(miRNA)),]
 mRNA<-mRNA[match(triple,rownames(mRNA)),]
 meth<-meth[match(triple,rownames(meth)),]
 
-data<-cbind(miRNA,mRNA,meth)
-input<-cbind(miRNA[,1],mRNA[,2:ncol(mRNA)],meth[,2:ncol(meth)])
-input<-input[,c(1,sample(1:ncol(input),250))]
-input[1:5,1:5]
-
-colnames(input)
+# input<-cbind(phen=miRNA[,1],scale(miRNA[,2:ncol(miRNA)]),scale(mRNA[,2:ncol(mRNA)]),scale(meth[,2:ncol(meth)]))
+input<-cbind(phen=miRNA[,1],miRNA[,2:ncol(miRNA)],mRNA[,2:ncol(mRNA)],meth[,2:ncol(meth)])
+SD<-apply(input,2,function(x) sd(x))
+input<-input[,-which(SD==0)]
+input[,2:ncol(input)]<-scale(input[,2:ncol(input)])
 #######################################################
 # index <- sample(1:nrow(input),round(0.9*nrow(input)))
 # train.cv <- data.matrix(input[index,])
@@ -95,21 +94,19 @@ dev.off()
 ### heatmap
 source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/HeatMap.R")
 setwd("~/hpc/project/TCGA/pancancer/meth450")
+input<-data.frame(input)
 P=apply(input[,2:ncol(input)],2,function(x) summary(glm(as.factor(input[,1])~x,family=binomial))$coefficients[2,4])
-save(input,file="input.RData")
-load(file="input.RData")
-input<-input[,c(1,match(names(P[head(order(P),n=20000)]),colnames(input)))]
-        
+
 RF <- randomForest(as.factor(phen) ~ ., data=input, importance=TRUE,proximity=T)
 imp<-RF$importance
 head(imp)
 imp<-imp[order(imp[,4],decreasing = T),]
-topvar<-match(rownames(imp)[1:2000],colnames(input))
+topvar<-match(rownames(imp)[1:200],colnames(input))
 newinput <- t(input[,topvar])
-colnames(newinput)<-input[,1]
+colnames(newinput)<-newinput[,1]
 newinput[1:5,1:5]
 source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/HeatMap.R")
-pdf("meth.heatmap.randomForest.n2.pdf")
+pdf("triple.heatmap.randomForest.n2.pdf")
 HeatMap(newinput)
 dev.off()
         
