@@ -110,3 +110,5 @@ pdf("triple.heatmap.randomForest.n2.pdf")
 HeatMap(newinput)
 dev.off()
         
+
+               
