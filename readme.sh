@@ -1,3 +1,87 @@
+zcat ../../SRR9888304_1.fastq.gz | head -n 500000 | gzip -c > SRR9888304_1.fastq.gz
+zcat ../../SRR9888304_2.fastq.gz | head -n 500000 | gzip -c > SRR9888304_2.fastq.gz
+cd /gpfs/home/guosa/hpc/methylation/clep/wgbs/test/data
+wget https://raw.githubusercontent.com/Shicheng-Guo/SmartMeth/master/bin/smartbismark.pl -O smartbismark.pl
+perl smartbismark.pl --input SraRunTable.txt --genome hg19 --server MCRI --queue shortq --submit submit
+
+
+intervene upset
+cd ~/hpc/methylation/pancrease/medip
+for i in 2019032901 2019032903 2019040901 2019051703 2019052301 2019053101 2019053102
+do
+mkdir $i
+intervene venn --save-overlaps -i /gpfs/home/guosa/hpc/methylation/pancrease/medip/venn/$i*.bed --project Intervene_results
+intervene upset -i /gpfs/home/guosa/hpc/methylation/pancrease/medip/venn/$i*.bed --project Intervene_results
+intervene pairwise  -i /gpfs/home/guosa/hpc/methylation/pancrease/medip/venn/$i*.bed --project Intervene_results
+done
+intervene upset -i /gpfs/home/guosa/hpc/methylation/pancrease/medip/venn/*.bed --project Intervene_results
+intervene pairwise  -i /gpfs/home/guosa/hpc/methylation/pancrease/medip/venn/*.bed --project Intervene_results
+
+for i in `ls *.bed`
+do
+bedtools intersect -wao -a $i -b ~/hpc/db/hg19/refGeneV2.hg19.bed > $i.ref
+done
+
+for i in 2019032901 2019032903 2019040901 2019051703 2019052301 2019053101 2019053102
+do
+ls $i*ref | tail -n 1
+done
+
+
+## loading packages
+BiocManager::install("ChIPseeker")
+BiocManager::install("SeqPlots")
+BiocManager::install("Genomation")
+library("ChIPseeker")
+library("SeqPlots")
+library("Genomation")
+
+install.packages("SeqPlots")
+library("Genomation")
+library(TxDb.Hsapiens.UCSC.hg19.knownGene)
+txdb <- TxDb.Hsapiens.UCSC.hg19.knownGene
+library(clusterProfiler)
+
+
+files <- getSampleFiles()
+print(files)
+plotAvgProf(tagMatrix, xlim=c(-3000, 3000),xlab="Genomic Region (5'->3')", ylab = "Read Count Frequency")
+
+
+perl smartbismark.pl --input config.txt  --genome hg19 --server MCRI --queue shortq --submit submit
+#!/bin/bash
+#PBS -N GS-YD8
+#PBS -q shortq
+#PBS -l nodes=1:ppn=6
+#PBS -M Guo.Shicheng@marshfieldresearch.org
+#PBS -m abe
+cd /mnt/bigdata/Genetic/Projects/shg047/methylation/brca/19B0731C_MethylTarget/fastq
+# fastq-dump --skip-technical --split-files --gzip GS-YD8
+trim_galore --paired --phred33 --clip_R1 3 --clip_R2 6 --fastqc --illumina GS-YD8_R1.fastq.gz GS-YD8_R2.fastq.gz --output_dir ../fastq_trim
+bismark --bowtie2 --multicore 2 --fastq -N 1 --phred33-quals ~/hpc/db/hg19/bismark -1 ../fastq_trim/GS-YD8_R1_val_1.fq.gz -2 ../fastq_trim/GS-YD8_R2_val_2.fq.gz -o ../bam
+filter_non_conversion --paired ../bam/GS-YD8_R1_val_1_bismark_bt2_pe.bam
+# deduplicate_bismark --bam ../bam/GS-YD8_R1_val_1_bismark_bt2_pe.nonCG_filtered.bam
+bismark_methylation_extractor --no_overlap --multicore 2 --merge_non_CpG --bedGraph --cutoff 20 --ignore 1 --buffer_size 4G --comprehensive --output ../methyfreq  ../bam/GS-YD8_R1_val_1_bismark_bt2_pe.nonCG_filtered.bam
+coverage2cytosine --merge_CpG --gzip --genome_folder ~/hpc/db/hg19/bismark -o GS-YD8_R1.mergeCpG.bed GS-YD8_R1_val_1_bismark_bt2_pe.nonCG_filtered.bismark.cov.gz
+samtools sort -@ 8 ../bam/GS-YD8_R1_val_1_bismark_bt2_pe.nonCG_filtered.bam -o ../sortbam/GS-YD8_bismark_bt2_pe.sortc.bam
+samtools index ../sortbam/GS-YD8_bismark_bt2_pe.sortc.bam
+cd ../sortbam
+perl ~/bin/samInfoPrep4Bam2Hapinfo.pl ~/oasis/db/hg19/hg19.cut10k.bed > saminfo.txt
+perl ~/bin/bam2hapInfo2PBS.pl saminfo.txt submit bismark ~/hpc/db/hg19/hg19.chrom.sizes ~/hpc/db/hg19/HsGenome19.CpG.positions.txt
+
+
+cd 
+bowtie2 -q -x /home/guosa/hpc/db/hg19/bowtie2/hg19 input.fastq -S input.sam
+
+
+chr5	138331825	138331875	ZJD003
+
+scp nu_guos@submit-1.chtc.wisc.edu:~/hg19.zip ./
+scp nu_guos@submit-1.chtc.wisc.edu:~/*.tar.gz ./
+
+
+scp nu_guos@submit-1.chtc.wisc.edu:~/hg19.fa ./
+
 
 
 cd ~/hpc/tools/RIblast/extdata
@@ -618,8 +702,8 @@ plink --bfile chr22.dose.dbsnp --logistic --covar plink.eigenvec --covar-number 
 
 plink --file data --keep mylist.txt
 
-
-/gpfs/home/guosa/hpc/methylation/clep/wgbs
+less ~/hpc/methylation/clep/wgbs/SraRunTable.txt
+cd ~/hpc/methylation/clep/wgbs
 perl ~/bin/smartbismark.pl --input SraRunTable.txt --genome hg19 --phred=33 --server MCRI --queue shortq --submit no
 for i in `ls *.pbs`
 do
@@ -18892,3 +18976,1613 @@ wget -m --ftp-user=plamethy --ftp-password='de$*d@s3' ftp://137.189.133.62/
 
 
 
+hcount
+pmd -o $output.pmd $output.methcount
+hmr -o $output.hmr $output.methcount
+
+
+cd /media/Home_Raid1/zhl002/NAS1/WGBS/analysis
+bedgraph2amf bedgraph bed 
+awk -F":|-" '{print ouch$1,$2,$3,$1":"$2"-"$3}' OFS="\t"
+
+#!/bin/bash
+# Usage: sh bedgraph2amf.sh -b input.bedgraph -d input.bed 
+# Extension: perl ~/bin/tab2matrix.pl > matrix.txt
+while getopts b:d: option
+do
+ case "${option}"
+ in
+ b) bedgraph=${OPTARG};;
+ d) bed=${OPTARG};;
+ esac
+done
+# help Alice to treat the methylation bedgraph data to AMF data
+sort -k1,1 -k2,2n $bedgraph > $bedgraph.sort
+awk '{print $1,$2,$3,$4}' OFS="\t" $bedgraph.sort > $bedgraph.bed4
+awk '{print $1,$2,$3,$1":"$2"-"$3}' $bed > $bed.bed4
+bedGraphToBigWig $bedgraph.bed4 ~/work/db/mm9/mm9.chrom.sizes $bedgraph.bw
+bigWigAverageOverBed $bedgraph.bw $bed.bed4 $bedgraph.tab
+
+
+cd /media/Home_Raid1/zhl002/NAS1/WGBS/analysis
+for i in `ls *trim`
+do
+sort -k1,1 -k2,2n $i > $i.sort
+awk '{print $1,$2,$3,$4}' OFS="\t" $i.sort > $i.bed4
+bedGraphToBigWig $i.bed4 ~/work/db/mm9/mm9.chrom.sizes $i.bw
+bigWigAverageOverBed $i.bw meth_expr_regions.bed.cor.bed $i.tab
+perl ~/bin/matrixGeneration.pl > matrix.txt
+print $i
+done
+
+find ./ -name "*.txt" -mtime +1 -type f | xargs -I {} scp shg047@genome-miner.ucsd.edu:/media/Home_Raid1/zhl002/NAS1/WGBS/analysis unsupervised \;
+
+bedtools 
+bedgraphtools
+wigtools
+
+methmatrix2gender.R
+
+/home/shg047/oasis/db/FHM.bed
+
+
+Genomic dataset for Normal Colon tissue
+WGBS	SRX332737	SRR949213	Normal Colon
+WGBS	SRX332737	SRR949214	Normal Colon
+WGBS	SRX332737	SRR949215	Normal Colon
+WGBS    SRX381553       GSM1279519      Colon_normal
+
+Genomic dataset for Normal Lung tissue
+WGBS      SRX1649893       SRX1649893         Normal Lung    
+WGBS      SRX1651655       SRX1651655         Normal Lung
+WGBS      SRX1651658       SRX1651658         Normal Lung
+WGBS      GSM1279527       SRX381713          Normal Lung
+
+WGBS	  STL001GA-01	   STL001GA-01	      Normal Lung
+WGBS	  STL002LG-01	   STL002LG-01	      Normal Lung
+WGBS	  N37-Lung	   N37-Lung	      Normal Lung
+RRBS	  ENCFF000LVO	   ENCFF000LVO	      Normal Lung
+RRBS	  ENCFF000LVR	   ENCFF000LVR	      Normal Lung
+
+SRX1649893
+SRX1651655
+SRX1651658
+
+awk '{if ($1>0.1) print $1,$2,$3}' OFS="\t" MM
+
+/home/shg047/oasis/Ziller2013/sortbam/hapinfo
+SRR949213 SRR949214 SRR949215
+cd /media/NAS3_volume2/Dinh/WGBS_LTS33/Hg19/Ziller_Harvard/BAMfiles
+scp Colon_Primary_Normal.chr*sorted.clipped.bam* shg047@tscc-login.sdsc.edu:/home/shg047/oasis/Ziller2013/sortbam/SRX332737
+perl ~/bin/samInfoPrep4Bam2Hapinfo.pl ~/oasis/monod/mhb/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.cor.bed > saminfo.txt
+
+
+for i in `ls *bed`; do awk -F"\t|\'|\/" '{print $1,$2,$3,$5/$6,$5,$6}' $i ; done
+
+cd /home/shg047/oasis/Ziller2013/bw
+for i in BiSeq_cpgMethylation_BioSam_1121_Colon_Adjacent_Normal.BiSeq.bed GSM1204465_BiSeq_cpgMethylation_BioSam_1120_Colon_Primary_Tumor.BiSeq.bed BiSeq_cpgMethylation_BioSam_157_REMC_19_colonic_mucosa.BiSeq.bed
+do
+#awk -F"\t|\'|\/" '{print $1,$2,$3,$5/$6}' OFS="\t" $i > $i.bedgraph
+#bedGraphToBigWig $i.bedgraph ../../db/hg19/hg19.chrom.sizes $i.bw
+bigWigAverageOverBed $i.bw /oasis/tscc/scratch/shg047/monod/hapinfo/Colon77CCP.txt $i.tab
+done
+perl ~/bin/tab2matrix.pl 
+
+
+
+ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM1279nnn/GSM1279527/suppl/GSM1279527_CpGcontext.Lung.txt.gz
+
+
+
+DATA[match("chr9:103791378-103791447",rownames(DATA)),]
+DATA[match("chr12:125051726-125051786",rownames(DATA)),]
+DATA[match("chr5:174152050-174152076",rownames(DATA)),]
+perl ~/bin/tab2matrix.pl | grep 'chr5:174152050-174152076'
+
+
+wget ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM1204nnn/GSM1204465/suppl/GSM1204465_BiSeq_cpgMethylation_BioSam_1120_Colon_Primary_Tumor.BiSeq.bed.gz
+wget ftp://ftp.ncbi.nlm.nih.gov/geo/samples/GSM1204nnn/GSM1204466/suppl/GSM1204466_BiSeq_cpgMethylation_BioSam_1121_Colon_Adjacent_Normal.BiSeq.bed.gz
+
+
+cd /oasis/tscc/scratch/shg047/Ziller2013/fastq
+perl ~/bin/smartbismark.pl --input saminfo.txt --genome hg19 --server TSCC --submit no --queue hotel
+for i in SRR949210 SRR949211 SRR949212 SRR949213 SRR949214 SRR949215
+do
+qsub $i.pbs
+done
+
+
+/home/shg047/oasis/Chen2016CellResearch/bam
+for i in SRR1654403 SRR1654398
+do
+
+echo " #!/bin/csh" > $i.job
+echo " #PBS -N bam2sort" >> $i.job
+echo " #PBS -q hotel" >> $i.job
+echo " #PBS -l nodes=1:ppn=8" >> $i.job
+echo " #PBS -l walltime=168:00:00" >> $i.job
+echo " #PBS -V" >> $i.job
+echo " #PBS -M shg047@ucsd.edu" >> $i.job
+echo " #PBS -o $i.o" >> $i.job
+echo " #PBS -e $i.e" >> $i.job
+echo " #PBS -m abe" >> $i.job
+echo " #PBS -A k4zhang-group" >> $i.job
+echo "cd \$PBS_O_WORKDIR" >> $i.job
+echo  samtools sort -@ 8 -o ../sortbam/$i\_bismark_bt2_pe.sort.bam ../bam/$i\_1_val_1_bismark_bt2_pe.nonCG_filtered.bam >> $i.job
+echo  samtools index ../sortbam/$i\_bismark_bt2_pe.sort.bam >> $i.job
+qsub $i.job
+done
+
+
+SRR1654396_bismark_bt2_pe.sort.bam
+
+
+# How to add the rsa key of your own linux computer to remove linux server system to avoid input passwd everytime.
+# first run the keygen command to generate the keys of your own computer. 
+ssh-keygen -t rsa
+# tell the remote servers the key of your own computer so that you don't need to input passwd everytime.
+cat ~/.ssh/id_rsa.pub | ssh shg047@genome-miner.ucsd.edu 'cat >> ~/.ssh/authorized_keys'
+cat ~/.ssh/id_rsa.pub | ssh shg047@tscc-login.sdsc.edu 'cat >> ~/.ssh/authorized_keys'
+
+awk 'i++ {if($1~/ARRS/) print i}' ../../bak/bak.db
+find ./ -name ".R" |xargs -I {} grep unsupervised \;
+find ./ -name "*.R" | xargs grep 'unsupervised'
+find ./ -name "*.R" | xargs grep 'combat'
+
+for i in `ls *hapInfo.txt`
+do
+perl ~/bin/hapinfo2wig.pl $i > $i.wig
+done
+
+perl ~/bin/haptools.pl --input $i --bed ~/oasis/monod/mhb/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.cor.bed --output $i 
+
+
+cd /media/Home_Raid1/shg047/work/monod/hapinfo
+perl methHMH.pl 6-T-1.sorted.clipped.bam.hapInfo.txt 6-P-1.sorted.clipped.bam.hapInfo.txt excl.list.txt ./caHMH/caHMH-1 
+perl methHMH.pl 6-T-2.sorted.clipped.bam.hapInfo.txt 6-P-2.sorted.clipped.bam.hapInfo.txt excl.list.txt ./caHMH/caHMH-2 
+perl methHMH.pl 6-T-3.sorted.clipped.bam.hapInfo.txt 6-P-3.sorted.clipped.bam.hapInfo.txt excl.list.txt ./caHMH/caHMH-3 
+perl methHMH.pl 6-T-4.sorted.clipped.bam.hapInfo.txt 6-P-4.sorted.clipped.bam.hapInfo.txt excl.list.txt ./caHMH/caHMH-4 
+perl methHMH.pl 6-T-5.sorted.clipped.bam.hapInfo.txt 6-P-5.sorted.clipped.bam.hapInfo.txt excl.list.txt ./caHMH/caHMH-5 
+cat caHMH* > HMH.txt
+Rscript caHMH.R
+
+#>>>>>>>>
+caHMH.R
+#>>>>>>>>
+data<-read.table("HMH.txt",head=T,sep="\t",as.is=T)
+input<-data.matrix(data[,8:ncol(data)])
+caHMH<-data[which(apply(input,1,function(x) sum(x)==0)),1]
+unique(as.character(caHMH))
+write.table(unique(as.character(caHMH)),file="caHMH.rlt.txt",col.names=F,row.names=F,quote=F)
+
+#>>>>>>>>
+caHMH.sh
+#>>>>>>>>
+awk -F":|-" '{print $1,$2,$3,$1":"$2"-"$3}' OFS="\t" caHMH.rlt.txt > caHMH.bed
+bedtools intersect -wao -a caHMH.bed -b ~/work/db/hg19/hg19_refGene.bed | sort -k1,1n
+
+
+cor2bed.sh
+awk -F":|-" '{print $1,$2,$3,$1":"$2"-"$3}' OFS="\t"
+
+chr19	58951755	58951921	chr19:58951755-58951921
+scp shg047@tscc-login.sdsc.edu:/home/shg047/oasis/db/hg19/HsGenome19.CpG.positions.txt ~/work/db/hg19
+awk '{print $1,$2,$2+1}' OFS="\t" ~/work/db/hg19/HsGenome19.CpG.positions.txt > HsGenome19.CpG.positions.bed
+
+for i in `ls SRX*hapInfo.txt`
+do
+if [ -e "$i.hap" ]
+then
+perl ~/bin/haptools.pl --input $i --bed ~/oasis/monod/mhb/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.cor.bed --output $i 
+fi
+done
+
+cp /home/shg047/oasis/Encode/hapinfo/ENC*hapInfo.txt ../../monod/hapinfo/
+cp /home/shg047/oasis/Estellar2016/hapinfo/SRX*.hapInfo.txt ../../monod/hapinfo/
+
+for i in `ls *hapInfo.txt`
+do
+perl ~/bin/haptools.pl --input $i --bed ~/oasis/monod/mhb/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.cor.bed --output $i 
+done
+
+for i in `ls N37*hapInfo.txt`
+do
+perl ~/bin/haptools.pl --input $i --bed ~/oasis/monod/mhb/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.cor.bed --output $i 
+done
+
+perl ~/bin/haptools.pl --input 6-T-1.sorted.clipped.bam.hapInfo.txt --bed ~/oasis/monod/mhb/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.cor.bed --output test
+head 6-T-1.sorted.clipped.bam.hapInfo.txt.hap
+head test.hap
+
+
+/media/12TB_ext/DD_Ext12T/RRBS_MONOD/Plasma_RRBS_2015/BAMfiles
+
+addr:132.249.107.90    2017-05-07
+
+#!/usr/bin/perl
+use strict;
+chdir "/home/shg047/work/monod/rrbs_kun";
+my @file=glob("RRBS*P*");
+foreach my $file(@file){
+my (undef,$cancerType,$Samid,undef)=split /[-P]/,$file;
+my $newName="$cancerType-P-$Samid";
+system("cp $file $newName");
+}
+
+/media/12TB_ext/DD_Ext12T/Capture_MONOD/150209_SN216/SeqCap/BAMfiles
+
+
+[59] "WB_centenarian.all_chrs"               
+[60] "WB_middle-age.all_chrs"                
+[61] "WB_new-born.all_chrs"                  
+[62] "SRX381569_tumor_colon"                 
+[63] "SRX381716_adenocarcinoma_lung"         
+[64] "SRX381719_squamous_cell_tumor_lung"    
+[65] "SRX381722_small_cell_tumor_lung" 
+
+find . -name "*" -type d -exec rm -r "{}" \;
+
+for i in `ls *bam.hapInfo.txt`
+do
+perl ~/bin/haptools.pl --input $i --bed ../mhb/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.cor.bed --output $i
+done
+
+wget http://www.ebi.ac.uk/arrayexpress/files/E-MTAB-2600/E-MTAB-2600.sdrf.txt
+perl -lane "{print @F[31]}" E-MTAB-2600.sdrf.txt | xargs -I {} wget {}
+
+samtools tview ../sortBam/CTR97_trimmed.fq.gz_bismark_bt2.sort.bam ~/oasis/db/hg19/hg19.fa chr10:100027918-100027944
+samtools tview ../bam/6-P-1.sorted.clipped.bam ~/work/db/hg19/hg19.fa chr10:100027918-100027944
+
+cp /media/12TB_ext/DD_Ext12T/RRBS_MONOD/MONOD_RRBS_2014_RemappedTogether_Jan2016/BAMfiles/BAMfiles/*bam ./
+cp /media/12TB_ext/DD_Ext12T/RRBS_MONOD/Plasma_RRBS_2016/BAMfiles/*bam ./
+
+
+perl ~/bin/samInfoPrep4Bam2Hapinfo.pl ../mhb/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.cor.bed > saminfo.txt
+
+perl ~/bin/bam2hapInfo2PBS.pl saminfo.txt non bisreadMapper /home/shg047/oasis/db/hg19/hg19.chrom.sizes /home/shg047/oasis/db/hg19/HsGenome19.CpG.positions.txt
+
+
+for i in `ls *hapInfo.txt`
+do
+echo "perl methhaptools.pl --input $i --bed ../../mhb/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.cor.bed --output $i"
+done
+
+
+cd /home/shg047/oasis/monod/hapinfo/bak20170501
+for i in `ls *hapInfo.txt` 
+do
+echo " #!/bin/csh" > $i.job
+echo " #PBS -N hapinfo2summary" >> $i.job
+echo " #PBS -q hotel" >> $i.job
+echo " #PBS -l nodes=1:ppn=1" >> $i.job
+echo " #PBS -l walltime=72:00:00" >> $i.job
+echo " #PBS -V" >> $i.job
+echo " #PBS -M shihcheng.guo@gmail.com" >> $i.job
+echo " #PBS -m abe" >> $i.job
+echo " #PBS -A k4zhang-group" >> $i.job
+echo " cd \$PBS_O_WORKDIR" >> $i.job
+echo " perl ~/bin/methhaptools.pl --input $i --bed ../../mhb/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.cor.bed --output $i" >> $i.job
+qsub $i.job
+done
+
+for i in `ls *hapInfo.txt`
+do
+echo ""
+done
+
+grep -P "chr1" /home/shg047/oasis/Alice/mouse/mhb/mm9.mhb.0.5.bed
+
+awk '{print $1,$2,$3,$1":"$2"-"$3}' /home/shg047/oasis/Alice/mouse/mhb/mm9.mhb.0.5.bed | grep -P "chr1" >  mm9.mhb.0.5.chr1.bed
+awk '{print $1,$2,$3,$1":"$2"-"$3}' /home/shg047/oasis/Alice/mouse/mhb/mm9.mhb.0.4.bed | grep -P "chr1" >  mm9.mhb.0.4.chr1.bed
+awk '{print $1,$2,$3,$1":"$2"-"$3}' /home/shg047/oasis/Alice/mouse/mhb/mm9.mhb.0.3.bed | grep -P "chr1" >  mm9.mhb.0.3.chr1.bed
+perl ~/bin/haptools.pl --input SRR1248477.hapInfo.txt --bed mm9.mhb.0.5.chr1.bed --output SRR1248477.hapInfo.txt.R5
+perl ~/bin/haptools.pl --input SRR1248477.hapInfo.txt --bed mm9.mhb.0.4.chr1.bed --output SRR1248477.hapInfo.txt.R4
+perl ~/bin/haptools.pl --input SRR1248477.hapInfo.txt --bed mm9.mhb.0.3.chr1.bed --output SRR1248477.hapInfo.txt.R3
+bigWigAverageOverBed /home/shg047/oasis/Alice/mouse/hapinfo/Mouse_ESC.meth.bw mm9.mhb.0.5.chr1.bed SRR1248477.hapInfo.txt.R5.tab
+bigWigAverageOverBed /home/shg047/oasis/Alice/mouse/hapinfo/Mouse_ESC.meth.bw mm9.mhb.0.3.chr1.bed SRR1248477.hapInfo.txt.R3.tab
+bigWigAverageOverBed /home/shg047/oasis/Alice/mouse/hapinfo/Mouse_ESC.meth.bw mm9.mhb.0.4.chr1.bed SRR1248477.hapInfo.txt.R4.tab 
+
+
+/home/shg047/oasis/Alice/mouse/scMeth/hapinfo
+
+/home/shg047/oasis/Roadmap/tfbs
+
+/media/12TB_ext/DD_Ext12T/Capture_MONOD/141216_HiSeqRapidRun/BAMfiles
+
+for i in `ls *bw`
+do 
+bigWigAverageOverBed $i ../tfbs/wgEncodeRegTfbsClusteredUnique.bed $i.tab
+done
+
+
+cd /home/shg047/oasis/Roadmap/wig
+mkdir mhb
+for i in `ls *bw`
+do 
+bigWigAverageOverBed $i /home/shg047/oasis/monod/mhb/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.cor.bed ./mhb/$i.mhb.tab
+done
+
+ 
+
+R CMD INSTALL openssl_0.9.6.tar.gz --configure-vars='INCLUDE_DIR=/usr/bin/pkg-config LIB_DIR=	'
+libssl-dev
+system("wget https://cran.r-project.org/src/contrib/xml2_1.1.1.tar.gz")
+install.packages("xml2_1.1.1.tar.gz")
+system("wget https://cran.r-project.org/src/contrib/selectr_0.3-1.tar.gz")
+install.packages("selectr_0.3-1.tar.gz")
+system("wget https://cran.r-project.org/src/contrib/magrittr_1.5.tar.gz")
+install.packages("magrittr_1.5.tar.gz")
+install.packages("rvest_0.3.2.tar.gz")
+install.packages("BatchGetSymbols_1.1.tar.gz")
+
+cd /home/shg047/oasis/Jenkinson2017NG/methyfreq
+
+
+cd /home/shg047/oasis/Jenkinson2017NG/methyfreq
+coverage2cytosine --merge_CpG --minDepth 6 --gzip --zero_based --genome_folder /home/shg047/oasis/db/hg19/ -o SRR3263674.test SRR3263674_1_val_1_bismark_bt2_pe.nonCG_filtered.bismark.cov.gz
+
+
+coverage2cytosine --merge_CpG --minDepth --zero_based --gzip --genome_folder $BismarkRefereDb -o SRR3263674.mergeCpG.bed $sample1\_val_1_bismark_bt2_pe.nonCG_filtered.bismark.cov.gz
+
+
+
+for i in {1..22} X Y M
+do
+cd /home/shg047/oasis/db/mm9
+perl ~/bin/chrosomeCut.pl chr$i 10000 >> mm9.cut10k.bed
+done 
+wc -l /home/shg047/oasis/db/mm9/mm9.cut10k.bed
+cd /home/shg047/oasis/Alice/mouse/scMeth/sortbam
+perl /home/shg047/bin/samInfoPrep4Bam2Hapinfo.pl /home/shg047/oasis/db/mm9/mm9.cut10k.bed > saminfo.txt
+perl ~/bin/bam2hapInfo2PBS.pl saminfo.txt NON bismark /home/shg047/oasis/db/mm9/mm9.chrom.sizes /home/shg047/oasis/db/mm9/mm9.CpG.positions.txt
+
+
+# touch all the files 
+find . -exec touch {} \;
+
+cp /media/Home_Raid1/shg047/work/Alice/mouse/mhb/mm9.mhb.0.5.bed
+
+for i in `ls *hapInfo.txt`
+do
+name=${i%%.*}
+echo $name $i > $name.input
+perl ../hapinfo2mhl.pl $name.input mm9.mhb.0.5.bed > ./MHB/$name.mhb.mhl
+done
+
+
+
+
+for i in `ls *hapInfo.txt`
+do
+name=${i%%.*}
+done
+
+
+scp *.hapInfo.txt shg047@genome-miner.ucsd.edu:/media/Home_Raid1/shg047/NAS1/Alice/mouse/hapinfo/public/
+scp SRX209459.hapInfo.txt
+scp SRX209458.hapInfo.txt
+
+
+perl ~/bin/smartMethSRR.pl SRP072071.txt 33 submit
+perl ~/bin/smartMethSRR.pl SRP072075.txt 33 submit
+perl ~/bin/smartMethSRR.pl SRP072078.txt 33 submit
+perl ~/bin/smartMethSRR.pl SRP072141.txt 33 submit
+
+perl ~/bin/smartMethSRR.pl SRP072071.txt 33 none
+perl ~/bin/smartMethSRR.pl SRP072075.txt 33 none
+perl ~/bin/smartMethSRR.pl SRP072078.txt 33 none
+perl ~/bin/smartMethSRR.pl SRP072141.txt 33 none
+
+
+
+bedtools shuffle -i /media/Home_Raid1/zhl002/NAS1/WGBS/MHB/Galonska_bivalentdomain.bed -excl
+
+mysql --user=genome --host=genome-mysql.cse.ucsc.edu -A -e "select chrom, size from  hg19.chromInfo" > hg19.chrom.sizes
+mysql --user=genome --host=genome-mysql.cse.ucsc.edu -A -e "select chrom, size from  mm9.chromInfo" > mm9.chrom.sizes
+mysql --user=genome --host=genome-mysql.cse.ucsc.edu -A -e "select chrom, size from  mm10.chromInfo" > mm10.chrom.sizes
+
+perl hapinfo2mhl.pl input.txt interest2432.bed > output24321.mhl &
+perl hapinfo2mhl.pl input.txt Galonska_bivalentdomain.bed > output3004.mhl &
+perl methHMHSum.pl input.txt interest2432.bed output24321 &
+perl methHMHSum.pl input.txt Galonska_bivalentdomain.bed output3004 &
+
+cd /home/shg047/oasis/Alice/mouse/kun
+perl hapinfo2mhl.pl input.txt interest2432.bed > output24321.mhl 
+
+cd /home/shg047/oasis/Alice/mouse/kun
+perl hapinfo2mhl.pl input.txt /media/Home_Raid1/zhl002/NAS1/WGBS/MHB/Galonska_bivalentdomain.bed > output3004.mhl &
+
+
+cron
+# sudo vim /etc/crontab
+# 17 18 * * * root bash /media/Home_Raid1/shg047/bak/bak/update.sh
+# method 1
+sudo vim /etc/crontab
+37 16   * * *   root    bash /media/Home_Raid1/shg047/bak/bak/bak.sh
+# method 2
+sudo cp /media/Home_Raid1/shg047/bak/bak/bak.sh /etc/cron.daily/bak
+# then restart 
+sudo service cron restart
+# check cron auto-run list
+
+
+17 18 * * * root bash /media/Home_Raid1/shg047/bak/bak/update.sh
+
+01 * * * * root echo "This command is run at one min past every hour"
+17 8 * * * root echo "This command is run daily at 8:17 am"
+17 20 * * * root echo "This command is run daily at 8:17 pm"
+00 4 * * 0 root echo "This command is run at 4 am every Sunday"
+* 4 * * Sun root echo "So is this"
+42 4 1 * * root echo "This command is run 4:42 am every 1st of the month"
+01 * 19 07 * root echo "This command is run hourly on the 19th of July"
+
+load("/media/Home_Raid1/zhl002/NAS1/RNA_seq/morehiseq_020617/ipsnt_hiseq_serum.RData")
+load("/media/Home_Raid1/zhl002/NAS1/RNA_seq/mips_nt/seurat_allsample_2.RData")
+load("/media/Home_Raid1/zhl002/NAS1/RNA_seq/hiseq_020617/seurat_analysis/ipsnt_hiseq_3.RData")
+data<-pbmc@scale.data
+id1=unlist(lapply(colnames(data),function(x) unlist(strsplit(x,"-"))[2]))
+id2=pbmc@ident
+group1<-c(which(id2==1),which(id2==2),which(id2==4),which(id2==6))
+group2<-c(which(id2==3),which(id2==4),which(id2==7),which(id2==8))
+data1=data[,group1]
+data2=data[,group2]
+Entropy1<-apply(data1,1,function(x) rnashannon(x))
+Entropy2<-apply(data2,1,function(x) rnashannon(x))
+
+
+R2<-read.table("/media/Home_Raid1/zhl002/NAS1/WGBS/ntips.pvalue.R2.txt",head=T,row.names=1)
+bed<-data.frame(cor2bed(rownames(R2)),ipsR2[,1],ipsR2[,3])
+bed2<-bed2gene(bed,refbed)[,c(1,2,3,4,5,11,12)]
+colnames(bed2)<-c("CHR","START","END","iPS-R2","SCNT-R2","Gene","Group")
+write.table(bed2,file="LD-R2-table.txt",col.names =NA,row.names =T,sep="\t",quote=F)
+LDR2<-read.table("/media/NAS3_volume2/shg047/Alice/mouse/hapinfo/kun/plan3/LD-R2-table.txt")
+
+/media/Home_Raid1/shg047/work/db/mm9/whyte_EN.bed
+setwd("/media/NAS1/ZL_NAS1/WGBS")
+data=read.table("markers_mhl_regions.txt",head=F)
+head(data)
+par(mfrow=c(3,1))
+boxplot(subset(data,data[,20]=="pluripotent-serum")[,c(4:7)])
+boxplot(subset(data,data[,20]=="diff-serum")[,c(4:7)])
+boxplot(subset(data,data[,20]=="diff-mix")[,c(4:7)])
+
+
+source("http://bioconductor.org/biocLite.R")
+biocLite("DeconRNASeq")
+library("DeconRNASeq")
+
+ES Enhancer
+
+for i in `ls *job`
+do
+sh $i &
+done
+
+perl ~/bin/smartMethSRR.pl SRP072071.txt 33 non
+perl ~/bin/smartMethSRR.pl SRP072075.txt 33 non
+perl ~/bin/smartMethSRR.pl SRP072078.txt 33 non
+perl ~/bin/smartMethSRR.pl SRP072141.txt 33 non
+
+for i in `ls *hapInfo.txt`
+do
+grep 34303551 $i > ./test/$i.head
+done
+
+perl methHMHSum.pl input.txt interest2432.bed output24321
+/media/Home_Raid1/zhl002/NAS1/RNA_seq/hiseq_020617/seurat_analysis
+/home/shg047/oasis/db/mm9
+ipsnt_33k_4.RData
+pbmc33k.merged@data
+ID=1,2,3,4
+indx= 4 5 9 10
+SRR3269805_2.fastq.gz
+
+/media/Home_Raid1/shg047/NAS1/Alice/mouse/hapinfo/jpg
+
+perl ~/bin/bam2hapInfo2PBS.pl  saminfo.txt submit bisreadMapper /home/shg047/oasis/db/hg19/hg19.chrom.sizes /home/shg047/oasis/db/hg19/HsGenome19.CpG.positions.txt
+
+File:CapseqSaminfoConfigBAM2hapinfo2017.txt 
+
+awk '{ sum += $3-$2; n++ } END { if (n > 0) print sum / n; }' CapSeq.bed
+samtools view PCT-6.sorted.clipped.bam |awk '{print $3,$4,$4+100}' OFS="\t" | bedtools merge -d 100 -i  - > CapSeqqMerge.bed &
+
+for i in ls *bam
+do
+samtools view $i | awk "{print $3,$4,$4+100}" 
+done
+
+samtools view 
+
+
+sudo vim /etc/init.d/lampp
+#!/bin/bash
+/opt/lampp/lampp start
+sudo update-rc.d lampp defaults
+insserv: warning: script 'K01lampp' missing LSB tags and overrides
+insserv: warning: script 'lampp' missing LSB tags and overrides
+
+/media/12TB_ext/DD_Ext12T/Capture_MONOD/141216_HiSeqRapidRun/BAMfiles
+
+cd ..
+for i in `ls *bam.hapInfo.txt`
+do
+head -n 5000 $i > ./test/$i.head
+done
+cd ./test
+perl hapinfo2bed.pl Indx04.sortc.bam.hapInfo.txt.head | sort -k1,1 -k2,2n | bedtools merge -i - > Indx04.bed
+bedtools intersect -wa -a ~/work/db/mm9/mm9.refGene.bed -b Indx04.bed > Indx04.input.bed
+perl ../methHMHSum.pl input.txt Indx04.input.bed output 
+
+
+perl methHMHSum.pl input.txt interest12.bed output12-2 &
+perl methHMHSum.pl input.txt interest-151.bed output151 &
+perl methHMHSum.pl input.txt interest-548.bed output548 &
+
+
+for i in `ls *hapInfo.txt`
+do
+grep 34303551 $i > ./test/$i.head
+done
+
+34303551
+
+/media/Home_Raid1/shg047/NAS1/Alice/mouse/hapinfo
+my ($bin,$NM,$chr,$strand,$txStart, $txEnd, $cdsStart, $cdsEnd, $exonCount, $exonStarts, $exonEnds,undef,$genesymbol,undef) = split /\t/;
+	
+chr10:100000000-100010000       CCTCTCT 1       100000149,100000169,100000204,100000238,100000301,100000306,100000361
+/media/Home_Raid1/shg047/NAS1/RRBS
+scp guoshicheng@gate1.picb.ac.cn:/picb/humpopg6/guoshicheng/lvzhen/*.gz ./
+
+the website:
+https://plus.google.com/112774990052239691835
+Dongqing Tan
+593 6TH AVE
+SAN FRANCISCO, CA 94118-3816
+United States
+Phone number: 415-373-7338
+
+for i in `ls *bam.hapInfo.txt`
+do
+perl hapinfosummary.pl $i >> result.txt
+done
+
+for i in {1..11}
+do
+wget http://smithlab.usc.edu/methbase/data/Thompson-Human-2015/Human_PancreaticCancer$i/tracks_hg19/Human_PancreaticCancer$i.meth.bw ./
+done
+
+for i in {1..2}
+do
+http://smithlab.usc.edu/methbase/data/Thompson-Human-2015/Human_NormalPancreas$i/tracks_hg19/Human_NormalPancreas$i.meth.bw
+done
+
+
+for i in `ls *bam.hapInfo.txt`
+do
+head -n 50 $i > ./test/$i.head
+done
+
+
+/media/Home_Raid1/shg047/work/Alice/mouse/hapinfo/public
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDzCsAX+XaSJsDJR71BlYeOLPGgmz5JtpuvL1mYwOsvEZGNA7Y7ufxZE3gDHTZ/fKjfVbewH2FLu+2It6d9LayEy8JQYCcb0oqY1nXHZMdf8bpIfPGz9GJabOHLV6iqx0avpVg64gLtLiWsNV9AfBWd8gjjBTPK33M69SH4/QXAi9zglu6Y325M7FdhyM/7GH/5rIEjd6P5GM6LWJQQkAKpGJf6RcYg9bSyy239SlAFkEJMnBTYCo9xOJYHcyPQAuX6WKiZd/3Sxlqce2zpOIC6O7Q6Q07HWa5aO54R9YXy1pz5NBbn9EtAOZIcS1OuklD2zs8hsjRkijWHlX20Ahbn shg047@tscc-login1.sdsc.edu
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC33azQGufroerEJp+PuQmrskhbFa6n9sxfXDoKeNI0yPiJCMwvSdxlsZ6k+BqB+84tcTssbHPSVW1EJ5bVRFt6GuDbZoaewHffCkd7hVYZCvZFFtU/o69O+3i0MzWpfO7nwY5Dfhg4rO33Xh8ijKTL4PdAHeoqQ3Cf5aYRfe3f71MEdS7ObfC1FL5h1vKtIsL/IReJ6EUp6h37wyqtnkIQqmkIhJHYc/zCh+CJVgOU6RiCo7rbJBFPozHEITBfrDzhe0azO3+eGdzcerLoKok8eqSc9AKCmSYUW4kdhnuN1j/nOGUaf3i0jZZUWyBldxykxh8Tob1xrgSnL9gA9PfD shg047@genomeMiner
+
+for i in {1..22} X Y
+do
+grep chr$i HsGenome19.CpG.positions.txt > HsGenome19.CpG.positions.chr$i.txt
+done
+
+chr10:116387101-116387201
+
+for i in `ls *hapInfo.txt`
+do
+perl ~/bin/hapinfo2mf.pl $i > ./methyfreq/$i.bedgraph 
+echo $i
+done
+
+find . -name "*" -type d -exec rm -r "{}" \;
+
+/media/Home_Raid1/shg047/work/Alice/mouse/hapinfo/public
+You can also make a payment via IVR (Interactive Voice Response) by calling 1-800-892-4357 without any fees or charge.
+
+cp /media/Home_Raid1/zhl002/NAS1/projects/mouse_WGBS/bedfiles/mESC_enhancer.bed ~/work/db/mm9
+cp /media/Home_Raid1/zhl002/NAS1/projects/mouse_WGBS/bedfiles/Galonska_bivalentdomain.bed ~/work/db/mm9
+
+for i in mESC_enhancer.bed Galonska_bivalentdomain.bed mm9.Enhancer.bed mm9.Promoter.bed mm9.Exon.bed mm9.Intron.bed
+do
+for j in miPS_B3 miPS_1E12P20 SCNT_NB3.BED SCNT_B12 B6_mESC HA.129.mESC ST_mESC_mix
+do
+echo $i $j
+perl /media/Home_Raid1/shg047/work/Alice/bin/AverageValueNearbyFunctionRegion.pl /media/Home_Raid1/shg047/work/db/mm9/$i  $j.BED.txt.trim  $j.$i.dist.txt
+done
+done
+
+/media/Home_Raid1/zhl002/NAS1/projects/mouse_WGBS/bedfiles/Galonska_bivalentdomain.bed
+
+miPS_B3.BED.txt.trim
+
+ls miPS_B3.BED.txt.trim
+ls miPS_1E12P20.BED.txt.trim
+ls SCNT_NB3.BED.txt.trim
+ls SCNT_B12.BED.txt.trim
+ls B6_mESC.BED.txt.trim
+ls HA.129.mESC.BED.txt.trim
+ls ST_mESC_mix.BED.txt.trim
+
+echo "# Twin Methylation Dataset Analysis" >> README.md
+git init
+git add README.md
+git commit -m "project start"
+
+/media/Home_Raid1/zhl002/NAS3/ZL_LTS33/mouse_WGBS/bedfiles
+
+for i in `ls *.bed`
+do
+awk '{if ($4>5) print $1,$2,$3}' OFS="\t" $i > $i.txt
+done
+
+#!/usr/bin/perl
+use strict;
+my @file=glob("*.bed");
+foreach my $file(@file){
+open F,$file;
+while(<F>){
+my($chr,$start,$end,$num)=split/\s+/;
+print "$chr\t$start\t$end\n" if $num>10;
+}
+}
+
+/home/shg047/bak/plink/china/gzip/input.bed
+cd /home/shg047/bak/plink/china/gzip/
+perl -p -i -e 's/\s+/\t/g' /home/shg047/bak/plink/china/gzip/input.bed
+
+# plan 1: 2i vs serum in SCNT
+cd /media/Home_Raid1/shg047/work/Alice/mouse/hapinfo/kun
+cat Indx06.sortc.bam.hapInfo.txt Indx07.sortc.bam.hapInfo.txt > nt2i.HapInfo.txt
+cat Indx09.sortc.bam.hapInfo.txt Indx10.sortc.bam.hapInfo.txt > ntserum.HapInfo.txt
+perl ~/bin/hapinfoMerge.pl nt2i.HapInfo.txt > nt2i.HapInfo.Uni.txt
+perl ~/bin/hapinfoMerge.pl ntserum.HapInfo.txt > ntserum.HapInfo.Uni.txt
+http://www.rencai8.com/job_info?action=view&job_position_id=476884
+mv nt2i.HapInfo.Uni.txt ./plan1
+mv ntserum.HapInfo.Uni.txt ./plan1
+cd ./plan1 
+for i in {1..100}
+do
+perl ~/bin/randomSampleFromHaploInfo.pl nt2i.HapInfo.Uni.txt > nt2i.HapInfo.Uni.txt.$i
+perl ~/bin/hapinfo2BlocAvgR2.pl nt2i.HapInfo.Uni.txt.$i > R2.nt2i.HapInfo.Uni.txt.$i
+done
+
+for i in {1..100}
+do
+perl ~/bin/randomSampleFromHaploInfo.pl ntserum.HapInfo.Uni.txt > ntserum.HapInfo.Uni.txt.$i
+perl ~/bin/hapinfo2BlocAvgR2.pl ntserum.HapInfo.Uni.txt.$i > ntserum.HapInfo.Uni.txt.$i
+done
+
+# plan 2: ips (1,2,4,5) vs scnt (6,7,9,10)
+cd /media/Home_Raid1/shg047/work/Alice/mouse/hapinfo/kun
+touch  ips.HapInfo.txt
+for i in 01 02 04 05 
+do
+cat Indx$i.sortc.bam.hapInfo.txt >> ips.HapInfo.txt
+done
+
+touch  scnt.HapInfo.txt
+for i in 06 07 09 10 
+do
+cat Indx$i.sortc.bam.hapInfo.txt >> scnt.HapInfo.txt
+done
+
+perl ~/bin/hapinfoMerge.pl ips.HapInfo.txt > ips.HapInfo.Uni.txt
+perl ~/bin/hapinfoMerge.pl scnt.HapInfo.txt > scnt.HapInfo.Uni.txt
+
+mv ips.HapInfo.Uni.txt ./plan2
+mv scnt.HapInfo.Uni.txt ./plan2
+cd ./plan2
+
+for i in {1..100}
+do
+perl ~/bin/randomSampleFromHaploInfo.pl ips.HapInfo.Uni.txt > ips.HapInfo.Uni.txt.$i
+perl ~/bin/hapinfo2BlocAvgR2.pl ips.HapInfo.Uni.txt.$i > R2.ips.HapInfo.Uni.txt.$i
+done
+
+for i in {1..100}
+do
+perl ~/bin/randomSampleFromHaploInfo.pl scnt.HapInfo.Uni.txt > scnt.HapInfo.Uni.txt.$i
+perl ~/bin/hapinfo2BlocAvgR2.pl scnt.HapInfo.Uni.txt.$i > R2.scnt.HapInfo.Uni.txt.$i
+done
+
+# plan 3: ips(4,5) vs scnt(9,10)
+cd /media/Home_Raid1/shg047/work/Alice/mouse/hapinfo/kun
+touch ips.HapInfo.txt
+for i in 04 05 
+do
+cat Indx$i.sortc.bam.hapInfo.txt >> ips.HapInfo.txt
+done
+
+touch scnt.HapInfo.txt
+for i in 09 10 
+do
+cat Indx$i.sortc.bam.hapInfo.txt >> scnt.HapInfo.txt
+done
+
+perl ~/bin/hapinfoMerge.pl ips.HapInfo.txt > ips.HapInfo.Uni.txt
+perl ~/bin/hapinfoMerge.pl scnt.HapInfo.txt > scnt.HapInfo.Uni.txt
+
+mv ips.HapInfo.Uni.txt ./plan3
+mv ips.HapInfo.Uni.txt ./plan3
+cd ./plan3
+
+for i in {1..100}
+do
+perl ~/bin/randomSampleFromHaploInfo.pl ips.HapInfo.Uni.txt > ips.HapInfo.Uni.txt.$i
+perl ~/bin/hapinfo2BlocAvgR2.pl ips.HapInfo.Uni.txt.$i > R2.ips.HapInfo.Uni.txt.$i
+done
+
+for i in {1..100}
+do
+perl ~/bin/randomSampleFromHaploInfo.pl scnt.HapInfo.Uni.txt > scnt.HapInfo.Uni.txt.$i
+perl ~/bin/hapinfo2BlocAvgR2.pl scnt.HapInfo.Uni.txt.$i > R2.scnt.HapInfo.Uni.txt.$i
+done
+
+cd /media/Home_Raid1/shg047/work/Alice/mouse/hapinfo/kun/plan1
+perl ../../../../bin/R2matrix.pl > plan1.R2.txt
+cd /media/Home_Raid1/shg047/work/Alice/mouse/hapinfo/kun/plan2
+perl ../../../../bin/R2matrix.pl > plan2.R2.txt
+cd /media/Home_Raid1/shg047/work/Alice/mouse/hapinfo/kun/plan3
+perl ../../../../bin/R2matrix.pl > plan3.R2.txt
+
+
+ for i in `ls *.bam`; 
+ do 
+ touch $i.bam2mf.job
+ echo '#!/bin/csh' >$i.bam2mf.job
+ echo "#PBS -N $i" >> $i.bam2mf.job
+ echo "#PBS -q hotel" >> $i.bam2mf.job
+ echo "#PBS -l nodes=1:ppn=1" >> $i.bam2mf.job
+ echo "#PBS -l walltime=168:00:00" >> $i.bam2mf.job
+ echo "#PBS -M shihcheng.guo@gmail.com" >> $i.bam2mf.job
+ echo "#PBS -m abe" >> $i.bam2mf.job
+ echo "#PBS -A k4zhang-group" >> $i.bam2mf.job
+ echo "cd $(pwd)" >> $i.bam2mf.job
+ echo bismark_methylation_extractor --single-end --bedGraph --cutoff 1 --ignore 1 --buffer_size 4G --comprehensive --output ../methyfreq  ../sortBam/$i >> $i.bam2mf.job; 
+ qsub $i.bam2mf.job
+ done
+ 
+perl ~/bin/hapinfo2bedgraph.pl CTR97.hapInfo.txt > CTR97.bedgraph
+
+head /home/shg047/oasis/DennisLo2015/methyfreq/CTR97.merged_CpG_evidence.cov
+
+chr10:100004428-100004429       80.000000
+chr10	100004428	100004429	chr10:100004428-100004429
+
+grep 100004429 /home/shg047/oasis/DennisLo2015/methyfreq/CTR97.merged_CpG_evidence.cov
+grep 100004428 CTR97.bedgraph
+
+samtools tview ../sortBam/CTR97_trimmed.fq.gz_bismark_bt2.sort.bam ~/oasis/db/hg19/hg19.fa
+samtools view -bh ../sortBam/CTR97_trimmed.fq.gz_bismark_bt2.sort.bam chr10:100004428-100004429 -o CTR97.chr10-100004428-100004429.bam
+samtools view ../sortBam/CTR97_trimmed.fq.gz_bismark_bt2.sort.bam chr10:100004428-100004429
+
+perl ~/bin/mergedBam2hapInfoV2.pl test.bed CTR97.chr10-100004428-100004429.bam bismark /home/shg047/oasis/db/hg19/hg19.chrom.sizes /home/shg047/oasis/db/hg19/HsGenome19.CpG.positions.txt > CTR97.hapInfo.test.txt
+
+
+/home/shg047/oasis/DennisLo2015/sortBam
+
+/home/shg047/bin/mergedBam2hapInfoV2.pl /home/shg047/oasis/Alice/mouse/mhb/mm9.mhb.0.5.bed /oasis/tscc/scratch/shg047/Alice/mouse/sortBam/SRX1019866.sortc.bam bismark /home/shg047/oasis/db/mm9/mm9.chrom.sizes /home/shg047/oasis/db/mm9/mm9.CpG.positions.txt > ../hapinfo/SRX1019866.sortc.bam.hapInfo.txt
+
+cd /media/Home_Raid1/shg047/oasis/Alice/mouse/hapinfo/
+bedtools intersect -wa -a mm9.mhb.0.5.bed -b /media/Home_Raid1/shg047/work/db/mm9/CpGI.mm9.txt  | wc -l
+
+
+/media/Home_Raid1/shg047/oasis/Alice/mouse/hapinfo/mm9.mhb.0.5.bed
+
+/home/shg047/oasis/Alice/mouse/mhb/mm9.mhb.0.5.bed
+
+
+/media/Home_Raid1/shg047/work/db/mm9
+
+表观遗传学科研资讯
+crystalqing@yahoo.com
+perl hapinfo2mhb.pl -f input.txt -t 0.5 -o mm9.mhb.multinput.bed &
+perl ~/bin/hapinfo2mhb.pl mm9.HapInfo.txt.SumUniq 0.5 > mm9.mhb.0.5.bed &
+perl ~/bin/hapinfo2mhb.pl mm9.HapInfo.txt.SumUniq 0.3 > mm9.mhb.0.3.bed &
+
+
+ln -s  /opt/biotools/htseq/bin/htseq-count  htseq-count
+ln -s  /opt/biotools/htseq/bin/htseq-qa htseq-qa
+
+/home/shg047/oasis/Alice/mouse/hapinfo
+
+
+sftp -o Port:8777 'user@domain.com'@domain.com
+sftp -o Port:8777 -o User=user@domain.com domain.com
+sshpass -p 'Gsc$$8343383' ssh shg047@tscc-login.sdsc.edu
+
+wget --ftp-user='zhang' --ftp-password='HDIIWpP' ftp://169.228.63.66/
+wget -r --user='zhang' --password='HDIIWpP' ftp://169.228.63.66/
+
+/home/shg047/software/gmp-4.2.4/build/.libs
+/home/shg047/software/gmp-4.2.4
+/home/shg047/software/mpfr-2.4.1/build/.libs
+/home/shg047/software/mpfr-2.4.1/build
+
+/home/shg047/software/mpfr-3.1.4
+
+export C_INCLUDE_PATH=/home/shg047/software/mpfr-2.4.1/build
+export LD_LIBRARY_PATH=/home/shg047/software/mpfr-2.4.1/build/.libs
+export LIBRARY_PATH=$LD_LIBRARY_PATH
+
+cd /home/shg047/software/mpc-1.0.3/build
+export LD_LIBRARY_PATH=/home/shg047/software/mpfr-2.4.1/build/.libs
+../configure --with-gmp-lib=/home/shg047/software/gmp-4.2.4/build/.libs
+
+
+configure: error: libmpfr not found or uses a different ABI (including static vs shared).
+
+
+perl ~/bin/samInfoPrep4Bam2Hapinfo.pl ~/db/mm9/mm9.cut10K.bed
+
+cd /home/shg047/oasis/Ziller2013/methyfreq
+coverage2cytosine --merge_CpG  --genome_folder  -o 
+
+
+perl ~/bin/smartbismark.pl --input saminfo.txt --server TSCC --queue hotel --genome mm9
+for i in `ls *pbs`; do qsub $i; done
+-rw-r--r--  1 shg047 k4zhang-group  1.1G Feb  6 00:30 Indx06.merged.bam_trimmed.fq
+-rw-r--r--  1 shg047 k4zhang-group  39G Jan 27 13:13 Indx05.merged.bam.fastq
+
+
+/home/shg047/oasis/DennisLo2015/methyfreq
+
+coverage2cytosine --merge_CpG --genome_folder ~/oasis/db/hg19/align/bismark/ -o $sample.tmp $file
+
+
+wget http://hgdownload.soe.ucsc.edu/goldenPath/mm10/bigZips/chromFa.tar.gz
+tar xzvf chromFa.tar.gz
+for i in `ls *fa`
+do
+perl ../../bin/cgpositionFinder.pl $i &
+done
+
+wget http://hgdownload.soe.ucsc.edu/goldenPath/mm9/bigZips/chromFa.tar.gz
+wget http://hgdownload.soe.ucsc.edu/goldenPath/mm9/bigZips/chromFaMasked.tar.gz
+
+trim_galore --phred33 --fastqc --illumina --rrbs SRR1286404.fastq.gz --output_dir ../fastq_trim
+bismark --bowtie2 --phred33-quals --multicore 2 --fastq -L 32 -N 0 -D 5 -R 1 /home/shg047/oasis/db/hg19/align/bismark ../fastq_trim/SRR1286404_trimmed.fq.gz -o ../bam
+bismark_methylation_extractor --multicore 3 --single-end --bedGraph --ignore 3 --buffer_size 4G --zero_based --comprehensive --output ../bedgraph  ../bam/SRR1286404_trimmed_bismark_bt2.bam
+samtools sort ../bam/SRR1286404_trimmed_bismark_bt2.bam -o ../sortbam/SRR1286404_trimmed_bismark_bt2.sort.bam
+samtools index ../sortbam/SRR1286404_trimmed_bismark_bt2.sort.bam
+
+bismark --bowtie2 --phred33-quals --fastq /media/Home_Raid1/shg047/work/db/mm9/bismark  SRX1091397.fastq
+
+cd /media/Home_Raid1/shg047/oasis/Alice/mouse/test
+
+bismark --bowtie2 --phred33-quals --fastq /media/Home_Raid1/shg047/work/db/mm9/bismark  SRX080191.fastq.gz
+
+chr1:98109663-98109763
+# check chr1:100006294-100006356 in SRX080191 what happened, why 
+# SRX080191.hapInfo.txt:chr1:100000000-100010000  CC      3       100006294,100006294
+samtools view SRX080191.sort.bam | less -S 
+
+cd /home/shg047/oasis/Alice/mouse/hapinfo
+grep 100006294 SRX080191.hapInfo.txt
+samtools view -b -o SRX080191.short.bam SRX080191.sort.bam chr1:100006294-100006356 
+samtools tview SRX080191.sort.bam /home/shg047/db/mm9/mm9.fa
+samtools tview SRX080191.sort.bam /home/shg047/oasis/db/mm9/mm9.fa
+samtools tview Indx01.merged.bam /home/shg047/oasis/db/mm9/mm9.fa
+
+
+samtools tview SRX080191.sort.bam /home/shg047/db/hg19/hg19.fa
+samtools tview SRX080191.sort.bam /home/shg047/oasis/db/hg19/hg19.fa
+
+perl R2matrix.pl > MatrixR2.txt
+
+
+chr1:100000000-100010000        CC      3       100006294,100006294
+chr1:100000000-100010000        CCCC    1       100006294,100006294,100006350,100006350
+chr1:100000000-100010000        CCCCCC  1       100006294,100006294,100006350,100006350,100006356,100006356
+chr1:100000000-100010000        TT      1       100006294,100006294
+
+samtools tview SRX080191.short.bam ~/work/db/
+
+
+for i in {1..19} X Y
+do
+grep -w chr$i Mouse.mm9.HapInfo.txt > Mouse.mm9.chr$i.Hapinfo.txt 
+perl ~/bin/hapinfoMerge.pl Mouse.mm9.chr$i.Hapinfo.txt 2> chr$i.err 
+perl ~/bin/hapinfo2mhb.pl Mouse.mm9.chr$i.Hapinfo.txt 0.3 > mm9.mhb.chr$i.0.3.txt 
+perl ~/bin/hapinfo2mhb.pl Mouse.mm9.chr$i.Hapinfo.txt 0.5 > mm9.mhb.chr$i.0.5.txt  
+done
+
+for i in {1..19} X Y
+do
+grep -w chr$i mm9.HapInfo.txt > Mouse.mm9.chr$i.Hapinfo.txt 
+perl ~/bin/hapinfoMerge.pl Mouse.mm9.chr$i.Hapinfo.txt 2> chr$i.err 
+perl ~/bin/hapinfo2mhb.pl Mouse.mm9.chr$i.Hapinfo.txt.uni.txt 0.3 > mm9.mhb.chr$i.0.3.txt 
+perl ~/bin/hapinfo2mhb.pl Mouse.mm9.chr$i.Hapinfo.txt.uni.txt 0.5 > mm9.mhb.chr$i.0.5.txt  
+done
+
+
+# scRNA-seq could explain methylation haplotype variation
+
+iPS<-read.table("/oasis/tscc/scratch/shg047/Alice/mouse/alice/scRNA/ipsc_R2high.bed")
+
+
+# 01/27/2017
+for i in `ls *pbs`; do qsub $i; done
+perl ~/bin/smartbismark.pl --input saminfo.txt --genome mm9 --server TSCC --queue glean
+for i in {1..22} X Y M
+do
+perl ~/bin/genomecut.pl chr$i 10000 /home/shg047/db/mm9/mm9.chrom.sizes > mm9.$i.10k.bed
+done
+cat mm9.chr*.10k.bed > mm9.chr*.10K.bed
+
+/home/shg047/db/mm9/mm9.cut10K.bed
+perl R2matrix.pl > MatrixR2.txt
+cat Indx01.hapInfo.txt Indx02.hapInfo.txt Indx04.hapInfo.txt Indx05.hapInfo.txt > iPS.HapInfo.txt
+cat Indx06.hapInfo.txt Indx07.hapInfo.txt Indx09.hapInfo.txt Indx10.hapInfo.txt > SCNT.HapInfo.txt
+perl ~/bin/hapinfoMerge.pl iPS.HapInfo.txt
+perl ~/bin/hapinfoMerge.pl SCNT.HapInfo.txt
+
+mv SCNT.HapInfo.txt.SumUniq SCNT.hapinfo.txt
+mv iPS.HapInfo.txt.SumUniq iPS.hapinfo.txt
+
+perl ~/bin/hapinfo2BlocAvgR2.pl iPS.HapInfo.txt.SumUniq > iPS.MHB.R2.txt
+perl ~/bin/hapinfo2BlocAvgR2.pl SCNT.HapInfo.txt.SumUniq > SCNT.MHB.R2.txt
+
+# 01/27/2017
+for i in {1..100}
+do
+perl ~/bin/randomSampleFromHaploInfo.pl SCNT.hapinfo.txt > SCNT.hapinfo.txt.$i
+perl ~/bin/hapinfo2BlocAvgR2.pl SCNT.hapinfo.txt.$i > R2.SCNT.hapinfo.txt.$i
+perl ~/bin/randomSampleFromHaploInfo.pl iPS.hapinfo.txt > iPS.hapinfo.txt.$i
+perl ~/bin/hapinfo2BlocAvgR2.pl iPS.hapinfo.txt.$i > R2.iPS.hapinfo.txt.$i
+done
+
+
+# compare two file list in fold A and fold B by diff and ls
+diff <(ls ../methyfreq/*cov.gz | awk -F"/" '{print $3}'| awk -F"_" '{print $1}') <(ls *sort.bam | awk -F"_" '{print $1}')
+
+# compare two file list in fold A and fold B by diff and ls
+ls ../methyfreq/*cov.gz | awk -F"/" '{print $3}'| awk -F"_" '{print $1}' > a
+ls *sort.bam | awk -F"_" '{print $1}' > b
+grep -v -f a b 
+
+# compare two file list in fold A and fold B by diff and ls and then qsub job which are not finished. 
+grep -v -f a b | awk '{print "qsub "$1"\*.job"}'
+
+diff <(ls ../methyfreq/*cov.gz | awk -F"/" '{print $3}'| awk -F"_" '{print $1}') <(ls *sort.bam | awk -F"_" '{print $1}')
+CTR154_trimmed.fq.gz_bismark_bt2.sort.bam
+
+for i in `ls Indx*bam`
+do
+samtools fastq $i > $i.fastq &
+done
+
+gzip $i &
+
+/media/Home_Raid1/dinh/NAS3_volume1_mnt/shg047/GEO/GSE63123_RAW.tar
+tar xvf GSE63123_RAW.tar
+
+1, cluster all scRNA by subset genes plu-diff
+2, select good cells and separate ips and scnt
+3, find differential express genes between ips and scnt
+4, show previous knowledge base on this data
+5, check Methylation to these DEG
+6, find methylation biomarker/matric to show the difference between ips and scnt
+
+/home/shg047/work/DennisLo2015/bam/
+ perl ~/software/SNPsplit/SNPsplit --bisulfite --SNP_file CTR151_trimmed.fq.gz_bismark_bt2.sort.bam
+samtools view HOT162_trimmed.fq.gz_bismark_bt2.sort.bam | head -n 8000 > ./test/HOT162_trimmed.fq.gz_bismark_bt2.sort.sam
+samtools view Pregnancy.8.run1.read1_val_1.fq.gz_bismark_bt2_pe.sort.bam | head -n 8000 > ./test/Pregnancy.8.run1.read1_val_1.fq.gz_bismark_bt2_pe.sort.sam
+
+sh CTR84_trimmed.fq.gz_bismark_bt2.sort.bam.bam2mf.job &
+sh LTP1.read1_val_1.fq.gz_bismark_bt2_pe.sort.bam.bam2mf.job &
+
+
+CTR132_trimmed.fq.gz_bismark_bt2.sort.sortn.bam
+
+perl ~/bin/bismarkbam2methyfreq.pl --input saminfo.txt --server TSCC --genome hg19 --queue glean 
+
+bismark_methylation_extractor --no_overlap --merge_non_CpG --cutoff 1 --multicore 8 --paired-end --bedGraph --ignore 1 --buffer_size 4G --comprehensive --output ../methyfreq  ../bam/HOT215_trimmed.fq.gz_bismark_bt2.sort.bam
+perl ~/bin/hapinfo2mhb.pl merge.txt.SumUniq 0.3 > mm9.MHB.0.3.txt   
+perl ~/bin/hapinfo2mhb.pl merge.txt.SumUniq 0.5 > mm9.MHB.0.5.txt 
+mkdir ../mhb
+mv mm9.MHB.0.3.txt ../mhb
+mv mm9.MHB.0.5.txt ../mhb/
+Added a short File description table in Methylation Haplotype Analysis User Guide.docx
+sudo ufw allow 8787
+lynx http://<ip>:8787
+change chrome to firfox
+http:132.239.25.238:8787
+wget -c ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR949/SRR949201/SRR949201_1.fastq.gz 
+wget -c ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR949/SRR949201/SRR949201_2.fastq.gz 
+2017-01-17 13:28:06 (0.00 B/s) - "SRR949201_1.fastq.gz" saved [16274079739]
+14679170302 Jan 17 14:46 SRR949201_2.fastq.gz
+15350187717 Jan 17 15:07 SRR949201_1.fastq.gz
+15550948069 Jan 16 18:50 SRR949201_2.fastq.gz
+16274079739 Jan 16 18:50 SRR949201_1.fastq.gz
+How to prepare bed format for human and mouse refGene
+
+wget -c -O mm9.refGene.txt.gz http://hgdownload.soe.ucsc.edu/goldenPath/mm9/database/refGene.txt.gz
+wget -c -O mm10.refGene.txt.gz http://hgdownload.soe.ucsc.edu/goldenPath/mm10/database/refGene.txt.gz
+wget -c -O hg19.refGene.txt.gz http://hgdownload.soe.ucsc.edu/goldenPath/hg19/database/refGene.txt.gz
+wget -c -O hg38.refGene.txt.gz http://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/refGene.txt.gz
+gunzip -f *.gz
+ 
+fetchChromSizes hg19 > hg19.chom.sizes
+fetchChromSizes hg38 > hg38.chrom.sizes
+fetchChromSizes mm9 > mm9.chrom.sizes
+
+ 
+ 
+#PBS -N Indx04.job
+#PBS -q glean
+#PBS -l nodes=1:ppn=6
+#PBS -l walltime=168:00:00
+#PBS -o Indx04.log
+#PBS -e Indx04.err
+#PBS -V
+#PBS -M shicheng.guo@gmail.com
+#PBS -m abe
+#PBS -A k4zhang-group
+
+ 
+ 
+ fetchChromSizes mm10 > mm10.chrom.sizes
+ 
+ perl ../mm9/refGene2bed.pl mm9.refGene.txt mm9.chrom.sizes > mm9.refGene.bed
+ perl ../mm9/refGene2bed.pl mm10.refGene.txt mm10.chrom.sizes > mm10.refGene.bed
+ perl ../mm9/refGene2bed.pl hg19.refGene.txt hg19.chrom.sizes > hg19.refGene.bed
+ perl ../mm9/refGene2bed.pl hg38.refGene.txt hg38.chrom.sizes > hg38.refGene.bed
+ mv mm9.refGene.bed ../mm9
+ cd ../mm9
+ 
+ 
+ wc -l *.refGene.bed
+ 
+  826320 hg19_refGene.bed
+  1372108 hg19.refGene.bed
+  1450953 hg38.refGene.bed
+   798143 mm10.refGene.bed
+   797710 mm9.refGene.bed
+
+  1372104 hg19.refGene.bed
+  1449295 hg38.refGene.bed
+   798075 mm10.refGene.bed
+   797710 mm9.refGene.bed
+  4417184 total
+ 
+  1372108 hg19.refGene.bed
+  1450953 hg38.refGene.bed
+   798143 mm10.refGene.bed
+   797710 mm9.refGene.bed
+  4418914 total
+  
+    1372071 hg19.refGene.bed
+  1447078 hg38.refGene.bed
+   797990 mm10.refGene.bed
+   797657 mm9.refGene.bed
+  4414796 total
+
+  14679170302 Jan 17 14:46 SRR949201_2.fastq.gz
+-rw-r--r-- 1 shg047 k4zhang-group 15350187717 Jan 17 15:07 SRR949201_1.fastq.gz
+
+
+
+ wget -c -O mm9.refGene.txt.gz http://hgdownload.soe.ucsc.edu/goldenPath/mm9/database/refGene.txt.gz
+ wget -c -O mm10.refGene.txt.gz http://hgdownload.soe.ucsc.edu/goldenPath/mm10/database/refGene.txt.gz
+ wget -c -O hg19.refGene.txt.gz http://hgdownload.soe.ucsc.edu/goldenPath/hg19/database/refGene.txt.gz
+ wget -c -O hg38.refGene.txt.gz http://hgdownload.soe.ucsc.edu/goldenPath/hg38/database/refGene.txt.gz
+
+ for i in `ls *.gz`; 
+ do 
+ SRR=${i%%_*}; 00
+ echo $SRR >> list.txt; 
+ done
+ 
+ for j in `sort -u list.txt`
+ do
+ vdb-validate $j
+ done
+ 
+ for i in `ls *.gz`; 
+ do 
+ gunzip -t $i 2 > $i.err &
+ done
+ find . -name "*gz.err" -type f -size +0c -exec ls -larth {} \;
+ 
+
+cutadapt: error: In read named 'SRR949201.44244409 D1JR8ACXX130107:7:1108:14746:100581 length=99': length of quality sequence (90) and length of read (99) do not match
+
+less SRR949201_1.fastq.gz |grep -n -A4 'SRR949201.44244409 D1JR8ACXX130107:7:1108:14746:100581 length=99' 
+	
+perl ~/bin/smartbismark.pl --input PRJNA201480.txt --submit no --genome hg19 --server TSCC
+qsub SRR949201.pbs
+qsub SRR949202.pbs
+qsub SRR949210.pbs
+qsub SRR949211.pbs
+
+sh SRR949201.job &
+sh SRR949202.job &
+sh SRR949210.job &
+sh SRR949211.job &
+
+for i in `ls *.gz`
+do
+md5sum $i >> md5sum.txt
+md5sum $i >> md5sum.txt
+done
+
+SRR949202_1 missed in fastq_trim folder
+_2 missed in fastq_trim folder
+SRR949210_1 missed in fastq_trim folder
+_2 missed in fastq_trim folder
+SRR949211_1 missed in fastq_trim folder
+SRR949211_2 missed in fastq_trim folder
+
+
+coverage2cytosine --merge_CpG SRR949207_1_val_1_bismark_bt2_pe.nonCG_filtered.bismark.cov.gz --genome_folder ~/oasis/db/hg19/align/bismark/ -o SRR1035809_1_val_1_bismark_bt2_pe.nonCG_filtered.bedGraph.gz.bismark.zero.cov.bedgraph
+
+cd /home/shg047/software/R-3.3.2
+./configure --prefix=/home/shg047/software/R-3.3.2 '--with-cairo' \
+ '--with-jpeglib' '--with-readline' '--with-tcltk' '--with-x=no'\
+ '--with-blas' '--with-lapack' '--enable-R-profiling' '--with-tiff=yes'\
+ '--enable-R-shlib'\
+ '--enable-memory-profiling'
+ make clean
+ make
+ 
+ 
+Name is names what the name 
+ 
+Clear idea, clean story, base on truth and get some another truth. (drugs and interaction)
+Our value is fix some gap in the academic fileds.
+We would better do some thing beyond context dependent. how to interpret the result or study with context dependent. 
+ => human mutation. 
+1, small group and train and fight yourself
+2, train yourself to find the bar.
+3, you should know how to fight alone.  
+4, build your own contribution. also you need your project huge. that means you need more energy to have some light on
+5, people or paper or boht. 
+
+cd /media/Home_Raid1/shg047/software/InfiniumPurify
+for i in `ls jhu*`
+do
+python InfiniumPurify.py -f $i -c LUAD 
+done
+
+
+Bowtie with parameters "-q --phred33-quals -n 1 -e 99999999 -l 25 -I 1 -X 2000 -a -m 15 -S -p 6",
+E(i,j)=log2(TPMi,j/10+1), where TPMi,j refers to transcript-per-million (TPM) for gene i in sample j, as calculated by RSEM
+
+
+head -n 20 SRR1035809_1_val_1_bismark_bt2_pe.nonCG_filtered.bedGraph.gz.bismark.zero.cov
+head -n 20 SRR1035809_1_val_1_bismark_bt2_pe.nonCG_filtered.bedGraph.gz.bismark.zero.cov.bedgraph.merged_CpG_evidence.cov
+
+
+wc -l  SRR1035809_1_val_1_bismark_bt2_pe.nonCG_filtered.bedGraph.gz.bismark.zero.cov.bedgraph.merged_CpG_evidence.cov
+
+
+1731880
+15609274
+
+grep chrUn_gl000214 SRR1035809_1_val_1_bismark_bt2_pe.nonCG_filtered.bedGraph.gz.bismark.zero.cov
+grep SRR1035809_1_val_1_bismark_bt2_pe.nonCG_filtered.bedGraph.gz.bismark.zero.cov.bedgraph.merged_CpG_evidence.cov
+
+head SRR1035809_1_val_1_bismark_bt2_pe.nonCG_filtered.bedGraph.gz.bismark.zero.cov
+head SRR1035809_1_val_1_bismark_bt2_pe.nonCG_filtered.bedGraph.gz.bismark.zero.cov.bedgraph.merged_CpG_evidence.cov
+
+system("cat $cov >> $SRX.bedgraph");
+/home/shg047/oasis/db/hg19/HsGenome19.CpG.positions.txt
+
+ #!/bin/csh
+ #PBS -N MergeCOVbySRX
+ #PBS -q pdafm
+ #PBS -l nodes=1:ppn=1
+ #PBS -l walltime=72:00:00
+ #PBS -V
+ #PBS -M shihcheng.guo@gmail.com
+ #PBS -m abe
+ #PBS -A k4zhang-group 
+cd /home/shg047/oasis/Estellar2016/methyfreq
+coverage2cytosine --merge_CpG SRR1035731_1_val_1_bismark_bt2_pe.nonCG_filtered.bedGraph.gz.bismark.zero.cov.head --genome_folder ~/oasis/db/hg19/align/bismark/ -o SRR1035809_1_val_1_bismark_bt2_pe.nonCG_filtered.bedGraph.gz.bismark.zero.cov.bedgraph
+
+
+Chase Sapphire Preferred (CSP)
+Amex Centurion
+Citi Prestige
+Amex Premier Rewards Gold (PRG)
+Amex Platinum
+Chase Ritz Carlton
+Chase Palladium
+Amex SPG
+Discover it
+
+
+ perl ~/bin/samInfoPrep4Bam2Hapinfo.pl /home/shg047/oasis/monod/mhb/WGBS_pooled_mappable_bins.all_autosomes.mld_blocks_r2-0.5.bed | grep -v PPP3CA
+ 
+qsub SRR949205.pbs
+qsub SRR949212.pbs
+qsub SRR949215.pbs
+
+curl "https://gdc-api.nci.nih.gov/legacy/files/4a8ffe0d-d7e6-4712-ad04-472955c84c77?fields=cases.samples.portions.analytes.aliquots.submitter_id,cases.samples.sample_type&format=tsv"
+curl "https://gdc-api.nci.nih.gov/legacy/files/087ec4fb-a621-4fcf-8276-1c74782bcc2c?fields=cases.samples.portions.analytes.aliquots.submitter_id,cases.samples.sample_type&format=tsv"
+ 
+du ./ -h --max-depth 1
+
+for i in BISULFITE EXTENSION HYBRIDIZATION NEGATIVE NON-POLYMORPHIC NORM_A NORM_G NORM_C, NORM_T RESTORATION STAINING SPECIFICITY TARGET
+do
+grep $i GPL21145-48548_EPIC.txt | wc -l
+done
+
+grep NEGATIVE GPL21145-48548_EPIC.txt 
+
+# 2016-12-30
+cd /media/Home_Raid1/shg047/work/Roadmap/bw
+for i in GSM1010981_UCSD.Adrenal_Gland.Bisulfite-Seq.STL003.wig.gz.bw GSM983649_UCSD.Esophagus.Bisulfite-Seq.STL003.wig.gz.bw GSM1120336_UCSD.Right_Ventricle.Bisulfite-Seq.STL003.wig.gz.bw GSM1120337_UCSD.Right_Ventricle.Bisulfite-Seq.STL003.wig.gz.bw
+do
+bigWigAverageOverBed $i /media/Home_Raid1/shg047/work/db/hg19/CpGSF.hg19.sort.bed4 $i.tab
+done
+
+cd /media/Home_Raid1/shg047/work/Chen2016CellResearch/bw
+for i in `ls *bw`
+do
+bigWigAverageOverBed $i /media/Home_Raid1/shg047/work/db/hg19/CpGSF.hg19.sort.bed4 $i.tab
+mv $i.tab /media/Home_Raid1/shg047/work/Roadmap/bw
+done
+
+cd /media/Home_Raid1/shg047/work/Roadmap/bw
+perl ~/bin/bigWigAverageOverBed2Matrix.pl > CpGI.txt
+
+data<-read.table("CpGI.txt")
+group<-unlist(lapply(rownames(data),function(x) unlist(strsplit(as.character(x),":"))[3]))
+table(group)
+input<-data.frame(Pos=rownames(data),data,group)
+head(input)
+library("reshape2")
+colnames(input)<-c("POS","Kidney","Right_Ventricle 1","Right_Ventricle 2","Kidney_Tumor","Kidney_Normal","Kidney_Tumor","Kidney_Normal","Esophagus","group")
+input.long<-melt(input, id.vars=c("group","POS"))
+library(ggplot2)
+png("rmsk.CpGI.methylation.png")
+ggplot(aes(y = value, x = group, fill = variable, dodge=variable), data = input.long) + geom_boxplot(outlier.shape =NA)+ coord_flip()
+dev.off()
+tapply(input.long$value,input.long$group,function(x) median(x,na.rm=T))
+tapply(input.long$value,input.long$variable,function(x) mean(x,na.rm=T))
+head(subset(input.long,group=="CpGI"))
+
+
+
+# 2016-12-30
+cd /media/Home_Raid1/shg047/work/Roadmap/bw
+for i in GSM1010981_UCSD.Adrenal_Gland.Bisulfite-Seq.STL003.wig.gz.bw GSM983649_UCSD.Esophagus.Bisulfite-Seq.STL003.wig.gz.bw GSM1120336_UCSD.Right_Ventricle.Bisulfite-Seq.STL003.wig.gz.bw GSM1120337_UCSD.Right_Ventricle.Bisulfite-Seq.STL003.wig.gz.bw
+do
+bigWigAverageOverBed $i /media/Home_Raid1/shg047/work/db/hg19/rmsk.hg19.bed $i.tab
+done
+
+cd /media/Home_Raid1/shg047/work/Chen2016CellResearch/bw
+for i in `ls *bw`
+do
+bigWigAverageOverBed $i /media/Home_Raid1/shg047/work/db/hg19/rmsk.hg19.bed $i.tab
+mv $i.tab /media/Home_Raid1/shg047/work/Roadmap/bw
+done
+
+cd /media/Home_Raid1/shg047/work/Roadmap/bw
+perl ~/bin/bigWigAverageOverBed2Matrix.pl > Repeat.txt
+
+data<-read.table("repeat.txt")
+group<-unlist(lapply(rownames(data),function(x) unlist(strsplit(as.character(x),":"))[3]))
+table(group)
+input<-data.frame(Pos=rownames(data),data,group)
+head(input)
+library("reshape2")
+colnames(input)<-c("POS","Kidney","Right_Ventricle 1","Right_Ventricle 2","Kidney_Tumor","Kidney_Normal","Kidney_Tumor","Kidney_Normal","Esophagus","group")
+input.long<-melt(input, id.vars=c("group","POS"))
+library(ggplot2)
+png("rmsk.repeat.methylation.png")
+ggplot(aes(y = value, x = group, fill = variable, dodge=variable), data = input.long) + geom_boxplot(outlier.shape =NA)+ coord_flip()
+dev.off()
+tapply(input.long$value,input.long$group,function(x) median(x,na.rm=T))
+tapply(input.long$value,input.long$variable,function(x) mean(x,na.rm=T))
+head(subset(input.long,group=="CpGI"))
+
+
+# 2016-12-30
+cd /media/Home_Raid1/shg047/work/db/hg19
+perl rmsk.pl -i rmsk.hg19 -o rmsk.hg19.bed
+sort -u rmsk.hg19.bed > rmsk.hg19.bed.temp
+sort -k1,1 -k2,2n rmsk.hg19.bed.temp > rmsk.hg19.bed
+rm rmsk.hg19.bed.temp
+awk '{print $12}' rmsk.hg19 | sort -u
+
+cd /media/Home_Raid1/shg047/work/Chen2016CellResearch/bw
+for i in `ls *bw`
+do
+bigWigAverageOverBed $i /media/Home_Raid1/shg047/work/db/hg19/rmsk.hg19.bed $i.tab
+done
+
+perl ~/bin/ Repeat.txt
+
+data<-read.table("Repeat.txt")
+info<-read.table("/media/Home_Raid1/shg047/work/db/hg19/rmsk.hg19.bed")
+group<-unlist(lapply(info[,4],function(x) unlist(strsplit(as.character(x),":"))[3]))
+table(group)
+input<-data.frame(data,group)
+
+library("reshape2")
+colnames(input)<-c("T","N","T","N","group")
+input.long<-melt(input, id.vars=c("group"))
+
+library(ggplot2)
+pdf("rmsk.methylation.pdf")
+ggplot(aes(y = value, x = group, fill = variable, dodge=variable), data = input.long) + geom_boxplot(outlier.shape =NA,outlier.colour="white")+ coord_flip()
+dev.off()
+##
+
+git pull
+git status
+git rebase --continue
+
+#
+
+http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&hubUrl=http://132.239.25.238/shg047/myhub.txt
+ 
+ln -s /media/Home_Raid1/shg047/work/Chen2016CellResearch/GSE63183/bw/GSM1546663_5mC-P1-T-corrected.txt.bw
+
+/media/Home_Raid1/shg047/work/h
+UCSC Over
+mv /media/Home_Raid1/shg047/work/Chen2016CellResearch/GSE63183/bw
+myhub.txt
+
+cd /media/Home_Raid1/shg047/work/Chen2016CellResearch/GSE63183/
+for i in `ls *bw`
+do
+ln -s /media/Home_Raid1/shg047/work/Chen2016CellResearch/GSE63183/$i /media/Home_Raid1/shg047/work/hub/hg19/$i
+done
+
+sudo ln -s /media/Home_Raid1/shg047/work/Chen2016CellResearch/GSE63183/GSM1546663_5mC-P1-T-corrected.txt.bw /media/Home_Raid1/shg047/work/hub/hg19/GSM1546663_5mC-P1-T-corrected.txt.bw
+
+
+
+# 2016-12-29
+ liftOver GSE17972.hg18.bedgraph ~/work/db/hg18/hg18ToHg19.over.chain GSE17972.hg19.bedgraph tmp
+ sort -u -k1,1 -k2,2n GSE17972.hg19.bedgraph > GSE17972.hg19.bedgraph.sort
+ bedGraphToBigWig GSE17972.hg19.bedgraph.sort ~/work/db/hg19/hg19.chrom.sizes GSE17972.hg19.bw
+ track type=bigWig color=0,0,255 visibility=2 maxHeightPixels=128:30:11 smoothingWindow=16 windowingFunction=mean name="PBMC" description="Yanhuang-methylome" bigDataUrl=http://132.239.25.238/shg047/NAS3/shg047/Yanhuang2010/GSE17972.hg19.bw
+
+ liftOver GSE17972.hg18.bedgraph ~/work/db/hg18/hg18ToHg38.over.chain GSE17972.hg38.bedgraph tmp
+ sort -u -k1,1 -k2,2n GSE17972.hg38.bedgraph > GSE17972.hg38.bedgraph.sort
+ bedGraphToBigWig GSE17972.hg38.bedgraph.sort /media/Home_Raid1/shg047/work/db/hg38/hg38.chrom.sizes GSE17972.hg38.bw
+ track type=bigWig color=0,0,255 visibility=2 maxHeightPixels=128:30:11 smoothingWindow=16 windowingFunction=mean name="Yanhuang-methylome" description="PBMC" bigDataUrl=http://132.239.25.238/shg047/NAS3/shg047/Yanhuang2010/GSE17972.hg38.bw
+ 
+ GSE17972.hg19.bw
+ GSE17972.hg19.bedgraph.sort
+ 
+for i in `ls *job`
+do
+
+if [! -e ]
+
+for i in SRR1035834 SRR1035835 SRR1035844 SRR1035831 SRR1035784 SRR1035893 SRR1035884 SRR1035843 SRR1035895 SRR1035832 SRR1035882 SRR1035881 SRR1035845 SRR1035833
+do
+qsub $i.fastq.download.job
+done
+
+for i in `ls *bam`
+do
+touch $i
+done
+
+
+ install CPAN
+ reload cpan
+
+ # qmap to bedgraph, liftOver hg18 to hg19 and hg38, finally sort the bedgraph 
+
+ for i in `ls *.txt`
+ do
+ echo $i
+ perl qmap2bedgraph.pl $i > $i.bedgraph
+ done
+ 
+ # merge liftOver 
+ for i in `ls *.bedgraph`
+ do
+ echo $i
+ liftOver $i /media/Home_Raid1/shg047/work/db/hg18/hg18ToHg19.over.chain $i.hg19 tmp
+ liftOver $i /media/Home_Raid1/shg047/work/db/hg18/hg18ToHg19.over.chain $i.hg38 tmp
+ done
+ 
+ # Sort liftOver bedgraph
+ for i in `ls *.bedgraph.hg19`
+ do
+ echo $i
+ sort -k1,1 -k2,2n $i > $i.sort
+ done
+
+ for i in `ls *.bedgraph.hg38`
+ do
+ echo $i
+ sort -k1,1 -k2,2n $i > $i.sort
+ done
+
+ # merge bedgraph by chrosome
+ cat *hg18.sort > GSE17972.YanHuang.hg18.bedgraph 
+ cat *hg19.sort > GSE17972.YanHuang.hg19.bedgraph 
+ cat *hg38.sort > GSE17972.YanHuang.hg38.bedgraph 
+
+ # bedgraph to bigwig 
+ for i in `ls *.bedgraph`
+ do
+ echo $i
+ bedGraphToBigWig $i ~/work/db/hg18/hg18.chrom.sizes $i.bw
+ bedGraphToBigWig $i ~/work/db/hg19/hg19.chrom.sizes $i.bw
+ bedGraphToBigWig $i ~/work/db/hg38/hg38.chrom.sizes $i.bw
+ done
+
+ 
+ 
+ 
+ 
+ for i in `ls *chr10*txt`
+ do
+ sort -k1,1 -k2,2n $i.bedgraph.hg19 > $i.bedgraph.hg19.sort
+ bedGraphToBigWig $i.bedgraph.hg19 ~/work/db/hg19/hg19.chrom.sizes $i.hg19.bw
+ done
+
+
+
+ 
+liftOver GSE17972_HUMtg5lib.qmap.chr10.txt.bedgraph /media/Home_Raid1/shg047/work/db/hg18/hg18ToHg19.over.chain GSE17972_HUMtg5lib.qmap.chr10.txt.bedgraph.hg19 tmp
+liftOver GSE17972_HUMtg5lib.qmap.chr10.txt.bedgraph /media/Home_Raid1/shg047/work/db/hg18/hg18ToHg19.over.chain GSE17972_HUMtg5lib.qmap.chr10.txt.bedgraph.hg38 tmp
+
+
+http://132.239.25.238/shg047/NAS3/shg047/Chen2016CellResearch/GSE63183/bw/hg19/GSM1546666_5mC-P2-N-corrected.txt.bw
+
+shg047/NAS3/shg047/Chen2016CellResearch/GSE63183/bw/hg19/GSM1546663_5mC-P1-T-corrected.txt.bw
+shg047/NAS3/shg047/Chen2016CellResearch/GSE63183/bw/hg19/GSM1546664_5mC-P1-N-corrected.txt.bw
+shg047/NAS3/shg047/Chen2016CellResearch/GSE63183/bw/hg19/GSM1546665_5mC-P2-T-corrected.txt.bw
+shg047/NAS3/shg047/Chen2016CellResearch/GSE63183/bw/hg19/GSM1546666_5mC-P2-N-corrected.txt.bw
+
+http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&hubUrl= 
+http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&hubUrl=http://132.239.25.238/shg047/NAS3/shg047/Chen2016CellResearch/GSE63183/bw/myhub.txt
+
+track type=bigWig name="XX" description="YY" bigDataUrl=http://132.239.25.238/shg047/NAS3/shg047/Chen2016CellResearch/GSE63183/bw/hg19/GSM1546663_5mC-P1-T-corrected.txt.bw
+
+
+for i in `ls *5mC-P*txt`
+do
+sort -k1,1 -k2,2n $i >$i.sort
+perl tobedgraph.pl $i.sort 
+bedGraphToBigWig $i.sort.bedgraph ~/db/hg19/hg19.chrom.sizes $i.bw 
+rm $i.sort 
+rm $i.sort.bedgraph
+done
+
+
+for i in `ls *.job`
+do
+sh $i &
+done
+
+
+
+GetOptions ( "input=s"   => \$input,           # string
+             "submit=s"  => \$submit,          # flag
+             "genome=s" => \$genome,          # string
+             "server=s" => \$server)          # flag
+o
+perl ~/bin/smartbismark.pl --input PRJNA201480.txt --submit no --genome hg19 --server TSCC
+
+bismark --bowtie2 --multicore 4 --phred33-quals --fastq -L 25 -N 1 /home/shg047/db/hg19/bismark/ -1 ../fastq_trim/SRR949204_1_val_1.fq.gz -2 ../fastq_trim/SRR949204_2_val_2.fq.gz -o ../bam &
+
+
+Memo for today's discussion: 
+Human brain includes two broad classes of cells: neurons and glial cells. 
+New understanding to AS based on deconvolution:
+Region projection for AD based on region reference => which regions => Glial cells  or Neurons cells? 8224138
+Glial cells  => which subtype ? => inflammatory related pathway? => eQTL => AD
+Neurons cells =>  which subtype ? => which pathways ? => eQTL => AD
+New Method based on deconvolution:
+1,  Brain region (reference) and cell type (reference) projection for AD
+2, Differential gene expression after deconvolution identify 
+3, Causal network after deconvolution identify cell type (reference) specific interaction? 
+Thanks. 
+
+Shicheng
+
+
+cp /media/Home_Raid1/zhl002/NAS3/WGBS/permutation/*bed  /opt/lampp/htdocs/
+
+
+cd /opt/lampp/htdocs/shg047/NAS3/Alice/WGBS/permutation/hg19
+for i in `ls *bed`
+do
+genome="hg19"
+wget -O $i.results.tsv "http://bejerano.stanford.edu/great/public/cgi-bin/greatStart.php?outputType=batch&requestSpecies=$genome&requestName=Example+Data&requestSender=Client+A&requestURL=http%3A%2F%2F132.239.25.238%2Fshg047%2FNAS3%2FAlice%2FWGBS%2Fpermutation%2Fhg19%2F$i"
+done
+
+cd /opt/lampp/htdocs/shg047/NAS3/Alice/WGBS/permutation/mm9
+for i in `ls *bed`
+do
+genome="mm9"
+wget -O $i.results.tsv "http://bejerano.stanford.edu/great/public/cgi-bin/greatStart.php?outputType=batch&requestSpecies=$genome&requestName=Example+Data&requestSender=Client+A&requestURL=http%3A%2F%2F132.239.25.238%2Fshg047%2FNAS3%2FAlice%2FWGBS%2Fpermutation%2Fmm9%2F$i"
+done
+
+
+/opt/lampp/htdocs/shg047/NAS3/Alice/WGBS/permutation/hg19
+
+/opt/lampp/htdocs/shg047/NAS3/Alice/WGBS/permutation/
+
+报案：受到台湾公民（蘇勝慧）的骚扰，诽谤，损害名誉权，人身健康威胁及恐吓案件
+chr14:29318659
+fastq-dump --maxSpotId 100 --minSpotId 200 SRR1648428
+
+samtools tview N22_bismark_bt2_pe.sort.bam ~/db/hg19/
+
+qstat -u shg047 | grep condo | awk '{print $1}' | xargs -I {} qdel {}﻿
+for i in 0 T U  
+do 
+rm *$i.bam
+done
+
+trim_galore --paired --phred33 --fastqc --illumina N21_R1.fastq.gz N21_R2.fastq.gz --output_dir ../fastq_trim
+bismark --bowtie2 --multicore 4 --phred33-quals --fastq -L 21 -N 1 ~/db/hg19/align/bismark/ -1 ../fastq_trim/N21_R1_val_1.fq.gz -2 ../fastq_trim/N21_R2_val_2.fq.gz -o ../bam
+filter_non_conversion --paired ../bam/N21_R1_val_1_bismark_bt2_pe.bam
+samtools sort ../bam/N21_R1_val_1_bismark_bt2_pe.nonCG_filtered.bam ../sortbam/N21_bismark_bt2_pe.sort
+samtools index ../sortbam/N21_bismark_bt2_pe.sort.bam
+bismark_methylation_extractor --cutoff 10 --paired-end --bedGraph --ignore 1 --buffer_size 4G --zero_based --comprehensive --output ../methyfreq  ../bam/N21_R1_val_1_bismark_bt2_pe.nonCG_filtered.bam
+bedtools intersect -wa -a N21_R1_val_1_bismark_bt2_pe.nonCG_filtered.bedGraph.gz.bismark.zero.cov -b ../bed/target.bed > ../bedgraph/N21.bedgraph
+
+N21_R1_val_1_bismark_bt2_pe.nonCG_filtered.bedGraph.gz.bismark.zero.cov
+N21_R1_val_1_bismark_bt2_pe.nonCG_filtered.bedGraph.gz.bismark.zero.cov.
+
+chr8:67344678-67344679
+
+cd /home/shg047/work/Minghua2016/methyfreq
+for i in `ls *bismark.zero.cov`
+do
+bedtools intersect -wa -a $i -b ../target.bed > $i.bedgraph
+done
+
+bedtools intersect -wa -a T9_R1_val_1_bismark_bt2_pe.nonCG_filtered.bedGraph.gz.bismark.zero.cov -b ../target.bed
+
+trim_galore --paired --phred33 --fastqc --illumina SRR949193_1.fastq.gz SRR949193_2.fastq.gz --output_dir ../../fastq_tri
+CU1_R1_val_1_bismark_bt2_pe.nonCG_filtered.bam
+CU1_val_1_bismark_bt2_pe.nonCG_filtered.bam
+trim_galore --paired --phred33 --fastqc --illumina SRR949197_1.fastq.gz SRR949197_2.fastq.gz --output_dir ../fastq_trim
+SCNT.wnt5a_mouse.sort.bam
+SRR949205_1_val_1_bismark_bt2_pe.bam
+
+/media/Home_Raid1/shg047/db/aligndb/hg19/bismark
+scp SRR949206_1_trimmed.fq.gz shg047@genome-miner.ucsd.edu:/media/Home_Raid1/shg047/work/Ziller2013/fastq_trim 
+scp SRR949206_2_trimmed.fq.gz shg047@genome-miner.ucsd.edu:/media/Home_Raid1/shg047/work/Ziller2013/fastq_trim
+scp SRR949206.bismark.job shg047@genome-miner.ucsd.edu:/media/Home_Raid1/shg047/work/Ziller2013/fastq
+
+
+zcat ../fastq_trim/SRR949205_1_val_1.fq.gz | head -n 4000 > ../SRR949205_1_val_1.fq
+zcat ../fastq_trim/SRR949205_2_val_2.fq.gz | head -n 4000 > ../SRR949205_2_val_2.fq
+
+gzip ../SRR949205_1_val_1.fq
+gzip ../SRR949205_2_val_2.fq
+
+bismark --bowtie2 --phred33-quals --fastq -L 25 -N 1 --multicore 6 /home/shg047/db/hg19/bismark/ -1 SRR949205_1_val_1.fq.gz -2 SRR949205_2_val_2.fq.gz -o ./
+
+find . -exec touch {} \;
+
+
+Dear Sir/Madam,
+This user use my photo and my name as its profile and post kinds of things full of defamation and insult and post my private things through google plus to public. It break the California laws and the profiles are with full of defamation and insult. Please remove all the photos and my private things. Please warn the user it is illegal. 
+
+https://plus.google.com/100087098265453308274
+ 
+https://plus.google.com/u/0/108664216580872773217
+ 
+https://plus.google.com/collection/UpxPlB?hl=en-US
+ 
+https://plus.google.com/collection/04KQlB?hl=en-US
+ 
+https://plus.google.com/117041654657062516807?hl=en-US
+ 
+https://plus.google.com/100087098265453308274?hl=en-US
+
+If you have any questions, please call me.  
