@@ -1,17 +1,16 @@
-load("~/hpc/project/TCGA/methdata.pancancer.trim.RData")
-load("~/hpc/project/TCGA/pancancer/FPKM/Pancancer.DrugResponse.V5292.N1462.RData")
-mRNA<-newinput
-load("~/hpc/project/TCGA/pancancer/miRNA/pancancer.miRNA.drugResponse.RData")
+load("miRNA2.triple.RData")
+load("meth2.triple.RData")
+load("mRNA2.triple.RData")
 
-triple<-names(which(sort(table(c(rownames(miRNA),rownames(meth),rownames(mRNA))))==3))
+triple<-names(which(sort(table(c(rownames(miRNA2),rownames(meth2),rownames(mRNA2))))==3))
 
-meth<-meth[match(triple,rownames(meth)),]
-mRNA<-mRNA[match(triple,rownames(mRNA)),]
-miRNA<-miRNA[match(triple,rownames(miRNA)),]
+meth<-meth2[match(triple,rownames(meth2)),]
+mRNA<-mRNA2[match(triple,rownames(mRNA2)),]
+miRNA<-miRNA2[match(triple,rownames(miRNA2)),]
 
 input<-cbind(phen=miRNA[,1],miRNA[,2:ncol(miRNA)],mRNA[,2:ncol(mRNA)],meth[,2:ncol(meth)])
 SD<-apply(input,2,function(x) sd(x))
-input<-input[,-which(SD==0)]
+# input<-input[,-which(SD==0)]
 input[,2:ncol(input)]<-scale(input[,2:ncol(input)])
 input[1:5,1:5]          
 #######################################################
@@ -103,8 +102,8 @@ head(imp)
 imp<-imp[order(imp[,4],decreasing = T),]
 topvar<-match(rownames(imp)[1:200],colnames(input))
 newinput <- t(input[,topvar])
-colnames(newinput)<-newinput[,1]
-newinput[1:5,1:5]
+colnames(newinput)<-input[,1]
+newinput[newinput>2]<-2
 source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/HeatMap.R")
 pdf("triple.heatmap.randomForest.n2.pdf")
 HeatMap(newinput)
