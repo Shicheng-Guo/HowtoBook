@@ -10,7 +10,7 @@ library("PredictABEL")
 library("neuralnet")
 library("caret")
 
-setwd("/home/guosa/hpc/project/TCGA")
+setwd("~/hpc/project/TCGA")
 source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/GscTools.R")
 source("https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/TCGA/bin/id2phen4.R")
  
