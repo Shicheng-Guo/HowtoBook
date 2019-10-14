@@ -121,6 +121,10 @@ RF <- randomForest(as.factor(phen) ~ ., data=input, importance=TRUE,proximity=T)
 imp<-RF$importance
 head(imp)
 imp<-imp[order(imp[,4],decreasing = T),]
+topvar<-match(rownames(imp)[1:2000],colnames(input))
+
+mRNA2<-input[,c(1,topvar)]
+save(mRNA2,file="mRNA2.triple.RData")
 
 newinput<-t(log(input[,match(rownames(imp)[1:50],colnames(input))]+1,2))
 colnames(newinput)<-input[,1]
