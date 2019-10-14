@@ -6,11 +6,13 @@ library("arm")
 library("plyr") 
 library("PredictABEL")
 library("neuralnet")
+source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/GscTools.R")
+source("https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/TCGA/bin/id2phen4.R")
 
 setwd("/home/guosa/hpc/project/TCGA/pancancer/miRNA/data")
 file=list.files(pattern="*mirnas.quantification.txt$",recursive = TRUE)
 manifest2barcode("gdc_manifest.pancancer.miRNA.2019-05-29.txt")
-barcode<-read.table("barcode.txt",sep="\t",head=T)
+barcode<-read.table("/home/guosa/hpc/project/TCGA/pancancer/miRNA/data/barcode.txt",sep="\t",head=T)
 data<-c()
 for(i in 1:length(file)){
   tmp<-read.table(file[i],head=T,sep="\t",as.is=F)  
@@ -23,7 +25,8 @@ data<-data[,match(unique(colnames(data)),colnames(data))]
 save(data,file="TCGA-Pancancer.miRNAseq.RData")
 miRNA<-data[,grep("-01",colnames(data))]
 
-load("TCGA-Pancancer.miRNAseq.RData")
+setwd("/home/guosa/hpc/project/TCGA")
+load("/home/guosa/hpc/project/TCGA/pancancer/miRNA/data/TCGA-Pancancer.miRNAseq.RData")
 
 barcode$id4=id2phen4(barcode$cases.0.samples.0.portions.0.analytes.0.aliquots.0.submitter_id)
 phen<-read.table("https://raw.githubusercontent.com/Shicheng-Guo/HowtoBook/master/TCGA/drug_response/pancancer.chemotherapy.response.txt",head=T,sep="\t")
@@ -34,13 +37,14 @@ phen<-phen[na.omit(unlist(lapply(colnames(miRNA),function(x) match(x,phen$ID)[1]
 dim(miRNA)
 dim(phen)
 
-sort(table(phen$bcr_patient_barcode))
+head(sort(table(phen$bcr_patient_barcode)))
 table(levels(phen$measure_of_response))
 levels(phen$measure_of_response)<-c(0,1,1,0)
 
 input<-data.frame(phen=phen$measure_of_response,t(miRNA))
 input<-input[,unlist(apply(input,2,function(x) sd(x)>0))]
 miRNA<-input
+miRNA[1:5,1:5]                           
 save(miRNA,file="pancancer.miRNA.drugResponse.RData")
 
 set.seed(49)
@@ -88,7 +92,28 @@ pred2 <- predRisk(model.glm2)
 par(mfrow=c(2,2),cex.lab=1.5,cex.axis=1.5)
 plotROC(data=data1,cOutcome=1,predrisk=cbind(pred1))
 plotROC(data=data2,cOutcome=1,predrisk=cbind(pred2))
-          
+ 
+## heatmap
+source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/HeatMap.R")
+P=apply(input[,2:ncol(input)],2,function(x) summary(glm(as.factor(input[,1])~x,family=binomial))$coefficients[2,4])
+input<-input[,c(1,match(names(P[head(order(P),n=200)]),colnames(input)))]
+RF <- randomForest(as.factor(phen) ~ ., data=input, importance=TRUE,proximity=T)
+imp<-RF$importance
+head(imp)
+imp<-imp[order(imp[,4],decreasing = T),]
+topvar<-match(rownames(imp)[1:50],colnames(input))
+        
+miRNA2<-input[,c(1,topvar)] 
+save(miRNA2,file="miRNA2.triple.RData")
+
+newinput <- t(input[,topvar])
+colnames(newinput)<-input[,1]
+newinput[1:5,1:5]
+source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/HeatMap.R")
+pdf("meth.heatmap.randomForest.n2.pdf")
+HeatMap(newinput)
+dev.off()
+        
 source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/HeatMap.R")
 newinput<-t(log(input[,match(rownames(imp)[1:50],colnames(input))]+1,2))
 colnames(newinput)<-input[,1]
