@@ -118,7 +118,11 @@ RF <- randomForest(as.factor(phen) ~ ., data=input, importance=TRUE,proximity=T)
 imp<-RF$importance
 head(imp)
 imp<-imp[order(imp[,4],decreasing = T),]
-topvar<-match(rownames(imp)[1:2000],colnames(input))
+topvar<-match(rownames(imp)[1:1000],colnames(input))
+
+meth2<-input[,c(1,topvar)] 
+save(meth2,file="meth2.triple.RData")
+        
 newinput <- t(input[,topvar])
 colnames(newinput)<-input[,1]
 newinput[1:5,1:5]
