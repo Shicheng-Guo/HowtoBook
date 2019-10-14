@@ -1,7 +1,7 @@
 ######################################################################################
 #########  mRNA-seq based deep-learning for drug-response prediction #################
 ######################################################################################
-install.packages("caret")
+# install.packages("caret")
 
 library("randomForest")
 library("arm")
@@ -47,7 +47,7 @@ test.cv <- input[-index,]
 mRNA<-data[,grep("-01",colnames(data))]
 
 setwd("~/hpc/project/TCGA/pancancer/FPKM")
-load("Pancancer.DrugResponse.V5292.N1462.RData")
+load("~/hpc/project/TCGA/pancancer/FPKM/Pancancer.DrugResponse.V5292.N1462.RData")
 input<-newinput
 
 set.seed(49)
@@ -130,3 +130,4 @@ pdf("mRNA.heatmap.randomForest.n2.pdf")
 HeatMap(newinput)
 dev.off()
 save.image("miRNAseq-N2.RF.heatmap.RData")
+# heatmap
