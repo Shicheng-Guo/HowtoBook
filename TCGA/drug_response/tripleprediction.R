@@ -1,20 +1,19 @@
-load("~/hpc/project/TCGA/pancancer/FPKM/Pancancer.DrugResponse.V5292.N1462.RData")
-
-load("~/hpc/project/TCGA/pancancer/FPKM/TCGA-Pancancer.mRNAseq.RData")
 load("~/hpc/project/TCGA/methdata.pancancer.trim.RData")
+load("~/hpc/project/TCGA/pancancer/FPKM/Pancancer.DrugResponse.V5292.N1462.RData")
+mRNA<-newinput
 load("~/hpc/project/TCGA/pancancer/miRNA/pancancer.miRNA.drugResponse.RData")
 
 triple<-names(which(sort(table(c(rownames(miRNA),rownames(meth),rownames(mRNA))))==3))
 
-miRNA<-miRNA[match(triple,rownames(miRNA)),]
-mRNA<-mRNA[match(triple,rownames(mRNA)),]
 meth<-meth[match(triple,rownames(meth)),]
+mRNA<-mRNA[match(triple,rownames(mRNA)),]
+miRNA<-miRNA[match(triple,rownames(miRNA)),]
 
 input<-cbind(phen=miRNA[,1],miRNA[,2:ncol(miRNA)],mRNA[,2:ncol(mRNA)],meth[,2:ncol(meth)])
 SD<-apply(input,2,function(x) sd(x))
 input<-input[,-which(SD==0)]
 input[,2:ncol(input)]<-scale(input[,2:ncol(input)])
-input[1:5,1:5]
+input[1:5,1:5]          
 #######################################################
 # index <- sample(1:nrow(input),round(0.9*nrow(input)))
 # train.cv <- data.matrix(input[index,])
@@ -91,6 +90,7 @@ plotROC(data=data1,cOutcome=1,predrisk=cbind(pred1))
 plotROC(data=data2,cOutcome=1,predrisk=cbind(pred2))
 dev.off()
 
+          
 ### heatmap
 source("https://raw.githubusercontent.com/Shicheng-Guo/GscRbasement/master/HeatMap.R")
 setwd("~/hpc/project/TCGA/pancancer/meth450")
