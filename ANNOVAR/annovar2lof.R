@@ -28,7 +28,11 @@ for(i in 1:length(file)){
   frameshift_insertion<-grep('\\bframeshift insertion',data$ExonicFunc.refGene)
   stop<-grep('stop',data$ExonicFunc.refGene)
   lof<-sort(c(Nsyn6I12,frameshift_deletion,frameshift_insertion,stop))
-  LOF<-c(LOF,lof)
+  write.table(data[lof,1:2],file=paste(file[i],".lof",sep=""),sep="\t",col.names = F,row.names = F,quote=F)
   print(file[i])
 }
+
+
+
+
 
