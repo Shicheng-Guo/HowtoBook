@@ -34,6 +34,6 @@ STAR --runMode genomeGenerate --genomeDir ~/hpc/db/hg19/STAR/ --genomeFastaFiles
 
 Reference Download Website(RDW):
 
-GTF: http://useast.ensembl.org/info/data/ftp/index.html and 
+GTF: http://useast.ensembl.org/info/data/ftp/index.html and [wget link](http://ftp.ensemblorg.ebi.ac.uk/pub/grch37/release-98/gtf/homo_sapiens/Homo_sapiens.GRCh37.87.gtf.gz)
 
-FASTA:http://useast.ensembl.org/info/data/ftp/index.html and 
+FASTA:http://useast.ensembl.org/info/data/ftp/index.html and [wget link]()
