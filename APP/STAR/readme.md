@@ -1,1 +1,2 @@
 ### STAR mapping pipeline with 2-pass for multiple samples
+Shicheng Guo, 2019/12/12, San Francisco
