@@ -36,4 +36,4 @@ Reference Download Website(RDW):
 
 GTF: http://useast.ensembl.org/info/data/ftp/index.html and [wget link](http://ftp.ensemblorg.ebi.ac.uk/pub/grch37/release-98/gtf/homo_sapiens/Homo_sapiens.GRCh37.87.gtf.gz)
 
-FASTA:http://useast.ensembl.org/info/data/ftp/index.html and [wget link]()
+FASTA:http://useast.ensembl.org/info/data/ftp/index.html and [wget link](http://ftp.ensemblorg.ebi.ac.uk/pub/grch37/release-98/fasta/homo_sapiens/dna/Homo_sapiens.GRCh37.dna.alt.fa.gz)
