@@ -32,6 +32,6 @@ STAR --runMode genomeGenerate --genomeDir ~/hpc/db/hg19/STAR/ --genomeFastaFiles
 ```
 
 
-Website:
+Reference Download Website(RDW):
 
 GTF: http://useast.ensembl.org/info/data/ftp/index.html
