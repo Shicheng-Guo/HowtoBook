@@ -1,7 +1,7 @@
 ### STAR mapping pipeline with 2-pass for multiple samples
 Shicheng Guo, 2019/12/18, San Francisco
 
-STAR Installation
+STAR Installation-1
 ```
 ubuntu.
 $ sudo apt-get update
@@ -16,7 +16,7 @@ SUSE.
 $ sudo zypper update
 $ sudo zypper in gcc gcc-c++
 ```
-STAR Installation
+STAR Installation-2
 ```
 cd ~/hpc/tools/
 wget https://github.com/alexdobin/STAR/archive/2.7.3a.tar.gz
