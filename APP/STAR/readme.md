@@ -25,6 +25,7 @@ cd STAR-2.7.3a
 ```
 Indexing genome with annotations
 ```
+wget http://ftp.ensemblorg.ebi.ac.uk/pub/grch37/release-98/gtf/homo_sapiens/Homo_sapiens.GRCh37.87.gtf.gz
 STAR --runMode genomeGenerate --genomeDir ~/hpc/db/hg38/ --genomeFastaFiles ~/db/hg38/hg38.fa --sjdbGTFfile ~/db/hg38/hg38.gtf --runThreadN 30 --sjdbOverhang 89
 ```
 
