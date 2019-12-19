@@ -25,11 +25,14 @@ cd STAR-2.7.3a
 ```
 Indexing genome with annotations (pay attention to chrosome name: 1,2,3 or chr1,chr2,chr3)
 ```
-cd  ~/hpc/db/
+# https://www.gencodegenes.org/
+cd  ~/hpc/db/hg19
 wget http://ftp.ensemblorg.ebi.ac.uk/pub/grch37/release-98/gtf/homo_sapiens/Homo_sapiens.GRCh37.87.gtf.gz
 wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_29/GRCh37_mapping/gencode.v29lift37.annotation.gtf.gz
+wget wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_32/GRCh37_mapping/gencode.v32lift37.annotation.gtf.gz
+
 gunzip Homo_sapiens.GRCh37.87.gtf.gz
-STAR --runMode genomeGenerate --genomeDir ~/hpc/db/hg19/STAR/ --genomeFastaFiles ~/hpc/db/hg19/hg19.fa --sjdbGTFfile ~/hpc/db/hg19/Homo_sapiens.GRCh37.87.gtf --runThreadN 30 --sjdbOverhang 89
+STAR --runMode genomeGenerate --genomeDir ~/hpc/db/hg19/STAR/ --genomeFastaFiles ~/hpc/db/hg19/hg19.fa --sjdbGTFfile ~/hpc/db/hg19/gencode.v32lift37.annotation.gtf.gz --runThreadN 30 --sjdbOverhang 89
 ```
 
 
