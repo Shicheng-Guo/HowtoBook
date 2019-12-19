@@ -31,3 +31,7 @@ gunzip Homo_sapiens.GRCh37.87.gtf.gz
 STAR --runMode genomeGenerate --genomeDir ~/hpc/db/hg19/STAR/ --genomeFastaFiles ~/hpc/db/hg19/hg19.fa --sjdbGTFfile ~/hpc/db/hg19/Homo_sapiens.GRCh37.87.gtf --runThreadN 30 --sjdbOverhang 89
 ```
 
+
+Website:
+
+GTF: http://useast.ensembl.org/info/data/ftp/index.html
