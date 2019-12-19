@@ -28,6 +28,6 @@ Indexing genome with annotations
 cd  ~/hpc/db/
 wget http://ftp.ensemblorg.ebi.ac.uk/pub/grch37/release-98/gtf/homo_sapiens/Homo_sapiens.GRCh37.87.gtf.gz
 gunzip Homo_sapiens.GRCh37.87.gtf.gz
-STAR --runMode genomeGenerate --genomeDir ~/hpc/db/hg38/ --genomeFastaFiles ~/db/hg38/hg38.fa --sjdbGTFfile ~/db/hg38/hg38.gtf --runThreadN 30 --sjdbOverhang 89
+STAR --runMode genomeGenerate --genomeDir ~/hpc/db/hg19/STAR/ --genomeFastaFiles ~/hpc/db/hg19/hg19.fa --sjdbGTFfile ~/hpc/db/hg19/Homo_sapiens.GRCh37.87.gtf --runThreadN 30 --sjdbOverhang 89
 ```
 
