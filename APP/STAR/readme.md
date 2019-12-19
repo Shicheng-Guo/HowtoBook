@@ -23,3 +23,8 @@ wget https://github.com/alexdobin/STAR/archive/2.7.3a.tar.gz
 tar -xzf 2.7.3a.tar.gz
 cd STAR-2.7.3a
 ```
+Indexing genome with annotations
+```
+STAR --runMode genomeGenerate --genomeDir ~/hpc/db/hg38/ --genomeFastaFiles ~/db/hg38/hg38.fa --sjdbGTFfile ~/db/hg38/hg38.gtf --runThreadN 30 --sjdbOverhang 89
+```
+
