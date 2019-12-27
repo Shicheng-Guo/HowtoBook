@@ -8,3 +8,4 @@
 * Trim Galore
 * cutadapt
 * Picard V2.18
+* seqtk
