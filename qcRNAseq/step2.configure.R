@@ -1,4 +1,4 @@
-setwd('c:/sci/026rplcl/data/microarray/practice2/')
+dir.make("qcRNAseq")
 
 # only if you don't have these packages already:
 # install.packages("stringr")
