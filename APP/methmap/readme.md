@@ -2,4 +2,4 @@
 
 Timeline:
 
-* https://www.protocols.io/view/metamap-pipeline-msec6be
+* 2020/01/14: https://www.protocols.io/view/metamap-pipeline-msec6be
