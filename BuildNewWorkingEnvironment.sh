@@ -5,6 +5,10 @@
 # install Python
 
 1. miniconda3
+
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+
 conda install numpy
 conda install pip
 conda install -c bioconda cutadapt
@@ -26,5 +30,5 @@ conda install -c bioconda cutadapt
 14. fs
 15. tabix
 16. annovar
-17. 
+17. fastq_screen
 
