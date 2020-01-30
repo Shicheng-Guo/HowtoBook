@@ -9,7 +9,7 @@ x
 x
 xx
 x
-x
+xx
 xx
 xxxx
 xxx
