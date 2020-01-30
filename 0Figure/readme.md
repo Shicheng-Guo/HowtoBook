@@ -12,6 +12,6 @@ x
 x
 xx
 xxxx
-x
+xx
 x
 x
