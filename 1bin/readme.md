@@ -1,2 +1,2 @@
-How to start your new computational lab quickly
+### How to start your new computational lab quickly
 
